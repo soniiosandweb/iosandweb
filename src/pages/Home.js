@@ -4,10 +4,13 @@ import homeBanner from '../images/home-banner.webp';
 import homeVideo from '../images/home-video.mp4';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import goodFirmLogo from '../images/good-firms-logo.png';
+import trustPilot from '../images/trustpilot.png';
 
 function Home() {
     return (
         <>
+            {/* Banner */}
             <div className="home-banner">
                 <Container>
                     <Row>
@@ -24,6 +27,38 @@ function Home() {
                     </Row>
                 </Container>
             </div>
+
+            {/* Award Panel */}
+
+            <div className="award-panel text-white">
+                <Container>
+                    <Row>
+                        <Col md={4}>
+                            <div className="award-block">
+                                <div className="award-logo">
+                                    <img src={goodFirmLogo} alt="App development"/>
+                                </div>
+                                <div className="award-text">
+                                    <span>App development company of the year</span>
+                                </div>
+                            </div>
+                        </Col>
+
+                        <Col md={4}>
+                            <div className="award-block">
+                                <div className="award-logo">
+                                    <img src={trustPilot} alt="App solution"/>
+                                </div>
+                                <div className="award-text">
+                                    <span>Most promising mobile app solution provider</span>
+                                </div>
+                            </div>
+                        </Col>
+
+                    </Row>
+                </Container>
+            </div>
+
         </>
     )
 }

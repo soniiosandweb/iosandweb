@@ -17,7 +17,7 @@ function Header() {
 
   const listenScrollEvent = () => {
     if (locationValue[1] === "") {
-      if (window.scrollY > 80) {
+      if (window.scrollY > 50) {
         setImage(logoBlack);
         setHeaderbg("white text-black");
       } else {
@@ -42,6 +42,7 @@ function Header() {
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
     changeheaderclass();
+    // eslint-disable-next-line
   }, []);
 
   return (
