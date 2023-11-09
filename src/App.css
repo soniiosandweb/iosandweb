@@ -13,8 +13,18 @@ h1, h2{
   color: #fff;
 }
 .b-none{
-  border: none;
+  border: none !important;
 }
+.section-padding{
+  padding: 6rem 0;
+}
+.leadtxt h3 {
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+
 /* Header */
 .header{
   padding: 15px 0;
@@ -192,7 +202,7 @@ h1, h2{
   padding: 25px 0;
 }
 .award-logo img {
-  max-height: 100px;
+  max-height: 85px;
 }
 .award-text {
   font-size: 16px;
@@ -200,9 +210,31 @@ h1, h2{
   line-height: 1.3;
   color: #fff;
   opacity: .7;
-  max-width: 60%;
 }
 .award-block {
   border-right: 1px solid #707070;
-  max-width: 90%;
+  height: 100%;
+  text-align: center;
+}
+.partner-logos {
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  align-items: center;
+  gap: 60px;
+}
+.partner-logos .partner-logo img {
+  filter: invert(100%) sepia(0) saturate(100%) hue-rotate(284deg) brightness(220%) contrast(0%);
+  cursor: pointer;
+}
+.partner-logos .partner-logo img:hover {
+  filter: none;
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .partner-logos {
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+  }
 }

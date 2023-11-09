@@ -5,7 +5,12 @@ import homeVideo from '../images/home-video.mp4';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import goodFirmLogo from '../images/good-firms-logo.png';
-import trustPilot from '../images/trustpilot.png';
+import appFutura from '../images/appfutura.png';
+import itFirms from '../images/itfirm.png';
+import topDevelopment from '../images/top-development.png';
+import upWork from '../images/upwork.png';
+
+import Partners from "../components/Partners";
 
 function Home() {
     return (
@@ -33,7 +38,7 @@ function Home() {
             <div className="award-panel text-white">
                 <Container>
                     <Row>
-                        <Col md={4}>
+                        <Col md={2}>
                             <div className="award-block">
                                 <div className="award-logo">
                                     <img src={goodFirmLogo} alt="App development"/>
@@ -44,13 +49,57 @@ function Home() {
                             </div>
                         </Col>
 
-                        <Col md={4}>
+                        <Col md={2}>
                             <div className="award-block">
                                 <div className="award-logo">
-                                    <img src={trustPilot} alt="App solution"/>
+                                    <img src={appFutura} alt="App solution"/>
                                 </div>
                                 <div className="award-text">
                                     <span>Most promising mobile app solution provider</span>
+                                </div>
+                            </div>
+                        </Col>
+
+                        <Col md={2}>
+                            <div className="award-block">
+                                <div className="award-logo">
+                                    <img src={itFirms} alt="India's Growth Champions"/>
+                                </div>
+                                <div className="award-text">
+                                    <span>India's Growth Champions in IT</span>
+                                </div>
+                            </div>
+                        </Col>
+
+                        <Col md={2}>
+                            <div className="award-block">
+                                <div className="award-logo">
+                                    <img src={upWork} alt="India's Growth Champions"/>
+                                </div>
+                                <div className="award-text">
+                                    <span>Software development company of the year</span>
+                                </div>
+                            </div>
+                        </Col>
+
+                        <Col md={2}>
+                            <div className="award-block">
+                                <div className="award-logo">
+                                    <img src={itFirms} alt="India's Growth Champions"/>
+                                </div>
+                                <div className="award-text">
+                                    <span>India's Growth Champions in IT</span>
+                                </div>
+                            </div>
+                        </Col>
+
+                        <Col md={2}>
+                            <div className="award-block b-none">
+                                <div className="award-logo">
+                                    <img src={topDevelopment} alt="Tech Company Of The Year"/>
+                                </div>
+                                <div className="award-text">
+                                    <span>Tech Company Of The Year</span>
                                 </div>
                             </div>
                         </Col>
@@ -59,6 +108,9 @@ function Home() {
                 </Container>
             </div>
 
+            {/* Business partners*/}
+            <Partners />
+            
         </>
     )
 }
