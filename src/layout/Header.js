@@ -1,0 +1,68 @@
+import React, { useEffect, useState } from "react";
+import Container from 'react-bootstrap/Container';
+import { useLocation } from "react-router-dom";
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import logo from '../images/IAW-logo-white.png';
+import logoBlack from '../images/IAW-black-logo.png';
+
+function Header() {
+
+  const location = useLocation();
+  const pathname = location.pathname;
+  const locationValue = pathname.split("/");
+  const [image, setImage] = useState(logo);
+  const [fixed, setFixed] = useState("sticky-top");
+  const [headerbg, setHeaderbg] = useState("white text-black");
+
+  const listenScrollEvent = () => {
+    if (locationValue[1] === "") {
+      if (window.scrollY > 80) {
+        setImage(logoBlack);
+        setHeaderbg("white text-black");
+      } else {
+        setImage(logo);
+        setHeaderbg("transparent text-white");
+      }
+    }
+  };
+
+  const changeheaderclass = () => {
+    if (locationValue[1] === "") {
+      setFixed("fixed-top text-white");
+      setHeaderbg("transparent text-white");
+      setImage(logo);
+    } else {
+      setFixed("sticky-top text-black");
+      setHeaderbg("white text-black");
+      setImage(logoBlack);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    changeheaderclass();
+  }, []);
+
+  return (
+    <Navbar collapseOnSelect expand="lg" className={`header ${fixed} ${headerbg}`}>
+      <Container>
+        <Navbar.Brand href="/">
+          <img src={image} alt="IosAndWeb logo" className="responsive logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+          <Nav className="align-items-center">
+            <Nav.Link href="/about" className={locationValue[1] === "about" ? "active" : ""}>About</Nav.Link>
+            <Nav.Link href="/services" className={locationValue[1] === "services" ? "active" : ""}>Services</Nav.Link>
+            <Nav.Link href="/portfolio" className={locationValue[1] === "portfolio" ? "active" : ""}>Portfolio</Nav.Link>
+            <Nav.Link href="/blog" className={locationValue[1] === "blog" ? "active" : ""}>Blog</Nav.Link>
+            <Nav.Link href="/contact" className={locationValue[1] === "contact" ? "btn active" : "btn"}>Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
+
+export default Header;
