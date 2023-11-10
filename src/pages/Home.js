@@ -10,7 +10,18 @@ import itFirms from '../images/itfirm.png';
 import topDevelopment from '../images/top-development.png';
 import upWork from '../images/upwork.png';
 
+// partners section
 import Partners from "../components/Partners";
+
+// services images
+import aiml from '../images/service-ai-ml.svg';
+import mobileApp from '../images/Mobile-app.svg';
+import softwareDevelopment from '../images/Software-Development.svg';
+import digitalTransformation from '../images/Digital-Transformation.svg';
+import dataScience from '../images/Data-Science-Analytics.svg';
+import cloudServices from '../images/Cloud-Services.svg';
+import blockChain from '../images/Blockchain-Services.svg';
+import ideationDesign from '../images/ideation-design.svg';
 
 function Home() {
     return (
@@ -38,7 +49,7 @@ function Home() {
             <div className="award-panel text-white">
                 <Container>
                     <Row>
-                        <Col md={2}>
+                        <Col md={6} lg={4} xl={2} className="award-col">
                             <div className="award-block">
                                 <div className="award-logo">
                                     <img src={goodFirmLogo} alt="App development"/>
@@ -49,7 +60,7 @@ function Home() {
                             </div>
                         </Col>
 
-                        <Col md={2}>
+                        <Col md={6} lg={4} xl={2} className="award-col">
                             <div className="award-block">
                                 <div className="award-logo">
                                     <img src={appFutura} alt="App solution"/>
@@ -60,7 +71,7 @@ function Home() {
                             </div>
                         </Col>
 
-                        <Col md={2}>
+                        <Col md={6} lg={4} xl={2} className="award-col">
                             <div className="award-block">
                                 <div className="award-logo">
                                     <img src={itFirms} alt="India's Growth Champions"/>
@@ -71,7 +82,7 @@ function Home() {
                             </div>
                         </Col>
 
-                        <Col md={2}>
+                        <Col md={6} lg={4} xl={2} className="award-col">
                             <div className="award-block">
                                 <div className="award-logo">
                                     <img src={upWork} alt="India's Growth Champions"/>
@@ -82,7 +93,7 @@ function Home() {
                             </div>
                         </Col>
 
-                        <Col md={2}>
+                        <Col md={6} lg={4} xl={2} className="award-col">
                             <div className="award-block">
                                 <div className="award-logo">
                                     <img src={itFirms} alt="India's Growth Champions"/>
@@ -93,8 +104,8 @@ function Home() {
                             </div>
                         </Col>
 
-                        <Col md={2}>
-                            <div className="award-block b-none">
+                        <Col md={6} lg={4} xl={2} className="award-col">
+                            <div className="award-block">
                                 <div className="award-logo">
                                     <img src={topDevelopment} alt="Tech Company Of The Year"/>
                                 </div>
@@ -110,6 +121,92 @@ function Home() {
 
             {/* Business partners*/}
             <Partners />
+
+            {/* Services panel */}
+            <div className="services-panel section-padding text-white">
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className="leadtxt">
+                                <h3>We Create New Solutions and Transform
+                                    <br></br>Existing Ones with a Development Process That
+                                    <br></br>Beats Industry-Best Timelines</h3>
+                            </div>
+                            <div className="btn-section">
+                                <a href="/services" className="btn btn-white-border">Our Services <FontAwesomeIcon icon={faChevronRight} /></a>
+                            </div>
+
+                            <div className="services-cards">
+                                <div className="service-card">
+                                    <a href="/services">
+                                        <div className="service-icon">
+                                            <img src={aiml} className="service-img" alt="AI ML" />
+                                        </div>
+                                        <p className="service-text">AI-ML</p>
+                                    </a>
+                                </div>
+                                <div className="service-card">
+                                    <a href="/services">
+                                        <div className="service-icon">
+                                            <img src={mobileApp} className="service-img" alt="Mobile App" />
+                                        </div>
+                                        <p className="service-text">Mobile App<br></br>Development</p>
+                                    </a>
+                                </div>
+                                <div className="service-card">
+                                    <a href="/services">
+                                        <div className="service-icon">
+                                            <img src={softwareDevelopment} className="service-img" alt="Software Development" />
+                                        </div>
+                                        <p className="service-text">Software<br></br>Development</p>
+                                    </a>
+                                </div>
+                                <div className="service-card">
+                                    <a href="/services">
+                                        <div className="service-icon">
+                                            <img src={digitalTransformation} className="service-img" alt="Software Development" />
+                                        </div>
+                                        <p className="service-text">Digital<br></br>Transformation</p>
+                                    </a>
+                                </div>
+                                <div className="service-card">
+                                    <a href="/services">
+                                        <div className="service-icon">
+                                            <img src={dataScience} className="service-img" alt="Software Development" />
+                                        </div>
+                                        <p className="service-text">Data Science<br></br>& Analytics</p>
+                                    </a>
+                                </div>
+                                <div className="service-card">
+                                    <a href="/services">
+                                        <div className="service-icon">
+                                            <img src={cloudServices} className="service-img" alt="Software Development" />
+                                        </div>
+                                        <p className="service-text">Cloud<br></br>Services</p>
+                                    </a>
+                                </div>
+                                <div className="service-card">
+                                    <a href="/services">
+                                        <div className="service-icon">
+                                            <img src={blockChain} className="service-img" alt="Software Development" />
+                                        </div>
+                                        <p className="service-text">Blockchain<br></br>Services</p>
+                                    </a>
+                                </div>
+                                <div className="service-card">
+                                    <a href="/services">
+                                        <div className="service-icon">
+                                            <img src={ideationDesign} className="service-img" alt="Software Development" />
+                                        </div>
+                                        <p className="service-text">Ideation and <br></br>Design Strategy</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
             
         </>
     )
