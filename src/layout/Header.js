@@ -25,6 +25,7 @@ function Header() {
       } else {
         setImage(logo);
         setHeaderbg("transparent text-white");
+        handleResize();
       }
     }
   };
@@ -34,16 +35,32 @@ function Header() {
       setFixed("fixed-top text-white");
       setHeaderbg("transparent text-white");
       setImage(logo);
+      handleResize();
     } else {
       setFixed("sticky-top text-black");
       setHeaderbg("white text-black");
       setImage(logoBlack);
     }
   }
+  const handleResize = () => {
+    if(locationValue[1] === ""){
+      if (window.innerWidth <= 767) {
+        setFixed("sticky-top text-black");
+        setHeaderbg("white text-black");
+        setImage(logoBlack);
+      } else {
+        setFixed("fixed-top text-white");
+        setHeaderbg("transparent text-white");
+        setImage(logo);
+      }
+    }
+    
+  }
 
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
     changeheaderclass();
+    window.addEventListener("resize", handleResize)
     // eslint-disable-next-line
   }, []);
 
