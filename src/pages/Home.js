@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import OwlCarousel from "react-owl-carousel";
 
 import homeBanner from '../images/home-banner.webp';
 import homeVideo from '../images/home-video.mp4';
@@ -37,6 +38,15 @@ import onDemand from '../images/on-demand-indus.svg';
 import socialMedia from '../images/social-networking-indus.svg';
 import logistics from '../images/logistics-indus.svg';
 import edtech from '../images/education-indus.svg';
+
+// Partnership images
+import awsLogo from '../images/aws-partner.svg';
+import mongoDB from '../images/mongodb-partner.svg';
+import googleCloud from '../images/google-cloud-partner.svg';
+import cloudinary from '../images/cloudinary-partner.svg';
+
+// Testimonial images
+import testimonialImg from '../images/Neeraj-Tiwari-pic.webp';
 
 function Home() {
 
@@ -225,6 +235,59 @@ function Home() {
                 </Container>
             </div>
 
+            {/* Testimonial section */}
+            <div className="testimonial-panel section-padding text-white">
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className="leadtxt text-center">
+                                <h3>First-Hand Opinions of Clients on  
+                                    <br></br>Their Partnership Experience
+                                </h3>
+                            </div>
+                            <div className="leadsubtxt text-center">
+                                We are a software and mobile application development company that ensures its expertise extends <br></br>to offer a seamlessly productive and growth-oriented partnership to its clients.
+                            </div>
+                        </Col>  
+                    </Row>
+                </Container>
+
+                <OwlCarousel className="owl-theme client_says" loop stagePadding={250} margin={80} nav={true} dots={false} items={1}>
+                    <div className="item">
+                        <div className="testimonial_box">
+                            <p className="p_text">We approached Appinventiv with a clear vision to build a robust and future-ready platform that could seamlessly integrate with the busy lifestyle of our customers while uplifting their overall experience and giving us a competitive edge. The Appinventiv team not only understood our vision but also enhanced the overall solution with their expertise. The end results exceeded our expectations with massive improvements in the user base and digital revenue for different brands.</p>
+                            <div className="client_bottom">
+                                <div className="client_details">
+                                    <div className="client_img">
+                                        <img src={testimonialImg} alt="Testimonial" />
+                                    </div>
+                                    <div className="client_text">
+                                        <div className="client_name">Neeraj Tiwari</div>
+                                        <div className="client_des">Director - Digital Engineering <br></br> Americana Group (Kuwait Food Co.)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="testimonial_box">
+                            <p className="p_text">We approached Appinventiv with a clear vision to build a robust and future-ready platform that could seamlessly integrate with the busy lifestyle of our customers while uplifting their overall experience and giving us a competitive edge. The Appinventiv team not only understood our vision but also enhanced the overall solution with their expertise. The end results exceeded our expectations with massive improvements in the user base and digital revenue for different brands.</p>
+                            <div className="client_bottom">
+                                <div className="client_details">
+                                    <div className="client_img">
+                                        <img src={testimonialImg} alt="Testimonial" />
+                                    </div>
+                                    <div className="client_text">
+                                        <div className="client_name">Neeraj Tiwari</div>
+                                        <div className="client_des">Director - Digital Engineering <br></br> Americana Group (Kuwait Food Co.)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </OwlCarousel>
+            </div>
+
             {/* Industries panel */}
             <div className="industries-panel section-padding text-white">
                 <Container>
@@ -331,6 +394,35 @@ function Home() {
                                         </figure>
                                         <div className="grid_colm_head">Edtech</div>
                                     </a>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* Partnership section */}
+            <div className="partnership-panel section-padding text-white">
+                <Container>
+                    <Row className="align-items-center">
+                        <Col lg={6}>
+                            <div className="leadtxt">
+                                <h3>Strategic Partnerships to Unlock Greater Business Value</h3>
+                            </div>
+                        </Col>
+                        <Col lg={6}>
+                            <div className="card_grid_panel">
+                                <div className="card_logo">
+                                    <img src={awsLogo} alt="aws" />
+                                </div>
+                                <div className="card_logo">
+                                    <img src={mongoDB} alt="Mongo DB" />
+                                </div>
+                                <div className="card_logo">
+                                    <img src={googleCloud} alt="Google Cloud" />
+                                </div>
+                                <div className="card_logo">
+                                    <img src={cloudinary} alt="Cloudinary" />
                                 </div>
                             </div>
                         </Col>

@@ -24,9 +24,17 @@ h1, h2{
   line-height: 1.2;
   margin-bottom: 50px;
 }
+.leadsubtxt{
+  color: #999;
+  font-size: 20px;
+  line-height: 1.5;
+}
 @media (max-width: 767px) {
   .leadtxt h3{
     font-size: 28px;
+  }
+  .section-padding {
+    padding: 4rem 0;
   }
 }
 
@@ -453,4 +461,121 @@ h1, h2{
   .grid_colm_panel .grid_colm_item:nth-last-child(2) {
     border-bottom: none;
   }
+}
+
+/* Partnership section home */
+.partnership-panel{
+  background: #000 url('./images/awards-BG.webp') no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.card_grid_panel {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 35px;
+  width: max-content;
+  margin: auto;
+}
+.card_logo {
+  background: #171717;
+  border: 1px solid #343434;
+  border-radius: 10px;
+  height: 240px;
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1199px) {
+  .card_logo{
+    height: 200px;
+    width: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .card_grid_panel {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+/* Testimonial Section */
+.testimonial-panel{
+  background: url('./images/testimonial-bg.webp') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.client_says .active .item {
+  opacity: 1;
+}
+
+.client_says .item {
+  opacity: .3;
+  padding-bottom: 10px;
+}
+.testimonial_box {
+  border: 1px solid #3b3b3b;
+  border-radius: 15px;
+  margin-top: 50px;
+  padding: 50px 70px;
+  color: #fff;
+}
+.p_text {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 300;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #3b3b3b;
+}
+.client_details {
+  display: flex;
+  align-items: center;
+}
+.client_says .owl-nav {
+  margin-top: 20px;
+  position: relative;
+}
+.client_says .owl-nav button {
+  border: 1px solid #fff !important;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50% !important;
+  opacity: .6;
+}
+.client_says .owl-nav button:hover {
+  background-color: #116bfb !important;
+  border: 1px solid #116bfb !important;
+  opacity: 1;
+}
+.client_says .owl-nav button span {
+  font-size: 38px;
+  line-height: 38px;
+}
+.client_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.client_text {
+  padding-left: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.client_name {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 600;
+  padding: 25px 0 0;
+}
+.client_des {
+  padding-top: 8px;
+  line-height: 1.4;
+}
+.client_bottom .client_img img {
+  width: 103px;
+  height: 105px;
+  border-radius: 15px;
 }
