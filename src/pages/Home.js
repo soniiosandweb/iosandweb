@@ -46,7 +46,14 @@ import googleCloud from '../images/google-cloud-partner.svg';
 import cloudinary from '../images/cloudinary-partner.svg';
 
 // Testimonial images
-import testimonialImg from '../images/Neeraj-Tiwari-pic.webp';
+import danKurth from '../images/dan-kurth.png';
+import josh from '../images/josh-testimonial.png';
+import geema from '../images/geema-testimonial.png';
+import ericBakey from '../images/eric-bakey.png';
+import paulAzzurro from '../images/Paul-Azzurro.png';
+import kevinTang from '../images/kevin-tang.png';
+import martyJames from '../images/Marty-James.png';
+import robertTa from '../images/Robert-Ta.png';
 
 function Home() {
 
@@ -252,39 +259,174 @@ function Home() {
                     </Row>
                 </Container>
 
-                <OwlCarousel className="owl-theme client_says" loop stagePadding={250} margin={80} nav={true} dots={false} items={1}>
+                <OwlCarousel className="owl-theme client_says" loop margin={80} nav={true} dots={false} items={1} responsive= {
+                {
+                    '0':{
+                        items:1,
+                        stagePadding: 20
+                    },
+                    '600':{
+                        items:1,
+                        stagePadding: 50
+                    },
+                    '1000':{
+                        items:1,
+                        stagePadding: 200
+                    },
+                    '1200':{
+                        items:1,
+                        stagePadding: 250
+                    },
+                    '1400':{
+                        items:1,
+                        stagePadding: 300
+                    },
+                    '1600':{
+                        items:1,
+                        stagePadding: 350
+                    },
+                    '1800':{
+                        items:1,
+                        stagePadding: 400
+                    }
+                }
+                }>
                     <div className="item">
                         <div className="testimonial_box">
-                            <p className="p_text">We approached Appinventiv with a clear vision to build a robust and future-ready platform that could seamlessly integrate with the busy lifestyle of our customers while uplifting their overall experience and giving us a competitive edge. The Appinventiv team not only understood our vision but also enhanced the overall solution with their expertise. The end results exceeded our expectations with massive improvements in the user base and digital revenue for different brands.</p>
+                            <p className="p_text">I have tried several different website developers for our Legacy Alpha site and the service we received from losAndWeb Technology was more specific, accurate and timely than any we have gotten from other service. If you are serious about getting your website done the way you want it, in a direct and timely way, there is no better service available that I have found. I will be recommending him to my business clients.</p>
                             <div className="client_bottom">
                                 <div className="client_details">
                                     <div className="client_img">
-                                        <img src={testimonialImg} alt="Testimonial" />
+                                        <img src={danKurth} alt="Dan Kurth" />
                                     </div>
                                     <div className="client_text">
-                                        <div className="client_name">Neeraj Tiwari</div>
-                                        <div className="client_des">Director - Digital Engineering <br></br> Americana Group (Kuwait Food Co.)</div>
+                                        <div className="client_name">Dan Kurth</div>
+                                        <div className="client_des"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div className="item">
                         <div className="testimonial_box">
-                            <p className="p_text">We approached Appinventiv with a clear vision to build a robust and future-ready platform that could seamlessly integrate with the busy lifestyle of our customers while uplifting their overall experience and giving us a competitive edge. The Appinventiv team not only understood our vision but also enhanced the overall solution with their expertise. The end results exceeded our expectations with massive improvements in the user base and digital revenue for different brands.</p>
+                            <p className="p_text">losAndWeb Technologies is well versed and extremely professional. They are committed to excellence. The company is well spoken, eager to please and super responsive. First class! Highly recommended.</p>
                             <div className="client_bottom">
                                 <div className="client_details">
                                     <div className="client_img">
-                                        <img src={testimonialImg} alt="Testimonial" />
+                                        <img src={josh} alt="Josh" />
                                     </div>
                                     <div className="client_text">
-                                        <div className="client_name">Neeraj Tiwari</div>
-                                        <div className="client_des">Director - Digital Engineering <br></br> Americana Group (Kuwait Food Co.)</div>
+                                        <div className="client_name">Josh</div>
+                                        <div className="client_des"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
+                    <div className="item">
+                        <div className="testimonial_box">
+                            <p className="p_text">Thanks to IosAndWeb team for Swiss Swaps. You guys managed a lot of functions that I thought weren't quite possible. The best thing I liked is that you guys never stopped until I was satisfied with the product.</p>
+                            <div className="client_bottom">
+                                <div className="client_details">
+                                    <div className="client_img">
+                                        <img src={geema} alt="Geema" />
+                                    </div>
+                                    <div className="client_text">
+                                        <div className="client_name">Geema</div>
+                                        <div className="client_des"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="item">
+                        <div className="testimonial_box">
+                            <p className="p_text">Very Happy. Utkarsh also circled back to ensure I was happy with my website and went above and beyond to ensure I knew how to use it. I'm not tech-savvy that's why I hired him. He more than understood that. Even though he was in another country, he ensured he communicated with me quickly and by 7am EST I always had a response to my questions. His design is unique and user-friendly. Absolutely recommended.</p>
+                            <div className="client_bottom">
+                                <div className="client_details">
+                                    <div className="client_img">
+                                        <img src={ericBakey} alt="Eric Bakey" />
+                                    </div>
+                                    <div className="client_text">
+                                        <div className="client_name">Eric Bakey</div>
+                                        <div className="client_des"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="item">
+                        <div className="testimonial_box">
+                            <p className="p_text">Hi Finally I found a web designer who has created me the coolest designed chess site ever love it (chessondemand.com). I have had several developers throughout the years some good most just hold you hostages and never seem to finish what they started. Utkarsh and his team have exceeded my expectations great service honest affordable pricing and their skill level with web design and seo is top notch. I highly recommend them they are the real deal. Thank you</p>
+                            <div className="client_bottom">
+                                <div className="client_details">
+                                    <div className="client_img">
+                                        <img src={paulAzzurro} alt="Paul Azzurro" />
+                                    </div>
+                                    <div className="client_text">
+                                        <div className="client_name">Paul Azzurro</div>
+                                        <div className="client_des"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="item">
+                        <div className="testimonial_box">
+                            <p className="p_text">He was a pleasure to work with! He was accommodating to all changes along the way and did a great job. Will work with him again.</p>
+                            <div className="client_bottom">
+                                <div className="client_details">
+                                    <div className="client_img">
+                                        <img src={kevinTang} alt="Kevin Tang" />
+                                    </div>
+                                    <div className="client_text">
+                                        <div className="client_name">Kevin Tang</div>
+                                        <div className="client_des"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="item">
+                        <div className="testimonial_box">
+                            <p className="p_text">Amazing experience! The team genuinely cares about delivering results and the way of reports like every single link you can check where they promote our website. I have been working with the losandweb team for 1.8 year now. I think my search for SEO is over and I can assure my further work with Utkarsh and his team. Satisfied with the results and professional behavior. I will recommend losandweb team.</p>
+                            <div className="client_bottom">
+                                <div className="client_details">
+                                    <div className="client_img">
+                                        <img src={martyJames} alt="Marty James" />
+                                    </div>
+                                    <div className="client_text">
+                                        <div className="client_name">Marty James</div>
+                                        <div className="client_des"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="item">
+                        <div className="testimonial_box">
+                            <p className="p_text">Yea Good experience. No complains, job done on time. This is by far the best web development team I hired. Thank you for your attitude and commitment.</p>
+                            <div className="client_bottom">
+                                <div className="client_details">
+                                    <div className="client_img">
+                                        <img src={robertTa} alt="Robert Ta." />
+                                    </div>
+                                    <div className="client_text">
+                                        <div className="client_name">Robert Ta.</div>
+                                        <div className="client_des"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </OwlCarousel>
             </div>
 
