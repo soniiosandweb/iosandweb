@@ -152,9 +152,6 @@ function Home() {
                 </Container>
             </div>
 
-            {/* Business partners*/}
-            <Partners />
-
             {/* Services panel */}
             <div className="services-panel section-padding text-white">
                 <Container>
@@ -241,6 +238,9 @@ function Home() {
                     </Row>
                 </Container>
             </div>
+
+            {/* Business partners*/}
+            <Partners />
 
             {/* Testimonial section */}
             <div className="testimonial-panel section-padding text-white">

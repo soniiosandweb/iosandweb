@@ -585,3 +585,45 @@ h1, h2{
     padding: 30px;
   }
 }
+
+/* Footer Top */
+.footer-top{
+  background: url('./images/footer-hq-bg.webp') no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top: 6px solid #1163fb;
+  position: relative;
+}
+.footer-logo{
+  max-width: 200px;
+}
+.location-image {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 25px;
+}
+.location-div {
+  text-align: center;
+  opacity: .6;
+}
+.location-heading {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  padding: 15px 0 10px;
+}
+.location-text {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  display: inline-block;
+  padding-top: 10px;
+}
+.location-div:hover {
+  opacity: 1;
+}
+
+.footer-section{
+  background: #1d1d25;
+  position: relative;
+}
