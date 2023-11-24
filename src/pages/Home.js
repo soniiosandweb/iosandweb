@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import OwlCarousel from "react-owl-carousel";
+import { Accordion } from "react-bootstrap";
 
 import homeBanner from '../images/home-banner.webp';
 import homeVideo from '../images/home-video.mp4';
@@ -69,8 +70,8 @@ function Home() {
                                 <p className="banner-text">We offer complete business software development solutions.<br></br>We combine this culture of innovation with our capabilities and industry expertise to go beyond the other traditional technology.</p>
                                 <a href="/about" className="consult-expert-btn">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
                             </div>
-                            <video className="intro_video" poster={homeBanner} autoPlay={true} muted={true} loop={true}> 
-                                <source src={homeVideo} type="video/mp4"></source> 
+                            <video className="intro_video" poster={homeBanner} autoPlay={true} muted={true} loop={true}>
+                                <source src={homeVideo} type="video/mp4"></source>
                             </video>
                         </Col>
                     </Row>
@@ -85,7 +86,7 @@ function Home() {
                         <Col md={6} lg={4} xl={2} className="award-col">
                             <div className="award-block">
                                 <div className="award-logo">
-                                    <img src={goodFirmLogo} alt="App development"/>
+                                    <img src={goodFirmLogo} alt="App development" />
                                 </div>
                                 <div className="award-text">
                                     <span>App development company of the year</span>
@@ -96,7 +97,7 @@ function Home() {
                         <Col md={6} lg={4} xl={2} className="award-col">
                             <div className="award-block">
                                 <div className="award-logo">
-                                    <img src={appFutura} alt="App solution"/>
+                                    <img src={appFutura} alt="App solution" />
                                 </div>
                                 <div className="award-text">
                                     <span>Most promising mobile app solution provider</span>
@@ -107,7 +108,7 @@ function Home() {
                         <Col md={6} lg={4} xl={2} className="award-col">
                             <div className="award-block">
                                 <div className="award-logo">
-                                    <img src={itFirms} alt="India's Growth Champions"/>
+                                    <img src={itFirms} alt="India's Growth Champions" />
                                 </div>
                                 <div className="award-text">
                                     <span>India's Growth Champions in IT</span>
@@ -118,7 +119,7 @@ function Home() {
                         <Col md={6} lg={4} xl={2} className="award-col">
                             <div className="award-block">
                                 <div className="award-logo">
-                                    <img src={upWork} alt="India's Growth Champions"/>
+                                    <img src={upWork} alt="India's Growth Champions" />
                                 </div>
                                 <div className="award-text">
                                     <span>Software development company of the year</span>
@@ -129,7 +130,7 @@ function Home() {
                         <Col md={6} lg={4} xl={2} className="award-col">
                             <div className="award-block">
                                 <div className="award-logo">
-                                    <img src={itFirms} alt="India's Growth Champions"/>
+                                    <img src={itFirms} alt="India's Growth Champions" />
                                 </div>
                                 <div className="award-text">
                                     <span>India's Growth Champions in IT</span>
@@ -140,7 +141,7 @@ function Home() {
                         <Col md={6} lg={4} xl={2} className="award-col">
                             <div className="award-block">
                                 <div className="award-logo">
-                                    <img src={topDevelopment} alt="Tech Company Of The Year"/>
+                                    <img src={topDevelopment} alt="Tech Company Of The Year" />
                                 </div>
                                 <div className="award-text">
                                     <span>Tech Company Of The Year</span>
@@ -151,6 +152,9 @@ function Home() {
                     </Row>
                 </Container>
             </div>
+
+            {/* Business partners*/}
+            <Partners />
 
             {/* Services panel */}
             <div className="services-panel section-padding text-white">
@@ -239,57 +243,54 @@ function Home() {
                 </Container>
             </div>
 
-            {/* Business partners*/}
-            <Partners />
-
             {/* Testimonial section */}
             <div className="testimonial-panel section-padding text-white">
                 <Container>
                     <Row>
                         <Col>
                             <div className="leadtxt text-center">
-                                <h3>First-Hand Opinions of Clients on  
+                                <h3>First-Hand Opinions of Clients on
                                     <br></br>Their Partnership Experience
                                 </h3>
                             </div>
                             <div className="leadsubtxt text-center">
                                 We are a software and mobile application development company that ensures its expertise extends <br></br>to offer a seamlessly productive and growth-oriented partnership to its clients.
                             </div>
-                        </Col>  
+                        </Col>
                     </Row>
                 </Container>
 
-                <OwlCarousel className="owl-theme client_says" loop margin={80} nav={true} dots={false} items={1} responsive= {
-                {
-                    '0':{
-                        items:1,
-                        stagePadding: 20
-                    },
-                    '600':{
-                        items:1,
-                        stagePadding: 50
-                    },
-                    '1000':{
-                        items:1,
-                        stagePadding: 200
-                    },
-                    '1200':{
-                        items:1,
-                        stagePadding: 250
-                    },
-                    '1400':{
-                        items:1,
-                        stagePadding: 300
-                    },
-                    '1600':{
-                        items:1,
-                        stagePadding: 350
-                    },
-                    '1800':{
-                        items:1,
-                        stagePadding: 400
+                <OwlCarousel className="owl-theme client_says" loop margin={80} nav={true} dots={false} items={1} responsive={
+                    {
+                        '0': {
+                            items: 1,
+                            stagePadding: 20
+                        },
+                        '600': {
+                            items: 1,
+                            stagePadding: 50
+                        },
+                        '1000': {
+                            items: 1,
+                            stagePadding: 200
+                        },
+                        '1200': {
+                            items: 1,
+                            stagePadding: 250
+                        },
+                        '1400': {
+                            items: 1,
+                            stagePadding: 300
+                        },
+                        '1600': {
+                            items: 1,
+                            stagePadding: 350
+                        },
+                        '1800': {
+                            items: 1,
+                            stagePadding: 400
+                        }
                     }
-                }
                 }>
                     <div className="item">
                         <div className="testimonial_box">
@@ -324,7 +325,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    
+
                     <div className="item">
                         <div className="testimonial_box">
                             <p className="p_text">Thanks to IosAndWeb team for Swiss Swaps. You guys managed a lot of functions that I thought weren't quite possible. The best thing I liked is that you guys never stopped until I was satisfied with the product.</p>
@@ -436,7 +437,7 @@ function Home() {
                     <Row>
                         <Col>
                             <div className="leadtxt text-center">
-                                <h3>A Unified Vision That Caters 
+                                <h3>A Unified Vision That Caters
                                     <br></br>to Diverse Industry Demands
                                 </h3>
                             </div>
@@ -567,6 +568,91 @@ function Home() {
                                     <img src={cloudinary} alt="Cloudinary" />
                                 </div>
                             </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* FAQ section */}
+            <div className="faq-panel section-padding">
+                <Container>
+                    <Row>
+                        <Col md={12}>
+                            <div className="leadtxt text-center">
+                                <h3>Frequently Asked Questions</h3>
+                            </div>
+                            <Accordion>
+                                <div className="faq_col_panel">
+                                    <Accordion.Item eventKey="1">
+                                        <Accordion.Header>What mobile app development services do you offer? </Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>As a leading mobile application development company, we offer a comprehensive array of services, including:</p>
+                                            <ul>
+                                                <li>iOS App Development</li>
+                                                <li>Android App Development</li>
+                                                <li>Flutter App Development</li>
+                                                <li>React Native App Development</li>
+                                                <li>Web App Development</li>
+                                            </ul>
+                                            <p>Our client-centric approach allows us to assist our clients all the way from the initial idea validation to execution and post maintenance. This involves rigorous planning, design, development, testing, and deployment, ensuring that the mobile app is not only technologically robust but also aligns with the client's business vision and user expectations.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="2">
+                                        <Accordion.Header>Do you develop software for both mobile and web platforms?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>As a dedicated software and mobile application developer company, our expertise encompasses across all platforms. Be it native, hybrid, or web, we cater to all your development needs.</p>
+                                            <p>Our agile development approach is highly adaptable and tailored to your business goals and target audience. Whether you operate in healthcare, finance, eCommerce, or any other industry, we have the skill to create custom software that delivers exceptional value to your organization.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="3">
+                                        <Accordion.Header>Do you offer app maintenance and support services?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Yes, we offer comprehensive maintenance and support services tailored to meet your business requirements. Being one of the best mobile app development agencies, our approach is centered around helping you choose the maintenance strategy that best aligns with your needs, ensuring the seamless operation of your software applications.</p>
+                                            <p>Our app maintenance services encompass a wide range of offerings, including:</p>
+                                            <ul>
+                                                <li>Software upgrades as per emerging technologies</li>
+                                                <li>Automated backups</li>
+                                                <li>Issue management and response</li>
+                                                <li>Ongoing support and bug fixes</li>
+                                                <li>Regular performance and security enhancements</li>
+                                                <li>Version upgrades</li>
+                                                <li>Comprehensive user support</li>
+                                                <li>Performance monitoring</li>
+                                            </ul>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </div>
+                               
+                                <div className="faq_col_panel">
+                                    <Accordion.Item eventKey="4">
+                                        <Accordion.Header>What software development services do you offer?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>With a dedicated team of software developers and a track record of more than 3000 successful project deliveries, we are a leading mobile application developer company with the expertise and experience to cater to your unique software needs. Our comprehensive suite of software development services encompasses:</p>
+                                            <ul>
+                                                <li>Software Consulting</li>
+                                                <li>Custom Software Development</li>
+                                                <li>Enterprise Software Development</li>
+                                                <li>Software Product Development</li>
+                                                <li>Software Integration</li>
+                                                <li>Custom CRM Development</li>
+                                                <li>API Development</li>
+                                                <li>ERP Software Development</li>
+                                            </ul>
+                                            <p>Our development approach is based on comprehending your specific business requirements, carefully crafting the most effective development plan, delivering results-oriented recommendations, and ensuring that your business objectives are met with utmost precaution.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="5">
+                                        <Accordion.Header>How do you ensure the security and quality of the software you develop?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>As the best software and mobile application development agency, we hold security and software quality in the highest regard. We begin the project by signing a Non-Disclosure Agreement (NDA) to safeguard your information. This legally binding document emphasizes our commitment to maintaining the confidentiality of your sensitive data and establishing a secure and trustworthy partnership.</p>
+                                            <p>Paying utmost importance to mobile app security, we align our development processes with industry-specific compliance standards, including GDPR, HIPAA, PCI DSS, etc. These serve as guiding frameworks for development, ensuring that our software not only meets your business objectives but also adheres to the highest levels of security and quality.</p>
+                                            <p>Furthermore, quality assurance is one of the vital pillars of our development process. We adhere to industry best practices and stringent testing protocols to guarantee the utmost quality of your software. Our comprehensive testing techniques encompass functional, performance, user, and security testing, which are vital in identifying and mitigating potential vulnerabilities or risks.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </div>
+                            </Accordion>
                         </Col>
                     </Row>
                 </Container>

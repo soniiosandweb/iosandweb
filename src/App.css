@@ -627,3 +627,55 @@ h1, h2{
   background: #1d1d25;
   position: relative;
 }
+
+/* faq panel home */
+.accordion {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  padding: 2rem 0 0;
+}
+.accordion-item {
+  margin-bottom: 25px;
+  padding: 20px 40px;
+  background: #f1f2fd;
+  border-radius: 20px !IMPORTANT;
+  border: none;
+}
+.accordion-item .accordion-button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 20px 0px 25px 0;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+  background: transparent !important;
+  border-radius: unset !important;
+  box-shadow: unset !important;
+}
+.accordion-item .accordion-button:hover {
+  color: #1367fb;
+}
+.accordion-item .accordion-button:focus,
+.accordion-item .accordion-button:focus-visible{
+  outline: none !important;
+  box-shadow: unset !important;
+}
+.accordion-body {
+  padding: 0 20px 0 0;
+}
+.accordion-body ul {
+  padding-left: 18px;
+}
+.accordion-body ul li {
+  padding-bottom: 5px;
+}
+@media (max-width: 767px) {
+  .accordion {
+    grid-template-columns: repeat(1,1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+}
