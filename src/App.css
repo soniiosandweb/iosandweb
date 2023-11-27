@@ -141,6 +141,21 @@ h1, h2{
       opacity: 0;
   }
 }
+@media (max-width: 991px) {
+  .navbar-collapse{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 80px;
+    background-color: #fff;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .header{
+    position: relative;
+  }
+}
 
 /* home page */
 .home-banner {
@@ -704,6 +719,10 @@ h1, h2{
   color: #fff !important;
   position: relative;
   text-decoration: none;
+  transition: padding .3s;
+}
+.footer-col-list li a:hover{
+  padding-left: 5px;
 }
 @media (max-width: 991px) {
   .footer-col-head{
@@ -715,6 +734,11 @@ h1, h2{
     font-size: 20px;
     padding-bottom: 10px;
     margin: 10px 0 0;
+    text-align: center;
+  }
+  .footer-col,
+  .footer-col-list {
+    text-align: center;
   }
 }
 /* footer bottom */

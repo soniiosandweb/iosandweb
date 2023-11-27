@@ -44,7 +44,7 @@ function Header() {
   }
   const handleResize = () => {
     if(locationValue[1] === ""){
-      if (window.innerWidth <= 767) {
+      if (window.innerWidth <= 991) {
         setFixed("sticky-top text-black");
         setHeaderbg("white text-black");
         setImage(logoBlack);
