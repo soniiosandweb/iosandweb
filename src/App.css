@@ -941,3 +941,12 @@ h1, h2{
     margin-bottom: 40px;
   }
 }
+
+/* Work life section about */
+.its-best-wrap {
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}

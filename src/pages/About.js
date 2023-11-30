@@ -6,6 +6,9 @@ import teamImage1 from '../images/team-galler1.jpg';
 import teamImage2 from '../images/team-galler2.jpg';
 import teamImage3 from '../images/team-galler3.jpg';
 
+// work life images
+import learningDev from '../images/learning-dev.jpg';
+
 function About(){
     return(
         <>
@@ -43,6 +46,25 @@ function About(){
                         <Col md={7}>
                             <div className="about-content">
                                 <p>With our focus, dedication, and communication, we became an award-winning organization. We believe to deliver the best services in developing, designing and improving your digital intellectual properties. We believe in organic communication and coordination, not just between our team but also with our clients in every manner. This helps us to understand clients’ requirements and their problems and allows us to give our best to the clients as well as their customers.</p>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* Work life section */}
+            <div className="work-life-section section-padding">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2 text-center">Work Life <br></br>At Its <span>Best</span></h2>
+                            <div className="its-best-wrap">
+                                <div className="its-best">
+                                    <div className="its-best-inner">
+                                        <img src={learningDev} alt="Learning" />
+                                        <p>Learning <br></br>& Development</p>
+                                    </div>
+                                </div>
                             </div>
                         </Col>
                     </Row>
