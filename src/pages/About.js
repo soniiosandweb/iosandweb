@@ -8,6 +8,13 @@ import teamImage3 from '../images/team-galler3.jpg';
 
 // work life images
 import learningDev from '../images/learning-dev.jpg';
+import mindful from '../images/Mindful-Personal-Guidance.jpg';
+import constructiveFeedback from '../images/Constructive-Feedback.jpg';
+import inclusive from '../images/Inclusive-Open-Culture.jpg';
+import innovation from '../images/Innovation-Quality-First.jpg';
+import proactive from '../images/Proactive-Implementation.jpg';
+import bestGlobal from '../images/Best-Global-Opportunities.jpg';
+import workLatest from '../images/Work-with-Latest-Technology.jpg';
 
 function About(){
     return(
@@ -61,10 +68,60 @@ function About(){
                             <div className="its-best-wrap">
                                 <div className="its-best">
                                     <div className="its-best-inner">
-                                        <img src={learningDev} alt="Learning" />
-                                        <p>Learning <br></br>& Development</p>
+                                        <figure><img src={learningDev} alt="Learning" /></figure>
+                                        <span>Learning <br></br>& Development</span>
                                     </div>
                                 </div>
+
+                                <div className="its-best">
+                                    <div className="its-best-inner">
+                                        <figure><img src={mindful} alt="Mindful" /></figure>
+                                        <span>Mindful <br></br>Personal Guidance</span>
+                                    </div>
+                                </div>
+
+                                <div className="its-best">
+                                    <div className="its-best-inner">
+                                        <figure><img src={constructiveFeedback} alt="Constructive" /></figure>
+                                        <span>Constructive <br></br>Feedback</span>
+                                    </div>
+                                </div>
+
+                                <div className="its-best">
+                                    <div className="its-best-inner">
+                                        <figure><img src={inclusive} alt="Inclusive" /></figure>
+                                        <span>Inclusive <br></br>& Open-Culture</span>
+                                    </div>
+                                </div>
+
+                                <div className="its-best">
+                                    <div className="its-best-inner">
+                                        <figure><img src={innovation} alt="Innovation" /></figure>
+                                        <span>Innovation <br></br>& Quality First</span>
+                                    </div>
+                                </div>
+
+                                <div className="its-best">
+                                    <div className="its-best-inner">
+                                        <figure><img src={proactive} alt="Proactive" /></figure>
+                                        <span>Proactive <br></br>Implementation</span>
+                                    </div>
+                                </div>
+
+                                <div className="its-best">
+                                    <div className="its-best-inner">
+                                        <figure><img src={bestGlobal} alt="Best & Global" /></figure>
+                                        <span>Best & Global <br></br>Opportunities</span>
+                                    </div>
+                                </div>
+
+                                <div className="its-best">
+                                    <div className="its-best-inner">
+                                        <figure><img src={workLatest} alt="Work with" /></figure>
+                                        <span>Work with <br></br>Latest Technology</span>
+                                    </div>
+                                </div>
+
                             </div>
                         </Col>
                     </Row>
