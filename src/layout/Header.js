@@ -7,6 +7,7 @@ import logo from '../images/IAW-logo-white.png';
 import logoBlack from '../images/IAW-black-logo.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faClose } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
 
@@ -70,7 +71,12 @@ function Header() {
         <Navbar.Brand href="/">
           <img src={image} alt="IosAndWeb logo" className="responsive logo" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav"><FontAwesomeIcon icon={faBars} /></Navbar.Toggle>
+
+        <Navbar.Toggle aria-controls="responsive-navbar-nav">
+          <FontAwesomeIcon icon={faBars} className="bars-icon" />
+          <FontAwesomeIcon icon={faClose} className="close-icon" />
+        </Navbar.Toggle>
+
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
           <Nav className="align-items-center">
             <Nav.Link href="/about" className={locationValue[1] === "about" ? "active" : ""}>About</Nav.Link>
@@ -80,6 +86,7 @@ function Header() {
             <Nav.Link href="/contact" className={locationValue[1] === "contact" ? "btn active" : "btn"}>Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
+
       </Container>
     </Navbar>
   );
