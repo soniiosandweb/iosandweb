@@ -38,7 +38,6 @@ function Contact(){
                                     <Form.Group className="form-group form-submit-group">
                                         <Button type="submit" className="form-submit-btn btn">Send</Button>
                                     </Form.Group>
-                                    
                                 </Form>
                             </div>
                         </Col>
