@@ -1259,3 +1259,14 @@ h1, h2{
     top: auto;
   }
 }
+
+/* contact page */
+.contact-banner{
+  background-image: url('./images/Contact-Us-banner.jpg');
+  background-size: cover;
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+.contact-banner .consult-expert-btn {
+  margin-top: 20px;
+}
