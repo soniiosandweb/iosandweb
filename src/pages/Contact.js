@@ -9,6 +9,7 @@ import PhoneInput from "react-phone-number-input";
 // location images
 import locIndia from '../images/cont-loc-india.svg';
 import locUK from '../images/cont-loc-uk.svg';
+import contactImage from '../images/contact-footer.avif';
 
 function Contact(){
 
@@ -109,6 +110,25 @@ function Contact(){
                             <h2 className="heading2 text-center">Claim Your Free 20-Minute Strategy Session</h2>
                             <div className="heading5 text-center">It's Quick and Easy! FREE Spots Are Almost Gone For November. Book Now!</div>
                             <iframe src="https://calendly.com/iosandweb/free-consultation?embed_domain=iosandweb.net&embed_type=Inline&month=2022-11" width="100%" height="100%" title="Select a Date & Time - Calendly" data-origwidth="100%" data-origheight="100%" className="session-iframe"></iframe>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            <div className="contact-footer section-padding">
+                <div className="background_bg"></div>
+                <Container>
+                    <Row>
+                        <Col className="contact-footer-div">
+                            <div className="contact-footer-flex contact-left-col">
+                                <h2 className="heading2">Enable Unmatched Digital Transformation Seamlessly</h2>
+                                <div className="apply-btn btn-section">
+                                    <a href="/contact" className="btn btn-blue">Talk to Our Experts</a>
+                                </div>
+                            </div>
+                            <div className="contact-footer-flex contact-right-col">
+                                <img src={contactImage} alt="Contact Us" className="footer-contact-image" />
+                            </div>
                         </Col>
                     </Row>
                 </Container>
