@@ -75,6 +75,7 @@ function Contact(){
                                 <br></br>Near Devaji Plaza, VIP Road,
                                 <br></br>Zirakpur, PB (India)</p>
                                 <p className="paragraph">
+                                    <a href="mailto:info@iosandweb.net" className="contact-link">info@iosandweb.net</a>
                                     <a href="tel:+91-99882 23680" className="contact-link">+91-99882 23680 </a>
                                     <a href="tel:+91-99158 41204" className="contact-link">+91-99158 41204</a>
                                 </p>
