@@ -72,6 +72,8 @@ function Header() {
           <img src={image} alt="IosAndWeb logo" className="responsive logo" />
         </Navbar.Brand>
 
+
+
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
           <FontAwesomeIcon icon={faBars} className="bars-icon" />
           <FontAwesomeIcon icon={faClose} className="close-icon" />

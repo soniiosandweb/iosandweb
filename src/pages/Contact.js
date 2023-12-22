@@ -1,45 +1,114 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
+import 'react-phone-number-input/style.css';
+import PhoneInput from "react-phone-number-input";
+
+// location images
+import locIndia from '../images/cont-loc-india.svg';
+import locUK from '../images/cont-loc-uk.svg';
+
 function Contact(){
+
+    const [phoneValue, setPhoneValue] = useState();
+
     return(
         <>
             <div className="contact-banner banner-padding text-white">
                 <Container>
-                    <Row>
-                        <Col md={7}>
+                    <Row className="align-items-center">
+                        <Col lg={7}>
                             <div className="heading-wrapper">
                                 <h1>We Are Here To Help You!</h1>
                                 <div className="heading5">Discover A Bespoke, IosAndWeb Technologies an honest & results-driven web-mobile development and digital marketing agency. We deliver a personal, passionate & tailored web development and digital marketing service to each and every one of our clients.</div>
                                 <a href="/" className="consult-expert-btn">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
                             </div>
                         </Col>
-                        <Col md={5}>
+                        <Col lg={5}>
                             <div className="contact-form">
-                                <Form className="contactForm" method="post">
+                                <Form className="contactForm">
                                     <Form.Group controlId="yourName" className="form-group">
-                                        <Form.Label>Name</Form.Label>
-                                        <Form.Control type="text" placeholder="Name" />
+                                        {/* <Form.Label>Name</Form.Label> */}
+                                        <Form.Control type="text" placeholder="Name" required />
                                     </Form.Group>
                                     <Form.Group controlId="emailAddress" className="form-group">
-                                        <Form.Label>Email Address</Form.Label>
-                                        <Form.Control type="email" placeholder="Email Address" />
+                                        <Form.Control type="email" placeholder="Email Address" required />
                                     </Form.Group>
                                     <Form.Group controlId="phoneNumber" className="form-group">
-                                        <Form.Label>Phone Number</Form.Label>
-                                        <Form.Control type="text" placeholder="Phone Number" />
+                                        <PhoneInput 
+                                        placeholder="Phone Number" 
+                                        international 
+                                        defaultCountry="IN" 
+                                        value={phoneValue} 
+                                        onChange={setPhoneValue}
+                                        className="form-control"/>
                                     </Form.Group>
                                     <Form.Group controlId="yourMessage" className="form-group">
-                                        <Form.Label>Message or Questions</Form.Label>
-                                        <Form.Control as="textarea" placeholder="Message or Questions" />
+                                        <Form.Control as="textarea" rows={4} placeholder="Message or Questions" />
                                     </Form.Group>
                                     <Form.Group className="form-group form-submit-group">
-                                        <Button type="submit" className="form-submit-btn btn">Send</Button>
+                                        <Button type="submit" className="form-submit-btn">Send</Button>
                                     </Form.Group>
                                 </Form>
                             </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            <div className="contact-address-section section-padding">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2 text-center">IosAndWeb Technologies around the Globe</h2>
+                        </Col>
+                    </Row>
+                    <Row className="justify-content-center">
+                        <Col md={6} lg={4}>
+                            <div className="location-contact-div text-center">
+                                <img src={locIndia} className="location-img" alt="India" />
+                                <div className="heading5">India (HQ)</div>
+                                <p className="paragraph">SCO 30, First Floor,
+                                <br></br>Near Devaji Plaza, VIP Road,
+                                <br></br>Zirakpur, PB (India)</p>
+                                <p className="paragraph">
+                                    <a href="tel:+91-99882 23680" className="contact-link">+91-99882 23680 </a>
+                                    <a href="tel:+91-99158 41204" className="contact-link">+91-99158 41204</a>
+                                </p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4}>
+                            <div className="location-contact-div text-center">
+                                <img src={locUK} className="location-img" alt="United Kingdom" />
+                                <div className="heading5">United Kingdom</div>
+                                <p className="paragraph">Sheffield City Centre,
+                                <br></br>Sheffield, S1 1AA,
+                                <br></br>United Kingdom</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4}>
+                            <div className="location-contact-div text-center">
+                                <img src={locUK} className="location-img" alt="United Kingdom" />
+                                <div className="heading5">United Kingdom</div>
+                                <p className="paragraph">High St. Selly Oak,
+                                <br></br>Birmingham B29 7TJ,
+                                <br></br>United Kingdom</p>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+
+            </div>
+
+            <div className="strategy-session section-padding">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2 text-center">Claim Your Free 20-Minute Strategy Session</h2>
+                            <div className="heading5 text-center">It's Quick and Easy! FREE Spots Are Almost Gone For November. Book Now!</div>
+                            <iframe src="https://calendly.com/iosandweb/free-consultation?embed_domain=iosandweb.net&embed_type=Inline&month=2022-11" width="100%" height="100%" title="Select a Date & Time - Calendly" data-origwidth="100%" data-origheight="100%" className="session-iframe"></iframe>
                         </Col>
                     </Row>
                 </Container>

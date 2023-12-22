@@ -1270,3 +1270,67 @@ h1, h2{
 .contact-banner .consult-expert-btn {
   margin-top: 20px;
 }
+.contact-form {
+  padding: 30px;
+  border-radius: 20px;
+  background: #fff;
+  color: #000;
+}
+.contact-form .form-group {
+  padding-bottom: 10px;
+}
+.contact-form .form-group .form-control {
+  padding: 0.8rem;
+  border: none;
+  border-bottom: 1px solid #797d7e;
+  border-radius: unset;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.contact-form .form-group.form-submit-group {
+  padding: 10px 0;
+}
+.form-submit-btn {
+  color: #fff;
+  background: #1050bc;
+  padding: 15px 40px;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.location-contact-div {
+  margin: 5rem 0 2rem;
+}
+.location-contact-div .location-img {
+  height: 80px;
+}
+.location-contact-div .heading5 {
+  font-size: 24px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.contact-link {
+  display: block;
+  text-decoration: none;
+}
+.contact-form .form-group .form-control.PhoneInput .PhoneInputInput {
+  border: none !important;
+  outline: none !important;
+}
+@media (max-width: 991px) {
+  .contact-form {
+    margin-top: 50px;
+  }
+}
+/* contact strategy session */
+.strategy-session {
+  background: #f1f2fd;
+}
+.session-iframe{
+  height: 750px;
+}
+@media (max-width: 1199px) {
+  .session-iframe {
+    height: 1200px;
+  }
+}
