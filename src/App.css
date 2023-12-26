@@ -1475,7 +1475,7 @@ h1, h2{
 
 /* Blog detail page */
 .blog-detail-page {
-  padding: 6rem 0;
+  padding: 8rem 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1511,4 +1511,12 @@ h1, h2{
 }
 .blog-details-content-div blockquote p{
   margin: 0;
+}
+@media (max-width: 767px) {
+  .blog-detail-page h1{
+    font-size: 34px;
+  }
+  .blog-detail-page{
+    padding: 4rem 0;
+  }
 }
