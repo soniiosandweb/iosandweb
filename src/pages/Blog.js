@@ -7,6 +7,8 @@ import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons
 import { useEffect, useState } from "react";
 import axios from 'axios';
 
+import blogImage from '../images/blog-banner.png';
+
 function Blog(){
 
     const [data, setData] = useState([])
@@ -32,15 +34,24 @@ function Blog(){
 
     return(
         <>
-            <div className="blog-page section-padding">
+            <div className="blog-banner banner-padding text-white">
                 <Container>
-                    <Row>
-                        <Col>
-                            <h2 className="heading2 text-center">Knowledge-Hub</h2>
+                    <Row className="align-items-center">
+                        <Col lg={7}>
+                            <div className="heading-wrapper">
+                                <h1>We Love To Make Websites That Make A Difference</h1>
+                                <div className="heading5">Explore Why Choose IosAndWeb Technologies To Transform Your Business Ideas Into Reality</div>
+                            </div>
+                        </Col>
+                        <Col lg={5}>
+                            <img src={blogImage} className="responsive-img" alt="Portfolio" />
                         </Col>
                     </Row>
+                </Container>
+            </div>
+            <div className="blog-page section-padding">
+                <Container>
                     <Row className="blogs-list">
-
                         {filterData && filterData.map((item, index) => 
                             <Col md={6} lg={4} className="blog-col" key={item.id}>
                                 <div className="blog-list-item">
