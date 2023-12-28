@@ -49,6 +49,9 @@ function Blog(){
                     </Row>
                 </Container>
             </div>
+
+            {/* blog list section */}
+            
             <div className="blog-page section-padding">
                 <Container>
                     <Row className="blogs-list">

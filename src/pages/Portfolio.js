@@ -49,6 +49,8 @@ function Portfolio(){
                 </Container>
             </div>
 
+            {/* portfolio list section */}
+
             <div className="portfolio-page section-padding">
                 <Container>
                     <Row className="portfolio-list">

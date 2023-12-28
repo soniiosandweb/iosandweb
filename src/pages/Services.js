@@ -30,6 +30,8 @@ function Services(){
                     </Row>
                 </Container>
             </div>
+
+            {/* what we do section */}
             <div className="services-what-we-do section-padding">
                 <Container>
                     <Row>

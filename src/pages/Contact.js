@@ -59,6 +59,8 @@ function Contact(){
                 </Container>
             </div>
 
+            {/* address section */}
+
             <div className="contact-address-section section-padding">
                 <Container>
                     <Row>
@@ -104,6 +106,8 @@ function Contact(){
 
             </div>
 
+            {/* strategy session section */}
+
             <div className="strategy-session section-padding">
                 <Container>
                     <Row>
@@ -115,6 +119,8 @@ function Contact(){
                     </Row>
                 </Container>
             </div>
+
+            {/* footer banner section */}
 
             <div className="contact-footer section-padding">
                 <div className="background_bg"></div>
