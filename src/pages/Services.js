@@ -119,7 +119,7 @@ function Services(){
                             <div className="heading5 text-center">We follow an intense procedure, focussing on your business goals, to develop your web presence.</div>
                         </Col>
                     </Row>
-                    <Row className="align-item-center">
+                    <Row className="align-items-center we-design-rows">
                         <Col md={6}>
                             <ul className="services-design-items">
                                 <li>

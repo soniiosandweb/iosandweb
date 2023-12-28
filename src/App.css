@@ -1669,6 +1669,10 @@ h1, h2{
 .services-we-design{
   background: #000;
 }
+.we-design-rows{
+  max-width: 80%;
+  margin: auto;
+}
 .services-icons-list {
   list-style: none;
   padding: 0;
@@ -1676,7 +1680,31 @@ h1, h2{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin: 0;
 }
 .services-icons-list li {
   flex: 1 0 33.33%;
+  text-align: center;
+  padding: 30px 15px;
+  transition: .5s;
+}
+.services-icons-list li .icon-image {
+  width: 80px;
+}
+.services-design-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.services-design-items li {
+  padding: 20px 15px;
+  border-bottom: 1px solid #353535;
+  background-color: transparent!important;
+  display: flex;
+  align-items: center;
+}
+.services-design-items li svg {
+  font-size: 35px;
+  color: #1050bc;
+  margin-right: 20px;
 }
