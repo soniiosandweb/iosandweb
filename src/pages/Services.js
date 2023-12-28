@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
+// what we do images
 import serviceImage from '../images/services-image.png';
 import webDevelop from '../images/services/settings.png';
 import mobileDevelop from '../images/services/development.png';
@@ -10,6 +11,16 @@ import magentoDevelop from '../images/services/magento_development.png';
 import blockchainDevelop from '../images/services/blockchain-development.png';
 import smartContract from '../images/services/smart-contract.png';
 import poc from '../images/services/letter.png';
+
+// we design images
+import { faDesktop, faPaintBrush } from "@fortawesome/free-solid-svg-icons";
+import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
+import html from '../images/services/html.png';
+import psd from '../images/services/xd.png';
+import UX from '../images/services/ux.png';
+import css from '../images/services/css.png';
+import php from '../images/services/php.png';
+import afterEffect from '../images/services/after-effects.png';
 
 function Services(){
     return(
@@ -94,6 +105,58 @@ function Services(){
                                     <p className="paragraph">By means of smart concepts and data management tools, we assist businesses in creating Point of Contact services and also our expert team helps businesses develop ICO.</p>
                                 </div>
                             </a>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* we design section */}
+            <div className="services-we-design section-padding text-white">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2 text-center">We Design</h2>
+                            <div className="heading5 text-center">We follow an intense procedure, focussing on your business goals, to develop your web presence.</div>
+                        </Col>
+                    </Row>
+                    <Row className="align-item-center">
+                        <Col md={6}>
+                            <ul className="services-design-items">
+                                <li>
+                                    <FontAwesomeIcon icon={faDesktop} />
+                                    <span>Web Design</span>
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon icon={faPaintBrush} />
+                                    <span>Graphic Design</span>
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon icon={faHtml5} />
+                                    <span>Pdf To HTML</span>
+                                </li>
+                            </ul>
+                        </Col>
+                        <Col md={6}>
+                            <ul className="services-icons-list">
+                                <li>
+                                    <img src={html} className="icon-image" alt="HTML" />
+                                </li>
+                                <li>
+                                    <img src={css} className="icon-image" alt="CSS" />
+                                </li>
+                                <li>
+                                    <img src={psd} className="icon-image" alt="XD" />
+                                </li>
+                                <li>
+                                    <img src={afterEffect} className="icon-image" alt="After Effect" />
+                                </li>
+                                <li>
+                                    <img src={php} className="icon-image" alt="PHP" />
+                                </li>
+                                <li>
+                                    <img src={UX} className="icon-image" alt="UX" />
+                                </li>
+                            </ul>
                         </Col>
                     </Row>
                 </Container>
