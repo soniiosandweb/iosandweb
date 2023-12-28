@@ -55,7 +55,9 @@ function Portfolio(){
                         {filterData && filterData.map((item, index) => 
                             <Col md={12} className="portfolio-col" key={item.id}>
                                 <div className="portfolio-list-item">
-                                    <img src={item.image} alt={item.title} className="portfolio-image responsive-img" />
+                                    <a href={item.url} rel="noreferrer" target="_blank" className="portfolio-link">
+                                        <img src={item.image} alt={item.title} className="portfolio-image responsive-img" />
+                                    </a>
                                     <div className="portfolio-detail">
                                         <h2 className="portfolio-title heading2">{item.title}</h2>
                                         <p className="paragraph">{item.description}</p>

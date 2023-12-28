@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Row, Col, Container } from "react-bootstrap";
 
 function BlogDetails(){
-    const id = useParams().id;
+    const url = useParams().url;
     const [title, setTitle] = useState("");
     const [image, setImage] = useState("");
     const [date, setDate] = useState("");
@@ -16,7 +16,7 @@ function BlogDetails(){
         .then(res => {
             for(var i = 0; i < res.data.length; i++) {      
                 var obj = res.data[i];      
-                if(obj.id === parseInt(id)){          
+                if(obj.url === url){          
                     setTitle(obj.title);
                     setImage(obj.image);
                     setDate(obj.date);
@@ -27,7 +27,7 @@ function BlogDetails(){
         .catch(() => {
             console.log('Error')
         })
-    }, [id]);
+    }, [url]);
 
     return(
         <>

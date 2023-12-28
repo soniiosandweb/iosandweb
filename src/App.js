@@ -19,7 +19,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="blog" element={<Blog />} />
-          <Route path="blog/:id" element={<BlogDetails />} />
+          <Route path="blog/:url" element={<BlogDetails />} />
           <Route path='contact' element={<Contact />} />
           <Route path='services' element={<Services />} />
           <Route path='*' element={<NoPage />} />

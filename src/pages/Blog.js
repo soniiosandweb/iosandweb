@@ -55,10 +55,10 @@ function Blog(){
                         {filterData && filterData.map((item, index) => 
                             <Col md={6} lg={4} className="blog-col" key={item.id}>
                                 <div className="blog-list-item">
-                                    <a key={index} href={"/blog/"+item.id}><img src={item.image} className="blog-image" alt="Proven Strategies" /></a>
+                                    <a key={index} href={"/blog/"+item.url}><img src={item.image} className="blog-image" alt="Proven Strategies" /></a>
                                     <div className="blog-detail">
                                         <h5><span className="blog-date">{item.date}</span></h5>
-                                        <a key={index} href={"/blog/"+item.id}><h4>{item.title}</h4></a>
+                                        <a key={index} href={"/blog/"+item.url}><h4>{item.title}</h4></a>
                                         <p className="paragraph">{item.description}</p>
                                     </div>
                                 </div>

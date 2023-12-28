@@ -183,7 +183,7 @@ h1, h2{
 .home-banner {
   position: relative;
   width: 100%;
-  height: calc(100vh - 130px);
+  height: calc(100vh);
   background: #000;
   overflow: hidden;
   padding: 100px 0;
@@ -1548,12 +1548,15 @@ h1, h2{
 .portfolio-list-item:hover {
   background-color: rgba(100, 107, 110, 0.15);
 }
+.portfolio-list-item .portfolio-link {
+  display: block;
+  width: 50%;
+}
 .portfolio-list-item .portfolio-image {
-  max-width: 50%;
   border-radius: 12px;
   border: 1px solid rgba(100, 107, 110, 0.15);
   height: 350px;
-  object-fit: fill;
+  object-fit: cover;
 }
 .portfolio-list-item .portfolio-detail {
   flex: 1;
@@ -1586,8 +1589,9 @@ h1, h2{
   .portfolio-list-item .portfolio-detail{
     padding: 0 0 50px !important;
   }
-  .portfolio-list-item .portfolio-image {
-    max-width: 100%;
+  .portfolio-list-item .portfolio-link {
+    display: block;
+    width: 100%;
   }
 }
 @media (max-width: 375px) {
@@ -1595,4 +1599,59 @@ h1, h2{
     margin: 20px 0;
     padding: 20px;
   }
+}
+
+/* services page */
+.services-banner {
+  position: relative;
+}
+.services-banner::before {
+  content: "";
+  background: #0968d3;
+  width: 55%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  border-bottom-right-radius: 120px;
+}
+.services-banner .heading-wrapper h1{
+  max-width: 100%;
+}
+.services-what-we-do .service-col{
+  margin: 30px 0;
+}
+.services-what-we-do .service-link {
+  text-decoration: none;
+  height: 100%;
+  display: block;
+  border-radius: 30px 0 30px 0;
+  padding: 30px;
+  background: #000;
+  color: #000;
+}
+.services-what-we-do .service-link.bg-pink{
+  background: #f3d5df;
+}
+.services-what-we-do .service-link.bg-purple{
+  background: #dbdeff;
+}
+.services-what-we-do .service-link.bg-orange{
+  background: #ffdcc3;
+}
+.services-what-we-do .service-link.bg-blue{
+  background: #bcf6ff;
+}
+.services-what-we-do .service-link.bg-green{
+  background: #d6ffdf;
+}
+.services-what-we-do .service-link.bg-gray{
+  background: #bce3ff;
+}
+.services-what-we-do .service-link .service-icon{
+  height: 80px;
+  margin-bottom: 20px;
+}
+.services-what-we-do .service-link .heading2{
+  font-size: 28px;
 }
