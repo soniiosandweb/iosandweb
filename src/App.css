@@ -1683,18 +1683,19 @@ h1, h2{
   margin: 0;
 }
 .services-icons-list li {
-  flex: 1 0 33.33%;
+  flex: 0 0 33.33%;
   text-align: center;
   padding: 30px 15px;
   transition: .5s;
 }
 .services-icons-list li .icon-image {
-  width: 80px;
+  width: 75px;
 }
 .services-design-items {
   list-style: none;
   padding: 0;
   margin: 0;
+  max-width: 80%;
 }
 .services-design-items li {
   padding: 20px 15px;
@@ -1707,4 +1708,10 @@ h1, h2{
   font-size: 35px;
   color: #1050bc;
   margin-right: 20px;
+}
+@media (max-width: 991px) {
+  .we-design-rows,
+  .services-design-items{
+    max-width: 100%;
+  }
 }
