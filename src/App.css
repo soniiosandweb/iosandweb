@@ -1767,3 +1767,22 @@ h1, h2{
   font-size: 20px;
   margin: 0;
 }
+
+/* get started services */
+.get-started {
+  background: #000 url('./images/awards-BG.webp') no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+}
+.get-started-btn{
+  text-align: right;
+}
+@media (max-width: 991px) {
+  .get-started{
+    text-align: center;
+  }
+  .get-started-btn{
+    text-align: center;
+    margin-top: 20px;
+  }
+}

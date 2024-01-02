@@ -56,6 +56,7 @@ function Blog(){
                 <Container>
                     <Row className="blogs-list">
                         {filterData && filterData.map((item, index) => 
+                            
                             <Col md={6} lg={4} className="blog-col" key={item.id}>
                                 <div className="blog-list-item">
                                     <a key={index} href={"/blog/"+item.url}><img src={item.image} className="blog-image" alt="Proven Strategies" /></a>

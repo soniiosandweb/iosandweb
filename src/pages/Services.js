@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-// import OwlCarousel from "react-owl-carousel";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import OwlCarousel from "react-owl-carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -30,27 +30,27 @@ import loading from '../images/services/loading.png';
 import secure from '../images/services/internet.png';
 
 function Services(){
-    // const options = {
-    //     loop: false,
-    //     items: 1,
-    //     margin: 30,
-    //     autoplay: false,
-    //     dots: true,
-    //     nav: false,
-    //     dotData: true,
-    //     dotsContainer: ".dots-container",
-    //     responsive: {
-    //       0: {
-    //         items: 1
-    //       },
-    //       600: {
-    //         items: 1
-    //       },
-    //       1000: {
-    //         items: 1
-    //       }
-    //     }
-    //   };
+    const options = {
+        loop: false,
+        items: 1,
+        margin: 30,
+        autoplay: false,
+        dots: true,
+        nav: false,
+        dotData: true,
+        dotsContainer: ".dots-container",
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          1000: {
+            items: 1
+          }
+        }
+      };
     return(
         <>
             <div className="services-banner banner-padding text-white">
@@ -195,8 +195,8 @@ function Services(){
                 <Container>
                     <Row>
                         <Col>
-                             <h2 className="heading2 text-center width-55">Why Choose IosAndWeb Technologies For Your Web Development Solutions?</h2>
-                            <div className="heading5 text-center width-55">We ensure web solutions that work flawlessly across multiple devices</div>
+                             <h2 className="heading2 text-center">Why Choose IosAndWeb Technologies For Your Web Development Solutions?</h2>
+                            <div className="heading5 text-center">We ensure web solutions that work flawlessly across multiple devices</div>
                         </Col>
                     </Row>
                     <Row className="mt-3">
@@ -232,18 +232,43 @@ function Services(){
                 </Container>
             </div>
 
-            {/* <OwlCarousel className="owl-theme" {...options}>
-                <div className="item" data-dot="<button>Name</button>">01</div>
-                <div className="item">02</div>
-                <div className="item">03</div>
-            </OwlCarousel>
+            <div className="get-started section-padding text-white">
+                <Container>
+                    <Row className="align-items-center">
+                        <Col lg={9}>
+                            <h2 className="heading2">Let's Start Building Web Solutions To Help Achieve Your Business Goals</h2>
+                        </Col>
+                        <Col lg={3}>
+                            <div className="get-started-btn">
+                               <a href="/contact" className="btn btn-white-border">Get Started <FontAwesomeIcon icon={faChevronRight} /></a> 
+                            </div>
+                            
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
 
-            <div className="dots-container owl-dots">
-                <div className="owl-dot" data-dot="<button>Name</button>">01</div>
-                <div className="owl-dot">02</div>
-                <div className="owl-dot">03</div>
-            </div> */}
-           
+            <div className="development-process section-padding">
+                <Container>
+                    <Row>
+                        <Col md={4}>
+                            <div className="dots-container owl-dots">
+                                <Button className="owl-dot">01</Button>
+                                <Button className="owl-dot">02</Button>
+                                <Button className="owl-dot">03</Button>
+                            </div>
+                        </Col>
+                        <Col md={8}>
+                            <OwlCarousel className="owl-theme" {...options}>
+                                <div className="item" data-dot="<button>Name</button>">01</div>
+                                <div className="item">02</div>
+                                <div className="item">03</div>
+                            </OwlCarousel>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
         </>
     )
 }
