@@ -34,7 +34,7 @@ function Services(){
         loop: false,
         items: 1,
         margin: 30,
-        autoplay: false,
+        autoplay: true,
         dots: true,
         nav: false,
         dotData: true,
