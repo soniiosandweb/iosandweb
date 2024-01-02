@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+// import OwlCarousel from "react-owl-carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -22,7 +23,34 @@ import css from '../images/services/css.png';
 import php from '../images/services/php.png';
 import afterEffect from '../images/services/after-effects.png';
 
+// why choose icons
+import scalability from '../images/services/scalability.png';
+import responsive from '../images/services/responsive.png';
+import loading from '../images/services/loading.png';
+import secure from '../images/services/internet.png';
+
 function Services(){
+    // const options = {
+    //     loop: false,
+    //     items: 1,
+    //     margin: 30,
+    //     autoplay: false,
+    //     dots: true,
+    //     nav: false,
+    //     dotData: true,
+    //     dotsContainer: ".dots-container",
+    //     responsive: {
+    //       0: {
+    //         items: 1
+    //       },
+    //       600: {
+    //         items: 1
+    //       },
+    //       1000: {
+    //         items: 1
+    //       }
+    //     }
+    //   };
     return(
         <>
             <div className="services-banner banner-padding text-white">
@@ -161,6 +189,61 @@ function Services(){
                     </Row>
                 </Container>
             </div>
+
+            {/* why choose */}
+            <div className="section-why-choose section-padding">
+                <Container>
+                    <Row>
+                        <Col>
+                             <h2 className="heading2 text-center width-55">Why Choose IosAndWeb Technologies For Your Web Development Solutions?</h2>
+                            <div className="heading5 text-center width-55">We ensure web solutions that work flawlessly across multiple devices</div>
+                        </Col>
+                    </Row>
+                    <Row className="mt-3">
+                        <Col md={6} lg={3} className="why-choose-col">
+                            <div className="why-choose-list-item">
+                                <img src={scalability} alt="Scalable" className="why-choose-icon" />
+                                <h3 className="heading4">Robust & Scalable</h3>
+                                <p className="paragraph">Fully functional and scalable solution that grows with your business</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={3} className="why-choose-col">
+                            <div className="why-choose-list-item change-bg">
+                                <img src={responsive} alt="Highly Responsive" className="why-choose-icon" />
+                                <h3 className="heading4">Highly Responsive</h3>
+                                <p className="paragraph">Web solutions that work well on mobile, tablet, and desktop devices</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={3} className="why-choose-col">
+                            <div className="why-choose-list-item">
+                                <img src={loading} alt="Quick Loading" className="why-choose-icon" />
+                                <h3 className="heading4">Quick Loading</h3>
+                                <p className="paragraph">We offer a minimalistic setup to ensure your website load faster</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={3} className="why-choose-col">
+                            <div className="why-choose-list-item change-bg">
+                                <img src={secure} alt="Secure Solutions" className="why-choose-icon" />
+                                <h3 className="heading4">Secure Solutions</h3>
+                                <p className="paragraph">Highly secure websites to withstand high traffic without any glitches</p>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* <OwlCarousel className="owl-theme" {...options}>
+                <div className="item" data-dot="<button>Name</button>">01</div>
+                <div className="item">02</div>
+                <div className="item">03</div>
+            </OwlCarousel>
+
+            <div className="dots-container owl-dots">
+                <div className="owl-dot" data-dot="<button>Name</button>">01</div>
+                <div className="owl-dot">02</div>
+                <div className="owl-dot">03</div>
+            </div> */}
+           
         </>
     )
 }

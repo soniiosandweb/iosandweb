@@ -1685,8 +1685,11 @@ h1, h2{
 .services-icons-list li {
   flex: 0 0 33.33%;
   text-align: center;
-  padding: 30px 15px;
+  padding: 20px 15px;
   transition: .5s;
+}
+.services-icons-list li:hover{
+  background-color: #131313;
 }
 .services-icons-list li .icon-image {
   width: 75px;
@@ -1708,10 +1711,59 @@ h1, h2{
   font-size: 35px;
   color: #1050bc;
   margin-right: 20px;
+  width: 35px;
 }
 @media (max-width: 991px) {
   .we-design-rows,
   .services-design-items{
     max-width: 100%;
   }
+}
+
+/* why choose services section */
+.section-why-choose .why-choose-col {
+  padding: 10px;
+}
+.why-choose-list-item {
+  border-radius: 5px;
+  padding: 40px 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  background: #0091fe;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  cursor: pointer;
+}
+.why-choose-list-item.change-bg{
+  background: #1050bc;
+}
+.why-choose-list-item .paragraph {
+  position: absolute;
+  top: 100%;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 15px;
+  background: #000;
+  transition: .5s;
+}
+.why-choose-list-item:hover .paragraph{
+  top: 0;
+}
+.why-choose-list-item .why-choose-icon {
+  width: 40px;
+}
+.why-choose-list-item .heading4 {
+  font-size: 20px;
+  margin: 0;
 }
