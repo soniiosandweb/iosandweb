@@ -32,6 +32,59 @@ h1, h2{
   font-size: 20px;
   line-height: 1.5;
 }
+.btn-white-border{
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  transition: all .3s cubic-bezier(.19,1,.22,1);
+  border: 2px solid #fff;
+  padding: 14px 50px 14px 25px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  line-height: 1.15;
+  background-color: transparent;
+}
+.btn-white-border:hover{
+  background-color: #1050bc;
+  border-color: #1050bc;
+}
+.btn-white-border svg {
+  position: absolute;
+  right: 10px;
+  width: 18px;
+  height: 18px;
+}
+.btn-white-border:hover svg {
+  -webkit-animation: arrowmove .4s infinite alternate ease-in-out;
+  animation: arrowmove .4s infinite alternate ease-in-out;
+}
+.bg-red{
+  background: #f3d5df !important;
+}
+.bg-purple{
+  background: #dbdeff !important;
+}
+.bg-orange{
+  background: #ffdcc3 !important;
+}
+.bg-blue{
+  background: #bcf6ff !important;
+}
+.bg-green{
+  background: #d6ffdf !important;
+}
+.bg-gray{
+  background: #bce3ff !important;
+}
+.bg-yellow{
+  background: #feffdf !important;
+}
+.bg-pink{
+  background: #f7c6f7 !important;
+}
 @media (max-width: 767px) {
   .leadtxt h3{
     font-size: 28px;
@@ -344,35 +397,33 @@ h1, h2{
   }
 }
 /* services panel home */
-.services-panel{
-  background: #000;
-}
-.btn-white-border{
+.btn-blue-border{
   position: relative;
   font-size: 14px;
   font-weight: 400;
   color: #fff;
   transition: all .3s cubic-bezier(.19,1,.22,1);
-  border: 2px solid #fff;
+  border: 2px solid #1050bc;
   padding: 14px 50px 14px 25px;
   border-radius: 10px;
   display: inline-flex;
   align-items: center;
   text-decoration: none;
   line-height: 1.15;
-  background-color: transparent;
-}
-.btn-white-border:hover{
   background-color: #1050bc;
-  border-color: #1050bc;
 }
-.btn-white-border svg {
+.btn-blue-border:hover{
+  background-color: #fff;
+  border-color: #1050bc;
+  color: #1050bc;
+}
+.btn-blue-border svg {
   position: absolute;
   right: 10px;
   width: 18px;
   height: 18px;
 }
-.btn-white-border:hover svg {
+.btn-blue-border:hover svg {
   -webkit-animation: arrowmove .4s infinite alternate ease-in-out;
   animation: arrowmove .4s infinite alternate ease-in-out;
 }
@@ -387,18 +438,13 @@ h1, h2{
     position: relative;
     margin-top: 0;
     background-color: #121212;
-    border: 1px solid #343434;
+    border: none;
     width: 100%;
     border-radius: 10px;
     display: block;
     padding: 25px 20px;
-    opacity: .6;
     transition: all ease-in .2s;
     text-decoration: none;
-}
-.service-card a:hover{
-  background-color: #262626;
-  opacity: 1;
 }
 .service-icon {
   height: 40px;
@@ -406,6 +452,7 @@ h1, h2{
 .service-icon .service-img {
   transform: scale(.9);
   transition: all ease-in .2s;
+  filter: brightness(0);
 }
 .service-card a:hover .service-icon .service-img{
   transform: scale(1);
@@ -414,7 +461,7 @@ h1, h2{
   font-weight: 400;
   font-size: 24px;
   line-height: 1.4;
-  color: #fff;
+  color: #000;
   margin: 20px 0;
 }
 .service-card a:hover .service-text{
@@ -1639,24 +1686,6 @@ h1, h2{
   background: #000;
   color: #000;
 }
-.services-what-we-do .service-link.bg-pink{
-  background: #f3d5df;
-}
-.services-what-we-do .service-link.bg-purple{
-  background: #dbdeff;
-}
-.services-what-we-do .service-link.bg-orange{
-  background: #ffdcc3;
-}
-.services-what-we-do .service-link.bg-blue{
-  background: #bcf6ff;
-}
-.services-what-we-do .service-link.bg-green{
-  background: #d6ffdf;
-}
-.services-what-we-do .service-link.bg-gray{
-  background: #bce3ff;
-}
 .services-what-we-do .service-link .service-icon{
   height: 80px;
   margin-bottom: 20px;
@@ -1784,5 +1813,115 @@ h1, h2{
   .get-started-btn{
     text-align: center;
     margin-top: 20px;
+  }
+}
+/* Development process section */
+.dots-container {
+  display: flex;
+  flex-direction: column;
+}
+.dots-container .owl-dot {
+  background: transparent !important;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  color: #8e9299 !important;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 600;
+  padding: 0 20px 30px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  position: relative;
+}
+.dots-container .owl-dot .planning-image-wrap {
+  border: 2px solid #8e9299;
+  padding: 15px;
+  border-radius: 50%;
+  z-index: -1;
+}
+.dots-container .owl-dot .planning-image-wrap::after {
+  content: "";
+  width: 2px;
+  height: 30px;
+  position: absolute;
+  background: #8e9299;
+  z-index: -1;
+  bottom: 0;
+  left: 57px;
+}
+.dots-container .owl-dot:last-child .planning-image-wrap::after{
+  display: none;
+}
+.dots-container .owl-dot:last-child{
+  padding-bottom: 0;
+}
+.dots-container .owl-dot .planning-image-wrap img {
+  width: 40px;
+  object-fit: contain;
+  filter: brightness(0.5);
+}
+.dots-container .owl-dot.active {
+  color: #000 !important;
+}
+.dots-container .owl-dot.active .planning-image-wrap {
+  border-color: #1050bc;
+  background-color: #1050bc;
+}
+.dots-container .owl-dot.active .planning-image-wrap img {
+  filter: brightness(100%);
+}
+.development-process-block .item{
+  position: relative;
+}
+.development-process-block .process-image{
+  width: 100%;
+  border-radius: 5px;
+}
+.development-process-block .item .process-content {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 1.5px;
+  background-color: #fff;
+  padding: 30px;
+  width: 400px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+.development-process-block .item .process-content .heading5{
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.development-process-block .item .process-content .paragraph{
+  margin-top: 0;
+}
+@media (max-width: 991px) {
+  .dots-container .owl-dot span{
+    display: none;
+  }
+  .dots-container .owl-dot .planning-image-wrap{
+    display: block;
+    padding: 10px;
+  }
+  .dots-container .owl-dot .planning-image-wrap img{
+    width: 30px;
+  }
+  .dots-container .owl-dot .planning-image-wrap::after{
+    left: 46px;
+  }
+}
+@media (max-width: 767px) {
+  .development-process-block .item .process-content {
+    position: static;
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+@media (max-width: 575px) {
+  .dots-container{
+    display: none;
   }
 }

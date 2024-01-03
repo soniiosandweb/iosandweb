@@ -1,5 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import WhyChoose from "../components/WhyChoose";
+
 import OwlCarousel from "react-owl-carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
@@ -23,33 +25,31 @@ import css from '../images/services/css.png';
 import php from '../images/services/php.png';
 import afterEffect from '../images/services/after-effects.png';
 
-// why choose icons
-import scalability from '../images/services/scalability.png';
-import responsive from '../images/services/responsive.png';
-import loading from '../images/services/loading.png';
-import secure from '../images/services/internet.png';
+// development section icons
+import planning from '../images/services/planning.png';
+import design from '../images/services/design.png';
+import webDevelopment from '../images/services/web-development.png';
+import qualityAnalyst from '../images/services/quality-analyst.png';
+import maintenance from '../images/services/maintenance.png';
+import planningImage from '../images/services/planning-image.jpg';
+import designImage from '../images/services/web-design-image.png';
+import developmentImage from '../images/services/web-development-image.jpg';
+import qualityAnalystImage from '../images/services/quality-analyst-image.jpg';
+import maintenanceImage from '../images/services/maintenance-image.jpg';
 
 function Services(){
     const options = {
-        loop: false,
+        loop: true,
         items: 1,
-        margin: 30,
+        margin: 0,
         autoplay: true,
+        autoplayTimeout: 6000,
         dots: true,
         nav: false,
         dotData: true,
         dotsContainer: ".dots-container",
-        responsive: {
-          0: {
-            items: 1
-          },
-          600: {
-            items: 1
-          },
-          1000: {
-            items: 1
-          }
-        }
+        touchDrag: false,
+        mouseDrag: false
       };
     return(
         <>
@@ -81,7 +81,7 @@ function Services(){
                     </Row>
                     <Row className="mt-3">
                         <Col md={6} lg={4} className="service-col">
-                            <a href="/" className="service-link bg-pink">
+                            <a href="/" className="service-link bg-red">
                                 <div className="what-do-service-item">
                                     <img src={webDevelop} className="service-icon" alt="Web Development" />
                                     <h3 className="heading2">Web Development</h3>
@@ -191,47 +191,9 @@ function Services(){
             </div>
 
             {/* why choose */}
-            <div className="section-why-choose section-padding">
-                <Container>
-                    <Row>
-                        <Col>
-                             <h2 className="heading2 text-center">Why Choose IosAndWeb Technologies For Your Web Development Solutions?</h2>
-                            <div className="heading5 text-center">We ensure web solutions that work flawlessly across multiple devices</div>
-                        </Col>
-                    </Row>
-                    <Row className="mt-3">
-                        <Col md={6} lg={3} className="why-choose-col">
-                            <div className="why-choose-list-item">
-                                <img src={scalability} alt="Scalable" className="why-choose-icon" />
-                                <h3 className="heading4">Robust & Scalable</h3>
-                                <p className="paragraph">Fully functional and scalable solution that grows with your business</p>
-                            </div>
-                        </Col>
-                        <Col md={6} lg={3} className="why-choose-col">
-                            <div className="why-choose-list-item change-bg">
-                                <img src={responsive} alt="Highly Responsive" className="why-choose-icon" />
-                                <h3 className="heading4">Highly Responsive</h3>
-                                <p className="paragraph">Web solutions that work well on mobile, tablet, and desktop devices</p>
-                            </div>
-                        </Col>
-                        <Col md={6} lg={3} className="why-choose-col">
-                            <div className="why-choose-list-item">
-                                <img src={loading} alt="Quick Loading" className="why-choose-icon" />
-                                <h3 className="heading4">Quick Loading</h3>
-                                <p className="paragraph">We offer a minimalistic setup to ensure your website load faster</p>
-                            </div>
-                        </Col>
-                        <Col md={6} lg={3} className="why-choose-col">
-                            <div className="why-choose-list-item change-bg">
-                                <img src={secure} alt="Secure Solutions" className="why-choose-icon" />
-                                <h3 className="heading4">Secure Solutions</h3>
-                                <p className="paragraph">Highly secure websites to withstand high traffic without any glitches</p>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+            <WhyChoose />
 
+            {/* get started section */}
             <div className="get-started section-padding text-white">
                 <Container>
                     <Row className="align-items-center">
@@ -248,21 +210,87 @@ function Services(){
                 </Container>
             </div>
 
+            {/* Development process section */}
             <div className="development-process section-padding">
                 <Container>
                     <Row>
-                        <Col md={4}>
+                        <Col>
+                             <h2 className="heading2 text-center">Process of Developing a Mobile App</h2>
+                            <div className="heading5 text-center">Grow your business with the most flexible and agile work process</div>
+                        </Col>
+                    </Row>
+                    <Row className="justify-content-center align-items-center mt-5">
+                        <Col sm={2} lg={4}>
                             <div className="dots-container owl-dots">
-                                <Button className="owl-dot">01</Button>
-                                <Button className="owl-dot">02</Button>
-                                <Button className="owl-dot">03</Button>
+                                <Button className="owl-dot">
+                                    <span className="planning-image-wrap">
+                                        <img src={planning} alt="Planning" />
+                                    </span>
+                                    <span>Planning</span>
+                                </Button>
+                                <Button className="owl-dot">
+                                    <span className="planning-image-wrap">
+                                        <img src={design} alt="Designing" />
+                                    </span>
+                                    <span>Designing</span>
+                                </Button>
+                                <Button className="owl-dot">
+                                    <span className="planning-image-wrap">
+                                        <img src={webDevelopment} alt="Development" />
+                                    </span>
+                                    <span>Development</span>
+                                </Button>
+                                <Button className="owl-dot">
+                                    <span className="planning-image-wrap">
+                                        <img src={qualityAnalyst} alt="QA & Launch" />
+                                    </span>
+                                    <span>QA & Launch</span>
+                                </Button>
+                                <Button className="owl-dot">
+                                    <span className="planning-image-wrap">
+                                        <img src={maintenance} alt="Maintenance" />
+                                    </span>
+                                    <span>Maintenance</span>
+                                </Button>
                             </div>
                         </Col>
-                        <Col md={8}>
-                            <OwlCarousel className="owl-theme" {...options}>
-                                <div className="item" data-dot="<button>Name</button>">01</div>
-                                <div className="item">02</div>
-                                <div className="item">03</div>
+                        <Col sm={10} lg={7}>
+                            <OwlCarousel className="owl-theme development-process-block" {...options}>
+                                <div className="item">
+                                    <img src={planningImage} alt="Planning" className="process-image" />
+                                    <div className="process-content">
+                                        <div className="heading5">Planning</div>
+                                        <p className="paragraph">We analyze your requirements, define goals, & create the project schedule</p>
+                                    </div>
+                                </div>
+                                <div className="item">
+                                    <img src={designImage} alt="Designing" className="process-image" />
+                                    <div className="process-content">
+                                        <div className="heading5">Designing</div>
+                                        <p className="paragraph">We create an attractive & innovative design that looks great & help you stand out</p>
+                                    </div>
+                                </div>
+                                <div className="item">
+                                    <img src={developmentImage} alt="Development" className="process-image" />
+                                    <div className="process-content">
+                                        <div className="heading5">Development</div>
+                                        <p className="paragraph">We transform the design created into a well-structured code with all required functionalities</p>
+                                    </div>
+                                </div>
+                                <div className="item">
+                                    <img src={qualityAnalystImage} alt="QA & Launch" className="process-image" />
+                                    <div className="process-content">
+                                        <div className="heading5">QA & Launch</div>
+                                        <p className="paragraph">We optimize & test your website and its features on top browsers before launching</p>
+                                    </div>
+                                </div>
+                                <div className="item">
+                                    <img src={maintenanceImage} alt="Maintenance" className="process-image" />
+                                    <div className="process-content">
+                                        <div className="heading5">Maintenance</div>
+                                        <p className="paragraph">We provide constant updates, ensuring smooth and efficient functioning of your web solution</p>
+                                    </div>
+                                </div>
                             </OwlCarousel>
                         </Col>
                     </Row>

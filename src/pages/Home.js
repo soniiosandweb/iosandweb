@@ -16,6 +16,9 @@ import upWork from '../images/upwork.png';
 // partners section
 import Partners from "../components/Partners";
 
+// why choose section
+import WhyChoose from "../components/WhyChoose";
+
 // services images
 import aiml from '../images/service-ai-ml.svg';
 import mobileApp from '../images/Mobile-app.svg';
@@ -156,8 +159,121 @@ function Home() {
             {/* Business partners*/}
             <Partners />
 
+            {/* Industries panel */}
+            <div className="industries-panel section-padding text-white">
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className="leadtxt text-center">
+                                <h3>A Unified Vision That Caters
+                                    <br></br>to Diverse Industry Demands
+                                </h3>
+                            </div>
+                            <div className="grid_colm_panel">
+                                <div className="grid_colm_item">
+                                    <a href="/">
+                                        <figure>
+                                            <img src={healthCare} alt="Healthcare" />
+                                        </figure>
+                                        <div className="grid_colm_head">Healthcare</div>
+                                    </a>
+                                </div>
+                                <div className="grid_colm_item">
+                                    <a href="/">
+                                        <figure>
+                                            <img src={finance} alt="Finance" />
+                                        </figure>
+                                        <div className="grid_colm_head">Finance</div>
+                                    </a>
+                                </div>
+                                <div className="grid_colm_item">
+                                    <a href="/">
+                                        <figure>
+                                            <img src={restaurant} alt="Restaurant" />
+                                        </figure>
+                                        <div className="grid_colm_head">Restaurant</div>
+                                    </a>
+                                </div>
+                                <div className="grid_colm_item">
+                                    <a href="/">
+                                        <figure>
+                                            <img src={ecommerce} alt="eCommerce" />
+                                        </figure>
+                                        <div className="grid_colm_head">eCommerce</div>
+                                    </a>
+                                </div>
+                                <div className="grid_colm_item">
+                                    <a href="/">
+                                        <figure>
+                                            <img src={ev} alt="EV" />
+                                        </figure>
+                                        <div className="grid_colm_head">EV</div>
+                                    </a>
+                                </div>
+                                <div className="grid_colm_item">
+                                    <a href="/">
+                                        <figure>
+                                            <img src={saas} alt="SaaS" />
+                                        </figure>
+                                        <div className="grid_colm_head">SaaS</div>
+                                    </a>
+                                </div>
+                                <div className="grid_colm_item">
+                                    <a href="/">
+                                        <figure>
+                                            <img src={travel} alt="Travel" />
+                                        </figure>
+                                        <div className="grid_colm_head">Travel</div>
+                                    </a>
+                                </div>
+                                <div className="grid_colm_item">
+                                    <a href="/">
+                                        <figure>
+                                            <img src={entertainment} alt="Entertainment" />
+                                        </figure>
+                                        <div className="grid_colm_head">Entertainment</div>
+                                    </a>
+                                </div>
+                                <div className="grid_colm_item border-bottom-none">
+                                    <a href="/">
+                                        <figure>
+                                            <img src={onDemand} alt="On-Demand" />
+                                        </figure>
+                                        <div className="grid_colm_head">On-Demand</div>
+                                    </a>
+                                </div>
+                                <div className="grid_colm_item border-bottom-none">
+                                    <a href="/">
+                                        <figure>
+                                            <img src={socialMedia} alt="Social Media" />
+                                        </figure>
+                                        <div className="grid_colm_head">Social Media</div>
+                                    </a>
+                                </div>
+                                <div className="grid_colm_item border-bottom-none">
+                                    <a href="/">
+                                        <figure>
+                                            <img src={logistics} alt="Logistics" />
+                                        </figure>
+                                        <div className="grid_colm_head">Logistics</div>
+                                    </a>
+                                </div>
+                                <div className="grid_colm_item border-bottom-none">
+                                    <a href="/">
+                                        <figure>
+                                            <img src={edtech} alt="Edtech" />
+                                        </figure>
+                                        <div className="grid_colm_head">Edtech</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
             {/* Services panel */}
-            <div className="services-panel section-padding text-white">
+            <div className="services-panel section-padding">
                 <Container>
                     <Row>
                         <Col>
@@ -168,12 +284,12 @@ function Home() {
                                 </h3>
                             </div>
                             <div className="btn-section">
-                                <a href="/services" className="btn btn-white-border">Our Services <FontAwesomeIcon icon={faChevronRight} /></a>
+                                <a href="/services" className="btn btn-blue-border">Our Services <FontAwesomeIcon icon={faChevronRight} /></a>
                             </div>
 
                             <div className="services-cards">
                                 <div className="service-card">
-                                    <a href="/services">
+                                    <a href="/services" className="bg-red">
                                         <div className="service-icon">
                                             <img src={aiml} className="service-img" alt="AI ML" />
                                         </div>
@@ -181,7 +297,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="/services">
+                                    <a href="/services" className="bg-purple">
                                         <div className="service-icon">
                                             <img src={mobileApp} className="service-img" alt="Mobile App" />
                                         </div>
@@ -189,7 +305,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="/services">
+                                    <a href="/services" className="bg-orange">
                                         <div className="service-icon">
                                             <img src={softwareDevelopment} className="service-img" alt="Software Development" />
                                         </div>
@@ -197,7 +313,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="/services">
+                                    <a href="/services" className="bg-blue">
                                         <div className="service-icon">
                                             <img src={digitalTransformation} className="service-img" alt="Software Development" />
                                         </div>
@@ -205,7 +321,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="/services">
+                                    <a href="/services" className="bg-green">
                                         <div className="service-icon">
                                             <img src={dataScience} className="service-img" alt="Software Development" />
                                         </div>
@@ -213,7 +329,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="/services">
+                                    <a href="/services" className="bg-gray">
                                         <div className="service-icon">
                                             <img src={cloudServices} className="service-img" alt="Software Development" />
                                         </div>
@@ -221,7 +337,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="/services">
+                                    <a href="/services" className="bg-pink">
                                         <div className="service-icon">
                                             <img src={blockChain} className="service-img" alt="Software Development" />
                                         </div>
@@ -229,7 +345,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="/services">
+                                    <a href="/services" className="bg-yellow">
                                         <div className="service-icon">
                                             <img src={ideationDesign} className="service-img" alt="Software Development" />
                                         </div>
@@ -431,118 +547,8 @@ function Home() {
                 </OwlCarousel>
             </div>
 
-            {/* Industries panel */}
-            <div className="industries-panel section-padding text-white">
-                <Container>
-                    <Row>
-                        <Col>
-                            <div className="leadtxt text-center">
-                                <h3>A Unified Vision That Caters
-                                    <br></br>to Diverse Industry Demands
-                                </h3>
-                            </div>
-                            <div className="grid_colm_panel">
-                                <div className="grid_colm_item">
-                                    <a href="/">
-                                        <figure>
-                                            <img src={healthCare} alt="Healthcare" />
-                                        </figure>
-                                        <div className="grid_colm_head">Healthcare</div>
-                                    </a>
-                                </div>
-                                <div className="grid_colm_item">
-                                    <a href="/">
-                                        <figure>
-                                            <img src={finance} alt="Finance" />
-                                        </figure>
-                                        <div className="grid_colm_head">Finance</div>
-                                    </a>
-                                </div>
-                                <div className="grid_colm_item">
-                                    <a href="/">
-                                        <figure>
-                                            <img src={restaurant} alt="Restaurant" />
-                                        </figure>
-                                        <div className="grid_colm_head">Restaurant</div>
-                                    </a>
-                                </div>
-                                <div className="grid_colm_item">
-                                    <a href="/">
-                                        <figure>
-                                            <img src={ecommerce} alt="eCommerce" />
-                                        </figure>
-                                        <div className="grid_colm_head">eCommerce</div>
-                                    </a>
-                                </div>
-                                <div className="grid_colm_item">
-                                    <a href="/">
-                                        <figure>
-                                            <img src={ev} alt="EV" />
-                                        </figure>
-                                        <div className="grid_colm_head">EV</div>
-                                    </a>
-                                </div>
-                                <div className="grid_colm_item">
-                                    <a href="/">
-                                        <figure>
-                                            <img src={saas} alt="SaaS" />
-                                        </figure>
-                                        <div className="grid_colm_head">SaaS</div>
-                                    </a>
-                                </div>
-                                <div className="grid_colm_item">
-                                    <a href="/">
-                                        <figure>
-                                            <img src={travel} alt="Travel" />
-                                        </figure>
-                                        <div className="grid_colm_head">Travel</div>
-                                    </a>
-                                </div>
-                                <div className="grid_colm_item">
-                                    <a href="/">
-                                        <figure>
-                                            <img src={entertainment} alt="Entertainment" />
-                                        </figure>
-                                        <div className="grid_colm_head">Entertainment</div>
-                                    </a>
-                                </div>
-                                <div className="grid_colm_item border-bottom-none">
-                                    <a href="/">
-                                        <figure>
-                                            <img src={onDemand} alt="On-Demand" />
-                                        </figure>
-                                        <div className="grid_colm_head">On-Demand</div>
-                                    </a>
-                                </div>
-                                <div className="grid_colm_item border-bottom-none">
-                                    <a href="/">
-                                        <figure>
-                                            <img src={socialMedia} alt="Social Media" />
-                                        </figure>
-                                        <div className="grid_colm_head">Social Media</div>
-                                    </a>
-                                </div>
-                                <div className="grid_colm_item border-bottom-none">
-                                    <a href="/">
-                                        <figure>
-                                            <img src={logistics} alt="Logistics" />
-                                        </figure>
-                                        <div className="grid_colm_head">Logistics</div>
-                                    </a>
-                                </div>
-                                <div className="grid_colm_item border-bottom-none">
-                                    <a href="/">
-                                        <figure>
-                                            <img src={edtech} alt="Edtech" />
-                                        </figure>
-                                        <div className="grid_colm_head">Edtech</div>
-                                    </a>
-                                </div>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+            {/* why choose section */}
+            <WhyChoose />
 
             {/* Partnership section */}
             <div className="partnership-panel section-padding text-white">
