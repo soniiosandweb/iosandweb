@@ -2,11 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import OwlCarousel from "react-owl-carousel";
 import { Accordion } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 import homeBanner from '../images/home-banner.webp';
 import homeVideo from '../images/home-video.mp4';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
+// Award images
 import goodFirmLogo from '../images/good-firms-logo.png';
 import appFutura from '../images/appfutura.png';
 import itFirms from '../images/itfirm.png';
