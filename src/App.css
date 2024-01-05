@@ -883,6 +883,11 @@ h1, h2{
   font-size: 14px;
   margin: 0;
 }
+.copyright-text a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
 .footer-social-col{
   text-align: right;
 }
@@ -1139,7 +1144,7 @@ h1, h2{
   }
   .its-best span {
     width: 60%;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.4;
   }
   .its-best {

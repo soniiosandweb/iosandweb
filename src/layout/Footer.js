@@ -85,7 +85,7 @@ function Footer(){
                 <Container>
                     <Row className="align-items-center">
                         <Col md={6}>
-                            <p className="copyright-text">© 2023 All Rights Reserved | IosAndWeb Technologies.</p>
+                            <p className="copyright-text">© 2023 All Rights Reserved | <a href="/">IosAndWeb Technologies</a>.</p>
                         </Col>
                         <Col md={6} className="footer-social-col">
                             <ul className="social-links">
