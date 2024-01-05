@@ -81,83 +81,92 @@ function Home() {
                 </Container>
             </div>
 
-            {/* Award Panel */}
-
-            <div className="award-panel text-white">
+            {/* Services panel */}
+            <div className="services-panel section-padding">
                 <Container>
                     <Row>
-                        <Col md={6} lg={4} xl={2} className="award-col">
-                            <div className="award-block">
-                                <div className="award-logo">
-                                    <img src={goodFirmLogo} alt="App development" />
+                        <Col>
+                            <div className="leadtxt">
+                                <h3>We Create New Solutions and Transform
+                                    <br></br>Existing Ones with a Development Process That
+                                    <br></br>Beats Industry-Best Timelines
+                                </h3>
+                            </div>
+                            <div className="btn-section">
+                                <a href="/services" className="btn btn-blue-border">Our Services <FontAwesomeIcon icon={faChevronRight} /></a>
+                            </div>
+
+                            <div className="services-cards">
+                                <div className="service-card">
+                                    <a href="/services" className="bg-red">
+                                        <div className="service-icon">
+                                            <img src={aiml} className="service-img" alt="AI ML" />
+                                        </div>
+                                        <p className="service-text">AI-ML</p>
+                                    </a>
                                 </div>
-                                <div className="award-text">
-                                    <span>App development company of the year</span>
+                                <div className="service-card">
+                                    <a href="/services" className="bg-purple">
+                                        <div className="service-icon">
+                                            <img src={mobileApp} className="service-img" alt="Mobile App" />
+                                        </div>
+                                        <p className="service-text">Mobile App<br></br>Development</p>
+                                    </a>
+                                </div>
+                                <div className="service-card">
+                                    <a href="/services" className="bg-orange">
+                                        <div className="service-icon">
+                                            <img src={softwareDevelopment} className="service-img" alt="Software Development" />
+                                        </div>
+                                        <p className="service-text">Software<br></br>Development</p>
+                                    </a>
+                                </div>
+                                <div className="service-card">
+                                    <a href="/services" className="bg-blue">
+                                        <div className="service-icon">
+                                            <img src={digitalTransformation} className="service-img" alt="Software Development" />
+                                        </div>
+                                        <p className="service-text">Digital<br></br>Transformation</p>
+                                    </a>
+                                </div>
+                                <div className="service-card">
+                                    <a href="/services" className="bg-green">
+                                        <div className="service-icon">
+                                            <img src={dataScience} className="service-img" alt="Software Development" />
+                                        </div>
+                                        <p className="service-text">Data Science<br></br>& Analytics</p>
+                                    </a>
+                                </div>
+                                <div className="service-card">
+                                    <a href="/services" className="bg-gray">
+                                        <div className="service-icon">
+                                            <img src={cloudServices} className="service-img" alt="Software Development" />
+                                        </div>
+                                        <p className="service-text">Cloud<br></br>Services</p>
+                                    </a>
+                                </div>
+                                <div className="service-card">
+                                    <a href="/services" className="bg-pink">
+                                        <div className="service-icon">
+                                            <img src={blockChain} className="service-img" alt="Software Development" />
+                                        </div>
+                                        <p className="service-text">Blockchain<br></br>Services</p>
+                                    </a>
+                                </div>
+                                <div className="service-card">
+                                    <a href="/services" className="bg-yellow">
+                                        <div className="service-icon">
+                                            <img src={ideationDesign} className="service-img" alt="Software Development" />
+                                        </div>
+                                        <p className="service-text">Ideation and <br></br>Design Strategy</p>
+                                    </a>
                                 </div>
                             </div>
-                        </Col>
 
-                        <Col md={6} lg={4} xl={2} className="award-col">
-                            <div className="award-block">
-                                <div className="award-logo">
-                                    <img src={appFutura} alt="App solution" />
-                                </div>
-                                <div className="award-text">
-                                    <span>Most promising mobile app solution provider</span>
-                                </div>
-                            </div>
                         </Col>
-
-                        <Col md={6} lg={4} xl={2} className="award-col">
-                            <div className="award-block">
-                                <div className="award-logo">
-                                    <img src={itFirms} alt="India's Growth Champions" />
-                                </div>
-                                <div className="award-text">
-                                    <span>India's Growth Champions in IT</span>
-                                </div>
-                            </div>
-                        </Col>
-
-                        <Col md={6} lg={4} xl={2} className="award-col">
-                            <div className="award-block">
-                                <div className="award-logo">
-                                    <img src={upWork} alt="India's Growth Champions" />
-                                </div>
-                                <div className="award-text">
-                                    <span>Software development company of the year</span>
-                                </div>
-                            </div>
-                        </Col>
-
-                        <Col md={6} lg={4} xl={2} className="award-col">
-                            <div className="award-block">
-                                <div className="award-logo">
-                                    <img src={itFirms} alt="India's Growth Champions" />
-                                </div>
-                                <div className="award-text">
-                                    <span>India's Growth Champions in IT</span>
-                                </div>
-                            </div>
-                        </Col>
-
-                        <Col md={6} lg={4} xl={2} className="award-col">
-                            <div className="award-block">
-                                <div className="award-logo">
-                                    <img src={topDevelopment} alt="Tech Company Of The Year" />
-                                </div>
-                                <div className="award-text">
-                                    <span>Tech Company Of The Year</span>
-                                </div>
-                            </div>
-                        </Col>
-
                     </Row>
                 </Container>
             </div>
-
-            {/* Business partners*/}
-            <Partners />
 
             {/* Industries panel */}
             <div className="industries-panel section-padding text-white">
@@ -272,92 +281,8 @@ function Home() {
                 </Container>
             </div>
 
-            {/* Services panel */}
-            <div className="services-panel section-padding">
-                <Container>
-                    <Row>
-                        <Col>
-                            <div className="leadtxt">
-                                <h3>We Create New Solutions and Transform
-                                    <br></br>Existing Ones with a Development Process That
-                                    <br></br>Beats Industry-Best Timelines
-                                </h3>
-                            </div>
-                            <div className="btn-section">
-                                <a href="/services" className="btn btn-blue-border">Our Services <FontAwesomeIcon icon={faChevronRight} /></a>
-                            </div>
-
-                            <div className="services-cards">
-                                <div className="service-card">
-                                    <a href="/services" className="bg-red">
-                                        <div className="service-icon">
-                                            <img src={aiml} className="service-img" alt="AI ML" />
-                                        </div>
-                                        <p className="service-text">AI-ML</p>
-                                    </a>
-                                </div>
-                                <div className="service-card">
-                                    <a href="/services" className="bg-purple">
-                                        <div className="service-icon">
-                                            <img src={mobileApp} className="service-img" alt="Mobile App" />
-                                        </div>
-                                        <p className="service-text">Mobile App<br></br>Development</p>
-                                    </a>
-                                </div>
-                                <div className="service-card">
-                                    <a href="/services" className="bg-orange">
-                                        <div className="service-icon">
-                                            <img src={softwareDevelopment} className="service-img" alt="Software Development" />
-                                        </div>
-                                        <p className="service-text">Software<br></br>Development</p>
-                                    </a>
-                                </div>
-                                <div className="service-card">
-                                    <a href="/services" className="bg-blue">
-                                        <div className="service-icon">
-                                            <img src={digitalTransformation} className="service-img" alt="Software Development" />
-                                        </div>
-                                        <p className="service-text">Digital<br></br>Transformation</p>
-                                    </a>
-                                </div>
-                                <div className="service-card">
-                                    <a href="/services" className="bg-green">
-                                        <div className="service-icon">
-                                            <img src={dataScience} className="service-img" alt="Software Development" />
-                                        </div>
-                                        <p className="service-text">Data Science<br></br>& Analytics</p>
-                                    </a>
-                                </div>
-                                <div className="service-card">
-                                    <a href="/services" className="bg-gray">
-                                        <div className="service-icon">
-                                            <img src={cloudServices} className="service-img" alt="Software Development" />
-                                        </div>
-                                        <p className="service-text">Cloud<br></br>Services</p>
-                                    </a>
-                                </div>
-                                <div className="service-card">
-                                    <a href="/services" className="bg-pink">
-                                        <div className="service-icon">
-                                            <img src={blockChain} className="service-img" alt="Software Development" />
-                                        </div>
-                                        <p className="service-text">Blockchain<br></br>Services</p>
-                                    </a>
-                                </div>
-                                <div className="service-card">
-                                    <a href="/services" className="bg-yellow">
-                                        <div className="service-icon">
-                                            <img src={ideationDesign} className="service-img" alt="Software Development" />
-                                        </div>
-                                        <p className="service-text">Ideation and <br></br>Design Strategy</p>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+            {/* Business partners*/}
+            <Partners />
 
             {/* Testimonial section */}
             <div className="testimonial-panel section-padding text-white">
@@ -549,6 +474,104 @@ function Home() {
 
             {/* why choose section */}
             <WhyChoose />
+
+            {/* Award Panel */}
+            <div className="awards-section">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2 text-center">Our Achievements</h2>
+                            <div className="heading5 text-center">With the utmost priority of adding value to the projects we undertake, we ensure that our partners stay ahead of the clutter and achieve excellence.</div>
+
+                            <OwlCarousel className="owl-theme awards-carousel" loop margin={80} nav={true} dots={false} items={1} center={true} 
+                            responsive={
+                                {
+                                    '0': {
+                                        items: 1,
+                                        stagePadding: 20
+                                    },
+                                    '600': {
+                                        items: 1,
+                                        stagePadding: 50
+                                    },
+                                    '1000': {
+                                        items: 1,
+                                        stagePadding: 300
+                                    },
+                                    '1200': {
+                                        items: 1,
+                                        stagePadding: 350
+                                    },
+                                    '1400': {
+                                        items: 1,
+                                        stagePadding: 400
+                                    },
+                                    '1600': {
+                                        items: 1,
+                                        stagePadding: 450
+                                    },
+                                    '1800': {
+                                        items: 1,
+                                        stagePadding: 450
+                                    }
+                                }
+                            }>
+                                <div className="item">
+                                    <div className="award-item-block">
+                                        <div className="award-item-logo">
+                                            <img src={goodFirmLogo} alt="App development" />
+                                        </div>
+                                        <div className="award-item-text">
+                                            <span>App development company of the year</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="item">
+                                    <div className="award-item-block">
+                                        <div className="award-item-logo">
+                                            <img src={appFutura} alt="App solution" />
+                                        </div>
+                                        <div className="award-item-text">
+                                            <span>Most promising mobile app solution provider</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="item">
+                                    <div className="award-item-block">
+                                        <div className="award-item-logo">
+                                            <img src={itFirms} alt="India's Growth Champions" />
+                                        </div>
+                                        <div className="award-item-text">
+                                            <span>India's Growth Champions in IT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="item">
+                                    <div className="award-item-block">
+                                        <div className="award-item-logo">
+                                            <img src={upWork} alt="India's Growth Champions" />
+                                        </div>
+                                        <div className="award-item-text">
+                                            <span>Software development company of the year</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="item">
+                                    <div className="award-item-block">
+                                        <div className="award-item-logo">
+                                            <img src={topDevelopment} alt="Tech Company Of The Year" />
+                                        </div>
+                                        <div className="award-item-text">
+                                            <span>Tech Company Of The Year</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </OwlCarousel>
+
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
 
             {/* Partnership section */}
             <div className="partnership-panel section-padding text-white">
