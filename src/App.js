@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import NoPage from './pages/NoPage';
 import Services from './pages/Services';
 import BlogDetails from './pages/BlogDetails';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="blog/:url" element={<BlogDetails />} />
           <Route path='contact' element={<Contact />} />
           <Route path='services' element={<Services />} />
+          <Route path='privacy' element={<PrivacyPolicy />} />
           <Route path='*' element={<NoPage />} />
         </Route>
       </Routes>

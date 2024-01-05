@@ -1925,3 +1925,9 @@ h1, h2{
     display: none;
   }
 }
+
+/* Privacy Policy */
+.privacy-policy-page .heading5 {
+  font-weight: 600;
+  margin: 30px 0 20px;
+}

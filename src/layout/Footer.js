@@ -72,7 +72,7 @@ function Footer(){
                             <ul className="footer-col-list">
                                 <li><a href="/blog">Blog</a></li>
                                 <li><a href="/contact">Contact</a></li>
-                                <li><a href="/">Privacy Policy</a></li>
+                                <li><a href="/privacy">Privacy Policy</a></li>
                                 <li><a href="/">Terms & Conditions</a></li>
                                 <li><a href="/">Cancellation Policy</a></li>
                             </ul>
