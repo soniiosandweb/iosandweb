@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-
+import Helmet from 'react-helmet';
 import ReactPaginate from "react-paginate"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
@@ -34,6 +34,11 @@ function Blog(){
 
     return(
         <>
+            <Helmet>
+                <title>Latest technologies blogs - Learn More</title>
+                <meta name="description" content="IAW technologies provide latest technologies blogs. Subscribe IAW Tech blogs for more latest updates. Visit now Iosandweb.net." />
+            </Helmet>
+
             <div className="blog-banner banner-padding text-white">
                 <Container>
                     <Row className="align-items-center">

@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 import WhyChoose from "../components/WhyChoose";
 
 import OwlCarousel from "react-owl-carousel";
@@ -53,6 +54,10 @@ function Services(){
       };
     return(
         <>
+            <Helmet>
+                <title>Web development services- IAW Technologies</title>
+                <meta name="description" content="Looking for high-quality web development services for your business? Look no further than IAW Technologies. Contact us Today." />
+            </Helmet>
             <div className="services-banner banner-padding text-white">
                 <Container>
                     <Row className="align-items-center">

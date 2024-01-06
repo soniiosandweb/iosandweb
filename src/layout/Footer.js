@@ -73,8 +73,8 @@ function Footer(){
                                 <li><a href="/blog">Blog</a></li>
                                 <li><a href="/contact">Contact</a></li>
                                 <li><a href="/privacy">Privacy Policy</a></li>
-                                <li><a href="/">Terms & Conditions</a></li>
-                                <li><a href="/">Cancellation Policy</a></li>
+                                <li><a href="/terms-conditions">Terms & Conditions</a></li>
+                                <li><a href="/cancellation-policy">Cancellation Policy</a></li>
                             </ul>
                         </Col>
                     </Row>

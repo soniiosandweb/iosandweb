@@ -1,9 +1,15 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Helmet from 'react-helmet';
 
 function PrivacyPolicy(){
     return (
         <>
+            <Helmet>
+                <title>IosAndWeb Technologies Privacy Policy. Read Our Policies Briefly</title>
+                <meta name="description" content="We give authorisation keep privacy of our clients&#039; information. Check out Iosandweb privacy policy to ensure you safety and privacy." />
+            </Helmet>
+
             <div className="privacy-policy-page section-padding">
                 <Container>
                     <Row>

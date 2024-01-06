@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Helmet from 'react-helmet';
 import OwlCarousel from "react-owl-carousel";
 import { Accordion } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -65,6 +66,11 @@ function Home() {
 
     return (
         <>
+            <Helmet>
+                <title>Custom Software Development Company - IosAndWeb Tech</title>
+                <meta name="description" content="Looking for a reliable Custom Software Development Company to build your next big idea? Look no further than IosAndWeb Technologies" />
+            </Helmet>
+
             {/* Banner */}
             <div className="home-banner">
                 <Container>

@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import axios from 'axios';
+import Helmet from 'react-helmet';
 
 import portfolioImage from '../images/Project-Portfolio.png';
 
@@ -33,6 +34,11 @@ function Portfolio(){
 
     return(
         <>
+            <Helmet>
+                <title>Checkout our Web Development and Digital Marketing Portfolio</title>
+                <meta name="description" content="IosAndWeb Technologies: Visit and review our work of Web Development and Digital Marketing Portfolio. We have huge case to show our work." />
+            </Helmet>
+
             <div className="portfolio-banner banner-padding text-white">
                 <Container>
                     <Row className="align-items-center">

@@ -10,6 +10,8 @@ import NoPage from './pages/NoPage';
 import Services from './pages/Services';
 import BlogDetails from './pages/BlogDetails';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsConditions from './pages/TermsConditions';
+import CancellationPolicy from './pages/CancellationPolicy';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           <Route path='contact' element={<Contact />} />
           <Route path='services' element={<Services />} />
           <Route path='privacy' element={<PrivacyPolicy />} />
+          <Route path='terms-conditions' element={<TermsConditions />} />
+          <Route path='cancellation-policy' element={< CancellationPolicy />} />
           <Route path='*' element={<NoPage />} />
         </Route>
       </Routes>

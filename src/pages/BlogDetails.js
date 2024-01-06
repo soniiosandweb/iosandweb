@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from 'axios';
 import { Row, Col, Container } from "react-bootstrap";
+import Helmet from 'react-helmet';
 
 function BlogDetails(){
     const url = useParams().url;
@@ -31,6 +32,10 @@ function BlogDetails(){
 
     return(
         <>
+            <Helmet>
+                <title>{title}</title>
+            </Helmet>
+
             <div className="blog-detail-page section-padding" style={{backgroundImage: `url(${image})`}}>
                 <div className="blog-bg"></div>
                 <Container>
