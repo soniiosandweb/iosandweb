@@ -1,14 +1,15 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Helmet from 'react-helmet';
+import SEO from "../components/SEO";
 
 function PrivacyPolicy(){
     return (
         <>
-            <Helmet>
-                <title>IosAndWeb Technologies Privacy Policy. Read Our Policies Briefly</title>
-                <meta name="description" content="We give authorisation keep privacy of our clients&#039; information. Check out Iosandweb privacy policy to ensure you safety and privacy." />
-            </Helmet>
+            <SEO
+                title="IosAndWeb Technologies Privacy Policy. Read Our Policies Briefly"
+                description='We give authorisation keep privacy of our clients&#039; information. Check out Iosandweb privacy policy to ensure you safety and privacy.'
+                name='IosAndWeb Technologies'
+            />
 
             <div className="privacy-policy-page section-padding">
                 <Container>

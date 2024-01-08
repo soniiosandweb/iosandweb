@@ -1,14 +1,15 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import Helmet from 'react-helmet';
+import SEO from '../components/SEO';
 
 function TermsConditions(){
     return (
         <>
-            <Helmet>
-                <title>Read IosAndWeb Terms and Conditions - IosAndWeb Technologies</title>
-                <meta name="description" content="To complete the project on time must or read acknowledge the Iosandweb terms and conditions clearly ,if face any problems with our terms." />
-            </Helmet>
+            <SEO
+                title="Read IosAndWeb Terms and Conditions - IosAndWeb Technologies"
+                description='To complete the project on time must or read acknowledge the Iosandweb terms and conditions clearly ,if face any problems with our terms.'
+                name='IosAndWeb Technologies'
+            />
 
             <div className="privacy-policy-page section-padding">
                 <Container>

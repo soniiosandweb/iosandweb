@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-import Helmet from 'react-helmet';
+import SEO from "../components/SEO";
 
 import 'react-phone-number-input/style.css';
 import PhoneInput from "react-phone-number-input";
@@ -18,10 +18,12 @@ function Contact(){
 
     return(
         <>
-            <Helmet>
-                <title>Consult now: Get IosAndWeb Technologies Contact Number details</title>
-                <meta name="description" content="Our management is always ready to help to boost our customer business. Call us or Consult our IosAndWeb Technologies contact number." />
-            </Helmet>
+            <SEO
+                title="Consult now: Get IosAndWeb Technologies Contact Number details"
+                description='Our management is always ready to help to boost our customer business. Call us or Consult our IosAndWeb Technologies contact number.'
+                name='IosAndWeb Technologies'
+            />
+            
             <div className="contact-banner banner-padding text-white">
                 <Container>
                     <Row className="align-items-center">

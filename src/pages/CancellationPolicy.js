@@ -1,14 +1,16 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import {Helmet} from "react-helmet";
+import SEO from '../components/SEO';
 
 function CancellationPolicy(){
     return(
         <>
-            <Helmet>
-                <title>IosAndWeb's Services Cancellation Policy - Check Now</title>
-                <meta name="description" content="If any party face issue in completion of project than both party is able to cancel the contracts. Read about our cancellation policy." />
-            </Helmet>
+            <SEO
+                title="IosAndWeb's Services Cancellation Policy - Check Now"
+                description='If any party face issue in completion of project than both party is able to cancel the contracts. Read about our cancellation policy.'
+                name='IosAndWeb Technologies'
+            />
+
             <div className="privacy-policy-page section-padding">
                 <Container>
                     <Row>

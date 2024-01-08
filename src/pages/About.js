@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Helmet from 'react-helmet';
+import SEO from "../components/SEO";
 
 // Join Team images
 import teamImage1 from '../images/team-galler1.jpg';
@@ -28,10 +28,11 @@ import upWork from '../images/upwork-logo.png';
 function About(){
     return(
         <>
-            <Helmet>
-                <title>IosAndWeb Technologies - We approach with a purpose. Visit Now</title>
-                <meta name="description" content="Team of IosAndWeb Technologies - We approach with a purpose. Effective Team Communication and collaboration. Visit Now Know About Us." />
-            </Helmet>
+            <SEO
+                title='IosAndWeb Technologies - We approach with a purpose. Visit Now'
+                description='Team of IosAndWeb Technologies - We approach with a purpose. Effective Team Communication and collaboration. Visit Now Know About Us.'
+                name='IosAndWeb Technologies'
+            />
 
             <div className="about-banner banner-padding text-white">
                 <Container>

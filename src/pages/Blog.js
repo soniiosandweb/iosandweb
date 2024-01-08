@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Helmet from 'react-helmet';
 import ReactPaginate from "react-paginate"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import axios from 'axios';
+import SEO from "../components/SEO";
 
 import blogImage from '../images/blog-banner.png';
 
@@ -34,10 +34,11 @@ function Blog(){
 
     return(
         <>
-            <Helmet>
-                <title>Latest technologies blogs - Learn More</title>
-                <meta name="description" content="IAW technologies provide latest technologies blogs. Subscribe IAW Tech blogs for more latest updates. Visit now Iosandweb.net." />
-            </Helmet>
+            <SEO
+                title='Latest technologies blogs - Learn More'
+                description='IAW technologies provide latest technologies blogs. Subscribe IAW Tech blogs for more latest updates. Visit now Iosandweb.net.'
+                name='IosAndWeb Technologies'
+            />
 
             <div className="blog-banner banner-padding text-white">
                 <Container>

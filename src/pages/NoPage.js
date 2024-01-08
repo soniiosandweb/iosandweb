@@ -1,10 +1,16 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import SEO from "../components/SEO";
 
 function NoPage(){
     return(
         <>
-            <div className="nopage">
+            <SEO
+                title="404 Page Not Found - IosAndWeb Technologies"
+                name='IosAndWeb Technologies'
+            />
+
+            <div className="nopage section-padding">
                 <Container>
                     <Row>
                         <Col>
