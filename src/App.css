@@ -591,6 +591,11 @@ h1, h2{
 .grid_colm_item a:hover .grid_colm_head {
   transform: scale(1.1);
 }
+@media (max-width: 991px) {
+  .grid_colm_item {
+    padding: 30px 20px;
+  }
+}
 @media (max-width: 767px){
   .grid_colm_panel {
     grid-template-columns: repeat(2,1fr);
@@ -606,9 +611,7 @@ h1, h2{
   .grid_colm_panel .grid_colm_item:nth-last-child(2) {
     border-bottom: none;
   }
-  .grid_colm_item {
-    padding: 30px 20px;
-  }
+  
 }
 
 /* Partnership section home */
