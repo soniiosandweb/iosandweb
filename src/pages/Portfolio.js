@@ -18,7 +18,7 @@ function Portfolio(){
 
     useEffect(() => {
 
-        axios.get('/portfolio.json')
+        axios.get('portfolio.json')
         .then(res => {
             setData(res.data);
             setFilterData(

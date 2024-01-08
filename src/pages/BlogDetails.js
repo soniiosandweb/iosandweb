@@ -13,7 +13,7 @@ function BlogDetails(){
 
     useEffect(() => {
 
-        axios.get('/blogs.json')
+        axios.get('blogs.json')
         .then(res => {
             for(var i = 0; i < res.data.length; i++) {      
                 var obj = res.data[i];      

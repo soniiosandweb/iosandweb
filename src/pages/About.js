@@ -290,7 +290,7 @@ function About(){
                             <h2 className="heading2">Join the IosAndWeb Technologies team!</h2>
                             <div className="heading5">Innovate with the latest and greatest technologies & get to work on some of the coolest projects you can imagine.</div>
                             <div className="apply-btn btn-section">
-                                <a href="/contact" className="btn btn-blue">Apply Now</a>
+                                <a href="contact" className="btn btn-blue">Apply Now</a>
                             </div>
                         </Col>
                         <Col md={6} lg={7}>

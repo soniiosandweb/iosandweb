@@ -15,19 +15,19 @@ import CancellationPolicy from './pages/CancellationPolicy';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/ios/'>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="portfolio" element={<Portfolio />} />
-          <Route path="blog" element={<Blog />} />
-          <Route path="blog/:url" element={<BlogDetails />} />
-          <Route path='contact' element={<Contact />} />
-          <Route path='services' element={<Services />} />
-          <Route path='privacy' element={<PrivacyPolicy />} />
-          <Route path='terms-conditions' element={<TermsConditions />} />
-          <Route path='cancellation-policy' element={< CancellationPolicy />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:url" element={<BlogDetails />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/privacy' element={<PrivacyPolicy />} />
+          <Route path='/terms-conditions' element={<TermsConditions />} />
+          <Route path='/cancellation-policy' element={< CancellationPolicy />} />
           <Route path='*' element={<NoPage />} />
         </Route>
       </Routes>

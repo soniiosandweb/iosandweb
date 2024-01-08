@@ -43,38 +43,38 @@ function Footer(){
                     <Row>
                         <Col md={6} lg={4}>
                             <div className="footer-col">
-                                <a href="/"><img src={logoWhite} alt="IAW logo" className="footer-logo" /></a>
+                                <a href="/ios"><img src={logoWhite} alt="IAW logo" className="footer-logo" /></a>
                                 <p className="footer-about">IosAndWeb Technologies believes in achieving goals and client satisfaction. We deliver inspiring & eye-catching websites and conduct profitable marketing campaigns that attract the audience and boost the client's business. We provide Support & Maintenance even after the completion of the project.</p>
                             </div>
                         </Col>
                         <Col md={6} lg={2}>
                             <h5 className="footer-col-head">About</h5>
                             <ul className="footer-col-list">
-                                <li><a href="/about">About us</a></li>
-                                <li><a href="/">Team</a></li>
-                                <li><a href="/">Career</a></li>
-                                <li><a href="/portfolio">Portfolio</a></li>
+                                <li><a href="about">About us</a></li>
+                                <li><a href="/ios">Team</a></li>
+                                <li><a href="/ios">Career</a></li>
+                                <li><a href="portfolio">Portfolio</a></li>
                             </ul>
                         </Col>
                         <Col md={6} lg={3}>
                             <h5 className="footer-col-head">Services</h5>
                             <ul className="footer-col-list">
-                                <li><a href="/services">Software Development</a></li>
-                                <li><a href="/services">Web Development</a></li>
-                                <li><a href="/services">Mobile App Development</a></li>
-                                <li><a href="/services">Blockchain Development</a></li>
-                                <li><a href="/services">Web / Graphic Design</a></li>
-                                <li><a href="/services">Digital Marketing</a></li>
+                                <li><a href="services">Software Development</a></li>
+                                <li><a href="services">Web Development</a></li>
+                                <li><a href="services">Mobile App Development</a></li>
+                                <li><a href="services">Blockchain Development</a></li>
+                                <li><a href="services">Web / Graphic Design</a></li>
+                                <li><a href="services">Digital Marketing</a></li>
                             </ul>
                         </Col>
                         <Col md={6} lg={3}>
                             <h5 className="footer-col-head">Resources</h5>
                             <ul className="footer-col-list">
-                                <li><a href="/blog">Blog</a></li>
-                                <li><a href="/contact">Contact</a></li>
-                                <li><a href="/privacy">Privacy Policy</a></li>
-                                <li><a href="/terms-conditions">Terms & Conditions</a></li>
-                                <li><a href="/cancellation-policy">Cancellation Policy</a></li>
+                                <li><a href="blog">Blog</a></li>
+                                <li><a href="contact">Contact</a></li>
+                                <li><a href="privacy">Privacy Policy</a></li>
+                                <li><a href="terms-conditions">Terms & Conditions</a></li>
+                                <li><a href="cancellation-policy">Cancellation Policy</a></li>
                             </ul>
                         </Col>
                     </Row>

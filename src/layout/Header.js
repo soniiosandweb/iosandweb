@@ -68,7 +68,7 @@ function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" className={`header ${fixed} ${headerbg}`}>
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="/ios">
           <img src={image} alt="IosAndWeb logo" className="responsive logo" />
         </Navbar.Brand>
 
@@ -81,11 +81,11 @@ function Header() {
 
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
           <Nav className="align-items-center">
-            <Nav.Link href="/about" className={locationValue[1] === "about" ? "active" : ""}>About</Nav.Link>
-            <Nav.Link href="/services" className={locationValue[1] === "services" ? "active" : ""}>Services</Nav.Link>
-            <Nav.Link href="/portfolio" className={locationValue[1] === "portfolio" ? "active" : ""}>Portfolio</Nav.Link>
-            <Nav.Link href="/blog" className={locationValue[1] === "blog" ? "active" : ""}>Blog</Nav.Link>
-            <Nav.Link href="/contact" className={locationValue[1] === "contact" ? "btn active" : "btn"}>Contact</Nav.Link>
+            <Nav.Link href="about" className={locationValue[1] === "about" ? "active" : ""}>About</Nav.Link>
+            <Nav.Link href="services" className={locationValue[1] === "services" ? "active" : ""}>Services</Nav.Link>
+            <Nav.Link href="portfolio" className={locationValue[1] === "portfolio" ? "active" : ""}>Portfolio</Nav.Link>
+            <Nav.Link href="blog" className={locationValue[1] === "blog" ? "active" : ""}>Blog</Nav.Link>
+            <Nav.Link href="contact" className={locationValue[1] === "contact" ? "btn active" : "btn"}>Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
 
