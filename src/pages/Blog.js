@@ -68,9 +68,9 @@ function Blog(){
                                     <img src={item.image} className="blog-image" alt="Proven Strategies" />
                                     <div className="blog-detail">
                                         <h5><span className="blog-date">{item.date}</span></h5>
-                                        {/* <a key={index} href={"blog/"+item.url}> */}
+                                        <a key={index} href={"blog/"+item.url}>
                                             <h4>{item.title}</h4>
-                                        {/* </a> */}
+                                        </a>
                                         <p className="paragraph">{item.description}</p>
                                     </div>
                                 </div>
