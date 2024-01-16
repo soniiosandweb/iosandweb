@@ -15,8 +15,7 @@ import CancellationPolicy from './pages/CancellationPolicy';
 
 function App() {
   return (
-    // <BrowserRouter basename='/ios/'>
-    <BrowserRouter>
+    <BrowserRouter basename='/ios/'>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
