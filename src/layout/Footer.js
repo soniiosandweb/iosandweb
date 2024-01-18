@@ -50,31 +50,31 @@ function Footer(){
                         <Col md={6} lg={2}>
                             <h5 className="footer-col-head">About</h5>
                             <ul className="footer-col-list">
-                                <li><a href="about">About us</a></li>
+                                <li><a href="/about">About us</a></li>
                                 <li><a href="/ios">Team</a></li>
-                                <li><a href="/ios">Career</a></li>
-                                <li><a href="portfolio">Portfolio</a></li>
+                                <li><a href="/ios">How we work</a></li>
+                                <li><a href="/portfolio">Portfolio</a></li>
                             </ul>
                         </Col>
                         <Col md={6} lg={3}>
                             <h5 className="footer-col-head">Services</h5>
                             <ul className="footer-col-list">
-                                <li><a href="services">Software Development</a></li>
-                                <li><a href="services">Web Development</a></li>
-                                <li><a href="services">Mobile App Development</a></li>
-                                <li><a href="services">Blockchain Development</a></li>
-                                <li><a href="services">Web / Graphic Design</a></li>
-                                <li><a href="services">Digital Marketing</a></li>
+                                <li><a href="/services">Software Development</a></li>
+                                <li><a href="/services">Web Development</a></li>
+                                <li><a href="/services">Mobile App Development</a></li>
+                                <li><a href="/services">Blockchain Development</a></li>
+                                <li><a href="/services">Web / Graphic Design</a></li>
+                                <li><a href="/services">Digital Marketing</a></li>
                             </ul>
                         </Col>
                         <Col md={6} lg={3}>
                             <h5 className="footer-col-head">Resources</h5>
                             <ul className="footer-col-list">
-                                <li><a href="blog">Blog</a></li>
-                                <li><a href="contact">Contact</a></li>
-                                <li><a href="privacy">Privacy Policy</a></li>
-                                <li><a href="terms-conditions">Terms & Conditions</a></li>
-                                <li><a href="cancellation-policy">Cancellation Policy</a></li>
+                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                                <li><a href="/privacy">Privacy Policy</a></li>
+                                <li><a href="/terms-conditions">Terms & Conditions</a></li>
+                                <li><a href="/cancellation-policy">Cancellation Policy</a></li>
                             </ul>
                         </Col>
                     </Row>

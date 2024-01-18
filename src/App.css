@@ -856,6 +856,7 @@ h1, h2{
   position: relative;
   text-decoration: none;
   transition: padding .3s;
+  text-transform: capitalize;
 }
 .footer-col-list li a:hover{
   padding-left: 5px;
@@ -2002,4 +2003,41 @@ h1, h2{
 .privacy-policy-page .heading5 {
   font-weight: 600;
   margin: 30px 0 20px;
+}
+
+/* how we work page */
+.how-we-work-banner{
+  background-color: #000;
+}
+.subheading {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* Briefing section */
+.section-less-padding{
+  padding: 60px 0;
+}
+.how-we-work-lists {
+  list-style: none;
+  font-weight: bold;
+  padding: 0;
+}
+.how-we-work-lists li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 20px;
+}
+.how-we-work-lists li::before {
+  width: 15px;
+  height: 15px;
+  content: "";
+  position: absolute;
+  border: solid 3px #212529;
+  background-color: transparent;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
