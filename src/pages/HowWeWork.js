@@ -10,6 +10,8 @@ import DevelopmentProcess from "../components/DevelopmentProcess";
 
 import briefing from '../images/briefing.png';
 import researching from '../images/researching.png';
+import evolving from '../images/evolving.png';
+import wrappingUp from '../images/wrapping-up.png';
 
 function HowWeWork(){
     return (
@@ -60,7 +62,7 @@ function HowWeWork(){
             {/* Researching section */}
             <div className="how-we-work-process researching-section section-less-padding">
                 <Container>
-                    <Row className="align-items-center">
+                    <Row className="align-items-center row-reverse-mobile">
                         <Col md={6} lg={6}>
                             <img src={researching} alt="Researching" className="responsive-img"/>
                         </Col>
@@ -89,7 +91,26 @@ function HowWeWork(){
                             </ul>
                         </Col>
                         <Col md={6} lg={6}>
-                            <img src={briefing} alt="Evolving" className="responsive-img" />
+                            <img src={evolving} alt="Evolving" className="responsive-img" />
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* Wrapping section */}
+            <div className="how-we-work-process wrapping-section section-less-padding">
+                <Container>
+                    <Row className="align-items-center row-reverse-mobile">
+                        <Col md={6} lg={6}>
+                            <img src={wrappingUp} alt="Wrapping" className="responsive-img"/>
+                        </Col>
+                        <Col md={6} lg={6}>
+                            <h2 className="heading3"><strong>Wrapping</strong> Up For Success</h2>
+                            <p className="paragraph">Get your custom-made digital solution onboard to reach maximum customers in the most time-efficient manner</p>
+                            <ul className="how-we-work-lists">
+                                <li>Successful launch of your business app with experts by your side</li>
+                                <li>Result-oriented promotional strategies to take your app a long way</li>
+                            </ul>
                         </Col>
                     </Row>
                 </Container>
