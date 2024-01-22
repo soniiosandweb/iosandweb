@@ -1,12 +1,14 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import SEO from "../components/SEO";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
+import 'react-phone-number-input/style.css';
+import PhoneInput from "react-phone-number-input";
+
 import howWeWorkImage from '../images/how-we-work.png';
-import DevelopmentProcess from "../components/DevelopmentProcess";
 
 import briefing from '../images/briefing.png';
 import researching from '../images/researching.png';
@@ -14,6 +16,9 @@ import evolving from '../images/evolving.png';
 import wrappingUp from '../images/wrapping-up.png';
 
 function HowWeWork(){
+
+    const [phoneValue, setPhoneValue] = useState();
+
     return (
         <>
 
@@ -132,8 +137,102 @@ function HowWeWork(){
                 </Container>
             </div>
 
-            {/* Development process section */}
-            <DevelopmentProcess />
+            {/* Join Our Team section */}
+            <div className="join-our-team-section section-padding">
+                <Container>
+                    <Row>
+                        <Col md={12} lg={8} className="m-auto">
+                            <h2 className="heading2 text-center">Join the IosAndWeb Technologies team!</h2>
+                            <p className="paragraph text-center">We are a global technology company that offers team members great potential for professional growth. Would you like to become part of our team? Then we look forward to getting to know you personally. We provide a supportive and inclusive environment with some perks.</p>
+
+                            <div className="join-our-team-form">
+                                <Form className="joinOurTeamForm" id="joinOurTeamForm">
+                                    <Row className="form-row">
+                                        <Col md={6} className="form-col">
+                                            <Form.Group controlId="yourFirstName" className="form-group">
+                                                <Form.Label>First Name</Form.Label>
+                                                <Form.Control type="text" required />
+                                            </Form.Group>
+                                        </Col>
+                                        <Col md={6} className="form-col">
+                                            <Form.Group controlId="yourlastName" className="form-group">
+                                                <Form.Label>Last Name</Form.Label>
+                                                <Form.Control type="text" required />
+                                            </Form.Group>
+                                        </Col>
+                                    </Row>
+                                    <Row className="form-row">
+                                        <Col md={6} className="form-col">
+                                            <Form.Group controlId="emailAddress" className="form-group">
+                                                <Form.Label>Email Address</Form.Label>
+                                                <Form.Control type="email" required />
+                                            </Form.Group>
+                                        </Col>
+                                        <Col md={6} className="form-col">
+                                            <Form.Group controlId="phoneNumber" className="form-group">
+                                                <Form.Label>Phone Number</Form.Label>
+                                                <PhoneInput 
+                                                international 
+                                                id="phoneNumber"
+                                                name="phoneNumber"
+                                                defaultCountry="IN" 
+                                                value={phoneValue} 
+                                                onChange={setPhoneValue}
+                                                className="form-control" />
+                                            </Form.Group>
+                                        </Col>
+                                    </Row>
+                                    
+                                    <Row className="form-row">
+                                        <Col md={6} className="form-col">
+                                            <Form.Group controlId="yourLocation" className="form-group">
+                                                <Form.Label>Location</Form.Label>
+                                                <Form.Control type="text" required />
+                                            </Form.Group>
+                                        </Col>
+                                        <Col md={6} className="form-col">
+                                            <Form.Group controlId="applyingFor" className="form-group">
+                                                <Form.Label>Applying for</Form.Label>
+                                                <Form.Control as="select" type="select" required>
+                                                    <option value="">Select Your Profile</option>
+                                                    <option value="PHP Developer (WordPress):- 2 to 6 years">PHP Developer (WordPress):- 2 to 6 years</option>
+                                                    <option value="Quality Analyst :- 1 to 3 years">Quality Analyst :- 1 to 3 years</option>
+                                                    <option value="UI/UX Designer:- 2 to 5 years">UI/UX Designer:- 2 to 5 years</option>
+                                                    <option value="Magento Developer:- 1 to 5 years">Magento Developer:- 1 to 5 years</option>
+                                                    <option value="Business Analyst:- 1 to 3 years">Business Analyst:- 1 to 3 years</option>
+                                                    <option value="BDM :- 5 to 8 years">BDM :- 5 to 8 years</option>
+                                                    <option value="BDE :- 6 months to 2 years">BDE :- 6 months to 2 years</option>
+                                                    <option value="Frontend Developer :- 3 to 5 years">Frontend Developer :- 3 to 5 years</option>
+                                                    <option value="MEAN Stack Devloper :- 3 to 5 years">MEAN Stack Devloper :- 3 to 5 years</option>
+                                                    <option value="Content Writer :- 2 to 5 years">Content Writer :- 2 to 5 years</option>
+                                                </Form.Control>
+                                            </Form.Group>
+                                        </Col>
+                                    </Row>
+
+                                    <Row className="form-row">
+                                        <Col md={12} className="form-col">
+                                            <Form.Group controlId="yourResume" className="form-group">
+                                                <Form.Label>Upload your resume</Form.Label>
+                                                <Form.Control type="file" />
+                                            </Form.Group>
+                                        </Col>
+                                    </Row>
+
+                                    <Row className="form-row">
+                                        <Col md={12} className="form-col">
+                                            <Form.Group className="form-group form-submit-group">
+                                                <Button type="submit" className="form-submit-btn">Submit</Button>
+                                            </Form.Group>
+                                        </Col>
+                                    </Row>
+                                    
+                                </Form> 
+                            </div>
+                        </Col>
+                    </Row>  
+                </Container>
+            </div>
         </>
     )
 }
