@@ -17,7 +17,6 @@ import HowWeWork from './pages/HowWeWork';
 function App() {
   return (
     <BrowserRouter basename='/ios/'>
-    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
