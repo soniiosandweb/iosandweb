@@ -46,6 +46,8 @@ function Contact(){
                                     </Form.Group>
                                     <Form.Group controlId="phoneNumber" className="form-group">
                                         <PhoneInput 
+                                        id="phoneNumber"
+                                        name="phoneNumber"
                                         placeholder="Phone Number" 
                                         international 
                                         defaultCountry="IN" 
