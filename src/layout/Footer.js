@@ -52,7 +52,7 @@ function Footer(){
                             <ul className="footer-col-list">
                                 <li><a href="/about">About us</a></li>
                                 <li><a href="/ios">Team</a></li>
-                                <li><a href="/ios">How we work</a></li>
+                                <li><a href="/how-we-work">How we work</a></li>
                                 <li><a href="/portfolio">Portfolio</a></li>
                             </ul>
                         </Col>
