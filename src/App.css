@@ -1386,6 +1386,7 @@ h1, h2{
   background-size: cover;
   background-position: center left;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .contact-banner .consult-expert-btn {
   margin-top: 20px;
