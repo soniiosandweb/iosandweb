@@ -1,18 +1,19 @@
 import React from "react";
+import './style.css';
 import { Container, Row, Col, Button } from "react-bootstrap";
 import OwlCarousel from "react-owl-carousel";
 
 // development section icons
-import planning from '../images/services/planning.png';
-import design from '../images/services/design.png';
-import webDevelopment from '../images/services/web-development.png';
-import qualityAnalyst from '../images/services/quality-analyst.png';
-import maintenance from '../images/services/maintenance.png';
-import planningImage from '../images/services/planning-image.jpg';
-import designImage from '../images/services/web-design-image.png';
-import developmentImage from '../images/services/web-development-image.jpg';
-import qualityAnalystImage from '../images/services/quality-analyst-image.jpg';
-import maintenanceImage from '../images/services/maintenance-image.jpg';
+import planning from '../../images/services/planning.png';
+import design from '../../images/services/design.png';
+import webDevelopment from '../../images/services/web-development.png';
+import qualityAnalyst from '../../images/services/quality-analyst.png';
+import maintenance from '../../images/services/maintenance.png';
+import planningImage from '../../images/services/planning-image.jpg';
+import designImage from '../../images/services/web-design-image.png';
+import developmentImage from '../../images/services/web-development-image.jpg';
+import qualityAnalystImage from '../../images/services/quality-analyst-image.jpg';
+import maintenanceImage from '../../images/services/maintenance-image.jpg';
 
 function DevelopmentProcess(){
     const options = {
