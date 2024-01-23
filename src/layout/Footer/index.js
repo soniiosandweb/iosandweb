@@ -1,10 +1,11 @@
 import React from "react";
+import './style.css';
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import logoWhite from "../images/IAW-logo-white.png";
-import india from '../images/hq-india.svg';
-import hqUk from '../images/hq-uk.svg';
+import logoWhite from "../../images/IAW-logo-white.png";
+import india from '../../images/hq-india.svg';
+import hqUk from '../../images/hq-uk.svg';
 import { faInstagram, faLinkedin, faSquareFacebook, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 function Footer(){

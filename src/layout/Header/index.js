@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
+import './style.css';
 import Container from 'react-bootstrap/Container';
 import { useLocation } from "react-router-dom";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from '../images/IAW-logo-white.png';
-import logoBlack from '../images/IAW-black-logo.png';
+import logo from '../../images/IAW-logo-white.png';
+import logoBlack from '../../images/IAW-black-logo.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
