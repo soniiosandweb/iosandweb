@@ -1,20 +1,22 @@
 import React from "react";
+import './style.css';
 import { Container, Row, Col } from "react-bootstrap";
-import ikea from '../images/ikea-logo-color.svg';
-import google from '../images/google-logo-color.svg';
-import bcc from '../images/bcc-logo-color.svg';
-import kfc from '../images/kfc-logo-color.svg';
-import fridays from '../images/friday-logo-color.svg';
-import moo from '../images/moo-logo-color.svg';
-import hrispy from '../images/kk-logo-color.svg';
-import hardees from '../images/hardees-logo-color.svg';
-import bajaj from '../images/bajaj-allianz-logo-color.svg';
-import dominos from '../images/domin-logo-color.svg';
-import supershe from '../images/supershe-logo-color.svg';
-import wimpy from '../images/wimpy-logo-color.svg';
-import empire from '../images/empirehotels-logo-color.svg';
-import jobGet from '../images/jobget-lgo-color.svg';
-import asianBank from '../images/asian-bank.svg';
+
+import ikea from '../../images/ikea-logo-color.svg';
+import google from '../../images/google-logo-color.svg';
+import bcc from '../../images/bcc-logo-color.svg';
+import kfc from '../../images/kfc-logo-color.svg';
+import fridays from '../../images/friday-logo-color.svg';
+import moo from '../../images/moo-logo-color.svg';
+import hrispy from '../../images/kk-logo-color.svg';
+import hardees from '../../images/hardees-logo-color.svg';
+import bajaj from '../../images/bajaj-allianz-logo-color.svg';
+import dominos from '../../images/domin-logo-color.svg';
+import supershe from '../../images/supershe-logo-color.svg';
+import wimpy from '../../images/wimpy-logo-color.svg';
+import empire from '../../images/empirehotels-logo-color.svg';
+import jobGet from '../../images/jobget-lgo-color.svg';
+import asianBank from '../../images/asian-bank.svg';
 
 function Partners(){
     return(

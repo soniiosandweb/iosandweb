@@ -1,11 +1,12 @@
 import React from "react";
+import './style.css';
 import { Container, Row, Col } from "react-bootstrap";
 
 // why choose icons
-import scalability from '../images/services/scalability.png';
-import responsive from '../images/services/responsive.png';
-import loading from '../images/services/loading.png';
-import secure from '../images/services/internet.png';
+import scalability from '../../images/services/scalability.png';
+import responsive from '../../images/services/responsive.png';
+import loading from '../../images/services/loading.png';
+import secure from '../../images/services/internet.png';
 
 function WhyChoose(){
     return (
