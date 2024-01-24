@@ -1,62 +1,63 @@
 import React from "react";
+import './style.css';
 import { Container, Row, Col } from "react-bootstrap";
-import SEO from "../components/SEO";
+import SEO from "../../components/SEO";
 import OwlCarousel from "react-owl-carousel";
 import { Accordion } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-import homeBanner from '../images/home-banner.webp';
-import homeVideo from '../images/home-video.mp4';
+import homeBanner from '../../images/home-banner.webp';
+import homeVideo from '../../images/home-video.mp4';
 
 // Award
-import AwardsSlider from "../components/AwardsSlider";
+import AwardsSlider from "../../components/AwardsSlider";
 
 // partners section
-import Partners from "../components/Partners";
+import Partners from "../../components/Partners";
 
 // why choose section
-import WhyChoose from "../components/WhyChoose";
+import WhyChoose from "../../components/WhyChoose";
 
 // services images
-import aiml from '../images/service-ai-ml.svg';
-import mobileApp from '../images/Mobile-app.svg';
-import softwareDevelopment from '../images/Software-Development.svg';
-import digitalTransformation from '../images/Digital-Transformation.svg';
-import dataScience from '../images/Data-Science-Analytics.svg';
-import cloudServices from '../images/Cloud-Services.svg';
-import blockChain from '../images/Blockchain-Services.svg';
-import ideationDesign from '../images/ideation-design.svg';
+import aiml from '../../images/service-ai-ml.svg';
+import mobileApp from '../../images/Mobile-app.svg';
+import softwareDevelopment from '../../images/Software-Development.svg';
+import digitalTransformation from '../../images/Digital-Transformation.svg';
+import dataScience from '../../images/Data-Science-Analytics.svg';
+import cloudServices from '../../images/Cloud-Services.svg';
+import blockChain from '../../images/Blockchain-Services.svg';
+import ideationDesign from '../../images/ideation-design.svg';
 
 // industries images
-import healthCare from '../images/healthcare-indus.svg';
-import finance from '../images/finance-indus.svg';
-import restaurant from '../images/restaurant-indus.svg';
-import ecommerce from '../images/ecommerce-indus.svg';
-import ev from '../images/ev-indus.svg';
-import saas from '../images/saas-indus.svg';
-import travel from '../images/travel-indus.svg';
-import entertainment from '../images/entertainment-indus.svg';
-import onDemand from '../images/on-demand-indus.svg';
-import socialMedia from '../images/social-networking-indus.svg';
-import logistics from '../images/logistics-indus.svg';
-import edtech from '../images/education-indus.svg';
+import healthCare from '../../images/healthcare-indus.svg';
+import finance from '../../images/finance-indus.svg';
+import restaurant from '../../images/restaurant-indus.svg';
+import ecommerce from '../../images/ecommerce-indus.svg';
+import ev from '../../images/ev-indus.svg';
+import saas from '../../images/saas-indus.svg';
+import travel from '../../images/travel-indus.svg';
+import entertainment from '../../images/entertainment-indus.svg';
+import onDemand from '../../images/on-demand-indus.svg';
+import socialMedia from '../../images/social-networking-indus.svg';
+import logistics from '../../images/logistics-indus.svg';
+import edtech from '../../images/education-indus.svg';
 
 // Partnership images
-import awsLogo from '../images/aws-partner.svg';
-import mongoDB from '../images/mongodb-partner.svg';
-import googleCloud from '../images/google-cloud-partner.svg';
-import cloudinary from '../images/cloudinary-partner.svg';
+import awsLogo from '../../images/aws-partner.svg';
+import mongoDB from '../../images/mongodb-partner.svg';
+import googleCloud from '../../images/google-cloud-partner.svg';
+import cloudinary from '../../images/cloudinary-partner.svg';
 
 // Testimonial images
-import danKurth from '../images/dan-kurth.png';
-import josh from '../images/josh-testimonial.png';
-import geema from '../images/geema-testimonial.png';
-import ericBakey from '../images/eric-bakey.png';
-import paulAzzurro from '../images/Paul-Azzurro.png';
-import kevinTang from '../images/kevin-tang.png';
-import martyJames from '../images/Marty-James.png';
-import robertTa from '../images/Robert-Ta.png';
+import danKurth from '../../images/dan-kurth.png';
+import josh from '../../images/josh-testimonial.png';
+import geema from '../../images/geema-testimonial.png';
+import ericBakey from '../../images/eric-bakey.png';
+import paulAzzurro from '../../images/Paul-Azzurro.png';
+import kevinTang from '../../images/kevin-tang.png';
+import martyJames from '../../images/Marty-James.png';
+import robertTa from '../../images/Robert-Ta.png';
 
 function Home() {
 

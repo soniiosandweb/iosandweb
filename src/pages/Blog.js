@@ -65,7 +65,9 @@ function Blog(){
                             
                             <Col md={6} lg={4} className="blog-col" key={item.id}>
                                 <div className="blog-list-item">
-                                    <img src={item.image} className="blog-image" alt="Proven Strategies" />
+                                    <a key={index} href={"blog/"+item.url}>
+                                        <img src={item.image} className="blog-image" alt="Proven Strategies" />
+                                    </a>
                                     <div className="blog-detail">
                                         <h5><span className="blog-date">{item.date}</span></h5>
                                         <a key={index} href={"blog/"+item.url}>
