@@ -44,7 +44,7 @@ function Footer(){
                     <Row>
                         <Col md={6} lg={4}>
                             <div className="footer-col">
-                                <a href="/ios"><img src={logoWhite} alt="IAW logo" className="footer-logo" /></a>
+                                <a href="/"><img src={logoWhite} alt="IAW logo" className="footer-logo" /></a>
                                 <p className="footer-about">IosAndWeb Technologies believes in achieving goals and client satisfaction. We deliver inspiring & eye-catching websites and conduct profitable marketing campaigns that attract the audience and boost the client's business. We provide Support & Maintenance even after the completion of the project.</p>
                             </div>
                         </Col>
@@ -52,7 +52,7 @@ function Footer(){
                             <h5 className="footer-col-head">About</h5>
                             <ul className="footer-col-list">
                                 <li><a href="/about">About us</a></li>
-                                <li><a href="/ios">Team</a></li>
+                                <li><a href="/">Team</a></li>
                                 <li><a href="/how-we-work">How we work</a></li>
                                 <li><a href="/portfolio">Portfolio</a></li>
                             </ul>

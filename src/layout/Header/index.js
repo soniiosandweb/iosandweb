@@ -69,7 +69,7 @@ function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" className={`header ${fixed} ${headerbg}`}>
       <Container>
-        <Navbar.Brand href="/ios">
+        <Navbar.Brand href="/">
           <img src={image} alt="IosAndWeb logo" className="responsive logo" />
         </Navbar.Brand>
 

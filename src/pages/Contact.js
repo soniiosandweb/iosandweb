@@ -85,7 +85,7 @@ function Contact(){
                             <div className="heading-wrapper">
                                 <h1>We Are Here To <br></br><TypeWritter text="Help You!" delay={300} infinite  /></h1>
                                 <div className="heading5">Discover A Bespoke, IosAndWeb Technologies an honest & results-driven web-mobile development and digital marketing agency. We deliver a personal, passionate & tailored web development and digital marketing service to each and every one of our clients.</div>
-                                <a href="/ios" className="consult-expert-btn">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
+                                <a href="/" className="consult-expert-btn">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
                             </div>
                         </Col>
                         <Col lg={5}>
