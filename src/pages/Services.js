@@ -6,6 +6,8 @@ import SEO from "../components/SEO";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
+import GetStarted from "../components/GetStarted";
+
 // what we do images
 import serviceImage from '../images/services-image.png';
 import webDevelop from '../images/services/settings.png';
@@ -177,20 +179,12 @@ function Services(){
             <WhyChoose />
 
             {/* get started section */}
-            <div className="get-started section-padding text-white">
-                <Container>
-                    <Row className="align-items-center">
-                        <Col lg={9}>
-                            <h2 className="heading2">Let's Start Building Web Solutions To Help Achieve Your Business Goals</h2>
-                        </Col>
-                        <Col lg={3}>
-                            <div className="get-started-btn">
-                               <a href="/contact" className="btn btn-white-border">Get Started <FontAwesomeIcon icon={faChevronRight} /></a> 
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+            <GetStarted 
+                title="Let's Start Building Web Solutions To Help Achieve Your Business Goals"
+                buttonText="Get Started"
+                link="/contact"
+            />
+
 
             {/* Development process section */}
             <DevelopmentProcess />
