@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import SEO from "../components/SEO";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 import howWeWorkImage from '../images/how-we-work.png';
 
@@ -13,6 +12,8 @@ import evolving from '../images/evolving.png';
 import wrappingUp from '../images/wrapping-up.png';
 
 import JoinOurTeam from "../components/JoinOurTeam";
+import GetStarted from "../components/GetStarted";
+import TypeWritter from "../components/TypeWritter";
 
 function HowWeWork(){
 
@@ -31,7 +32,7 @@ function HowWeWork(){
                         <Col lg={7}>
                             <div className="heading-wrapper">
                                 <p className="subheading"><FontAwesomeIcon icon={faQuestionCircle} /> How We Work</p>
-                                <h1>Web Solutions To Boost Your Brand Growth</h1>
+                                <h1>Web Solutions To Boost Your Brand <TypeWritter text="Growth" delay={300} infinite  /></h1>
                                 <div className="heading5">Accelerate Your Business Growth With End-to-End Digital Solutions</div>
                             </div>
                         </Col>
@@ -119,20 +120,11 @@ function HowWeWork(){
             </div>
 
             {/* get started section */}
-            <div className="get-started section-padding text-white">
-                <Container>
-                    <Row className="align-items-center">
-                        <Col lg={9}>
-                            <h2 className="heading2">Now Is The Right Time To Convert Your Idea Into A Go-To Mobile Application</h2>
-                        </Col>
-                        <Col lg={3}>
-                            <div className="get-started-btn">
-                               <a href="/contact" className="btn btn-white-border">Get Started <FontAwesomeIcon icon={faChevronRight} /></a> 
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+            <GetStarted 
+                title="Now Is The Right Time To Convert Your Idea Into A Go-To Mobile Application"
+                buttonText="Get Started"
+                link="/contact"
+            />
 
             {/* Join Our Team section */}
             <JoinOurTeam />

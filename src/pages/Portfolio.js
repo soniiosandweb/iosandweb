@@ -6,6 +6,7 @@ import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons
 import { useEffect, useState } from "react";
 import axios from 'axios';
 import SEO from "../components/SEO";
+import TypeWritter from "../components/TypeWritter";
 
 import portfolioImage from '../images/Project-Portfolio.png';
 
@@ -45,7 +46,7 @@ function Portfolio(){
                     <Row className="align-items-center">
                         <Col lg={7}>
                             <div className="heading-wrapper">
-                                <h1>We Love To Make Websites That Make A Difference</h1>
+                                <h1>We Love To Make <TypeWritter text="Websites" delay={300} infinite  /><br></br>That Make A Difference</h1>
                                 <div className="heading5">Explore Why Choose IosAndWeb Technologies To Transform Your Business Ideas Into Reality</div>
                             </div>
                         </Col>

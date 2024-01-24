@@ -3,6 +3,7 @@ import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import SEO from "../components/SEO";
+import TypeWritter from "../components/TypeWritter";
 
 import 'react-phone-number-input/style.css';
 import PhoneInput, {isPossiblePhoneNumber} from "react-phone-number-input";
@@ -82,7 +83,7 @@ function Contact(){
                     <Row className="align-items-center">
                         <Col lg={7}>
                             <div className="heading-wrapper">
-                                <h1>We Are Here To Help You!</h1>
+                                <h1>We Are Here To <br></br><TypeWritter text="Help You!" delay={300} infinite  /></h1>
                                 <div className="heading5">Discover A Bespoke, IosAndWeb Technologies an honest & results-driven web-mobile development and digital marketing agency. We deliver a personal, passionate & tailored web development and digital marketing service to each and every one of our clients.</div>
                                 <a href="/ios" className="consult-expert-btn">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
                             </div>

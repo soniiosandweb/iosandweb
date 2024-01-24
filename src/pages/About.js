@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SEO from "../components/SEO";
+import TypeWritter from "../components/TypeWritter";
 
 // Join Team images
 import teamImage1 from '../images/team-galler1.jpg';
@@ -39,7 +40,7 @@ function About(){
                     <Row>
                         <Col>
                             <div className="heading-wrapper">
-                                <h1>Transforming Businesses With Innovation</h1>
+                                <h1>Transforming Businesses With <TypeWritter text="Innovation" delay={300} infinite  /></h1>
                             </div>
                         </Col>
                     </Row>
