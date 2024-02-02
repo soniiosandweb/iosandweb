@@ -52,7 +52,7 @@ function Footer(){
                             <h5 className="footer-col-head">About</h5>
                             <ul className="footer-col-list">
                                 <li><a href="/about">About us</a></li>
-                                <li><a href="/">Team</a></li>
+                                <li><a href="/our-team">Team</a></li>
                                 <li><a href="/how-we-work">How we work</a></li>
                                 <li><a href="/portfolio">Portfolio</a></li>
                             </ul>
