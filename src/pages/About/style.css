@@ -1,6 +1,6 @@
 /* About page */
 .about-banner{
-    background-image: url('../..//images/about-banner.jpg');
+    background-image: url('../..//images/about/about-banner.jpg');
     background-size: cover;
     background-position: top center;
     height: 90vh;
