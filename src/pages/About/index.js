@@ -5,27 +5,27 @@ import SEO from "../../components/SEO";
 import TypeWritter from "../../components/TypeWritter";
 
 // Join Team images
-import teamImage1 from '../../images/team-galler1.jpg';
-import teamImage2 from '../../images/team-galler2.jpg';
-import teamImage3 from '../../images/team-galler3.jpg';
+import teamImage1 from '../../images/about/team-galler1.jpg';
+import teamImage2 from '../../images/about/team-galler2.jpg';
+import teamImage3 from '../../images/about/team-galler3.jpg';
 
 // work life images
-import learningDev from '../../images/learning-dev.jpg';
-import mindful from '../../images/Mindful-Personal-Guidance.jpg';
-import constructiveFeedback from '../../images/Constructive-Feedback.jpg';
-import inclusive from '../../images/Inclusive-Open-Culture.jpg';
-import innovation from '../../images/Innovation-Quality-First.jpg';
-import proactive from '../../images/Proactive-Implementation.jpg';
-import bestGlobal from '../../images/Best-Global-Opportunities.jpg';
-import workLatest from '../../images/Work-with-Latest-Technology.jpg';
+import learningDev from '../../images/about/learning-dev.jpg';
+import mindful from '../../images/about/Mindful-Personal-Guidance.jpg';
+import constructiveFeedback from '../../images/about/Constructive-Feedback.jpg';
+import inclusive from '../../images/about/Inclusive-Open-Culture.jpg';
+import innovation from '../../images/about/Innovation-Quality-First.jpg';
+import proactive from '../../images/about/Proactive-Implementation.jpg';
+import bestGlobal from '../../images/about/Best-Global-Opportunities.jpg';
+import workLatest from '../../images/about/Work-with-Latest-Technology.jpg';
 
 // achievements images
-import clutch from '../../images/clutch-logo.png';
-import appFutura from '../../images/appfutura-logo.jpg';
-import itFirms from '../../images/it-firms-logo.png';
-import goodFirms from '../../images/goodfirms-logo.png';
-import topDevelopers from '../../images/top-developers-logo.png';
-import upWork from '../../images/upwork-logo.png';
+import clutch from '../../images/about/clutch-logo.png';
+import appFutura from '../../images/about/appfutura-logo.jpg';
+import itFirms from '../../images/about/it-firms-logo.png';
+import goodFirms from '../../images/about/goodfirms-logo.png';
+import topDevelopers from '../../images/about/top-developers-logo.png';
+import upWork from '../../images/about/upwork-logo.png';
 
 function About(){
     return(

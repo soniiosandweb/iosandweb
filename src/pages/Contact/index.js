@@ -10,9 +10,9 @@ import 'react-phone-number-input/style.css';
 import PhoneInput, {isPossiblePhoneNumber} from "react-phone-number-input";
 
 // location images
-import locIndia from '../../images/cont-loc-india.svg';
-import locUK from '../../images/cont-loc-uk.svg';
-import contactImage from '../../images/contact-footer.avif';
+import locIndia from '../../images/contact/cont-loc-india.svg';
+import locUK from '../../images/contact/cont-loc-uk.svg';
+import contactImage from '../../images/contact/contact-footer.avif';
 
 function Contact(){
 

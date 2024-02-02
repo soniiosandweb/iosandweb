@@ -3,11 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import OwlCarousel from "react-owl-carousel";
 
 // Award images
-import goodFirmLogo from '../../images/good-firms-logo.png';
-import appFutura from '../../images/appfutura.png';
-import itFirms from '../../images/itfirm.png';
-import topDevelopment from '../../images/top-development.png';
-import upWork from '../../images/upwork.png';
+import goodFirmLogo from '../../images/awards/good-firms-logo.png';
+import appFutura from '../../images/awards/appfutura.png';
+import itFirms from '../../images/awards/itfirm.png';
+import topDevelopment from '../../images/awards/top-development.png';
+import upWork from '../../images/awards/upwork.png';
 
 function AwardsSlider(){
     return(

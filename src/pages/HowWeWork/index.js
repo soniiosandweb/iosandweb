@@ -5,12 +5,12 @@ import SEO from "../../components/SEO";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
 
-import howWeWorkImage from '../../images/how-we-work.png';
+import howWeWorkImage from '../../images/how-we-work/how-we-work.png';
 
-import briefing from '../../images/briefing.png';
-import researching from '../../images/researching.png';
-import evolving from '../../images/evolving.png';
-import wrappingUp from '../../images/wrapping-up.png';
+import briefing from '../../images/how-we-work/briefing.png';
+import researching from '../../images/how-we-work/researching.png';
+import evolving from '../../images/how-we-work/evolving.png';
+import wrappingUp from '../../images/how-we-work/wrapping-up.png';
 
 import JoinOurTeam from "../../components/JoinOurTeam";
 import GetStarted from "../../components/GetStarted";
