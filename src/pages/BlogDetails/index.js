@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
+import './style.css';
 import { useParams } from "react-router-dom";
 import axios from 'axios';
 import { Row, Col, Container } from "react-bootstrap";
-import SEO from "../components/SEO";
+import SEO from "../../components/SEO";
 
 function BlogDetails(){
     const url = useParams().url;

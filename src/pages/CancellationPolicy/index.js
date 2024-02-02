@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import SEO from '../components/SEO';
+import SEO from '../../components/SEO';
 
 function CancellationPolicy(){
     return(

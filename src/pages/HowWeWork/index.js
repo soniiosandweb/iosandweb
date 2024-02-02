@@ -1,19 +1,20 @@
 import React from "react";
+import './style.css';
 import { Container, Row, Col } from "react-bootstrap";
-import SEO from "../components/SEO";
+import SEO from "../../components/SEO";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
 
-import howWeWorkImage from '../images/how-we-work.png';
+import howWeWorkImage from '../../images/how-we-work.png';
 
-import briefing from '../images/briefing.png';
-import researching from '../images/researching.png';
-import evolving from '../images/evolving.png';
-import wrappingUp from '../images/wrapping-up.png';
+import briefing from '../../images/briefing.png';
+import researching from '../../images/researching.png';
+import evolving from '../../images/evolving.png';
+import wrappingUp from '../../images/wrapping-up.png';
 
-import JoinOurTeam from "../components/JoinOurTeam";
-import GetStarted from "../components/GetStarted";
-import TypeWritter from "../components/TypeWritter";
+import JoinOurTeam from "../../components/JoinOurTeam";
+import GetStarted from "../../components/GetStarted";
+import TypeWritter from "../../components/TypeWritter";
 
 function HowWeWork(){
 
@@ -37,7 +38,7 @@ function HowWeWork(){
                             </div>
                         </Col>
                         <Col lg={5}>
-                            <img src={howWeWorkImage} className="responsive-img" alt="Portfolio" />
+                            <img src={howWeWorkImage} className="responsive-img" alt="How We Work" />
                         </Col>
                     </Row>
                 </Container>

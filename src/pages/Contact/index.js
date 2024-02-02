@@ -1,17 +1,18 @@
 import React, { useState } from "react";
+import './style.css';
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-import SEO from "../components/SEO";
-import TypeWritter from "../components/TypeWritter";
+import SEO from "../../components/SEO";
+import TypeWritter from "../../components/TypeWritter";
 
 import 'react-phone-number-input/style.css';
 import PhoneInput, {isPossiblePhoneNumber} from "react-phone-number-input";
 
 // location images
-import locIndia from '../images/cont-loc-india.svg';
-import locUK from '../images/cont-loc-uk.svg';
-import contactImage from '../images/contact-footer.avif';
+import locIndia from '../../images/cont-loc-india.svg';
+import locUK from '../../images/cont-loc-uk.svg';
+import contactImage from '../../images/contact-footer.avif';
 
 function Contact(){
 
