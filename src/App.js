@@ -13,6 +13,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
 import CancellationPolicy from './pages/CancellationPolicy';
 import HowWeWork from './pages/HowWeWork';
+import Team from './pages/Team';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path='/terms-conditions' element={<TermsConditions />} />
           <Route path='/cancellation-policy' element={< CancellationPolicy />} />
           <Route path='/how-we-work' element={<HowWeWork />} />
+          <Route path='/our-team' element={<Team />} />
           <Route path='*' element={<NoPage />} />
         </Route>
       </Routes>

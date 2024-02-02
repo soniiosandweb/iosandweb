@@ -1,0 +1,41 @@
+/* Team page */
+.our-team-banner{
+    background-color: #000;
+}
+
+/* Our team section */
+.team-grid-row {
+    grid-gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 5rem 0 0;
+}
+.team-grid-row .team-item {
+    text-align: center;
+    padding: 15px;
+}
+.team-profile-image {
+    margin: auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 15px -6px rgb(0 0 0/55%);
+}
+.team-profile-image img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #f1f2fd;
+}
+.team-grid-row .team-item .profile-content {
+    padding-top: 20px;
+}
+.team-title{
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 24px;
+}
