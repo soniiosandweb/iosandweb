@@ -1,14 +1,15 @@
 import React from "react";
+import './style.css';
 import { Container, Row, Col } from "react-bootstrap";
 import ReactPaginate from "react-paginate"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import axios from 'axios';
-import SEO from "../components/SEO";
-import TypeWritter from "../components/TypeWritter";
+import SEO from "../../components/SEO";
+import TypeWritter from "../../components/TypeWritter";
 
-import portfolioImage from '../images/Project-Portfolio.png';
+import portfolioImage from '../../images/Project-Portfolio.png';
 
 function Portfolio(){
 

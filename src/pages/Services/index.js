@@ -1,32 +1,33 @@
 import React from "react";
+import './style.css';
 import { Container, Row, Col } from "react-bootstrap";
-import WhyChoose from "../components/WhyChoose";
-import SEO from "../components/SEO";
+import WhyChoose from "../../components/WhyChoose";
+import SEO from "../../components/SEO";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-import GetStarted from "../components/GetStarted";
+import GetStarted from "../../components/GetStarted";
 
 // what we do images
-import serviceImage from '../images/services-image.png';
-import webDevelop from '../images/services/settings.png';
-import mobileDevelop from '../images/services/development.png';
-import magentoDevelop from '../images/services/magento_development.png';
-import blockchainDevelop from '../images/services/blockchain-development.png';
-import smartContract from '../images/services/smart-contract.png';
-import poc from '../images/services/letter.png';
+import serviceImage from '../../images/services-image.png';
+import webDevelop from '../../images/services/settings.png';
+import mobileDevelop from '../../images/services/development.png';
+import magentoDevelop from '../../images/services/magento_development.png';
+import blockchainDevelop from '../../images/services/blockchain-development.png';
+import smartContract from '../../images/services/smart-contract.png';
+import poc from '../../images/services/letter.png';
 
 // we design images
 import { faDesktop, faPaintBrush } from "@fortawesome/free-solid-svg-icons";
 import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
-import html from '../images/services/html.png';
-import psd from '../images/services/xd.png';
-import UX from '../images/services/ux.png';
-import css from '../images/services/css.png';
-import php from '../images/services/php.png';
-import afterEffect from '../images/services/after-effects.png';
-import DevelopmentProcess from "../components/DevelopmentProcess";
+import html from '../../images/services/html.png';
+import psd from '../../images/services/xd.png';
+import UX from '../../images/services/ux.png';
+import css from '../../images/services/css.png';
+import php from '../../images/services/php.png';
+import afterEffect from '../../images/services/after-effects.png';
+import DevelopmentProcess from "../../components/DevelopmentProcess";
 
 
 function Services(){

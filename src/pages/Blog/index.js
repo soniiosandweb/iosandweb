@@ -1,13 +1,14 @@
 import React from "react";
+import './style.css';
 import { Container, Row, Col } from "react-bootstrap";
 import ReactPaginate from "react-paginate"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import axios from 'axios';
-import SEO from "../components/SEO";
+import SEO from "../../components/SEO";
 
-import blogImage from '../images/blog-banner.png';
+import blogImage from '../../images/blog-banner.png';
 
 function Blog(){
 

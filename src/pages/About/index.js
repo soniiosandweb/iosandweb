@@ -1,30 +1,31 @@
 import React from "react";
+import './style.css';
 import { Container, Row, Col } from "react-bootstrap";
-import SEO from "../components/SEO";
-import TypeWritter from "../components/TypeWritter";
+import SEO from "../../components/SEO";
+import TypeWritter from "../../components/TypeWritter";
 
 // Join Team images
-import teamImage1 from '../images/team-galler1.jpg';
-import teamImage2 from '../images/team-galler2.jpg';
-import teamImage3 from '../images/team-galler3.jpg';
+import teamImage1 from '../../images/team-galler1.jpg';
+import teamImage2 from '../../images/team-galler2.jpg';
+import teamImage3 from '../../images/team-galler3.jpg';
 
 // work life images
-import learningDev from '../images/learning-dev.jpg';
-import mindful from '../images/Mindful-Personal-Guidance.jpg';
-import constructiveFeedback from '../images/Constructive-Feedback.jpg';
-import inclusive from '../images/Inclusive-Open-Culture.jpg';
-import innovation from '../images/Innovation-Quality-First.jpg';
-import proactive from '../images/Proactive-Implementation.jpg';
-import bestGlobal from '../images/Best-Global-Opportunities.jpg';
-import workLatest from '../images/Work-with-Latest-Technology.jpg';
+import learningDev from '../../images/learning-dev.jpg';
+import mindful from '../../images/Mindful-Personal-Guidance.jpg';
+import constructiveFeedback from '../../images/Constructive-Feedback.jpg';
+import inclusive from '../../images/Inclusive-Open-Culture.jpg';
+import innovation from '../../images/Innovation-Quality-First.jpg';
+import proactive from '../../images/Proactive-Implementation.jpg';
+import bestGlobal from '../../images/Best-Global-Opportunities.jpg';
+import workLatest from '../../images/Work-with-Latest-Technology.jpg';
 
 // achievements images
-import clutch from '../images/clutch-logo.png';
-import appFutura from '../images/appfutura-logo.jpg';
-import itFirms from '../images/it-firms-logo.png';
-import goodFirms from '../images/goodfirms-logo.png';
-import topDevelopers from '../images/top-developers-logo.png';
-import upWork from '../images/upwork-logo.png';
+import clutch from '../../images/clutch-logo.png';
+import appFutura from '../../images/appfutura-logo.jpg';
+import itFirms from '../../images/it-firms-logo.png';
+import goodFirms from '../../images/goodfirms-logo.png';
+import topDevelopers from '../../images/top-developers-logo.png';
+import upWork from '../../images/upwork-logo.png';
 
 function About(){
     return(
