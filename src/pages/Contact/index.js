@@ -12,6 +12,7 @@ import PhoneInput, {isPossiblePhoneNumber} from "react-phone-number-input";
 // location images
 import locIndia from '../../images/contact/cont-loc-india.svg';
 import locUK from '../../images/contact/cont-loc-uk.svg';
+import locUS from '../../images/contact/cont-loc-usa.svg';
 import contactImage from '../../images/contact/contact-footer.avif';
 
 function Contact(){
@@ -169,11 +170,11 @@ function Contact(){
                         </Col>
                         <Col md={6} lg={4}>
                             <div className="location-contact-div text-center">
-                                <img src={locUK} className="location-img" alt="United Kingdom" />
-                                <div className="heading5">United Kingdom</div>
-                                <p className="paragraph">High St. Selly Oak,
-                                <br></br>Birmingham B29 7TJ,
-                                <br></br>United Kingdom</p>
+                                <img src={locUS} className="location-img" alt="United States" />
+                                <div className="heading5">United States</div>
+                                <p className="paragraph">Suite #304, 11200 Manchaca, 
+                                <br></br>Austin, Texas,
+                                <br></br>United States, 78748</p>
                             </div>
                         </Col>
                     </Row>
