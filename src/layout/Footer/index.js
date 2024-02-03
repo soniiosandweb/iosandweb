@@ -30,9 +30,9 @@ function Footer(){
                         </Col>
                         <Col md={4}>
                             <div className="location-div">
-                                <img src={hqUk} alt="United Kingdom" className="location-image" />
-                                <div className="location-heading">United Kingdom</div>
-                                <p className="location-text">High St. Selly Oak, <br></br>Birmingham B29 7TJ, <br></br>United Kingdom</p>
+                                <img src={hqUk} alt="United States" className="location-image" />
+                                <div className="location-heading">United States</div>
+                                <p className="location-text">Suite #304, 11200 Manchaca, <br></br>Austin, Texas, <br></br>United States, 78748</p>
                             </div>
                         </Col>
                     </Row>

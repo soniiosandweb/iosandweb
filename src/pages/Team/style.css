@@ -34,10 +34,26 @@
 .team-grid-row .team-item .profile-content {
     padding-top: 20px;
 }
-.team-title{
+.team-grid-row .team-item .team-title{
     margin-bottom: 0;
     font-weight: 600;
     font-size: 24px;
+}
+.team-grid-row .team-item .profile-content .paragraph {
+    margin: 10px 0;
+}
+.team-grid-row .team-item .profile-content .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.team-grid-row .team-item .profile-content .social-icons a {
+    color: #1050bc;
+    font-size: 20px;
+}
+.team-grid-row .team-item .profile-content .social-icons a:hover{
+    color: #000;
 }
 
 @media (max-width: 1199px) {
