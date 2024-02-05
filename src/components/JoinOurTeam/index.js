@@ -3,6 +3,8 @@ import './style.css';
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import 'react-phone-number-input/style.css';
 import PhoneInput, {isPossiblePhoneNumber} from "react-phone-number-input";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 function JoinOurTeam(){
 
@@ -188,7 +190,7 @@ function JoinOurTeam(){
                                     <Row className="form-row">
                                         <Col md={12} className="form-col">
                                             <Form.Group className="form-group form-submit-group">
-                                                <Button type="submit" className="form-submit-btn">Submit</Button>
+                                                <Button type="submit" className="form-submit-btn btn btn-blue-border">Submit <FontAwesomeIcon icon={faChevronRight} /></Button>
                                             </Form.Group>
                                         </Col>
                                     </Row>

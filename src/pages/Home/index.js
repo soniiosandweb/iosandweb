@@ -77,7 +77,7 @@ function Home() {
                             <div className="intro-content">
                                 <h1 className="banner-heading">Custom Software Development Company</h1>
                                 <p className="banner-text">We offer complete business software development solutions.<br></br>We combine this culture of innovation with our capabilities and industry expertise to go beyond the other traditional technology.</p>
-                                <a href="contact" className="consult-expert-btn">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
+                                <a href="/contact" className="consult-expert-btn">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
                             </div>
                             <video className="intro_video" poster={homeBanner} autoPlay={true} muted={true} loop={true}>
                                 <source src={homeVideo} type="video/mp4"></source>
@@ -99,12 +99,12 @@ function Home() {
                                 </h3>
                             </div>
                             <div className="btn-section">
-                                <a href="services" className="btn btn-blue-border">Our Services <FontAwesomeIcon icon={faChevronRight} /></a>
+                                <a href="/services" className="btn btn-blue-border">Our Services <FontAwesomeIcon icon={faChevronRight} /></a>
                             </div>
 
                             <div className="services-cards">
                                 <div className="service-card">
-                                    <a href="services" className="bg-red">
+                                    <a href="/services" className="bg-red">
                                         <div className="service-icon">
                                             <img src={aiml} className="service-img" alt="AI ML" />
                                         </div>
@@ -112,7 +112,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="services" className="bg-purple">
+                                    <a href="/services" className="bg-purple">
                                         <div className="service-icon">
                                             <img src={mobileApp} className="service-img" alt="Mobile App" />
                                         </div>
@@ -120,15 +120,15 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="services" className="bg-orange">
+                                    <a href="/services" className="bg-orange">
                                         <div className="service-icon">
                                             <img src={softwareDevelopment} className="service-img" alt="Software Development" />
                                         </div>
-                                        <p className="service-text">Software<br></br>Development</p>
+                                        <p className="/service-text">Software<br></br>Development</p>
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="services" className="bg-blue">
+                                    <a href="/services" className="bg-blue">
                                         <div className="service-icon">
                                             <img src={digitalTransformation} className="service-img" alt="Software Development" />
                                         </div>
@@ -136,7 +136,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="services" className="bg-green">
+                                    <a href="/services" className="bg-green">
                                         <div className="service-icon">
                                             <img src={dataScience} className="service-img" alt="Software Development" />
                                         </div>
@@ -144,7 +144,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="services" className="bg-gray">
+                                    <a href="/services" className="bg-gray">
                                         <div className="service-icon">
                                             <img src={cloudServices} className="service-img" alt="Software Development" />
                                         </div>
@@ -152,7 +152,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="services" className="bg-pink">
+                                    <a href="/services" className="bg-pink">
                                         <div className="service-icon">
                                             <img src={blockChain} className="service-img" alt="Software Development" />
                                         </div>
@@ -160,7 +160,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="services" className="bg-yellow">
+                                    <a href="/services" className="bg-yellow">
                                         <div className="service-icon">
                                             <img src={ideationDesign} className="service-img" alt="Software Development" />
                                         </div>

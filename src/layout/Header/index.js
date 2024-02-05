@@ -81,7 +81,7 @@ function Header() {
         </Navbar.Toggle>
 
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
-          <Nav className="align-items-center">
+          <Nav className="container">
             <Nav.Link href="/about" className={locationValue[1] === "about" ? "active" : ""}>About</Nav.Link>
             <Nav.Link href="/services" className={locationValue[1] === "services" ? "active" : ""}>Services</Nav.Link>
             <Nav.Link href="/portfolio" className={locationValue[1] === "portfolio" ? "active" : ""}>Portfolio</Nav.Link>

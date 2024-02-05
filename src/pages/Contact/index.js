@@ -4,7 +4,6 @@ import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import SEO from "../../components/SEO";
-import TypeWritter from "../../components/TypeWritter";
 
 import 'react-phone-number-input/style.css';
 import PhoneInput, {isPossiblePhoneNumber} from "react-phone-number-input";
@@ -85,7 +84,7 @@ function Contact(){
                     <Row className="align-items-center">
                         <Col lg={7}>
                             <div className="heading-wrapper">
-                                <h1>We Are Here To <br></br><TypeWritter text="Help You!" delay={300} infinite  /></h1>
+                                <h1>We Are Here To <span className="text-highlight">Help You!</span></h1>
                                 <div className="heading5">Discover A Bespoke, IosAndWeb Technologies an honest & results-driven web-mobile development and digital marketing agency. We deliver a personal, passionate & tailored web development and digital marketing service to each and every one of our clients.</div>
                                 <a href="/" className="consult-expert-btn">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
                             </div>
@@ -126,7 +125,7 @@ function Contact(){
                                         <Form.Control as="textarea" rows={4} placeholder="Message or Questions" />
                                     </Form.Group>
                                     <Form.Group className="form-group form-submit-group">
-                                        <Button type="submit" className="form-submit-btn">Send</Button>
+                                        <Button type="submit" className="form-submit-btn btn btn-blue-border">Send <FontAwesomeIcon icon={faChevronRight} /></Button>
                                     </Form.Group>
                                 </Form>
                             </div>
@@ -206,7 +205,7 @@ function Contact(){
                             <div className="contact-footer-flex contact-left-col">
                                 <h2 className="heading2">Enable Unmatched Digital Transformation Seamlessly</h2>
                                 <div className="apply-btn btn-section">
-                                    <a href="contact" className="btn btn-blue">Talk to Our Experts</a>
+                                    <a href="/contact" className="btn btn-blue-border">Talk to Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
                                 </div>
                             </div>
                             <div className="contact-footer-flex contact-right-col">

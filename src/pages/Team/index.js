@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSkype } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import SEO from "../../components/SEO";
-import TypeWritter from "../../components/TypeWritter";
 import GetStarted from "../../components/GetStarted";
 import JoinTeamGallery from "../../components/JoinTeamGallery";
 
@@ -28,7 +27,7 @@ function Team(){
                     <Row className="align-items-center">
                         <Col lg={6}>
                             <div className="heading-wrapper">
-                                <h1>Our Core <br></br>Team <TypeWritter text="Leaders" delay={300} infinite  /></h1>
+                                <h1>Our Core Team <span className="text-highlight">Leaders</span></h1>
                                 <div className="heading5">Meet an exceptional team of technology advisors, growth facilitators, and subject matter experts with proven experience</div>
                             </div>
                         </Col>

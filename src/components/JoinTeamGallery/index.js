@@ -1,6 +1,8 @@
 import React from "react";
 import './style.css';
 import { Container, Row, Col } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 // Join Team images
 import teamImage1 from '../../images/about/team-galler1.jpg';
@@ -18,7 +20,7 @@ function JoinTeamGallery(){
                             <h2 className="heading2">Join the IosAndWeb Technologies team!</h2>
                             <div className="heading5">Innovate with the latest and greatest technologies & get to work on some of the coolest projects you can imagine.</div>
                             <div className="apply-btn btn-section">
-                                <a href="contact" className="btn btn-blue">Apply Now</a>
+                                <a href="/contact" className="btn btn-blue-border">Apply Now <FontAwesomeIcon icon={faChevronRight} /></a>
                             </div>
                         </Col>
                         <Col md={6} lg={7}>

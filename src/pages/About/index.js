@@ -2,7 +2,6 @@ import React from "react";
 import './style.css';
 import { Container, Row, Col } from "react-bootstrap";
 import SEO from "../../components/SEO";
-import TypeWritter from "../../components/TypeWritter";
 
 // Join Team
 import JoinTeamGallery from '../../components/JoinTeamGallery';
@@ -39,7 +38,7 @@ function About(){
                     <Row>
                         <Col>
                             <div className="heading-wrapper">
-                                <h1>Transforming Businesses With <TypeWritter text="Innovation" delay={300} infinite  /></h1>
+                                <h1>Transforming Businesses With <span className="text-highlight">Innovation</span></h1>
                             </div>
                         </Col>
                     </Row>

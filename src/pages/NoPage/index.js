@@ -4,6 +4,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import SEO from "../../components/SEO";
 import TypeWritter from "../../components/TypeWritter";
 import notFound from '../../images/404-error.png';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 function NoPage(){
     return(
@@ -21,7 +23,7 @@ function NoPage(){
                             <h2 className="heading2">The Page You Are Looking For Is Not Available.</h2>
                             <div className="heading5">The link you followed may be broken, or the page may have been removed.</div>
                             <div className="apply-btn btn-section">
-                                <a href="/" className="btn btn-blue">Homepage</a>
+                                <a href="/" className="btn btn-blue-border">Homepage <FontAwesomeIcon icon={faChevronRight} /></a>
                             </div>
                         </Col>
                         <Col md={6}>

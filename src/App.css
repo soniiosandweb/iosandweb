@@ -12,6 +12,9 @@ h1, h2{
 .text-white{
   color: #fff;
 }
+.text-highlight{
+  color: #1163fb;
+}
 .b-none{
   border: none !important;
 }
