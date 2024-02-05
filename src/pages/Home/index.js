@@ -124,13 +124,13 @@ function Home() {
                                         <div className="service-icon">
                                             <img src={softwareDevelopment} className="service-img" alt="Software Development" />
                                         </div>
-                                        <p className="/service-text">Software<br></br>Development</p>
+                                        <p className="service-text">Software<br></br>Development</p>
                                     </a>
                                 </div>
                                 <div className="service-card">
                                     <a href="/services" className="bg-blue">
                                         <div className="service-icon">
-                                            <img src={digitalTransformation} className="service-img" alt="Software Development" />
+                                            <img src={digitalTransformation} className="service-img" alt="Digital Transformation" />
                                         </div>
                                         <p className="service-text">Digital<br></br>Transformation</p>
                                     </a>
@@ -138,7 +138,7 @@ function Home() {
                                 <div className="service-card">
                                     <a href="/services" className="bg-green">
                                         <div className="service-icon">
-                                            <img src={dataScience} className="service-img" alt="Software Development" />
+                                            <img src={dataScience} className="service-img" alt="Data Science & Analytics" />
                                         </div>
                                         <p className="service-text">Data Science<br></br>& Analytics</p>
                                     </a>
@@ -146,7 +146,7 @@ function Home() {
                                 <div className="service-card">
                                     <a href="/services" className="bg-gray">
                                         <div className="service-icon">
-                                            <img src={cloudServices} className="service-img" alt="Software Development" />
+                                            <img src={cloudServices} className="service-img" alt="Cloud Services" />
                                         </div>
                                         <p className="service-text">Cloud<br></br>Services</p>
                                     </a>
@@ -154,7 +154,7 @@ function Home() {
                                 <div className="service-card">
                                     <a href="/services" className="bg-pink">
                                         <div className="service-icon">
-                                            <img src={blockChain} className="service-img" alt="Software Development" />
+                                            <img src={blockChain} className="service-img" alt="Blockchain Services" />
                                         </div>
                                         <p className="service-text">Blockchain<br></br>Services</p>
                                     </a>
@@ -162,7 +162,7 @@ function Home() {
                                 <div className="service-card">
                                     <a href="/services" className="bg-yellow">
                                         <div className="service-icon">
-                                            <img src={ideationDesign} className="service-img" alt="Software Development" />
+                                            <img src={ideationDesign} className="service-img" alt="Ideation and Design" />
                                         </div>
                                         <p className="service-text">Ideation and <br></br>Design Strategy</p>
                                     </a>

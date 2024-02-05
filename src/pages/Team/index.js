@@ -107,8 +107,8 @@ function Team(){
                                         <img src={userWoman} alt="Profile" className="img-fluid" />
                                     </div>
                                     <div className="profile-content">
-                                        <h3 className="team-title">Aarti</h3>
-                                        <p className="paragraph">SEO Lead</p>
+                                        <h3 className="team-title">Aarti Bhanwar</h3>
+                                        <p className="paragraph">SEO Lead / Software Developer</p>
                                         <div className="social-icons">
                                             <a href="skype:live:.cid.38a2eff5f8174786"><FontAwesomeIcon icon={faSkype} /></a>
                                             <a href="mailto:aarti@iosandweb.net"><FontAwesomeIcon icon={faEnvelope} /></a>
