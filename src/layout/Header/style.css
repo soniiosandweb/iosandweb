@@ -133,6 +133,7 @@
       top: 80px;
       background-color: #fff;
       padding-bottom: 20px;
+      border-bottom: 1px solid #dee2e6;
     }
     .header .navbar-nav {
         justify-content: center;

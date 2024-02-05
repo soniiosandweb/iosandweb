@@ -12,7 +12,7 @@ import researching from '../../images/how-we-work/researching.png';
 import evolving from '../../images/how-we-work/evolving.png';
 import wrappingUp from '../../images/how-we-work/wrapping-up.png';
 
-import JoinOurTeam from "../../components/JoinOurTeam";
+import DevelopmentProcess from "../../components/DevelopmentProcess";
 import GetStarted from "../../components/GetStarted";
 import TypeWritter from "../../components/TypeWritter";
 
@@ -127,8 +127,8 @@ function HowWeWork(){
                 link="/contact"
             />
 
-            {/* Join Our Team section */}
-            <JoinOurTeam />
+            {/* Development Process section */}
+            <DevelopmentProcess />
         </>
     )
 }

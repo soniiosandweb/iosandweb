@@ -23,12 +23,14 @@ function Header() {
     if (locationValue[1] === "") {
       if (window.scrollY > 50) {
         setImage(logoBlack);
-        setHeaderbg("white text-black");
+        setHeaderbg("white text-black border-bottom");
       } else {
         setImage(logo);
         setHeaderbg("transparent text-white");
         handleResize();
       }
+    } else {
+      setHeaderbg("white text-black border-bottom");
     }
   };
 
@@ -40,7 +42,7 @@ function Header() {
       handleResize();
     } else {
       setFixed("sticky-top text-black");
-      setHeaderbg("white text-black");
+      setHeaderbg("white text-black border-bottom");
       setImage(logoBlack);
     }
   }
@@ -48,7 +50,7 @@ function Header() {
     if(locationValue[1] === ""){
       if (window.innerWidth <= 991) {
         setFixed("sticky-top text-black");
-        setHeaderbg("white text-black");
+        setHeaderbg("white text-black border-bottom");
         setImage(logoBlack);
       } else {
         setFixed("fixed-top text-white");
@@ -72,8 +74,6 @@ function Header() {
         <Navbar.Brand href="/">
           <img src={image} alt="IosAndWeb logo" className="responsive logo" />
         </Navbar.Brand>
-
-
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
           <FontAwesomeIcon icon={faBars} className="bars-icon" />

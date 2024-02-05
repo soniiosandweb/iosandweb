@@ -6,7 +6,7 @@ import { faSkype } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import SEO from "../../components/SEO";
 import GetStarted from "../../components/GetStarted";
-import JoinTeamGallery from "../../components/JoinTeamGallery";
+import JoinOurTeam from "../../components/JoinOurTeam";
 
 import teamImg from '../../images/IAW-Team.png';
 import userMan from '../../images/user-man.png';
@@ -185,8 +185,8 @@ function Team(){
                 link="/contact"
             />
 
-            {/* Join Team */}
-            <JoinTeamGallery />
+            {/* Join Our Team */}
+            <JoinOurTeam />
 
         </>
     )
