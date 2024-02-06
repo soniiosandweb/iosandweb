@@ -31,7 +31,6 @@
 }
 .form-submit-btn {
     font-size: 16px;
-    font-weight: 600;
 }
 .location-contact-div {
     margin: 5rem 0 2rem;
@@ -42,7 +41,6 @@
 .location-contact-div .heading5 {
     font-size: 24px;
     margin-bottom: 0;
-    font-weight: 600;
 }
 .contact-link {
     display: block;

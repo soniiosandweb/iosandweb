@@ -1,7 +1,6 @@
 /* 404 page not found */
 .not-found {
     font-size: 80px;
-    font-weight: 600;
     margin-bottom: 30px;
 }
 @media (max-width: 991px) {

@@ -35,8 +35,8 @@
     min-height: auto;
 }
 .navbar-nav .nav-link{
-    padding: 20px 30px !important;
-    font-size: 18px;
+    padding: 20px 15px !important;
+    font-size: 16px;
     line-height: .8;
     position: relative;
     overflow: hidden;
@@ -60,7 +60,7 @@
 }
 .navbar-nav .nav-link:hover:before,
 .navbar-nav .nav-link.active:before {
-    width: calc(100% - 50px);
+    width: calc(100% - 30px);
     opacity: 1;
 }
 .navbar-nav .btn.nav-link:before{
@@ -146,6 +146,8 @@
     outline: none;
     color: #000;
     text-transform: capitalize;
+    line-height: normal;
+    font-size: 15px;
 }
 .header-submenu-items .dropdown-item svg {
     opacity: 0;
@@ -156,8 +158,8 @@
 }
 .header-submenu-items .dropdown-item .submenu-img {
     padding: 6px;
-    width: 35px;
-    height: 35px;
+    width: 28px;
+    height: 28px;
     display: flex;
     border-radius: 5px;
 }

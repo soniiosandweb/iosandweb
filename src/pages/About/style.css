@@ -16,7 +16,6 @@
     max-width: 70%;
     color: #fff;
     text-shadow: 1px 2px 10px #222;
-    font-weight: 700;
 }
 @media (max-width: 1399px) {
     .heading-wrapper h1{
@@ -38,10 +37,8 @@
 }
 /* who we are about page */
 .about-content {
-    font-size: 20px;
+    font-size: 18px;
     position: relative;
-    line-height: 1.7;
-    font-weight: 600;
 }
 
 .padding-top-100{
@@ -49,7 +46,7 @@
 }
 @media (max-width: 1399px) {
     .about-content{
-      font-size: 18px;
+      font-size: 16px;
     }
 }
 @media (max-width: 767px) {
@@ -57,7 +54,7 @@
       padding-top: 50px;
     }
     .about-content{
-      font-size: 16px;
+      font-size: 14px;
     }
 }
   
@@ -177,7 +174,6 @@
     color: #e7f4fc;
     display: block;
     line-height: 1.1;
-    font-weight: 900;
     padding-bottom: 20px;
 }
 .core-values-heading {
@@ -187,7 +183,6 @@
 .paragraph {
     margin: 20px 0;
     font-size: 16px;
-    line-height: 1.6;
 }
 @media (max-width: 991px) {
     .width-55{
@@ -297,7 +292,6 @@
 .progress-number span {
     font-size: 70px;
     line-height: 0.8;
-    font-weight: 600;
 }
 .progress-heading {
     font-size: 18px;

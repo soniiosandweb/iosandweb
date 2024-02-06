@@ -20,8 +20,8 @@
 .location-heading {
     font-size: 16px;
     color: #fff;
-    font-weight: 700;
     padding: 15px 0 10px;
+    font-weight: 600;
 }
 .location-text {
     color: #fff;
@@ -47,7 +47,6 @@
 .footer-col-head {
     display: block;
     font-size: 26px;
-    font-weight: 600;
     color: #fff;
     padding-bottom: 30px;
 }
@@ -99,7 +98,7 @@
 .copyright-text a{
     color: #fff;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
 }
 .footer-social-col{
     text-align: right;

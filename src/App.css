@@ -1,13 +1,23 @@
 @font-face {
-  font-family: "Inter";
-  src: url('./fonts/Inter-Regular.ttf');
+  font-family: "ProductSans";
+  src: url('./fonts/ProductSans-Regular.woff2');
 }
 @font-face {
-  font-family: "Inter-Medium";
-  src: url('./fonts/Inter-Medium.ttf');
+  font-family: "ProductSans-Medium";
+  src: url('./fonts/ProductSans-Medium.woff2');
 }
+body {
+  margin: 0;
+  font-family: 'ProductSans-Medium', sans-serif;
+  font-size: 16px;
+}
+
+code {
+  font-family: 'ProductSans-Medium', sans-serif;
+}
+
 h1, h2{
-  font-family: 'Inter-Medium';
+  font-family: 'ProductSans-Medium';
 }
 .text-white{
   color: #fff;
@@ -25,29 +35,24 @@ h1, h2{
   padding: 100px 0;
 }
 .heading2 {
-  font-size: 38px;
-  font-weight: 600;
+  font-size: 34px;
 }
 .heading5 {
   margin: 20px 0 30px;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 18px;
 }
 .leadtxt h3 {
-  font-size: 46px;
+  font-size: 42px;
   font-weight: 400;
-  line-height: 1.2;
   margin-bottom: 50px;
 }
 .leadsubtxt{
   color: #999;
-  font-size: 20px;
-  line-height: 1.5;
+  font-size: 18px;
 }
 .btn-white-border{
   position: relative;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 15px;
   color: #fff;
   transition: all .3s cubic-bezier(.19,1,.22,1);
   border: 2px solid #fff;
@@ -56,7 +61,6 @@ h1, h2{
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  line-height: 1.15;
   background-color: transparent;
 }
 .btn-white-border:hover{
@@ -75,8 +79,7 @@ h1, h2{
 }
 .btn-blue-border{
   position: relative;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 15px;
   color: #fff;
   transition: all .3s cubic-bezier(.19,1,.22,1);
   border: 2px solid #1050bc;
@@ -85,7 +88,6 @@ h1, h2{
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  line-height: 1.15;
   background-color: #1050bc;
 }
 .btn-blue-border:hover{
@@ -130,12 +132,12 @@ h1, h2{
 
 @media (max-width: 1399px) {
   .heading2{
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 @media (max-width: 767px) {
   .leadtxt h3{
-    font-size: 28px;
+    font-size: 24px;
   }
   .section-padding {
     padding: 4rem 0;
@@ -144,6 +146,6 @@ h1, h2{
 
 /* Privacy Policy */
 .privacy-policy-page .heading5 {
-  font-weight: 600;
   margin: 30px 0 20px;
+  font-weight: 600;
 }
