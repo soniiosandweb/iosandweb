@@ -16,12 +16,18 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
+// service menu
 import mobileApp from '../../images/home/Mobile-app.svg';
 import softwareDevelopment from '../../images/home/Software-Development.svg';
 import digitalTransformation from '../../images/home/Digital-Transformation.svg';
 import dataScience from '../../images/home/Data-Science-Analytics.svg';
 import blockChain from '../../images/home/Blockchain-Services.svg';
 import ideationDesign from '../../images/home/ideation-design.svg';
+
+// about menu
+import aboutIcon from '../../images/about-us.png';
+import teamIcon from '../../images/our-team-icon.png';
+import howWorkIcon from '../../images/how-we-work.png';
 
 import OwlCarousel from "react-owl-carousel";
 
@@ -42,6 +48,7 @@ function Header() {
   const [fixed, setFixed] = useState("sticky-top");
   const [headerbg, setHeaderbg] = useState("white text-black");
   const [show, setShow] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
 
   const listenScrollEvent = () => {
     if (locationValue[1] === "") {
@@ -91,9 +98,10 @@ function Header() {
     window.addEventListener("resize", handleResize)
     // eslint-disable-next-line
   }, []);
+  
 
   return (
-    <Navbar collapseOnSelect expand="xl" className={`header ${fixed} ${headerbg}`}>
+    <Navbar collapseOnSelect expand="lg" className={`header ${fixed} ${headerbg}`}>
       <Container className="header-container">
         <Navbar.Brand href="/">
           <img src={image} alt="IosAndWeb logo" className="responsive logo" />
@@ -106,15 +114,14 @@ function Header() {
 
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
           <Nav className="container">
-            <Nav.Link href="/about" className={locationValue[1] === "about" ? "active" : ""}>About</Nav.Link>
-
             <Dropdown 
               as={NavItem} 
               show={show}
               onMouseEnter={() => setShow(true)}
               onMouseLeave={() => setShow(false)}
+              onToggle={() => setShow(!show)}
             >
-              <Dropdown.Toggle as={NavLink} href='/services' className={locationValue[1] === "services" ? "active" : ""}>Services</Dropdown.Toggle>
+              <Dropdown.Toggle as={NavLink}>Services</Dropdown.Toggle>
               <Dropdown.Menu>
                 
                 <div className="header-submenu-wrap">
@@ -177,58 +184,58 @@ function Header() {
                     </ul>
                   </div>
                   <div className="header-submenu-right">
-                    <OwlCarousel className="owl-theme header-awards-carousel" loop autoplay={true} autoplayTimeout={3000} nav={false} dots={true} items={1} center={true} >
-                                <div className="item">
-                                    <div className="award-item-block">
-                                        <div className="award-item-logo">
-                                            <img src={goodFirmLogo} alt="App development" />
-                                        </div>
-                                        <div className="award-item-text">
-                                            <span>App development company of the year</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="item">
-                                    <div className="award-item-block">
-                                        <div className="award-item-logo">
-                                            <img src={appFutura} alt="App solution" />
-                                        </div>
-                                        <div className="award-item-text">
-                                            <span>Most promising mobile app solution provider</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="item">
-                                    <div className="award-item-block">
-                                        <div className="award-item-logo">
-                                            <img src={itFirms} alt="India's Growth Champions" />
-                                        </div>
-                                        <div className="award-item-text">
-                                            <span>India's Growth Champions in IT</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="item">
-                                    <div className="award-item-block">
-                                        <div className="award-item-logo">
-                                            <img src={upWork} alt="India's Growth Champions" />
-                                        </div>
-                                        <div className="award-item-text">
-                                            <span>Software development company of the year</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="item">
-                                    <div className="award-item-block">
-                                        <div className="award-item-logo">
-                                            <img src={topDevelopment} alt="Tech Company Of The Year" />
-                                        </div>
-                                        <div className="award-item-text">
-                                            <span>Tech Company Of The Year</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </OwlCarousel>
+                    <OwlCarousel className="owl-theme header-awards-carousel" loop autoplay={true} autoplayTimeout={1500} nav={false} dots={true} items={1} center={true} >
+                      <div className="item">
+                        <div className="award-item-block">
+                          <div className="award-item-logo">
+                            <img src={goodFirmLogo} alt="App development" />
+                          </div>
+                          <div className="award-item-text">
+                            <span>App development company of the year</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="item">
+                        <div className="award-item-block">
+                            <div className="award-item-logo">
+                              <img src={appFutura} alt="App solution" />
+                            </div>
+                            <div className="award-item-text">
+                              <span>Most promising mobile app solution provider</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div className="item">
+                        <div className="award-item-block">
+                          <div className="award-item-logo">
+                            <img src={itFirms} alt="India's Growth Champions" />
+                          </div>
+                          <div className="award-item-text">
+                            <span>India's Growth Champions in IT</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="item">
+                        <div className="award-item-block">
+                          <div className="award-item-logo">
+                            <img src={upWork} alt="India's Growth Champions" />
+                          </div>
+                          <div className="award-item-text">
+                            <span>Software development company of the year</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="item">
+                        <div className="award-item-block">
+                          <div className="award-item-logo">
+                            <img src={topDevelopment} alt="Tech Company Of The Year" />
+                          </div>
+                          <div className="award-item-text">
+                            <span>Tech Company Of The Year</span>
+                          </div>
+                        </div>
+                      </div>
+                    </OwlCarousel>
                   </div>
                 </div>
                 
@@ -236,6 +243,50 @@ function Header() {
             </Dropdown>
 
             <Nav.Link href="/portfolio" className={locationValue[1] === "portfolio" ? "active" : ""}>Portfolio</Nav.Link>
+
+            <Dropdown 
+              className="less-dropdown"
+              as={NavItem} 
+              show={showAbout}
+              onMouseEnter={() => setShowAbout(true)}
+              onMouseLeave={() => setShowAbout(false)}
+              onToggle={() => setShowAbout(!showAbout)}
+            >
+              <Dropdown.Toggle as={NavLink}>Company</Dropdown.Toggle>
+              <Dropdown.Menu>
+                
+                    <ul className="header-submenu-items">
+                      <li className="submenu-item">
+                        <Dropdown.Item href='/about'>
+                          <div className="bg-pink submenu-img">
+                            <img src={aboutIcon} className="service-img" alt="About Us" /> 
+                          </div>
+                          About Us
+                          <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
+                        </Dropdown.Item>
+                      </li>
+                      <li className="submenu-item">
+                        <Dropdown.Item href='/our-team'>
+                          <div className="bg-green submenu-img">
+                            <img src={teamIcon} className="service-img" alt="IAW Team" /> 
+                          </div>
+                          IAW Team
+                          <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
+                        </Dropdown.Item>
+                      </li>
+                      <li className="submenu-item">
+                        <Dropdown.Item href='/how-we-work'>
+                          <div className="bg-blue submenu-img">
+                            <img src={howWorkIcon} className="service-img" alt="How we work" /> 
+                          </div>
+                          How we work
+                          <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
+                        </Dropdown.Item>
+                      </li>
+                    </ul>
+              </Dropdown.Menu>
+            </Dropdown>
+
             <Nav.Link href="/blog" className={locationValue[1] === "blog" ? "active" : ""}>Blog</Nav.Link>
             <Nav.Link href="/contact" className={locationValue[1] === "contact" ? "btn active" : "btn"}>Contact</Nav.Link>
           </Nav>

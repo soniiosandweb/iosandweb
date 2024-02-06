@@ -145,6 +145,7 @@
     background-color: transparent !important;
     outline: none;
     color: #000;
+    text-transform: capitalize;
 }
 .header-submenu-items .dropdown-item svg {
     opacity: 0;
@@ -186,6 +187,16 @@
 .header-awards-carousel .owl-dots .owl-dot:hover span{
     background-color: #1050bc;
 }
+.header .navbar-nav .dropdown.nav-item.less-dropdown {
+    position: relative;
+}
+.header .navbar-nav .less-dropdown .dropdown-menu {
+    width: 250px;
+}
+.header .navbar-nav .less-dropdown .header-submenu-items{
+    grid-template-columns: repeat(1,1fr);
+    padding: 20px 10px;
+}
 @keyframes btneffect {
     0% {
       transform: translate(-50%,-50%) scale(0);
@@ -201,6 +212,11 @@
     }
 }
 @media (max-width: 1199px) {
+    .header-submenu-wrap .header-submenu-right{
+        display: none;
+    }
+}
+@media (max-width: 991px) {
     .navbar-collapse{
       position: absolute;
       width: 100%;
@@ -236,14 +252,14 @@
         width: 100%;
     }
     .header .navbar-nav .dropdown.nav-item .nav-link {
-        width: max-content;
-    }
-    .header-submenu-wrap .header-submenu-right{
-        display: none;
+        position: unset;
     }
     .header .navbar-nav .dropdown.nav-item .nav-link.dropdown-toggle::after{
         position: absolute;
         right: 0;
+    }
+    .header .navbar-nav .less-dropdown .dropdown-menu{
+        width: 100%;
     }
 }
 @media (max-width: 767px) {

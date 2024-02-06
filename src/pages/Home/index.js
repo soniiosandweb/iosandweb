@@ -186,7 +186,7 @@ function Home() {
                             </div>
                             <div className="grid_colm_panel">
                                 <div className="grid_colm_item">
-                                    <a href="/">
+                                    <a href="/services">
                                         <figure>
                                             <img src={healthCare} alt="Healthcare" />
                                         </figure>
@@ -194,7 +194,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="grid_colm_item">
-                                    <a href="/">
+                                    <a href="/services">
                                         <figure>
                                             <img src={finance} alt="Finance" />
                                         </figure>
@@ -202,7 +202,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="grid_colm_item">
-                                    <a href="/">
+                                    <a href="/services">
                                         <figure>
                                             <img src={restaurant} alt="Restaurant" />
                                         </figure>
@@ -210,7 +210,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="grid_colm_item">
-                                    <a href="/">
+                                    <a href="/services">
                                         <figure>
                                             <img src={ecommerce} alt="eCommerce" />
                                         </figure>
@@ -218,7 +218,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="grid_colm_item">
-                                    <a href="/">
+                                    <a href="/services">
                                         <figure>
                                             <img src={ev} alt="EV" />
                                         </figure>
@@ -226,7 +226,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="grid_colm_item">
-                                    <a href="/">
+                                    <a href="/services">
                                         <figure>
                                             <img src={saas} alt="SaaS" />
                                         </figure>
@@ -234,7 +234,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="grid_colm_item">
-                                    <a href="/">
+                                    <a href="/services">
                                         <figure>
                                             <img src={travel} alt="Travel" />
                                         </figure>
@@ -242,7 +242,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="grid_colm_item">
-                                    <a href="/">
+                                    <a href="/services">
                                         <figure>
                                             <img src={entertainment} alt="Entertainment" />
                                         </figure>
@@ -250,7 +250,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="grid_colm_item border-bottom-none">
-                                    <a href="/">
+                                    <a href="/services">
                                         <figure>
                                             <img src={onDemand} alt="On-Demand" />
                                         </figure>
@@ -258,7 +258,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="grid_colm_item border-bottom-none">
-                                    <a href="/">
+                                    <a href="/services">
                                         <figure>
                                             <img src={socialMedia} alt="Social Media" />
                                         </figure>
@@ -266,7 +266,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="grid_colm_item border-bottom-none">
-                                    <a href="/">
+                                    <a href="/services">
                                         <figure>
                                             <img src={logistics} alt="Logistics" />
                                         </figure>
@@ -274,7 +274,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="grid_colm_item border-bottom-none">
-                                    <a href="/">
+                                    <a href="/services">
                                         <figure>
                                             <img src={edtech} alt="Edtech" />
                                         </figure>

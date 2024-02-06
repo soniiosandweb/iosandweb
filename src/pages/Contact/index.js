@@ -86,7 +86,7 @@ function Contact(){
                             <div className="heading-wrapper">
                                 <h1>We Are Here To <span className="text-highlight">Help You!</span></h1>
                                 <div className="heading5">Discover A Bespoke, IosAndWeb Technologies an honest & results-driven web-mobile development and digital marketing agency. We deliver a personal, passionate & tailored web development and digital marketing service to each and every one of our clients.</div>
-                                <a href="/" className="consult-expert-btn">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
+                                <a href="/services" className="consult-expert-btn">Our Services <FontAwesomeIcon icon={faChevronRight} /></a>
                             </div>
                         </Col>
                         <Col lg={5}>
@@ -205,7 +205,7 @@ function Contact(){
                             <div className="contact-footer-flex contact-left-col">
                                 <h2 className="heading2">Enable Unmatched Digital Transformation Seamlessly</h2>
                                 <div className="apply-btn btn-section">
-                                    <a href="/contact" className="btn btn-blue-border">Talk to Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
+                                    <a href="/how-we-work" className="btn btn-blue-border">Why Choose Us <FontAwesomeIcon icon={faChevronRight} /></a>
                                 </div>
                             </div>
                             <div className="contact-footer-flex contact-right-col">
