@@ -7,6 +7,14 @@
     overflow: hidden;
     padding: 100px 0;
 }
+.home-banner-overlay {
+    background: rgb(0 0 0 / 60%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
 .home-banner .container,
 .home-banner .row{
     height: 100%;

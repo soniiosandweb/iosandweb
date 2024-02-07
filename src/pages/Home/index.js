@@ -7,7 +7,7 @@ import { Accordion } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-import homeBanner from '../../images/home/home-banner.webp';
+import homeBanner from '../../images/home/home-banner.png';
 import homeVideo from '../../images/home/home-video.mp4';
 
 // Award
@@ -82,6 +82,7 @@ function Home() {
                             <video className="intro_video" poster={homeBanner} autoPlay={true} muted={true} loop={true}>
                                 <source src={homeVideo} type="video/mp4"></source>
                             </video>
+                            <div className="home-banner-overlay"></div>
                         </Col>
                     </Row>
                 </Container>
