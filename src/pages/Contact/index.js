@@ -70,7 +70,7 @@ function Contact(){
         if (event) event.preventDefault();
         if (validate(values)) {
             // console.log(values);
-            fetch("https://iosandweb.net/api/index.php", {
+            fetch("https://iosandweb.net/api/contact-us.php", {
                 method: "POST",
                 body: JSON.stringify({
                     yourName: values.yourName,
