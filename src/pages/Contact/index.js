@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './style.css';
-import { Container, Row, Col, Button, Form } from "react-bootstrap";
+import { Container, Row, Col, Button, Form, Spinner} from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import SEO from "../../components/SEO";
@@ -21,6 +21,7 @@ function Contact(){
     const [formSuccess, setFormSuccess] = useState();
     const [formWarning, setFormWarning] = useState();
     const [phoneValue, setPhoneValue] = useState();
+    const [loading, setLoading] = useState(false);
 
     const [values, setValues] = useState({
         yourName: "",
@@ -70,6 +71,7 @@ function Contact(){
     const handleSubmit = (event) => {
         if (event) event.preventDefault();
         if (validate(values)) {
+            setLoading(true);
             axios({
                 method: "post",
                 url: "https://iosandweb.net/api/contact-us.php",
@@ -84,6 +86,7 @@ function Contact(){
             .then(function (response) {
                 //handle success
                 if (response.status === 200) {
+                    setLoading(false);
                     setFormSuccess("Your message was sent successfully");
                     setValues({
                         yourName: "",
@@ -162,7 +165,21 @@ function Contact(){
                                         <Form.Control as="textarea" rows={4} name="yourMessage" placeholder="Message or Questions" value={values.yourMessage} onChange={handleChange} />
                                     </Form.Group>
                                     <Form.Group className="form-group form-submit-group">
-                                        <Button type="submit" className="form-submit-btn btn btn-blue-border">Send <FontAwesomeIcon icon={faChevronRight} /></Button>
+                                        <Button type="submit" className="form-submit-btn btn btn-blue-border"> 
+                                            {
+                                                loading ?
+                                                    <>
+                                                        Sending 
+                                                        <Spinner as="span" animation="border" size="sm" role="status" aria-hidden="true" />
+                                                    </>
+                                                : 
+                                                <>
+                                                    Send
+                                                    <FontAwesomeIcon icon={faChevronRight} /> 
+                                                </>
+                                            }
+                                            
+                                        </Button>
                                         <div className="message">{formSuccess ? <p className="text-success">{formSuccess}</p> : null}{formWarning ? <p className="text-warning">{formWarning}</p> : null}</div>
                                     </Form.Group>
                                 </Form>
