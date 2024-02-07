@@ -50,6 +50,9 @@
     border: none !important;
     outline: none !important;
 }
+.contact-form .form-group .message {
+    padding-top: 10px;
+}
 @media (max-width: 991px) {
     .contact-form {
       margin-top: 50px;

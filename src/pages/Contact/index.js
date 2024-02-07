@@ -17,12 +17,14 @@ import contactImage from '../../images/contact/contact-footer.avif';
 function Contact(){
 
     const [formerrors, setFormErrors] = useState({});
-
+    const [formSuccess, setFormSuccess] = useState();
+    const [formWarning, setFormWarning] = useState();
     const [phoneValue, setPhoneValue] = useState();
 
     const [values, setValues] = useState({
         yourName: "",
-        emailAddress: ""
+        emailAddress: "",
+        yourMessage: ""
     });
 
     const handleChange = (event) => {
@@ -67,7 +69,38 @@ function Contact(){
     const handleSubmit = (event) => {
         if (event) event.preventDefault();
         if (validate(values)) {
-            console.log(values);
+            // console.log(values);
+            fetch("https://iosandweb.net/api/index.php", {
+                method: "POST",
+                body: JSON.stringify({
+                    yourName: values.yourName,
+                    emailAddress: values.emailAddress,
+                    phoneValue: phoneValue,
+                    yourMessage: values.yourMessage
+                }),
+            })
+            .then((res) => {
+                if (res.status === 200) {
+                    setFormSuccess("Your message was sent successfully");
+                    setValues({
+                        yourName: "",
+                        emailAddress: "",
+                        yourMessage: ""
+                    });
+                    setPhoneValue('');
+                    setTimeout(() => {
+                        setFormSuccess('');
+                    }, 5000);
+                } else {
+                    setFormWarning("Some error occured");
+                    setTimeout(() => {
+                        setFormWarning('');
+                    }, 5000);
+                }
+            })
+            .catch((err) => {
+                console.log(err);
+            });
         }
     };
 
@@ -122,10 +155,11 @@ function Contact(){
 
                                     </Form.Group>
                                     <Form.Group controlId="yourMessage" className="form-group">
-                                        <Form.Control as="textarea" rows={4} placeholder="Message or Questions" />
+                                        <Form.Control as="textarea" rows={4} name="yourMessage" placeholder="Message or Questions" value={values.yourMessage} onChange={handleChange} />
                                     </Form.Group>
                                     <Form.Group className="form-group form-submit-group">
                                         <Button type="submit" className="form-submit-btn btn btn-blue-border">Send <FontAwesomeIcon icon={faChevronRight} /></Button>
+                                        <div className="message">{formSuccess ? <p className="text-success">{formSuccess}</p> : null}{formWarning ? <p className="text-warning">{formWarning}</p> : null}</div>
                                     </Form.Group>
                                 </Form>
                             </div>
