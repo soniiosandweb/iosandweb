@@ -13,6 +13,7 @@ import locIndia from '../../images/contact/cont-loc-india.svg';
 import locUK from '../../images/contact/cont-loc-uk.svg';
 import locUS from '../../images/contact/cont-loc-usa.svg';
 import contactImage from '../../images/contact/contact-footer.avif';
+import axios from "axios";
 
 function Contact(){
 
@@ -69,18 +70,20 @@ function Contact(){
     const handleSubmit = (event) => {
         if (event) event.preventDefault();
         if (validate(values)) {
-            // console.log(values);
-            fetch("https://iosandweb.net/api/contact-us.php", {
-                method: "POST",
-                body: JSON.stringify({
-                    yourName: values.yourName,
-                    emailAddress: values.emailAddress,
-                    phoneValue: phoneValue,
-                    yourMessage: values.yourMessage
-                }),
+            axios({
+                method: "post",
+                url: "https://iosandweb.net/api/contact-us.php",
+                data: JSON.stringify({
+                        yourName: values.yourName,
+                        emailAddress: values.emailAddress,
+                        phoneValue: phoneValue,
+                        yourMessage: values.yourMessage
+                    }),
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
             })
-            .then((res) => {
-                if (res.status === 200) {
+            .then(function (response) {
+                //handle success
+                if (response.status === 200) {
                     setFormSuccess("Your message was sent successfully");
                     setValues({
                         yourName: "",
@@ -98,8 +101,9 @@ function Contact(){
                     }, 5000);
                 }
             })
-            .catch((err) => {
-                console.log(err);
+            .catch(function (response) {
+                //handle error
+                console.log(response);
             });
         }
     };
