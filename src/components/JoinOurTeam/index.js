@@ -1,17 +1,21 @@
-import React, {useState} from "react";
+import React, {useRef, useState} from "react";
 import './style.css';
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Row, Col, Form, Button, Spinner } from "react-bootstrap";
 import 'react-phone-number-input/style.css';
 import PhoneInput, {isPossiblePhoneNumber} from "react-phone-number-input";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import axios from "axios";
 
 function JoinOurTeam(){
 
     const [formerrors, setFormErrors] = useState({});
-
+    const [formSuccess, setFormSuccess] = useState();
+    const [formWarning, setFormWarning] = useState();
+    const [loading, setLoading] = useState(false);
     const [phoneValue, setPhoneValue] = useState();
     const [file, setFile] = useState(null);
+    const fileInputRef = useRef();
 
     const [values, setValues] = useState({
         yourFirstName: "",
@@ -78,18 +82,83 @@ function JoinOurTeam(){
     const handleSubmit = (event) => {
         if (event) event.preventDefault();
         if (validate(values)) {
-            
-            const reader = new FileReader();
-            reader.readAsDataURL(file);
 
-            reader.onload = async (e) => {
+            // const reader = new FileReader();
+            // reader.readAsDataURL(file);
 
-                const fileParams = {
-                  file: reader.result
-                };
+            // reader.onload = async (e) => {
 
-                console.log(fileParams);
-            }
+                //console.log(reader.result);
+
+                setLoading(true);
+
+                axios({
+                    method: "post",
+                    url: "https://iosandweb.net/api/join-team-email-api.php",
+                    data: JSON.stringify({
+                            yourFirstName: values.yourFirstName,
+                            yourLastName: values.yourLastName,
+                            emailAddress: values.emailAddress,
+                            yourLocation: values.yourLocation,
+                            applyingFor: values.applyingFor,
+                            phoneValue: phoneValue,
+                            resume: file
+                        }),
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                })
+                .then(function (response) {
+                    //handle success
+                    if (response.data.status === 0) {
+                        setLoading(false);
+                        setFormSuccess("Your request was sent successfully");
+                        setValues({
+                            yourFirstName: "",
+                            yourLastName: "",
+                            emailAddress: "",
+                            yourLocation: "",
+                            applyingFor: ""
+                        });
+                        setPhoneValue('');
+                        fileInputRef.current.value = null;
+                        setTimeout(() => {
+                            setFormSuccess('');
+                        }, 5000);
+                    } else {
+                        setLoading(false);
+                        setFormWarning("Some error occured");
+                        setValues({
+                            yourFirstName: "",
+                            yourLastName: "",
+                            emailAddress: "",
+                            yourLocation: "",
+                            applyingFor: ""
+                        });
+                        setPhoneValue('');
+                        fileInputRef.current.value = null;
+                        setTimeout(() => {
+                            setFormWarning('');
+                        }, 5000);
+                    }
+                })
+                .catch(function (response) {
+                    //handle error
+                    console.log(response);
+                    setLoading(false);
+                    setFormWarning("Some error occured");
+                    setValues({
+                        yourFirstName: "",
+                        yourLastName: "",
+                        emailAddress: "",
+                        yourLocation: "",
+                        applyingFor: ""
+                    });
+                    setPhoneValue('');
+                    fileInputRef.current.value = null;
+                    setTimeout(() => {
+                        setFormWarning('');
+                    }, 5000);
+                });
+            //}
         }
     };
 
@@ -194,7 +263,7 @@ function JoinOurTeam(){
                                         <Col md={12} className="form-col">
                                             <Form.Group controlId="yourResume" className="form-group">
                                                 <Form.Label>Upload your resume</Form.Label>
-                                                <Form.Control type="file" name="yourResume" onChange={(e) => setFile(e.target.files[0])} />
+                                                <Form.Control type="file" name="yourResume" onChange={(e) => setFile(e.target.files[0])} ref={fileInputRef} />
                                             </Form.Group>
                                         </Col>
                                     </Row>
@@ -202,7 +271,22 @@ function JoinOurTeam(){
                                     <Row className="form-row">
                                         <Col md={12} className="form-col">
                                             <Form.Group className="form-group form-submit-group">
-                                                <Button type="submit" className="form-submit-btn btn btn-blue-border">Submit <FontAwesomeIcon icon={faChevronRight} /></Button>
+                                                <Button type="submit" className={`form-submit-btn btn btn-blue-border ${loading ? 'disabled' : null }`}> 
+                                                    {
+                                                        loading ?
+                                                            <>
+                                                                Sending 
+                                                                <Spinner as="span" animation="border" size="sm" role="status" aria-hidden="true" />
+                                                            </>
+                                                        : 
+                                                        <>
+                                                            Submit
+                                                            <FontAwesomeIcon icon={faChevronRight} /> 
+                                                        </>
+                                                    }
+                                                    
+                                                </Button>
+                                                <div className="message">{formSuccess ? <p className="text-success">{formSuccess}</p> : null}{formWarning ? <p className="text-danger">{formWarning}</p> : null}</div>
                                             </Form.Group>
                                         </Col>
                                     </Row>

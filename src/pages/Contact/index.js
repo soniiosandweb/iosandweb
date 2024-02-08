@@ -114,6 +114,17 @@ function Contact(){
             .catch(function (response) {
                 //handle error
                 console.log(response);
+                setLoading(false);
+                setFormWarning("Some error occured");
+                setValues({
+                    yourName: "",
+                    emailAddress: "",
+                    yourMessage: ""
+                });
+                setPhoneValue('');
+                setTimeout(() => {
+                    setFormWarning('');
+                }, 5000);
             });
         }
     };
