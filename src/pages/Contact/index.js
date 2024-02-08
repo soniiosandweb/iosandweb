@@ -74,7 +74,7 @@ function Contact(){
             setLoading(true);
             axios({
                 method: "post",
-                url: "https://iosandweb.net/api/contact-us.php",
+                url: "https://iosandweb.net/api/contact-email-api.php",
                 data: JSON.stringify({
                         yourName: values.yourName,
                         emailAddress: values.emailAddress,
@@ -85,7 +85,7 @@ function Contact(){
             })
             .then(function (response) {
                 //handle success
-                if (response.status === 200) {
+                if (response.data.status === 0) {
                     setLoading(false);
                     setFormSuccess("Your message was sent successfully");
                     setValues({
@@ -98,7 +98,14 @@ function Contact(){
                         setFormSuccess('');
                     }, 5000);
                 } else {
+                    setLoading(false);
                     setFormWarning("Some error occured");
+                    setValues({
+                        yourName: "",
+                        emailAddress: "",
+                        yourMessage: ""
+                    });
+                    setPhoneValue('');
                     setTimeout(() => {
                         setFormWarning('');
                     }, 5000);
@@ -134,7 +141,7 @@ function Contact(){
                                 <Form className="contactForm" id="contactForm" onSubmit={handleSubmit}>
                                     <Form.Group controlId="yourName" className="form-group">
                                         {/* <Form.Label>Name</Form.Label> */}
-                                        <Form.Control type="text" placeholder="Name" value={values.yourName} name="yourName" onChange={handleChange} />
+                                        <Form.Control type="text" placeholder="Name" value={values.yourName} name="yourName" onChange={handleChange}  />
                                         {formerrors.yourName && (
                                             <p className="text-danger">{formerrors.yourName}</p>
                                         )}
@@ -180,7 +187,7 @@ function Contact(){
                                             }
                                             
                                         </Button>
-                                        <div className="message">{formSuccess ? <p className="text-success">{formSuccess}</p> : null}{formWarning ? <p className="text-warning">{formWarning}</p> : null}</div>
+                                        <div className="message">{formSuccess ? <p className="text-success">{formSuccess}</p> : null}{formWarning ? <p className="text-danger">{formWarning}</p> : null}</div>
                                     </Form.Group>
                                 </Form>
                             </div>

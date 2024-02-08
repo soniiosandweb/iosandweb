@@ -98,12 +98,11 @@ h1, h2{
 .btn-blue-border svg,
 .form-submit-btn .spinner-border {
   position: absolute;
-  right: 10px;
+  right: 15px;
   width: 18px;
   height: 18px;
 }
-.btn-blue-border:hover svg,
-.form-submit-btn:hover .spinner-border  {
+.btn-blue-border:hover svg  {
   -webkit-animation: arrowmove .4s infinite alternate ease-in-out;
   animation: arrowmove .4s infinite alternate ease-in-out;
 }

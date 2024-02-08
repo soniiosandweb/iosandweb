@@ -11,6 +11,7 @@ function JoinOurTeam(){
     const [formerrors, setFormErrors] = useState({});
 
     const [phoneValue, setPhoneValue] = useState();
+    const [file, setFile] = useState(null);
 
     const [values, setValues] = useState({
         yourFirstName: "",
@@ -77,7 +78,18 @@ function JoinOurTeam(){
     const handleSubmit = (event) => {
         if (event) event.preventDefault();
         if (validate(values)) {
-            console.log(values);
+            
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+
+            reader.onload = async (e) => {
+
+                const fileParams = {
+                  file: reader.result
+                };
+
+                console.log(fileParams);
+            }
         }
     };
 
@@ -182,7 +194,7 @@ function JoinOurTeam(){
                                         <Col md={12} className="form-col">
                                             <Form.Group controlId="yourResume" className="form-group">
                                                 <Form.Label>Upload your resume</Form.Label>
-                                                <Form.Control type="file" />
+                                                <Form.Control type="file" name="yourResume" onChange={(e) => setFile(e.target.files[0])} />
                                             </Form.Group>
                                         </Col>
                                     </Row>
