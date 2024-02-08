@@ -5,7 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import logoWhite from "../../images/IAW-logo-white.png";
 import india from '../../images/hq-india.svg';
-import hqUk from '../../images/hq-uk.svg';
+import hqUk from '../../images/hq-uk.png';
+import hqUs from '../../images/hq-us.svg';
+
 import { faInstagram, faLinkedin, faSquareFacebook, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 function Footer(){
@@ -30,7 +32,7 @@ function Footer(){
                         </Col>
                         <Col md={4}>
                             <div className="location-div">
-                                <img src={hqUk} alt="United States" className="location-image" />
+                                <img src={hqUs} alt="United States" className="location-image" />
                                 <div className="location-heading">United States</div>
                                 <p className="location-text">Suite #304, 11200 Manchaca, <br></br>Austin, Texas, <br></br>United States, 78748</p>
                             </div>

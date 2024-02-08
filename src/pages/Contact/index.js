@@ -172,7 +172,7 @@ function Contact(){
                                         <Form.Control as="textarea" rows={4} name="yourMessage" placeholder="Message or Questions" value={values.yourMessage} onChange={handleChange} />
                                     </Form.Group>
                                     <Form.Group className="form-group form-submit-group">
-                                        <Button type="submit" className="form-submit-btn btn btn-blue-border"> 
+                                        <Button type="submit" className={`form-submit-btn btn btn-blue-border ${loading ? 'disabled' : null }`}> 
                                             {
                                                 loading ?
                                                     <>
