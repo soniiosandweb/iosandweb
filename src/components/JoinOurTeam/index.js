@@ -84,6 +84,19 @@ function JoinOurTeam(){
         }
     };
 
+    const resetForm = () => {
+        setValues({
+            yourFirstName: "",
+            yourLastName: "",
+            emailAddress: "",
+            yourLocation: "",
+            applyingFor: ""
+        });
+        setPhoneValue('');
+        setFile(null);
+        fileInputRef.current.value = null;
+    }
+
     const handleSubmit = (event) => {
         if (event) event.preventDefault();
         if (validate(values)) {
@@ -114,30 +127,14 @@ function JoinOurTeam(){
                         if (response.data.status === 0) {
                             setLoading(false);
                             setFormSuccess("Your request was sent successfully");
-                            setValues({
-                                yourFirstName: "",
-                                yourLastName: "",
-                                emailAddress: "",
-                                yourLocation: "",
-                                applyingFor: ""
-                            });
-                            setPhoneValue('');
-                            fileInputRef.current.value = null;
+                            resetForm();
                             setTimeout(() => {
                                 setFormSuccess('');
                             }, 5000);
                         } else {
                             setLoading(false);
                             setFormWarning("Some error occured");
-                            setValues({
-                                yourFirstName: "",
-                                yourLastName: "",
-                                emailAddress: "",
-                                yourLocation: "",
-                                applyingFor: ""
-                            });
-                            setPhoneValue('');
-                            fileInputRef.current.value = null;
+                            resetForm();
                             setTimeout(() => {
                                 setFormWarning('');
                             }, 5000);
@@ -148,15 +145,7 @@ function JoinOurTeam(){
                         console.log(response);
                         setLoading(false);
                         setFormWarning("Some error occured");
-                        setValues({
-                            yourFirstName: "",
-                            yourLastName: "",
-                            emailAddress: "",
-                            yourLocation: "",
-                            applyingFor: ""
-                        });
-                        setPhoneValue('');
-                        fileInputRef.current.value = null;
+                        resetForm();
                         setTimeout(() => {
                             setFormWarning('');
                         }, 5000);

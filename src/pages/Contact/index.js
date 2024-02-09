@@ -68,6 +68,15 @@ function Contact(){
         }
     };
 
+    const resetForm = () =>{
+        setValues({
+            yourName: "",
+            emailAddress: "",
+            yourMessage: ""
+        });
+        setPhoneValue('');
+    }
+
     const handleSubmit = (event) => {
         if (event) event.preventDefault();
         if (validate(values)) {
@@ -88,24 +97,14 @@ function Contact(){
                 if (response.data.status === 0) {
                     setLoading(false);
                     setFormSuccess("Your message was sent successfully");
-                    setValues({
-                        yourName: "",
-                        emailAddress: "",
-                        yourMessage: ""
-                    });
-                    setPhoneValue('');
+                    resetForm();
                     setTimeout(() => {
                         setFormSuccess('');
                     }, 5000);
                 } else {
                     setLoading(false);
                     setFormWarning("Some error occured");
-                    setValues({
-                        yourName: "",
-                        emailAddress: "",
-                        yourMessage: ""
-                    });
-                    setPhoneValue('');
+                    resetForm();
                     setTimeout(() => {
                         setFormWarning('');
                     }, 5000);
@@ -116,12 +115,7 @@ function Contact(){
                 console.log(response);
                 setLoading(false);
                 setFormWarning("Some error occured");
-                setValues({
-                    yourName: "",
-                    emailAddress: "",
-                    yourMessage: ""
-                });
-                setPhoneValue('');
+                resetForm();
                 setTimeout(() => {
                     setFormWarning('');
                 }, 5000);
