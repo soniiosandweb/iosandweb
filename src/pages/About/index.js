@@ -2,6 +2,7 @@ import React from "react";
 import './style.css';
 import { Container, Row, Col } from "react-bootstrap";
 import SEO from "../../components/SEO";
+import {useCountUp} from "react-countup";
 
 // Join Team
 import JoinTeamGallery from '../../components/JoinTeamGallery';
@@ -25,6 +26,44 @@ import topDevelopers from '../../images/about/top-developers-logo.png';
 import upWork from '../../images/about/upwork-logo.png';
 
 function About(){
+
+    // projects delivered countup
+    useCountUp({
+        ref: 'projects_delivered',
+        start: 0,
+        end: 1000,
+        separator: '',
+        suffix: '+',
+        enableScrollSpy: true,
+        scrollSpyDelay: 1000,
+        scrollSpyOnce: true
+    });
+
+    // tech experts countup
+    useCountUp({
+        ref: 'tech_experts',
+        start: 0,
+        end: 1000,
+        separator: '',
+        suffix: '+',
+        enableScrollSpy: true,
+        scrollSpyDelay: 1000,
+        scrollSpyOnce: true
+    });
+
+    // investment raised countup
+    useCountUp({
+        ref: 'investment_raised',
+        start: 0,
+        end: 950,
+        separator: '',
+        prefix: '$',
+        suffix: 'M',
+        enableScrollSpy: true,
+        scrollSpyDelay: 1000,
+        scrollSpyOnce: true
+    });
+
     return(
         <>
             <SEO
@@ -263,15 +302,15 @@ function About(){
                             <div className="progress-block text-white">
                                 <div className="progress-block-flex">
                                     <div className="progress-number">
-                                        <span>1000+</span>
+                                        <span id="projects_delivered" />
                                         <div className="progress-heading">Projects Delivered</div>
                                     </div>
                                     <div className="progress-number">
-                                        <span>1000+</span>
+                                        <span id="tech_experts" />
                                         <div className="progress-heading">Tech experts On-board</div>
                                     </div>
                                     <div className="progress-number">
-                                        <span>$950M</span>
+                                        <span id="investment_raised" />
                                         <div className="progress-heading">Investment Raised for Startups</div>
                                     </div>
                                 </div>

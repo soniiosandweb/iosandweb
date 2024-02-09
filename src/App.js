@@ -14,6 +14,7 @@ import TermsConditions from './pages/TermsConditions';
 import CancellationPolicy from './pages/CancellationPolicy';
 import HowWeWork from './pages/HowWeWork';
 import Team from './pages/Team';
+import SoftwareDevelopment from './pages/Services/SoftwareDevelopment';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path='/how-we-work' element={<HowWeWork />} />
           <Route path='/our-team' element={<Team />} />
           <Route path='*' element={<NoPage />} />
+          <Route path='/software-development' element={<SoftwareDevelopment />} />
         </Route>
       </Routes>
     </BrowserRouter>

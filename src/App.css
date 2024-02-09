@@ -130,7 +130,26 @@ h1, h2{
 .bg-pink{
   background: #f7c6f7 !important;
 }
-
+.banner-overlay{
+  background: rgb(0 0 0 / 20%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.banner-overlay.light{
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.z-index-1{
+  position: relative;
+  z-index: 1;
+}
 @media (max-width: 1399px) {
   .heading2{
     font-size: 28px;

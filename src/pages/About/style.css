@@ -17,6 +17,9 @@
     color: #fff;
     text-shadow: 1px 2px 10px #222;
 }
+.heading-wrapper.full-width h1{
+    max-width: 100%;
+}
 @media (max-width: 1399px) {
     .heading-wrapper h1{
       font-size: 52px;

@@ -1,0 +1,51 @@
+/* software development banner */
+.software-development-banner{
+    background: url('../../../images/services/software-development/software-development-banner.jpg');
+    background-size: cover;
+    background-position: center right;
+}
+.services-numbers-cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 15px;
+}
+.services-numbers a {
+    height: 100%;
+    position: relative;
+    margin-top: 0;
+    background-color: #121212;
+    border: none;
+    width: 100%;
+    border-radius: 0 50px;
+    display: flex;
+    padding: 25px 20px;
+    transition: all ease-in .2s;
+    text-decoration: none;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.services-numbers a span {
+    font-size: 42px;
+    line-height: .8;
+    color: #000;
+    font-weight: 600;
+}
+.services-numbers-card .services-numbers-text {
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    margin: 0;
+}
+@media (max-width: 991px) {
+    .services-numbers-cards {
+      grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 767px) {
+    .services-numbers-cards {
+      grid-template-columns: repeat(1,1fr);
+    }
+}
