@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 15px;
+    padding: 3rem 0 0;
 }
 .services-numbers .services-numbers-card {
     height: 100%;
