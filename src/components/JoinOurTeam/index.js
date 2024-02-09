@@ -69,6 +69,11 @@ function JoinOurTeam(){
         if (!values.applyingFor) {
             errors.applyingFor = "Please select profile to apply";
         }
+
+        // File upload
+        if(file === null || file === undefined){
+            errors.resume = "Please upload your resume";
+        }
     
         setFormErrors(errors);
     
@@ -83,47 +88,64 @@ function JoinOurTeam(){
         if (event) event.preventDefault();
         if (validate(values)) {
 
-            // const reader = new FileReader();
-            // reader.readAsDataURL(file);
+                const reader = new FileReader();
+                reader.readAsDataURL(file);
 
-            // reader.onload = async (e) => {
+                reader.onload = async (e) => {
+                    
+                    setLoading(true);
 
-                //console.log(reader.result);
-
-                setLoading(true);
-
-                axios({
-                    method: "post",
-                    url: "https://iosandweb.net/api/join-team-email-api.php",
-                    data: JSON.stringify({
-                            yourFirstName: values.yourFirstName,
-                            yourLastName: values.yourLastName,
-                            emailAddress: values.emailAddress,
-                            yourLocation: values.yourLocation,
-                            applyingFor: values.applyingFor,
-                            phoneValue: phoneValue,
-                            resume: file
-                        }),
-                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                })
-                .then(function (response) {
-                    //handle success
-                    if (response.data.status === 0) {
-                        setLoading(false);
-                        setFormSuccess("Your request was sent successfully");
-                        setValues({
-                            yourFirstName: "",
-                            yourLastName: "",
-                            emailAddress: "",
-                            yourLocation: "",
-                            applyingFor: ""
-                        });
-                        setPhoneValue('');
-                        fileInputRef.current.value = null;
-                        setTimeout(() => {
-                            setFormSuccess('');
-                        }, 5000);
-                    } else {
+                    axios({
+                        method: "post",
+                        url: "https://iosandweb.net/api/join-team-email-api.php",
+                        data: JSON.stringify({
+                                yourFirstName: values.yourFirstName,
+                                yourLastName: values.yourLastName,
+                                emailAddress: values.emailAddress,
+                                yourLocation: values.yourLocation,
+                                applyingFor: values.applyingFor,
+                                phoneValue: phoneValue,
+                                resume: reader.result
+                            }),
+                        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    })
+                    .then(function (response) {
+                        //handle success
+                        if (response.data.status === 0) {
+                            setLoading(false);
+                            setFormSuccess("Your request was sent successfully");
+                            setValues({
+                                yourFirstName: "",
+                                yourLastName: "",
+                                emailAddress: "",
+                                yourLocation: "",
+                                applyingFor: ""
+                            });
+                            setPhoneValue('');
+                            fileInputRef.current.value = null;
+                            setTimeout(() => {
+                                setFormSuccess('');
+                            }, 5000);
+                        } else {
+                            setLoading(false);
+                            setFormWarning("Some error occured");
+                            setValues({
+                                yourFirstName: "",
+                                yourLastName: "",
+                                emailAddress: "",
+                                yourLocation: "",
+                                applyingFor: ""
+                            });
+                            setPhoneValue('');
+                            fileInputRef.current.value = null;
+                            setTimeout(() => {
+                                setFormWarning('');
+                            }, 5000);
+                        }
+                    })
+                    .catch(function (response) {
+                        //handle error
+                        console.log(response);
                         setLoading(false);
                         setFormWarning("Some error occured");
                         setValues({
@@ -138,27 +160,8 @@ function JoinOurTeam(){
                         setTimeout(() => {
                             setFormWarning('');
                         }, 5000);
-                    }
-                })
-                .catch(function (response) {
-                    //handle error
-                    console.log(response);
-                    setLoading(false);
-                    setFormWarning("Some error occured");
-                    setValues({
-                        yourFirstName: "",
-                        yourLastName: "",
-                        emailAddress: "",
-                        yourLocation: "",
-                        applyingFor: ""
                     });
-                    setPhoneValue('');
-                    fileInputRef.current.value = null;
-                    setTimeout(() => {
-                        setFormWarning('');
-                    }, 5000);
-                });
-            //}
+                }
         }
     };
 
@@ -264,6 +267,9 @@ function JoinOurTeam(){
                                             <Form.Group controlId="yourResume" className="form-group">
                                                 <Form.Label>Upload your resume</Form.Label>
                                                 <Form.Control type="file" name="yourResume" onChange={(e) => setFile(e.target.files[0])} ref={fileInputRef} />
+                                                {formerrors.resume && (
+                                                    <p className="text-danger">{formerrors.resume}</p>
+                                                )}
                                             </Form.Group>
                                         </Col>
                                     </Row>
