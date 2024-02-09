@@ -73,30 +73,25 @@ function SoftwareDevelopment(){
                 <Container>
                     <Row>
                         <Col>
+                            <h2 className="heading2 text-center">Software Development Company</h2>
+                            <div className="heading5 text-center">But in the contemporary world, the goals are achieved by putting into practise customised software solutions that are built to exactly match certain business needs with Custom software development company. Because of this, every company today gives business software solutions the highest importance conceivable. The various applications of custom software solutions entirely depend on the distinct needs of each company. The top ten reasons for using custom software in your business are listed below.</div>
+
                             <div className="services-numbers-cards">
-                                <div className="services-numbers-card">
-                                    <a href="/services" className="bg-red">
-                                        <span id="website_delivered" />
-                                        <p className="services-numbers-text">Websites Delivered</p>
-                                    </a>
+                                <div className="services-numbers-card bg-red">
+                                    <span id="website_delivered" />
+                                    <p className="services-numbers-text">Websites Delivered</p>
                                 </div>
-                                <div className="services-numbers-card">
-                                    <a href="/services" className="bg-orange">
-                                        <span id="countries_served" />
-                                        <p className="services-numbers-text">Countries Served</p>
-                                    </a>
+                                <div className="services-numbers-card bg-orange">
+                                    <span id="countries_served" />
+                                    <p className="services-numbers-text">Countries Served</p>
                                 </div>
-                                <div className="services-numbers-card">
-                                    <a href="/services" className="bg-green">
-                                        <span id="web_developers" />
-                                        <p className="services-numbers-text">Web Developers</p>
-                                    </a>
+                                <div className="services-numbers-card bg-green">
+                                    <span id="web_developers" />
+                                    <p className="services-numbers-text">Web Developers</p>
                                 </div>
-                                <div className="services-numbers-card">
-                                    <a href="/services" className="bg-blue">
-                                        <span id="years_experience" />
-                                        <p className="services-numbers-text">Years of experience</p>
-                                    </a>
+                                <div className="services-numbers-card bg-blue">
+                                    <span id="years_experience" />
+                                    <p className="services-numbers-text">Years of experience</p>
                                 </div>
                             </div>
                         </Col>
