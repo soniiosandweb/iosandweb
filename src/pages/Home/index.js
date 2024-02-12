@@ -64,7 +64,7 @@ function Home() {
     return (
         <>
             <SEO
-                title='Custom Software Development Company - IosAndWeb Tech'
+                title='Custom Software Development Company - IAW Technologies'
                 description='Looking for a reliable Custom Software Development Company to build your next big idea? Look no further than IosAndWeb Technologies.'
                 name='IosAndWeb Technologies'
             />

@@ -78,3 +78,109 @@
       grid-template-columns: repeat(1,1fr);
     }
 }
+/* what software section */
+.what-software-section{
+    background: #000 url('../../../images/awards-BG.webp') no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Reasons to choose section */
+.reasons-tab-block {
+    box-shadow: 0px 4px 15px -6px rgb(0 0 0/55%);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 3rem;
+    background-color: #f1f2fd;
+}
+.reasons-tab-cols{
+    flex: 1;
+}
+.reasons-tab-left {
+    padding: 20px;
+}
+.reasons-tab {
+    height: 480px;
+    overflow-y: scroll;
+    flex-wrap: unset;
+}
+.reasons-tab .nav-link{
+    color: #000;
+    background-color: transparent !important;
+    outline: none !important;
+    box-shadow: unset !important;
+    padding: 15px 20px;
+    position: relative;
+}
+.reasons-tab .nav-link svg {
+    padding-right: 10px;
+    font-size: 12px;
+}
+.reasons-tab .nav-link.active{
+    color: #1367fb;
+    font-weight: 600;
+}
+.reasons-tab-block .tab-content {
+    height: 100%;
+    padding: 30px;
+    background-color: #1050bc;
+    color: #fff;
+    border-radius: 0 20px 20px 0;
+}
+.reasons-tab-block .tab-content .tab-pane {
+    height: 100%;
+}
+/* width */
+.reasons-tab::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+.reasons-tab::-webkit-scrollbar-track {
+    background: #ccc; 
+}
+   
+/* Handle */
+.reasons-tab::-webkit-scrollbar-thumb {
+    background: #1050bc; 
+}
+.reasons-tab-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+.reasons-tab-content .reasons-content-icon {
+    width: 70px;
+    margin-bottom: 10px;
+}
+.reasons-tab-content .paragraph{
+    margin: 10px 0 0;
+}
+@media (max-width: 1199px) {
+    .reasons-tab{
+        height: 520px;
+    }
+}
+@media (max-width: 991px) {
+    .reasons-tab-block {
+        flex-direction: column;
+    }
+    .reasons-tab-block .tab-content {
+        border-radius: 0 0 20px 20px;
+    }
+}
+@media (max-width: 480px) {
+    .reasons-tab-left {
+        padding: 10px;
+    }
+    .reasons-tab .nav-link{
+        padding: 15px;
+    }
+    .reasons-tab-block .tab-content {
+        padding: 20px;
+    }
+}
