@@ -6,7 +6,6 @@ import SEO from "../../../components/SEO";
 import ContactForm from "../../../components/ContactForm";
 import GetStarted from "../../../components/GetStarted";
 import NumbersCards from "../../../components/NumbersCards";
-// import ReactFlipCard from 'reactjs-flip-card'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDot } from "@fortawesome/free-solid-svg-icons";
@@ -273,17 +272,6 @@ function SoftwareDevelopment(){
                         <Col>
                             <h2 className="heading2">Final Reflections</h2>
                             <div className="heading5">There are certain technical abilities you must possess to become a successful programmer, regardless of whether you are studying computer science or taking a course to become a software engineer or developer with CRM software development. Technology is enormous, and there are a huge number of new tools, systems, and languages being released every day. Regardless of your level of expertise, as a contemporary developer you should know how to incorporate cutting-edge technologies as well as other technical aspects into your work to produce high-quality hardware or software. Our reliance on software will only increase as we gradually move towards a new era of smartphone apps, automation, and post-pandemic living. This is not always a bad thing because applications have the ability to significantly improve our lives. </div>
-
-                            {/* <ReactFlipCard
-                                frontComponent={<div>Hover me!</div>}
-                                backComponent={<div>Back!</div>}
-                            />
-
-                            <ReactFlipCard
-                                frontComponent={<div>Hover me!</div>}
-                                backComponent={<div>Back!</div>}
-                            />
-                            */}
                         </Col>
                     </Row>
                 </Container>
