@@ -4,14 +4,12 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import {useCountUp} from "react-countup";
 import SEO from "../../../components/SEO";
 import ContactForm from "../../../components/ContactForm";
+import GetStarted from "../../../components/GetStarted";
+import NumbersCards from "../../../components/NumbersCards";
+// import ReactFlipCard from 'reactjs-flip-card'
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDot } from "@fortawesome/free-solid-svg-icons";
-
-// numbers cards images
-import websiteDelivered from '../../../images/services/software-development/websites-delivered.png';
-import countriesServed from '../../../images/services/software-development/countries-served.png';
-import webDevelopers from '../../../images/services/software-development/developer.png';
-import experience from '../../../images/services/software-development/experience.png';
 
 // reasons to choose images
 import designDevelopment from '../../../images/services/software-development/design-development.png';
@@ -26,6 +24,7 @@ import instantSupport from '../../../images/services/software-development/instan
 import license from '../../../images/services/software-development/license.png';
 
 function SoftwareDevelopment(){
+
     // website delivered countup
     useCountUp({
         ref: 'website_delivered',
@@ -104,47 +103,9 @@ function SoftwareDevelopment(){
                     <Row>
                         <Col>
                             <h2 className="heading2 text-center">Software Development Company</h2>
-                            <div className="heading5 text-center">But in the contemporary world, the goals are achieved by putting into practise customised software solutions that are built to exactly match certain business needs with Custom software development company. Because of this, every company today gives business software solutions the highest importance conceivable. The various applications of custom software solutions entirely depend on the distinct needs of each company. The top ten reasons for using custom software in your business are listed below.</div>
+                            <div className="heading5 text-center">But in the contemporary world, the goals are achieved by putting into practise customised software solutions that are built to exactly match certain business needs with Custom software development company. Because of this, every company today gives business software solutions the highest importance conceivable. The various applications of custom software solutions entirely depend on the distinct needs of each company.</div>
 
-                            <div className="services-numbers-cards">
-                                <div className="services-numbers-card bg-red">
-                                    <div className="services-numbers-image">
-                                        <img src={websiteDelivered} alt="Websites Delivered" className="img-fluid"/>
-                                    </div>
-                                    <div className="services-numbers-content">
-                                        <span id="website_delivered" />
-                                        <p className="services-numbers-text">Websites Delivered</p>
-                                    </div>
-                                    
-                                </div>
-                                <div className="services-numbers-card bg-orange">
-                                    <div className="services-numbers-image">
-                                        <img src={countriesServed} alt="Countries Served" className="img-fluid" />
-                                    </div>
-                                    <div className="services-numbers-content">
-                                        <span id="countries_served" />
-                                        <p className="services-numbers-text">Countries Served</p>
-                                    </div>
-                                </div>
-                                <div className="services-numbers-card bg-green">
-                                    <div className="services-numbers-image">
-                                        <img src={webDevelopers} alt="Web Developers" className="img-fluid" />
-                                    </div>
-                                    <div className="services-numbers-content">
-                                        <span id="web_developers" />
-                                        <p className="services-numbers-text">Web Developers</p>
-                                    </div>
-                                </div>
-                                <div className="services-numbers-card bg-blue">
-                                    <div className="services-numbers-image">
-                                        <img src={experience} alt="Experience" className="img-fluid" />
-                                    </div>
-                                    <div className="services-numbers-content">
-                                        <span id="years_experience" />
-                                        <p className="services-numbers-text">Years of experience</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <NumbersCards />
                         </Col>
                     </Row>
                 </Container>
@@ -295,6 +256,36 @@ function SoftwareDevelopment(){
                                 </div>
                         </Tab.Container>
                     </div>
+                </Container>
+            </div>
+
+            {/* get started section */}
+            <GetStarted 
+                title="Let's Start Building Web Solutions To Help Achieve Your Business Goals"
+                buttonText="Get Started"
+                link="/contact"
+            />
+
+            {/* final reflection section */}
+            <div className="final-reflection-section section-padding">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2">Final Reflections</h2>
+                            <div className="heading5">There are certain technical abilities you must possess to become a successful programmer, regardless of whether you are studying computer science or taking a course to become a software engineer or developer with CRM software development. Technology is enormous, and there are a huge number of new tools, systems, and languages being released every day. Regardless of your level of expertise, as a contemporary developer you should know how to incorporate cutting-edge technologies as well as other technical aspects into your work to produce high-quality hardware or software. Our reliance on software will only increase as we gradually move towards a new era of smartphone apps, automation, and post-pandemic living. This is not always a bad thing because applications have the ability to significantly improve our lives. </div>
+
+                            {/* <ReactFlipCard
+                                frontComponent={<div>Hover me!</div>}
+                                backComponent={<div>Back!</div>}
+                            />
+
+                            <ReactFlipCard
+                                frontComponent={<div>Hover me!</div>}
+                                backComponent={<div>Back!</div>}
+                            />
+                            */}
+                        </Col>
+                    </Row>
                 </Container>
             </div>
 

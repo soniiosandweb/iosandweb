@@ -1,0 +1,56 @@
+import React from "react";
+import './style.css';
+
+// numbers cards images
+import websiteDelivered from '../../images/services/websites-delivered.png';
+import countriesServed from '../../images/services/countries-served.png';
+import webDevelopers from '../../images/services/developer.png';
+import experience from '../../images/services/experience.png';
+
+function NumbersCards(){
+    return(
+        <>
+            <div className="services-numbers-cards">
+                                <div className="services-numbers-card bg-red">
+                                    <div className="services-numbers-image">
+                                        <img src={websiteDelivered} alt="Websites Delivered" className="img-fluid"/>
+                                    </div>
+                                    <div className="services-numbers-content">
+                                        <span id="website_delivered" />
+                                        <p className="services-numbers-text">Websites Delivered</p>
+                                    </div>
+                                    
+                                </div>
+                                <div className="services-numbers-card bg-orange">
+                                    <div className="services-numbers-image">
+                                        <img src={countriesServed} alt="Countries Served" className="img-fluid" />
+                                    </div>
+                                    <div className="services-numbers-content">
+                                        <span id="countries_served" />
+                                        <p className="services-numbers-text">Countries Served</p>
+                                    </div>
+                                </div>
+                                <div className="services-numbers-card bg-green">
+                                    <div className="services-numbers-image">
+                                        <img src={webDevelopers} alt="Web Developers" className="img-fluid" />
+                                    </div>
+                                    <div className="services-numbers-content">
+                                        <span id="web_developers" />
+                                        <p className="services-numbers-text">Web Developers</p>
+                                    </div>
+                                </div>
+                                <div className="services-numbers-card bg-blue">
+                                    <div className="services-numbers-image">
+                                        <img src={experience} alt="Experience" className="img-fluid" />
+                                    </div>
+                                    <div className="services-numbers-content">
+                                        <span id="years_experience" />
+                                        <p className="services-numbers-text">Years of experience</p>
+                                    </div>
+                                </div>
+                            </div>
+        </>
+    )
+}
+
+export default NumbersCards;
