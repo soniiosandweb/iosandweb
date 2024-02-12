@@ -72,8 +72,8 @@ function About(){
                 name='IosAndWeb Technologies'
             />
 
-            <div className="about-banner banner-padding text-white">
-                <Container>
+            <div className="about-banner banner-padding text-white position-relative">
+                <Container className="z-index-1">
                     <Row>
                         <Col>
                             <div className="heading-wrapper">
@@ -82,6 +82,7 @@ function About(){
                         </Col>
                     </Row>
                 </Container>
+                <div className="banner-overlay"></div>
             </div>
 
             {/* Who we are */}

@@ -128,7 +128,7 @@ function Header() {
                   <div className="header-submenu-left">
                     <ul className="header-submenu-items">
                       <li className="submenu-item">
-                        <Dropdown.Item href='/services'>
+                        <Dropdown.Item href='/software-development'>
                           <div className="bg-red submenu-img">
                             <img src={softwareDevelopment} className="service-img" alt="Software Development" /> 
                           </div>
@@ -155,7 +155,7 @@ function Header() {
                         </Dropdown.Item>
                       </li>
                       <li className="submenu-item">
-                        <Dropdown.Item href='/services'>
+                        <Dropdown.Item href='https://www.blockchain77.com/services/'>
                           <div className="bg-blue submenu-img">
                             <img src={blockChain} className="service-img" alt="Blockchain Services" /> 
                           </div>

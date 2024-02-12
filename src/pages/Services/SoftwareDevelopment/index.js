@@ -3,6 +3,12 @@ import './style.css';
 import { Container, Row, Col } from "react-bootstrap";
 import {useCountUp} from "react-countup";
 
+// numbers cards images
+import websiteDelivered from '../../../images/services/software-development/websites-delivered.png';
+import countriesServed from '../../../images/services/software-development/countries-served.png';
+import webDevelopers from '../../../images/services/software-development/developer.png';
+import experience from '../../../images/services/software-development/experience.png';
+
 function SoftwareDevelopment(){
     // website delivered countup
     useCountUp({
@@ -57,7 +63,7 @@ function SoftwareDevelopment(){
             <div className="software-development-banner banner-padding text-white position-relative">
                 <Container className="z-index-1">
                     <Row>
-                        <Col lg={8}>
+                        <Col lg={8} xl={6}>
                             <div className="heading-wrapper full-width">
                                 <h1>Custom <span className="text-highlight">Software Development</span> Company</h1>
                                 <div className="heading5">Business organizations should be aware of these developments and react if they don't want to fall below their competitors. The corporate world is always evolving and changing in terms of technology. Utilizing specialised business software solutions aims to improve and simplify daily work, data management, and general customer interactions. It's common to want to be more creative, productive, and economical. Actually, industries witnessed a revolution as a result of this.</div>
@@ -78,20 +84,41 @@ function SoftwareDevelopment(){
 
                             <div className="services-numbers-cards">
                                 <div className="services-numbers-card bg-red">
-                                    <span id="website_delivered" />
-                                    <p className="services-numbers-text">Websites Delivered</p>
+                                    <div className="services-numbers-image">
+                                        <img src={websiteDelivered} alt="Websites Delivered" className="img-fluid"/>
+                                    </div>
+                                    <div className="services-numbers-content">
+                                        <span id="website_delivered" />
+                                        <p className="services-numbers-text">Websites Delivered</p>
+                                    </div>
+                                    
                                 </div>
                                 <div className="services-numbers-card bg-orange">
-                                    <span id="countries_served" />
-                                    <p className="services-numbers-text">Countries Served</p>
+                                    <div className="services-numbers-image">
+                                        <img src={countriesServed} alt="Countries Served" className="img-fluid" />
+                                    </div>
+                                    <div className="services-numbers-content">
+                                        <span id="countries_served" />
+                                        <p className="services-numbers-text">Countries Served</p>
+                                    </div>
                                 </div>
                                 <div className="services-numbers-card bg-green">
-                                    <span id="web_developers" />
-                                    <p className="services-numbers-text">Web Developers</p>
+                                    <div className="services-numbers-image">
+                                        <img src={webDevelopers} alt="Web Developers" className="img-fluid" />
+                                    </div>
+                                    <div className="services-numbers-content">
+                                        <span id="web_developers" />
+                                        <p className="services-numbers-text">Web Developers</p>
+                                    </div>
                                 </div>
                                 <div className="services-numbers-card bg-blue">
-                                    <span id="years_experience" />
-                                    <p className="services-numbers-text">Years of experience</p>
+                                    <div className="services-numbers-image">
+                                        <img src={experience} alt="Experience" className="img-fluid" />
+                                    </div>
+                                    <div className="services-numbers-content">
+                                        <span id="years_experience" />
+                                        <p className="services-numbers-text">Years of experience</p>
+                                    </div>
                                 </div>
                             </div>
                         </Col>
