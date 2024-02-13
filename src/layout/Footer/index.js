@@ -63,7 +63,7 @@ function Footer(){
                             <h5 className="footer-col-head">Services</h5>
                             <ul className="footer-col-list">
                                 <li><a href="/software-development">Software Development</a></li>
-                                <li><a href="/services">Web Development</a></li>
+                                <li><a href="/web-development">Web Development</a></li>
                                 <li><a href="/services">Mobile App Development</a></li>
                                 <li><a href="https://www.blockchain77.com/services/">Blockchain Development</a></li>
                                 <li><a href="/services">Web / Graphic Design</a></li>

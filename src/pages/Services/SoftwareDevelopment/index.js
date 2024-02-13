@@ -1,7 +1,7 @@
 import React from "react";
 import './style.css';
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import {useCountUp} from "react-countup";
+
 import SEO from "../../../components/SEO";
 import ContactForm from "../../../components/ContactForm";
 import GetStarted from "../../../components/GetStarted";
@@ -29,54 +29,6 @@ import shopify from '../../../images/services/software-development/shopify.png';
 
 function SoftwareDevelopment(){
 
-    // website delivered countup
-    useCountUp({
-        ref: 'website_delivered',
-        start: 0,
-        end: 1000,
-        separator: '',
-        suffix: '+',
-        enableScrollSpy: true,
-        scrollSpyDelay: 1000,
-        scrollSpyOnce: true
-    });
-
-    // countries served countup
-    useCountUp({
-        ref: 'countries_served',
-        start: 0,
-        end: 25,
-        separator: '',
-        suffix: '+',
-        enableScrollSpy: true,
-        scrollSpyDelay: 1000,
-        scrollSpyOnce: true
-    });
-
-    // web developers countup
-    useCountUp({
-        ref: 'web_developers',
-        start: 0,
-        end: 50,
-        separator: '',
-        suffix: '+',
-        enableScrollSpy: true,
-        scrollSpyDelay: 1000,
-        scrollSpyOnce: true
-    });
-
-    // years experience countup
-    useCountUp({
-        ref: 'years_experience',
-        start: 0,
-        end: 10,
-        separator: '',
-        suffix: '+',
-        enableScrollSpy: true,
-        scrollSpyDelay: 1000,
-        scrollSpyOnce: true
-    });
-
     return(
         <>
 
@@ -101,7 +53,7 @@ function SoftwareDevelopment(){
                 <div className="banner-overlay"></div>
             </div>
 
-            {/* Services panel */}
+            {/* Services numbers */}
             <div className="services-numbers section-padding">
                 <Container>
                     <Row>
@@ -124,7 +76,7 @@ function SoftwareDevelopment(){
                                 <h3>What is a software solution?</h3>
                             </div>
                             <div className="leadsubtxt">
-                                <b>In its simplest form, a software solution is a programme made to handle all the moment repetitive duties or for the routine jobs that are meant to be automated. Its goal is to encourage convenience and quickness.</b>
+                                In its simplest form, a software solution is a programme made to handle all the moment repetitive duties or for the routine jobs that are meant to be automated. Its goal is to encourage convenience and quickness.
                                 <br></br>
                                 A focused development method is used to generate a custom software solution, which results in a special software programme that is tailored to the particular needs of a given firm. Today, every organisation, regardless of size, requires a custom software solution to satisfy its own business requirements with Software development company.
                             </div>
@@ -281,7 +233,7 @@ function SoftwareDevelopment(){
                             <div className="services-bottom-flex">
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
-                                        <a href="/">
+                                        <a href="/web-development">
                                             <img src={webDevelopment} className="services-bottom-front-image" alt="Web Development" />
                                             <h4 className="heading4">Web Development Services</h4>
                                         </a>

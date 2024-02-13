@@ -35,7 +35,7 @@
     padding: 20px;
 }
 .reasons-tab {
-    height: 480px;
+    height: 420px;
     overflow-y: scroll;
     flex-wrap: unset;
 }
@@ -91,6 +91,11 @@
 }
 .reasons-tab-content .paragraph{
     margin: 10px 0 0;
+}
+@media (max-width: 1399px) {
+    .reasons-tab{
+        height: 480px;
+    }
 }
 @media (max-width: 1199px) {
     .reasons-tab{

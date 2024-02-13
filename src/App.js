@@ -15,6 +15,7 @@ import CancellationPolicy from './pages/CancellationPolicy';
 import HowWeWork from './pages/HowWeWork';
 import Team from './pages/Team';
 import SoftwareDevelopment from './pages/Services/SoftwareDevelopment';
+import WebDevelopment from './pages/Services/WebDevelopment';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path='/our-team' element={<Team />} />
           <Route path='*' element={<NoPage />} />
           <Route path='/software-development' element={<SoftwareDevelopment />} />
+          <Route path='/web-development' element={<WebDevelopment />} />
         </Route>
       </Routes>
     </BrowserRouter>

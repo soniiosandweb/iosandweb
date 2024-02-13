@@ -67,7 +67,7 @@ function Services(){
                     </Row>
                     <Row className="mt-3">
                         <Col md={6} lg={4} className="service-col">
-                            <a href="/" className="service-link bg-red">
+                            <a href="/web-development" className="service-link bg-red">
                                 <div className="what-do-service-item">
                                     <img src={webDevelop} className="service-icon" alt="Web Development" />
                                     <h3 className="heading2">Web Development</h3>

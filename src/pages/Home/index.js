@@ -122,7 +122,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="/services" className="bg-blue">
+                                    <a href="/web-development" className="bg-blue">
                                         <div className="service-icon">
                                             <img src={digitalTransformation} className="service-img" alt="Web Development" />
                                         </div>
