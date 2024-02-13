@@ -22,6 +22,11 @@ import integration from '../../../images/services/software-development/integrati
 import instantSupport from '../../../images/services/software-development/instant-support.png';
 import license from '../../../images/services/software-development/license.png';
 
+// final reflection images
+import webDevelopment from '../../../images/services/software-development/app-development.png';
+import magento from '../../../images/services/software-development/magento.png';
+import shopify from '../../../images/services/software-development/shopify.png';
+
 function SoftwareDevelopment(){
 
     // website delivered countup
@@ -272,6 +277,36 @@ function SoftwareDevelopment(){
                         <Col>
                             <h2 className="heading2">Final Reflections</h2>
                             <div className="heading5">There are certain technical abilities you must possess to become a successful programmer, regardless of whether you are studying computer science or taking a course to become a software engineer or developer with CRM software development. Technology is enormous, and there are a huge number of new tools, systems, and languages being released every day. Regardless of your level of expertise, as a contemporary developer you should know how to incorporate cutting-edge technologies as well as other technical aspects into your work to produce high-quality hardware or software. Our reliance on software will only increase as we gradually move towards a new era of smartphone apps, automation, and post-pandemic living. This is not always a bad thing because applications have the ability to significantly improve our lives. </div>
+
+                            <div className="services-bottom-flex">
+                                <div className="services-bottom-wrap">
+                                    <div className="services-bottom-div">
+                                        <a href="/">
+                                            <img src={webDevelopment} className="services-bottom-front-image" alt="Web Development" />
+                                            <h4 className="heading4">Web Development Services</h4>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div className="services-bottom-wrap">
+                                    <div className="services-bottom-div">
+                                        <a href="/">    
+                                            <img src={magento} className="services-bottom-front-image" alt="Magento Development" />
+                                            <h4 className="heading4">Magento Development Services</h4>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div className="services-bottom-wrap">
+                                    <div className="services-bottom-div">
+                                        <a href="/">    
+                                            <img src={shopify} className="services-bottom-front-image" alt="Shopify Development" />
+                                            <h4 className="heading4">Shopify Development</h4>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
                         </Col>
                     </Row>
                 </Container>

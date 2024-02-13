@@ -16,6 +16,7 @@
 .location-div {
     text-align: center;
     opacity: .6;
+    cursor: pointer;
 }
 .location-heading {
     font-size: 16px;
