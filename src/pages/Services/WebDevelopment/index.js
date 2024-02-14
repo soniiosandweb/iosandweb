@@ -117,6 +117,131 @@ function WebDevelopment(){
                 </Container>
             </div>
 
+            {/* Development process section */}
+            <div className="section-development-process section-padding">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2 text-center">Our Process Of Web Development</h2>
+                            <div className="heading5 text-center">An impressive Web Development needs Design, user experience, and path. The experienced team of our company makes a plan, develops and then executes the business objectives to satisfy the customers.</div>
+                        </Col>
+                    </Row>
+                    <div className="development-process-blocks mt-4">
+                        <Row className="no-gutters">
+                            <div className="col-md"></div>
+                            
+                            <div className="col-md-1 text-center flex-column d-none d-md-flex dots-center">
+                                <div className="row h-50">
+                                    <div className="col">&nbsp;</div>
+                                    <div className="col">&nbsp;</div>
+                                </div>
+                                <h5 className="m-2">
+                                    <span className="badge badge-pill bg-light border">01</span>
+                                </h5>
+                                <div className="row h-50">
+                                    <div className="col border-right">&nbsp;</div>
+                                    <div className="col">&nbsp;</div>
+                                </div>
+                            </div>
+                        
+                            <div className="col-md py-2">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <h4 className="card-title">Project Scope & Planning</h4>
+                                        <p className="card-text">Our experts conduct a deep study of your business and understand the requirements of your business. After reviewing the needs, we decide the technology and the framework that will be used for your site.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </Row>
+
+                        <Row className="no-gutters">
+
+                            <div className="col-md py-2">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <h4 className="card-title">Design & Coding</h4>
+                                        <p className="card-text">At this step, we code the website efficiently and avoid the unnecessary code inclusions.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-md-1 text-center flex-column d-none d-md-flex dots-center">
+                                <div className="row h-50">
+                                    <div className="col">&nbsp;</div>
+                                    <div className="col">&nbsp;</div>
+                                </div>
+                                <h5 className="m-2">
+                                    <span className="badge badge-pill bg-light border">02</span>
+                                </h5>
+                                <div className="row h-50">
+                                    <div className="col border-right">&nbsp;</div>
+                                    <div className="col">&nbsp;</div>
+                                </div>
+                            </div>
+                            <div className="col-md"></div>
+                            
+                        </Row>
+
+                        <Row className="no-gutters">
+                            <div className="col-md"></div>
+                            
+                            <div className="col-md-1 text-center flex-column d-none d-md-flex dots-center">
+                                <div className="row h-50">
+                                    <div className="col">&nbsp;</div>
+                                    <div className="col">&nbsp;</div>
+                                </div>
+                                <h5 className="m-2">
+                                    <span className="badge badge-pill bg-light border">03</span>
+                                </h5>
+                                <div className="row h-50">
+                                    <div className="col border-right">&nbsp;</div>
+                                    <div className="col">&nbsp;</div>
+                                </div>
+                            </div>
+                        
+                            <div className="col-md py-2">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <h4 className="card-title">Testing & Launch</h4>
+                                        <p className="card-text">Before making any site live on the internet, we make it bug-free and conduct testing on various platforms to enhance the user experience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </Row>
+
+                        <Row className="no-gutters">
+
+                            <div className="col-md py-2">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <h4 className="card-title">Maintenance</h4>
+                                        <p className="card-text">We provide after-service support & maintenance to the client's project and ensure its smooth working.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-md-1 text-center flex-column d-none d-md-flex dots-center">
+                                <div className="row h-50">
+                                    <div className="col">&nbsp;</div>
+                                    <div className="col">&nbsp;</div>
+                                </div>
+                                <h5 className="m-2">
+                                    <span className="badge badge-pill bg-light border">04</span>
+                                </h5>
+                                <div className="row h-50">
+                                    <div className="col border-right">&nbsp;</div>
+                                    <div className="col">&nbsp;</div>
+                                </div>
+                            </div>
+                            <div className="col-md"></div>
+                            
+                        </Row>
+
+                    </div>
+
+                </Container>
+            </div>
+
             {/* get started section */}
             <GetStarted 
                 title="Let's Start Building Web Solutions To Help Achieve Your Business Goals"

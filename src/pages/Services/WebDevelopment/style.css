@@ -29,3 +29,68 @@
 .what-software-section .leadsubtxt {
     color: #fff;
 }
+/* section Development process */
+.section-development-process{
+    background-color: #f1f2fd;
+}
+.development-process-blocks .badge {
+    border-radius: 50%;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #000 !important;
+}
+.development-process-blocks .card{
+    border: none;
+    box-shadow: 0px 4px 15px -6px #cecece8c;
+}
+.development-process-blocks .card .card-body{
+    padding: 20px;
+}
+.development-process-blocks .card .card-text{
+    color: #808080;
+}
+.development-process-blocks .dots-center {
+    position: relative;
+    z-index: 1;
+}
+.development-process-blocks .dots-center::after {
+    content: '';
+    width: 50%;
+    position: absolute;
+    background: #000;
+    right: -12px;
+    display: flex;
+    height: 2px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+}
+.development-process-blocks .no-gutters:nth-child(2n) .dots-center::after{
+    left: -12px;
+    right: auto;
+}
+.development-process-blocks .dots-center::before {
+    content: '';
+    background: #000;
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}
+.development-process-blocks .no-gutters:first-child .dots-center::before {
+    height: 50%;
+    bottom: 0;
+}
+.development-process-blocks .no-gutters:last-child .dots-center::before {
+    height: 50%;
+    top: 0;
+}
