@@ -6,6 +6,13 @@ import NumbersCards from "../../../components/NumbersCards";
 import ContactForm from "../../../components/ContactForm";
 import GetStarted from "../../../components/GetStarted";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDesktopAlt } from "@fortawesome/free-solid-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
+import { faGlobeAsia } from "@fortawesome/free-solid-svg-icons";
+import { faMobileScreen } from "@fortawesome/free-solid-svg-icons";
+
 // Services includes images
 import security from '../../../images/services/software-development/more-secure.png';
 import architecture from '../../../images/services/software-development/routine-tasks.png';
@@ -68,6 +75,14 @@ function WebDevelopment(){
                                 For over a decade, we have been serving with our web development services in UK as well as abroad. While developing your website, our team uses the latest techniques like ultra-clean and bold styles for the standard-based markup codes of the websites that help in improving the position in SERPs and increase conversions. 
                                 <br></br>As a web development company, we know that it is important to have a great website for a good online presence and it leaves the first impression on your website visitors. Some people consider a website just as a virtual representation of their company but it is not only that. Your website is the reflector of your business objectives and goals. That’s why having an appealing, attractive, informative website is necessary for a great online presence.
                             </div>
+                            <ul className="services-listing">
+                                <li>Magento Development</li>
+                                <li>PHP Frameworks</li>
+                                <li>Asp.net</li>
+                                <li>WordPress</li>
+                                <li>WooCommerce</li>
+                                <li>Shopify</li>
+                            </ul>
                         </Col>
                         <Col lg={5}>
                             <ContactForm />
@@ -111,6 +126,54 @@ function WebDevelopment(){
                                 <img src={support} alt="Great Support" className="why-choose-icon" />
                                 <h3 className="heading4">Great Support</h3>
                                 <p className="paragraph">Our work doesn't get completed with the submission of the final project. We provide promising support after services for the maintenance of delivered projects.We Offer An Extensive Range Of Solutions For Web Development Projects Of Every Niche.</p>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* Specification section */}
+            <div className="sepcification-section text-white section-padding">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2 text-center">Our Web Application Solutions Will Perfectly <br></br>Conforming Your Specifications</h2>
+                        </Col>
+                    </Row>
+                    <Row className="mt-5">
+                        <Col md={6} lg={4}>
+                            <div className="specification-block">
+                                <FontAwesomeIcon icon={faDesktopAlt}></FontAwesomeIcon>
+                                <h4 className="heading4">Front-End Development</h4>
+                                <p className="paragraph">Get End-To-End Solutions for your web development needs from our expert and professional developers.</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4}>
+                            <div className="specification-block">
+                                <FontAwesomeIcon icon={faCode}></FontAwesomeIcon>
+                                <h4 className="heading4">Custom Web Development</h4>
+                                <p className="paragraph">Hire our expert developers to get customized and tailored websites as per your requirements with high-reliability and advanced technology.</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4}>
+                            <div className="specification-block">
+                                <FontAwesomeIcon icon={faShoppingBag}></FontAwesomeIcon>
+                                <h4 className="heading4">E-Commerce Development</h4>
+                                <p className="paragraph">We provide you with custom eCommerce Web Development and Magento website design solutions to make your customers experience better and increase sales of your brand. We add value to your products by delivering flexible platforms.</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4}>
+                            <div className="specification-block">
+                                <FontAwesomeIcon icon={faMobileScreen}></FontAwesomeIcon>
+                                <h4 className="heading4">Web Application Frameworks</h4>
+                                <p className="paragraph">Our Web application solutions use the PHP framework which is best till now and satisfy the client's needs and increase the performance of the website.</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4}>
+                            <div className="specification-block">
+                                <FontAwesomeIcon icon={faGlobeAsia}></FontAwesomeIcon>
+                                <h4 className="heading4">Open Source Platform Development</h4>
+                                <p className="paragraph">We have great expertise in content management services so that we provide some out of the range of custom solutions to our esteemed clients. We include WordPress, magento web development, Joomla, Drupal and many more in our open-source platform development services.</p>
                             </div>
                         </Col>
                     </Row>

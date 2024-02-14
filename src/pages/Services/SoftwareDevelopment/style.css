@@ -17,6 +17,9 @@
     background-size: cover;
     position: relative;
 }
+.what-software-section .leadtxt h3 {
+    margin-bottom: 30px;
+}
 
 /* Reasons to choose section */
 .reasons-tab-block {

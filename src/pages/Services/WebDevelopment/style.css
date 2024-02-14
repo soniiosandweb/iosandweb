@@ -4,6 +4,22 @@
     background-size: cover;
     background-position: center;
 }
+.services-listing {
+    margin: 20px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: inside square;
+    padding: 0;
+}
+.services-listing li {
+    flex: 1 0 50%;
+    padding: 6px 0;
+}
+@media (max-width: 480px) {
+    .services-listing li{
+        flex: 1 1 100%;
+    }
+}
 /* services includes section */
 .services-includes-section .paragraph {
     position: unset;
@@ -29,10 +45,21 @@
 .what-software-section .leadsubtxt {
     color: #fff;
 }
-/* section Development process */
-.section-development-process{
-    background-color: #f1f2fd;
+
+/* specification section */
+.sepcification-section{
+    background-color: #000;
 }
+.specification-block {
+    height: 100%;
+    padding: 20px;
+}
+.specification-block svg {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* section Development process */
 .development-process-blocks .badge {
     border-radius: 50%;
     color: #fff;
@@ -47,6 +74,7 @@
 .development-process-blocks .card{
     border: none;
     box-shadow: 0px 4px 15px -6px #cecece8c;
+    background-color: #f1f2fd;
 }
 .development-process-blocks .card .card-body{
     padding: 20px;
