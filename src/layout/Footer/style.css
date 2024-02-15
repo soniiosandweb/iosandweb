@@ -12,6 +12,7 @@
 .location-image {
     border-bottom: 1px solid #fff;
     padding-bottom: 25px;
+    max-height: 100px;
 }
 .location-div {
     text-align: center;

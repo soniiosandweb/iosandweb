@@ -118,61 +118,61 @@ function About(){
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2 text-center">Work Life <br></br>At Its <span>Best</span></h2>
+                            <h2 className="heading2 text-center">Work Life <br/>At Its <span>Best</span></h2>
                             <div className="its-best-wrap">
                                 <div className="its-best">
                                     <div className="its-best-inner">
                                         <figure><img src={learningDev} alt="Learning" /></figure>
-                                        <span>Learning <br></br>& Development</span>
+                                        <span>Learning <br/>& Development</span>
                                     </div>
                                 </div>
 
                                 <div className="its-best">
                                     <div className="its-best-inner">
                                         <figure><img src={mindful} alt="Mindful" /></figure>
-                                        <span>Mindful <br></br>Personal Guidance</span>
+                                        <span>Mindful <br/>Personal Guidance</span>
                                     </div>
                                 </div>
 
                                 <div className="its-best">
                                     <div className="its-best-inner">
                                         <figure><img src={constructiveFeedback} alt="Constructive" /></figure>
-                                        <span>Constructive <br></br>Feedback</span>
+                                        <span>Constructive <br/>Feedback</span>
                                     </div>
                                 </div>
 
                                 <div className="its-best">
                                     <div className="its-best-inner">
                                         <figure><img src={inclusive} alt="Inclusive" /></figure>
-                                        <span>Inclusive <br></br>& Open-Culture</span>
+                                        <span>Inclusive <br/>& Open-Culture</span>
                                     </div>
                                 </div>
 
                                 <div className="its-best">
                                     <div className="its-best-inner">
                                         <figure><img src={innovation} alt="Innovation" /></figure>
-                                        <span>Innovation <br></br>& Quality First</span>
+                                        <span>Innovation <br/>& Quality First</span>
                                     </div>
                                 </div>
 
                                 <div className="its-best">
                                     <div className="its-best-inner">
                                         <figure><img src={proactive} alt="Proactive" /></figure>
-                                        <span>Proactive <br></br>Implementation</span>
+                                        <span>Proactive <br/>Implementation</span>
                                     </div>
                                 </div>
 
                                 <div className="its-best">
                                     <div className="its-best-inner">
                                         <figure><img src={bestGlobal} alt="Best & Global" /></figure>
-                                        <span>Best & Global <br></br>Opportunities</span>
+                                        <span>Best & Global <br/>Opportunities</span>
                                     </div>
                                 </div>
 
                                 <div className="its-best">
                                     <div className="its-best-inner">
                                         <figure><img src={workLatest} alt="Work with" /></figure>
-                                        <span>Work with <br></br>Latest Technology</span>
+                                        <span>Work with <br/>Latest Technology</span>
                                     </div>
                                 </div>
 

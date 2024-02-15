@@ -10,9 +10,9 @@ import experience from '../../images/services/experience.png';
 
 function NumbersCards(){
 
-    // website delivered countup
+    // projects delivered countup
     useCountUp({
-        ref: 'website_delivered',
+        ref: 'projects_delivered',
         start: 0,
         end: 1000,
         separator: '',
@@ -63,11 +63,11 @@ function NumbersCards(){
             <div className="services-numbers-cards">
                 <div className="services-numbers-card bg-red">
                     <div className="services-numbers-image">
-                        <img src={websiteDelivered} alt="Websites Delivered" className="img-fluid"/>
+                        <img src={websiteDelivered} alt="Projects Delivered" className="img-fluid"/>
                     </div>
                     <div className="services-numbers-content">
-                        <span id="website_delivered" />
-                        <p className="services-numbers-text">Websites Delivered</p>
+                        <span id="projects_delivered" />
+                        <p className="services-numbers-text">Projects Delivered</p>
                     </div>         
                 </div>
                 <div className="services-numbers-card bg-orange">

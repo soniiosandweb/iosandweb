@@ -41,7 +41,7 @@ function WebDevelopment(){
                             <div className="heading-wrapper full-width">
                                 <h1><span className="text-highlight">Web Development</span> Services</h1>
                                 <div className="heading5">Let's build your dream website. IosAndWeb Technologies delivers the best <u>web development services</u> by having front end developer and back end developer expert and professional team of web developers and designsers. The Team is especially known for its effective knowledge in creating virtual branding and standardized websites compatible with all the devices. 
-                                <br></br>We also offer Website security, smart application architecture, ecommerce developer for Magento development services, long-term cost saving and great support.</div>
+                                <br/>We also offer Website security, smart application architecture, ecommerce developer for Magento development services, long-term cost saving and great support.</div>
                             </div>
                         </Col>
                     </Row>
@@ -55,7 +55,7 @@ function WebDevelopment(){
                     <Row>
                         <Col>
                             <h2 className="heading2 text-center">Web Development Company</h2>
-                            <div className="heading5 text-center">IosAndWeb Technologies delivers the best web development services in London,Birmingham and many areas of United Kingdom by having an expert and professional team of web developers. The team is especially known for its effective knowledge in creating virtual branding and standardized websites compatible with all the devices.</div>
+                            <div className="heading5 text-center">IosAndWeb Technologies delivers the best web development services in London,Birmingham and many areas of United Kingdom by having an expert and professional team of web developers.</div>
 
                             <NumbersCards />
                         </Col>
@@ -73,7 +73,7 @@ function WebDevelopment(){
                             </div>
                             <div className="leadsubtxt">
                                 For over a decade, we have been serving with our web development services in UK as well as abroad. While developing your website, our team uses the latest techniques like ultra-clean and bold styles for the standard-based markup codes of the websites that help in improving the position in SERPs and increase conversions. 
-                                <br></br>As a web development company, we know that it is important to have a great website for a good online presence and it leaves the first impression on your website visitors. Some people consider a website just as a virtual representation of their company but it is not only that. Your website is the reflector of your business objectives and goals. That’s why having an appealing, attractive, informative website is necessary for a great online presence.
+                                <br/>As a web development company, we know that it is important to have a great website for a good online presence and it leaves the first impression on your website visitors. Some people consider a website just as a virtual representation of their company but it is not only that. Your website is the reflector of your business objectives and goals. That's why having an appealing, attractive, informative website is necessary for a great online presence.
                             </div>
                             <ul className="services-listing">
                                 <li>Magento Development</li>
@@ -85,6 +85,9 @@ function WebDevelopment(){
                             </ul>
                         </Col>
                         <Col lg={5}>
+                            <div className="leadsubtxt mb-3 text-center">
+                                Fill the form and get quote for your project.
+                            </div>
                             <ContactForm />
                         </Col>
                     </Row>
@@ -125,7 +128,7 @@ function WebDevelopment(){
                             <div className="why-choose-list-item change-bg">
                                 <img src={support} alt="Great Support" className="why-choose-icon" />
                                 <h3 className="heading4">Great Support</h3>
-                                <p className="paragraph">Our work doesn't get completed with the submission of the final project. We provide promising support after services for the maintenance of delivered projects.We Offer An Extensive Range Of Solutions For Web Development Projects Of Every Niche.</p>
+                                <p className="paragraph">Our work doesn't get completed with the submission of the final project. We provide promising support after services for the maintenance of delivered projects.</p>
                             </div>
                         </Col>
                     </Row>
@@ -137,7 +140,7 @@ function WebDevelopment(){
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2 text-center">Our Web Application Solutions Will Perfectly <br></br>Conforming Your Specifications</h2>
+                            <h2 className="heading2 text-center">Our Web Application Solutions Will Perfectly <br/>Conforming Your Specifications</h2>
                         </Col>
                     </Row>
                     <Row className="mt-5">

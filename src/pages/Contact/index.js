@@ -55,8 +55,8 @@ function Contact(){
                                 <img src={locIndia} className="location-img" alt="India" />
                                 <div className="heading5">India (HQ)</div>
                                 <p className="paragraph">SCO 30, First Floor,
-                                <br></br>Near Devaji Plaza, VIP Road,
-                                <br></br>Zirakpur, PB (India)</p>
+                                <br/>Near Devaji Plaza, VIP Road,
+                                <br/>Zirakpur, PB (India)</p>
                                 <p className="paragraph">
                                     <a href="mailto:info@iosandweb.net" className="contact-link">info@iosandweb.net</a>
                                     <a href="tel:+91-99882 23680" className="contact-link">+91-99882 23680 </a>
@@ -69,8 +69,8 @@ function Contact(){
                                 <img src={locUK} className="location-img" alt="United Kingdom" />
                                 <div className="heading5">United Kingdom</div>
                                 <p className="paragraph">Sheffield City Centre,
-                                <br></br>Sheffield, S1 1AA,
-                                <br></br>United Kingdom</p>
+                                <br/>Sheffield, S1 1AA,
+                                <br/>United Kingdom</p>
                             </div>
                         </Col>
                         <Col md={6} lg={4}>
@@ -78,8 +78,8 @@ function Contact(){
                                 <img src={locUS} className="location-img" alt="United States" />
                                 <div className="heading5">United States</div>
                                 <p className="paragraph">Suite #304, 11200 Manchaca, 
-                                <br></br>Austin, Texas,
-                                <br></br>United States, 78748</p>
+                                <br/>Austin, Texas,
+                                <br/>United States, 78748</p>
                             </div>
                         </Col>
                     </Row>

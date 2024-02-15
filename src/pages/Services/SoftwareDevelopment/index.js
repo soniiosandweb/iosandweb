@@ -77,11 +77,14 @@ function SoftwareDevelopment(){
                             </div>
                             <div className="leadsubtxt">
                                 In its simplest form, a software solution is a programme made to handle all the moment repetitive duties or for the routine jobs that are meant to be automated. Its goal is to encourage convenience and quickness.
-                                <br></br>
+                                <br/>
                                 A focused development method is used to generate a custom software solution, which results in a special software programme that is tailored to the particular needs of a given firm. Today, every organisation, regardless of size, requires a custom software solution to satisfy its own business requirements with Software development company.
                             </div>
                         </Col>
                         <Col lg={5}>
+                            <div className="leadsubtxt mb-3 text-center">
+                                Fill the form and get quote for your project.
+                            </div>
                             <ContactForm />
                         </Col>
                     </Row>
@@ -148,8 +151,8 @@ function SoftwareDevelopment(){
                                                 <img src={moreSecure} alt="More Secure" className="reasons-content-icon" />
                                                 <h3 className="heading3">Custom software that is Clearly More Secure</h3>
                                                 <p className="paragraph">The additional security that your programme delivers is unequalled by any other commercial software because it cannot be used by other companies with Top Custom software development company. 
-                                                <br></br>Use software designed expressly for your company to limit the risks and hazards associated with outside hacking and data theft.Using a custom software solution secures and protects all of your data, and you can add extra security levels according to your tastes and needs with a tech company. 
-                                                <br></br>The level of protection provided by a custom software programme is simply unequalled by any other business application that is created for use by a variety of enterprises.</p>
+                                                <br/>Use software designed expressly for your company to limit the risks and hazards associated with outside hacking and data theft. Using a custom software solution secures and protects all of your data, and you can add extra security levels according to your tastes and needs with a tech company. 
+                                                <br/>The level of protection provided by a custom software programme is simply unequalled by any other business application that is created for use by a variety of enterprises.</p>
                                             </div>
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="third">

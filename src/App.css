@@ -141,6 +141,9 @@ h1, h2{
 .banner-overlay.bg-60 {
   background: rgb(0 0 0 / 60%);
 }
+.banner-overlay.bg-40 {
+  background: rgb(0 0 0 / 40%);
+}
 .banner-overlay.light{
   background: rgba(255, 255, 255, 0.2);
   position: absolute;

@@ -20,21 +20,21 @@ function Footer(){
                             <div className="location-div">
                                 <img src={india} alt="India" className="location-image" />
                                 <div className="location-heading">HQ India</div>
-                                <p className="location-text">SCO 30, First Floor, <br></br>Near Devaji Plaza, VIP Road, <br></br>Zirakpur, PB (India)</p>
+                                <p className="location-text">SCO 30, First Floor, <br/>Near Devaji Plaza, VIP Road, <br/>Zirakpur, PB (India)</p>
                             </div>
                         </Col>
                         <Col md={4}>
                             <div className="location-div">
                                 <img src={hqUk} alt="United Kingdom" className="location-image" />
                                 <div className="location-heading">United Kingdom</div>
-                                <p className="location-text">Sheffield City Centre, <br></br>Sheffield, S1 1AA, <br></br>United Kingdom</p>
+                                <p className="location-text">Sheffield City Centre, <br/>Sheffield, S1 1AA, <br/>United Kingdom</p>
                             </div>
                         </Col>
                         <Col md={4}>
                             <div className="location-div">
                                 <img src={hqUs} alt="United States" className="location-image" />
                                 <div className="location-heading">United States</div>
-                                <p className="location-text">Suite #304, 11200 Manchaca, <br></br>Austin, Texas, <br></br>United States, 78748</p>
+                                <p className="location-text">Suite #304, 11200 Manchaca, <br/>Austin, Texas, <br/>United States, 78748</p>
                             </div>
                         </Col>
                     </Row>
@@ -64,7 +64,7 @@ function Footer(){
                             <ul className="footer-col-list">
                                 <li><a href="/software-development">Software Development</a></li>
                                 <li><a href="/web-development">Web Development</a></li>
-                                <li><a href="/services">Mobile App Development</a></li>
+                                <li><a href="/mobile-app-development">Mobile App Development</a></li>
                                 <li><a href="https://www.blockchain77.com/services/">Blockchain Development</a></li>
                                 <li><a href="/services">Web / Graphic Design</a></li>
                                 <li><a href="/services">Digital Marketing</a></li>

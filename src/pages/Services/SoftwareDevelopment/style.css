@@ -39,8 +39,9 @@
 }
 .reasons-tab {
     height: 420px;
-    overflow-y: scroll;
+    overflow-y: auto;
     flex-wrap: unset;
+    justify-content: space-between;
 }
 .reasons-tab .nav-link{
     color: #000;

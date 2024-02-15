@@ -27,7 +27,7 @@ function Partners(){
                         <Col>
                             <div className="leadtxt">
                                 <h3>Our Efforts Have Transformed How You
-                                <br></br>Experience These Global Leaders</h3>
+                                <br/>Experience These Global Leaders</h3>
                             </div>
                             <ul className="partner-logos">
                                 <li className="partner-logo">

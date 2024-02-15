@@ -76,7 +76,7 @@ function Services(){
                             </a>
                         </Col>
                         <Col md={6} lg={4} className="service-col">
-                            <a href="/" className="service-link bg-purple">
+                            <a href="/mobile-app-development" className="service-link bg-purple">
                                 <div className="what-do-service-item">
                                     <img src={mobileDevelop} className="service-icon" alt="Mobile App Development" />
                                     <h3 className="heading2">Mobile App Development</h3>

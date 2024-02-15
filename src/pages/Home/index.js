@@ -76,7 +76,7 @@ function Home() {
                         <Col>
                             <div className="intro-content">
                                 <h1 className="banner-heading">Custom Software Development Company</h1>
-                                <p className="banner-text">We offer complete business software development solutions.<br></br>We combine this culture of innovation with our capabilities and industry expertise to go beyond the other traditional technology.</p>
+                                <p className="banner-text">We offer complete business software development solutions.<br/>We combine this culture of innovation with our capabilities and industry expertise to go beyond the other traditional technology.</p>
                                 <a href="/contact" className="consult-expert-btn">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
                             </div>
                             <video className="intro_video" poster={homeBanner} autoPlay={true} muted={true} loop={true}>
@@ -95,8 +95,8 @@ function Home() {
                         <Col>
                             <div className="leadtxt">
                                 <h3>We Create New Solutions and Transform
-                                    <br></br>Existing Ones with a Development Process That
-                                    <br></br>Beats Industry-Best Timelines
+                                    <br/>Existing Ones with a Development Process That
+                                    <br/>Beats Industry-Best Timelines
                                 </h3>
                             </div>
                             <div className="btn-section">
@@ -110,15 +110,15 @@ function Home() {
                                         <div className="service-icon">
                                             <img src={softwareDevelopment} className="service-img" alt="Software Development" />
                                         </div>
-                                        <p className="service-text">Software<br></br>Development</p>
+                                        <p className="service-text">Software<br/>Development</p>
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="/services" className="bg-purple">
+                                    <a href="/mobile-app-development" className="bg-purple">
                                         <div className="service-icon">
                                             <img src={mobileApp} className="service-img" alt="Mobile App" />
                                         </div>
-                                        <p className="service-text">Mobile App<br></br>Development</p>
+                                        <p className="service-text">Mobile App<br/>Development</p>
                                     </a>
                                 </div>
                                 <div className="service-card">
@@ -126,7 +126,7 @@ function Home() {
                                         <div className="service-icon">
                                             <img src={digitalTransformation} className="service-img" alt="Web Development" />
                                         </div>
-                                        <p className="service-text">Web<br></br>Development</p>
+                                        <p className="service-text">Web<br/>Development</p>
                                     </a>
                                 </div>
                                 <div className="service-card">
@@ -134,7 +134,7 @@ function Home() {
                                         <div className="service-icon">
                                             <img src={aiml} className="service-img" alt="Development of POC & ICO" />
                                         </div>
-                                        <p className="service-text">Development of <br></br>POC & ICO</p>
+                                        <p className="service-text">Development of <br/>POC & ICO</p>
                                     </a>
                                 </div>
                                 
@@ -143,7 +143,7 @@ function Home() {
                                         <div className="service-icon">
                                             <img src={dataScience} className="service-img" alt="Digital Transformation" />
                                         </div>
-                                        <p className="service-text">Digital <br></br>Transformation</p>
+                                        <p className="service-text">Digital <br/>Transformation</p>
                                     </a>
                                 </div>
                                 <div className="service-card">
@@ -151,7 +151,7 @@ function Home() {
                                         <div className="service-icon">
                                             <img src={cloudServices} className="service-img" alt="PPC Services" />
                                         </div>
-                                        <p className="service-text">Pay Per Click <br></br>Services</p>
+                                        <p className="service-text">Pay Per Click <br/>Services</p>
                                     </a>
                                 </div>
                                 <div className="service-card">
@@ -159,7 +159,7 @@ function Home() {
                                         <div className="service-icon">
                                             <img src={blockChain} className="service-img" alt="Blockchain Services" />
                                         </div>
-                                        <p className="service-text">Blockchain<br></br>Services</p>
+                                        <p className="service-text">Blockchain<br/>Services</p>
                                     </a>
                                 </div>
                                 <div className="service-card">
@@ -167,7 +167,7 @@ function Home() {
                                         <div className="service-icon">
                                             <img src={ideationDesign} className="service-img" alt="Ideation and Design" />
                                         </div>
-                                        <p className="service-text">Ideation and <br></br>Design Strategy</p>
+                                        <p className="service-text">Ideation and <br/>Design Strategy</p>
                                     </a>
                                 </div>
                             </div>
@@ -184,7 +184,7 @@ function Home() {
                         <Col>
                             <div className="leadtxt text-center">
                                 <h3>A Unified Vision That Caters
-                                    <br></br>to Diverse Industry Demands
+                                    <br/>to Diverse Industry Demands
                                 </h3>
                             </div>
                             <div className="grid_colm_panel">
@@ -276,11 +276,11 @@ function Home() {
                         <Col>
                             <div className="leadtxt text-center">
                                 <h3>First-Hand Opinions of Clients on
-                                    <br></br>Their Partnership Experience
+                                    <br/>Their Partnership Experience
                                 </h3>
                             </div>
                             <div className="leadsubtxt text-center">
-                                We are a software and mobile application development company that ensures its expertise extends <br></br>to offer a seamlessly productive and growth-oriented partnership to its clients.
+                                We are a software and mobile application development company that ensures its expertise extends <br/>to offer a seamlessly productive and growth-oriented partnership to its clients.
                             </div>
                         </Col>
                     </Row>
