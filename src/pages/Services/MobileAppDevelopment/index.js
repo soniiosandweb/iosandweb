@@ -168,9 +168,9 @@ function MobileAppDevelopment(){
                     </Row>
                     <div className="development-process-blocks mt-4">
                         <Row className="no-gutters">
-                            <div className="col-md"></div>
+                            <div className="col-lg"></div>
                             
-                            <div className="col-md-1 text-center flex-column d-none d-md-flex dots-center">
+                            <div className="col-lg-1 text-center flex-column d-none d-lg-flex dots-center">
                                 <div className="row h-50">
                                     <div className="col">&nbsp;</div>
                                     <div className="col">&nbsp;</div>
@@ -184,7 +184,7 @@ function MobileAppDevelopment(){
                                 </div>
                             </div>
                         
-                            <div className="col-md py-2">
+                            <div className="col-lg py-2">
                                 <div className="card">
                                     <div className="card-body">
                                         <h4 className="card-title">Mobile app strategy</h4>
@@ -196,7 +196,7 @@ function MobileAppDevelopment(){
 
                         <Row className="no-gutters">
 
-                            <div className="col-md py-2">
+                            <div className="col-lg py-2">
                                 <div className="card">
                                     <div className="card-body">
                                         <h4 className="card-title">User Experience Design</h4>
@@ -205,7 +205,7 @@ function MobileAppDevelopment(){
                                 </div>
                             </div>
 
-                            <div className="col-md-1 text-center flex-column d-none d-md-flex dots-center">
+                            <div className="col-lg-1 text-center flex-column d-none d-lg-flex dots-center">
                                 <div className="row h-50">
                                     <div className="col">&nbsp;</div>
                                     <div className="col">&nbsp;</div>
@@ -218,14 +218,14 @@ function MobileAppDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                             </div>
-                            <div className="col-md"></div>
+                            <div className="col-lg"></div>
                             
                         </Row>
 
                         <Row className="no-gutters">
-                            <div className="col-md"></div>
+                            <div className="col-lg"></div>
                             
-                            <div className="col-md-1 text-center flex-column d-none d-md-flex dots-center">
+                            <div className="col-lg-1 text-center flex-column d-none d-lg-flex dots-center">
                                 <div className="row h-50">
                                     <div className="col">&nbsp;</div>
                                     <div className="col">&nbsp;</div>
@@ -239,7 +239,7 @@ function MobileAppDevelopment(){
                                 </div>
                             </div>
                         
-                            <div className="col-md py-2">
+                            <div className="col-lg py-2">
                                 <div className="card">
                                     <div className="card-body">
                                         <h4 className="card-title">Mobile app development</h4>
@@ -251,7 +251,7 @@ function MobileAppDevelopment(){
 
                         <Row className="no-gutters">
 
-                            <div className="col-md py-2">
+                            <div className="col-lg py-2">
                                 <div className="card">
                                     <div className="card-body">
                                         <h4 className="card-title">Testing</h4>
@@ -260,7 +260,7 @@ function MobileAppDevelopment(){
                                 </div>
                             </div>
 
-                            <div className="col-md-1 text-center flex-column d-none d-md-flex dots-center">
+                            <div className="col-lg-1 text-center flex-column d-none d-lg-flex dots-center">
                                 <div className="row h-50">
                                     <div className="col">&nbsp;</div>
                                     <div className="col">&nbsp;</div>
@@ -273,14 +273,14 @@ function MobileAppDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                             </div>
-                            <div className="col-md"></div>
+                            <div className="col-lg"></div>
                             
                         </Row>
 
                         <Row className="no-gutters">
-                            <div className="col-md"></div>
+                            <div className="col-lg"></div>
                             
-                            <div className="col-md-1 text-center flex-column d-none d-md-flex dots-center">
+                            <div className="col-lg-1 text-center flex-column d-none d-lg-flex dots-center">
                                 <div className="row h-50">
                                     <div className="col">&nbsp;</div>
                                     <div className="col">&nbsp;</div>
@@ -294,7 +294,7 @@ function MobileAppDevelopment(){
                                 </div>
                             </div>
                         
-                            <div className="col-md py-2">
+                            <div className="col-lg py-2">
                                 <div className="card">
                                     <div className="card-body">
                                         <h4 className="card-title">Launch</h4>
@@ -306,7 +306,7 @@ function MobileAppDevelopment(){
 
                         <Row className="no-gutters">
 
-                            <div className="col-md py-2">
+                            <div className="col-lg py-2">
                                 <div className="card">
                                     <div className="card-body">
                                         <h4 className="card-title">Support & Maintenance</h4>
@@ -315,7 +315,7 @@ function MobileAppDevelopment(){
                                 </div>
                             </div>
 
-                            <div className="col-md-1 text-center flex-column d-none d-md-flex dots-center">
+                            <div className="col-lg-1 text-center flex-column d-none d-lg-flex dots-center">
                                 <div className="row h-50">
                                     <div className="col">&nbsp;</div>
                                     <div className="col">&nbsp;</div>
@@ -328,7 +328,7 @@ function MobileAppDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                             </div>
-                            <div className="col-md"></div>
+                            <div className="col-lg"></div>
                             
                         </Row>
 

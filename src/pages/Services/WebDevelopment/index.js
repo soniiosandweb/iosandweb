@@ -194,9 +194,9 @@ function WebDevelopment(){
                     </Row>
                     <div className="development-process-blocks mt-4">
                         <Row className="no-gutters">
-                            <div className="col-md"></div>
+                            <div className="col-lg"></div>
                             
-                            <div className="col-md-1 text-center flex-column d-none d-md-flex dots-center">
+                            <div className="col-lg-1 text-center flex-column d-none d-lg-flex dots-center">
                                 <div className="row h-50">
                                     <div className="col">&nbsp;</div>
                                     <div className="col">&nbsp;</div>
@@ -210,7 +210,7 @@ function WebDevelopment(){
                                 </div>
                             </div>
                         
-                            <div className="col-md py-2">
+                            <div className="col-lg py-2">
                                 <div className="card">
                                     <div className="card-body">
                                         <h4 className="card-title">Project Scope & Planning</h4>
@@ -222,7 +222,7 @@ function WebDevelopment(){
 
                         <Row className="no-gutters">
 
-                            <div className="col-md py-2">
+                            <div className="col-lg py-2">
                                 <div className="card">
                                     <div className="card-body">
                                         <h4 className="card-title">Design & Coding</h4>
@@ -231,7 +231,7 @@ function WebDevelopment(){
                                 </div>
                             </div>
 
-                            <div className="col-md-1 text-center flex-column d-none d-md-flex dots-center">
+                            <div className="col-lg-1 text-center flex-column d-none d-lg-flex dots-center">
                                 <div className="row h-50">
                                     <div className="col">&nbsp;</div>
                                     <div className="col">&nbsp;</div>
@@ -244,14 +244,14 @@ function WebDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                             </div>
-                            <div className="col-md"></div>
+                            <div className="col-lg"></div>
                             
                         </Row>
 
                         <Row className="no-gutters">
-                            <div className="col-md"></div>
+                            <div className="col-lg"></div>
                             
-                            <div className="col-md-1 text-center flex-column d-none d-md-flex dots-center">
+                            <div className="col-lg-1 text-center flex-column d-none d-lg-flex dots-center">
                                 <div className="row h-50">
                                     <div className="col">&nbsp;</div>
                                     <div className="col">&nbsp;</div>
@@ -265,7 +265,7 @@ function WebDevelopment(){
                                 </div>
                             </div>
                         
-                            <div className="col-md py-2">
+                            <div className="col-lg py-2">
                                 <div className="card">
                                     <div className="card-body">
                                         <h4 className="card-title">Testing & Launch</h4>
@@ -277,7 +277,7 @@ function WebDevelopment(){
 
                         <Row className="no-gutters">
 
-                            <div className="col-md py-2">
+                            <div className="col-lg py-2">
                                 <div className="card">
                                     <div className="card-body">
                                         <h4 className="card-title">Maintenance</h4>
@@ -286,7 +286,7 @@ function WebDevelopment(){
                                 </div>
                             </div>
 
-                            <div className="col-md-1 text-center flex-column d-none d-md-flex dots-center">
+                            <div className="col-lg-1 text-center flex-column d-none d-lg-flex dots-center">
                                 <div className="row h-50">
                                     <div className="col">&nbsp;</div>
                                     <div className="col">&nbsp;</div>
@@ -299,7 +299,7 @@ function WebDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                             </div>
-                            <div className="col-md"></div>
+                            <div className="col-lg"></div>
                             
                         </Row>
 
