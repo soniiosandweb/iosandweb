@@ -6,6 +6,10 @@ import NumbersCards from "../../../components/NumbersCards";
 import ContactForm from "../../../components/ContactForm";
 import GetStarted from "../../../components/GetStarted";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeadphones, faPaintBrush, faImage, faBullhorn, faFileText } from "@fortawesome/free-solid-svg-icons";
+import { faSearchengin } from "@fortawesome/free-brands-svg-icons";
+
 // reasons to choose images
 import developMaintain from '../../../images/services/web-designing/develop-maintain.png';
 import copywriting from '../../../images/services/web-designing/copywriting.png';
@@ -178,6 +182,61 @@ function WebDesigning(){
                             </div>
                         </Tab.Container>
                     </div>
+                </Container>
+            </div>
+
+            {/* Designing services section */}
+            <div className="designing-services-section section-padding">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2 text-center">Our Other Web Designing Services</h2>
+                        </Col>
+                    </Row>
+                    <Row className="mt-5">
+                        <Col md={6} lg={4}>
+                            <div className="specification-block">
+                                <FontAwesomeIcon icon={faPaintBrush}></FontAwesomeIcon>
+                                <h4 className="heading4">Web Design</h4>
+                                <p className="paragraph">IosAndWeb Technologies will design professional, attractive and pocket-friendly websites for your business. Its our responsibility to <b>hire web designer</b> near me for you.</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4}>
+                            <div className="specification-block">
+                                <FontAwesomeIcon icon={faImage}></FontAwesomeIcon>
+                                <h4 className="heading4">Logo Design</h4>
+                                <p className="paragraph">Build your business brand with IosAndWeb Technologies’ logo designing services.</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4}>
+                            <div className="specification-block">
+                                <FontAwesomeIcon icon={faSearchengin}></FontAwesomeIcon>
+                                <h4 className="heading4">SEO</h4>
+                                <p className="paragraph">Bring your webpage on the top of the search engine results page and make people see you on the internet.</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4}>
+                            <div className="specification-block">
+                                <FontAwesomeIcon icon={faBullhorn}></FontAwesomeIcon>
+                                <h4 className="heading4">Digital marketing</h4>
+                                <p className="paragraph">Expert digital marketers of IosAndWeb Technologies will start and run the marketing ad campaigns of your brand over social media platforms</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4}>
+                            <div className="specification-block">
+                                <FontAwesomeIcon icon={faFileText}></FontAwesomeIcon>
+                                <h4 className="heading4">Copywriting</h4>
+                                <p className="paragraph">The content of the website contains equal relevance to the photos and designs of the website.</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4}>
+                            <div className="specification-block">
+                                <FontAwesomeIcon icon={faHeadphones}></FontAwesomeIcon>
+                                <h4 className="heading4">Website support</h4>
+                                <p className="paragraph">IosAndWeb Technologies also provides care and support to your website to make its performance better.</p>
+                            </div>
+                        </Col>
+                    </Row>
                 </Container>
             </div>
 

@@ -4,3 +4,8 @@
     background-size: cover;
     background-position: center;
 }
+
+/* Designing Services */
+.designing-services-section .specification-block svg {
+    color: #1050bc;
+}

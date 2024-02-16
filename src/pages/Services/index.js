@@ -6,7 +6,7 @@ import SEO from "../../components/SEO";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-
+import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import GetStarted from "../../components/GetStarted";
 
 // what we do images
@@ -76,7 +76,7 @@ function Services(){
                             </a>
                         </Col>
                         <Col md={6} lg={4} className="service-col">
-                            <a href="/mobileapp-development-services" className="service-link bg-purple">
+                            <a href="/mobile-app-development-services" className="service-link bg-purple">
                                 <div className="what-do-service-item">
                                     <img src={mobileDevelop} className="service-icon" alt="Mobile App Development" />
                                     <h3 className="heading2">Mobile App Development</h3>
@@ -137,16 +137,31 @@ function Services(){
                         <Col md={6}>
                             <ul className="services-design-items">
                                 <li>
-                                    <FontAwesomeIcon icon={faDesktop} />
-                                    <span>Web Design</span>
+                                    <a href="/web-designing-services" className="service-design-link">
+                                        <div className="service-design-left">
+                                            <FontAwesomeIcon icon={faDesktop} />
+                                            <span>Web Design</span>
+                                        </div>
+                                        <FontAwesomeIcon icon={faArrowRightLong} className="right-arrow"></FontAwesomeIcon>
+                                    </a>
                                 </li>
                                 <li>
-                                    <FontAwesomeIcon icon={faPaintBrush} />
-                                    <span>Graphic Design</span>
+                                    <a href="/services" className="service-design-link">
+                                        <div className="service-design-left">
+                                            <FontAwesomeIcon icon={faPaintBrush} />
+                                            <span>Graphic Design</span>
+                                        </div>
+                                        <FontAwesomeIcon icon={faArrowRightLong} className="right-arrow"></FontAwesomeIcon>
+                                    </a>
                                 </li>
                                 <li>
-                                    <FontAwesomeIcon icon={faHtml5} />
-                                    <span>Pdf To HTML</span>
+                                    <a href="/services" className="service-design-link">
+                                        <div className="service-design-left">
+                                            <FontAwesomeIcon icon={faHtml5} />
+                                            <span>Pdf To HTML</span>
+                                        </div>
+                                        <FontAwesomeIcon icon={faArrowRightLong} className="right-arrow"></FontAwesomeIcon>
+                                    </a>
                                 </li>
                             </ul>
                         </Col>

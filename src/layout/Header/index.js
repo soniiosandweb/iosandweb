@@ -146,7 +146,7 @@ function Header() {
                         </Dropdown.Item>
                       </li>
                       <li className="submenu-item">
-                        <Dropdown.Item href='/mobileapp-development-services'>
+                        <Dropdown.Item href='/mobile-app-development-services'>
                           <div className="bg-orange submenu-img">
                             <img src={mobileApp} className="service-img" alt="Mobile App" /> 
                           </div>
@@ -164,7 +164,7 @@ function Header() {
                         </Dropdown.Item>
                       </li>
                       <li className="submenu-item">
-                        <Dropdown.Item href='/services'>
+                        <Dropdown.Item href='/web-designing-services'>
                           <div className="bg-green submenu-img">
                             <img src={ideationDesign} className="service-img" alt="Web/Graphic Design" /> 
                           </div>

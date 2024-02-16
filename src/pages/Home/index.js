@@ -114,7 +114,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="/mobileapp-development-services" className="bg-purple">
+                                    <a href="/mobile-app-development-services" className="bg-purple">
                                         <div className="service-icon">
                                             <img src={mobileApp} className="service-img" alt="Mobile App" />
                                         </div>
@@ -163,7 +163,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="/services" className="bg-yellow">
+                                    <a href="/web-designing-services" className="bg-yellow">
                                         <div className="service-icon">
                                             <img src={ideationDesign} className="service-img" alt="Ideation and Design" />
                                         </div>
