@@ -11,7 +11,7 @@
     color: #8e9299 !important;
     font-size: 18px;
     text-align: left;
-    padding: 0 20px 30px;
+    padding: 0 0 30px;
     display: flex;
     align-items: center;
     column-gap: 20px;
@@ -31,7 +31,7 @@
     background: #8e9299;
     z-index: -1;
     bottom: 0;
-    left: 57px;
+    left: 36px;
 }
 .dots-container .owl-dot:last-child .planning-image-wrap::after{
     display: none;
@@ -92,7 +92,7 @@
       width: 30px;
     }
     .dots-container .owl-dot .planning-image-wrap::after{
-      left: 46px;
+      left: 26px;
     }
 }
 @media (max-width: 767px) {

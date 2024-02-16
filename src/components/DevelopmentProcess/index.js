@@ -75,7 +75,7 @@ function DevelopmentProcess(){
                                 </Button>
                             </div>
                         </Col>
-                        <Col sm={10} lg={7}>
+                        <Col sm={10} lg={8}>
                             <OwlCarousel className="owl-theme development-process-block" {...options}>
                                 <div className="item">
                                     <img src={planningImage} alt="Planning" className="process-image" />

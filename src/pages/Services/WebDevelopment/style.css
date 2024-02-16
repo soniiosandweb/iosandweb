@@ -52,7 +52,7 @@
 }
 .specification-block {
     height: 100%;
-    padding: 20px;
+    padding: 20px 0;
 }
 .specification-block svg {
     font-size: 32px;

@@ -23,6 +23,7 @@
 .header .navbar-nav {
     justify-content: end;
     align-items: center;
+    padding-right: 0;
 }
 
 .navbar-nav .btn.nav-link {

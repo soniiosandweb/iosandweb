@@ -5,14 +5,14 @@
 
 /* Our team section */
 .team-grid-row {
-    grid-gap: 15px;
+    grid-gap: 30px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     padding: 5rem 0 0;
 }
 .team-grid-row .team-item {
     text-align: center;
-    padding: 15px;
+    padding: 15px 0;
 }
 .team-profile-image {
     margin: auto;
@@ -63,6 +63,7 @@
 @media (max-width: 767px) {
     .team-grid-row {
         grid-template-columns: repeat(2,1fr);
+        padding: 2rem 0 0;
     }
 }
 @media (max-width: 480px) {

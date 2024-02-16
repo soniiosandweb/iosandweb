@@ -167,10 +167,10 @@
     width: 100%;
     margin: 0 auto;
     padding: 2rem 0 0;
+    gap: 40px;
 }
 .core-values-grid {
-    width: 33.33%;
-    padding: 0 42px;
+    flex: 1;
 }
 .core-values-number {
     font-size: 80px;
@@ -191,15 +191,17 @@
     .width-55{
       max-width: 100%;
     }
-    .core-values-grid{
-      padding: 0 15px;
+    .core-values-flex{
+      gap: 20px;
     }
 }
 @media (max-width: 767px) {
     .core-values-grid{
       width: 100%;
       text-align: center;
-      margin: 20px 0;
+    }
+    .core-values-flex{
+      flex-direction: column;
     }
 }
   
@@ -209,10 +211,10 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     padding-top: 4rem;
+    gap: 15px;
 }
 .achieve-flip-wrap {
-    width: calc(25% - 30px);
-    margin: 0 15px;
+    width: calc(25% - 12px);
 }
 .flipper {
     transition: .6s;
@@ -260,7 +262,6 @@
 @media (max-width: 767px) {
     .achieve-flip-wrap {
       width: calc(50% - 10px);
-      margin: 0px 5px;
     }
     .front, .back , .flipper{
       height: 130px;
