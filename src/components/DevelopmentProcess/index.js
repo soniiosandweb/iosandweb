@@ -41,7 +41,7 @@ function DevelopmentProcess(){
                         </Col>
                     </Row>
                     <Row className="justify-content-center align-items-center mt-5">
-                        <Col sm={2} lg={4}>
+                        <Col sm={2} lg={4} xl={4}>
                             <div className="dots-container owl-dots">
                                 <Button className="owl-dot">
                                     <span className="planning-image-wrap">
@@ -75,7 +75,7 @@ function DevelopmentProcess(){
                                 </Button>
                             </div>
                         </Col>
-                        <Col sm={10} lg={8}>
+                        <Col sm={10} lg={8} xl={7}>
                             <OwlCarousel className="owl-theme development-process-block" {...options}>
                                 <div className="item">
                                     <img src={planningImage} alt="Planning" className="process-image" />
