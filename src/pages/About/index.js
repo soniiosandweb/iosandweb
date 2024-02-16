@@ -35,7 +35,7 @@ function About(){
         separator: '',
         suffix: '+',
         enableScrollSpy: true,
-        scrollSpyDelay: 1000,
+        scrollSpyDelay: 0,
         scrollSpyOnce: true
     });
 
@@ -47,7 +47,7 @@ function About(){
         separator: '',
         suffix: '+',
         enableScrollSpy: true,
-        scrollSpyDelay: 1000,
+        scrollSpyDelay: 0,
         scrollSpyOnce: true
     });
 
@@ -60,7 +60,7 @@ function About(){
         prefix: '$',
         suffix: 'M',
         enableScrollSpy: true,
-        scrollSpyDelay: 1000,
+        scrollSpyDelay: 0,
         scrollSpyOnce: true
     });
 

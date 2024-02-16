@@ -18,7 +18,7 @@ function NumbersCards(){
         separator: '',
         suffix: '+',
         enableScrollSpy: true,
-        scrollSpyDelay: 1000,
+        scrollSpyDelay: 0,
         scrollSpyOnce: true
     });
 
@@ -30,7 +30,7 @@ function NumbersCards(){
         separator: '',
         suffix: '+',
         enableScrollSpy: true,
-        scrollSpyDelay: 1000,
+        scrollSpyDelay: 0,
         scrollSpyOnce: true
     });
 
@@ -42,7 +42,7 @@ function NumbersCards(){
         separator: '',
         suffix: '+',
         enableScrollSpy: true,
-        scrollSpyDelay: 1000,
+        scrollSpyDelay: 0,
         scrollSpyOnce: true
     });
 
@@ -54,7 +54,7 @@ function NumbersCards(){
         separator: '',
         suffix: '+',
         enableScrollSpy: true,
-        scrollSpyDelay: 1000,
+        scrollSpyDelay: 0,
         scrollSpyOnce: true
     });
 
