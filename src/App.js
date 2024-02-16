@@ -17,6 +17,7 @@ import Team from './pages/Team';
 import SoftwareDevelopment from './pages/Services/SoftwareDevelopment';
 import WebDevelopment from './pages/Services/WebDevelopment';
 import MobileAppDevelopment from './pages/Services/MobileAppDevelopment';
+import WebDesigning from './pages/Services/WebDesigning';
 
 function App() {
   return (
@@ -36,9 +37,10 @@ function App() {
           <Route path='/how-we-work' element={<HowWeWork />} />
           <Route path='/our-team' element={<Team />} />
           <Route path='*' element={<NoPage />} />
-          <Route path='/software-development' element={<SoftwareDevelopment />} />
-          <Route path='/web-development' element={<WebDevelopment />} />
-          <Route path='/mobile-app-development' element={<MobileAppDevelopment />} />
+          <Route path='/software-development-services' element={<SoftwareDevelopment />} />
+          <Route path='/web-development-services' element={<WebDevelopment />} />
+          <Route path='/mobileapp-development-services' element={<MobileAppDevelopment />} />
+          <Route path='/web-designing-services' element={<WebDesigning />} />
         </Route>
       </Routes>
     </BrowserRouter>

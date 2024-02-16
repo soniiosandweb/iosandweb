@@ -236,7 +236,7 @@ function SoftwareDevelopment(){
                             <div className="services-bottom-flex">
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
-                                        <a href="/web-development">
+                                        <a href="/web-development-services">
                                             <img src={webDevelopment} className="services-bottom-front-image" alt="Web Development" />
                                             <h4 className="heading4">Web Development Services</h4>
                                         </a>

@@ -106,7 +106,7 @@ function Home() {
                             <div className="services-cards">
                                 
                                 <div className="service-card">
-                                    <a href="/software-development" className="bg-orange">
+                                    <a href="/software-development-services" className="bg-orange">
                                         <div className="service-icon">
                                             <img src={softwareDevelopment} className="service-img" alt="Software Development" />
                                         </div>
@@ -114,7 +114,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="/mobile-app-development" className="bg-purple">
+                                    <a href="/mobileapp-development-services" className="bg-purple">
                                         <div className="service-icon">
                                             <img src={mobileApp} className="service-img" alt="Mobile App" />
                                         </div>
@@ -122,7 +122,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="/web-development" className="bg-blue">
+                                    <a href="/web-development-services" className="bg-blue">
                                         <div className="service-icon">
                                             <img src={digitalTransformation} className="service-img" alt="Web Development" />
                                         </div>

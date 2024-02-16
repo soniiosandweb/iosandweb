@@ -67,7 +67,7 @@ function Services(){
                     </Row>
                     <Row className="mt-3">
                         <Col md={6} lg={4} className="service-col">
-                            <a href="/web-development" className="service-link bg-red">
+                            <a href="/web-development-services" className="service-link bg-red">
                                 <div className="what-do-service-item">
                                     <img src={webDevelop} className="service-icon" alt="Web Development" />
                                     <h3 className="heading2">Web Development</h3>
@@ -76,7 +76,7 @@ function Services(){
                             </a>
                         </Col>
                         <Col md={6} lg={4} className="service-col">
-                            <a href="/mobile-app-development" className="service-link bg-purple">
+                            <a href="/mobileapp-development-services" className="service-link bg-purple">
                                 <div className="what-do-service-item">
                                     <img src={mobileDevelop} className="service-icon" alt="Mobile App Development" />
                                     <h3 className="heading2">Mobile App Development</h3>

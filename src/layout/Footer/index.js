@@ -62,9 +62,9 @@ function Footer(){
                         <Col md={6} lg={3}>
                             <h5 className="footer-col-head">Services</h5>
                             <ul className="footer-col-list">
-                                <li><a href="/software-development">Software Development</a></li>
-                                <li><a href="/web-development">Web Development</a></li>
-                                <li><a href="/mobile-app-development">Mobile App Development</a></li>
+                                <li><a href="/software-development-services">Software Development</a></li>
+                                <li><a href="/web-development-services">Web Development</a></li>
+                                <li><a href="/mobileapp-development-services">Mobile App Development</a></li>
                                 <li><a href="https://www.blockchain77.com/services/">Blockchain Development</a></li>
                                 <li><a href="/services">Web / Graphic Design</a></li>
                                 <li><a href="/services">Digital Marketing</a></li>

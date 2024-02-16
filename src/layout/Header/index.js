@@ -128,7 +128,7 @@ function Header() {
                   <div className="header-submenu-left">
                     <ul className="header-submenu-items">
                       <li className="submenu-item">
-                        <Dropdown.Item href='/software-development'>
+                        <Dropdown.Item href='/software-development-services'>
                           <div className="bg-red submenu-img">
                             <img src={softwareDevelopment} className="service-img" alt="Software Development" /> 
                           </div>
@@ -137,7 +137,7 @@ function Header() {
                         </Dropdown.Item>
                       </li>
                       <li className="submenu-item">
-                        <Dropdown.Item href='/web-development'>
+                        <Dropdown.Item href='/web-development-services'>
                           <div className="bg-purple submenu-img">
                             <img src={digitalTransformation} className="service-img" alt="Web Development" /> 
                           </div>
@@ -146,7 +146,7 @@ function Header() {
                         </Dropdown.Item>
                       </li>
                       <li className="submenu-item">
-                        <Dropdown.Item href='/mobile-app-development'>
+                        <Dropdown.Item href='/mobileapp-development-services'>
                           <div className="bg-orange submenu-img">
                             <img src={mobileApp} className="service-img" alt="Mobile App" /> 
                           </div>
