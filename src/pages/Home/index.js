@@ -94,10 +94,10 @@ function Home() {
                     <Row>
                         <Col>
                             <div className="leadtxt">
-                                <h3>We Create New Solutions and Transform
+                                <h2>We Create New Solutions and Transform
                                     <br/>Existing Ones with a Development Process That
                                     <br/>Beats Industry-Best Timelines
-                                </h3>
+                                </h2>
                             </div>
                             <div className="btn-section">
                                 <a href="/services" className="btn btn-blue-border">Our Services <FontAwesomeIcon icon={faChevronRight} /></a>

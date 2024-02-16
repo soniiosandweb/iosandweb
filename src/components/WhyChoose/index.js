@@ -16,7 +16,7 @@ function WhyChoose(){
                 <Container>
                     <Row>
                         <Col>
-                             <h2 className="heading2 text-center">Why Choose IosAndWeb Technologies For Your Web Development Solutions?</h2>
+                             <h3 className="heading2 text-center">Why Choose IosAndWeb Technologies For Your Web Development Solutions?</h3>
                             <div className="heading5 text-center">We ensure web solutions that work flawlessly across multiple devices</div>
                         </Col>
                     </Row>
