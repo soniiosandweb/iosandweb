@@ -39,7 +39,7 @@ function WebDevelopment(){
                     <Row>
                         <Col lg={8} xl={6}>
                             <div className="heading-wrapper full-width">
-                                <h1><span className="text-highlight">Web Development</span> Services</h1>
+                                <h1><span className="text-highlight">Web </span>Development Services</h1>
                                 <div className="heading5">Let's build your dream website. IosAndWeb Technologies delivers the best <u>web development services</u> by having front end developer and back end developer expert and professional team of web developers and designsers. The Team is especially known for its effective knowledge in creating virtual branding and standardized websites compatible with all the devices. 
                                 <br/>We also offer Website security, smart application architecture, ecommerce developer for Magento development services, long-term cost saving and great support.</div>
                             </div>
@@ -55,7 +55,7 @@ function WebDevelopment(){
                     <Row>
                         <Col>
                             <h2 className="heading2 text-center">Web Development Company</h2>
-                            <div className="heading5 text-center">IosAndWeb Technologies delivers the best web development services in London,Birmingham and many areas of United Kingdom by having an expert and professional team of web developers.</div>
+                            <div className="heading5 text-center">IosAndWeb Technologies delivers the best <b>web development services in London,Birmingham and many areas of United Kingdom</b> by having an expert and professional team of web developers.</div>
 
                             <NumbersCards />
                         </Col>
@@ -69,7 +69,7 @@ function WebDevelopment(){
                     <Row className="align-items-center">
                         <Col lg={7}>
                             <div className="leadtxt">
-                                <h3>Web Development Services</h3>
+                                <h2>Web Development Services</h2>
                             </div>
                             <div className="leadsubtxt">
                                 For over a decade, we have been serving with our web development services in UK as well as abroad. While developing your website, our team uses the latest techniques like ultra-clean and bold styles for the standard-based markup codes of the websites that help in improving the position in SERPs and increase conversions. 
@@ -107,21 +107,21 @@ function WebDevelopment(){
                             <div className="why-choose-list-item">
                                 <img src={security} alt="Website Security" className="why-choose-icon" />
                                 <h3 className="heading4">Website Security</h3>
-                                <p className="paragraph">We web development agency providing security assistance to the websites of our clients is our priority. To make the website safe & secure, we implement all the security layers and make the entire web experience effective.</p>
+                                <p className="paragraph">We <u>web development agency</u> providing security assistance to the websites of our clients is our priority. To make the website safe & secure, we implement all the security layers and make the entire web experience effective.</p>
                             </div>
                         </Col>
                         <Col md={6} lg={3} className="why-choose-col">
                             <div className="why-choose-list-item change-bg">
                                 <img src={architecture} alt="Architecture" className="why-choose-icon" />
                                 <h3 className="heading4">Smart Application Architecture</h3>
-                                <p className="paragraph">Our frontend developer and backend developer  make apps and websites with a systematic approach and plan the project from its initial to the final stage. With this, it becomes easy to analyze the complexity and technical needs of the project.</p>
+                                <p className="paragraph">Our <u>frontend developer</u> and <u>backend developer</u> make apps and websites with a systematic approach and plan the project from its initial to the final stage. With this, it becomes easy to analyze the complexity and technical needs of the project.</p>
                             </div>
                         </Col>
                         <Col md={6} lg={3} className="why-choose-col">
                             <div className="why-choose-list-item">
                                 <img src={costSaving} alt="Cost Saving" className="why-choose-icon" />
                                 <h3 className="heading4">Long Term Cost Saving</h3>
-                                <p className="paragraph">Our expert team of developers does coding in such a flexible way that in the future if you need to upgrade ecommerce magento development the features then you do not need to do any major changes.</p>
+                                <p className="paragraph">Our expert team of developers does coding in such a flexible way that in the future if you need to upgrade <u>ecommerce magento development</u> the features then you do not need to do any major changes.</p>
                             </div>
                         </Col>
                         <Col md={6} lg={3} className="why-choose-col">
@@ -162,7 +162,7 @@ function WebDevelopment(){
                             <div className="specification-block">
                                 <FontAwesomeIcon icon={faShoppingBag}></FontAwesomeIcon>
                                 <h4 className="heading4">E-Commerce Development</h4>
-                                <p className="paragraph">We provide you with custom eCommerce Web Development and Magento website design solutions to make your customers experience better and increase sales of your brand. We add value to your products by delivering flexible platforms.</p>
+                                <p className="paragraph">We provide you with custom eCommerce Web Development and <u>Magento website design</u> solutions to make your customers experience better and increase sales of your brand. We add value to your products by delivering flexible platforms.</p>
                             </div>
                         </Col>
                         <Col md={6} lg={4}>
@@ -176,7 +176,7 @@ function WebDevelopment(){
                             <div className="specification-block">
                                 <FontAwesomeIcon icon={faGlobeAsia}></FontAwesomeIcon>
                                 <h4 className="heading4">Open Source Platform Development</h4>
-                                <p className="paragraph">We have great expertise in content management services so that we provide some out of the range of custom solutions to our esteemed clients. We include WordPress, magento web development, Joomla, Drupal and many more in our open-source platform development services.</p>
+                                <p className="paragraph">We have great expertise in <u>content management</u> services so that we provide some out of the range of custom solutions to our esteemed clients. We include WordPress, magento web development, Joomla, Drupal and many more in our open-source platform development services.</p>
                             </div>
                         </Col>
                     </Row>
@@ -321,7 +321,7 @@ function WebDevelopment(){
                     <Row>
                         <Col>
                             <h2 className="heading2">Final Reflections</h2>
-                            <div className="heading5">IosAndWeb Technologies is a leading Website Development Company that will help you to make your visions into reality. Get our affordable web development services and get an interactive online presence on the web.</div>
+                            <div className="heading5"><b>IosAndWeb Technologies</b> is a leading <u>Website Development Company</u> that will help you to make your visions into reality. Get our affordable <b>web development services</b> and get an interactive online presence on the web.</div>
 
                             <div className="services-bottom-flex">
                                 <div className="services-bottom-wrap">

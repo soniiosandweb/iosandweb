@@ -58,10 +58,10 @@ function MobileAppDevelopment(){
                     <Row className="align-items-center">
                         <Col lg={7}>
                             <div className="leadtxt">
-                                <h3>Mobile App development Services - Let's Discuss</h3>
+                                <h2>Mobile App development Services - Let's Discuss</h2>
                             </div>
                             <div className="leadsubtxt">
-                                Instead of designing apps for just one platform, cross-platform app development is the ideal option for businesses to create apps more quickly. Discuss your project with our certified team of developers and get quote Mobile app development services. 
+                                Instead of designing apps for just one platform, cross-platform app development is the ideal option for businesses to create apps more quickly. Discuss your project with our certified team of developers and get quote <b>Mobile app development services</b>. 
                                 <br/>As the top company offering mobile app development services, we talked with our cross-platform app developers and wrote a comprehensive guide emphasising cross-platform app frameworks and the advantages of cross-platform apps with the help of Mobile app development company. You may fast release your software to the market with this. Let's start now.
                             </div>
                         </Col>
@@ -86,72 +86,76 @@ function MobileAppDevelopment(){
                     </Row>
                     <div className="reasons-tab-block">
                         <Tab.Container id="reasons-tab" defaultActiveKey="first">
-                                <div className="reasons-tab-left reasons-tab-cols">
-                                    <Nav variant="pills" className="reasons-tab flex-column">
-                                        <Nav.Item>
-                                            <Nav.Link eventKey="first"><img src={reactNative} alt="React Native" className="reasons-content-icon" />React Native</Nav.Link>
-                                        </Nav.Item>
-                                        <Nav.Item>
-                                            <Nav.Link eventKey="second"><img src={flutter} alt="Flutter" className="reasons-content-icon" />Flutter</Nav.Link>
-                                        </Nav.Item>
-                                        <Nav.Item>
-                                            <Nav.Link eventKey="third"><img src={ionic} alt="Ionic" className="reasons-content-icon" />Ionic</Nav.Link>
-                                        </Nav.Item>
-                                        <Nav.Item>
-                                            <Nav.Link eventKey="fourth"><img src={cordova} alt="Cordova" className="reasons-content-icon" />Cordova</Nav.Link>
-                                        </Nav.Item>
-                                        <Nav.Item>
-                                            <Nav.Link eventKey="fifth"><img src={unity} alt="Unity" className="reasons-content-icon" />Unity</Nav.Link>
-                                        </Nav.Item>
-                                        <Nav.Item>
-                                            <Nav.Link eventKey="sixth"><img src={xamarin} alt="Xamarin" className="reasons-content-icon" />Xamarin</Nav.Link>
-                                        </Nav.Item>
-                                    </Nav>
-                                </div>
-                                <div className="reasons-tab-right reasons-tab-cols">
-                                    <Tab.Content>
-                                        <Tab.Pane eventKey="first">
-                                            <div className="reasons-tab-content">
-                                                <h3 className="heading3">React Native</h3>
-                                                <p className="paragraph">Ever wonder if developing mobile apps with React Native is a smart idea? For the purpose of building cross-platform iOS and Android application development, Facebook developed this open-source framework. Although the application functionality is handled in JavaScript, the user interface is entirely native. As a result, numerous sacrifices typically associated with HTML5-based UI are readily avoided with React Native. With the same UI components and codebase, you can quickly create a cross-platform project using React Native. React Native may also be used to build a brand-new cross-platform software from scratch or to integrate it into your current Android and iOS apps with the help of the <b>best mobile development agency.</b></p>
-                                            </div>
-                                        </Tab.Pane>
-                                        <Tab.Pane eventKey="second">
-                                            <div className="reasons-tab-content">
-                                                <h3 className="heading3">Flutter</h3>
-                                                <p className="paragraph">The greatest cross-platform app framework available today allows you to create apps for both iOS and Android without having to create separate codebases. In actuality, web programmes for browsers, Linux and Windows, may all be created using the same codebase. In the marketplace, Flutter is well-known. Currently, Google uses it for both the Google Home hub's user interface and the Google Assistant's modules. For a consistent feel and look in mobile and web apps, large eCommerce juggernauts like eBay and Alibaba Group, in addition to Google, also adopt Flutter. These apps can be used for all types of industries like <b>mobile app development for restaurants.</b></p>
-                                            </div>
-                                        </Tab.Pane>
-                                        <Tab.Pane eventKey="third">
-                                            <div className="reasons-tab-content">
-                                                <h3 className="heading3">Ionic</h3>
-                                                <p className="paragraph">Ionic is an open-source SDK that enables developers to create top-notch cross-platform applications with realistic native user interfaces. It includes numerous mobile-optimised UI elements and motions that enable you to create powerful cross-platform applications.
-                                                <br />Using cutting-edge web development tools like CSS and HTML, Ionic enables you to create cross-platform applications that are then delivered through app stores for download.</p>
-                                            </div>
-                                        </Tab.Pane>
-                                        <Tab.Pane eventKey="fourth">
-                                            <div className="reasons-tab-content">
-                                                <h3 className="heading3">Cordova</h3>
-                                                <p className="paragraph">Apache Cordova, formerly known as PhoneGap, enables app developers to create hybrid mobile apps utilising open-source standards including JavaScript, CSS3, and HTML5. To access the features of the device, you use Cordova, which converts your HTML/JavaScript application into a native container. This allows you to quickly target any sort of device and publish your cross-platform programme on the appropriate platforms with only one set of code.</p>
-                                            </div>
-                                        </Tab.Pane>
-                                        <Tab.Pane eventKey="fifth">
-                                            <div className="reasons-tab-content">
-                                                <h3 className="heading3">Unity</h3>
-                                                <p className="paragraph">It is a tool for cross-platform mobile development that creates gaming apps. Due to its simplified interface and workflow, it is currently one of the most used game engines for creating apps for the Android and iOS platforms.
-                                                <br/>It is not, however, restricted to the creation of video games. Additionally, Unity can be used for animation, architectural visualisation, and movie previsualization. Additionally, Unity uses a simple and quick user interface to simplify the development process.
-                                                <br/>Using Unity, users can drag and drop objects to add an image or button, change the font size, or do other things. Additionally, working with Unity requires less code because you won't need a background in XML to design UIs.</p>
-                                            </div>
-                                        </Tab.Pane>
-                                        <Tab.Pane eventKey="sixth">
-                                            <div className="reasons-tab-content">
-                                                <h3 className="heading3">Xamarin</h3>
-                                                <p className="paragraph">You may design a consistent user interface (UI) across platforms or create apps for iOS, Android, and Windows using the tools and technologies provided by Xamarin. You can get the best native performance from Xamarin by utilising the platform-specific hardware.
-                                                <br />Since Xamarin also adheres to the “write once, run anywhere” philosophy, you may build an app with less time and money by sharing the majority of the code. Additionally, you may access native APIs and 2D visuals and utilise your preferred frameworks, tools, and libraries.</p>
-                                            </div>
-                                        </Tab.Pane>
-                                    </Tab.Content>
-                                </div>
+                            <div className="reasons-tab-left reasons-tab-cols">
+                                <Nav variant="pills" className="reasons-tab flex-column">
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="first"><img src={reactNative} alt="React Native" className="reasons-content-icon" />React Native</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="second"><img src={flutter} alt="Flutter" className="reasons-content-icon" />Flutter</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="third"><img src={ionic} alt="Ionic" className="reasons-content-icon" />Ionic</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="fourth"><img src={cordova} alt="Cordova" className="reasons-content-icon" />Cordova</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="fifth"><img src={unity} alt="Unity" className="reasons-content-icon" />Unity</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="sixth"><img src={xamarin} alt="Xamarin" className="reasons-content-icon" />Xamarin</Nav.Link>
+                                    </Nav.Item>
+                                </Nav>
+                            </div>
+                            <div className="reasons-tab-right reasons-tab-cols">
+                                <Tab.Content>
+                                    <Tab.Pane eventKey="first">
+                                        <div className="reasons-tab-content">
+                                            <h3 className="heading3">React Native</h3>
+                                            <p className="paragraph">Ever wonder if developing mobile apps with React Native is a smart idea? For the purpose of building cross-platform iOS and Android application development, Facebook developed this open-source framework. Although the application functionality is handled in JavaScript, the user interface is entirely native. As a result, numerous sacrifices typically associated with HTML5-based UI are readily avoided with React Native. With the same UI components and codebase, you can quickly create a cross-platform project using React Native. React Native may also be used to build a brand-new cross-platform software from scratch or to integrate it into your current Android and iOS apps with the help of the <b>best mobile development agency.</b></p>
+                                        </div>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey="second">
+                                        <div className="reasons-tab-content">
+                                            <h3 className="heading3">Flutter</h3>
+                                            <p className="paragraph">The greatest cross-platform app framework available today allows you to create apps for both iOS and Android without having to create separate codebases. In actuality, web programmes for browsers, Linux and Windows, may all be created using the same codebase. In the marketplace, Flutter is well-known. Currently, Google uses it for both the Google Home hub's user interface and the Google Assistant's modules. For a consistent feel and look in mobile and web apps, large eCommerce juggernauts like eBay and Alibaba Group, in addition to Google, also adopt Flutter. These apps can be used for all types of industries like <b>mobile app development for restaurants.</b></p>
+                                        </div>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey="third">
+                                        <div className="reasons-tab-content">
+                                            <h3 className="heading3">Ionic</h3>
+                                            <p className="paragraph">Ionic is an open-source SDK that enables developers to create top-notch cross-platform applications with realistic native user interfaces. It includes numerous mobile-optimised UI elements and motions that enable you to create powerful cross-platform applications.
+                                            <br />
+                                            Using cutting-edge web development tools like CSS and HTML, Ionic enables you to create cross-platform applications that are then delivered through app stores for download.</p>
+                                        </div>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey="fourth">
+                                        <div className="reasons-tab-content">
+                                            <h3 className="heading3">Cordova</h3>
+                                            <p className="paragraph">Apache Cordova, formerly known as PhoneGap, enables app developers to create hybrid mobile apps utilising open-source standards including JavaScript, CSS3, and HTML5. To access the features of the device, you use Cordova, which converts your HTML/JavaScript application into a native container. This allows you to quickly target any sort of device and publish your cross-platform programme on the appropriate platforms with only one set of code.</p>
+                                        </div>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey="fifth">
+                                        <div className="reasons-tab-content">
+                                            <h3 className="heading3">Unity</h3>
+                                            <p className="paragraph">It is a tool for cross-platform mobile development that creates gaming apps. Due to its simplified interface and workflow, it is currently one of the most used game engines for creating apps for the Android and iOS platforms.
+                                            <br/>
+                                            It is not, however, restricted to the creation of video games. Additionally, Unity can be used for animation, architectural visualisation, and movie previsualization. Additionally, Unity uses a simple and quick user interface to simplify the development process.
+                                            <br/>
+                                            Using Unity, users can drag and drop objects to add an image or button, change the font size, or do other things. Additionally, working with Unity requires less code because you won't need a background in XML to design UIs.</p>
+                                        </div>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey="sixth">
+                                        <div className="reasons-tab-content">
+                                            <h3 className="heading3">Xamarin</h3>
+                                            <p className="paragraph">You may design a consistent user interface (UI) across platforms or create apps for iOS, Android, and Windows using the tools and technologies provided by Xamarin. You can get the best native performance from Xamarin by utilising the platform-specific hardware.
+                                            <br />
+                                            Since Xamarin also adheres to the “write once, run anywhere” philosophy, you may build an app with less time and money by sharing the majority of the code. Additionally, you may access native APIs and 2D visuals and utilise your preferred frameworks, tools, and libraries.</p>
+                                        </div>
+                                    </Tab.Pane>
+                                </Tab.Content>
+                            </div>
                         </Tab.Container>
                     </div>
                 </Container>
