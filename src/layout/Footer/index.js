@@ -67,7 +67,7 @@ function Footer(){
                                 <li><a href="/mobile-app-development-services">Mobile App Development</a></li>
                                 <li><a href="https://www.blockchain77.com/services/">Blockchain Development</a></li>
                                 <li><a href="/web-designing-services">Web / Graphic Design</a></li>
-                                <li><a href="/services">Digital Marketing</a></li>
+                                <li><a href="/digital-marketing-services">Digital Marketing</a></li>
                             </ul>
                         </Col>
                         <Col md={6} lg={3}>

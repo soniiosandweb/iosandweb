@@ -173,7 +173,7 @@ function Header() {
                         </Dropdown.Item>
                       </li>
                       <li className="submenu-item">
-                        <Dropdown.Item href='/services'>
+                        <Dropdown.Item href='/digital-marketing-services'>
                           <div className="bg-pink submenu-img">
                             <img src={dataScience} className="service-img" alt="Digital Marketing" /> 
                           </div>

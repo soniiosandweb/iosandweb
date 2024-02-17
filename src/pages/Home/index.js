@@ -139,7 +139,7 @@ function Home() {
                                 </div>
                                 
                                 <div className="service-card">
-                                    <a href="/services" className="bg-green">
+                                    <a href="/digital-marketing-services" className="bg-green">
                                         <div className="service-icon">
                                             <img src={dataScience} className="service-img" alt="Digital Transformation" />
                                         </div>
