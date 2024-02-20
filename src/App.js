@@ -19,6 +19,7 @@ import WebDevelopment from './pages/Services/WebDevelopment';
 import MobileAppDevelopment from './pages/Services/MobileAppDevelopment';
 import WebDesigning from './pages/Services/WebDesigning';
 import DigitalMarketing from './pages/Services/DigitalMarketing';
+import PayPerClick from './pages/Services/PayPerClick';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <Route path='/mobile-app-development-services' element={<MobileAppDevelopment />} />
           <Route path='/web-designing-services' element={<WebDesigning />} />
           <Route path='/digital-marketing-services' element={<DigitalMarketing />} />
+          <Route path='/ppc-services' element={<PayPerClick />} />
         </Route>
       </Routes>
     </BrowserRouter>
