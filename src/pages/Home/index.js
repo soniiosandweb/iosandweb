@@ -147,7 +147,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="/services" className="bg-gray">
+                                    <a href="/ppc-services" className="bg-gray">
                                         <div className="service-icon">
                                             <img src={cloudServices} className="service-img" alt="PPC Services" />
                                         </div>
