@@ -40,7 +40,7 @@ function PayPerClick(){
                     <Row>
                         <Col lg={8} xl={6}>
                             <div className="heading-wrapper full-width">
-                                <h1><span className="text-highlight">PPC</span> Services</h1>
+                                <h1><span className="text-highlight">Pay Per Click</span> Services</h1>
                                 <div className="heading5">On the off chance that you are on a chase for the correct Pay Per Click Services, <b>IosAndWeb Technologies</b> is the unmistakable decision! With long stretches of understanding as the main pay per click promoting organization, IosAndWeb has woven a trust among the worldwide customers.</div>
                                 <div className="heading5">You can upgrade your business with our first rate PPC Services that is expected to knock up the business prerequisites for each business. This causes our customers to get the upside of producing natural leads without wasting their valuable time and endeavors. </div>
                             </div>
