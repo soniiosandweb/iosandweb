@@ -15,10 +15,10 @@ import linkedinAds from '../../../images/services/ppc-services/linkedin-ads.png'
 import twitterAds from '../../../images/services/ppc-services/twitter-ads.png';
 
 // Services includes images
-import security from '../../../images/services/software-development/more-secure.png';
-import architecture from '../../../images/services/software-development/routine-tasks.png';
-import costSaving from '../../../images/services/software-development/lower-costs.png';
-import support from '../../../images/services/software-development/instant-support.png';
+import professionals from '../../../images/services/ppc-services/professionals.png';
+import knowledge from '../../../images/services/ppc-services/knowledge.png';
+import upgradedResults from '../../../images/services/ppc-services/upgraded-results.png';
+import reporting from '../../../images/services/ppc-services/reporting.png';
 
 // Final Reflection images
 import pageSpeed from '../../../images/services/digital-marketing/page-speed.png';
@@ -41,7 +41,8 @@ function PayPerClick(){
                         <Col lg={8} xl={6}>
                             <div className="heading-wrapper full-width">
                                 <h1><span className="text-highlight">PPC</span> Services</h1>
-                                <div className="heading5">On the off chance that you are on a chase for the correct Pay Per Click Services, IosAndWeb Technologies is the unmistakable decision! With long stretches of understanding as the main pay per click promoting organization, IosAndWeb has woven a trust among the worldwide customers. You can upgrade your business with our first rate PPC Services that is expected to knock up the business prerequisites for each business. This causes our customers to get the upside of producing natural leads without wasting their valuable time and endeavors. </div>
+                                <div className="heading5">On the off chance that you are on a chase for the correct Pay Per Click Services, <b>IosAndWeb Technologies</b> is the unmistakable decision! With long stretches of understanding as the main pay per click promoting organization, IosAndWeb has woven a trust among the worldwide customers.</div>
+                                <div className="heading5">You can upgrade your business with our first rate PPC Services that is expected to knock up the business prerequisites for each business. This causes our customers to get the upside of producing natural leads without wasting their valuable time and endeavors. </div>
                             </div>
                         </Col>
                     </Row>
@@ -72,8 +73,8 @@ function PayPerClick(){
                                 <h2>IosAndWeb Technologies - PPC Services</h2>
                             </div>
                             <div className="leadsubtxt">
-                                We at IosandWeb dependably underline conveying the correct answers for the different customer’s needs. Our greatest need as a Digital marketing services is to guarantee that we perform total examination and research about a business at whatever point we are going to serve them the best out of our administrations. As the pioneers in giving the best PPC Services, we ensure that our customers rise as a brand in the worldwide markets. We realize where to focus on the group of spectators for upgraded yield for our customers such that it fits their business.  
-                                <br/>We at IosAndWeb dependably underline conveying the correct answers for the different customer’s needs. Our greatest need as a Digital marketing services is to guarantee that we perform total examination and research about a business at whatever point we are going to serve them the best out of our administrations. As the pioneers in giving the best PPC Services, we ensure that our customers rise as a brand in the worldwide markets. We realize where to focus on the group of spectators for upgraded yield for our customers such that it fits their business. 
+                                We at IosandWeb dependably underline conveying the correct answers for the different customer's needs. Our greatest need as a <b>Digital marketing services</b> is to guarantee that we perform total examination and research about a business at whatever point we are going to serve them the best out of our administrations. As the pioneers in giving the best PPC Services, we ensure that our customers rise as a brand in the worldwide markets. We realize where to focus on the group of spectators for upgraded yield for our customers such that it fits their business.  
+                                <br/>We at IosAndWeb dependably underline conveying the correct answers for the different customer's needs. Our greatest need as a <b>Digital marketing services</b> is to guarantee that we perform total examination and research about a business at whatever point we are going to serve them the best out of our administrations. As the pioneers in giving the best PPC Services, we ensure that our customers rise as a brand in the worldwide markets. We realize where to focus on the group of spectators for upgraded yield for our customers such that it fits their business. 
                             </div>
                         </Col>
                         <Col lg={5}>
@@ -123,19 +124,19 @@ function PayPerClick(){
                                     <Tab.Pane eventKey="first">
                                         <div className="reasons-tab-content">
                                             <h3 className="heading3">Google Adwords</h3>
-                                            <p className="paragraph">Regardless of whether you are anticipating great traffic on your site or on a chase for the correct marking administrations through Google adwords campaign services, IosandWeb is the conspicuous decision!</p>
+                                            <p className="paragraph">Regardless of whether you are anticipating great traffic on your site or on a chase for the correct marking administrations through <u>Google adwords campaign services</u>, IosandWeb is the conspicuous decision!</p>
                                         </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="second">
                                         <div className="reasons-tab-content">
                                             <h3 className="heading3">Bing Ads</h3>
-                                            <p className="paragraph">We are the market chiefs with regards to advancing your image on Bing. Our experts hold incredible mastery in making brand mindfulness through PPC ads company.</p>
+                                            <p className="paragraph">We are the market chiefs with regards to advancing your image on Bing. Our experts hold incredible mastery in making brand mindfulness through <u>PPC ads company.</u></p>
                                         </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="third">
                                         <div className="reasons-tab-content">
                                             <h3 className="heading3">YouTube Ads</h3>
-                                            <p className="paragraph">Advance your image on YouTube with our expert YouTube commercial administrations. We are one of the prestigious PPC ads company that offers predictable administrations.</p>
+                                            <p className="paragraph">Advance your image on YouTube with our expert YouTube commercial administrations. We are one of the prestigious <u>PPC ads company</u> that offers predictable administrations.</p>
                                         </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="fourth">
@@ -153,7 +154,7 @@ function PayPerClick(){
                                     <Tab.Pane eventKey="sixth">
                                         <div className="reasons-tab-content">
                                             <h3 className="heading3">Twitter Ads</h3>
-                                            <p className="paragraph">On the off chance that you are looking for the Best agency for PPC services that can deal with your Twitter for brand mindfulness, look none other than IosandWeb! We hold extraordinary skill in conveying Twitter Ads promoting administrations!</p>
+                                            <p className="paragraph">On the off chance that you are looking for the <u>Best agency for PPC services</u> that can deal with your Twitter for brand mindfulness, look none other than IosandWeb! We hold extraordinary skill in conveying Twitter Ads promoting administrations!</p>
                                         </div>
                                     </Tab.Pane>
                                     
@@ -175,30 +176,30 @@ function PayPerClick(){
                     <Row className="mt-5">
                         <Col md={6} lg={3} className="why-choose-col">
                             <div className="why-choose-list-item">
-                                <img src={security} alt="Devoted Professionals" className="why-choose-icon" />
+                                <img src={professionals} alt="Devoted Professionals" className="why-choose-icon" />
                                 <h3 className="heading4">Devoted Professionals</h3>
-                                <p className="paragraph">We have energetic showcasing PPC campaign manager specialists that are dependably there to serve you with the first rate PPC administrations that really have any kind of effect. You can generally expect better yield from our side at whatever point you are on a chase for the privilege PPC campaign specialist co-op.</p>
+                                <p className="paragraph">We have energetic showcasing PPC campaign manager specialists that are dependably there to serve you with the first rate PPC administrations that really have any kind of effect. You can generally expect better yield from our side at whatever point you are on a chase for the privilege <u><b>PPC campaign specialist</b></u> co-op.</p>
                             </div>
                         </Col>
                         <Col md={6} lg={3} className="why-choose-col">
                             <div className="why-choose-list-item change-bg">
-                                <img src={architecture} alt="Architecture" className="why-choose-icon" />
+                                <img src={knowledge} alt="Extraordinary Knowledge" className="why-choose-icon" />
                                 <h3 className="heading4">Extraordinary Knowledge and Strategies</h3>
                                 <p className="paragraph">We trust that we can convey the best outcomes by dissecting the customer’s genuine needs and afterward checking the market patterns. Our techniques to advance your business totally center around giving the best outcomes inside negligible time.</p>
                             </div>
                         </Col>
                         <Col md={6} lg={3} className="why-choose-col">
                             <div className="why-choose-list-item">
-                                <img src={costSaving} alt="Cost Saving" className="why-choose-icon" />
+                                <img src={upgradedResults} alt="Upgraded Results" className="why-choose-icon" />
                                 <h3 className="heading4">Upgraded Results</h3>
                                 <p className="paragraph">We guarantee you that you would definitely observe results when you depend on the best Google ads specialist co-op in the town. Contract PPC specialist co-op from IosandWeb to observe a change!</p>
                             </div>
                         </Col>
                         <Col md={6} lg={3} className="why-choose-col">
                             <div className="why-choose-list-item change-bg">
-                                <img src={support} alt="Great Support" className="why-choose-icon" />
+                                <img src={reporting} alt="Monitoring and Reporting" className="why-choose-icon" />
                                 <h3 className="heading4">Monitoring and Reporting</h3>
-                                <p className="paragraph">We'll keep a regular check by Google AdWords expert on your account and provide you timely reports about impressions, clicks, and conversions achieved on your account with ad campaigns. We'll also share PPC Services some other components like where the traffic is coming, locations, customer demographics, mobile devices, etc, to understand your customers and their requirements better.</p>
+                                <p className="paragraph">We'll keep a regular check by <u><b>Google AdWords expert</b></u> on your account and provide you timely reports about impressions, clicks, and conversions achieved on your account with ad campaigns. We'll also share PPC Services some other components like where the traffic is coming, locations, customer demographics, mobile devices, etc, to understand your customers and their requirements better.</p>
                             </div>
                         </Col>
                     </Row>
