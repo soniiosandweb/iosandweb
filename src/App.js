@@ -20,6 +20,7 @@ import MobileAppDevelopment from './pages/Services/MobileAppDevelopment';
 import WebDesigning from './pages/Services/WebDesigning';
 import DigitalMarketing from './pages/Services/DigitalMarketing';
 import PayPerClick from './pages/Services/PayPerClick';
+import MagentoDevelopment from './pages/Services/MagentoDevelopment';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
           <Route path='/web-designing-services' element={<WebDesigning />} />
           <Route path='/digital-marketing-services' element={<DigitalMarketing />} />
           <Route path='/ppc-services' element={<PayPerClick />} />
+          <Route path='/magento-development-services' element={<MagentoDevelopment />} />
         </Route>
       </Routes>
     </BrowserRouter>

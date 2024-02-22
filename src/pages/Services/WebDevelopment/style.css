@@ -2,7 +2,12 @@
 .web-development-banner{
     background: url('../../../images/services/web-development/web-development-banner.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center right;
+}
+@media (max-width: 767px) {
+    .web-development-banner{
+        background-position: center;
+    }
 }
 .services-listing {
     margin: 20px 0 0;
