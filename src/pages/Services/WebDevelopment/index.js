@@ -16,7 +16,8 @@ import costSaving from '../../../images/services/software-development/lower-cost
 import support from '../../../images/services/software-development/instant-support.png';
 
 // final reflection images
-import webDevelopment from '../../../images/services/software-development/app-development.png';
+import softwareDevelopment from '../../../images/services/software-development/software-development.png';
+import crmDevelopment from '../../../images/services/software-development/crm-development.png';
 import magento from '../../../images/services/software-development/magento.png';
 import shopify from '../../../images/services/software-development/shopify.png';
 
@@ -323,8 +324,17 @@ function WebDevelopment(){
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
                                         <a href="/software-development-services">
-                                            <img src={webDevelopment} className="services-bottom-front-image" alt="Software Development" />
+                                            <img src={softwareDevelopment} className="services-bottom-front-image" alt="Software Development" />
                                             <h4 className="heading4">Software Development Services</h4>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div className="services-bottom-wrap">
+                                    <div className="services-bottom-div">
+                                        <a href="/">
+                                            <img src={crmDevelopment} className="services-bottom-front-image" alt="CRM Development" />
+                                            <h4 className="heading4">CRM Development For Healthcare Industry</h4>
                                         </a>
                                     </div>
                                 </div>
