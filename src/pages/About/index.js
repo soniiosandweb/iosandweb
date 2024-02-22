@@ -106,7 +106,7 @@ function About(){
                         </Col>
                         <Col md={7}>
                             <div className="about-content">
-                                <p>With our focus, dedication, and communication, we became an award-winning organization. We believe to deliver the best services in developing, designing and improving your digital intellectual properties. We believe in organic communication and coordination, not just between our team but also with our clients in every manner. This helps us to understand clients’ requirements and their problems and allows us to give our best to the clients as well as their customers.</p>
+                                <p>With our focus, dedication, and communication, we became an award-winning organization. We believe to deliver the best services in developing, designing and improving your digital intellectual properties. We believe in organic communication and coordination, not just between our team but also with our clients in every manner. This helps us to understand clients' requirements and their problems and allows us to give our best to the clients as well as their customers.</p>
                             </div>
                         </Col>
                     </Row>

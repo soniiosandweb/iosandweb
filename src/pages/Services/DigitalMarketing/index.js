@@ -43,7 +43,8 @@ function DigitalMarketing(){
                             <div className="heading-wrapper full-width">
                                 <h1>Digital <span className="text-highlight">Marketing</span> Services</h1>
                                 <div className="heading5">Digital Marketing Services has created a new revolution in the business world today. The people's way of interacting with brands, looking for the products & services have changed a lot and the internet is influencing them at a huge level.
-                                <br /><br/>
+                                </div>
+                                <div className="heading5">
                                 <b>IosAndWeb Technologies</b> is the best SEO company With the latest technologies and development, the business market is changing and the behavior of customers towards products & services too. 
                                 </div>
                             </div>
@@ -185,7 +186,7 @@ function DigitalMarketing(){
                                         <div className="reasons-tab-content">
                                             <img src={linkBuilding} alt="Link Building" className="reasons-content-icon" />
                                             <h3 className="heading3">Link Building</h3>
-                                            <p className="paragraph">Google search engine ranking is by far the best element to get higher ROI. Our SEO expert will work on your website and make sure that your website doesn’t lack quality backlinks.</p>
+                                            <p className="paragraph">Google search engine ranking is by far the best element to get higher ROI. Our SEO expert will work on your website and make sure that your website doesn't lack quality backlinks.</p>
                                         </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="ninth">

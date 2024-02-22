@@ -185,7 +185,7 @@ function PayPerClick(){
                             <div className="why-choose-list-item change-bg">
                                 <img src={knowledge} alt="Extraordinary Knowledge" className="why-choose-icon" />
                                 <h3 className="heading4">Extraordinary Knowledge and Strategies</h3>
-                                <p className="paragraph">We trust that we can convey the best outcomes by dissecting the customer’s genuine needs and afterward checking the market patterns. Our techniques to advance your business totally center around giving the best outcomes inside negligible time.</p>
+                                <p className="paragraph">We trust that we can convey the best outcomes by dissecting the customer's genuine needs and afterward checking the market patterns. Our techniques to advance your business totally center around giving the best outcomes inside negligible time.</p>
                             </div>
                         </Col>
                         <Col md={6} lg={3} className="why-choose-col">
