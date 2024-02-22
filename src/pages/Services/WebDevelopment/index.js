@@ -7,11 +7,7 @@ import ContactForm from "../../../components/ContactForm";
 import GetStarted from "../../../components/GetStarted";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDesktopAlt } from "@fortawesome/free-solid-svg-icons";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
-import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
-import { faGlobeAsia } from "@fortawesome/free-solid-svg-icons";
-import { faMobileScreen } from "@fortawesome/free-solid-svg-icons";
+import { faDesktopAlt, faCode, faShoppingBag, faGlobeAsia, faMobileScreen } from "@fortawesome/free-solid-svg-icons";
 
 // Services includes images
 import security from '../../../images/services/software-development/more-secure.png';
@@ -335,7 +331,7 @@ function WebDevelopment(){
 
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
-                                        <a href="/">    
+                                        <a href="/magento-development-services">    
                                             <img src={magento} className="services-bottom-front-image" alt="Magento Development" />
                                             <h4 className="heading4">Magento Development Services</h4>
                                         </a>

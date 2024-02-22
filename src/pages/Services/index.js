@@ -85,7 +85,7 @@ function Services(){
                             </a>
                         </Col>
                         <Col md={6} lg={4} className="service-col">
-                            <a href="/" className="service-link bg-orange">
+                            <a href="/magento-development-services" className="service-link bg-orange">
                                 <div className="what-do-service-item">
                                     <img src={magentoDevelop} className="service-icon" alt="Magento Development" />
                                     <h3 className="heading2">Magento Development</h3>

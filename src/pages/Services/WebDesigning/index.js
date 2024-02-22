@@ -205,7 +205,7 @@ function WebDesigning(){
                             <div className="specification-block">
                                 <FontAwesomeIcon icon={faImage}></FontAwesomeIcon>
                                 <h4 className="heading4">Logo Design</h4>
-                                <p className="paragraph">Build your business brand with IosAndWeb Technologies’ logo designing services.</p>
+                                <p className="paragraph">Build your business brand with IosAndWeb Technologies' logo designing services.</p>
                             </div>
                         </Col>
                         <Col md={6} lg={4}>

@@ -247,7 +247,7 @@ function SoftwareDevelopment(){
 
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
-                                        <a href="/">    
+                                        <a href="/magento-development-services">    
                                             <img src={magento} className="services-bottom-front-image" alt="Magento Development" />
                                             <h4 className="heading4">Magento Development Services</h4>
                                         </a>
