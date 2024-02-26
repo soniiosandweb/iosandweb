@@ -1,0 +1,6 @@
+/* shopify development banner */
+.shopify-development-banner{
+    background: url('../../../images/services/shopify-development/shopify-development-banner.jpg');
+    background-size: cover;
+    background-position: center;
+}

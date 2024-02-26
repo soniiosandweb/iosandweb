@@ -350,7 +350,7 @@ function WebDevelopment(){
 
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
-                                        <a href="/">    
+                                        <a href="/shopify-development-services">    
                                             <img src={shopify} className="services-bottom-front-image" alt="Shopify Development" />
                                             <h4 className="heading4">Shopify Development</h4>
                                         </a>
