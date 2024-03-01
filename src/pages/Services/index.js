@@ -146,7 +146,7 @@ function Services(){
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/services" className="service-design-link">
+                                    <a href="/graphic-designing-services" className="service-design-link">
                                         <div className="service-design-left">
                                             <FontAwesomeIcon icon={faPaintBrush} />
                                             <span>Graphic Design</span>

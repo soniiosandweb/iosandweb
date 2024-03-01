@@ -23,6 +23,7 @@ import PayPerClick from './pages/Services/PayPerClick';
 import MagentoDevelopment from './pages/Services/MagentoDevelopment';
 import ShopifyDevelopment from './pages/Services/ShopifyDevelopment';
 import CRMDevelopmentHealthCare from './pages/Services/CRMDevelopmentHealthCare';
+import GraphicDesign from './pages/Services/GraphicDesign';
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
           <Route path='/magento-development-services' element={<MagentoDevelopment />} />
           <Route path='/shopify-development-services' element={<ShopifyDevelopment />} />
           <Route path='/crm-development-for-healthcare-industry' element={<CRMDevelopmentHealthCare />} />
+          <Route path='/graphic-designing-services' element={<GraphicDesign />} />
         </Route>
       </Routes>
     </BrowserRouter>

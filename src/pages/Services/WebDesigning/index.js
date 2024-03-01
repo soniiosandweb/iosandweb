@@ -271,7 +271,7 @@ function WebDesigning(){
 
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
-                                        <a href="/">    
+                                        <a href="/graphic-designing-services">    
                                             <img src={graphicDesign} className="services-bottom-front-image" alt="Graphic Design" />
                                             <h4 className="heading4">Graphic Design</h4>
                                         </a>
