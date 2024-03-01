@@ -255,7 +255,7 @@ function ShopifyDevelopment(){
 
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
-                                        <a href="/">
+                                        <a href="/crm-development-for-healthcare-industry">
                                             <img src={crmDevelopment} className="services-bottom-front-image" alt="CRM Development" />
                                             <h4 className="heading4">CRM Development For Healthcare Industry</h4>
                                         </a>
