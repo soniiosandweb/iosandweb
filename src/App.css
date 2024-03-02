@@ -158,6 +158,9 @@ h1, h2{
   position: relative;
   z-index: 1;
 }
+.background-section{
+  background-color: #f1f2fd;
+}
 @media (max-width: 1399px) {
   .heading2{
     font-size: 28px;

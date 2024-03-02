@@ -24,6 +24,7 @@ import MagentoDevelopment from './pages/Services/MagentoDevelopment';
 import ShopifyDevelopment from './pages/Services/ShopifyDevelopment';
 import CRMDevelopmentHealthCare from './pages/Services/CRMDevelopmentHealthCare';
 import GraphicDesign from './pages/Services/GraphicDesign';
+import PdfToHtml from './pages/Services/PdfToHtml';
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
           <Route path='/shopify-development-services' element={<ShopifyDevelopment />} />
           <Route path='/crm-development-for-healthcare-industry' element={<CRMDevelopmentHealthCare />} />
           <Route path='/graphic-designing-services' element={<GraphicDesign />} />
+          <Route path='/pdf-to-html-designing-services' element={<PdfToHtml />} />
         </Route>
       </Routes>
     </BrowserRouter>

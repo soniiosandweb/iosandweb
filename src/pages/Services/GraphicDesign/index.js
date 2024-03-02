@@ -22,7 +22,7 @@ import { faCircleDot } from "@fortawesome/free-solid-svg-icons";
 
 // final reflection images
 import pdfHTML from '../../../images/services/web-designing/pdf-html.png';
-import graphicDesign from '../../../images/services/web-designing/graphic-design.png';
+import webDesigning from '../../../images/services/web-designing/web-designing.png';
 
 function GraphicDesign(){
     return(
@@ -46,7 +46,7 @@ function GraphicDesign(){
                         </Col>
                     </Row>
                 </Container>
-                <div className="banner-overlay bg-60"></div>
+                <div className="banner-overlay bg-40"></div>
             </div>
 
             {/* Services numbers */}
@@ -220,7 +220,7 @@ function GraphicDesign(){
                             <div className="services-bottom-flex">
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
-                                        <a href="/">
+                                        <a href="/pdf-to-html-designing-services">
                                             <img src={pdfHTML} className="services-bottom-front-image" alt="PDF to HTML" />
                                             <h4 className="heading4">PDF to HTML Designing Services</h4>
                                         </a>
@@ -230,7 +230,7 @@ function GraphicDesign(){
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
                                         <a href="/web-designing-services">    
-                                            <img src={graphicDesign} className="services-bottom-front-image" alt="Web Designing" />
+                                            <img src={webDesigning} className="services-bottom-front-image" alt="Web Designing" />
                                             <h4 className="heading4">Web Designing</h4>
                                         </a>
                                     </div>
