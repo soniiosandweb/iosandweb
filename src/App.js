@@ -26,6 +26,7 @@ import CRMDevelopmentHealthCare from './pages/Services/CRMDevelopmentHealthCare'
 import GraphicDesign from './pages/Services/GraphicDesign';
 import PdfToHtml from './pages/Services/PdfToHtml';
 import SEOService from './pages/Services/SEOService';
+import SocialMediaMarketing from './pages/Services/SocialMediaMarketing';
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
           <Route path='/graphic-designing-services' element={<GraphicDesign />} />
           <Route path='/pdf-to-html-designing-services' element={<PdfToHtml />} />
           <Route path='/seo-services' element={<SEOService />} />
+          <Route path='/social-media-marketing-services' element={<SocialMediaMarketing />} />
         </Route>
       </Routes>
     </BrowserRouter>
