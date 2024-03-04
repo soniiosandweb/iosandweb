@@ -21,6 +21,8 @@ import linkBuilding from '../../../images/services/digital-marketing/link-buildi
 import conversionRate from '../../../images/services/digital-marketing/conversion-rate-optimizer.png';
 
 // Final Reflection images
+import SEOIcon from '../../../images/services/digital-marketing/seo-icon.png';
+import socialMediaMarketing from '../../../images/services/digital-marketing/social-media-marketing.png';
 import pageSpeed from '../../../images/services/digital-marketing/page-speed.png';
 import proofreading from '../../../images/services/digital-marketing/proofreading.png';
 import b2b from '../../../images/services/digital-marketing/b2b.png';
@@ -222,6 +224,24 @@ function DigitalMarketing(){
                             <div className="heading5">Our way of working might be different but our aim is to bring profit for your business for the long-term. Initially, we may use techniques like PPC to get faster results. But slowly we will change and formulate different strategies in which we will use inbound marketing techniques to bring organic success. We aim to give you the best results on each & every penny that you've invested. Meet your business objectives with IosAndWeb Technologies and climb the ladder of success. Advertisement company near me.</div>
 
                             <div className="services-bottom-flex">
+                                <div className="services-bottom-wrap">
+                                    <div className="services-bottom-div">
+                                        <a href="/seo-services">
+                                            <img src={SEOIcon} className="services-bottom-front-image" alt="SEO Services" />
+                                            <h4 className="heading4">SEO Services</h4>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div className="services-bottom-wrap">
+                                    <div className="services-bottom-div">
+                                        <a href="/">
+                                            <img src={socialMediaMarketing} className="services-bottom-front-image" alt="Social Media Marketing" />
+                                            <h4 className="heading4">Social Media Marketing</h4>
+                                        </a>
+                                    </div>
+                                </div>
+
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
                                         <a href="/">
