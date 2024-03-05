@@ -47,7 +47,8 @@ function SEOService(){
                         <Col lg={8} xl={6}>
                             <div className="heading-wrapper full-width">
                                 <h1><span className="text-highlight">SEO</span> Services</h1>
-                                <div className="heading5"><b>IosAndWeb Technologies</b>  provides one of the top of the line Organic <b>SEO Services in London</b> and many more areas of United Kingdom that has been giving traffic through natural sources to its significant customers for more than 10+ years. Contact our SEO experts for straightforward, quantifiable and top tier website streamlining administrations that help you turning into the pioneer of your industry. 
+                                <div className="heading5"><b>IosAndWeb Technologies</b>  provides one of the top of the line Organic <b>SEO Services in London</b> and many more areas of United Kingdom that has been giving traffic through natural sources to its significant customers for more than 10+ years.</div>
+                                <div className="heading5">Contact our SEO experts for straightforward, quantifiable and top tier website streamlining administrations that help you turning into the pioneer of your industry. 
                                 </div>
                             </div>
                         </Col>

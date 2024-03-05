@@ -28,14 +28,14 @@ function SocialMediaMarketing(){
                     <Row>
                         <Col lg={8} xl={6}>
                             <div className="heading-wrapper full-width">
-                                <h1><span className="text-highlight">SMM-</span> Social Media Marketing Services</h1>
+                                <h1>SMM-<span className="text-highlight"> Social Media Marketing</span> Services</h1>
                                 <div className="heading5">Build your brand with the most reliable method of marketing i.e. social media marketing.</div>
                                 <div className="heading5"><b>IosAndWeb Technologies</b> is here to provide you social media marketing services through which you can achieve your marketing objectives and goals.</div>
                             </div>
                         </Col>
                     </Row>
                 </Container>
-                <div className="banner-overlay bg-40"></div>
+                <div className="banner-overlay"></div>
             </div>
 
             {/* Services numbers */}
