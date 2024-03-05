@@ -187,8 +187,8 @@ function CRMDevelopmentHealthCare(){
                 </Container>
             </div>
 
-             {/* Designing services section */}
-             <div className="designing-services-section section-padding">
+            {/* Designing services section */}
+            <div className="designing-services-section section-padding">
                 <Container>
                     <Row>
                         <Col>

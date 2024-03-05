@@ -6,6 +6,15 @@ import NumbersCards from "../../../components/NumbersCards";
 import ContactForm from "../../../components/ContactForm";
 import GetStarted from "../../../components/GetStarted";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTasks, faHandshake, faSignal } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faInstagram, faTwitter, faPinterest, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
+// Services includes images
+import nothingHidden from '../../../images/services/social-media-marketing/nothing-hidden.png';
+import lowRiskContracts from '../../../images/services/social-media-marketing/low-risk-contracts.png';
+import moreMoney from '../../../images/services/social-media-marketing/more-money.png';
+
 // Final Reflection images
 import SEOIcon from '../../../images/services/digital-marketing/seo-icon.png';
 import pageSpeed from '../../../images/services/digital-marketing/page-speed.png';
@@ -70,6 +79,40 @@ function SocialMediaMarketing(){
                                 Fill the form and get quote for your project.
                             </div>
                             <ContactForm />
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* Designing services section */}
+            <div className="designing-services-section background-section section-padding">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2 text-center">Get our Social Media Marketing Services</h2>
+                        </Col>
+                    </Row>
+                    <Row className="mt-5">
+                        <Col md={6} lg={4}>
+                            <div className="specification-block">
+                                <FontAwesomeIcon icon={faTasks}></FontAwesomeIcon>
+                                <h4 className="heading4">Build brand awareness</h4>
+                                <p className="paragraph">Develop your brand's awareness among people on social media which will increase your organic followers. Building and growing your business or brand on social media will let you increase the word of mouth and referrals. Experts at Iosandweb will ensure that your followers should match your brand's interests, demographics, and behaviour with Lead generation campaign services. Among many Social media platform Facebook and Instagram campaign specialist advise make your business globally promote.</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4}>
+                            <div className="specification-block">
+                                <FontAwesomeIcon icon={faHandshake}></FontAwesomeIcon>
+                                <h4 className="heading4">Engage more people</h4>
+                                <p className="paragraph">Develop a strong relationship with your followers through the engagement, so they love to purchase from your brand. IosAndWeb Technologies is best agency for lead generation here to assist you to get more engagement from people through likes and comments on your social media profiles. More engagement signifies a strong relationship with the audience.</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4}>
+                            <div className="specification-block">
+                                <FontAwesomeIcon icon={faSignal}></FontAwesomeIcon>
+                                <h4 className="heading4">Increasing website traffic</h4>
+                                <p className="paragraph">Increase your sales and leads by getting more traffic to your website. Social media expert at IosAndweb will develop social media advertising campaigns for your brand for lead generation to get get more traffic and sales. Retargeting is also a great option with you can show your ads to the recent viewers of your site. Digital marketing services near me.</p>
+                            </div>
                         </Col>
                     </Row>
                 </Container>
@@ -226,6 +269,88 @@ function SocialMediaMarketing(){
                 </Container>
             </div>
 
+            {/* Specification section */}
+            <div className="sepcification-section text-white section-padding">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2 text-center">Our Social Media Marketing Services</h2>
+                        </Col>
+                    </Row>
+                    <Row className="mt-5">
+                        <Col md={6} lg={4}>
+                            <div className="specification-block">
+                                <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
+                                <h4 className="heading4">Facebook Marketing Services</h4>
+                                <p className="paragraph">Facebook is the leading social media platform through which you can generate more traffic to your website and grow your business with help of our Facebook ads specialist. More than 2 billion people are using Facebook monthly and you can reach your desired audience.</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4}>
+                            <div className="specification-block">
+                                <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+                                <h4 className="heading4">Instagram Marketing Services</h4>
+                                <p className="paragraph">Instagram is the most trending social media network in youngsters and 60% of people search over any new things over Instagram. Start Discovering your audience today.</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4}>
+                            <div className="specification-block">
+                                <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+                                <h4 className="heading4">Twitter Marketing Services</h4>
+                                <p className="paragraph">Twitter will give your brand recognition because 330 million people are using it on a daily basis. Develop customer relationships and trust with the most trusted platform.</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4}>
+                            <div className="specification-block">
+                                <FontAwesomeIcon icon={faPinterest}></FontAwesomeIcon>
+                                <h4 className="heading4">Pinterest Marketing Services</h4>
+                                <p className="paragraph">Use Pinterest marketing services to sell your brand's products and you can also reach 400 million users via Pinterest. If you are a eCommerce business then you should know latest updates on Pinterest marketing for eCommerce business.</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4}>
+                            <div className="specification-block">
+                                <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+                                <h4 className="heading4">LinkedIn Marketing Services</h4>
+                                <p className="paragraph">LinkedIn is the most popular social media platform among 500 million professionals and decision-makers. You can target the educated audience of over 25 years old under the instruction of Linkedin campaign specialist.</p>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* Services includes */}
+            <div className="section-why-choose services-includes-section section-padding">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2 text-center">Why IosAndWeb Best For Social Media Marketing Services</h2>
+                        </Col>
+                    </Row>
+                    <Row className="mt-5">
+                        <Col md={6} lg={4} className="why-choose-col">
+                            <div className="why-choose-list-item">
+                                <img src={nothingHidden} alt="Nothing Hidden" className="why-choose-icon" />
+                                <h3 className="heading4">Nothing Hidden</h3>
+                                <p className="paragraph">IosAndWeb Technologies Online marketing company will provide you with transparency in the project. You will see the developed strategy and after your approval, the work will be started. You will be fond of our working manner and you just need to put your little efforts by your side.</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4} className="why-choose-col">
+                            <div className="why-choose-list-item change-bg">
+                                <img src={lowRiskContracts} alt="Low-risk contracts" className="why-choose-icon" />
+                                <h3 className="heading4">Low-risk contracts</h3>
+                                <p className="paragraph">Invest your time and money in social media marketing services of Iosandweb and let us provide you great work and win your trust. </p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4} className="why-choose-col">
+                            <div className="why-choose-list-item">
+                                <img src={moreMoney} alt="Cost Saving" className="why-choose-icon" />
+                                <h3 className="heading4">Get more for your money</h3>
+                                <p className="paragraph">Do not spend your whole budget on one Internet marketing company, it will be like buying a car without gas. We will charge you adequate cost for our services and spend a little amount of your budget on advertising.</p>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
             {/* get started section */}
             <GetStarted 
                 title="Let's Start Building Web Solutions To Help Achieve Your Business Goals"
@@ -239,6 +364,8 @@ function SocialMediaMarketing(){
                     <Row>
                         <Col>
                             <h2 className="heading2">Final Reflection</h2>
+                            <div className="heading5">Being a best Digital marketing company near me award-winning company, IosAndWeb Technologies provides you full transparency about the work we do on your project and you get daily updates about the progress.</div>
+
                             <div className="services-bottom-flex">
 
                                 <div className="services-bottom-wrap">

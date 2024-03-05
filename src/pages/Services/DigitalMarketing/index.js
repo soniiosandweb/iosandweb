@@ -235,7 +235,7 @@ function DigitalMarketing(){
 
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
-                                        <a href="/">
+                                        <a href="/social-media-marketing-services">
                                             <img src={socialMediaMarketing} className="services-bottom-front-image" alt="Social Media Marketing" />
                                             <h4 className="heading4">Social Media Marketing</h4>
                                         </a>
