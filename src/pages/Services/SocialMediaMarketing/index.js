@@ -97,21 +97,21 @@ function SocialMediaMarketing(){
                             <div className="specification-block">
                                 <FontAwesomeIcon icon={faTasks}></FontAwesomeIcon>
                                 <h4 className="heading4">Build brand awareness</h4>
-                                <p className="paragraph">Develop your brand's awareness among people on social media which will increase your organic followers. Building and growing your business or brand on social media will let you increase the word of mouth and referrals. Experts at Iosandweb will ensure that your followers should match your brand's interests, demographics, and behaviour with Lead generation campaign services. Among many Social media platform Facebook and Instagram campaign specialist advise make your business globally promote.</p>
+                                <p className="paragraph">Develop your brand's awareness among people on social media which will increase your organic followers. Building and growing your business or brand on social media will let you increase the word of mouth and referrals. Experts at Iosandweb will ensure that your followers should match your brand's interests, demographics, and behaviour with <b>Lead generation campaign services</b>. Among many Social media platform <u>Facebook and Instagram campaign specialist</u> advise make your business globally promote.</p>
                             </div>
                         </Col>
                         <Col md={6} lg={4}>
                             <div className="specification-block">
                                 <FontAwesomeIcon icon={faHandshake}></FontAwesomeIcon>
                                 <h4 className="heading4">Engage more people</h4>
-                                <p className="paragraph">Develop a strong relationship with your followers through the engagement, so they love to purchase from your brand. IosAndWeb Technologies is best agency for lead generation here to assist you to get more engagement from people through likes and comments on your social media profiles. More engagement signifies a strong relationship with the audience.</p>
+                                <p className="paragraph">Develop a strong relationship with your followers through the engagement, so they love to purchase from your brand. IosAndWeb Technologies is <u>best agency for lead generation</u> here to assist you to get more engagement from people through likes and comments on your social media profiles. More engagement signifies a strong relationship with the audience.</p>
                             </div>
                         </Col>
                         <Col md={6} lg={4}>
                             <div className="specification-block">
                                 <FontAwesomeIcon icon={faSignal}></FontAwesomeIcon>
                                 <h4 className="heading4">Increasing website traffic</h4>
-                                <p className="paragraph">Increase your sales and leads by getting more traffic to your website. Social media expert at IosAndweb will develop social media advertising campaigns for your brand for lead generation to get get more traffic and sales. Retargeting is also a great option with you can show your ads to the recent viewers of your site. Digital marketing services near me.</p>
+                                <p className="paragraph">Increase your sales and leads by getting more traffic to your website. Social media expert at IosAndweb will develop social media advertising campaigns for your brand for <b>lead generation</b> to get get more traffic and sales. Retargeting is also a great option with you can show your ads to the recent viewers of your site. <b><u>Digital marketing services near me</u></b>.</p>
                             </div>
                         </Col>
                     </Row>
@@ -282,7 +282,7 @@ function SocialMediaMarketing(){
                             <div className="specification-block">
                                 <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
                                 <h4 className="heading4">Facebook Marketing Services</h4>
-                                <p className="paragraph">Facebook is the leading social media platform through which you can generate more traffic to your website and grow your business with help of our Facebook ads specialist. More than 2 billion people are using Facebook monthly and you can reach your desired audience.</p>
+                                <p className="paragraph">Facebook is the leading social media platform through which you can generate more traffic to your website and grow your business with help of our <b><u>Facebook ads specialist</u></b>. More than 2 billion people are using Facebook monthly and you can reach your desired audience.</p>
                             </div>
                         </Col>
                         <Col md={6} lg={4}>
@@ -303,14 +303,14 @@ function SocialMediaMarketing(){
                             <div className="specification-block">
                                 <FontAwesomeIcon icon={faPinterest}></FontAwesomeIcon>
                                 <h4 className="heading4">Pinterest Marketing Services</h4>
-                                <p className="paragraph">Use Pinterest marketing services to sell your brand's products and you can also reach 400 million users via Pinterest. If you are a eCommerce business then you should know latest updates on Pinterest marketing for eCommerce business.</p>
+                                <p className="paragraph">Use Pinterest marketing services to sell your brand's products and you can also reach 400 million users via Pinterest. If you are a eCommerce business then you should know latest updates on <b><u>Pinterest marketing for eCommerce business</u></b>.</p>
                             </div>
                         </Col>
                         <Col md={6} lg={4}>
                             <div className="specification-block">
                                 <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
                                 <h4 className="heading4">LinkedIn Marketing Services</h4>
-                                <p className="paragraph">LinkedIn is the most popular social media platform among 500 million professionals and decision-makers. You can target the educated audience of over 25 years old under the instruction of Linkedin campaign specialist.</p>
+                                <p className="paragraph">LinkedIn is the most popular social media platform among 500 million professionals and decision-makers. You can target the educated audience of over 25 years old under the instruction of <b><u>Linkedin campaign specialist</u></b>.</p>
                             </div>
                         </Col>
                     </Row>
@@ -330,7 +330,7 @@ function SocialMediaMarketing(){
                             <div className="why-choose-list-item">
                                 <img src={nothingHidden} alt="Nothing Hidden" className="why-choose-icon" />
                                 <h3 className="heading4">Nothing Hidden</h3>
-                                <p className="paragraph">IosAndWeb Technologies Online marketing company will provide you with transparency in the project. You will see the developed strategy and after your approval, the work will be started. You will be fond of our working manner and you just need to put your little efforts by your side.</p>
+                                <p className="paragraph">IosAndWeb Technologies <b>Online marketing company</b> will provide you with transparency in the project. You will see the developed strategy and after your approval, the work will be started. You will be fond of our working manner and you just need to put your little efforts by your side.</p>
                             </div>
                         </Col>
                         <Col md={6} lg={4} className="why-choose-col">
@@ -364,7 +364,7 @@ function SocialMediaMarketing(){
                     <Row>
                         <Col>
                             <h2 className="heading2">Final Reflection</h2>
-                            <div className="heading5">Being a best Digital marketing company near me award-winning company, IosAndWeb Technologies provides you full transparency about the work we do on your project and you get daily updates about the progress.</div>
+                            <div className="heading5">Being a best <b>Digital marketing company near me</b> award-winning company, IosAndWeb Technologies provides you full transparency about the work we do on your project and you get daily updates about the progress.</div>
 
                             <div className="services-bottom-flex">
 
@@ -379,7 +379,7 @@ function SocialMediaMarketing(){
 
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
-                                        <a href="/">
+                                        <a href="/seo-page-speed-optimization-services">
                                             <img src={pageSpeed} className="services-bottom-front-image" alt="SEO Page Speed" />
                                             <h4 className="heading4">SEO Page Speed Optimization</h4>
                                         </a>

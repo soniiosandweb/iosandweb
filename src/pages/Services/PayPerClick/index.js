@@ -222,7 +222,7 @@ function PayPerClick(){
                             <div className="services-bottom-flex">
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
-                                        <a href="/">
+                                        <a href="/seo-page-speed-optimization-services">
                                             <img src={pageSpeed} className="services-bottom-front-image" alt="SEO Page Speed" />
                                             <h4 className="heading4">SEO Page Speed Optimization</h4>
                                         </a>
