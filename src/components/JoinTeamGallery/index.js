@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 // Join Team images
-import teamImage1 from '../../images/about/team-galler1.jpg';
-import teamImage2 from '../../images/about/team-galler2.jpg';
-import teamImage3 from '../../images/about/team-galler3.jpg';
+import teamImage1 from '../../images/about/team-galler1.webp';
+import teamImage2 from '../../images/about/team-galler2.webp';
+import teamImage3 from '../../images/about/team-galler3.webp';
 
 function JoinTeamGallery(){
     return(
