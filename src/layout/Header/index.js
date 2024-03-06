@@ -32,11 +32,11 @@ import howWorkIcon from '../../images/how-we-work.png';
 import OwlCarousel from "react-owl-carousel";
 
 // Award images
-import goodFirmLogo from '../../images/awards/good-firms-logo.png';
-import appFutura from '../../images/awards/appfutura.png';
-import itFirms from '../../images/awards/itfirm.png';
-import topDevelopment from '../../images/awards/top-development.png';
-import upWork from '../../images/awards/upwork.png';
+import goodFirmLogo from '../../images/awards/good-firms-logo.webp';
+import appFutura from '../../images/awards/appfutura.webp';
+import itFirms from '../../images/awards/itfirm.webp';
+import topDevelopment from '../../images/awards/top-development.webp';
+import upWork from '../../images/awards/upwork.webp';
 
 
 function Header() {

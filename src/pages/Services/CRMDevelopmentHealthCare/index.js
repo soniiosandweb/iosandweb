@@ -11,9 +11,9 @@ import { faCogs, faHandshake, faNewspaper, faRefresh } from "@fortawesome/free-s
 import { faTasks, faHospitalUser, faHandshakeAngle, faUser, faHospitalWide, faUserDoctor, faBriefcaseClock } from "@fortawesome/free-solid-svg-icons";
 
 // Relationship management section images
-import streamlineProcess from '../../../images/services/crm-development-healthcare/streamlining-process.png';
-import betterCareDelivery from '../../../images/services/crm-development-healthcare/better-care-delivery.png';
-import betterCarePatients from '../../../images/services/crm-development-healthcare/better-care-patients.png';
+import streamlineProcess from '../../../images/services/crm-development-healthcare/streamlining-process.webp';
+import betterCareDelivery from '../../../images/services/crm-development-healthcare/better-care-delivery.webp';
+import betterCarePatients from '../../../images/services/crm-development-healthcare/better-care-patients.webp';
 
 // final reflection images
 import softwareDevelopment from '../../../images/services/software-development/software-development.png';

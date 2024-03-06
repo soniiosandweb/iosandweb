@@ -9,8 +9,9 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import GetStarted from "../../components/GetStarted";
 
+import serviceImage from '../../images/services-image.webp';
+
 // what we do images
-import serviceImage from '../../images/services-image.png';
 import webDevelop from '../../images/services/settings.png';
 import mobileDevelop from '../../images/services/development.png';
 import magentoDevelop from '../../images/services/magento_development.png';

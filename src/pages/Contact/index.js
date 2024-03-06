@@ -11,7 +11,7 @@ import ContactForm from "../../components/ContactForm";
 import locIndia from '../../images/contact/cont-loc-india.svg';
 import locUK from '../../images/contact/cont-loc-uk.svg';
 import locUS from '../../images/contact/cont-loc-usa.svg';
-import contactImage from '../../images/contact/contact-footer.avif';
+import contactImage from '../../images/contact/contact-footer.webp';
 
 function Contact(){
 

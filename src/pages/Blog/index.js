@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import axios from 'axios';
 import SEO from "../../components/SEO";
 
-import blogImage from '../../images/blog-banner.png';
+import blogImage from '../../images/blog-banner.webp';
 
 function Blog(){
 

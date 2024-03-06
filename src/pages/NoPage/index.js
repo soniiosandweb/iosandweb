@@ -3,7 +3,7 @@ import './style.css';
 import { Container, Row, Col } from "react-bootstrap";
 import SEO from "../../components/SEO";
 import TypeWritter from "../../components/TypeWritter";
-import notFound from '../../images/404-error.png';
+import notFound from '../../images/404-error.webp';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 

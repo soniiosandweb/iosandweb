@@ -9,7 +9,7 @@ import axios from 'axios';
 import SEO from "../../components/SEO";
 import TypeWritter from "../../components/TypeWritter";
 
-import portfolioImage from '../../images/Project-Portfolio.png';
+import portfolioImage from '../../images/Project-Portfolio.webp';
 
 function Portfolio(){
 

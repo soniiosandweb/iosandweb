@@ -8,10 +8,10 @@ import SEO from "../../components/SEO";
 import GetStarted from "../../components/GetStarted";
 import JoinOurTeam from "../../components/JoinOurTeam";
 
-import teamImg from '../../images/IAW-Team.png';
+import teamImg from '../../images/IAW-Team.webp';
 import userMan from '../../images/user-man.png';
 import userWoman from '../../images/user-woman.png';
-import ourTeam from '../../images/our-team.png';
+import ourTeam from '../../images/our-team.webp';
 
 function Team(){
     return(
