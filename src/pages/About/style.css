@@ -240,6 +240,7 @@
 .front {
     z-index: 2;
     transform: rotateY(0deg);
+    background-color: #f1f2fd;
 }
 .back {
     transform: rotateY(180deg);

@@ -19,7 +19,7 @@ import workLatest from '../../images/about/Work-with-Latest-Technology.jpg';
 
 // achievements images
 import clutch from '../../images/about/clutch-logo.png';
-import appFutura from '../../images/about/appfutura-logo.jpg';
+import appFutura from '../../images/about/app-futura-logo.png';
 import itFirms from '../../images/about/it-firms-logo.png';
 import goodFirms from '../../images/about/goodfirms-logo.png';
 import topDevelopers from '../../images/about/top-developers-logo.png';
