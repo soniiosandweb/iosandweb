@@ -7,7 +7,7 @@ import { Accordion } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-import homeBanner from '../../images/home/home-banner.png';
+import homeBanner from '../../images/home/home-banner.webp';
 import homeVideo from '../../images/home/home-video.mp4';
 
 // Award
