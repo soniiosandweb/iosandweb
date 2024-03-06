@@ -286,7 +286,7 @@ function Home() {
                     </Row>
                 </Container>
 
-                <OwlCarousel className="owl-theme client_says" loop autoplay={true} autoplayTimeout={3000} autoplayHoverPause={true} margin={80} nav={true} dots={false} items={1} responsive={
+                <OwlCarousel className="owl-theme client_says" loop autoplay={false} autoplayTimeout={3000} autoplayHoverPause={true} margin={80} nav={true} dots={false} items={1} responsive={
                     {
                         '0': {
                             items: 1,
