@@ -17,7 +17,20 @@ b, strong{
 code {
   font-family: 'ProductSans-Medium', sans-serif;
 }
-
+.btn:focus-visible {
+  color: #fff;
+  background-color: #1050bc;
+  border-color: #1050bc;
+  outline: 0;
+  box-shadow: none;
+}
+.nav-link:focus-visible {
+  outline: 0;
+  box-shadow: none;
+}
+:focus-visible {
+  outline: 0;
+}
 h1, h2{
   font-family: 'ProductSans-Medium';
 }
