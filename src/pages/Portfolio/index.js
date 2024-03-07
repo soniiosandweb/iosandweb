@@ -34,6 +34,14 @@ function Portfolio(){
         })
     }, [page]);
 
+    const pageChangeHandle =(event) =>{
+        setPage(event.selected)
+        // window.scrollTo({
+        //     top: document.querySelector("#portfolio_section").offsetTop,
+        //     behavior: "smooth",
+        // });
+    }
+
     return(
         <>
             <SEO
@@ -60,7 +68,7 @@ function Portfolio(){
 
             {/* portfolio list section */}
 
-            <div className="portfolio-page section-padding">
+            <div className="portfolio-page section-padding" id="portfolio_section">
                 <Container>
                     <Row className="portfolio-list">
                         {filterData && filterData.map((item, index) => 
@@ -82,7 +90,7 @@ function Portfolio(){
                             containerClassName={"pagination"}
                             pageClassName={"page-item"}
                             activeClassName={"active"}
-                            onPageChange={(event) => setPage(event.selected)}
+                            onPageChange={pageChangeHandle}
                             pageCount={Math.ceil(data.length / n)}
                             breakLabel="..."
                             previousLabel={

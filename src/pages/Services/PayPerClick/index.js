@@ -240,7 +240,7 @@ function PayPerClick(){
 
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
-                                        <a href="/">    
+                                        <a href="/b2b-lead-generation-campaign-services">    
                                             <img src={b2b} className="services-bottom-front-image" alt="B2B" />
                                             <h4 className="heading4">B2B Lead Generation Campaign Services</h4>
                                         </a>
