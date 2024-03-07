@@ -96,10 +96,10 @@ function B2BLeadGenerationCampaign(){
                     </Row>
 
                     <Row className="align-items-center row-reverse-mobile mt-5">
-                        <Col md={6}>
+                        <Col md={6} lg={5}>
                             <img src={contactWithUsers} alt="Contact with users" className="responsive-img" />
                         </Col>
-                        <Col md={6}>
+                        <Col md={6} lg={7}>
                             <h2 className="heading3">Have many points of contact with users</h2>
                             <p className="paragraph">First and foremost, The key to successful business Lead generation is having lots of contact points with your leads. Let's create contact points with leads through various measures such as lead generation websites and advertisement distribution. You can't create a lead without a contact.</p>
                             <p className="paragraph">If it is a website, first of all, SEO measures are taken so that the target users can visit the site. Present the information that users want on your site, and let them deepen their understanding of your product or service by extending their stay. In addition, there is a method of communicating with visitors using a chat tool as a mechanism to have contact points and a method of having them enter basic information so that they can continue to approach them and view white papers.</p>
@@ -107,24 +107,24 @@ function B2BLeadGenerationCampaign(){
                         </Col>
                     </Row>
 
-                    <Row className="align-items-center mt-3">
-                        <Col md={6}>
+                    <Row className="align-items-center mt-5">
+                        <Col md={6} lg={7}>
                             <h2 className="heading3">Don't forget to verify the effectiveness</h2>
                             <p className="paragraph">Verify results after lead generation. In order to make a judgment, you may track the performance at each contact point and verify the effect.</p>
                             <p className="paragraph">In verification, it is important that related departments work together. By having each department check and turn the PDCA cycle, cooperation between departments will be smooth.</p>
                             <p className="paragraph">Validation allows you to track which contact points generate leads and at what stage the lead is in the buying stage. In addition to lead generation, it is also important to verify the effectiveness of lead nurturing and improve accuracy.</p>
                             <p className="paragraph">It is important to circulate the PDCA cycle constantly. Repeatedly verifying the effectiveness and improving the accuracy of lead generation will lead to results. To buy leads online more <u>Facebook lead generation ads</u> is one affordable as well users are more on Facebook. </p>
                         </Col>
-                        <Col md={6}>
+                        <Col md={6} lg={5}>
                             <img src={verifyEffectiveness} alt="Verify Effectiveness" className="responsive-img"/>
                         </Col>
                     </Row>
 
-                    <Row className="align-items-center row-reverse-mobile mt-3">
-                        <Col md={6}>
+                    <Row className="align-items-center row-reverse-mobile mt-5">
+                        <Col md={6} lg={5}>
                             <img src={shareInformation} alt="Share Information" className="responsive-img" />
                         </Col>
-                        <Col md={6}>
+                        <Col md={6} lg={7}>
                             <h2 className="heading3">Share information</h2>
                             <p className="paragraph">The era of individual sales is coming to an end, and the modern era of team sales has arrived. <b>Lead generation campaign online</b> is essential for teams to achieve their goals.</p>
                             <p className="paragraph">Traditionally, an individual sales person managed their own customers and opportunities. If there are only a few cases to handle, there will be no trouble. However, as the number of cases increases, it becomes impossible to manage them by individual management ability. Also, even if there is a lack of response, there is no chance to notice it, and there are many cases where sales opportunities are lost without noticing.</p>
