@@ -231,7 +231,7 @@ function PayPerClick(){
 
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
-                                        <a href="/">    
+                                        <a href="/english-copywriting-and-proofreading-services">    
                                             <img src={proofreading} className="services-bottom-front-image" alt="Proofreading" />
                                             <h4 className="heading4">English Copywriting & Proofreading Services</h4>
                                         </a>

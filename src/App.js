@@ -28,6 +28,7 @@ import PdfToHtml from './pages/Services/PdfToHtml';
 import SEOService from './pages/Services/SEOService';
 import SocialMediaMarketing from './pages/Services/SocialMediaMarketing';
 import SEOPageSpeedOptimization from './pages/Services/SEOPageSpeedOptimization';
+import EnglishCopywritingProofreading from './pages/Services/EnglishCopywritingProofreading';
 
 function App() {
   return (
@@ -63,6 +64,7 @@ function App() {
           <Route path='/seo-services' element={<SEOService />} />
           <Route path='/social-media-marketing-services' element={<SocialMediaMarketing />} />
           <Route path='/seo-page-speed-optimization-services' element={<SEOPageSpeedOptimization />} />
+          <Route path='/english-copywriting-and-proofreading-services' element={<EnglishCopywritingProofreading />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -226,7 +226,7 @@ function SEOPageSpeedOptimization(){
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
                                         <a href="/seo-services">
-                                            <img src={SEOIcon} className="services-bottom-front-image" alt="SEO Page Speed" />
+                                            <img src={SEOIcon} className="services-bottom-front-image" alt="SEO Services" />
                                             <h4 className="heading4">SEO Services</h4>
                                         </a>
                                     </div>
@@ -234,7 +234,7 @@ function SEOPageSpeedOptimization(){
 
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
-                                        <a href="/">    
+                                        <a href="/english-copywriting-and-proofreading-services">    
                                             <img src={proofreading} className="services-bottom-front-image" alt="Proofreading" />
                                             <h4 className="heading4">English Copywriting & Proofreading Services</h4>
                                         </a>
