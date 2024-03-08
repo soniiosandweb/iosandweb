@@ -37,21 +37,21 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about-us" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:url" element={<BlogDetails />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route path='/contact-us' element={<Contact />} />
           <Route path='/services' element={<Services />} />
           <Route path='/privacy' element={<PrivacyPolicy />} />
-          <Route path='/terms-conditions' element={<TermsConditions />} />
+          <Route path='/terms-and-conditions' element={<TermsConditions />} />
           <Route path='/cancellation-policy' element={< CancellationPolicy />} />
           <Route path='/how-we-work' element={<HowWeWork />} />
-          <Route path='/our-team' element={<Team />} />
+          <Route path='/iaw-team' element={<Team />} />
           <Route path='*' element={<NoPage />} />
 
           {/* Services */}
-          <Route path='/software-development-services' element={<SoftwareDevelopment />} />
+          <Route path='/custom-software-development-company' element={<SoftwareDevelopment />} />
           <Route path='/web-development-services' element={<WebDevelopment />} />
           <Route path='/mobile-app-development-services' element={<MobileAppDevelopment />} />
           <Route path='/web-designing-services' element={<WebDesigning />} />

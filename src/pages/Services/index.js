@@ -47,7 +47,7 @@ function Services(){
                             <div className="heading-wrapper">
                                 <h1>Web Solutions To Boost Your Brand Growth</h1>
                                 <div className="heading5">We Develop Customized Websites For Your Precise Business Needs</div>
-                                <a href="/contact" className="tn btn-white-border">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
+                                <a href="/contact-us" className="tn btn-white-border">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
                             </div>
                         </Col>
                         <Col lg={6}>
@@ -199,7 +199,7 @@ function Services(){
             <GetStarted 
                 title="Let's Start Building Web Solutions To Help Achieve Your Business Goals"
                 buttonText="Get Started"
-                link="/contact"
+                link="/contact-us"
             />
 
 

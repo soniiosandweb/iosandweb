@@ -128,7 +128,7 @@ function Header() {
                   <div className="header-submenu-left">
                     <ul className="header-submenu-items">
                       <li className="submenu-item">
-                        <Dropdown.Item href='/software-development-services'>
+                        <Dropdown.Item href='/custom-software-development-company'>
                           <div className="bg-red submenu-img">
                             <img src={softwareDevelopment} className="service-img" alt="Software Development" /> 
                           </div>
@@ -257,7 +257,7 @@ function Header() {
                 
                     <ul className="header-submenu-items">
                       <li className="submenu-item">
-                        <Dropdown.Item href='/about'>
+                        <Dropdown.Item href='/about-us'>
                           <div className="bg-pink submenu-img">
                             <img src={aboutIcon} className="service-img" alt="About Us" /> 
                           </div>
@@ -266,7 +266,7 @@ function Header() {
                         </Dropdown.Item>
                       </li>
                       <li className="submenu-item">
-                        <Dropdown.Item href='/our-team'>
+                        <Dropdown.Item href='/iaw-team'>
                           <div className="bg-green submenu-img">
                             <img src={teamIcon} className="service-img" alt="IAW Team" /> 
                           </div>
@@ -288,7 +288,7 @@ function Header() {
             </Dropdown>
 
             <Nav.Link href="/blog" className={locationValue[1] === "blog" ? "active" : ""}>Blog</Nav.Link>
-            <Nav.Link href="/contact" className={locationValue[1] === "contact" ? "btn active" : "btn"}>Contact</Nav.Link>
+            <Nav.Link href="/contact-us" className={locationValue[1] === "contact" ? "btn active" : "btn"}>Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
 

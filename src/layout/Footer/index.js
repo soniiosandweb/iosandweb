@@ -53,8 +53,8 @@ function Footer(){
                         <Col md={6} lg={2}>
                             <h5 className="footer-col-head">About</h5>
                             <ul className="footer-col-list">
-                                <li><a href="/about">About us</a></li>
-                                <li><a href="/our-team">Team</a></li>
+                                <li><a href="/about-us">About us</a></li>
+                                <li><a href="/iaw-team">Team</a></li>
                                 <li><a href="/how-we-work">How we work</a></li>
                                 <li><a href="/portfolio">Portfolio</a></li>
                             </ul>
@@ -62,7 +62,7 @@ function Footer(){
                         <Col md={6} lg={3}>
                             <h5 className="footer-col-head">Services</h5>
                             <ul className="footer-col-list">
-                                <li><a href="/software-development-services">Software Development</a></li>
+                                <li><a href="/custom-software-development-company">Software Development</a></li>
                                 <li><a href="/web-development-services">Web Development</a></li>
                                 <li><a href="/mobile-app-development-services">Mobile App Development</a></li>
                                 <li><a href="https://www.blockchain77.com/services/">Blockchain Development</a></li>
@@ -74,9 +74,9 @@ function Footer(){
                             <h5 className="footer-col-head">Resources</h5>
                             <ul className="footer-col-list">
                                 <li><a href="/blog">Blog</a></li>
-                                <li><a href="/contact">Contact</a></li>
+                                <li><a href="/contact-us">Contact</a></li>
                                 <li><a href="/privacy">Privacy Policy</a></li>
-                                <li><a href="/terms-conditions">Terms & Conditions</a></li>
+                                <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
                                 <li><a href="/cancellation-policy">Cancellation Policy</a></li>
                             </ul>
                         </Col>

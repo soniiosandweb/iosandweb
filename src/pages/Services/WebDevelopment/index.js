@@ -309,7 +309,7 @@ function WebDevelopment(){
             <GetStarted 
                 title="Let's Start Building Web Solutions To Help Achieve Your Business Goals"
                 buttonText="Get Started"
-                link="/contact"
+                link="/contact-us"
             />
 
             {/* final reflection section */}
@@ -323,7 +323,7 @@ function WebDevelopment(){
                             <div className="services-bottom-flex">
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
-                                        <a href="/software-development-services">
+                                        <a href="/custom-software-development-company">
                                             <img src={softwareDevelopment} className="services-bottom-front-image" alt="Software Development" />
                                             <h4 className="heading4">Software Development Services</h4>
                                         </a>

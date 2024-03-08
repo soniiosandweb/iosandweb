@@ -209,7 +209,7 @@ function DigitalMarketing(){
             <GetStarted 
                 title="Let's Start Building Web Solutions To Help Achieve Your Business Goals"
                 buttonText="Get Started"
-                link="/contact"
+                link="/contact-us"
             />
 
             {/* final reflection section */}

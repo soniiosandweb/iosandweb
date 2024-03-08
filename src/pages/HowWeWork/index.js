@@ -124,7 +124,7 @@ function HowWeWork(){
             <GetStarted 
                 title="Now Is The Right Time To Convert Your Idea Into A Go-To Mobile Application"
                 buttonText="Get Started"
-                link="/contact"
+                link="/contact-us"
             />
 
             {/* Development Process section */}
