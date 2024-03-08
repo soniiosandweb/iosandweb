@@ -110,7 +110,7 @@ function JoinOurTeam(){
 
                     axios({
                         method: "post",
-                        url: "https://iosandweb.net/api/join-team-email-api.php",
+                        url: "https://web.iosandweb.net/api/join-team-email-api.php",
                         data: JSON.stringify({
                                 yourFirstName: values.yourFirstName,
                                 yourLastName: values.yourLastName,

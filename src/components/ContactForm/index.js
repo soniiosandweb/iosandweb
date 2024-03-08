@@ -74,7 +74,7 @@ function ContactForm(){
             setLoading(true);
             axios({
                 method: "post",
-                url: "https://iosandweb.net/api/contact-email-api.php",
+                url: "https://web.iosandweb.net/api/contact-email-api.php",
                 data: JSON.stringify({
                         yourName: values.yourName,
                         emailAddress: values.emailAddress,
