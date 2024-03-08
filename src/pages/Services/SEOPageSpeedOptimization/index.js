@@ -57,7 +57,7 @@ function SEOPageSpeedOptimization(){
                     <Row>
                         <Col>
                             <h2 className="heading2 text-center">The seo page speed optimization Is Something We Can Help You With</h2>
-                            <div className="heading5 text-center">Your <b><u>website page seo</u></b> speed doesn't need to be inferior for visitors to get dissatisfied. A website's overall performance data is affected by factors like poor load speed since it can prevent the rendering of some essential sections of the page, thus impacting the user experience. Now that you know what's at stake, you may be asking how to <b>Improve Google page insights speed</b>.</div>
+                            <div className="heading5 text-center">Your <b><a href="/seo-services">website page seo</a></b> speed doesn't need to be inferior for visitors to get dissatisfied. A website's overall performance data is affected by factors like poor load speed since it can prevent the rendering of some essential sections of the page, thus impacting the user experience. Now that you know what's at stake, you may be asking how to <b>Improve Google page insights speed</b>.</div>
 
                             <NumbersCards />
                         </Col>
@@ -137,7 +137,7 @@ function SEOPageSpeedOptimization(){
                                         <div className="reasons-tab-content">
                                             <img src={contentDelivery} alt="Content delivery network" className="reasons-content-icon" />
                                             <h3 className="heading3">Content delivery network</h3>
-                                            <p className="paragraph">Instead of having users send requests to a central server, this network distributes the requested content to users at their specific locations. Because of this outcome, both weight and loading time are reduced. As a bonus, it aids in accelerating load times for websites. IosAndWeb Technologies <b><u>content delivery network (CDN)</u></b> will be available at no cost, highly secure, load pages quickly, and cost you less than you'd expect.</p>
+                                            <p className="paragraph">Instead of having users send requests to a central server, this network distributes the requested content to users at their specific locations. Because of this outcome, both weight and loading time are reduced. As a bonus, it aids in accelerating load times for websites. IosAndWeb Technologies <b><a href="https://en.wikipedia.org/wiki/Content_delivery_network">content delivery network (CDN)</a></b> will be available at no cost, highly secure, load pages quickly, and cost you less than you'd expect.</p>
                                         </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="second">
@@ -172,7 +172,7 @@ function SEOPageSpeedOptimization(){
                                         <div className="reasons-tab-content">
                                             <img src={compression} alt="Compression" className="reasons-content-icon" />
                                             <h3 className="heading3">Compression</h3>
-                                            <p className="paragraph">If your CSS, HTML, or JavaScript files are over 150 bytes in size, IosAndWeb Technologies your Local Seo Agency can help you compress them. We'll <b><u>zip</u></b> up the whole thing, so it all comes out once when it's opened. The server's web response time will be sped up as a bonus benefit.</p>
+                                            <p className="paragraph">If your CSS, HTML, or JavaScript files are over 150 bytes in size, IosAndWeb Technologies your Local Seo Agency can help you compress them. We'll <b><a href="https://en.wikipedia.org/wiki/ZIP_(file_format)">zip</a></b> up the whole thing, so it all comes out once when it's opened. The server's web response time will be sped up as a bonus benefit.</p>
                                         </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="seventh">

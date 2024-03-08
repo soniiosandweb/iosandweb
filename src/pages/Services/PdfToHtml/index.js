@@ -89,7 +89,7 @@ function PdfToHtml(){
                             <div className="specification-block">
                                 <FontAwesomeIcon icon={faRefresh}></FontAwesomeIcon>
                                 <h4 className="heading4">Compatibility with Multiple Browsers</h4>
-                                <p className="paragraph">Experts in quality assurance check to see that your website appears and functions appropriately on the most popular browsers currently in use.</p>
+                                <p className="paragraph">Experts in quality assurance check to see that your <a href="/">website</a> appears and functions appropriately on the most popular browsers currently in use.</p>
                             </div>
                         </Col>
                         <Col md={6} lg={4}>
@@ -117,7 +117,7 @@ function PdfToHtml(){
                             <div className="specification-block">
                                 <FontAwesomeIcon icon={faNewspaper}></FontAwesomeIcon>
                                 <h4 className="heading4">PDF to HTML conversion services by Skilled Individuals</h4>
-                                <p className="paragraph">The in-house Design Team at IosAndWeb can design html page from pdf, maintaining the look and feel of your print magazine while creating reusable templates for subsequent issues. This hands-off approach gives all of the advantages that our Automated Service does, with a delivery time of fewer than two weeks and rates starting at $15 per PDF page, based on page size and <b>design</b> complexity.</p>
+                                <p className="paragraph">The in-house Design Team at IosAndWeb can design html page from pdf, maintaining the look and feel of your print magazine while creating reusable templates for subsequent issues. This hands-off approach gives all of the advantages that our Automated Service does, with a delivery time of fewer than two weeks and rates starting at $15 per PDF page, based on page size and <a href="/web-designing-services"><b>design</b></a> complexity.</p>
                             </div>
                         </Col>
                     </Row>
@@ -221,7 +221,7 @@ function PdfToHtml(){
                                 <div className="card">
                                     <div className="card-body">
                                         <h4 className="card-title">Monthly or Annual Subscription</h4>
-                                        <p className="card-text">IosAndWeb, best agency for pdf to html provides a content development service that may be adapted to meet the requirements of any individual client. There is a possibility that you could qualify for a <b>discount</b> on the price of your orders if they are more substantial, more complicated, or more frequent.</p>
+                                        <p className="card-text">IosAndWeb, best agency for pdf to html provides a content development service that may be adapted to meet the requirements of any individual client. There is a possibility that you could qualify for a <a href="https://en.wikipedia.org/wiki/Discounting"><b>discount</b></a> on the price of your orders if they are more substantial, more complicated, or more frequent.</p>
                                     </div>
                                 </div>
                             </div>

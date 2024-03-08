@@ -39,7 +39,7 @@ function SocialMediaMarketing(){
                             <div className="heading-wrapper full-width">
                                 <h1>SMM-<span className="text-highlight"> Social Media Marketing</span> Services</h1>
                                 <div className="heading5">Build your brand with the most reliable method of marketing i.e. social media marketing.</div>
-                                <div className="heading5"><b>IosAndWeb Technologies</b> is here to provide you social media marketing services through which you can achieve your marketing objectives and goals.</div>
+                                <div className="heading5"><a href="/"><b>IosAndWeb Technologies</b></a> is here to provide you social media marketing services through which you can achieve your marketing objectives and goals.</div>
                             </div>
                         </Col>
                     </Row>
@@ -111,7 +111,7 @@ function SocialMediaMarketing(){
                             <div className="specification-block">
                                 <FontAwesomeIcon icon={faSignal}></FontAwesomeIcon>
                                 <h4 className="heading4">Increasing website traffic</h4>
-                                <p className="paragraph">Increase your sales and leads by getting more traffic to your website. Social media expert at IosAndweb will develop social media advertising campaigns for your brand for <b>lead generation</b> to get get more traffic and sales. Retargeting is also a great option with you can show your ads to the recent viewers of your site. <b><u>Digital marketing services near me</u></b>.</p>
+                                <p className="paragraph">Increase your sales and leads by getting more traffic to your website. Social media expert at IosAndweb will develop social media advertising campaigns for your brand for <a href="/b2b-lead-generation-campaign-services"><b>lead generation</b></a> to get get more traffic and sales. Retargeting is also a great option with you can show your ads to the recent viewers of your site. <b><u>Digital marketing services near me</u></b>.</p>
                             </div>
                         </Col>
                     </Row>
@@ -160,7 +160,7 @@ function SocialMediaMarketing(){
                                 <div className="card">
                                     <div className="card-body">
                                         <h4 className="card-title">Build a strategy as per the requirement of your business</h4>
-                                        <p className="card-text">Before starting a social media advertising campaign, the manager and the team will do research and build a strategy. The research includes a <b><u>competitive analysis</u></b>, development of customer's persona and defining the effective content strategy. To get a roadmap to the great success we'll build advertising strategies and plans for the campaign. <u>Advertisement company near me</u>.</p>
+                                        <p className="card-text">Before starting a social media advertising campaign, the manager and the team will do research and build a strategy. The research includes a <a href="https://blog.hubspot.com/marketing/competitive-analysis-kit"><b>competitive analysis</b></a>, development of customer's persona and defining the effective content strategy. To get a roadmap to the great success we'll build advertising strategies and plans for the campaign. <u>Advertisement company near me</u>.</p>
                                     </div>
                                 </div>
                             </div>
@@ -303,7 +303,7 @@ function SocialMediaMarketing(){
                             <div className="specification-block">
                                 <FontAwesomeIcon icon={faPinterest}></FontAwesomeIcon>
                                 <h4 className="heading4">Pinterest Marketing Services</h4>
-                                <p className="paragraph">Use Pinterest marketing services to sell your brand's products and you can also reach 400 million users via Pinterest. If you are a eCommerce business then you should know latest updates on <b><u>Pinterest marketing for eCommerce business</u></b>.</p>
+                                <p className="paragraph">Use Pinterest marketing services to sell your brand's products and you can also reach 400 million users via Pinterest. If you are a eCommerce business then you should know latest updates on <a href="https://whoppingseo.com/how-to-use-pinterest-for-ecommerce-business/"><b>Pinterest marketing for eCommerce business</b></a>.</p>
                             </div>
                         </Col>
                         <Col md={6} lg={4}>

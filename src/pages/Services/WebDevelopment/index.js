@@ -38,7 +38,7 @@ function WebDevelopment(){
                             <div className="heading-wrapper full-width">
                                 <h1><span className="text-highlight">Web </span>Development Services</h1>
                                 <div className="heading5">Let's build your dream website. IosAndWeb Technologies delivers the best <u>web development services</u> by having front end developer and back end developer expert and professional team of web developers and designsers. The Team is especially known for its effective knowledge in creating virtual branding and standardized websites compatible with all the devices. 
-                                <br/>We also offer Website security, smart application architecture, ecommerce developer for Magento development services, long-term cost saving and great support.</div>
+                                <br/>We also offer Website security, smart application architecture, <u>ecommerce developer</u> for <a href="/magento-development-services">Magento development services</a>, long-term cost saving and great support.</div>
                             </div>
                         </Col>
                     </Row>
@@ -52,7 +52,7 @@ function WebDevelopment(){
                     <Row>
                         <Col>
                             <h2 className="heading2 text-center">Web Development Company</h2>
-                            <div className="heading5 text-center">IosAndWeb Technologies delivers the best <b>web development services in London,Birmingham and many areas of United Kingdom</b> by having an expert and professional team of web developers.</div>
+                            <div className="heading5 text-center"><a href="/">IosAndWeb Technologies</a> delivers the best <b>web development services in London,Birmingham and many areas of United Kingdom</b> by having an expert and professional team of web developers.</div>
 
                             <NumbersCards />
                         </Col>
@@ -173,7 +173,7 @@ function WebDevelopment(){
                             <div className="specification-block">
                                 <FontAwesomeIcon icon={faGlobeAsia}></FontAwesomeIcon>
                                 <h4 className="heading4">Open Source Platform Development</h4>
-                                <p className="paragraph">We have great expertise in <u>content management</u> services so that we provide some out of the range of custom solutions to our esteemed clients. We include WordPress, magento web development, Joomla, Drupal and many more in our open-source platform development services.</p>
+                                <p className="paragraph">We have great expertise in <a href="https://www.techtarget.com/searchcontentmanagement/definition/content-management#:~:text=Content%20management%20(CM)%20is%20the,to%20permanent%20storage%20or%20deletion.">content management</a> services so that we provide some out of the range of custom solutions to our esteemed clients. We include WordPress, magento web development, Joomla, Drupal and many more in our open-source platform development services.</p>
                             </div>
                         </Col>
                     </Row>

@@ -126,7 +126,7 @@ function ShopifyDevelopment(){
                                     <Tab.Pane eventKey="second">
                                         <div className="reasons-tab-content">
                                             <h3 className="heading3">Payment And Use Security</h3>
-                                            <p className="paragraph">Shopify is able to encrypt data and send it via a secure connection using any <b>SSL certificate</b>. The platform complies with the PCI Standard, which specifies the data protection needed when handling credit card transactions. The standard guards against problems that could occur during the payment process and safeguards the client's funds:
+                                            <p className="paragraph">Shopify is able to encrypt data and send it via a secure connection using any <a href="https://www.gogetssl.com/wiki/ssl-basics/what-is-ssl-tls/"><b>SSL certificate</b></a>. The platform complies with the PCI Standard, which specifies the data protection needed when handling credit card transactions. The standard guards against problems that could occur during the payment process and safeguards the client's funds:
                                             <ul>
                                                 <li>rigorous access control measures are put in place</li>
                                                 <li>personal data leaks are controlled</li>

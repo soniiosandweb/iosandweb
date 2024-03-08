@@ -62,7 +62,7 @@ function MagentoDevelopment(){
                                 <h2>Magento Development Services</h2>
                             </div>
                             <div className="leadsubtxt">
-                                <b><u>Magento web development</u></b> offers superior benefits for online businesses, such as improved functionality, increased design freedom, and a versatile shopping cart system. These advantages have contributed to Ecommerce magento development services widespread popularity.  IosAndWeb Technologies, well-known as a <b>custom Magento development</b> services Company, is home to a team of Magento specialists. 
+                                <b><u>Magento web development</u></b> offers superior benefits for online businesses, such as improved functionality, increased design freedom, and a versatile shopping cart system. These advantages have contributed to Ecommerce magento development services widespread popularity. <a href="/">IosAndWeb Technologies</a>, well-known as a <b>custom Magento development</b> services Company, is home to a team of Magento specialists. 
                                 <br />We deal with several different versions of Magento, such as Magento 2.0, so we can provide our customers with reliable storefront models. We can provide a comprehensive range of Magento website design services, including specialized eCommerce solutions, because we are a <b><u>Magento ecommerce development</u></b> company with a team of Magento-certified web developers.
                             </div>
                         </Col>

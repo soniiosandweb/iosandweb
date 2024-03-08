@@ -40,7 +40,7 @@ function GraphicDesign(){
                         <Col lg={8} xl={6}>
                             <div className="heading-wrapper full-width">
                                 <h1><span className="text-highlight">Graphic</span> Designing Services</h1>
-                                <div className="heading5">Your Marketing Strategies Need Innovation Through Graphic Designing. IosAndWeb Technologies is the right choice if you want to strengthen your marketing strategies and stand out in this competitive market.</div>
+                                <div className="heading5">Your Marketing Strategies Need Innovation Through Graphic Designing. <a href="/">IosAndWeb Technologies</a> is the right choice if you want to strengthen your marketing strategies and stand out in this competitive market.</div>
                                 <div className="heading5">Give your brand more strength with our <b>web graphic designing services</b>.</div>
                             </div>
                         </Col>
@@ -156,7 +156,7 @@ function GraphicDesign(){
                                         <div className="reasons-tab-content">
                                             <img src={promotionalDesign} alt="Promotional Design" className="reasons-content-icon" />
                                             <h3 className="heading3">Promotional Design</h3>
-                                            <p className="paragraph">With the help of our promotional designs, you can attract more customers and have a huge presence on different promotional channels like social media, public exhibitions, and many other marketing channels with our <u>Graphic expert for social media campaign</u>.</p>
+                                            <p className="paragraph">With the help of our promotional designs, you can attract more customers and have a huge presence on different promotional channels like social media, public exhibitions, and many other marketing channels with our <u>Graphic expert for <a href="/social-media-marketing-services">social media campaign</a></u>.</p>
                                         </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="fifth">
@@ -170,7 +170,7 @@ function GraphicDesign(){
                                         <div className="reasons-tab-content">
                                             <img src={corporateIdentity} alt="Corporate Identity" className="reasons-content-icon" />
                                             <h3 className="heading3">Brand and Corporate Identity</h3>
-                                            <p className="paragraph">Through our graphic designing services, we can create a unique identity of your brand through specialized individual product elements and its <u>packaging</u>.</p>
+                                            <p className="paragraph">Through our graphic designing services, we can create a unique identity of your brand through specialized individual product elements and its <a href="https://www.geektonight.com/what-is-packaging/">packaging</a>.</p>
                                         </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="seventh">

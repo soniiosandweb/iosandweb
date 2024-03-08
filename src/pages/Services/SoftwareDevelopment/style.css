@@ -96,6 +96,9 @@
 .reasons-tab-content .paragraph{
     margin: 10px 0 0;
 }
+.reasons-tab-content .paragraph a{
+    color: #fff;
+}
 @media (max-width: 1399px) {
     .reasons-tab{
         height: 480px;

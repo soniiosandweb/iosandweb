@@ -30,7 +30,7 @@ function MobileAppDevelopment(){
                         <Col lg={8} xl={6}>
                             <div className="heading-wrapper full-width">
                                 <h1>Mobile <span className="text-highlight">App Development</span> Services</h1>
-                                <div className="heading5">Your dreams have no limits. What do you think where your dreams can live except your imagination. The right place may be an Apple App Store and Google Play Store. At IosAndWeb Technologies we provide <b>mobile app development services</b> according to the requirements of our clients and their budget.</div>
+                                <div className="heading5">Your dreams have no limits. What do you think where your dreams can live except your imagination. The right place may be an Apple App Store and Google Play Store. At <a href="/">IosAndWeb Technologies</a> we provide <b>mobile app development services</b> according to the requirements of our clients and their budget.</div>
                             </div>
                         </Col>
                     </Row>
@@ -302,7 +302,7 @@ function MobileAppDevelopment(){
                                 <div className="card">
                                     <div className="card-body">
                                         <h4 className="card-title">Launch</h4>
-                                        <p className="card-text">Before the final release of the application, we ensure that everything is perfect for your app. After ensuring our both Android mobile developer and IOS app developers will launch your application on play store or app store. The launch of the mobile application is only done when the client's requirements are fulfilled and the application has all the desired <b>functionalities</b>. Except for this the reason behind the success of IosAndWeb Technologies as the best mobile app development company, we provide installation guides, test cases, and users guide for their convenience.</p>
+                                        <p className="card-text">Before the final release of the application, we ensure that everything is perfect for your app. After ensuring our both Android mobile developer and IOS app developers will launch your application on play store or app store. The launch of the mobile application is only done when the client's requirements are fulfilled and the application has all the desired <a href="https://www.google.com/search?q=functionalities&rlz=1C1GCEB_enIN858IN858&ei=4y4XY-GRLZOJ4-EPvfWywAc&ved=0ahUKEwihj-r5h4D6AhWTxDgGHb26DHgQ4dUDCA4&uact=5&oq=functionalities&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEEMyBQgAEJECMgUIABCRAjIFCAAQgAQyBAgAEEMyCggAELEDEIMBEAoyBQgAEIAEMgoIABCxAxCDARAKMgQIABAKMgcIABCxAxAKOgoIABBHENYEELADSgQIQRgASgQIRhgAUMMEWMMEYLkGaAFwAXgAgAGcAYgBnAGSAQMwLjGYAQCgAQHIAQjAAQE&sclient=gws-wiz"><b>functionalities</b></a>. Except for this the reason behind the success of IosAndWeb Technologies as the best mobile app development company, we provide installation guides, test cases, and users guide for their convenience.</p>
                                     </div>
                                 </div>
                             </div>

@@ -192,7 +192,7 @@ function SEOService(){
                                         <div className="reasons-tab-content">
                                             <img src={analyticsResearch} alt="Analytics Research" className="reasons-content-icon" />
                                             <h3 className="heading3">Analytics Research</h3>
-                                            <p className="paragraph">Search engine optimization services are not limited to bringing traffic on your site but rather includes its investigation as well. We have the ability in Google Analytics, which empowers us to consider all the basic measurements identified with the searches, guests, and trends. In view of the precise analytics research, we make and execute successful digital systems to build traffic and conversions. We recommend you to know more about <b>Google Analytics 4</b>.</p>
+                                            <p className="paragraph">Search engine optimization services are not limited to bringing traffic on your site but rather includes its investigation as well. We have the ability in Google Analytics, which empowers us to consider all the basic measurements identified with the searches, guests, and trends. In view of the precise analytics research, we make and execute successful digital systems to build traffic and conversions. We recommend you to know more about <a href="/blog/introduction-to-google-analytics-4"><b>Google Analytics 4</b></a>.</p>
                                         </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="eight">

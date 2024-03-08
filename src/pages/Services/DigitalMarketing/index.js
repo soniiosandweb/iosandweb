@@ -47,7 +47,7 @@ function DigitalMarketing(){
                                 <div className="heading5">Digital Marketing Services has created a new revolution in the business world today. The people's way of interacting with brands, looking for the products & services have changed a lot and the internet is influencing them at a huge level.
                                 </div>
                                 <div className="heading5">
-                                <b>IosAndWeb Technologies</b> is the best SEO company With the latest technologies and development, the business market is changing and the behavior of customers towards products & services too. 
+                                <a href="/"><b>IosAndWeb Technologies</b></a> is the best SEO company With the latest technologies and development, the business market is changing and the behavior of customers towards products & services too. 
                                 </div>
                             </div>
                         </Col>
@@ -139,7 +139,7 @@ function DigitalMarketing(){
                                         <div className="reasons-tab-content">
                                             <img src={searchEngine} alt="Search Engine Optimization" className="reasons-content-icon" />
                                             <h3 className="heading3">Search Engine Optimization (SEO)</h3>
-                                            <p className="paragraph">With Website SEO company make your brand one from the thousands of searches that happen every second over the search engines. Our main aim is to make a place for your brand in the top position of Google or other search engines by using legal & SEO Services by our ethical <b>SEO specialist.</b></p>
+                                            <p className="paragraph">With Website SEO company make your brand one from the thousands of searches that happen every second over the search engines. Our main aim is to make a place for your brand in the top position of Google or other search engines by using legal & <a href="/seo-services">SEO Services</a> by our ethical <b>SEO specialist.</b></p>
                                         </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="second">
@@ -167,7 +167,7 @@ function DigitalMarketing(){
                                         <div className="reasons-tab-content">
                                             <img src={advertisingCampaigns} alt="Advertising Campaigns" className="reasons-content-icon" />
                                             <h3 className="heading3">Display Advertising Campaigns</h3>
-                                            <p className="paragraph">Display advertisement works where you need to create awareness about your brand or product. This advertising campaign works proficiently when <b>Social media campaign expert</b> handle all these marketing campaigns.</p>
+                                            <p className="paragraph">Display advertisement works where you need to create awareness about your brand or product. This advertising campaign works proficiently when <a href="/social-media-marketing-services"><b>Social media campaign expert</b></a> handle all these marketing campaigns.</p>
                                         </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="sixth">
@@ -181,7 +181,7 @@ function DigitalMarketing(){
                                         <div className="reasons-tab-content">
                                             <img src={leadGeneration} alt="Lead Generation" className="reasons-content-icon" />
                                             <h3 className="heading3">Lead Gen Campaign</h3>
-                                            <p className="paragraph">Our Lead generation campaign is beneficial for both B2B and B2C industries. This lead generation campaign works best where the sale of the product or service starts from capturing the audience's attention, feeding them with great offers and managing the leads by <u>Digital marketing company</u>.</p>
+                                            <p className="paragraph">Our <a href="/b2b-lead-generation-campaign-services">Lead generation campaign</a> is beneficial for both B2B and B2C industries. This lead generation campaign works best where the sale of the product or service starts from capturing the audience's attention, feeding them with great offers and managing the leads by <u>Digital marketing company</u>.</p>
                                         </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="eight">
@@ -219,7 +219,7 @@ function DigitalMarketing(){
                         <Col>
                             <h2 className="heading2">Our Path of Digital Marketing Success</h2>
                             <div className="heading5">Initially, our <b>Digital marketing experts</b> maintain intimate relationships with you so that we can understand your business requirements and accordingly formulate digital marketing strategies and plans. There will be equal participation by you and our experts will collaborate with you on the project. Everything will be discussed related to project like goals, newly established strategies, timeframe and the key performing indicators (KPIs). We will provide regular updates and reports while working on the project so that you can track the progress and the success rate.</div>
-                            <div className="heading5">We will bring organic traffic to your website and helps you to get the maximum benefit from that traffic as well paid traffic by <b>PPC Specialist</b>.</div>
+                            <div className="heading5">We will bring organic traffic to your website and helps you to get the maximum benefit from that traffic as well paid traffic by <a href="/ppc-services"><b>PPC Specialist</b></a>.</div>
                             <div className="heading5">Various Digital Marketing Campaigns will be set up to establish your business online and several proven strategies will be implemented to increase the visibility of your business online and you can make the most out of Digital Marketing of your business.</div>
                             <div className="heading5">Our way of working might be different but our aim is to bring profit for your business for the long-term. Initially, we may use techniques like PPC to get faster results. But slowly we will change and formulate different strategies in which we will use inbound marketing techniques to bring organic success. We aim to give you the best results on each & every penny that you've invested. Meet your business objectives with IosAndWeb Technologies and climb the ladder of success. Advertisement company near me.</div>
 
