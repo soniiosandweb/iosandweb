@@ -1,6 +1,6 @@
 import React from "react";
 import './style.css';
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Spinner } from "react-bootstrap";
 import ReactPaginate from "react-paginate"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
@@ -9,17 +9,19 @@ import axios from 'axios';
 import SEO from "../../components/SEO";
 
 import blogImage from '../../images/blog-banner.webp';
+import defaultImage from '../../images/placeholder-image.webp';
 
 function Blog(){
 
     const [data, setData] = useState([])
     const [page, setPage] = useState(0);
     const [filterData, setFilterData] = useState();
-    const n = 12
+    const [loading, setLoading] = useState(true);
+    const n = 12;
 
     useEffect(() => {
 
-        axios.get('blogs.json')
+        axios.get('/api/blog-api.php')
         .then(res => {
             setData(res.data);
             setFilterData(
@@ -30,6 +32,9 @@ function Blog(){
         })
         .catch(() => {
             console.log('Error')
+        })
+        .finally(() => {
+            setLoading(false);
         })
     }, [page]);
 
@@ -62,38 +67,50 @@ function Blog(){
             <div className="blog-page section-padding">
                 <Container>
                     <Row className="blogs-list">
-                        {filterData && filterData.map((item, index) => 
-                            
-                            <Col md={6} lg={4} className="blog-col" key={item.id}>
-                                <div className="blog-list-item">
-                                    <a key={index} href={"blog/"+item.url}>
-                                        <img src={item.image} className="blog-image" alt="Proven Strategies" />
-                                    </a>
-                                    <div className="blog-detail">
-                                        <h5><span className="blog-date">{item.date}</span></h5>
-                                        <a key={index} href={"blog/"+item.url}>
-                                            <h4>{item.title}</h4>
-                                        </a>
-                                        <p className="paragraph">{item.description}</p>
-                                    </div>
+                        {
+                            loading ?
+                            <>
+                                <div className="blog_spinner text-center">
+                                    <Spinner as="span" animation="border" size="xl" role="status" aria-hidden="true" />
                                 </div>
-                            </Col>
-                        )}
+                            </>
+                            : 
+                            <>
+                                {filterData && filterData.map((item, index) => 
+                            
+                                    <Col md={6} lg={4} className="blog-col" key={item.id}>
+                                        <div className="blog-list-item">
+                                            <a key={index} href={"blog/"+item.url}>
+                                                <img src={item.image ? item.image : defaultImage} className="blog-image" alt="Proven Strategies" />
+                                            </a>
+                                            <div className="blog-detail">
+                                                <h5><span className="blog-date">{item.date}</span></h5>
+                                                <a key={index} href={"blog/"+item.url}>
+                                                    <h4>{item.title}</h4>
+                                                </a>
+                                                <p className="paragraph">{item.description}</p>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                )}
 
-                        <ReactPaginate
-                            containerClassName={"pagination"}
-                            pageClassName={"page-item"}
-                            activeClassName={"active"}
-                            onPageChange={(event) => setPage(event.selected)}
-                            pageCount={Math.ceil(data.length / n)}
-                            breakLabel="..."
-                            previousLabel={
-                                <FontAwesomeIcon icon={faChevronLeft} />
-                            }
-                            nextLabel={
-                                <FontAwesomeIcon icon={faChevronRight} />
-                            }
-                        />
+                                <ReactPaginate
+                                    containerClassName={"pagination"}
+                                    pageClassName={"page-item"}
+                                    activeClassName={"active"}
+                                    onPageChange={(event) => setPage(event.selected)}
+                                    pageCount={Math.ceil(data.length / n)}
+                                    breakLabel="..."
+                                    previousLabel={
+                                        <FontAwesomeIcon icon={faChevronLeft} />
+                                    }
+                                    nextLabel={
+                                        <FontAwesomeIcon icon={faChevronRight} />
+                                    }
+                                />
+                            </>
+                        }
+                        
 
                     </Row>
                 </Container>

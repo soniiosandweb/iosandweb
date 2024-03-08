@@ -36,6 +36,9 @@
 .blog-details-content-div blockquote p{
     margin: 0;
 }
+.blog-details-content-div a{
+    color: #1050bc !important;
+}
 @media (max-width: 767px) {
     .blog-detail-page h1{
       font-size: 34px;

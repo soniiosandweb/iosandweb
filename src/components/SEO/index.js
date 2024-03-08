@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
-function SEO({title, description, name}){
+function SEO({title, description, name, keywords}){
     return(
         <>
             <Helmet>
@@ -9,6 +9,10 @@ function SEO({title, description, name}){
                 { /* Standard metadata tags */ }
                 <title>{title}</title>
                 <meta name='description' content={description} />
+                { keywords ? 
+                    <meta name="keywords" content={keywords} />
+                    : ''
+                }
                 
                 { /* Facebook tags */ }
                 <meta property="og:title" content={title} />
