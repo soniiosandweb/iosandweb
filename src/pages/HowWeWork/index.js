@@ -52,7 +52,7 @@ function HowWeWork(){
                             <img src={briefing} alt="Briefing" className="responsive-img" />
                         </Col>
                         <Col md={6}>
-                            <h2 className="heading3"><strong>Briefing</strong> Of Your Business Idea</h2>
+                            <h2 className="heading3"><strong className="text-highlight">Briefing</strong> Of Your Business Idea</h2>
                             <p className="paragraph">Examining your ideas & details, Our app development company propose the best possible solutions that will meet your brand requirements indeed.</p>
                             <ul className="how-we-work-lists">
                                 <li>We will connect you with our experts for overall planning & project estimations</li>
@@ -68,7 +68,7 @@ function HowWeWork(){
                 <Container>
                     <Row className="align-items-center">
                         <Col md={6}>
-                            <h2 className="heading3"><strong>Researching</strong> a Perfect Architecture</h2>
+                            <h2 className="heading3"><strong className="text-highlight">Researching</strong> a Perfect Architecture</h2>
                             <p className="paragraph">Browsing our stack of latest technologies, our brewers create a fully-customized solution, made just for your business</p>
                             <ul className="how-we-work-lists">
                                 <li>An exceptional UI design for better customer experience</li>
@@ -90,7 +90,7 @@ function HowWeWork(){
                             <img src={evolving} alt="Evolving" className="responsive-img" />
                         </Col>
                         <Col md={6}>
-                            <h2 className="heading3"><strong>Evolving</strong> Bug-Free Business App</h2>
+                            <h2 className="heading3"><strong className="text-highlight">Evolving</strong> Bug-Free Business App</h2>
                             <p className="paragraph">Repeated testing of every feature to assure quality & deliver a digital solution that meets your specifications</p>
                             <ul className="how-we-work-lists">
                                 <li>Evaluating ease of use & navigation to make your customers stay</li>
@@ -106,7 +106,7 @@ function HowWeWork(){
                 <Container>
                     <Row className="align-items-center">
                         <Col md={6}>
-                            <h2 className="heading3"><strong>Wrapping</strong> Up For Success</h2>
+                            <h2 className="heading3"><strong className="text-highlight">Wrapping</strong> Up For Success</h2>
                             <p className="paragraph">Get your custom-made digital solution onboard to reach maximum customers in the most time-efficient manner</p>
                             <ul className="how-we-work-lists">
                                 <li>Successful launch of your business app with experts by your side</li>
