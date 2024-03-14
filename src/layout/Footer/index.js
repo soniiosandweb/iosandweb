@@ -55,6 +55,7 @@ function Footer(){
                             <ul className="footer-col-list">
                                 <li><a href="/about-us">About us</a></li>
                                 <li><a href="/iaw-team">Team</a></li>
+                                <li><a href="/careers">Career</a></li>
                                 <li><a href="/how-we-work">How we work</a></li>
                                 <li><a href="/portfolio">Portfolio</a></li>
                             </ul>

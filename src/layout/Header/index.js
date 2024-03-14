@@ -27,6 +27,7 @@ import ideationDesign from '../../images/home/ideation-design.svg';
 // about menu
 import aboutIcon from '../../images/about-us.png';
 import teamIcon from '../../images/our-team-icon.png';
+import careerIcon from '../../images/career-icon.png';
 import howWorkIcon from '../../images/how-we-work.png';
 
 import OwlCarousel from "react-owl-carousel";
@@ -271,6 +272,15 @@ function Header() {
                             <img src={teamIcon} className="service-img" alt="IAW Team" /> 
                           </div>
                           IAW Team
+                          <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
+                        </Dropdown.Item>
+                      </li>
+                      <li className="submenu-item">
+                        <Dropdown.Item href='/careers'>
+                          <div className="bg-orange submenu-img">
+                            <img src={careerIcon} className="service-img" alt="Career" /> 
+                          </div>
+                          Career
                           <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
                         </Dropdown.Item>
                       </li>

@@ -30,6 +30,7 @@ import SocialMediaMarketing from './pages/Services/SocialMediaMarketing';
 import SEOPageSpeedOptimization from './pages/Services/SEOPageSpeedOptimization';
 import EnglishCopywritingProofreading from './pages/Services/EnglishCopywritingProofreading';
 import B2BLeadGenerationCampaign from './pages/Services/B2BLeadGenerationCampaign';
+import Career from './pages/Career';
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
           <Route path='/cancellation-policy' element={< CancellationPolicy />} />
           <Route path='/how-we-work' element={<HowWeWork />} />
           <Route path='/iaw-team' element={<Team />} />
+          <Route path='/careers' element={<Career />} />
           <Route path='*' element={<NoPage />} />
 
           {/* Services */}
