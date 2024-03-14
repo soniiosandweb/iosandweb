@@ -15,7 +15,12 @@
 .reasons-join-item-content .paragraph {
     margin: 0;
 }
-
+@media (max-width: 767px) {
+    .reasons-to-join .heading3,
+    .reasons-to-join .heading5{
+        text-align: center;
+    }
+}
 /* Job Positions */
 .job-positions-flex {
     list-style: none;

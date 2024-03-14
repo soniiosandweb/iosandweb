@@ -60,12 +60,12 @@ function Career(){
                         </Col>
                     </Row>
 
-                    <Row className="align-items-center row-reverse-mobile">
+                    <Row className="align-items-center row-reverse-mobile mt-5">
                         <Col md={6}>
                             <img src={careerImage} alt="Career" className="responsive-img" />
                         </Col>
                         <Col md={6}>
-                            <h2 className="heading3">Career</h2>
+                            <h2 className="heading3 text-highlight text-uppercase"><b>Career</b></h2>
                             <div className="heading5">Be the YOU, You want to be</div>
                             <div className="reasons-join-grid">
                                 <div className="reasons-join-item">
@@ -93,9 +93,9 @@ function Career(){
                         </Col>
                     </Row>
 
-                    <Row className="align-items-center mt-3">
+                    <Row className="align-items-center mt-5">
                         <Col md={6}>
-                            <h2 className="heading3">Support</h2>
+                            <h2 className="heading3 text-highlight text-uppercase"><b>Support</b></h2>
                             <div className="heading5">A hand to hold you Tight and Strong</div>
                             <div className="reasons-join-grid">
                                 <div className="reasons-join-item">
@@ -126,12 +126,12 @@ function Career(){
                         </Col>
                     </Row>
 
-                    <Row className="align-items-center row-reverse-mobile mt-3">
+                    <Row className="align-items-center row-reverse-mobile mt-5">
                         <Col md={6}>
                             <img src={life} alt="Life" className="responsive-img" />
                         </Col>
                         <Col md={6}>
-                            <h2 className="heading3">Life</h2>
+                            <h2 className="heading3 text-highlight text-uppercase"><b>Life</b></h2>
                             <div className="heading5">Celebrate Work as you Ladder Up</div>
                             <div className="reasons-join-grid">
                                 <div className="reasons-join-item">
