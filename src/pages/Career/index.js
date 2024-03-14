@@ -51,7 +51,7 @@ function Career(){
             </div>
 
             {/* Reasons to join section */}
-            <div className="how-we-work-process reasons-to-join section-less-padding">
+            <div className="how-we-work-process reasons-to-join section-padding">
                 <Container>
                     <Row>
                         <Col>
