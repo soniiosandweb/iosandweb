@@ -41,6 +41,7 @@ function Career(){
                             <div className="heading-wrapper">
                                 <h1><span className="text-highlight">Career</span> at IosAndWeb Technologies</h1>
                                 <div className="heading5">We are a global technology company that offers team members great potential for professional growth. Would you like to become part of our team? Then we look forward to getting to know you personally.We provide a supportive and inclusive environment with some perks.</div>
+                                <button onClick={() => document.getElementById('JoinForm')?.scrollIntoView()} className="btn btn-white-border">Apply Now <FontAwesomeIcon icon={faChevronRight} /></button>
                             </div>
                         </Col>
                         <Col lg={6}>
@@ -245,7 +246,7 @@ function Career(){
                                     </div>
                                 </li>
                             </ul>
-                            <a href="#JoinForm" className="btn btn-white-border">Apply Now <FontAwesomeIcon icon={faChevronRight} /></a>
+                            <button onClick={() => document.getElementById('JoinForm')?.scrollIntoView()} className="btn btn-white-border">Apply Now <FontAwesomeIcon icon={faChevronRight} /></button>
                         </Col>
                     </Row>
                 </Container>
