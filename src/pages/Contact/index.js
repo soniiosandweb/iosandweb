@@ -95,7 +95,7 @@ function Contact(){
                         <Col>
                             <h2 className="heading2 text-center">Claim Your Free 20-Minute Strategy Session</h2>
                             <div className="heading5 text-center">It's Quick and Easy! FREE Spots Are Almost Gone For November. Book Now!</div>
-                            <iframe src="https://calendly.com/iosandweb/free-consultation?embed_domain=iosandweb.net&embed_type=Inline&month=2022-11" width="100%" height="100%" title="Select a Date & Time - Calendly" data-origwidth="100%" data-origheight="100%" className="session-iframe"></iframe>
+                            <iframe src="https://calendly.com/iawtech/free-consultation?embed_domain=iosandweb.net&embed_type=Inline" width="100%" height="100%" title="Select a Date & Time - Calendly" data-origwidth="100%" data-origheight="100%" className="session-iframe"></iframe>
                         </Col>
                     </Row>
                 </Container>
