@@ -239,7 +239,7 @@ function JoinOurTeam(){
                                                     <option value="BDM :- 5 to 8 years">BDM :- 5 to 8 years</option>
                                                     <option value="BDE :- 6 months to 2 years">BDE :- 6 months to 2 years</option>
                                                     <option value="Frontend Developer :- 3 to 5 years">Frontend Developer :- 3 to 5 years</option>
-                                                    <option value="MEAN Stack Devloper :- 3 to 5 years">MEAN Stack Devloper :- 3 to 5 years</option>
+                                                    <option value="MEAN Stack Developer :- 3 to 5 years">MEAN Stack Developer :- 3 to 5 years</option>
                                                     <option value="Content Writer :- 2 to 5 years">Content Writer :- 2 to 5 years</option>
                                                 </Form.Control>
 

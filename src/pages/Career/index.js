@@ -234,7 +234,7 @@ function Career(){
                                 <li className="job-positions-item">
                                     <FontAwesomeIcon icon={faReact} />
                                     <div className="job-position-content">
-                                        <p className="paragraph">MEAN Stack Devloper</p>
+                                        <p className="paragraph">MEAN Stack Developer</p>
                                         <p className="paragraph">3 to 5 years</p>
                                     </div>
                                 </li>
