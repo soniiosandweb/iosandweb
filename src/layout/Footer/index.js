@@ -14,17 +14,25 @@ import { faInstagram, faLinkedin, faSquareFacebook, faTwitter, faWhatsapp } from
 
 function Footer(){
 
+    const clockWidth = "100px";
+    const clockHeight = "100px";
+    const centerColor = "#000";
+    const baseColor = "#0000000a";
+    const secondColor = "#ff0000";
+    const minuteColor = "#000";
+    const hourColor = "#000";
+
     // India Time
     let options = {
-        width: "100px",
-        heigth: "100px",
-        centerColor: "#000",
-        baseColor : "#0000000a",
+        width: clockWidth,
+        heigth: clockHeight,
+        centerColor: centerColor,
+        baseColor : baseColor,
         border: true,
         handColors: {
-          second: "#ff0000",
-          minute: "#000",
-          hour: "#000",
+          second: secondColor,
+          minute: minuteColor,
+          hour: hourColor,
         },
     };
 
@@ -48,16 +56,16 @@ function Footer(){
     }, 1000);
     
     let ukOptions = {
-        width: "100px",
-        heigth: "100px",
-        centerColor: "#000",
-        baseColor : "#0000000a",
+        width: clockWidth,
+        heigth: clockHeight,
+        centerColor: centerColor,
+        baseColor : baseColor,
         border: true,
         useCustomTime: true,
         handColors: {
-          second: "#ff0000",
-          minute: "#000",
-          hour: "#000",
+          second: secondColor,
+          minute: minuteColor,
+          hour: hourColor,
         },
         seconds: ukSec,
         minutes: ukMin,
@@ -84,16 +92,16 @@ function Footer(){
     }, 1000);
     
     let usOptions = {
-        width: "100px",
-        heigth: "100px",
-        centerColor: "#000",
-        baseColor : "#0000000a",
+        width: clockWidth,
+        heigth: clockHeight,
+        centerColor: centerColor,
+        baseColor : baseColor,
         border: true,
         useCustomTime: true,
         handColors: {
-          second: "#ff0000",
-          minute: "#000",
-          hour: "#000",
+          second: secondColor,
+          minute: minuteColor,
+          hour: hourColor,
         },
         seconds: usSec,
         minutes: usMin,
