@@ -172,7 +172,7 @@ function Footer(){
                                 <li><a href="/custom-software-development-company">Software Development</a></li>
                                 <li><a href="/web-development-services">Web Development</a></li>
                                 <li><a href="/mobile-app-development-services">Mobile App Development</a></li>
-                                <li><a href="https://www.blockchain77.com/services/">Blockchain Development</a></li>
+                                <li><a href="https://www.blockchain77.com/services/" target="_blank">Blockchain Development</a></li>
                                 <li><a href="/web-designing-services">Web / Graphic Design</a></li>
                                 <li><a href="/digital-marketing-services">Digital Marketing</a></li>
                             </ul>
@@ -199,11 +199,11 @@ function Footer(){
                         </Col>
                         <Col md={6} className="footer-social-col">
                             <ul className="social-links">
-                                <li><a href="https://www.facebook.com/iosandwebtechnologies/"><FontAwesomeIcon icon={faSquareFacebook} /></a></li>
-                                <li><a href="https://twitter.com/Iosandwebtech"><FontAwesomeIcon icon={faTwitter} /></a></li>
-                                <li><a href="https://www.instagram.com/iosandwebtechnologies/"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                                <li><a href="https://www.linkedin.com/company/iosandweb-technologies"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                                <li><a href="https://api.whatsapp.com/send/?phone=919915841204&text&type=phone_number&app_absent=0"><FontAwesomeIcon icon={faWhatsapp} /></a></li>
+                                <li><a href="https://www.facebook.com/iosandwebtechnologies/" target="_blank"><FontAwesomeIcon icon={faSquareFacebook} /></a></li>
+                                <li><a href="https://twitter.com/Iosandwebtech" target="_blank"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                                <li><a href="https://www.instagram.com/iosandwebtechnologies/" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                                <li><a href="https://www.linkedin.com/company/iosandweb-technologies" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                                <li><a href="https://api.whatsapp.com/send/?phone=919915841204&text&type=phone_number&app_absent=0" target="_blank"><FontAwesomeIcon icon={faWhatsapp} /></a></li>
                             </ul>
                         </Col>
                     </Row>

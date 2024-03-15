@@ -95,7 +95,7 @@ function Services(){
                             </a>
                         </Col>
                         <Col md={6} lg={4} className="service-col">
-                            <a href="https://www.blockchain77.com/services/" className="service-link bg-blue">
+                            <a href="https://www.blockchain77.com/services/" target="_blank" className="service-link bg-blue">
                                 <div className="what-do-service-item">
                                     <img src={blockchainDevelop} className="service-icon" alt="Blockchain development" />
                                     <h3 className="heading2">Blockchain development</h3>
@@ -104,7 +104,7 @@ function Services(){
                             </a>
                         </Col>
                         <Col md={6} lg={4} className="service-col">
-                            <a href="https://www.blockchain77.com/services/" className="service-link bg-green">
+                            <a href="https://www.blockchain77.com/services/" target="_blank" className="service-link bg-green">
                                 <div className="what-do-service-item">
                                     <img src={smartContract} className="service-icon" alt="Algorand Smart Contract" />
                                     <h3 className="heading2">Algorand Smart Contract</h3>
@@ -113,7 +113,7 @@ function Services(){
                             </a>
                         </Col>
                         <Col md={6} lg={4} className="service-col">
-                            <a href="https://www.blockchain77.com/services/" className="service-link bg-gray">
+                            <a href="https://www.blockchain77.com/services/" target="_blank" className="service-link bg-gray">
                                 <div className="what-do-service-item">
                                     <img src={poc} className="service-icon" alt="Development of POC & ICO" />
                                     <h3 className="heading2">Development of POC & ICO</h3>

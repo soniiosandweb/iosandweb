@@ -153,7 +153,7 @@ function MagentoDevelopment(){
                             <div className="specification-block">
                                 <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
                                 <h4 className="heading4">Assurance of quality</h4>
-                                <p className="paragraph">As an <a href="https://www.meadmetals.com/blog/what-exactly-is-iso-certified-and-what-does-it-mean">ISO-certified</a> company, you can rely on us to provide you with innovative ideas and dependable performance through result-oriented website solutions.</p>
+                                <p className="paragraph">As an <a href="https://www.meadmetals.com/blog/what-exactly-is-iso-certified-and-what-does-it-mean" target="_blank">ISO-certified</a> company, you can rely on us to provide you with innovative ideas and dependable performance through result-oriented website solutions.</p>
                             </div>
                         </Col>
                         <Col md={6} lg={4}>

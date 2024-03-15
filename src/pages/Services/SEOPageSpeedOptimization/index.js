@@ -137,7 +137,7 @@ function SEOPageSpeedOptimization(){
                                         <div className="reasons-tab-content">
                                             <img src={contentDelivery} alt="Content delivery network" className="reasons-content-icon" />
                                             <h3 className="heading3">Content delivery network</h3>
-                                            <p className="paragraph">Instead of having users send requests to a central server, this network distributes the requested content to users at their specific locations. Because of this outcome, both weight and loading time are reduced. As a bonus, it aids in accelerating load times for websites. IosAndWeb Technologies <b><a href="https://en.wikipedia.org/wiki/Content_delivery_network">content delivery network (CDN)</a></b> will be available at no cost, highly secure, load pages quickly, and cost you less than you'd expect.</p>
+                                            <p className="paragraph">Instead of having users send requests to a central server, this network distributes the requested content to users at their specific locations. Because of this outcome, both weight and loading time are reduced. As a bonus, it aids in accelerating load times for websites. IosAndWeb Technologies <b><a href="https://en.wikipedia.org/wiki/Content_delivery_network" target="_blank">content delivery network (CDN)</a></b> will be available at no cost, highly secure, load pages quickly, and cost you less than you'd expect.</p>
                                         </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="second">
@@ -172,7 +172,7 @@ function SEOPageSpeedOptimization(){
                                         <div className="reasons-tab-content">
                                             <img src={compression} alt="Compression" className="reasons-content-icon" />
                                             <h3 className="heading3">Compression</h3>
-                                            <p className="paragraph">If your CSS, HTML, or JavaScript files are over 150 bytes in size, IosAndWeb Technologies your Local Seo Agency can help you compress them. We'll <b><a href="https://en.wikipedia.org/wiki/ZIP_(file_format)">zip</a></b> up the whole thing, so it all comes out once when it's opened. The server's web response time will be sped up as a bonus benefit.</p>
+                                            <p className="paragraph">If your CSS, HTML, or JavaScript files are over 150 bytes in size, IosAndWeb Technologies your Local Seo Agency can help you compress them. We'll <b><a href="https://en.wikipedia.org/wiki/ZIP_(file_format)" target="_blank">zip</a></b> up the whole thing, so it all comes out once when it's opened. The server's web response time will be sped up as a bonus benefit.</p>
                                         </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="seventh">

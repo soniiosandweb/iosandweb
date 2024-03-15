@@ -156,7 +156,7 @@ function Header() {
                         </Dropdown.Item>
                       </li>
                       <li className="submenu-item">
-                        <Dropdown.Item href='https://www.blockchain77.com/services/'>
+                        <Dropdown.Item href='https://www.blockchain77.com/services/' target="_blank">
                           <div className="bg-blue submenu-img">
                             <img src={blockChain} className="service-img" alt="Blockchain Services" /> 
                           </div>

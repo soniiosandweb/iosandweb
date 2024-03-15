@@ -170,7 +170,7 @@ function GraphicDesign(){
                                         <div className="reasons-tab-content">
                                             <img src={corporateIdentity} alt="Corporate Identity" className="reasons-content-icon" />
                                             <h3 className="heading3">Brand and Corporate Identity</h3>
-                                            <p className="paragraph">Through our graphic designing services, we can create a unique identity of your brand through specialized individual product elements and its <a href="https://www.geektonight.com/what-is-packaging/">packaging</a>.</p>
+                                            <p className="paragraph">Through our graphic designing services, we can create a unique identity of your brand through specialized individual product elements and its <a href="https://www.geektonight.com/what-is-packaging/" target="_blank">packaging</a>.</p>
                                         </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="seventh">

@@ -221,7 +221,7 @@ function PdfToHtml(){
                                 <div className="card">
                                     <div className="card-body">
                                         <h4 className="card-title">Monthly or Annual Subscription</h4>
-                                        <p className="card-text">IosAndWeb, best agency for pdf to html provides a content development service that may be adapted to meet the requirements of any individual client. There is a possibility that you could qualify for a <a href="https://en.wikipedia.org/wiki/Discounting"><b>discount</b></a> on the price of your orders if they are more substantial, more complicated, or more frequent.</p>
+                                        <p className="card-text">IosAndWeb, best agency for pdf to html provides a content development service that may be adapted to meet the requirements of any individual client. There is a possibility that you could qualify for a <a href="https://en.wikipedia.org/wiki/Discounting" target="_blank"><b>discount</b></a> on the price of your orders if they are more substantial, more complicated, or more frequent.</p>
                                     </div>
                                 </div>
                             </div>
