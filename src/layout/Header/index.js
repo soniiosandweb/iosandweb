@@ -24,6 +24,9 @@ import dataScience from '../../images/home/Data-Science-Analytics.svg';
 import blockChain from '../../images/home/Blockchain-Services.svg';
 import ideationDesign from '../../images/home/ideation-design.svg';
 
+// industries menu
+import eCommerceIcon from '../../images/eCommerce.png';
+
 // about menu
 import aboutIcon from '../../images/about-us.png';
 import teamIcon from '../../images/our-team-icon.png';
@@ -50,6 +53,7 @@ function Header() {
   const [headerbg, setHeaderbg] = useState("white text-black");
   const [show, setShow] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
+  const [showIndustry, setShowIndustry] = useState(false);
 
   const listenScrollEvent = () => {
     if (locationValue[1] === "") {
@@ -156,7 +160,7 @@ function Header() {
                         </Dropdown.Item>
                       </li>
                       <li className="submenu-item">
-                        <Dropdown.Item href='https://www.blockchain77.com/services/' target="_blank">
+                        <Dropdown.Item href='https://www.blockchain77.com/services/' target="_blank" rel="noreferrer">
                           <div className="bg-blue submenu-img">
                             <img src={blockChain} className="service-img" alt="Blockchain Services" /> 
                           </div>
@@ -248,6 +252,31 @@ function Header() {
             <Dropdown 
               className="less-dropdown"
               as={NavItem} 
+              show={showIndustry}
+              onMouseEnter={() => setShowIndustry(true)}
+              onMouseLeave={() => setShowIndustry(false)}
+              onToggle={() => setShowIndustry(!showIndustry)}
+            >
+              <Dropdown.Toggle as={NavLink}>Industries</Dropdown.Toggle>
+              <Dropdown.Menu>
+                
+                <ul className="header-submenu-items">
+                  <li className="submenu-item">
+                    <Dropdown.Item href='/'>
+                      <div className="bg-pink submenu-img">
+                        <img src={eCommerceIcon} className="service-img" alt="eCommerce" /> 
+                      </div>
+                      eCommerce
+                      <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
+                    </Dropdown.Item>
+                  </li>
+                </ul>
+              </Dropdown.Menu>
+            </Dropdown>
+
+            <Dropdown 
+              className="less-dropdown"
+              as={NavItem} 
               show={showAbout}
               onMouseEnter={() => setShowAbout(true)}
               onMouseLeave={() => setShowAbout(false)}
@@ -255,45 +284,44 @@ function Header() {
             >
               <Dropdown.Toggle as={NavLink}>Company</Dropdown.Toggle>
               <Dropdown.Menu>
-                
-                    <ul className="header-submenu-items">
-                      <li className="submenu-item">
-                        <Dropdown.Item href='/about-us'>
-                          <div className="bg-pink submenu-img">
-                            <img src={aboutIcon} className="service-img" alt="About Us" /> 
-                          </div>
-                          About Us
-                          <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
-                        </Dropdown.Item>
-                      </li>
-                      <li className="submenu-item">
-                        <Dropdown.Item href='/iaw-team'>
-                          <div className="bg-green submenu-img">
-                            <img src={teamIcon} className="service-img" alt="IAW Team" /> 
-                          </div>
-                          IAW Team
-                          <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
-                        </Dropdown.Item>
-                      </li>
-                      <li className="submenu-item">
-                        <Dropdown.Item href='/careers'>
-                          <div className="bg-orange submenu-img">
-                            <img src={careerIcon} className="service-img" alt="Career" /> 
-                          </div>
-                          Career
-                          <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
-                        </Dropdown.Item>
-                      </li>
-                      <li className="submenu-item">
-                        <Dropdown.Item href='/how-we-work'>
-                          <div className="bg-blue submenu-img">
-                            <img src={howWorkIcon} className="service-img" alt="How we work" /> 
-                          </div>
-                          How we work
-                          <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
-                        </Dropdown.Item>
-                      </li>
-                    </ul>
+                <ul className="header-submenu-items">
+                  <li className="submenu-item">
+                    <Dropdown.Item href='/about-us'>
+                      <div className="bg-pink submenu-img">
+                        <img src={aboutIcon} className="service-img" alt="About Us" /> 
+                      </div>
+                      About Us
+                      <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
+                    </Dropdown.Item>
+                  </li>
+                  <li className="submenu-item">
+                    <Dropdown.Item href='/iaw-team'>
+                      <div className="bg-green submenu-img">
+                        <img src={teamIcon} className="service-img" alt="IAW Team" /> 
+                      </div>
+                      IAW Team
+                      <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
+                    </Dropdown.Item>
+                  </li>
+                  <li className="submenu-item">
+                    <Dropdown.Item href='/careers'>
+                      <div className="bg-orange submenu-img">
+                        <img src={careerIcon} className="service-img" alt="Career" /> 
+                      </div>
+                      Career
+                      <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
+                    </Dropdown.Item>
+                  </li>
+                  <li className="submenu-item">
+                    <Dropdown.Item href='/how-we-work'>
+                      <div className="bg-blue submenu-img">
+                        <img src={howWorkIcon} className="service-img" alt="How we work" /> 
+                      </div>
+                      How We Work
+                      <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
+                    </Dropdown.Item>
+                  </li>
+                </ul>
               </Dropdown.Menu>
             </Dropdown>
 

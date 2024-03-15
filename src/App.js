@@ -32,6 +32,8 @@ import EnglishCopywritingProofreading from './pages/Services/EnglishCopywritingP
 import B2BLeadGenerationCampaign from './pages/Services/B2BLeadGenerationCampaign';
 import Career from './pages/Career';
 
+import Ecommerce from './pages/Industries/eCommerce';
+
 function App() {
   return (
     <BrowserRouter>
@@ -69,6 +71,10 @@ function App() {
           <Route path='/seo-page-speed-optimization-services' element={<SEOPageSpeedOptimization />} />
           <Route path='/english-copywriting-and-proofreading-services' element={<EnglishCopywritingProofreading />} />
           <Route path='/b2b-lead-generation-campaign-services' element={<B2BLeadGenerationCampaign />} />
+
+          {/* Industries */}
+          <Route path='/ecommerce-app-development' element={<Ecommerce />} />
+
         </Route>
       </Routes>
     </BrowserRouter>

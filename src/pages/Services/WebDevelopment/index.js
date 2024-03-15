@@ -173,7 +173,7 @@ function WebDevelopment(){
                             <div className="specification-block">
                                 <FontAwesomeIcon icon={faGlobeAsia}></FontAwesomeIcon>
                                 <h4 className="heading4">Open Source Platform Development</h4>
-                                <p className="paragraph">We have great expertise in <a href="https://www.techtarget.com/searchcontentmanagement/definition/content-management#:~:text=Content%20management%20(CM)%20is%20the,to%20permanent%20storage%20or%20deletion." target="_blank">content management</a> services so that we provide some out of the range of custom solutions to our esteemed clients. We include WordPress, magento web development, Joomla, Drupal and many more in our open-source platform development services.</p>
+                                <p className="paragraph">We have great expertise in <a href="https://www.techtarget.com/searchcontentmanagement/definition/content-management#:~:text=Content%20management%20(CM)%20is%20the,to%20permanent%20storage%20or%20deletion." target="_blank" rel="noreferrer">content management</a> services so that we provide some out of the range of custom solutions to our esteemed clients. We include WordPress, magento web development, Joomla, Drupal and many more in our open-source platform development services.</p>
                             </div>
                         </Col>
                     </Row>

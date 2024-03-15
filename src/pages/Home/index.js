@@ -130,7 +130,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="https://www.blockchain77.com/services/" target="_blank" className="bg-red">
+                                    <a href="https://www.blockchain77.com/services/" target="_blank" rel="noreferrer" className="bg-red">
                                         <div className="service-icon">
                                             <img src={aiml} className="service-img" alt="Development of POC & ICO" />
                                         </div>
@@ -155,7 +155,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="service-card">
-                                    <a href="https://www.blockchain77.com/services/" target="_blank" className="bg-pink">
+                                    <a href="https://www.blockchain77.com/services/" target="_blank" rel="noreferrer" className="bg-pink">
                                         <div className="service-icon">
                                             <img src={blockChain} className="service-img" alt="Blockchain Services" />
                                         </div>

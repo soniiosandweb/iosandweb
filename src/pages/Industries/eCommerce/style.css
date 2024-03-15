@@ -1,0 +1,10 @@
+/* Industries header */
+.industries-header h1 {
+    margin: auto;
+    text-shadow: unset;
+    font-weight: 600;
+}
+.industries-banner-image img {
+    width: 100%;
+    border-radius: 30px;
+}
