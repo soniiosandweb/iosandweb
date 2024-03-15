@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import './style.css';
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import AnalogClock from "analog-clock-react";
 
 import logoWhite from "../../images/IAW-logo-white.png";
 import india from '../../images/hq-india.svg';
@@ -11,6 +13,93 @@ import hqUs from '../../images/hq-us.svg';
 import { faInstagram, faLinkedin, faSquareFacebook, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 function Footer(){
+
+    // India Time
+    let options = {
+        width: "100px",
+        heigth: "100px",
+        centerColor: "#000",
+        baseColor : "#0000000a",
+        border: true,
+        handColors: {
+          second: "#ff0000",
+          minute: "#000",
+          hour: "#000",
+        },
+    };
+
+    // UK Time
+    const ukTime = new Date().toLocaleString("en-US", {
+        timeZone: "Europe/London",
+    });
+    const ukDate = new Date(ukTime);
+    const [ukHours, setukHours] = useState(ukDate.getHours());
+    const [ukMin, setukMin] = useState(ukDate.getMinutes());
+    const [ukSec, setukSec] = useState(ukDate.getSeconds());
+    
+    setInterval(() => {
+        const ukTime = new Date().toLocaleString("en-US", {
+          timeZone: "Europe/London",
+        });
+        const ukDate = new Date(ukTime);
+        setukHours(ukDate.getHours());
+        setukMin(ukDate.getMinutes());
+        setukSec(ukDate.getSeconds());
+    }, 1000);
+    
+    let ukOptions = {
+        width: "100px",
+        heigth: "100px",
+        centerColor: "#000",
+        baseColor : "#0000000a",
+        border: true,
+        useCustomTime: true,
+        handColors: {
+          second: "#ff0000",
+          minute: "#000",
+          hour: "#000",
+        },
+        seconds: ukSec,
+        minutes: ukMin,
+        hours: ukHours,
+    };
+
+    // US Time
+    const usTime = new Date().toLocaleString("en-US", {
+        timeZone: "America/New_York",
+    });
+    const usDate = new Date(usTime);
+    const [usHours, setusHours] = useState(usDate.getHours());
+    const [usMin, setusMin] = useState(usDate.getMinutes());
+    const [usSec, setusSec] = useState(usDate.getSeconds());
+    
+    setInterval(() => {
+        const usTime = new Date().toLocaleString("en-US", {
+          timeZone: "America/New_York",
+        });
+        const usDate = new Date(usTime);
+        setusHours(usDate.getHours());
+        setusMin(usDate.getMinutes());
+        setusSec(usDate.getSeconds());
+    }, 1000);
+    
+    let usOptions = {
+        width: "100px",
+        heigth: "100px",
+        centerColor: "#000",
+        baseColor : "#0000000a",
+        border: true,
+        useCustomTime: true,
+        handColors: {
+          second: "#ff0000",
+          minute: "#000",
+          hour: "#000",
+        },
+        seconds: usSec,
+        minutes: usMin,
+        hours: usHours,
+    };
+
     return(
         <>
             <div className="footer-top section-padding text-white">
@@ -21,6 +110,9 @@ function Footer(){
                                 <img src={india} alt="India" className="location-image" />
                                 <div className="location-heading">HQ India</div>
                                 <p className="location-text">SCO 30, First Floor, <br/>Near Devaji Plaza, VIP Road, <br/>Zirakpur, PB (India)</p>
+                                <div className="footer-clock">
+                                    <AnalogClock {...options} />
+                                </div>
                             </div>
                         </Col>
                         <Col md={4}>
@@ -28,6 +120,9 @@ function Footer(){
                                 <img src={hqUk} alt="United Kingdom" className="location-image" />
                                 <div className="location-heading">United Kingdom</div>
                                 <p className="location-text">Sheffield City Centre, <br/>Sheffield, S1 1AA, <br/>United Kingdom</p>
+                                <div className="footer-clock">
+                                    <AnalogClock {...ukOptions} />
+                                </div>
                             </div>
                         </Col>
                         <Col md={4}>
@@ -35,6 +130,9 @@ function Footer(){
                                 <img src={hqUs} alt="United States" className="location-image" />
                                 <div className="location-heading">United States</div>
                                 <p className="location-text">Suite #304, 11200 Manchaca, <br/>Austin, Texas, <br/>United States, 78748</p>
+                                <div className="footer-clock">
+                                    <AnalogClock {...usOptions} />
+                                </div>
                             </div>
                         </Col>
                     </Row>

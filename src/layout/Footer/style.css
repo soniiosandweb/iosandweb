@@ -36,7 +36,19 @@
 .location-div:hover {
     opacity: 1;
 }
-  
+.footer-clock .sc-bdVaJa {
+    margin: auto;
+}
+.footer-clock .goxvDC{
+    background: url('../../images/footer-clock.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+    .location-div{
+        margin-bottom: 1rem;
+    }
+}
 /* footer bottom */
 .footer-section{
     background: #1d1d25;

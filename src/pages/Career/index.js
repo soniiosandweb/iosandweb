@@ -178,70 +178,70 @@ function Career(){
                                 <li className="job-positions-item">
                                     <FontAwesomeIcon icon={faCode} />
                                     <div className="job-position-content">
-                                        <p className="paragraph"><b>PHP Developer (WordPress)</b></p>
+                                        <p className="paragraph">PHP Developer (WordPress)</p>
                                         <p className="paragraph">2 to 6 years</p>
                                     </div>
                                 </li>
                                 <li className="job-positions-item">
                                     <FontAwesomeIcon icon={faCogs} />
                                     <div className="job-position-content">
-                                        <p className="paragraph"><b>Quality Analyst</b></p>
+                                        <p className="paragraph">Quality Analyst</p>
                                         <p className="paragraph">1 to 3 years</p>
                                     </div>
                                 </li>
                                 <li className="job-positions-item">
                                     <FontAwesomeIcon icon={faPaintBrush} />
                                     <div className="job-position-content">
-                                        <p className="paragraph"><b>UI/UX Designer</b></p>
+                                        <p className="paragraph">UI/UX Designer</p>
                                         <p className="paragraph">2 to 5 years</p>
                                     </div>
                                 </li>
                                 <li className="job-positions-item">
                                     <FontAwesomeIcon icon={faShoppingCart} />
                                     <div className="job-position-content">
-                                        <p className="paragraph"><b>Magento Developer</b></p>
+                                        <p className="paragraph">Magento Developer</p>
                                         <p className="paragraph">1 to 5 years</p>
                                     </div>
                                 </li>
                                 <li className="job-positions-item">
                                     <FontAwesomeIcon icon={faBarChart} />
                                     <div className="job-position-content">
-                                        <p className="paragraph"><b>Business Analyst</b></p>
+                                        <p className="paragraph">Business Analyst</p>
                                         <p className="paragraph">1 to 3 years</p>
                                     </div>
                                 </li>
                                 <li className="job-positions-item">
                                     <FontAwesomeIcon icon={faUserCog} />
                                     <div className="job-position-content">
-                                        <p className="paragraph"><b>BDM</b></p>
+                                        <p className="paragraph">BDM</p>
                                         <p className="paragraph">5 to 8 years</p>
                                     </div>
                                 </li>
                                 <li className="job-positions-item">
                                     <FontAwesomeIcon icon={faUsers} />
                                     <div className="job-position-content">
-                                        <p className="paragraph"><b>BDE</b></p>
+                                        <p className="paragraph">BDE</p>
                                         <p className="paragraph">6 months to 2 years</p>
                                     </div>
                                 </li>
                                 <li className="job-positions-item">
                                     <FontAwesomeIcon icon={faDesktop} />
                                     <div className="job-position-content">
-                                        <p className="paragraph"><b>Frontend Developer</b></p>
+                                        <p className="paragraph">Frontend Developer</p>
                                         <p className="paragraph">3 to 5 years</p>
                                     </div>
                                 </li>
                                 <li className="job-positions-item">
                                     <FontAwesomeIcon icon={faReact} />
                                     <div className="job-position-content">
-                                        <p className="paragraph"><b>MEAN Stack Devloper</b></p>
+                                        <p className="paragraph">MEAN Stack Devloper</p>
                                         <p className="paragraph">3 to 5 years</p>
                                     </div>
                                 </li>
                                 <li className="job-positions-item">
                                     <FontAwesomeIcon icon={faFileAlt} />
                                     <div className="job-position-content">
-                                        <p className="paragraph"><b>Content Writer</b></p>
+                                        <p className="paragraph">Content Writer</p>
                                         <p className="paragraph">2 to 5 years</p>
                                     </div>
                                 </li>
