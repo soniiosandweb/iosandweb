@@ -7,4 +7,85 @@
 .industries-banner-image img {
     width: 100%;
     border-radius: 30px;
+    box-shadow: 0px 4px 15px -6px rgb(0 0 0/55%);
+}
+/* industries reasons tab */
+.industries-reasons-tab .reasons-tab .nav-link{
+    font-size: 1.2rem;
+}
+/* industries numbers sections */
+.industries-numbers {
+    background-color: #f1f2fd;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.industries-numbers-left {
+    flex: 1 1 60%;
+}
+.industries-numbers-right {
+    flex: 1 1 40%;
+}
+.industries-numbers-left .heading2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+.industries-numbers-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: max-content;
+    margin-left: auto;
+}
+.industries-numbers-list-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    gap: 20px;
+    padding: 10px 20px;
+}
+.industries-numbers-list-item:last-child{
+    border-bottom: 0;
+}
+.industries-numbers-list-item .industries-numbers-span {
+    font-size: 3rem;
+    flex: 1;
+}
+@media (max-width:991px) {
+    .industries-numbers-left {
+        flex: 1 1 100%;
+        margin-bottom: 30px;
+    }
+    .industries-numbers-right {
+        flex: 1 1 100%;
+    }
+    .industries-numbers{
+        flex-direction: column;
+    }
+    .industries-numbers-list{
+        margin: auto;
+    }
+}
+/* Industries Capabilities section */
+.capabilities-tab-div {
+    display: flex;
+    margin-top: 40px;
+    gap: 1.5rem;
+}
+.capabilities-tab-left {
+    flex: 1 1 30%;
+}
+.capabilities-tab-right {
+    flex: 1 1 70%;
+}
+.capabilities-tab-div .nav-item .nav-link {
+    background: transparent;
+    color: #b1b1b1;
+    padding: 15px 0;
+}
+.capabilities-tab-div .nav-item .nav-link.active{
+    color: #fff;
+    font-size: 1.2rem;
 }

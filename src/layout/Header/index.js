@@ -262,7 +262,7 @@ function Header() {
                 
                 <ul className="header-submenu-items">
                   <li className="submenu-item">
-                    <Dropdown.Item href='/'>
+                    <Dropdown.Item href='/ecommerce-app-development'>
                       <div className="bg-pink submenu-img">
                         <img src={eCommerceIcon} className="service-img" alt="eCommerce" /> 
                       </div>
