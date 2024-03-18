@@ -186,6 +186,9 @@
     border-radius: 15px;
     background-color: #f1f2fd;
 }
+.industries_process_block .paragraph {
+    margin-bottom: 0;
+}
 .industries_process_block .process-icon {
     border-radius: 10px;
     color: #fff;
