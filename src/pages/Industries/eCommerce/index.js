@@ -325,7 +325,7 @@ function Ecommerce(){
             </div>
 
             {/* Advanced technologies section */}
-            <div className="advanced-technologies section-padding no-top-padding">
+            <div className="advanced-technologies section-padding less-top-padding">
                 <Container>
                     <Row>
                         <Col md={6} lg={7}>

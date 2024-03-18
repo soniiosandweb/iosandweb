@@ -52,6 +52,9 @@ h1, h2{
 .no-top-padding{
   padding-top: 0;
 }
+.less-top-padding{
+  padding-top: 3rem;
+}
 .no-bottom-padding{
   padding-bottom: 0;
 }
@@ -200,6 +203,9 @@ h1, h2{
   }
   .no-top-padding{
     padding-top: 0;
+  }
+  .less-top-padding{
+    padding-top: 3rem;
   }
   .no-bottom-padding{
     padding-bottom: 0;
