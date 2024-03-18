@@ -2,11 +2,12 @@ import React from "react";
 import './style.css';
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import SEO from "../../../components/SEO";
+import OwlCarousel from "react-owl-carousel";
 
 import eCommerceBanner from '../../../images/industries/eCommerce/ecommerce-banner.webp';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleDot, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faCircleDot, faChevronRight, faPencilRuler, faListSquares, faCode, faRocket } from "@fortawesome/free-solid-svg-icons";
 
 // reasons to choose images
 import microservices from '../../../images/industries/eCommerce/microservices.png';
@@ -16,7 +17,36 @@ import pwaEcommerce from '../../../images/industries/eCommerce/pwa-ecommerce.png
 import marketplaces from '../../../images/industries/eCommerce/marketplace.png';
 import portals from '../../../images/industries/eCommerce/portals.png';
 
+// capabilities section images
+import awardTeam from '../../../images/industries/eCommerce/award-team.webp';
+import developmentPractices from '../../../images/industries/eCommerce/development-practice.webp';
+import paramount from '../../../images/industries/eCommerce/paramount.webp';
+
+// Advanced technologies images
+import aiMLIcon from '../../../images/industries/eCommerce/ai-ml.png';
+import blockchainIcon from '../../../images/industries/eCommerce/blockchain.png';
+import metaverse from '../../../images/industries/eCommerce/metaverse.png';
+import dataAnalytics from '../../../images/industries/eCommerce/data-analytics.png';
+import cloudComputing from '../../../images/industries/eCommerce/cloud-computing.png';
+
 function Ecommerce(){
+
+    const changeNumber=(event) =>{
+        if (event.item) {
+            var count     = event.item.count;
+            var item      = event.item.index + 1;
+        
+            if(item > count) {
+                item = item - count
+            }
+            
+            document.getElementById('slide_number').innerHTML = item;
+            document.getElementById('slide_total_number').innerHTML = count;
+           
+        }
+        
+    }
+    
     return (
         <>
             <SEO
@@ -191,16 +221,25 @@ function Ecommerce(){
                                         <Tab.Content>
                                             <Tab.Pane eventKey="cpfirst">
                                                 <div className="capabilities-tab-content">
+                                                    <div className="capabilities-content-img">
+                                                        <img src={awardTeam} className="img-responsive" alt="Award-winning team" />
+                                                    </div>
                                                     <p className="paragraph">As a premium eCommerce mobile app development company, our expertise is reflected in the digital products and apps developed by our eCommerce app developers that have bagged prestigious awards year-on-year.</p>
                                                 </div>
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="cpsecond">
                                                 <div className="capabilities-tab-content">
+                                                    <div className="capabilities-content-img">
+                                                        <img src={developmentPractices} className="img-responsive" alt="Best development practices" />
+                                                    </div>
                                                     <p className="paragraph">Using DevOps and Agile methodologies, we quickly and efficiently cater to our client's needs, closing gaps and delivering seamless shopping experiences.</p>
                                                 </div>
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="cpthird">
                                                 <div className="capabilities-tab-content">
+                                                    <div className="capabilities-content-img">
+                                                        <img src={paramount} className="img-responsive" alt="Transparency is paramount" />
+                                                    </div>
                                                     <p className="paragraph">Being the best-in-class eCommerce app development company, we believe that an open communication channel translates into more productive and efficient eCommerce app development services. Therefore, we keep our clients updated about the development at all stages.</p>
                                                 </div>
                                             </Tab.Pane>
@@ -209,6 +248,156 @@ function Ecommerce(){
                                 </Tab.Container>
                             </div>
                             
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* Industries process slider */}
+            <div className="industries-process-slider section-padding">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2 text-center">A time-tested development process our services include</h2>
+                            <div className="heading5 text-center">We combine our technical expertise with our client's innovative ideas to deliver the best possible mobile eCommerce app development solutions.</div>
+
+                            <div className="industries-slider-block">
+
+                                <div className="industries-slider-numbers">
+                                    <span className="slide_number" id="slide_number"></span>
+                                    <span className="slide_dash"></span>
+                                    <span className="slide_total_number" id="slide_total_number"></span>
+                                </div>
+
+                                <OwlCarousel className="owl-theme industries-process" loop autoplay={true} autoplayTimeout={4000} autoplayHoverPause={true} margin={15} nav={true} dots={false} items={4} onInitialized={changeNumber} onTranslated={changeNumber} responsive={
+                                    {
+                                        '0': {
+                                            items: 1,
+                                        },
+                                        '768': {
+                                            items: 2,
+                                        },
+                                        '992': {
+                                            items: 2.5,
+                                        },
+                                        '1200': {
+                                            items: 3.5,
+                                        }
+                                    }
+                                }>
+                                    <div className="item">
+                                        <div className="industries_process_block">
+                                            <span className="process-icon"><FontAwesomeIcon icon={faListSquares} /></span>
+                                            <h4 className="heading4">Discovery</h4>
+                                            <p className="paragraph">Being a top-rated eCommerce application development company, our development process begins with discovering the market fit of your eCommerce app idea. We thoughtfully study the landscape for similar offerings and develop the best technology to satisfy your specific requirements.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="industries_process_block">
+                                            <span className="process-icon"><FontAwesomeIcon icon={faPencilRuler} /></span>
+                                            <h4 className="heading4">Ideation and Consulting</h4>
+                                            <p className="paragraph">The next step in our online shopping app development process has us ideating and suggesting the possible solutions through expert IT consulting. In this step, we also zero in on the best possible UX/UI elements to cater to your audience and design thoughtful user journeys that increase conversions.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="industries_process_block">
+                                            <span className="process-icon"><FontAwesomeIcon icon={faCode} /></span>
+                                            <h4 className="heading4">Development and testing</h4>
+                                            <p className="paragraph">In this stage of the development process we develop the apps, create the necessary components and APIs and seamlessly connect the parts together that come alive as a beautiful and engaging eCommerce app.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="industries_process_block">
+                                            <span className="process-icon"><FontAwesomeIcon icon={faRocket} /></span>
+                                            <h4 className="heading4">Deployment and maintenance</h4>
+                                            <p className="paragraph">As part of our eCommerce software development services, we deploy the app or software on its intended platform and based on the feedback from focus groups and general users alike, we update and maintain the app for the best results.</p>
+                                        </div>
+                                    </div>
+
+                                </OwlCarousel>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* Advanced technologies section */}
+            <div className="advanced-technologies section-padding">
+                <Container>
+                    <Row>
+                        <Col md={6} lg={7}>
+                            <div className="sticky-div">
+                                <h2 className="heading2">Advanced technologies we employ in our eCommerce app development services</h2>
+                                <div className="heading5">Being a top eCommerce application development company, we use advanced technologies to unlock potential revenue streams for our clients while maximizing the business prospect of their app or product. These advanced technologies have propelled us to become the preferred custom eCommerce software development company.</div>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={5}>
+                            <div className="advanced-technologies-blocks">
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={aiMLIcon} className="img-responsive" alt="AI/ML" />
+                                        </span>
+                                        <h4 className="heading4">AI/ML</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">Being the foremost eCommerce mobile app development company, we build advanced AI/ML algorithms that automate processes and offer analytics, insights, and visibility into customer behavior from a single dashboard. Using machine learning and computer vision, we develop automated assembly lines and sorting algorithms building the eCommerce platform of the future.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={blockchainIcon} className="img-responsive" alt="Blockchain" />
+                                        </span>
+                                        <h4 className="heading4">Blockchain</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">Having privacy and security built into the framework, blockchain offers capabilities to build systems that are inherently secure, public, and decentralized offering the control back in the hands of the users.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={metaverse} className="img-responsive" alt="Metaverse" />
+                                        </span>
+                                        <h4 className="heading4">Metaverse</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">As a top-rated eCommerce mobile app development company we develop immersive metaverse 3d spaces as part of our services and elevate the experience for your users manifold.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={dataAnalytics} className="img-responsive" alt="Data analytics" />
+                                        </span>
+                                        <h4 className="heading4">Data analytics</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">We provide advanced data analytics services offering immense value to your eCommerce business. We develop prediction engines based on customers' shopping data and other features enabled by advanced analytics.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={cloudComputing} className="img-responsive" alt="Cloud computing" />
+                                        </span>
+                                        <h4 className="heading4">Cloud computing</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">Since the days of on-prem servers are over, we as one of the leading eCommerce app development companies, we offer top-of-the-line cloud services including cloud migration, optimization, and cloud-managed services to offer immense value to your data storage requirements.</p>
+                                    </div>
+                                </div>
+
+                            </div>
                         </Col>
                     </Row>
                 </Container>
