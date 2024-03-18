@@ -155,7 +155,7 @@ function Ecommerce(){
             </div>
 
             {/* Industries Numbers section */}
-            <div className="industries-numbers-section section-padding no-padding">
+            <div className="industries-numbers-section section-padding">
                 <Container>
                     <Row>
                         <Col>
@@ -325,7 +325,7 @@ function Ecommerce(){
             </div>
 
             {/* Advanced technologies section */}
-            <div className="advanced-technologies section-padding">
+            <div className="advanced-technologies section-padding no-top-padding">
                 <Container>
                     <Row>
                         <Col md={6} lg={7}>

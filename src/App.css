@@ -47,7 +47,13 @@ h1, h2{
   padding: 6rem 0;
 }
 .no-padding{
+  padding: 0;
+}
+.no-top-padding{
   padding-top: 0;
+}
+.no-bottom-padding{
+  padding-bottom: 0;
 }
 .banner-padding {
   padding: 100px 0;
@@ -188,6 +194,15 @@ h1, h2{
   }
   .section-padding {
     padding: 4rem 0;
+  }
+  .no-padding{
+    padding: 0;
+  }
+  .no-top-padding{
+    padding-top: 0;
+  }
+  .no-bottom-padding{
+    padding-bottom: 0;
   }
 }
 
