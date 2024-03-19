@@ -30,14 +30,14 @@ import blockChain from '../../images/home/Blockchain-Services.svg';
 import ideationDesign from '../../images/home/ideation-design.svg';
 
 // industries images
-import healthCare from '../../images/home/healthcare-indus.svg';
-import finance from '../../images/home/finance-indus.svg';
-import restaurant from '../../images/home/restaurant-indus.svg';
+import healthCare from '../../images/home/health-care.png';
+import finance from '../../images/home/finance.png';
+import restaurant from '../../images/home/restaurant.png';
 import ecommerce from '../../images/home/ecommerce-indus.svg';
-import ev from '../../images/home/ev-indus.svg';
-import saas from '../../images/home/saas-indus.svg';
-import travel from '../../images/home/travel-indus.svg';
-import entertainment from '../../images/home/entertainment-indus.svg';
+import realEstate from '../../images/home/real-estate.png';
+import banking from '../../images/home/banking.png';
+import travel from '../../images/home/travel.png';
+import entertainment from '../../images/home/entertainment.png';
 import onDemand from '../../images/home/on-demand-indus.svg';
 import socialMedia from '../../images/home/social-networking-indus.svg';
 import logistics from '../../images/home/logistics-indus.svg';
@@ -189,76 +189,100 @@ function Home() {
                             </div>
                             <div className="grid_colm_panel">
                                 <div className="grid_colm_item">
-                                    <figure>
-                                        <img src={healthCare} alt="Healthcare" />
-                                    </figure>
-                                    <div className="grid_colm_head">Healthcare</div>
+                                    <a className="grid_colm_item_link" href="/">
+                                        <figure>
+                                            <img src={healthCare} alt="Healthcare" />
+                                        </figure>
+                                        <div className="grid_colm_head">Healthcare</div>  
+                                    </a>
                                 </div>
                                 <div className="grid_colm_item">
-                                    <figure>
-                                        <img src={finance} alt="Finance" />
-                                    </figure>
-                                    <div className="grid_colm_head">Finance</div>
+                                    <a className="grid_colm_item_link" href="/">
+                                        <figure>
+                                            <img src={finance} alt="Finance" />
+                                        </figure>
+                                        <div className="grid_colm_head">Finance</div>
+                                    </a>
                                 </div>
                                 <div className="grid_colm_item">
-                                    <figure>
-                                        <img src={restaurant} alt="Restaurant" />
-                                    </figure>
-                                    <div className="grid_colm_head">Restaurant</div>
+                                    <a className="grid_colm_item_link" href="/">
+                                        <figure>
+                                            <img src={restaurant} alt="Restaurant" />
+                                        </figure>
+                                        <div className="grid_colm_head">Restaurant</div>
+                                    </a>
                                 </div>
                                 <div className="grid_colm_item">
-                                    <figure>
-                                        <img src={ecommerce} alt="eCommerce" />
-                                    </figure>
-                                    <div className="grid_colm_head">eCommerce</div>
+                                    <a className="grid_colm_item_link" href="/ecommerce-app-development">
+                                        <figure>
+                                            <img src={ecommerce} alt="eCommerce" />
+                                        </figure>
+                                        <div className="grid_colm_head">eCommerce</div>
+                                    </a>
                                 </div>
                                 <div className="grid_colm_item">
-                                    <figure>
-                                        <img src={ev} alt="EV" />
-                                    </figure>
-                                    <div className="grid_colm_head">EV</div>
+                                    <a className="grid_colm_item_link" href="/">
+                                        <figure>
+                                            <img src={realEstate} alt="Real Estate" />
+                                        </figure>
+                                        <div className="grid_colm_head">Real Estate</div>
+                                    </a>
                                 </div>
                                 <div className="grid_colm_item">
-                                    <figure>
-                                        <img src={saas} alt="SaaS" />
-                                    </figure>
-                                    <div className="grid_colm_head">SaaS</div>
+                                    <a className="grid_colm_item_link" href="/">
+                                        <figure>
+                                            <img src={banking} alt="Banking" />
+                                        </figure>
+                                        <div className="grid_colm_head">Banking</div>
+                                    </a>
                                 </div>
                                 <div className="grid_colm_item">
-                                    <figure>
-                                        <img src={travel} alt="Travel" />
-                                    </figure>
-                                    <div className="grid_colm_head">Travel</div>
+                                    <a className="grid_colm_item_link" href="/">
+                                        <figure>
+                                            <img src={travel} alt="Travel" />
+                                        </figure>
+                                        <div className="grid_colm_head">Travel</div>
+                                    </a>
                                 </div>
                                 <div className="grid_colm_item">
-                                    <figure>
-                                        <img src={entertainment} alt="Entertainment" />
-                                    </figure>
-                                    <div className="grid_colm_head">Entertainment</div>
+                                    <a className="grid_colm_item_link" href="/">
+                                        <figure>
+                                            <img src={entertainment} alt="Entertainment" />
+                                        </figure>
+                                        <div className="grid_colm_head">Entertainment</div>
+                                    </a>
                                 </div>
                                 <div className="grid_colm_item border-bottom-none">
-                                    <figure>
-                                        <img src={onDemand} alt="On-Demand" />
-                                    </figure>
-                                    <div className="grid_colm_head">On-Demand</div>
+                                    <a className="grid_colm_item_link" href="/">
+                                        <figure>
+                                            <img src={onDemand} alt="On-Demand" />
+                                        </figure>
+                                        <div className="grid_colm_head">On-Demand</div>
+                                    </a>
                                 </div>
                                 <div className="grid_colm_item border-bottom-none">
-                                    <figure>
-                                        <img src={socialMedia} alt="Social Media" />
-                                    </figure>
-                                    <div className="grid_colm_head">Social Media</div>
+                                    <a className="grid_colm_item_link" href="/">
+                                        <figure>
+                                            <img src={socialMedia} alt="Social Media" />
+                                        </figure>
+                                        <div className="grid_colm_head">Social Media</div>
+                                    </a>
                                 </div>
                                 <div className="grid_colm_item border-bottom-none">
-                                    <figure>
-                                        <img src={logistics} alt="Logistics" />
-                                    </figure>
-                                    <div className="grid_colm_head">Logistics</div>
+                                    <a className="grid_colm_item_link" href="/">
+                                        <figure>
+                                            <img src={logistics} alt="Logistics" />
+                                        </figure>
+                                        <div className="grid_colm_head">Logistics</div>
+                                    </a>
                                 </div>
                                 <div className="grid_colm_item border-bottom-none">
-                                    <figure>
-                                        <img src={edtech} alt="Edtech" />
-                                    </figure>
-                                    <div className="grid_colm_head">Edtech</div>
+                                    <a className="grid_colm_item_link" href="/">
+                                        <figure>
+                                            <img src={edtech} alt="Education" />
+                                        </figure>
+                                        <div className="grid_colm_head">Education</div>
+                                    </a>
                                 </div>
                             </div>
                         </Col>

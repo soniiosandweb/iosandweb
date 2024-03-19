@@ -196,11 +196,15 @@
     text-align: center;
     border-right: 1px solid #3c3c3c;
     border-bottom: 1px solid #3c3c3c;
-    padding: 40px 50px;
     cursor: pointer;
 }
 .grid_colm_panel .grid_colm_item:nth-child(4n) {
     border-right: none;
+}
+.grid_colm_item .grid_colm_item_link{
+    padding: 40px 50px;
+    text-decoration: none;
+    display: block;
 }
 .border-bottom-none{
     border-bottom: none;
@@ -229,7 +233,7 @@
     transform: scale(1.1);
 }
 @media (max-width: 991px) {
-    .grid_colm_item {
+    .grid_colm_item .grid_colm_item_link {
       padding: 30px 20px;
     }
 }
