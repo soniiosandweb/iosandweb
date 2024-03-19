@@ -257,6 +257,11 @@
         height: 30px;
     }
 }
+@media (max-width: 767px) {
+    .industries_process_block{
+        padding: 30px 20px;
+    }
+}
 /* advanced technologies section */
 .sticky-div {
     position: sticky;
@@ -299,5 +304,63 @@
     }
     .advanced-technologies-block {
         padding-bottom: 20px;
+    }
+}
+/* Tools and languages section */
+.tools-languages-tab-div {
+    margin-top: 4rem;
+}
+.tools-languages-tab {
+    gap: 20px;
+}
+.tools-languages-tab-div .nav-item .nav-link {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 15px 30px;
+}
+.tools-languages-tab-div .nav-item .nav-link.active,
+.tools-languages-tab-div .nav-item .nav-link:hover {
+    background: #1050bc;
+    border-color: #1050bc;
+}
+.tools-languages-tab-content {
+    padding-top: 40px;
+    display: flex;
+    gap: 40px;
+}
+.tools-icon-grid-block {
+    flex: 1;
+}
+.tools-languages-tab-content .heading4 {
+    margin-bottom: 30px;
+}
+.tools-icon-panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.tools-icon-grid {
+    text-align: center;
+}
+.tools-icon-img {
+    background-color: #ebebeb;
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: auto;
+}
+.tools-icon-img img {
+    max-width: max-content;
+    object-fit: contain;
+}
+@media (max-width: 991px) {
+    .tools-languages-tab-content {
+        flex-direction: column;
     }
 }

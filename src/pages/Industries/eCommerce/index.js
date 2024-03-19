@@ -1,6 +1,6 @@
 import React from "react";
 import './style.css';
-import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
+import { Container, Row, Col, Nav, Tab, Accordion } from "react-bootstrap";
 import SEO from "../../../components/SEO";
 import OwlCarousel from "react-owl-carousel";
 
@@ -28,6 +28,20 @@ import blockchainIcon from '../../../images/industries/eCommerce/blockchain.png'
 import metaverse from '../../../images/industries/eCommerce/metaverse.png';
 import dataAnalytics from '../../../images/industries/eCommerce/data-analytics.png';
 import cloudComputing from '../../../images/industries/eCommerce/cloud-computing.png';
+
+// Tools and technologies images
+import nodejs from '../../../images/industries/eCommerce/nodejs.webp';
+import typescript from '../../../images/industries/eCommerce/typescript.webp';
+import dotNet from '../../../images/industries/eCommerce/dot-net.webp';
+import java from '../../../images/industries/eCommerce/java.webp';
+import python from '../../../images/industries/eCommerce/python.webp';
+import rubyRails from '../../../images/industries/eCommerce/Ruby-on-Rails.webp';
+import react from '../../../images/industries/eCommerce/react.webp';
+import angular from '../../../images/industries/eCommerce/angular.webp';
+import vueJs from '../../../images/industries/eCommerce/vue-js.webp';
+import flutter from '../../../images/industries/eCommerce/flutter.webp';
+import swift from '../../../images/industries/eCommerce/swift.webp';
+import kotlin from '../../../images/industries/eCommerce/kotlin.webp';
 
 function Ecommerce(){
 
@@ -63,7 +77,7 @@ function Ecommerce(){
                                 <div className="heading5">We don't just build apps, we engineer experiences!</div>
                             </div>
                             <div className="industries-banner-image">
-                                <img className="img-responsive" src={eCommerceBanner} alt="eCommerce" />
+                                <img className="responsive-img" src={eCommerceBanner} alt="eCommerce" />
                             </div>
                         </Col>
                     </Row>
@@ -222,7 +236,7 @@ function Ecommerce(){
                                             <Tab.Pane eventKey="cpfirst">
                                                 <div className="capabilities-tab-content">
                                                     <div className="capabilities-content-img">
-                                                        <img src={awardTeam} className="img-responsive" alt="Award-winning team" />
+                                                        <img src={awardTeam} className="responsive-img" alt="Award-winning team" />
                                                     </div>
                                                     <p className="paragraph">As a premium eCommerce mobile app development company, our expertise is reflected in the digital products and apps developed by our eCommerce app developers that have bagged prestigious awards year-on-year.</p>
                                                 </div>
@@ -230,7 +244,7 @@ function Ecommerce(){
                                             <Tab.Pane eventKey="cpsecond">
                                                 <div className="capabilities-tab-content">
                                                     <div className="capabilities-content-img">
-                                                        <img src={developmentPractices} className="img-responsive" alt="Best development practices" />
+                                                        <img src={developmentPractices} className="responsive-img" alt="Best development practices" />
                                                     </div>
                                                     <p className="paragraph">Using DevOps and Agile methodologies, we quickly and efficiently cater to our client's needs, closing gaps and delivering seamless shopping experiences.</p>
                                                 </div>
@@ -238,7 +252,7 @@ function Ecommerce(){
                                             <Tab.Pane eventKey="cpthird">
                                                 <div className="capabilities-tab-content">
                                                     <div className="capabilities-content-img">
-                                                        <img src={paramount} className="img-responsive" alt="Transparency is paramount" />
+                                                        <img src={paramount} className="responsive-img" alt="Transparency is paramount" />
                                                     </div>
                                                     <p className="paragraph">Being the best-in-class eCommerce app development company, we believe that an open communication channel translates into more productive and efficient eCommerce app development services. Therefore, we keep our clients updated about the development at all stages.</p>
                                                 </div>
@@ -340,7 +354,7 @@ function Ecommerce(){
                                 <div className="advanced-technologies-block">
                                     <div className="advanced-technologies-top">
                                         <span className="advanced-technologies-icon">
-                                            <img src={aiMLIcon} className="img-responsive" alt="AI/ML" />
+                                            <img src={aiMLIcon} className="responsive-img" alt="AI/ML" />
                                         </span>
                                         <h4 className="heading4">AI/ML</h4>
                                     </div>
@@ -352,7 +366,7 @@ function Ecommerce(){
                                 <div className="advanced-technologies-block">
                                     <div className="advanced-technologies-top">
                                         <span className="advanced-technologies-icon">
-                                            <img src={blockchainIcon} className="img-responsive" alt="Blockchain" />
+                                            <img src={blockchainIcon} className="responsive-img" alt="Blockchain" />
                                         </span>
                                         <h4 className="heading4">Blockchain</h4>
                                     </div>
@@ -364,7 +378,7 @@ function Ecommerce(){
                                 <div className="advanced-technologies-block">
                                     <div className="advanced-technologies-top">
                                         <span className="advanced-technologies-icon">
-                                            <img src={metaverse} className="img-responsive" alt="Metaverse" />
+                                            <img src={metaverse} className="responsive-img" alt="Metaverse" />
                                         </span>
                                         <h4 className="heading4">Metaverse</h4>
                                     </div>
@@ -376,7 +390,7 @@ function Ecommerce(){
                                 <div className="advanced-technologies-block">
                                     <div className="advanced-technologies-top">
                                         <span className="advanced-technologies-icon">
-                                            <img src={dataAnalytics} className="img-responsive" alt="Data analytics" />
+                                            <img src={dataAnalytics} className="responsive-img" alt="Data analytics" />
                                         </span>
                                         <h4 className="heading4">Data analytics</h4>
                                     </div>
@@ -388,7 +402,7 @@ function Ecommerce(){
                                 <div className="advanced-technologies-block">
                                     <div className="advanced-technologies-top">
                                         <span className="advanced-technologies-icon">
-                                            <img src={cloudComputing} className="img-responsive" alt="Cloud computing" />
+                                            <img src={cloudComputing} className="responsive-img" alt="Cloud computing" />
                                         </span>
                                         <h4 className="heading4">Cloud computing</h4>
                                     </div>
@@ -398,6 +412,210 @@ function Ecommerce(){
                                 </div>
 
                             </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+            
+            {/* Tools and languages section */}
+            <div className="tools-languages-section section-padding text-white text-center bg-black">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2">Tools and languages we use</h2>
+
+                            <div className="tools-languages-tab-div">
+                                <Tab.Container id="tools-languages-tab" defaultActiveKey="toolfirst">
+                                    <div className="tools-languages-tab-top tools-languages-tab-cols">
+                                        <Nav variant="pills" className="tools-languages-tab flex-row justify-content-center">
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="toolfirst">Web Technologies</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="toolsecond">Mobile technologies</Nav.Link>
+                                            </Nav.Item>
+                                        </Nav>
+                                    </div>
+                                    <div className="tools-languages-tab-bottom tools-languages-tab-cols">
+                                        <Tab.Content>
+
+                                            <Tab.Pane eventKey="toolfirst">
+                                                <div className="tools-languages-tab-content">
+                                                    <div className="tools-icon-grid-block">
+                                                        <h4 className="heading4">Backend</h4>
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={nodejs} className="responsive-img" alt="Node js" />
+                                                                </div>
+                                                                <p className="paragraph">Node js</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={typescript} className="responsive-img" alt="Typescript" />
+                                                                </div>
+                                                                <p className="paragraph">Typescript</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={dotNet} className="responsive-img" alt=".Net" />
+                                                                </div>
+                                                                <p className="paragraph">.Net</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={java} className="responsive-img" alt="Java" />
+                                                                </div>
+                                                                <p className="paragraph">Java</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={python} className="responsive-img" alt="Python" />
+                                                                </div>
+                                                                <p className="paragraph">Python</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={rubyRails} className="responsive-img" alt="Ruby" />
+                                                                </div>
+                                                                <p className="paragraph">Ruby</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="tools-icon-grid-block">
+                                                        <h4 className="heading4">Frontend</h4>
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={react} className="responsive-img" alt="React Native" />
+                                                                </div>
+                                                                <p className="paragraph">React Native</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={angular} className="responsive-img" alt="Angular" />
+                                                                </div>
+                                                                <p className="paragraph">Angular</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={vueJs} className="responsive-img" alt="Vue Js" />
+                                                                </div>
+                                                                <p className="paragraph">Vue Js</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Tab.Pane>
+
+                                            <Tab.Pane eventKey="toolsecond">
+                                                <div className="tools-languages-tab-content">
+                                                    <div className="tools-icon-grid-block">
+                                                        <h4 className="heading4">iOS</h4>
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={swift} className="responsive-img" alt="Swift" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="tools-icon-grid-block">
+                                                        <h4 className="heading4">Cross Platform</h4>
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={react} className="responsive-img" alt="React Native" />
+                                                                </div>
+                                                                <p className="paragraph">React Native</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={flutter} className="responsive-img" alt="Flutter" />
+                                                                </div>
+                                                                <p className="paragraph">Flutter</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="tools-icon-grid-block">
+                                                        <h4 className="heading4">Android</h4>
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={kotlin} className="responsive-img" alt="Kotlin" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Tab.Pane>
+
+                                        </Tab.Content>
+                                    </div>
+                                </Tab.Container>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>     
+            </div>
+
+            {/* FAQ section */}
+            <div className="faq-panel section-padding">
+                <Container>
+                    <Row>
+                        <Col md={12}>
+                            <div className="leadtxt text-center">
+                                <h3>Frequently Asked Questions</h3>
+                            </div>
+                            <Accordion>
+                                <div className="faq_col_panel">
+                                    <Accordion.Item eventKey="1">
+                                        <Accordion.Header>How long does it take to develop an eCommerce app? </Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>The exact time needed to create an eCommerce app mostly depends on the specifications of the products and other requirements. Your e-commerce app's MVP or initial release could take 3 to 4 months to complete. The project requirements, such as feature implementation, eCommerce app design, the complexity of the app, and others, affect the duration of app development.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="2">
+                                        <Accordion.Header>What are the main factors to consider when developing an eCommerce website?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>An eCommerce website should have a user-friendly design, secure payment gateways, comprehensive inventory management, responsive mobile optimization, SEO, product categorization, and customer service. To handle future growth and changing client needs, pay particular attention to site speed, user experience, and scalability.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                </div>
+                               
+                                <div className="faq_col_panel">
+                                    <Accordion.Item eventKey="3">
+                                        <Accordion.Header>What is the development process of an eCommerce app?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Here are some of the crucial steps to building an intuitive eCommerce app:</p>
+                                            <ul>
+                                                <li>Research on the project idea</li>
+                                                <li>Setting goals</li>
+                                                <li>Identifying the right platform</li>
+                                                <li>Defining the feature set</li>
+                                                <li>Focus on UI & UX design</li>
+                                                <li>Developing MVP</li>
+                                                <li>Collecting feedback</li>
+                                                <li>Iterating constantly</li>
+                                            </ul>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="4">
+                                        <Accordion.Header>Why hire IosAndWeb as your eCommerce mobile app development partner?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Here are a few reasons why we are one of the most trusted eCommerce app development agencies like ours:</p>
+                                            <ul>
+                                                <li>Experienced and skilled in offering the trendiest mobile shopping solutions.</li>
+                                                <li>Adept at putting the appropriate eCommerce strategy into practice.</li>
+                                                <li>Providing eCommerce services and solutions in accordance with the needs of our clients' businesses.</li>
+                                                <li>Best-in-class support service for immediate assistance.</li>
+                                            </ul>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </div>
+                            </Accordion>
                         </Col>
                     </Row>
                 </Container>
