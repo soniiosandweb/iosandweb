@@ -432,7 +432,7 @@ function Ecommerce(){
                                                 <Nav.Link eventKey="toolfirst">Web Technologies</Nav.Link>
                                             </Nav.Item>
                                             <Nav.Item>
-                                                <Nav.Link eventKey="toolsecond">Mobile technologies</Nav.Link>
+                                                <Nav.Link eventKey="toolsecond">Mobile Technologies</Nav.Link>
                                             </Nav.Item>
                                         </Nav>
                                     </div>
