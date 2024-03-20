@@ -28,8 +28,12 @@
 }
 
 /* industries reasons tab */
+.industries-reasons-tab .reasons-tab{
+    height: 380px;
+}
 .industries-reasons-tab .reasons-tab .nav-link{
     font-size: 1.2rem;
+    padding: 22px 20px;
 }
 /* industries numbers sections */
 .industries-numbers {
@@ -53,7 +57,8 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    width: max-content;
+    width: 100%;
+    max-width: 70%;
     margin-left: auto;
 }
 .industries-numbers-list-item {
@@ -69,6 +74,14 @@
 .industries-numbers-list-item .industries-numbers-span {
     font-size: 3rem;
     flex: 1;
+}
+.industries-numbers-list-item .industries-numbers-text{
+    flex: 1;
+}
+@media (max-width: 1199px) {
+    .industries-numbers-list{
+        max-width: 100%;
+    }
 }
 @media (max-width:991px) {
     .industries-numbers-left {

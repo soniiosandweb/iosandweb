@@ -186,9 +186,17 @@ h1, h2{
 .background-section{
   background-color: #f1f2fd;
 }
+.max-width-70 {
+  max-width: 70%;
+}
 @media (max-width: 1399px) {
   .heading2{
     font-size: 28px;
+  }
+}
+@media (max-width: 1199px) {
+  .max-width-70 {
+    max-width: 100% !important;
   }
 }
 @media (max-width: 767px) {

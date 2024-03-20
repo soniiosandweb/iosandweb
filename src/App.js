@@ -33,6 +33,7 @@ import B2BLeadGenerationCampaign from './pages/Services/B2BLeadGenerationCampaig
 import Career from './pages/Career';
 
 import Ecommerce from './pages/Industries/eCommerce';
+import RealEstate from './pages/Industries/RealEstate';
 
 function App() {
   return (
@@ -74,6 +75,7 @@ function App() {
 
           {/* Industries */}
           <Route path='/ecommerce-app-development' element={<Ecommerce />} />
+          <Route path='/real-estate-app-development' element={<RealEstate />} />
 
         </Route>
       </Routes>

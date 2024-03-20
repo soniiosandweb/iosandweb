@@ -26,6 +26,7 @@ import ideationDesign from '../../images/home/ideation-design.svg';
 
 // industries menu
 import eCommerceIcon from '../../images/eCommerce.png';
+import realEstateIcon from '../../images/real-estate.png';
 
 // about menu
 import aboutIcon from '../../images/about-us.png';
@@ -267,6 +268,15 @@ function Header() {
                         <img src={eCommerceIcon} className="service-img" alt="eCommerce" /> 
                       </div>
                       eCommerce
+                      <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
+                    </Dropdown.Item>
+                  </li>
+                  <li className="submenu-item">
+                    <Dropdown.Item href="/real-estate-app-development">
+                      <div className="bg-green submenu-img">
+                        <img src={realEstateIcon} className="service-img" alt="Real Estate" />
+                      </div>
+                      Real Estate
                       <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
                     </Dropdown.Item>
                   </li>

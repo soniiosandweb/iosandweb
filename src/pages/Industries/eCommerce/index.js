@@ -48,13 +48,17 @@ function Ecommerce(){
     const changeNumber=(event) =>{
         if (event.item) {
             var count     = event.item.count;
-            var item      = event.item.index + 1;
-        
-            if(item > count) {
-                item = item - count
+            var current      = (event.item.index + 1) - event.relatedTarget._clones.length / 2;
+
+            if (current > count) {
+                current = 1;
             }
             
-            document.getElementById('slide_number').innerHTML = item;
+            if(current === 0) {
+                current = event.item.count;
+            }
+
+            document.getElementById('slide_number').innerHTML = current;
             document.getElementById('slide_total_number').innerHTML = count;
            
         }
@@ -89,8 +93,8 @@ function Ecommerce(){
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2">We Develop Everything eCommerce</h2>
-                            <div className="heading5">As one of the top-tiered eCommerce app development companies, we develop a unified digital experience with a robust backend and frontend that lowers abandonment rates and boosts conversions, loyalty, and customer satisfaction.</div>
+                            <h2 className="heading2 max-width-70">We Develop Everything eCommerce</h2>
+                            <div className="heading5 max-width-70">As one of the top-tiered eCommerce app development companies, we develop a unified digital experience with a robust backend and frontend that lowers abandonment rates and boosts conversions, loyalty, and customer satisfaction.</div>
                         </Col>
                     </Row>
                     <div className="reasons-tab-block">
@@ -182,7 +186,7 @@ function Ecommerce(){
                                     <ul className="industries-numbers-list">
                                         <li className="industries-numbers-list-item">
                                             <span className="industries-numbers-span">50+</span>
-                                            <span className="industries-numbers-text">Ecommerce Experts <br />Under One Roof</span>
+                                            <span className="industries-numbers-text">Ecommerce Experts Under One Roof</span>
                                         </li>
                                         <li className="industries-numbers-list-item">
                                             <span className="industries-numbers-span">10+</span>
@@ -205,12 +209,12 @@ function Ecommerce(){
             <div className="what-software-section industries-capabilities-section section-padding text-white">
                 <Container>
                     <Row className="align-items-center">
-                        <Col lg={9}>
-                            <div className="leadtxt">
+                        <Col>
+                            <div className="leadtxt max-width-70">
                                 <h2>Capabilities that assure industry-best eCommerce application development services</h2>
                             </div>
-                            <div className="leadsubtxt">
-                            Our team of highly skilled eCommerce app developers have a varied background in software development, AI/ML, cloud computing, and data security, and with this expertise, the team offers top-class eCommerce app development services helping us become the best eCommerce app development company
+                            <div className="leadsubtxt max-width-70">
+                            Our team of highly skilled eCommerce app developers have a varied background in software development, AI/ML, cloud computing, and data security, and with this expertise, the team offers top-class eCommerce app development services helping us become the best eCommerce app development company.
                             </div>
                         </Col>
                     </Row>

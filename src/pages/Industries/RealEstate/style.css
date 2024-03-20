@@ -1,0 +1,22 @@
+/* Industries Services */
+.industries-services-section .specification-block{
+    display: flex;
+    gap: 10px;
+}
+.industries-services-section .specification-block svg {
+    font-size: 1.2rem;
+}
+.industries-services-section .heading4 {
+    font-size: 1.3rem;
+}
+/* Industries features slider */
+.industries-features-slider .industries_process_block{
+    background-color: #fff;
+    padding: 20px;
+}
+.industries-features-slider .industries_process_block .process-icon{
+    color: #1050bc;
+    background: transparent;
+    width: 28px;
+    height: auto;
+}
