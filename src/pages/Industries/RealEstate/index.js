@@ -21,6 +21,28 @@ import globalBuyers from '../../../images/industries/real-estate/global-buyers.w
 import managementLarge from '../../../images/industries/real-estate/management-large.webp';
 import advancedTechnologies from '../../../images/industries/real-estate/advanced-technologies.webp';
 
+// industries requirement images
+import realEstateBuyers from '../../../images/industries/real-estate/real-estate-buyers.webp';
+
+// Advanced technologies images
+import aiMLIcon from '../../../images/industries/eCommerce/ai-ml.png';
+import blockchainIcon from '../../../images/industries/eCommerce/blockchain.png';
+import metaverse from '../../../images/industries/eCommerce/metaverse.png';
+import dataAnalytics from '../../../images/industries/eCommerce/data-analytics.png';
+import arVR from '../../../images/industries/real-estate/ar-vr.png';
+
+// Tools and technologies images
+import java from '../../../images/industries/eCommerce/java.webp';
+import react from '../../../images/industries/eCommerce/react.webp';
+import flutter from '../../../images/industries/eCommerce/flutter.webp';
+import kotlin from '../../../images/industries/eCommerce/kotlin.webp';
+import realm from '../../../images/industries/real-estate/realm-icon.webp';
+import sqlLite from '../../../images/industries/real-estate/Sql-lite.webp';
+import firebase from '../../../images/industries/real-estate/firebase_icon.webp';
+import database from '../../../images/industries/real-estate/database.webp';
+import fastlane from '../../../images/industries/real-estate/fastlane-icon.webp';
+import figma from '../../../images/industries/real-estate/figma-icon.webp';
+
 function RealEstate(){
 
     const changeNumber=(event) =>{
@@ -317,7 +339,7 @@ function RealEstate(){
                                     <span className="slide_total_number" id="slide_total_number"></span>
                                 </div>
 
-                                <OwlCarousel className="owl-theme industries-process" loop autoplay={true} autoplayTimeout={4000} autoplayHoverPause={true} margin={15} nav={true} dots={false} onInitialized={changeNumber} onTranslated={changeNumber} responsive={
+                                <OwlCarousel className="owl-theme industries-process" loop autoplay={true} autoplayTimeout={4000} autoplayHoverPause={true} margin={0} nav={true} dots={false} onInitialized={changeNumber} onTranslated={changeNumber} responsive={
                                     {
                                         '0': {
                                             items: 1,
@@ -410,6 +432,208 @@ function RealEstate(){
                         </Col>
                     </Row>
                 </Container>
+            </div>
+
+            {/* Industries requirement section */}
+            <div className="industries-requirement-section background-section section-padding">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2 max-width-70">No Matter What Your Stakeholders' Requirements Are, We Have Them Covered</h2>
+                            <div className="heading5 max-width-70">We are a real estate mobile app development company connecting all your stakeholders - buyers, sellers, and agents on a single platform. No matter what your stakeholders' requirements are, we have them covered.</div>
+                        </Col>
+                    </Row>
+                    <Row className="mt-5">
+                        <Col lg={6}>
+                            <div className="industries-requirement-block">
+                                <div className="industries-requirement-item">
+                                    <h4 className="heading4">Real Estate Buyers</h4>
+                                    <p className="paragraph">Our real estate app development services cater to the needs of property buyers, providing them with a convenient and efficient way to navigate the property buying process. Our custom services let users access location maps and take virtual property tours with Metaverse and AR/VR technology.</p>
+                                </div>
+                                <div className="industries-requirement-item">
+                                    <h4 className="heading4">Real Estate Companies or Sellers</h4>
+                                    <p className="paragraph">With our real estate services, companies can easily view potential buyers' licenses, backgrounds, and credit checks. This allows for a thorough evaluation of interested parties and ensures a smooth and secure transaction process.</p>
+                                </div>
+                                <div className="industries-requirement-item">
+                                    <h4 className="heading4">Real Estate Aggregators</h4>
+                                    <p className="paragraph">The steps we follow during real estate application development make app integration with your website easier. We offer a series of services for real estate aggregators like - property image/video display, property listing submission, and individual payment processing.</p>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col lg={6}>
+                            <div className="industries-requirement-image">
+                                <img src={realEstateBuyers} className="responsive-img" alt="Real Estate" />
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* Advanced technologies section */}
+            <div className="advanced-technologies section-padding">
+                <Container>
+                    <Row>
+                        <Col md={6} lg={7}>
+                            <div className="sticky-div">
+                                <h2 className="heading2">Advanced Technologies We Integrate into Real Estate Mobile Application Development</h2>
+                                <div className="heading5">We leverage the blended power of advanced technologies to develop resilient real estate applications. By integrating various advanced technologies, we build robust solutions that enhance user experiences, streamline processes, and provide unmatched value in the real estate industry.</div>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={5}>
+                            <div className="advanced-technologies-blocks">
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={aiMLIcon} className="responsive-img" alt="AI/ML" />
+                                        </span>
+                                        <h4 className="heading4">AI/ML</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">Being one of the leading real estate development firms, we leverage AI technology for analyzing massive data sets to forecast property values, pricing, and market trends. Additionally, AI-powered chatbots offer speedy responses, and ML provides tailored recommendations.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={blockchainIcon} className="responsive-img" alt="Blockchain" />
+                                        </span>
+                                        <h4 className="heading4">Blockchain</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">As a top-ranked real estate software development company, our experts use blockchain technology to ensure a secure and open ledger for tamper-proof property records. This also helps in lowering fraud and simplifying ownership transfers.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={arVR} className="responsive-img" alt="AR & VR" />
+                                        </span>
+                                        <h4 className="heading4">AR & VR</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">With AR/VR technology, our experts add a touch of immersive experience to your real estate apps. AR adds digital overlays to real-world environments to demonstrate potential designs, whereas VR offers complete virtual property tours, thus helping in remote exploration.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={metaverse} className="responsive-img" alt="Metaverse" />
+                                        </span>
+                                        <h4 className="heading4">Metaverse</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">We integrate your custom real estate apps with metaverse technology, which expands experiences beyond reality. Users can digitally tour properties, attend virtual open houses, and communicate with agents in realistic settings.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={dataAnalytics} className="responsive-img" alt="Data analytics" />
+                                        </span>
+                                        <h4 className="heading4">IoT and Data Analytics</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">Utilizing IoT and big data analytics, we empower property management and provide buyers insights into a property's condition and other details, thus, redefining the real estate experience.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* Tools and languages section */}
+            <div className="tools-languages-section section-padding text-white text-center bg-black">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2 max-width-70 mx-auto">Tech Stack We Utilize to Build Robust Real Estate Applications</h2>
+                            <div className="heading5 max-width-70 mx-auto">Being a top-tiered real estate app development company, we create feature-rich applications using various modern real estate software development frameworks and languages. Our real estate app developers leverage the right choice of technology stack that helps you gain more engagement.</div>
+
+                            <div className="tools-languages-tab-div max-width-70 mx-auto">
+                                <div className="tools-icon-grid-block">
+                                    <div className="tools-icon-panel">
+                                        <div className="tools-icon-grid">
+                                            <div className="tools-icon-img">
+                                                <img src={kotlin} className="responsive-img" alt="Kotlin" />
+                                            </div>
+                                            <p className="paragraph">Kotlin</p>
+                                        </div>
+
+                                        <div className="tools-icon-grid">
+                                            <div className="tools-icon-img">
+                                                <img src={flutter} className="responsive-img" alt="Flutter" />
+                                            </div>
+                                             <p className="paragraph">Flutter</p>
+                                        </div>
+
+                                        <div className="tools-icon-grid">
+                                            <div className="tools-icon-img">
+                                                <img src={realm} className="responsive-img" alt="Realm" />
+                                            </div>
+                                            <p className="paragraph">Realm</p>
+                                        </div>
+
+                                        <div className="tools-icon-grid">
+                                            <div className="tools-icon-img">
+                                                <img src={java} className="responsive-img" alt="Java" />
+                                            </div>
+                                            <p className="paragraph">Java</p>
+                                        </div>
+
+                                        <div className="tools-icon-grid">
+                                            <div className="tools-icon-img">
+                                                <img src={sqlLite} className="responsive-img" alt="SQL Lite" />
+                                            </div>
+                                            <p className="paragraph">SQL Lite</p>
+                                        </div>
+
+                                        <div className="tools-icon-grid">
+                                            <div className="tools-icon-img">
+                                                <img src={firebase} className="responsive-img" alt="Firebase" />
+                                            </div>
+                                            <p className="paragraph">Firebase</p>
+                                        </div>
+
+                                        <div className="tools-icon-grid">
+                                            <div className="tools-icon-img">
+                                                <img src={react} className="responsive-img" alt="React Native" />
+                                            </div>
+                                            <p className="paragraph">React Native</p>
+                                        </div>
+
+                                        <div className="tools-icon-grid">
+                                            <div className="tools-icon-img">
+                                                <img src={database} className="responsive-img" alt="Room Database" />
+                                            </div>
+                                            <p className="paragraph">Room Database</p>
+                                        </div>
+
+                                        <div className="tools-icon-grid">
+                                            <div className="tools-icon-img">
+                                                <img src={fastlane} className="responsive-img" alt="Fastlane" />
+                                            </div>
+                                            <p className="paragraph">Fastlane</p>
+                                        </div>
+
+                                        <div className="tools-icon-grid">
+                                            <div className="tools-icon-img">
+                                                <img src={figma} className="responsive-img" alt="Figma" />
+                                            </div>
+                                            <p className="paragraph">Figma</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>     
             </div>
         </>
     )

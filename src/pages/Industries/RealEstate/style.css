@@ -14,9 +14,45 @@
     background-color: #fff;
     padding: 20px;
 }
+.industries-features-slider .industries_process_block:hover {
+    background-color: #f1f2fd;
+}
 .industries-features-slider .industries_process_block .process-icon{
     color: #1050bc;
     background: transparent;
     width: 28px;
     height: auto;
+}
+/* Industries requirement section */
+.industries-requirement-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #000;
+}
+.industries-requirement-item:first-child {
+    padding-top: 0;
+}
+.industries-requirement-item .paragraph {
+    margin-bottom: 0;
+}
+.industries-requirement-image {
+    max-width: 70%;
+    margin: auto;
+    max-height: 600px;
+    height: 100%;
+}
+.industries-requirement-image img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+@media (max-width: 1199px) {
+    .industries-requirement-image{
+        max-width: 100%;
+    }
+}
+@media (max-width: 991px) {
+    .industries-requirement-image{
+        max-height: 450px;
+        margin-top: 50px;
+    }
 }
