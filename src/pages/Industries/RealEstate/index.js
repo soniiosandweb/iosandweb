@@ -1,13 +1,13 @@
 import React from "react";
 import './style.css';
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col, Tab, Nav, Accordion } from "react-bootstrap";
 import SEO from "../../../components/SEO";
 import OwlCarousel from "react-owl-carousel";
 
 import realEstateBanner from '../../../images/industries/real-estate/real-estate-banner.webp';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleDot, faChevronRight, faCheckDouble, faFilter, faMapMarkerAlt, faVrCardboard, faHome, faSearch, faBrain, faCalculator, faStar, faHouseMedical } from "@fortawesome/free-solid-svg-icons";
+import { faCircleDot, faChevronRight, faCheckDouble, faFilter, faMapMarkerAlt, faVrCardboard, faHome, faSearch, faBrain, faCalculator, faStar, faHouseMedical, faListCheck, faLineChart, faCode, faFileAlt, faPaintBrush, faRocket, faCog } from "@fortawesome/free-solid-svg-icons";
 
 // reasons to choose images
 import mobileConsultation from '../../../images/industries/real-estate/mobile-consultation.png';
@@ -60,6 +60,25 @@ function RealEstate(){
 
             document.getElementById('slide_number').innerHTML = current;
             document.getElementById('slide_total_number').innerHTML = count;
+           
+        }
+    }
+
+    const changeNumberProcess=(event) =>{
+        if (event.item) {
+            var count     = event.item.count;
+            var current      = (event.item.index + 1) - event.relatedTarget._clones.length / 2;
+
+            if (current > count) {
+                current = 1;
+            }
+            
+            if(current === 0) {
+                current = event.item.count;
+            }
+
+            document.getElementById('slide_number_process').innerHTML = current;
+            document.getElementById('slide_total_number_process').innerHTML = count;
            
         }
     }
@@ -635,6 +654,192 @@ function RealEstate(){
                     </Row>
                 </Container>     
             </div>
+
+            {/* Industries process slider */}
+            <div className="industries-process-slider section-padding">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2 text-center">We Follow an Agile Real Estate Mobile Application Development Process</h2>
+                            <div className="heading5 text-center">A real estate mobile app development company like ours, follows agile methodology to develop real estate app development solutions. By following agile principles, we adapt to changing requirements, collaborate closely with stakeholders, and ensure the timely delivery of projects.</div>
+
+                            <div className="industries-slider-block">
+
+                                <div className="industries-slider-numbers">
+                                    <span className="slide_number" id="slide_number_process"></span>
+                                    <span className="slide_dash"></span>
+                                    <span className="slide_total_number" id="slide_total_number_process"></span>
+                                </div>
+
+                                <OwlCarousel className="owl-theme industries-process" loop autoplay={true} autoplayTimeout={4000} autoplayHoverPause={true} margin={15} nav={true} dots={false} items={4} onInitialized={changeNumberProcess} onTranslated={changeNumberProcess} responsive={
+                                    {
+                                        '0': {
+                                            items: 1,
+                                        },
+                                        '768': {
+                                            items: 2,
+                                        },
+                                        '992': {
+                                            items: 2.5,
+                                        },
+                                        '1200': {
+                                            items: 3.5,
+                                        }
+                                    }
+                                }>
+                                    <div className="item">
+                                        <div className="industries_process_block">
+                                            <span className="process-icon"><FontAwesomeIcon icon={faListCheck} /></span>
+                                            <h4 className="heading4">Idea Generation and Planning</h4>
+                                            <p className="paragraph">Our talented team of real estate mobile app developers first identifies the goal, target market, and essential unique selling features of the app by investigating real estate market trends.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="industries_process_block">
+                                            <span className="process-icon"><FontAwesomeIcon icon={faLineChart} /></span>
+                                            <h4 className="heading4">Market Analysis</h4>
+                                            <p className="paragraph">Next, our real estate software development team examines the market gaps, consumer preferences, and rivals and finds areas where you can innovate and stand out.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="industries_process_block">
+                                            <span className="process-icon"><FontAwesomeIcon icon={faPaintBrush} /></span>
+                                            <h4 className="heading4">Designing and Wireframing</h4>
+                                            <p className="paragraph">In order to visualize the app's layout and user experience, our designers create wireframes and mockups that complement the user experience and branding of the app.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="industries_process_block">
+                                            <span className="process-icon"><FontAwesomeIcon icon={faCode} /></span>
+                                            <h4 className="heading4">Frontend and Backend Development</h4>
+                                            <p className="paragraph">Our team of real estate software developers then creates the frontend interface, integrating designs and ensuring the user experience is seamless. They simultaneously build the server architecture, databases, APIs, and backend logic.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="industries_process_block">
+                                            <span className="process-icon"><FontAwesomeIcon icon={faFileAlt} /></span>
+                                            <h4 className="heading4">Testing</h4>
+                                            <p className="paragraph">Our QA experts thoroughly check and test the app's performance, security, usability, and compatibility with a range of hardware and operating systems.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="industries_process_block">
+                                            <span className="process-icon"><FontAwesomeIcon icon={faRocket} /></span>
+                                            <h4 className="heading4">Deployment and Launch</h4>
+                                            <p className="paragraph">Our real estate application development experts then deploy the real estate app to the app stores (for Android & iOS), ensuring it complies with all policies and rules.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="industries_process_block">
+                                            <span className="process-icon"><FontAwesomeIcon icon={faCog} /></span>
+                                            <h4 className="heading4">Maintenance and Support</h4>
+                                            <p className="paragraph">Post-launch, our real estate mobile application development experts constantly monitor user involvement and feedback. To guarantee a great user experience, we update the app frequently with new features, enhancements, and bug fixes.</p>
+                                        </div>
+                                    </div>
+
+                                </OwlCarousel>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+            
+            {/* FAQ section */}
+            <div className="faq-panel section-padding less-top-padding">
+                <Container>
+                    <Row>
+                        <Col md={12}>
+                            <div className="leadtxt text-center">
+                                <h3>Frequently Asked Questions</h3>
+                            </div>
+                            <Accordion>
+                                <div className="faq_col_panel">
+                                    <Accordion.Item eventKey="1">
+                                        <Accordion.Header>What is the cost of developing a real estate app? </Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>On average, the development of a real estate app can cost between $30,000 and $300,000. The real estate mobile application development cost estimation varies depending on the app's complexity, UI/UX design, the development team's size, and the development agency's location.</p>
+                                            <p>For a precise cost estimation for your next real estate app project, <a href="/contact-us">connect with our experts</a> now.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="2">
+                                        <Accordion.Header>How long does it take to build a real estate app?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>The time taken to build a real estate app is around 4-18 months, depending on the complexities of your application, the choice of the technology stack, the number of features integrated, platform choice and other factors.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="3">
+                                        <Accordion.Header>Why choose IosAndWeb Technologies as your real estate software development services partner?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>As one of the globally renowned real estate app development companies, IosAndWeb has made a track record of delivering premium applications that have helped clients to grow their businesses. Let us check out some of the top reasons for hiring IosAndWeb Technologies as your trusted real estate mobile app development company:</p>
+                                            <ul>
+                                                <li>Agile development approach</li>
+                                                <li>Extensive client support</li>
+                                                <li>Utilization of advanced technologies</li>
+                                                <li>Personalized mobile app development for the real estate industry</li>
+                                                <li>Flexibility and scalability</li>
+                                                <li>Award-winning solutions delivered till date</li>
+                                                <li>Experienced and skilled team of real estate app developers</li>
+                                            </ul>
+                                            <p><a href="/contact-us">Connect with our experts</a> to share your project idea and get a quotation.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                </div>
+                               
+                                <div className="faq_col_panel">
+                                    <Accordion.Item eventKey="4">
+                                        <Accordion.Header>What are some of the top monetization strategies for a real estate app?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Implementing tactics that produce income while giving consumers value is necessary for monetizing a real estate app. The following are some profitable app monetization techniques that can be implemented during mobile app development for the real estate industry:</p>
+                                            <ul>
+                                                <li><b>Membership Packages</b> Introduce premium membership packages that give customers access to a range of special features, deals, or services.</li>
+                                                <li><b>Freemium Model</b> Offer a basic, feature-limited version of the app for free while charging for a more advanced, feature-rich edition with more tools and functionality.</li>
+                                                <li><b>Featured Listing Fees</b> Charge real estate agents, property owners, or both a fee to display their properties on your app. You can go for either one-time charge or a subscription-based system.</li>
+                                                <li><b>In-App Advertising</b> Display tailored ads from firms that deal with real estate, such as mortgage lenders, interior designers, or relocation services. Make sure the app's design smoothly incorporates adverts that are both relevant to users and effective.</li>
+                                            </ul>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="5">
+                                        <Accordion.Header>What are the top features of a real estate app?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>As a pioneering real estate app development company, we implement the best features that make your app fully functional and high-performing. Few of the top features we incorporate as per the requirements of your project include:</p>
+                                            <ul>
+                                                <li>Advanced Search Filters</li>
+                                                <li>Interactive Maps</li>
+                                                <li>Virtual Tours (VR/AR)</li>
+                                                <li>Property Comparisons</li>
+                                                <li>Saved Searches and Alerts</li>
+                                                <li>Secure Transactions</li>
+                                                <li>User Profiles</li>
+                                                <li>Real-Time Messaging</li>
+                                                <li>Property Analytics</li>
+                                                <li>Neighborhood Insights</li>
+                                                <li>Mortgage Calculator</li>
+                                                <li>Language and Currency Support</li>
+                                                <li>Property Management Tools</li>
+                                                <li>User Reviews and Ratings</li>
+                                                <li>Integration with IoT Devices</li>
+                                                <li>Scheduling and Reminders</li>
+                                                <li>AI-Powered Recommendations</li>
+                                            </ul>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </div>
+                            </Accordion>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
         </>
     )
 }
