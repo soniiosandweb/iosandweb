@@ -149,7 +149,7 @@ function Team(){
                                         <img src={userWoman} alt="Profile" className="img-fluid" />
                                     </div>
                                     <div className="profile-content">
-                                        <h3 className="team-title">Shreyanshi Srivastav</h3>
+                                        <h3 className="team-title">Shreyanshi Srivastava</h3>
                                         <p className="paragraph">Junior Software Developer</p>
                                         <div className="social-icons">
                                             <a href="skype:live:.cid.d9baf9987a5191bc"><FontAwesomeIcon icon={faSkype} /></a>
