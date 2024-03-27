@@ -64,6 +64,7 @@ function Ecommerce(){
         }
         
     }
+
     
     return (
         <>
@@ -79,6 +80,11 @@ function Ecommerce(){
                             <div className="heading-wrapper industries-header text-center">
                                 <h1 className="text-black"><span className="text-highlight">eCommerce</span> App Development Services</h1>
                                 <div className="heading5">We don't just build apps, we engineer experiences!</div>
+
+                                <div className="btn-section mb-5">
+                                    <a href="/contact-us" className="btn btn-blue-border">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
+                                </div>
+
                             </div>
                             <div className="industries-banner-image">
                                 <img className="responsive-img" src={eCommerceBanner} alt="eCommerce" />

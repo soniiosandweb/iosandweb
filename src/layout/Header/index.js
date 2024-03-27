@@ -27,6 +27,7 @@ import ideationDesign from '../../images/home/ideation-design.svg';
 // industries menu
 import eCommerceIcon from '../../images/eCommerce.png';
 import realEstateIcon from '../../images/real-estate.png';
+import generativeAI from '../../images/artificial-intelligence.png';
 
 // about menu
 import aboutIcon from '../../images/about-us.png';
@@ -277,6 +278,15 @@ function Header() {
                         <img src={realEstateIcon} className="service-img" alt="Real Estate" />
                       </div>
                       Real Estate
+                      <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
+                    </Dropdown.Item>
+                  </li>
+                  <li className="submenu-item">
+                    <Dropdown.Item href="/generative-ai-development">
+                      <div className="bg-orange submenu-img">
+                        <img src={generativeAI} className="service-img" alt="Generative AI" />
+                      </div>
+                      Generative AI
                       <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
                     </Dropdown.Item>
                   </li>

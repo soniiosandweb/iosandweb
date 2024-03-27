@@ -40,7 +40,7 @@ import travel from '../../images/home/travel.png';
 import entertainment from '../../images/home/entertainment.png';
 import onDemand from '../../images/home/on-demand-indus.svg';
 import socialMedia from '../../images/home/social-networking-indus.svg';
-import logistics from '../../images/home/logistics-indus.svg';
+import generativeAI from '../../images/home/artificial-intelligence.png';
 import edtech from '../../images/home/education-indus.svg';
 
 // Partnership images
@@ -189,6 +189,30 @@ function Home() {
                             </div>
                             <div className="grid_colm_panel">
                                 <div className="grid_colm_item">
+                                    <a className="grid_colm_item_link" href="/ecommerce-app-development">
+                                        <figure>
+                                            <img src={ecommerce} alt="eCommerce" />
+                                        </figure>
+                                        <div className="grid_colm_head">eCommerce</div>
+                                    </a>
+                                </div>
+                                <div className="grid_colm_item">
+                                    <a className="grid_colm_item_link" href="/real-estate-app-development">
+                                        <figure>
+                                            <img src={realEstate} alt="Real Estate" />
+                                        </figure>
+                                        <div className="grid_colm_head">Real Estate</div>
+                                    </a>
+                                </div>
+                                <div className="grid_colm_item">
+                                    <a className="grid_colm_item_link" href="/generative-ai-development">
+                                        <figure>
+                                            <img src={generativeAI} alt="Generative AI" />
+                                        </figure>
+                                        <div className="grid_colm_head">Generative AI</div>
+                                    </a>
+                                </div>
+                                <div className="grid_colm_item">
                                     <a className="grid_colm_item_link" href="/">
                                         <figure>
                                             <img src={healthCare} alt="Healthcare" />
@@ -213,22 +237,6 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="grid_colm_item">
-                                    <a className="grid_colm_item_link" href="/ecommerce-app-development">
-                                        <figure>
-                                            <img src={ecommerce} alt="eCommerce" />
-                                        </figure>
-                                        <div className="grid_colm_head">eCommerce</div>
-                                    </a>
-                                </div>
-                                <div className="grid_colm_item">
-                                    <a className="grid_colm_item_link" href="/real-estate-app-development">
-                                        <figure>
-                                            <img src={realEstate} alt="Real Estate" />
-                                        </figure>
-                                        <div className="grid_colm_head">Real Estate</div>
-                                    </a>
-                                </div>
-                                <div className="grid_colm_item">
                                     <a className="grid_colm_item_link" href="/">
                                         <figure>
                                             <img src={banking} alt="Banking" />
@@ -244,7 +252,7 @@ function Home() {
                                         <div className="grid_colm_head">Travel</div>
                                     </a>
                                 </div>
-                                <div className="grid_colm_item">
+                                <div className="grid_colm_item border-bottom-none">
                                     <a className="grid_colm_item_link" href="/">
                                         <figure>
                                             <img src={entertainment} alt="Entertainment" />
@@ -266,14 +274,6 @@ function Home() {
                                             <img src={socialMedia} alt="Social Media" />
                                         </figure>
                                         <div className="grid_colm_head">Social Media</div>
-                                    </a>
-                                </div>
-                                <div className="grid_colm_item border-bottom-none">
-                                    <a className="grid_colm_item_link" href="/">
-                                        <figure>
-                                            <img src={logistics} alt="Logistics" />
-                                        </figure>
-                                        <div className="grid_colm_head">Logistics</div>
                                     </a>
                                 </div>
                                 <div className="grid_colm_item border-bottom-none">
