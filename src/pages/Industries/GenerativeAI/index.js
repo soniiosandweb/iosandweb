@@ -208,7 +208,7 @@ function GenerativeAI(){
                     <Row>
                         <Col>
                             <h2 className="heading2 max-width-70 m-auto text-center">Leveraging Artificial Intelligence across Multiple Industrial Domains</h2>
-                            <div className="heading5 max-width-70 m-auto text-center">The rapidly evolving AI technology is transforming the business landscape across various industries. As a dedicated Generative AI development company, we continuously explore innovative use cases to unlock the potential benefits of Generative AI tools for organizations across sectors.</div>
+                            <div className="heading5 max-width-70 mx-auto text-center">The rapidly evolving AI technology is transforming the business landscape across various industries. As a dedicated Generative AI development company, we continuously explore innovative use cases to unlock the potential benefits of Generative AI tools for organizations across sectors.</div>
                         </Col>
                     </Row>
                     <Row className="mt-5">
