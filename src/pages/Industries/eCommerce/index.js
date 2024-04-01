@@ -7,7 +7,7 @@ import OwlCarousel from "react-owl-carousel";
 import eCommerceBanner from '../../../images/industries/eCommerce/ecommerce-banner.webp';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleDot, faChevronRight, faPencilRuler, faListSquares, faCode, faRocket } from "@fortawesome/free-solid-svg-icons";
+import { faCircleDot, faChevronRight, faPencilRuler, faListSquares, faCode, faRocket, faCircle } from "@fortawesome/free-solid-svg-icons";
 
 // reasons to choose images
 import microservices from '../../../images/industries/eCommerce/microservices.png';
@@ -231,13 +231,13 @@ function Ecommerce(){
                                     <div className="capabilities-tab-left capabilities-tab-cols">
                                         <Nav variant="pills" className="capabilities-tab flex-column">
                                             <Nav.Item>
-                                                <Nav.Link eventKey="cpfirst">Award-winning team</Nav.Link>
+                                                <Nav.Link eventKey="cpfirst"><FontAwesomeIcon icon={faCircle} /> Award-winning team</Nav.Link>
                                             </Nav.Item>
                                             <Nav.Item>
-                                                <Nav.Link eventKey="cpsecond">Best development practices</Nav.Link>
+                                                <Nav.Link eventKey="cpsecond"><FontAwesomeIcon icon={faCircle} /> Best development practices</Nav.Link>
                                             </Nav.Item>
                                             <Nav.Item>
-                                                <Nav.Link eventKey="cpthird">Transparency is paramount</Nav.Link>
+                                                <Nav.Link eventKey="cpthird"><FontAwesomeIcon icon={faCircle} /> Transparency is paramount</Nav.Link>
                                             </Nav.Item>
                                         </Nav>
                                     </div>

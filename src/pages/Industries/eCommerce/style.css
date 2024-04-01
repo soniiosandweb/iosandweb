@@ -127,9 +127,19 @@
     color: #b1b1b1;
     padding: 15px 0;
     font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .capabilities-tab-div .nav-item .nav-link.active{
     color: #fff;
+}
+.capabilities-tab-div .nav-item .nav-link svg {
+    font-size: .8rem;
+    visibility: hidden;
+}
+.capabilities-tab-div .nav-item .nav-link.active svg{
+    visibility: visible;
 }
 .capabilities-tab-content {
     display: flex;

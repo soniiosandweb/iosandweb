@@ -7,7 +7,7 @@ import OwlCarousel from "react-owl-carousel";
 import realEstateBanner from '../../../images/industries/real-estate/real-estate-banner.webp';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleDot, faChevronRight, faCheckDouble, faFilter, faMapMarkerAlt, faVrCardboard, faHome, faSearch, faBrain, faCalculator, faStar, faHouseMedical, faListCheck, faLineChart, faCode, faFileAlt, faPaintBrush, faRocket, faCog } from "@fortawesome/free-solid-svg-icons";
+import { faCircleDot, faChevronRight, faCheckDouble, faFilter, faMapMarkerAlt, faVrCardboard, faHome, faSearch, faBrain, faCalculator, faStar, faHouseMedical, faListCheck, faLineChart, faCode, faFileAlt, faPaintBrush, faRocket, faCog, faCircle } from "@fortawesome/free-solid-svg-icons";
 
 // reasons to choose images
 import mobileConsultation from '../../../images/industries/real-estate/mobile-consultation.png';
@@ -97,6 +97,11 @@ function RealEstate(){
                             <div className="heading-wrapper industries-header text-center">
                                 <h1 className="text-black"><span className="text-highlight">Real Estate</span> App Development Company</h1>
                                 <div className="heading5">Navigating the future of real estate with next-gen tech-driven custom applications</div>
+
+                                <div className="btn-section mb-5">
+                                    <a href="/contact-us" className="btn btn-blue-border">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
+                                </div>
+                                
                             </div>
                             <div className="industries-banner-image">
                                 <img className="responsive-img" src={realEstateBanner} alt="Real Estate" />
@@ -285,16 +290,16 @@ function RealEstate(){
                                     <div className="capabilities-tab-left capabilities-tab-cols">
                                         <Nav variant="pills" className="capabilities-tab flex-column">
                                             <Nav.Item>
-                                                <Nav.Link eventKey="cpfirst">Qualified Leads</Nav.Link>
+                                                <Nav.Link eventKey="cpfirst"><FontAwesomeIcon icon={faCircle} /> Qualified Leads</Nav.Link>
                                             </Nav.Item>
                                             <Nav.Item>
-                                                <Nav.Link eventKey="cpsecond">Global Buyers Access</Nav.Link>
+                                                <Nav.Link eventKey="cpsecond"><FontAwesomeIcon icon={faCircle} /> Global Buyers Access</Nav.Link>
                                             </Nav.Item>
                                             <Nav.Item>
-                                                <Nav.Link eventKey="cpthird">Management of Large Inventory</Nav.Link>
+                                                <Nav.Link eventKey="cpthird"><FontAwesomeIcon icon={faCircle} /> Management of Large Inventory</Nav.Link>
                                             </Nav.Item>
                                             <Nav.Item>
-                                                <Nav.Link eventKey="cpfourth">Technology Infused Offering</Nav.Link>
+                                                <Nav.Link eventKey="cpfourth"><FontAwesomeIcon icon={faCircle} /> Technology Infused Offering</Nav.Link>
                                             </Nav.Item>
                                         </Nav>
                                     </div>
