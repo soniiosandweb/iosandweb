@@ -105,3 +105,16 @@
         padding: 20px 0;
     }
 }
+/* Tools AI Industries */
+.tools-ai-industries .tools-icon-panel {
+    max-width: 70%;
+    margin: auto;
+}
+.tools-ai-industries .tools-icon-panel .tools-icon-grid {
+    flex: 0;
+}
+@media (max-width: 1199px) {
+    .tools-ai-industries .tools-icon-panel {
+        max-width: 100%;
+    }
+}

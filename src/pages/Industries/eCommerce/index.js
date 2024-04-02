@@ -4,7 +4,7 @@ import { Container, Row, Col, Nav, Tab, Accordion } from "react-bootstrap";
 import SEO from "../../../components/SEO";
 import OwlCarousel from "react-owl-carousel";
 
-import eCommerceBanner from '../../../images/industries/eCommerce/ecommerce-banner.webp';
+import eCommerceBanner from '../../../images/industries/eCommerce/ecommerce-banner-new.webp';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDot, faChevronRight, faPencilRuler, faListSquares, faCode, faRocket, faCircle } from "@fortawesome/free-solid-svg-icons";
@@ -82,7 +82,7 @@ function Ecommerce(){
                                 <div className="heading5">We don't just build apps, we engineer experiences!</div>
 
                                 <div className="btn-section mb-5">
-                                    <a href="/contact-us" className="btn btn-blue-border">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
+                                    <a href="/contact-us" className="btn btn-white-border">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
                                 </div>
 
                             </div>
@@ -95,7 +95,7 @@ function Ecommerce(){
             </div>
 
             {/* Reasons to choose section */}
-            <div className="reasons-to-choose industries-reasons-tab section-padding no-padding">
+            <div className="reasons-to-choose industries-reasons-tab section-padding no-bottom-padding">
                 <Container>
                     <Row>
                         <Col>

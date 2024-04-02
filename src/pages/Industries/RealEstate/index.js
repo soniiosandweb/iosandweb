@@ -4,7 +4,7 @@ import { Container, Row, Col, Tab, Nav, Accordion } from "react-bootstrap";
 import SEO from "../../../components/SEO";
 import OwlCarousel from "react-owl-carousel";
 
-import realEstateBanner from '../../../images/industries/real-estate/real-estate-banner.webp';
+import realEstateBanner from '../../../images/industries/real-estate/real-estate-banner-new.webp';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDot, faChevronRight, faCheckDouble, faFilter, faMapMarkerAlt, faVrCardboard, faHome, faSearch, faBrain, faCalculator, faStar, faHouseMedical, faListCheck, faLineChart, faCode, faFileAlt, faPaintBrush, faRocket, faCog, faCircle } from "@fortawesome/free-solid-svg-icons";
@@ -99,7 +99,7 @@ function RealEstate(){
                                 <div className="heading5">Navigating the future of real estate with next-gen tech-driven custom applications</div>
 
                                 <div className="btn-section mb-5">
-                                    <a href="/contact-us" className="btn btn-blue-border">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
+                                    <a href="/contact-us" className="btn btn-white-border">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
                                 </div>
                                 
                             </div>
@@ -112,7 +112,7 @@ function RealEstate(){
             </div>
 
             {/* Reasons to choose section */}
-            <div className="reasons-to-choose industries-reasons-tab section-padding no-padding">
+            <div className="reasons-to-choose industries-reasons-tab section-padding no-bottom-padding">
                 <Container>
                     <Row>
                         <Col>

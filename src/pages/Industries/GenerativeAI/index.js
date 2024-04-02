@@ -1,6 +1,6 @@
 import React from "react";
 import './style.css';
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col, Tab, Nav, Accordion } from "react-bootstrap";
 import SEO from "../../../components/SEO";
 import OwlCarousel from "react-owl-carousel";
 
@@ -35,6 +35,41 @@ import seasonedExperts from '../../../images/industries/generative-ai/expert-tea
 import collaborate from '../../../images/industries/generative-ai/collaborate.webp';
 import innovativeSolutions from '../../../images/industries/generative-ai/innovative-solutions.webp';
 import upgradeMaintenance from '../../../images/industries/generative-ai/upgrade-maintenance.webp';
+
+// Advanced technologies images
+import gpt from '../../../images/industries/generative-ai/gpt.png';
+import dall from '../../../images/industries/generative-ai/dall-e.png';
+import whisper from '../../../images/industries/generative-ai/whisper.png';
+import midJourney from '../../../images/industries/generative-ai/midjourney.png';
+import bard from '../../../images/industries/generative-ai/bard.png';
+import diffusion from '../../../images/industries/generative-ai/diffusion.png';
+
+// Tools and technologies images
+import tensorFlow from '../../../images/industries/generative-ai/tensorflow.png';
+import pyTorch from '../../../images/industries/generative-ai/PyTorch.png';
+import keras from '../../../images/industries/generative-ai/Keras.png';
+import mxnet from '../../../images/industries/generative-ai/mxnet.png';
+import theano from '../../../images/industries/generative-ai/theano.png';
+import chainer from '../../../images/industries/generative-ai/chainer.png';
+import torch from '../../../images/industries/generative-ai/torch.png';
+import chatGPT from '../../../images/industries/generative-ai/ChatGPT.png';
+import huggingFace from '../../../images/industries/generative-ai/hugging-face.png';
+import deepmindSonnet from '../../../images/industries/generative-ai/deepmind-sonnet.png';
+import fastAI from '../../../images/industries/generative-ai/fastai.png';
+import gpt4 from '../../../images/industries/generative-ai/gpt-4.png';
+import pix2pix from '../../../images/industries/generative-ai/pix-2-pix.png';
+import waveGan from '../../../images/industries/generative-ai/wavegan.png';
+import deepArt from '../../../images/industries/generative-ai/deepart.png';
+import cnnIcon from '../../../images/industries/generative-ai/cnn-icon.png';
+import rnnIcon from '../../../images/industries/generative-ai/rnn-icon.png';
+import autoencoder from '../../../images/industries/generative-ai/autoencoders.png';
+import drlnIcon from '../../../images/industries/generative-ai/drln-icon.png';
+import vaeIcon from '../../../images/industries/generative-ai/vae-icon.png';
+import alexNet from '../../../images/industries/generative-ai/alexnet-icon.png';
+import mobileNet from '../../../images/industries/generative-ai/mobilenet-icon.png';
+import googleNet from '../../../images/industries/generative-ai/googlenet-icon.png';
+import inception from '../../../images/industries/generative-ai/inception-icon.png';
+import squeezeNet from '../../../images/industries/generative-ai/squeezenet-icon.png';
 
 function GenerativeAI(){
 
@@ -73,7 +108,7 @@ function GenerativeAI(){
                                 <div className="heading5">Deploy the revolutionary capabilities of Generative AI to scale your business to a new growth landscape</div>
 
                                 <div className="btn-section mb-5">
-                                    <a href="/contact-us" className="btn btn-blue-border">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
+                                    <a href="/contact-us" className="btn btn-white-border">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
                                 </div>
 
                             </div>
@@ -86,7 +121,7 @@ function GenerativeAI(){
             </div>
 
             {/* Reasons to choose section */}
-            <div className="reasons-to-choose industries-reasons-tab section-padding no-padding">
+            <div className="reasons-to-choose industries-reasons-tab section-padding no-bottom-padding">
                 <Container>
                     <Row>
                         <Col>
@@ -495,6 +530,478 @@ function GenerativeAI(){
 
                                 </OwlCarousel>
                             </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* Advanced technologies section */}
+            <div className="advanced-technologies section-padding">
+                <Container>
+                    <Row>
+                        <Col md={6} lg={7}>
+                            <div className="sticky-div">
+                                <h2 className="heading2">Innovation Built on Expertise: AI Models We Utilize for Your Business</h2>
+                                <div className="heading5">Harnessing the capabilities of AI models, we build efficient and robust business solutions that unlock new possibilities for innovation, automation, and personalization. These AI models have the power to deliver intelligent business tools that can enhance the UX, reinvent engagement, optimize business processes, and much more.</div>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={5}>
+                            <div className="advanced-technologies-blocks">
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={gpt} className="responsive-img" alt="GPT" />
+                                        </span>
+                                        <h4 className="heading4">GPT</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">We help businesses integrate the capabilities of GPT 3, GPT 3.5, and GPT 4 into their applications to enable natural language processing, create conversations, and develop intelligent chatbots.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={dall} className="responsive-img" alt="DALL-E" />
+                                        </span>
+                                        <h4 className="heading4">DALL-E</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">With our specialized knowledge in DALL-E, we assist businesses in creating and regenerating plausible images. We leverage DALL-E's zero-shot reasoning to create unique and compelling visuals, helping businesses enhance their design processes and explore new possibilities in digital content creation.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={whisper} className="responsive-img" alt="Whisper" />
+                                        </span>
+                                        <h4 className="heading4">Whisper</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">Our experts utilize the power of the adaptable speech recognition model, Whisper to enable businesses to demonstrate exceptional proficiency in functions, including language identification, translation, and multilingual speech recognition.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={midJourney} className="responsive-img" alt="Midjourney" />
+                                        </span>
+                                        <h4 className="heading4">Midjourney</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">With MidJourney, an AI-powered image generator, we enable businesses to enhance their creative endeavors and bring a unique yet artistic touch to their projects. The model allows them to develop visually appealing and expressive images that resonate with their target audience.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={bard} className="responsive-img" alt="Bard" />
+                                        </span>
+                                        <h4 className="heading4">Bard</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">By integrating Bard, a cutting-edge AI chatbot powered by LaMDA, into their systems, organizations can enhance the user experience for their valued customers. By leveraging the capabilities of this AI model, they can facilitate personalized and seamless interactions, be it for addressing customer inquiries, providing support, or offering tailored recommendations.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={diffusion} className="responsive-img" alt="Stable Diffusion" />
+                                        </span>
+                                        <h4 className="heading4">Stable Diffusion</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">Enterprises can effectively leverage Stable Diffusion to optimize their operations and attain superior results. The capabilities of Stable Diffusion allow innovative possibilities in image generation across different disciplines, such as design, marketing, and content creation.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* Tools and languages section */}
+            <div className="tools-languages-section tools-ai-industries section-padding text-white text-center bg-black">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2">Tech Stack We Utilize to Transform the Digital Landscape through Generative AI Development Services</h2>
+                            <div className="heading5">Our near-decade expertise in developing custom business solutions can strengthen your brand, drive business growth, and help you reach a wider audience. Our skilled developers harness the latest tools, frameworks, and technologies to offer Generative AI development services that help you attain business resilience.</div>
+
+                            <div className="tools-languages-tab-div">
+                                <Tab.Container id="tools-languages-tab" defaultActiveKey="toolfirst">
+                                    <div className="tools-languages-tab-top tools-languages-tab-cols">
+                                        <Nav variant="pills" className="tools-languages-tab flex-row justify-content-center">
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="toolfirst">Deep Learning (DL) Frameworks</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="toolsecond">Modules/Toolkits</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="toolthird">Generative AI Models</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="toolfourth">Neural Networks</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="toolfifth">Libraries</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="toolsixth">Image Classification Models</Nav.Link>
+                                            </Nav.Item>
+                                        </Nav>
+                                    </div>
+                                    <div className="tools-languages-tab-bottom tools-languages-tab-cols">
+                                        <Tab.Content>
+
+                                            <Tab.Pane eventKey="toolfirst">
+                                                <div className="tools-languages-tab-content">
+
+                                                    <div className="tools-icon-grid-block">
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={tensorFlow} className="responsive-img" alt="TensorFlow" />
+                                                                </div>
+                                                                <p className="paragraph">TensorFlow</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={pyTorch} className="responsive-img" alt="PyTorch" />
+                                                                </div>
+                                                                <p className="paragraph">PyTorch</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={keras} className="responsive-img" alt="Keras" />
+                                                                </div>
+                                                                <p className="paragraph">Keras</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={mxnet} className="responsive-img" alt="MXNet" />
+                                                                </div>
+                                                                <p className="paragraph">MXNet</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={theano} className="responsive-img" alt="Theano" />
+                                                                </div>
+                                                                <p className="paragraph">Theano</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={chainer} className="responsive-img" alt="Chainer" />
+                                                                </div>
+                                                                <p className="paragraph">Chainer</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={torch} className="responsive-img" alt="Torch" />
+                                                                </div>
+                                                                <p className="paragraph">Torch</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Tab.Pane>
+
+                                            <Tab.Pane eventKey="toolsecond">
+                                                <div className="tools-languages-tab-content">
+                                                    
+                                                    <div className="tools-icon-grid-block">
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={chatGPT} className="responsive-img" alt="OpenAI GPT" />
+                                                                </div>
+                                                                <p className="paragraph">OpenAI GPT</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={chatGPT} className="responsive-img" alt="OpenAI DALL-E" />
+                                                                </div>
+                                                                <p className="paragraph">OpenAI DALL-E</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={huggingFace} className="responsive-img" alt="Hugging Face Transformers" />
+                                                                </div>
+                                                                <p className="paragraph">Hugging Face Transformers</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={deepmindSonnet} className="responsive-img" alt="DeepMind Sonnet" />
+                                                                </div>
+                                                                <p className="paragraph">DeepMind Sonnet</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={tensorFlow} className="responsive-img" alt="TensorFlow" />
+                                                                </div>
+                                                                <p className="paragraph">TensorFlow Probability</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={fastAI} className="responsive-img" alt="Fast.ai" />
+                                                                </div>
+                                                                <p className="paragraph">Fast.ai</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Tab.Pane>
+
+                                            <Tab.Pane eventKey="toolthird">
+                                                <div className="tools-languages-tab-content">
+
+                                                    <div className="tools-icon-grid-block">
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={chatGPT} className="responsive-img" alt="GPT-3" />
+                                                                </div>
+                                                                <p className="paragraph">GPT-3</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={gpt4} className="responsive-img" alt="GPT-4" />
+                                                                </div>
+                                                                <p className="paragraph">GPT-4</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={chatGPT} className="responsive-img" alt="DALL-E" />
+                                                                </div>
+                                                                <p className="paragraph">DALL-E</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={pix2pix} className="responsive-img" alt="Pix2Pix" />
+                                                                </div>
+                                                                <p className="paragraph">Pix2Pix</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={waveGan} className="responsive-img" alt="WaveGAN" />
+                                                                </div>
+                                                                <p className="paragraph">WaveGAN</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={deepArt} className="responsive-img" alt="DeepArt" />
+                                                                </div>
+                                                                <p className="paragraph">DeepArt</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </Tab.Pane>
+
+                                            <Tab.Pane eventKey="toolfourth">
+                                                <div className="tools-languages-tab-content">
+                                                    
+                                                    <div className="tools-icon-grid-block">
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={cnnIcon} className="responsive-img" alt="CNN" />
+                                                                </div>
+                                                                <p className="paragraph">CNN</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={rnnIcon} className="responsive-img" alt="RNN" />
+                                                                </div>
+                                                                <p className="paragraph">RNN</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={drlnIcon} className="responsive-img" alt="DRLN" />
+                                                                </div>
+                                                                <p className="paragraph">DRLN</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={vaeIcon} className="responsive-img" alt="VAE" />
+                                                                </div>
+                                                                <p className="paragraph">VAE</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={autoencoder} className="responsive-img" alt="Autoencoders" />
+                                                                </div>
+                                                                <p className="paragraph">Autoencoders</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Tab.Pane>
+
+                                            <Tab.Pane eventKey="toolfifth">
+                                                <div className="tools-languages-tab-content">
+                                                    
+                                                    <div className="tools-icon-grid-block">
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={tensorFlow} className="responsive-img" alt="TensorFlow" />
+                                                                </div>
+                                                                <p className="paragraph">TensorFlow</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={pyTorch} className="responsive-img" alt="PyTorch" />
+                                                                </div>
+                                                                <p className="paragraph">PyTorch</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={keras} className="responsive-img" alt="Keras" />
+                                                                </div>
+                                                                <p className="paragraph">Keras</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={mxnet} className="responsive-img" alt="MXNet" />
+                                                                </div>
+                                                                <p className="paragraph">MXNet</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={fastAI} className="responsive-img" alt="FastAI" />
+                                                                </div>
+                                                                <p className="paragraph">FastAI</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={theano} className="responsive-img" alt="Theano" />
+                                                                </div>
+                                                                <p className="paragraph">Theano</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Tab.Pane>
+
+                                            <Tab.Pane eventKey="toolsixth">
+                                                <div className="tools-languages-tab-content">
+                                                    
+                                                    <div className="tools-icon-grid-block">
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={alexNet} className="responsive-img" alt="AlexNet" />
+                                                                </div>
+                                                                <p className="paragraph">AlexNet</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={mobileNet} className="responsive-img" alt="MobileNet" />
+                                                                </div>
+                                                                <p className="paragraph">MobileNet</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={googleNet} className="responsive-img" alt="GoogLeNet" />
+                                                                </div>
+                                                                <p className="paragraph">GoogLeNet</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={inception} className="responsive-img" alt="Inception" />
+                                                                </div>
+                                                                <p className="paragraph">Inception</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={squeezeNet} className="responsive-img" alt="SqueezeNet" />
+                                                                </div>
+                                                                <p className="paragraph">SqueezeNet</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Tab.Pane>
+
+                                        </Tab.Content>
+                                    </div>
+                                </Tab.Container>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>     
+            </div>
+
+            {/* FAQ section */}
+            <div className="faq-panel section-padding less-top-padding">
+                <Container>
+                    <Row>
+                        <Col md={12}>
+                            <div className="leadtxt text-center">
+                                <h3>Frequently Asked Questions</h3>
+                            </div>
+                            <Accordion>
+                                <div className="faq_col_panel">
+                                    <Accordion.Item eventKey="1">
+                                        <Accordion.Header>How much does it cost to develop generative AI solutions? </Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>The cost of developing generative AI solutions like ChatGPT can vary between $100,000 and $500,000. There are several factors that impact the development costs, such as:</p>
+                                            <ul>
+                                                <li>The complexity of the project</li>
+                                                <li>Size and scope of the dataset</li>
+                                                <li>Resources required for computation</li>
+                                                <li>Timeframe for development</li>
+                                                <li>Customization and integration requirements</li>
+                                                <li>The expertise of the development team</li>
+                                                <li>Support and maintenance requirements</li>
+                                                <li>Deployment and infrastructure costs</li>
+                                                <li>Licensing and usage fees for third-party tools</li>
+                                            </ul>
+                                            <p><a href="/contact-us">Get in touch</a> with our generative AI experts to get clear cost estimates.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="2">
+                                        <Accordion.Header>Why choose IosAndWeb Technologies for Generative AI development services?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Hiring a dedicated Generative AI development company like IosAndWeb Technologies can offer multiple benefits, including increased efficiency, accuracy, and cost savings.</p>
+                                            <p>By utilizing multiple advanced AI models, we build technology solutions that allow you to streamline operations and achieve better outcomes. From aiding in task automation to improving the overall decision-making process, our Generative AI solutions offer your business a competitive edge.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                </div>
+                               
+                                <div className="faq_col_panel">
+                                    <Accordion.Item eventKey="3">
+                                        <Accordion.Header>How much time does it take to build a robust generative AI solution?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>The time frame for generative AI application development varies as per the overall complexity of the project. For instance, a highly complex solution with an extensive feature set can take around 10-18 months, or more. On the other hand, a simple generative AI solution with minimum features can take between 3 to 6 months. A dedicated generative AI consulting services provider like IosAndWeb Technologies can help you with exact time estimates based on your custom business requirements.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="4">
+                                        <Accordion.Header>What is IosAndWeb Technologies Generative AI integration process?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Here is the Generative AI integration process we follow in order to deliver robust business solutions:</p>
+                                            <ul>
+                                                <li><b>Evaluation:</b> We carefully study your project requirements and create a well-designed plan to meet them effectively.</li>
+                                                <li><b>Exploration:</b> We gather and analyze the necessary data thoroughly to find meaningful patterns and connections related to your requirements.</li>
+                                                <li><b>Pilot Project:</b> We conduct small-scale test projects to identify any gaps between the current system and the proposed improvements.</li>
+                                                <li><b>Development and Deployment:</b> We build and integrate the generative AI model into your existing app, thoroughly testing it to ensure accurate and reliable results.</li>
+                                            </ul>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </div>
+                            </Accordion>
                         </Col>
                     </Row>
                 </Container>
