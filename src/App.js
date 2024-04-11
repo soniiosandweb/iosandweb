@@ -35,6 +35,7 @@ import Career from './pages/Career';
 import Ecommerce from './pages/Industries/eCommerce';
 import RealEstate from './pages/Industries/RealEstate';
 import GenerativeAI from './pages/Industries/GenerativeAI';
+import Healthcare from './pages/Industries/Healthcare';
 
 function App() {
   return (
@@ -78,6 +79,7 @@ function App() {
           <Route path='/ecommerce-app-development' element={<Ecommerce />} />
           <Route path='/real-estate-app-development' element={<RealEstate />} />
           <Route path='/generative-ai-development' element={<GenerativeAI />} />
+          <Route path='/healthcare-software-development' element={<Healthcare />} />
 
         </Route>
       </Routes>

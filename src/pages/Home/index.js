@@ -211,7 +211,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div className="grid_colm_item">
-                                    <a className="grid_colm_item_link" href="/">
+                                    <a className="grid_colm_item_link" href="/healthcare-software-development">
                                         <figure>
                                             <img src={healthCare} alt="Healthcare" />
                                         </figure>
