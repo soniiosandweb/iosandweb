@@ -26,8 +26,7 @@ function Partners(){
                     <Row>
                         <Col>
                             <div className="leadtxt">
-                                <h3>Our Efforts Have Transformed How You
-                                <br/>Experience These Global Leaders</h3>
+                                <h3>Our Efforts Have Revolutionized <br/>Your Experience With These Global Leaders</h3>
                             </div>
                             <ul className="partner-logos">
                                 <li className="partner-logo">

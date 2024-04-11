@@ -64,8 +64,8 @@ function Home() {
     return (
         <>
             <SEO
-                title='Custom Software Development Company - IAW Technologies'
-                description='Looking for a reliable Custom Software Development Company to build your next big idea? Look no further than IosAndWeb Technologies.'
+                title='Build Your Dream Software with IAW Technologies'
+                description='Tired of off-the-shelf software? IAW Technologies builds custom solutions to fit your unique business needs. Boost efficiency & watch your business thrive.'
                 name='IosAndWeb Technologies'
             />
 
@@ -75,9 +75,9 @@ function Home() {
                     <Row>
                         <Col>
                             <div className="intro-content">
-                                <h1 className="banner-heading">Custom Software Development Company</h1>
-                                <p className="banner-text">We offer complete business software development solutions.<br/>We combine this culture of innovation with our capabilities and industry expertise to go beyond the other traditional technology.</p>
-                                <a href="/contact-us" className="consult-expert-btn">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
+                                <h1 className="banner-heading">Welcome to IAW Technologies <br/>Where Innovation Meets Functionality</h1>
+                                <p className="banner-text">Your partner in Custom Software Development Solutions</p>
+                                <a href="/contact-us" className="consult-expert-btn">Let's Collaborate <FontAwesomeIcon icon={faChevronRight} /></a>
                             </div>
                             <video className="intro_video" poster={homeBanner} autoPlay={true} muted={true} loop={true}>
                                 <source src={homeVideo} type="video/mp4"></source>
@@ -94,13 +94,12 @@ function Home() {
                     <Row>
                         <Col>
                             <div className="leadtxt">
-                                <h2>We Create New Solutions and Transform
-                                    <br/>Existing Ones with a Development Process That
-                                    <br/>Beats Industry-Best Timelines
+                                <h2>
+                                    We specialize in crafting software solutions tailored to YOUR unique business needs. With our expertise, innovation and commitment to excellence, we empower businesses to thrive in today's competitive digital landscape. Whether you are here to streamline operations, enhance customer experience or drive growth, we're here to turn your vision into reality. 
                                 </h2>
                             </div>
                             <div className="btn-section">
-                                <a href="/services" className="btn btn-blue-border">Our Services <FontAwesomeIcon icon={faChevronRight} /></a>
+                                <a href="/services" className="btn btn-blue-border">Explore our Services <FontAwesomeIcon icon={faChevronRight} /></a>
                             </div>
 
                             <div className="services-cards">
@@ -183,8 +182,7 @@ function Home() {
                     <Row>
                         <Col>
                             <div className="leadtxt text-center">
-                                <h3>A Unified Vision That Caters
-                                    <br/>to Diverse Industry Demands
+                                <h3>We Cater to a Wide Variety of <br/>Industry Demands
                                 </h3>
                             </div>
                             <div className="grid_colm_panel">
@@ -299,8 +297,8 @@ function Home() {
                     <Row>
                         <Col>
                             <div className="leadtxt text-center">
-                                <h3>First-Hand Opinions of Clients on
-                                    <br/>Their Partnership Experience
+                                <h3>You've Heard Enough From the Horse's Mouth
+                                    <br/>Curious About What Our Clients Have to Say?
                                 </h3>
                             </div>
                             <div className="leadsubtxt text-center">
@@ -490,7 +488,7 @@ function Home() {
                     <Row className="align-items-center">
                         <Col lg={6}>
                             <div className="leadtxt">
-                                <h3>Strategic Partnerships to Unlock Greater Business Value</h3>
+                                <h3>Our Strategic Partners Include</h3>
                             </div>
                         </Col>
                         <Col lg={6}>
@@ -513,6 +511,27 @@ function Home() {
                 </Container>
             </div>
 
+            {/* Award Panel */}
+            <AwardsSlider />
+
+            {/* contact us home */}
+            <div className="home-contact-us section-padding text-white text-center">
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className="leadtxt max-width-70 m-auto">
+                                <h4>Let IAW Technologies be your trusted partner in custom software development. </h4>
+                                <h4>Whether you're a startup looking to disrupt the market or an established enterprise seeking to innovate, we have just the solutions you need to succeed!</h4>
+
+                                <div className="home-contact-us-btn mt-5">
+                                    <a href="/contact-us" className="btn btn-white-border">Contact Us <FontAwesomeIcon icon={faChevronRight} /></a> 
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
             {/* FAQ section */}
             <div className="faq-panel section-padding">
                 <Container>
@@ -524,71 +543,44 @@ function Home() {
                             <Accordion>
                                 <div className="faq_col_panel">
                                     <Accordion.Item eventKey="1">
-                                        <Accordion.Header>What mobile app development services do you offer? </Accordion.Header>
+                                        <Accordion.Header>What is custom software development? </Accordion.Header>
                                         <Accordion.Body>
-                                            <p>As a leading mobile application development company, we offer a comprehensive array of services, including:</p>
-                                            <ul>
-                                                <li>iOS App Development</li>
-                                                <li>Android App Development</li>
-                                                <li>Flutter App Development</li>
-                                                <li>React Native App Development</li>
-                                                <li>Web App Development</li>
-                                            </ul>
-                                            <p>Our client-centric approach allows us to assist our clients all the way from the initial idea validation to execution and post maintenance. This involves rigorous planning, design, development, testing, and deployment, ensuring that the mobile app is not only technologically robust but also aligns with the client's business vision and user expectations.</p>
+                                            <p>Custom software development is the process of creating software specifically designed to meet the unique needs of your business. Unlike off-the-shelf software, custom software is built from the ground up to address your specific workflows, challenges, and goals.</p>
                                         </Accordion.Body>
                                     </Accordion.Item>
 
                                     <Accordion.Item eventKey="2">
-                                        <Accordion.Header>Do you develop software for both mobile and web platforms?</Accordion.Header>
+                                        <Accordion.Header>How do I know if custom software is right for me?</Accordion.Header>
                                         <Accordion.Body>
-                                            <p>As a dedicated software and mobile application developer company, our expertise encompasses across all platforms. Be it native, hybrid, or web, we cater to all your development needs.</p>
-                                            <p>Our agile development approach is highly adaptable and tailored to your business goals and target audience. Whether you operate in healthcare, finance, eCommerce, or any other industry, we have the skill to create custom software that delivers exceptional value to your organization.</p>
+                                            <p>If you have unique business needs that are not met by off-the-shelf software, or if you are looking to improve efficiency, gain a competitive edge, or integrate with existing systems, then custom software development might be a good fit for you.</p>
                                         </Accordion.Body>
                                     </Accordion.Item>
 
                                     <Accordion.Item eventKey="3">
-                                        <Accordion.Header>Do you offer app maintenance and support services?</Accordion.Header>
+                                        <Accordion.Header>What mobile app development services do you offer?</Accordion.Header>
                                         <Accordion.Body>
-                                            <p>Yes, we offer comprehensive maintenance and support services tailored to meet your business requirements. Being one of the best mobile app development agencies, our approach is centered around helping you choose the maintenance strategy that best aligns with your needs, ensuring the seamless operation of your software applications.</p>
-                                            <p>Our app maintenance services encompass a wide range of offerings, including:</p>
+                                            <p>At IAW Technologies, we're a team of passionate mobile app developers specializing in bringing your ideas to life. We offer a full suite of development services, including:</p>
                                             <ul>
-                                                <li>Software upgrades as per emerging technologies</li>
-                                                <li>Automated backups</li>
-                                                <li>Issue management and response</li>
-                                                <li>Ongoing support and bug fixes</li>
-                                                <li>Regular performance and security enhancements</li>
-                                                <li>Version upgrades</li>
-                                                <li>Comprehensive user support</li>
-                                                <li>Performance monitoring</li>
+                                                <li><b>Native App Development:</b> Build best-in-class apps for iOS and Android, optimized for each platform's unique features and user experience.</li>
+                                                <li><b>Cross-Platform App Development:</b> Reach a wider audience with cost-effective solutions using frameworks like Flutter and React Native.</li>
+                                                <li><b>Web App Development:</b> Extend your digital reach with web applications that seamlessly complement your mobile strategy.</li>
                                             </ul>
+                                            <p>Our commitment goes beyond just coding. We take a client-centric approach, partnering with you every step of the way. From validating your initial concept to post-launch support, we ensure a smooth and successful journey.</p>
                                         </Accordion.Body>
                                     </Accordion.Item>
                                 </div>
                                
                                 <div className="faq_col_panel">
                                     <Accordion.Item eventKey="4">
-                                        <Accordion.Header>What software development services do you offer?</Accordion.Header>
+                                        <Accordion.Header>Do you offer ongoing maintenance and support?</Accordion.Header>
                                         <Accordion.Body>
-                                            <p>With a dedicated team of software developers and a track record of more than 3000 successful project deliveries, we are a leading mobile application developer company with the expertise and experience to cater to your unique software needs. Our comprehensive suite of software development services encompasses:</p>
-                                            <ul>
-                                                <li>Software Consulting</li>
-                                                <li>Custom Software Development</li>
-                                                <li>Enterprise Software Development</li>
-                                                <li>Software Product Development</li>
-                                                <li>Software Integration</li>
-                                                <li>Custom CRM Development</li>
-                                                <li>API Development</li>
-                                                <li>ERP Software Development</li>
-                                            </ul>
-                                            <p>Our development approach is based on comprehending your specific business requirements, carefully crafting the most effective development plan, delivering results-oriented recommendations, and ensuring that your business objectives are met with utmost precaution.</p>
+                                            <p>Yes, most custom software development companies offer ongoing maintenance and support plans to ensure the smooth operation of your software and address any future needs.</p>
                                         </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="5">
                                         <Accordion.Header>How do you ensure the security and quality of the software you develop?</Accordion.Header>
                                         <Accordion.Body>
-                                            <p>As the best software and mobile application development agency, we hold security and software quality in the highest regard. We begin the project by signing a Non-Disclosure Agreement (NDA) to safeguard your information. This legally binding document emphasizes our commitment to maintaining the confidentiality of your sensitive data and establishing a secure and trustworthy partnership.</p>
-                                            <p>Paying utmost importance to mobile app security, we align our development processes with industry-specific compliance standards, including GDPR, HIPAA, PCI DSS, etc. These serve as guiding frameworks for development, ensuring that our software not only meets your business objectives but also adheres to the highest levels of security and quality.</p>
-                                            <p>Furthermore, quality assurance is one of the vital pillars of our development process. We adhere to industry best practices and stringent testing protocols to guarantee the utmost quality of your software. Our comprehensive testing techniques encompass functional, performance, user, and security testing, which are vital in identifying and mitigating potential vulnerabilities or risks.</p>
+                                            <p>We prioritize security and quality from the start. We sign NDAs to protect your confidentiality, adhere to industry security standards (like GDPR), and implement rigorous testing to deliver exceptional, secure software.</p>
                                         </Accordion.Body>
                                     </Accordion.Item>
                                 </div>
@@ -597,9 +589,7 @@ function Home() {
                     </Row>
                 </Container>
             </div>
-            
-            {/* Award Panel */}
-            <AwardsSlider />
+
         </>
     )
 }

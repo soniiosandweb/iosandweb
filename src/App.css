@@ -218,6 +218,9 @@ h1, h2{
   .no-bottom-padding{
     padding-bottom: 0;
   }
+  .leadtxt h3, .leadtxt h2{
+    font-size: 24px;
+  }
 }
 
 /* Privacy Policy */

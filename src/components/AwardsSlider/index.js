@@ -14,7 +14,7 @@ function AwardsSlider(){
     return(
         <>
             {/* Award Panel */}
-            <div className="awards-section">
+            <div className="awards-section section-padding">
                 <Container>
                     <Row>
                         <Col>

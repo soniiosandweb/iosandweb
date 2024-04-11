@@ -3,10 +3,11 @@ import './style.css';
 import { Container, Row, Col } from "react-bootstrap";
 
 // why choose icons
-import scalability from '../../images/services/scalability.png';
+import tailoredSolutions from '../../images/services/tailored-solutions.png';
+import expertise from '../../images/services/expertise.png';
 import responsive from '../../images/services/responsive.png';
-import loading from '../../images/services/loading.png';
-import secure from '../../images/services/internet.png';
+import integration from '../../images/services/integration.png';
+import ongoingSupport from '../../images/services/ongoing-support.png';
 
 function WhyChoose(){
     return (
@@ -16,37 +17,54 @@ function WhyChoose(){
                 <Container>
                     <Row>
                         <Col>
-                             <h3 className="heading2 text-center">Why Choose IosAndWeb Technologies For Your Web Development Solutions?</h3>
+                             <h3 className="heading2 text-center">Why Choose IAW Technologies, You May Ask?</h3>
                             <div className="heading5 text-center">We ensure web solutions that work flawlessly across multiple devices</div>
                         </Col>
                     </Row>
                     <Row className="mt-3">
-                        <Col md={6} lg={3} className="why-choose-col">
+                        <Col md={6} lg={4} className="why-choose-col">
                             <div className="why-choose-list-item">
-                                <img src={scalability} alt="Scalable" className="why-choose-icon" />
-                                <h3 className="heading4">Robust & Scalable</h3>
-                                <p className="paragraph">Fully functional and scalable solution that grows with your business</p>
+                                <div className="why-choose-list-div">
+                                    <img src={tailoredSolutions} alt="Tailored Solutions" className="why-choose-icon" />
+                                    <h3 className="heading4">Tailored Solutions</h3>
+                                </div>
+                                <p className="paragraph">We understand that every business is unique, that's why we take the time to listen and understand your requirements and goals, ensuring that whatever we develop for you adheres to your vision perfectly.</p>
                             </div>
                         </Col>
-                        <Col md={6} lg={3} className="why-choose-col">
+                        <Col md={6} lg={4} className="why-choose-col">
                             <div className="why-choose-list-item change-bg">
-                                <img src={responsive} alt="Highly Responsive" className="why-choose-icon" />
-                                <h3 className="heading4">Highly Responsive</h3>
-                                <p className="paragraph">Web solutions that work well on mobile, tablet, and desktop devices</p>
+                                <div className="why-choose-list-div">
+                                    <img src={expertise} alt="Expertise & Experience" className="why-choose-icon" />
+                                    <h3 className="heading4">Expertise & Experience</h3>
+                                </div>
+                                <p className="paragraph">Our team of seasoned developers brings years of experience and a wealth of knowledge to the table. From web applications to mobile apps to enterprise solutions, we have the skills to deliver results.</p>
                             </div>
                         </Col>
-                        <Col md={6} lg={3} className="why-choose-col">
+                        <Col md={6} lg={4} className="why-choose-col">
                             <div className="why-choose-list-item">
-                                <img src={loading} alt="Quick Loading" className="why-choose-icon" />
-                                <h3 className="heading4">Quick Loading</h3>
-                                <p className="paragraph">We offer a minimalistic setup to ensure your website load faster</p>
+                                <div className="why-choose-list-div">
+                                    <img src={responsive} alt="Innovation at the Core" className="why-choose-icon" />
+                                    <h3 className="heading4">Innovation at the Core</h3>
+                                </div>
+                                <p className="paragraph">Innovation drives everything we do. We stay ahead of the curve, leveraging the latest technologies and trends to build cutting-edge solutions that seamlessly set you apart from the competition.</p>
                             </div>
                         </Col>
-                        <Col md={6} lg={3} className="why-choose-col">
+                        <Col md={6} lg={4} className="why-choose-col">
                             <div className="why-choose-list-item change-bg">
-                                <img src={secure} alt="Secure Solutions" className="why-choose-icon" />
-                                <h3 className="heading4">Secure Solutions</h3>
-                                <p className="paragraph">Highly secure websites to withstand high traffic without any glitches</p>
+                                <div className="why-choose-list-div">
+                                    <img src={integration} alt="Seamless Integration" className="why-choose-icon" />
+                                    <h3 className="heading4">Seamless Integration</h3>
+                                </div>
+                                <p className="paragraph">Our solutions coherently integrate with your existing systems and processes, minimizing disruptions and maximizing efficiency. Whether you're upgrading legacy systems or starting fresh, we ensure a smooth transition.</p>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={4} className="why-choose-col">
+                            <div className="why-choose-list-item">
+                                <div className="why-choose-list-div">
+                                    <img src={ongoingSupport} alt="Ongoing Support" className="why-choose-icon" />
+                                    <h3 className="heading4">Ongoing Support</h3>
+                                </div>
+                                <p className="paragraph">Our partnership doesn't just end after deployment; we provide ongoing support and maintenance to keep your software running smoothly and address any issues that may arise.</p>
                             </div>
                         </Col>
                     </Row>

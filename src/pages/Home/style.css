@@ -426,4 +426,11 @@
       grid-row-gap: 20px;
     }
 }
-  
+
+/* Home contact us section */
+.home-contact-us{
+    background: url('../../images/app-bg-lines.webp') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+}
