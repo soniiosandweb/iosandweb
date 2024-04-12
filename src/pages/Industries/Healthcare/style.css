@@ -1,0 +1,17 @@
+/* Industries service tab */
+.industries-services-tab {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.industries-services-tab .nav-link.active{
+    background-color: #1050bc;
+}
+.industries-services-tab .nav-link {
+    border: 1px solid #1050bc;
+    color: #1050bc;
+}
+.industries-services-tab .nav-link:hover {
+    background-color: #1050bc;
+    color: #fff;
+}

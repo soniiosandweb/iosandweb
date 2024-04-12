@@ -269,7 +269,7 @@ function GenerativeAI(){
                         </Col>
                         <Col xs={6} md={4} lg={3} className="industries-ai-col">
                             <div className="specification-block">
-                                <a className="specification-block-link" href="/">
+                                <a className="specification-block-link" href="/healthcare-software-development">
                                     <figure>
                                         <img src={healthCare} alt="Healthcare" />
                                     </figure>

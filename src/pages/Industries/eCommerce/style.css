@@ -137,6 +137,7 @@
     display: flex;
     margin-top: 40px;
     gap: 1.5rem;
+    align-items: center;
 }
 .capabilities-tab-left {
     flex: 1 1 30%;
@@ -167,6 +168,7 @@
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
+    align-items: center;
 }
 .capabilities-content-img {
     flex: 0 0 50%;

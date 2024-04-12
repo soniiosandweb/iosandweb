@@ -4,7 +4,7 @@ import {Container, Row, Col, Tab, Nav} from "react-bootstrap";
 import SEO from "../../../components/SEO";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight, faCircleDot } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight, faCircleDot, faCheckDouble, faCircle } from "@fortawesome/free-solid-svg-icons";
 
 import healthcareBanner from '../../../images/industries/healthcare/healthcare-banner.webp';
 
@@ -17,6 +17,14 @@ import telemedicineApp from '../../../images/industries/healthcare/telemedicine-
 import pharmacySystem from '../../../images/industries/healthcare/pharmacy-system.png';
 import hippaCompliant from '../../../images/industries/healthcare/hippa-compliant.png';
 import medicalDevice from '../../../images/industries/healthcare/medical-device.png';
+
+// capabilities section images
+import healthcareApp from '../../../images/industries/healthcare/healthcare-app-developer.webp';
+import flexibleModels from '../../../images/industries/healthcare/flexible-models.webp';
+import agileProcesses from '../../../images/industries/healthcare/agile-processes.webp';
+import innovativeSolutions from '../../../images/industries/healthcare/innovative-solutions.webp';
+import logicallyDesigned from '../../../images/industries/healthcare/logically-designed.webp';
+import advancedTechnologies from '../../../images/industries/real-estate/advanced-technologies.webp';
 
 function Healthcare(){
     return(
@@ -152,6 +160,329 @@ function Healthcare(){
                     </div>
                 </Container>
             </div>
+
+            {/* Industries Numbers section */}
+            <div className="industries-numbers-section section-padding">
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className="industries-numbers">
+                                <div className="industries-numbers-left">
+                                    <h2 className="heading2">Build a strong ground to grow your Real Estate app idea</h2>
+                                    <a href="/contact-us" className="btn btn-blue-border">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
+                                </div>
+                                <div className="industries-numbers-right">
+                                    <ul className="industries-numbers-list">
+                                        <li className="industries-numbers-list-item">
+                                            <span className="industries-numbers-span">50+</span>
+                                            <span className="industries-numbers-text">Tech Experts Under One Roof</span>
+                                        </li>
+                                        <li className="industries-numbers-list-item">
+                                            <span className="industries-numbers-span">75+</span>
+                                            <span className="industries-numbers-text">Custom Healthcare Projects Delivered</span>
+                                        </li>
+                                        <li className="industries-numbers-list-item">
+                                            <span className="industries-numbers-span">95%</span>
+                                            <span className="industries-numbers-text">Happy Clients</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+            
+            {/* services section */}
+            <div className="designing-services-section industries-services-section section-padding no-top-padding">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2 max-width-70">We Develop a Wide Range of High-Performing Healthcare Apps</h2>
+                            <div className="heading5 max-width-70">Our healthcare application development services make your product an integral element of the complete homecare and healthcare ecosystem. Our extensive exposure to working with doctors, patients, pharmacies, delivery systems, prescription systems, and EHR mechanisms makes customized development easy and error-free. Our healthcare mobile app development services include the development of these types of apps:</div>
+                        </Col>
+                    </Row>
+
+                    <div className="industries-services-tab-block mt-4">
+                        <Tab.Container id="industries-services-tab" defaultActiveKey="firstInd">
+                            <div className="industries-services-tab-cols">
+                                <Nav variant="pills" className="industries-services-tab">
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="firstInd">Apps for Patients</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="secondInd">Apps for Medical Professionals</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="thirdInd">Apps for Healthcare Providers</Nav.Link>
+                                    </Nav.Item>
+                                </Nav>
+                            </div>
+                            <div className="industries-services-tab-cols">
+                                <Tab.Content>
+                                    <Tab.Pane eventKey="firstInd">
+                                        <Row className="mt-5">
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Appointment Scheduling Applications</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Symptom Checkers</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Patient Engagement Applications</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Medication Reminder Apps</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Healthy Lifestyle App</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Chronic Disease Management App</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Telemedicine Apps</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Doctor On Demand App</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Mental Health Apps</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Urgent Care App</h4>
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey="secondInd">
+                                        <Row className="mt-5">
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Remote Patient Monitoring Apps</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Medical Research Apps</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">EHR Data Aggregation And Analysis Apps</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Hospital Communication Apps</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Practice Management Apps</h4>
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey="thirdInd">
+                                        <Row className="mt-5">
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Clinical Assistance Apps</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Medical Device Data Collection Platforms</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Time Table Scheduling Apps</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Wearable Tech Apps</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Billing Apps</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Pharmacy Delivery Apps</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Electronic Health Record (EHR) Systems</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Drug Inventory Tracking Apps</h4>
+                                                </div>
+                                            </Col>
+                                            <Col md={4} lg={3}>
+                                                <div className="specification-block">
+                                                    <FontAwesomeIcon icon={faCheckDouble}></FontAwesomeIcon>
+                                                    <h4 className="heading4">Population Health Management Software</h4>
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    </Tab.Pane>
+                                </Tab.Content>
+                            </div>
+                        </Tab.Container>
+                    </div>
+                </Container>
+            </div>
+
+            {/* Industries Capabilities section */}
+            <div className="what-software-section industries-capabilities-section section-padding text-white">
+                <Container>
+                    <Row className="align-items-center">
+                        <Col>
+                            <div className="leadtxt max-width-70">
+                                <h2>We Are Your Trusted Partner for Healthcare App Development Services</h2>
+                            </div>
+                            <div className="leadsubtxt max-width-70">
+                                From prototyping to design, development, and deployment, we provide end-to-end healthcare application development services. As a renowned healthcare app development company, we integrate user-centric design principles into every stage, fostering intuitive interfaces for both medical practitioners and patients alike.
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <div className="capabilities-tab-div">
+                                <Tab.Container id="capabilities-tab" defaultActiveKey="cpfirst">
+                                    <div className="capabilities-tab-left capabilities-tab-cols">
+                                        <Nav variant="pills" className="capabilities-tab flex-column">
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="cpfirst"><FontAwesomeIcon icon={faCircle} /> Proven mHealth Experience</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="cpsecond"><FontAwesomeIcon icon={faCircle} /> Flexible Engagement Models</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="cpthird"><FontAwesomeIcon icon={faCircle} /> Transparent and Agile Processes</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="cpfourth"><FontAwesomeIcon icon={faCircle} /> Innovative Solutions</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="cpfifth"><FontAwesomeIcon icon={faCircle} /> Logically Designed Architecture</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="cpsixth"><FontAwesomeIcon icon={faCircle} /> Superior Code Quality</Nav.Link>
+                                            </Nav.Item>
+                                        </Nav>
+                                    </div>
+                                    <div className="capabilities-tab-right capabilities-tab-cols">
+                                        <Tab.Content>
+                                            <Tab.Pane eventKey="cpfirst">
+                                                <div className="capabilities-tab-content">
+                                                    <div className="capabilities-content-img">
+                                                        <img src={healthcareApp} className="responsive-img" alt="Our healthcare app" />
+                                                    </div>
+                                                    <p className="paragraph">Our healthcare app developers have deep experience in developing cutting-edge mHealth solutions that allow users to track their diagnostic data, schedule appointments, find doctors, and manage their prescriptions. With our proven experience in mHealth, we bring a digital revolution to the healthcare ecosystem.</p>
+                                                </div>
+                                            </Tab.Pane>
+                                            <Tab.Pane eventKey="cpsecond">
+                                                <div className="capabilities-tab-content">
+                                                    <div className="capabilities-content-img">
+                                                        <img src={flexibleModels} className="responsive-img" alt="Flexible Models" />
+                                                    </div>
+                                                    <p className="paragraph">As the finest healthcare software development company, we offer flexible engagement models that are customized to our client's specific needs, ensuring the best results for their healthcare software solutions. We allow our clients to choose their engagement models and delegate the entire project to us.</p>
+                                                </div>
+                                            </Tab.Pane>
+                                            <Tab.Pane eventKey="cpthird">
+                                                <div className="capabilities-tab-content">
+                                                    <div className="capabilities-content-img">
+                                                        <img src={agileProcesses} className="responsive-img" alt="Agile Processes" />
+                                                    </div>
+                                                    <p className="paragraph">Our healthcare app development process is entirely transparent, so our clients are aware of each stage of the development process and can put forth their feedback in real-time. As one of the prominent medical software companies, we use DevOps and agile methodology during our development cycle to ensure that changes are made quickly and efficiently.</p>
+                                                </div>
+                                            </Tab.Pane>
+                                            <Tab.Pane eventKey="cpfourth">
+                                                <div className="capabilities-tab-content">
+                                                    <div className="capabilities-content-img">
+                                                        <img src={innovativeSolutions} className="responsive-img" alt="Innovative Solutions" />
+                                                    </div>
+                                                    <p className="paragraph">As one of the most reputed healthcare software companies, we use the latest technology trends and tools to build innovative medical software solutions that improve patient care and make health management easier. Our experts identify the most functional technology stack and build custom medical software development for healthcare businesses.</p>
+                                                </div>
+                                            </Tab.Pane>
+                                            <Tab.Pane eventKey="cpfifth">
+                                                <div className="capabilities-tab-content">
+                                                    <div className="capabilities-content-img">
+                                                        <img src={logicallyDesigned} className="responsive-img" alt="Logically Designed" />
+                                                    </div>
+                                                    <p className="paragraph">Being one of the esteemed healthcare app development companies, we are aware of the importance of a well-planned architecture in ensuring the security of the solution and saving end users' time. The significance of your end goal to our healthcare software developers can be seen in our decision between monolithic and microservice architectures as per your business needs.</p>
+                                                </div>
+                                            </Tab.Pane>
+                                            <Tab.Pane eventKey="cpsixth">
+                                                <div className="capabilities-tab-content">
+                                                    <div className="capabilities-content-img">
+                                                        <img src={advancedTechnologies} className="responsive-img" alt="Technology Infused Offering" />
+                                                    </div>
+                                                    <p className="paragraph">Every design, performance, and security effort we make has an impact on the unmatched quality of our code. As a pioneering healthcare app development company, we understand the need to minimize the number of patches, including increased stability and reduced maintenance requirements.</p>
+                                                </div>
+                                            </Tab.Pane>
+                                        </Tab.Content>
+                                    </div>
+                                </Tab.Container>
+                            </div>
+                            
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
         </>
     )
 }
