@@ -24,7 +24,7 @@ import flexibleModels from '../../../images/industries/healthcare/flexible-model
 import agileProcesses from '../../../images/industries/healthcare/agile-processes.webp';
 import innovativeSolutions from '../../../images/industries/healthcare/innovative-solutions.webp';
 import logicallyDesigned from '../../../images/industries/healthcare/logically-designed.webp';
-import advancedTechnologies from '../../../images/industries/real-estate/advanced-technologies.webp';
+import qualityCode from '../../../images/industries/healthcare/code-quality.webp';
 
 function Healthcare(){
     return(
@@ -468,7 +468,7 @@ function Healthcare(){
                                             <Tab.Pane eventKey="cpsixth">
                                                 <div className="capabilities-tab-content">
                                                     <div className="capabilities-content-img">
-                                                        <img src={advancedTechnologies} className="responsive-img" alt="Technology Infused Offering" />
+                                                        <img src={qualityCode} className="responsive-img" alt="Quality Code" />
                                                     </div>
                                                     <p className="paragraph">Every design, performance, and security effort we make has an impact on the unmatched quality of our code. As a pioneering healthcare app development company, we understand the need to minimize the number of patches, including increased stability and reduced maintenance requirements.</p>
                                                 </div>
