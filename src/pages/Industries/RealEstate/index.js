@@ -98,7 +98,7 @@ function RealEstate(){
                                 <h1 className="text-black"><span className="text-highlight">Real Estate</span> App Development Company</h1>
                                 <div className="heading5">Navigating the future of real estate with next-gen tech-driven custom applications</div>
 
-                                <div className="btn-section mb-5">
+                                <div className="btn-section">
                                     <a href="/contact-us" className="btn btn-white-border">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
                                 </div>
                                 

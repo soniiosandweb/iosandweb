@@ -73,7 +73,7 @@ function Healthcare(){
                                 <h1 className="text-black"><span className="text-highlight">Healthcare</span> Software Development Services</h1>
                                 <div className="heading5">Delivering world-class custom healthcare software development services to enable best medical care</div>
 
-                                <div className="btn-section mb-5">
+                                <div className="btn-section">
                                     <a href="/contact-us" className="btn btn-white-border">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
                                 </div>
                                 
@@ -698,6 +698,24 @@ function Healthcare(){
                                     </div>
 
                                 </OwlCarousel>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* Industries Consult section */}
+            <div className="industries-consult-section">
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className="industries-consult-div">
+                                <div className="industries-consult-content max-width-50 text-white">
+                                    <h3 className="heading3">Ensure the confidentiality your patients deserve with unmatched security & real-time flexibility of cloud servers.</h3>
+                                    <div className="btn-section mt-5">
+                                        <a href="/contact-us" className="btn btn-white-border">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
+                                    </div>
+                                </div>
                             </div>
                         </Col>
                     </Row>

@@ -15,3 +15,11 @@
     background-color: #1050bc;
     color: #fff;
 }
+/* Industries consult section */
+.industries-consult-div {
+    background: url('../../../images//industries/healthcare/industries-consult.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    border-radius: 30px;
+}

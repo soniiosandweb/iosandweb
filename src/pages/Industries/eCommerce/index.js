@@ -81,7 +81,7 @@ function Ecommerce(){
                                 <h1 className="text-black"><span className="text-highlight">eCommerce</span> App Development Services</h1>
                                 <div className="heading5">We don't just build apps, we engineer experiences!</div>
 
-                                <div className="btn-section mb-5">
+                                <div className="btn-section">
                                     <a href="/contact-us" className="btn btn-white-border">Consult Our Experts <FontAwesomeIcon icon={faChevronRight} /></a>
                                 </div>
 
