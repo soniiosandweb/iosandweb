@@ -33,6 +33,7 @@
     font-size: 15px;
     height: max-content;
     display: block;
+    visibility: visible;
 }
 .services-includes-section .why-choose-list-item:hover .why-choose-icon{
     transform: scale(1.2);

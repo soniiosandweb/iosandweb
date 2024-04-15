@@ -59,7 +59,7 @@
   margin: 0;
 }
 @media (min-width: 1400px) {
-  .section-why-choose .why-choose-col{
+  .section-why-choose.why-choose-section .why-choose-col{
     width: 20%;
   }
 }

@@ -13,7 +13,7 @@ function WhyChoose(){
     return (
         <>
          {/* why choose */}
-            <div className="section-why-choose section-padding">
+            <div className="section-why-choose why-choose-section section-padding">
                 <Container>
                     <Row>
                         <Col>

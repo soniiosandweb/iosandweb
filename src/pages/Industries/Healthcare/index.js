@@ -2,9 +2,10 @@ import React from "react";
 import './style.css';
 import {Container, Row, Col, Tab, Nav} from "react-bootstrap";
 import SEO from "../../../components/SEO";
+import OwlCarousel from "react-owl-carousel"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight, faCircleDot, faCheckDouble, faCircle } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight, faCircleDot, faCheckDouble, faCircle, faPencilRuler, faPaintBrush, faFileAlt, faRocket, faCog } from "@fortawesome/free-solid-svg-icons";
 
 import healthcareBanner from '../../../images/industries/healthcare/healthcare-banner.webp';
 
@@ -26,7 +27,37 @@ import innovativeSolutions from '../../../images/industries/healthcare/innovativ
 import logicallyDesigned from '../../../images/industries/healthcare/logically-designed.webp';
 import qualityCode from '../../../images/industries/healthcare/code-quality.webp';
 
+// Advanced technologies images
+import aiMLIcon from '../../../images/industries/eCommerce/ai-ml.png';
+import blockchainIcon from '../../../images/industries/eCommerce/blockchain.png';
+import dataAnalytics from '../../../images/industries/eCommerce/data-analytics.png';
+import arVR from '../../../images/industries/real-estate/ar-vr.png';
+import iotIcon from '../../../images/industries/healthcare/IoT-icon.png';
+import generativeAi from '../../../images/industries/healthcare/generative-ai.png';
+import businessIntelligence from '../../../images/industries/healthcare/business-intelligence.png';
+import { faCode } from "@fortawesome/free-solid-svg-icons/faCode";
+
 function Healthcare(){
+
+    const changeNumberProcess=(event) =>{
+        if (event.item) {
+            var count     = event.item.count;
+            var current      = (event.item.index + 1) - event.relatedTarget._clones.length / 2;
+
+            if (current > count) {
+                current = 1;
+            }
+            
+            if(current === 0) {
+                current = event.item.count;
+            }
+
+            document.getElementById('slide_number_process').innerHTML = current;
+            document.getElementById('slide_total_number_process').innerHTML = count;
+           
+        }
+    }
+
     return(
         <>
             <SEO
@@ -478,6 +509,368 @@ function Healthcare(){
                                 </Tab.Container>
                             </div>
                             
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* Advanced technologies section */}
+            <div className="advanced-technologies section-padding background-section">
+                <Container>
+                    <Row>
+                        <Col md={6} lg={7}>
+                            <div className="sticky-div">
+                                <h2 className="heading2">Innovative Technologies That Make Your Healthcare Products Fast and Secure</h2>
+                                <div className="heading5">Step into the future of healthcare with our cutting-edge suite of innovative technologies, meticulously crafted to transform the healthcare sector. As a leading healthcare software development company, our team creates advanced healthcare solutions that offer a seamless patient-centric experience.</div>
+                            </div>
+                        </Col>
+                        <Col md={6} lg={5}>
+                            <div className="advanced-technologies-blocks">
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={blockchainIcon} className="responsive-img" alt="Blockchain" />
+                                        </span>
+                                        <h4 className="heading4">Blockchain</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">As one of the leading healthcare solutions companies, we ensure the integrity and security of patient data with our state-of-the-art custom blockchain solutions. By leveraging blockchain in healthcare, we help our clients establish immutable and transparent records for all medical transactions.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={aiMLIcon} className="responsive-img" alt="AI/ML" />
+                                        </span>
+                                        <h4 className="heading4">Artificial Intelligence (AI)</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">Top-tiered medical software development companies like ours can harness the power of AI in healthcare to develop innovative solutions. Utilizing advanced AI algorithms, we analyze extensive patient data to predict potential health issues and tailor personalized treatment plans, revolutionizing patient care and outcomes.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={dataAnalytics} className="responsive-img" alt="Data Analytics" />
+                                        </span>
+                                        <h4 className="heading4">Data Analytics</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">By harnessing the power of data analytics in healthcare, our custom healthcare apps unlock the potential to identify emerging trends and patterns within vast datasets. This insight enables healthcare organizations to optimize their operational and management strategies, improving efficiency and patient outcomes.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={arVR} className="responsive-img" alt="AR/VR" />
+                                        </span>
+                                        <h4 className="heading4">AR/VR</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">Being one of the most renowned medical app development companies, we help you revolutionize patient engagement and medical training with our immersive AR/VR solutions. From education to detailed anatomical visualizations, our AR/VR healthcare services not only elevate patient experience but also streamline healthcare operations.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={iotIcon} className="responsive-img" alt="IoT" />
+                                        </span>
+                                        <h4 className="heading4">IoT</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">By implementing IoT in healthcare, we help our clients seamlessly integrate devices for monitoring patient vitals, tracking their medication adherence, and providing real-time data insights. This IoT-driven approach elevates patient care by enabling remote monitoring and facilitating the early detection of diseases.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={generativeAi} className="responsive-img" alt="Generative AI" />
+                                        </span>
+                                        <h4 className="heading4">Generative AI</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">Our experts harness the transformative power of Generative AI in healthcare to revolutionize medical diagnostics, treatment planning, and patient engagement. Our Generative AI solutions synthesize vast datasets to generate predictive models, personalized treatment options, and innovative medical imaging techniques.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <span className="advanced-technologies-icon">
+                                            <img src={businessIntelligence} className="responsive-img" alt="Business Intelligence" />
+                                        </span>
+                                        <h4 className="heading4">Business Intelligence</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">By leveraging our Business Intelligence software in healthcare, we enable organizations to transform complex data into actionable insights, significantly enhancing operational efficiency and patient care with precise, data-driven decision-making.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* Industries process slider */}
+            <div className="industries-process-slider section-padding">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2 text-center">Healthcare App Development Process We Follow</h2>
+                            <div className="heading5 text-center">At IosAndWeb Technologies, we follow an agile healthcare app development process to craft feature-loaded, robust healthcare software and applications. From analyzing the requirements of your project to launching it, our experts work diligently to scale your business.</div>
+
+                            <div className="industries-slider-block">
+
+                                <div className="industries-slider-numbers">
+                                    <span className="slide_number" id="slide_number_process"></span>
+                                    <span className="slide_dash"></span>
+                                    <span className="slide_total_number" id="slide_total_number_process"></span>
+                                </div>
+
+                                <OwlCarousel className="owl-theme industries-process" loop autoplay={true} autoplayTimeout={4000} autoplayHoverPause={true} margin={15} nav={true} dots={false} items={4} onInitialized={changeNumberProcess} onTranslated={changeNumberProcess} responsive={
+                                    {
+                                        '0': {
+                                            items: 1,
+                                        },
+                                        '768': {
+                                            items: 2,
+                                        },
+                                        '992': {
+                                            items: 2.5,
+                                        },
+                                        '1200': {
+                                            items: 3.5,
+                                        }
+                                    }
+                                }>
+                                    <div className="item">
+                                        <div className="industries_process_block">
+                                            <span className="process-icon"><FontAwesomeIcon icon={faPencilRuler} /></span>
+                                            <h4 className="heading4">Project Analysis</h4>
+                                            <p className="paragraph">Our experts understand the project's scope and create strategies for efficient healthcare IT consulting services. As one of the best healthcare IT services companies, we conduct thorough market research and competition analysis before initiating your project idea.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="industries_process_block">
+                                            <span className="process-icon"><FontAwesomeIcon icon={faPaintBrush} /></span>
+                                            <h4 className="heading4">Design</h4>
+                                            <p className="paragraph">At the design stage, our UI/UX experts create an intuitive and user-friendly interface. This includes creating the graphic components through which the user will interact with your healthcare app.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="industries_process_block">
+                                            <span className="process-icon"><FontAwesomeIcon icon={faCode} /></span>
+                                            <h4 className="heading4">Development</h4>
+                                            <p className="paragraph">As a leading IT consulting company, we adhere to the best healthcare app development practices, keeping all security and industry regulations in mind. This stage includes developing frontend and backend infrastructure and integrating the app with third-party APIs.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="industries_process_block">
+                                            <span className="process-icon"><FontAwesomeIcon icon={faFileAlt} /></span>
+                                            <h4 className="heading4">Testing</h4>
+                                            <p className="paragraph">Our QA team conducts an end-to-end testing to eliminate errors or bugs in the healthcare application. The app undergoes a rigorous testing process for ensuring a seamless functioning, strong security and most importantly, an elevated user experience.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="industries_process_block">
+                                            <span className="process-icon"><FontAwesomeIcon icon={faRocket} /></span>
+                                            <h4 className="heading4">Project Launch</h4>
+                                            <p className="paragraph">Once your healthcare app has successfully passed the previously mentioned stages, our team of best healthcare app developers finally launches the app on the app stores, thus making it available for users to explore.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="industries_process_block">
+                                            <span className="process-icon"><FontAwesomeIcon icon={faCog} /></span>
+                                            <h4 className="heading4">Maintenance and Support</h4>
+                                            <p className="paragraph">To ensure the flawless performance of your healthcare app, it is crucial that your app gets regular security and functional upgrades. As a part of their IT services for healthcare, we offer continuous post-app launch maintenance and support services for your app to remain fully functional.</p>
+                                        </div>
+                                    </div>
+
+                                </OwlCarousel>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* Advanced technologies section bottom */}
+            <div className="advanced-technologies section-padding">
+                <Container>
+                    <Row>
+                        <Col md={6}>
+                            <div className="sticky-div">
+                                <h2 className="heading2">Our Healthcare Mobile App Developers Design Compliance-Friendly Platforms</h2>
+                                <div className="heading5">With mass care being at the heart of the digital healthcare processes, the healthcare mobile app developers at IosAndWeb Technologies understand the prerequisites of engineering an international standard-compliant digital solution to ensure unobstructed digital transformation. This is what makes us a leading custom healthcare software development company.</div>
+                            </div>
+                        </Col>
+                        <Col md={6}>
+                            <div className="advanced-technologies-blocks">
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <h4 className="heading4">HIPAA</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">As an exceptional healthcare software development agency, we abide by the highest standards of confidentiality and data security set by HIPAA (Health Insurance Portability and Accountability Act), which also encompasses stringent access control measures and encryption protocols.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <h4 className="heading4">HITECH (Health Information Technology for Economic and Clinical Health)</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">Every healthcare app that we develop abides by the HITECH Act. They successfully pass all the security audits that are made to ensure strict enforcement of the HITECH-based privacy and security rules.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <h4 className="heading4">SaMD (Software as a Medical Device)</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">As a renowned medical software development company, we follow the concepts and SaMD risk categories detailed by the International Medical Device Regulators Forum for the medical application development industry, ensuring the highest standards of safety and reliability in our applications.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <h4 className="heading4">HL7 (Health Level Seven International)</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">We follow the set of international standards for sharing, exchanging, integrating, and retrieving healthcare information as dictated by the Health Level 7 organization. Our commitment to adhering to these standards ensures efficiency in healthcare data management.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <h4 className="heading4">GDPR (General Data Protection Regulation)</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">Our data collection and management process is designed to follow all the stringent GDPR compliance requirements. By adhering to the GDPR rules, we ensure that every data that your application works with is highly secure.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <h4 className="heading4">SOC 2 (Service Organization Control 2)</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">We abide by SOC 2 compliance, ensuring the greatest levels of security and privacy for your medical records. This framework is centered on protecting client data and guaranteeing the privacy and accuracy of sensitive medical records at every stage.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <h4 className="heading4">Personal Health Information Protection Act (PHIPA)</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">Complying with PHIPA is paramount for healthcare providers in Ontario to acquire, use, and securely disclose personal health information. We adhere to PHIPA to ensure patient data privacy and confidentiality, which promotes patients' confidence in healthcare services.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <h4 className="heading4">DICOM (Digital Imaging and Communications in Medicine)</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">We adhere to DICOM compliance to integrate the software with medical imaging systems smoothly. This standard ensures accuracy and interoperability in healthcare diagnosis and treatment planning by facilitating the standardization of medical imaging data interchange and management.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <h4 className="heading4">FHIR (Fast Healthcare Interoperability Resources)</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">As a leading healthcare software development company, we leverage FHIR compliance to embrace compatibility in the healthcare industry, fostering smooth collaboration between various healthcare organizations and enhancing patient care coordination.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <h4 className="heading4">CPT (Current Procedural Terminology)</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">As a part of our healthcare software development services, we comply with CPT to expedite the billing and coding process, ensuring efficient payment for medical services and simplifying documentation for healthcare practitioners.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <h4 className="heading4">GxP Quality Guidelines and Regulations</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">We comply with GxP regulations to maintain the highest quality standards in developing healthcare products. The integrity and safety of medications, medical devices, and clinical trials are guaranteed by GxP guidelines, which cover Good Manufacturing Practice (GMP), Good Laboratory Practice (GLP), and Good Clinical Practice (GCP).</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <h4 className="heading4">EU Annex 11</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">EU Annex 11 compliance allows us to navigate the regulatory landscape of Europe confidently. In order to ensure data integrity, security, and compliance with EU rules, this standard lays out standards for using computerized systems in regulated contexts.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <h4 className="heading4">CDISC (Clinical Data Interchange Standards Consortium)</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">As a pioneering provider of healthcare app development services, we adhere to CDISC to improve the interoperability and integrity of clinical research data by maintaining uniformity in data collection, processing, and reporting through adherence to CDISC standards.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <h4 className="heading4">XDS/XDS-I (Cross-Enterprise Document Sharing)</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">XDS/XDS-I compliance enables smooth electronic health record sharing amongst healthcare organizations. This standard improves interoperability by fostering effective and safe data interchange and facilitates better decision-making and patient care coordination.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <h4 className="heading4">SSAE (Statement on Standards for Attestation Engagements)</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">As a top provider of healthcare app development services, we strictly adhere to SSAE compliance standards to prioritize the security and legality of your healthcare services, ensuring that your stakeholders receive the highest level of data privacy at every level.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <h4 className="heading4">BYOD (Bring Your Own Device)</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">As a top-tier provider of healthcare mobile app development services, we implement stringent security measures by ensuring that your team can leverage the benefits of BYOD without compromising on the security and integrity of sensitive healthcare information.</p>
+                                    </div>
+                                </div>
+
+                                <div className="advanced-technologies-block">
+                                    <div className="advanced-technologies-top">
+                                        <h4 className="heading4">FDA</h4>
+                                    </div>
+                                    <div className="advanced-technologies-bottom">
+                                        <p className="paragraph">We adhere to the strict regulatory standards set by the FDA (Food and Drug Administration) which includes thorough documentation, rigorous testing, and complying with Good Manufacturing Practices (GMP) wherever applicable.</p>
+                                    </div>
+                                </div>
+
+                            </div>
                         </Col>
                     </Row>
                 </Container>
