@@ -23,6 +23,11 @@
     width: 28px;
     height: auto;
 }
+@media (max-width: 767px) {
+    .industries-services-section .specification-block{
+        padding: 10px 0;
+    }
+}
 /* Industries requirement section */
 .industries-requirement-item {
     padding: 20px 0;

@@ -187,6 +187,7 @@
     .capabilities-tab-content {
         flex-direction: column;
         gap: 20px;
+        align-items: unset;
     }
     .capabilities-tab-content img{
         height: 200px;
@@ -208,6 +209,14 @@
     }
     .capabilities-content-img{
         display: none;
+    }
+    .capabilities-tab-left {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+    .capabilities-tab-right {
+        flex: 1 1 100%;
+        width: 100%;
     }
 }
 /* industries process slider */
