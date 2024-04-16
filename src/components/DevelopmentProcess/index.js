@@ -37,8 +37,8 @@ function DevelopmentProcess(){
                 <Container>
                     <Row>
                         <Col>
-                             <h2 className="heading2 text-center">Process of Developing a Mobile App</h2>
-                            <div className="heading5 text-center">Grow your business with the most flexible and agile work process</div>
+                             <h2 className="heading2 text-center max-width-70 mx-auto">Process of Developing a Mobile App</h2>
+                            <div className="heading5 text-center max-width-70 mx-auto">Grow your business with the most flexible and agile work process</div>
                         </Col>
                     </Row>
                     <Row className="justify-content-center align-items-center mt-5">

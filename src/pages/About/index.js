@@ -221,7 +221,7 @@ function About(){
                     <Row>
                         <Col>
                             <h2 className="heading2">Our Achievements</h2>
-                            <div className="heading5">With the utmost priority of adding value to the projects we undertake, we ensure that our partners stay ahead of the clutter and achieve excellence.</div>
+                            <div className="heading5 max-width-70">With the utmost priority of adding value to the projects we undertake, we ensure that our partners stay ahead of the clutter and achieve excellence.</div>
                             <div className="achieve-flex">
                                 <div className="achieve-flip-wrap">
                                     <div className="flipper">

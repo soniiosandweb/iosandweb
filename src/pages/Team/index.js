@@ -44,7 +44,7 @@ function Team(){
                     <Row>
                         <Col>
                             <h2 className="heading2 text-center">Meet Our Team</h2>
-                            <div className="heading5 text-center">The vision of our Team defines the core spirit of IosAndWeb Technologies. It tells what our company is all about. Our vision motivates us to always be on a path that will make us achieve our goals.</div>
+                            <div className="heading5 text-center max-width-70 mx-auto">The vision of our Team defines the core spirit of IosAndWeb Technologies. It tells what our company is all about. Our vision motivates us to always be on a path that will make us achieve our goals.</div>
                             <div className="team-grid-row">
                                 <div className="team-item">
                                     <div className="team-profile-image">

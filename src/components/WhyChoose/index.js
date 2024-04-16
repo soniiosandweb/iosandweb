@@ -17,8 +17,8 @@ function WhyChoose(){
                 <Container>
                     <Row>
                         <Col>
-                             <h3 className="heading2 text-center">Why Choose IAW Technologies, You May Ask?</h3>
-                            <div className="heading5 text-center">We ensure web solutions that work flawlessly across multiple devices</div>
+                             <h3 className="heading2 text-center max-width-70 mx-auto">Why Choose IAW Technologies, You May Ask?</h3>
+                            <div className="heading5 text-center max-width-70 mx-auto">We ensure web solutions that work flawlessly across multiple devices</div>
                         </Col>
                     </Row>
                     <Row className="mt-3">

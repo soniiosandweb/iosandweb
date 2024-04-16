@@ -453,8 +453,8 @@ function GenerativeAI(){
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2 text-center">Our Seamless Generative AI Software Development Process</h2>
-                            <div className="heading5 text-center">Our expert Generative AI developers take a comprehensive approach to understanding your organization's objectives and goals. As a dedicated Generative AI development agency, we strive to develop an engaging, user-friendly, and seamless Generative AI solution tailored to your target audience.</div>
+                            <h2 className="heading2 text-center max-width-70 mx-auto">Our Seamless Generative AI Software Development Process</h2>
+                            <div className="heading5 text-center max-width-70 mx-auto">Our expert Generative AI developers take a comprehensive approach to understanding your organization's objectives and goals. As a dedicated Generative AI development agency, we strive to develop an engaging, user-friendly, and seamless Generative AI solution tailored to your target audience.</div>
 
                             <div className="industries-slider-block">
 

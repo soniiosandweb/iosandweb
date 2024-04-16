@@ -282,8 +282,8 @@ function Ecommerce(){
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2 text-center">A time-tested development process our services include</h2>
-                            <div className="heading5 text-center">We combine our technical expertise with our client's innovative ideas to deliver the best possible mobile eCommerce app development solutions.</div>
+                            <h2 className="heading2 text-center max-width-70 mx-auto">A time-tested development process our services include</h2>
+                            <div className="heading5 text-center max-width-70 mx-auto">We combine our technical expertise with our client's innovative ideas to deliver the best possible mobile eCommerce app development solutions.</div>
 
                             <div className="industries-slider-block">
 

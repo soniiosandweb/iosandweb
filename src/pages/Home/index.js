@@ -296,13 +296,11 @@ function Home() {
                 <Container>
                     <Row>
                         <Col>
-                            <div className="leadtxt text-center">
-                                <h3>You've Heard Enough From the Horse's Mouth
-                                    <br/>Curious About What Our Clients Have to Say?
-                                </h3>
+                            <div className="leadtxt text-center max-width-70 mx-auto">
+                                <h3>You've Heard Enough From the Horse's Mouth Curious About What Our Clients Have to Say?</h3>
                             </div>
-                            <div className="leadsubtxt text-center">
-                                We are a software and mobile application development company that ensures its expertise extends <br/>to offer a seamlessly productive and growth-oriented partnership to its clients.
+                            <div className="leadsubtxt text-center max-width-70 mx-auto">
+                                We are a software and mobile application development company that ensures its expertise extends to offer a seamlessly productive and growth-oriented partnership to its clients.
                             </div>
                         </Col>
                     </Row>

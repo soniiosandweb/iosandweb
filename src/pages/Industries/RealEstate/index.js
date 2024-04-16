@@ -352,8 +352,8 @@ function RealEstate(){
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2 text-center">Features That Make Real Estate Apps Stand Out</h2>
-                            <div className="heading5 text-center">As leaders in the field of real estate application development, we develop scalable applications with exceptional features that boost user engagement and improve business efficiency.</div>
+                            <h2 className="heading2 text-center max-width-70 mx-auto">Features That Make Real Estate Apps Stand Out</h2>
+                            <div className="heading5 text-center max-width-70 mx-auto">As leaders in the field of real estate application development, we develop scalable applications with exceptional features that boost user engagement and improve business efficiency.</div>
 
                             <div className="industries-slider-block">
 
@@ -665,8 +665,8 @@ function RealEstate(){
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2 text-center">We Follow an Agile Real Estate Mobile Application Development Process</h2>
-                            <div className="heading5 text-center">A real estate mobile app development company like ours, follows agile methodology to develop real estate app development solutions. By following agile principles, we adapt to changing requirements, collaborate closely with stakeholders, and ensure the timely delivery of projects.</div>
+                            <h2 className="heading2 text-center max-width-70 mx-auto">We Follow an Agile Real Estate Mobile Application Development Process</h2>
+                            <div className="heading5 text-center max-width-70 mx-auto">A real estate mobile app development company like ours, follows agile methodology to develop real estate app development solutions. By following agile principles, we adapt to changing requirements, collaborate closely with stakeholders, and ensure the timely delivery of projects.</div>
 
                             <div className="industries-slider-block">
 

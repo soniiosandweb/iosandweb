@@ -62,8 +62,8 @@ function Services(){
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2 text-center">What we do ?</h2>
-                            <div className="heading5 text-center">We exploit the latest technologies to exceed customer experience. Meet your business aims and objectives with our full-stack iOS, Android and web development solutions with quality assurance and project management. Our employees offer tailored and disruptive solutions that will focus only on your business. </div>
+                            <h2 className="heading2 text-center max-width-70 mx-auto">What we do ?</h2>
+                            <div className="heading5 text-center max-width-70 mx-auto">We exploit the latest technologies to exceed customer experience. Meet your business aims and objectives with our full-stack iOS, Android and web development solutions with quality assurance and project management. Our employees offer tailored and disruptive solutions that will focus only on your business. </div>
                         </Col>
                     </Row>
                     <Row className="mt-3">
@@ -130,8 +130,8 @@ function Services(){
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2 text-center">We Design</h2>
-                            <div className="heading5 text-center">We follow an intense procedure, focussing on your business goals, to develop your web presence.</div>
+                            <h2 className="heading2 text-center max-width-70 mx-auto">We Design</h2>
+                            <div className="heading5 text-center max-width-70 mx-auto">We follow an intense procedure, focussing on your business goals, to develop your web presence.</div>
                         </Col>
                     </Row>
                     <Row className="align-items-center we-design-rows">

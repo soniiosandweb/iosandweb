@@ -18,8 +18,8 @@ function AwardsSlider(){
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2 text-center">Our Achievements</h2>
-                            <div className="heading5 text-center">With the utmost priority of adding value to the projects we undertake, we ensure that our partners stay ahead of the clutter and achieve excellence.</div>
+                            <h2 className="heading2 text-center max-width-70 mx-auto">Our Achievements</h2>
+                            <div className="heading5 text-center max-width-70 mx-auto">With the utmost priority of adding value to the projects we undertake, we ensure that our partners stay ahead of the clutter and achieve excellence.</div>
 
                             <OwlCarousel className="owl-theme awards-carousel" loop autoplay={true} autoplayTimeout={3000} autoplayHoverPause={true} margin={80} nav={true} dots={false} items={1} center={true} 
                             responsive={

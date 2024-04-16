@@ -1,6 +1,6 @@
 import React from "react";
 import './style.css';
-import {Container, Row, Col, Tab, Nav} from "react-bootstrap";
+import {Container, Row, Col, Tab, Nav, Accordion} from "react-bootstrap";
 import SEO from "../../../components/SEO";
 import OwlCarousel from "react-owl-carousel"
 
@@ -622,8 +622,8 @@ function Healthcare(){
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2 text-center">Healthcare App Development Process We Follow</h2>
-                            <div className="heading5 text-center">At IosAndWeb Technologies, we follow an agile healthcare app development process to craft feature-loaded, robust healthcare software and applications. From analyzing the requirements of your project to launching it, our experts work diligently to scale your business.</div>
+                            <h2 className="heading2 text-center max-width-70 mx-auto">Healthcare App Development Process We Follow</h2>
+                            <div className="heading5 text-center max-width-70 mx-auto">At IosAndWeb Technologies, we follow an agile healthcare app development process to craft feature-loaded, robust healthcare software and applications. From analyzing the requirements of your project to launching it, our experts work diligently to scale your business.</div>
 
                             <div className="industries-slider-block">
 
@@ -889,6 +889,61 @@ function Healthcare(){
                                 </div>
 
                             </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* FAQ section */}
+            <div className="faq-panel section-padding">
+                <Container>
+                    <Row>
+                        <Col md={12}>
+                            <div className="leadtxt text-center">
+                                <h3>Frequently Asked Questions</h3>
+                            </div>
+                            <Accordion>
+                                <div className="faq_col_panel">
+                                    <Accordion.Item eventKey="1">
+                                        <Accordion.Header>How much does mobile healthcare application development cost?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Getting an estimate of the cost of developing a healthcare app can only be achieved by having a clear understanding of what the application does, what features would it entail, the level of security it would require, and other related factors.</p>
+                                            <p>For instance, a doctor appointment app like Zocdoc can cost you around $50,000-$100,000. On the other hand, a full-fledged telemedicine app development cost can even go up to $200,000. And the complete cost of a hospital management system can be around $150,000-$300,000.</p>
+                                            <p><a href="/contact-us">Get in touch</a> with our team of healthcare mobile app development service experts now to get an exact estimate for your healthcare software development project.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="2">
+                                        <Accordion.Header>Will you first create prototypes for testing before moving on to actual app development for healthcare?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Our healthcare app developers construct a prototype to give the clients a realistic sense of the product, as they may expect. Before beginning with the actual development, we change the requirement sets based on the input to produce a final product that fits your expectations.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="3">
+                                        <Accordion.Header>Do you provide security assurance and HIPAA compliance?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>As the best healthcare app development company, we guarantee that the software designs we develop will be highly secure and meet all HIPAA compliance requirements. Additionally, our healthcare app development service experts perform thorough security testing at regular intervals during the SDLC process, delivering absolutely bug-free software products for clients.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                </div>
+                               
+                                <div className="faq_col_panel">
+                                    <Accordion.Item eventKey="4">
+                                        <Accordion.Header>What if I return later to request a product improvement?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>As a trusted healthcare app development company, we always welcome our clients with such needs to visit. We would be elated to help you with anything from a UX audit to enhancing the architecture of your software product or including new functionality.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="5">
+                                        <Accordion.Header>Which is the best platform for healthcare app development?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Your requirements and end goal will determine everything. Choose Android if your user base is spread throughout regions with a higher percentage of Android users, and iOS if it is confined to regions with a higher percentage of iPhone users. If you want to serve the needs of both audiences through custom software development services, you can also go for cross-platform development.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </div>
+                            </Accordion>
                         </Col>
                     </Row>
                 </Container>

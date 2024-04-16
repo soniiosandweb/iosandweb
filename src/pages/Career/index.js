@@ -167,13 +167,13 @@ function Career(){
                 <Container>
                     <Row className="align-items-center">
                         <Col>
-                            <div className="leadtxt">
+                            <div className="leadtxt max-width-70">
                                 <h2>Grow With IosAndWeb Technologies!</h2>
                             </div>
-                            <div className="leadsubtxt">
+                            <div className="leadsubtxt max-width-70">
                                 IosAndWeb Technologies looks for the best and the brightest that our fine education system offers. Fresh talent gets an opportunity learn trending technologies and work on live projects. Explore opportunities with us.
                             </div>
-                            <p className="paragraph">The following positions are currently opened:</p>
+                            <p className="paragraph max-width-70">The following positions are currently opened:</p>
                             <ul className="job-positions-flex">
                                 <li className="job-positions-item">
                                     <FontAwesomeIcon icon={faCode} />
