@@ -37,6 +37,45 @@ import generativeAi from '../../../images/industries/healthcare/generative-ai.pn
 import businessIntelligence from '../../../images/industries/healthcare/business-intelligence.png';
 import { faCode } from "@fortawesome/free-solid-svg-icons/faCode";
 
+// Tools and technologies images
+import htmlIcon from '../../../images/industries/healthcare/html-logo.png';
+import cssIcon from '../../../images/industries/healthcare/CSS-Logo.png';
+import jsIcon from '../../../images/industries/healthcare/JavaScript-Logo.png';
+import react from '../../../images/industries/eCommerce/react.webp';
+import angular from '../../../images/industries/eCommerce/angular.webp';
+import vueJs from '../../../images/industries/eCommerce/vue-js.webp';
+import emberIcon from '../../../images/industries/healthcare/Ember-logo.png';
+import nextJS from '../../../images/industries/healthcare/next-js-logo.png';
+
+import nodejs from '../../../images/industries/eCommerce/nodejs.webp';
+import java from '../../../images/industries/eCommerce/java.webp';
+import dotNet from '../../../images/industries/eCommerce/dot-net.webp';
+import python from '../../../images/industries/eCommerce/python.webp';
+import phpIcon from '../../../images/industries/healthcare/php-logo.png';
+import goIcon from '../../../images/industries/healthcare/Go-Logo.png';
+
+import android from '../../../images/industries/healthcare/android-logo.png';
+import flutter from '../../../images/industries/eCommerce/flutter.webp';
+import iOSIcon from '../../../images/industries/healthcare/apple-ios.png';
+import xamarin from '../../../images/industries/healthcare/xamarin-logo.png';
+import cordova from '../../../images/industries/healthcare/cordova-logo.png';
+
+import cPlusIcon from '../../../images/industries/healthcare/Cplus-Logo.png';
+import cSharp from '../../../images/industries/healthcare/c-sharp.png';
+import swiftIcon from '../../../images/industries/eCommerce/swift.webp';
+import objCIcon from '../../../images/industries/healthcare/objective-c.png';
+
+import amazonDocumentDB from '../../../images/industries/healthcare/amazon-documentdb.png';
+import amazonDynamodb from '../../../images/industries/healthcare/aws-dynamodb.png';
+import amazonRDS from '../../../images/industries/healthcare/amazon-rds.webp';
+import amazonRedshift from '../../../images/industries/healthcare/Amazon-redshift.png';
+
+import googleCloudDatastore from '../../../images/industries/healthcare/google-cloud-datastore.png';
+import googleCloudSQL from '../../../images/industries/healthcare/cloud-SQL.png';
+
+import typescript from '../../../images/industries/eCommerce/typescript.webp';
+import rubyRails from '../../../images/industries/eCommerce/Ruby-on-Rails.webp';
+
 function Healthcare(){
 
     const changeNumberProcess=(event) =>{
@@ -892,6 +931,307 @@ function Healthcare(){
                         </Col>
                     </Row>
                 </Container>
+            </div>
+
+            {/* Tools and languages section */}
+            <div className="tools-languages-section section-padding text-white text-center bg-black">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="heading2">Technology Stack That Makes Your Healthcare App Secure and Exceptional</h2>
+                            <div className="heading5">As a reputed healthcare mobile app development company, our mobile app development process is guided by a robust technology stack that makes your healthcare products interoperable, robust, fast, and secure. By putting a strong emphasis on innovation, we develop healthcare solutions that not only meet present needs but also foresee potential problems down the road, giving you a forward-thinking, long-term strategy to advance your healthcare business operations.</div>
+
+                            <div className="tools-languages-tab-div">
+                                <Tab.Container id="tools-languages-tab" defaultActiveKey="toolfirst">
+                                    <div className="tools-languages-tab-top tools-languages-tab-cols">
+                                        <Nav variant="pills" className="tools-languages-tab flex-row justify-content-center">
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="toolfirst">Frontend Programming Languages</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="toolsecond">Backend Programming Languages</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="toolthird">Mobile</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="toolfourth">Desktop</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="toolfifth">Cloud Databases, Warehouses, and Storage</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="toolsixth">DevOps</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="toolseventh">Wearable Integration Kit</Nav.Link>
+                                            </Nav.Item>
+                                        </Nav>
+                                    </div>
+                                    <div className="tools-languages-tab-bottom tools-languages-tab-cols">
+                                        <Tab.Content>
+
+                                            <Tab.Pane eventKey="toolfirst">
+                                                <p className="tools-tab-text paragraph max-width-70 mx-auto">To ensure a user-friendly, immersive interface, we employ advanced front-end technologies in our healthcare mobile application development process. Our experts carefully hand-picked to enhance the visual appeal and interactivity of the application, delivering a superior user experience.</p>
+                                                <div className="tools-languages-tab-content">
+                                                    <div className="tools-icon-grid-block">
+                                                        <h4 className="heading4">Languages</h4>
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={htmlIcon} className="responsive-img" alt="HTML" />
+                                                                </div>
+                                                                <p className="paragraph">HTML</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={cssIcon} className="responsive-img" alt="CSS" />
+                                                                </div>
+                                                                <p className="paragraph">CSS</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={jsIcon} className="responsive-img" alt="Javascript" />
+                                                                </div>
+                                                                <p className="paragraph">Javascript</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="tools-icon-grid-block">
+                                                        <h4 className="heading4">Javascript Frameworks</h4>
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={react} className="responsive-img" alt="React" />
+                                                                </div>
+                                                                <p className="paragraph">React</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={angular} className="responsive-img" alt="Angular" />
+                                                                </div>
+                                                                <p className="paragraph">Angular</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={vueJs} className="responsive-img" alt="Vue Js" />
+                                                                </div>
+                                                                <p className="paragraph">Vue Js</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={emberIcon} className="responsive-img" alt="Ember" />
+                                                                </div>
+                                                                <p className="paragraph">Ember</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={nextJS} className="responsive-img" alt="Next Js" />
+                                                                </div>
+                                                                <p className="paragraph">Next Js</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Tab.Pane>
+
+                                            <Tab.Pane eventKey="toolsecond">
+                                                <p className="tools-tab-text paragraph max-width-70 mx-auto">By considering the performance and reliability, we choose the best backend programming languages that can smoothly support the server side and the overall functionality of the app or website.</p>
+                                                <div className="tools-languages-tab-content">
+                                                    <div className="tools-icon-grid-block">
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={nodejs} className="responsive-img" alt="Node js" />
+                                                                </div>
+                                                                <p className="paragraph">Node js</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={java} className="responsive-img" alt="Java" />
+                                                                </div>
+                                                                <p className="paragraph">Java</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={dotNet} className="responsive-img" alt=".Net" />
+                                                                </div>
+                                                                <p className="paragraph">.Net</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={python} className="responsive-img" alt="Python" />
+                                                                </div>
+                                                                <p className="paragraph">Python</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={phpIcon} className="responsive-img" alt="PHP" />
+                                                                </div>
+                                                                <p className="paragraph">PHP</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={goIcon} className="responsive-img" alt="Golang" />
+                                                                </div>
+                                                                <p className="paragraph">Golang</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Tab.Pane>
+
+                                            <Tab.Pane eventKey="toolthird">
+                                                <p className="tools-tab-text paragraph max-width-70 mx-auto">We leverage robust programming stacks tailored to the unique needs of various mobile platforms, ensuring optimum functionalities and a seamless user interface on smartphones and tablets.</p>
+                                                <div className="tools-languages-tab-content">
+                                                    <div className="tools-icon-grid-block">
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={android} className="responsive-img" alt="Android" />
+                                                                </div>
+                                                                <p className="paragraph">Android</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={flutter} className="responsive-img" alt="Flutter" />
+                                                                </div>
+                                                                <p className="paragraph">Flutter</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={iOSIcon} className="responsive-img" alt="iOS" />
+                                                                </div>
+                                                                <p className="paragraph">iOS</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={react} className="responsive-img" alt="React" />
+                                                                </div>
+                                                                <p className="paragraph">React Native</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={xamarin} className="responsive-img" alt="Xamarin" />
+                                                                </div>
+                                                                <p className="paragraph">Xamarin</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={cordova} className="responsive-img" alt="Cordova" />
+                                                                </div>
+                                                                <p className="paragraph">Cordova</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Tab.Pane>
+
+                                            <Tab.Pane eventKey="toolfourth">
+                                                <p className="tools-tab-text paragraph max-width-70 mx-auto">Our hand-picked programming stack is tailored to provide high-performance and feature-rich solutions for desktop apps, giving users a seamless and effective desktop application experience.</p>
+                                                <div className="tools-languages-tab-content">
+                                                    <div className="tools-icon-grid-block">
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={cPlusIcon} className="responsive-img" alt="C++" />
+                                                                </div>
+                                                                <p className="paragraph">C++</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={python} className="responsive-img" alt="Python" />
+                                                                </div>
+                                                                <p className="paragraph">Python</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={cSharp} className="responsive-img" alt="C-Sharp" />
+                                                                </div>
+                                                                <p className="paragraph">C-Sharp</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={swiftIcon} className="responsive-img" alt="Swift" />
+                                                                </div>
+                                                                <p className="paragraph">Swift</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={objCIcon} className="responsive-img" alt="OBJ-C" />
+                                                                </div>
+                                                                <p className="paragraph">OBJ-C</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Tab.Pane>
+
+                                            <Tab.Pane eventKey="toolfifth">
+                                                <p className="tools-tab-text paragraph max-width-70 mx-auto">Scalability, security, and efficiency are the main considerations in our programming stack choices for cloud databases, warehouses, and storage solutions, guaranteeing smooth integration and outstanding performance in cloud environments.</p>
+                                                <div className="tools-languages-tab-content">
+                                                    <div className="tools-icon-grid-block">
+                                                        <h4 className="heading4">AWS</h4>
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={amazonDocumentDB} className="responsive-img" alt="Amazon DocumentDB" />
+                                                                </div>
+                                                                <p className="paragraph">Amazon DocumentDB</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={amazonDynamodb} className="responsive-img" alt="Amazon DynamoDB" />
+                                                                </div>
+                                                                <p className="paragraph">Amazon DynamoDB</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={amazonRDS} className="responsive-img" alt="Amazon RDS" />
+                                                                </div>
+                                                                <p className="paragraph">Amazon RDS</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={amazonRedshift} className="responsive-img" alt="Amazon Redshift" />
+                                                                </div>
+                                                                <p className="paragraph">Amazon Redshift</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="tools-icon-grid-block">
+                                                        <h4 className="heading4">Google Cloud Platform</h4>
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={googleCloudDatastore} className="responsive-img" alt="Google Cloud Datastore" />
+                                                                </div>
+                                                                <p className="paragraph">Google Cloud Datastore</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={googleCloudSQL} className="responsive-img" alt="Google Cloud SQL" />
+                                                                </div>
+                                                                <p className="paragraph">Google Cloud SQL</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Tab.Pane>
+
+                                            <Tab.Pane eventKey="toolsixth">
+                                            </Tab.Pane>
+
+                                            <Tab.Pane eventKey="toolseventh">
+                                            </Tab.Pane>
+
+                                        </Tab.Content>
+                                    </div>
+                                </Tab.Container>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>     
             </div>
 
             {/* FAQ section */}
