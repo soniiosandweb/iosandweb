@@ -73,8 +73,26 @@ import amazonRedshift from '../../../images/industries/healthcare/Amazon-redshif
 import googleCloudDatastore from '../../../images/industries/healthcare/google-cloud-datastore.png';
 import googleCloudSQL from '../../../images/industries/healthcare/cloud-SQL.png';
 
-import typescript from '../../../images/industries/eCommerce/typescript.webp';
-import rubyRails from '../../../images/industries/eCommerce/Ruby-on-Rails.webp';
+import azureBlobStorage from '../../../images/industries/healthcare/Azure-blob-storage.png';
+import azureCosmosDB from '../../../images/industries/healthcare/Azure-cosmos-DB.png';
+import azureSQL from '../../../images/industries/healthcare/azure_sql_database.png';
+import azureSynapseAnalytics from '../../../images/industries/healthcare/AzureSynapseAnalytics.png';
+
+import mesosIcon from '../../../images/industries/healthcare/mesos.png';
+import docker from '../../../images/industries/healthcare/docker.webp';
+import kubernetes from '../../../images/industries/healthcare/kubernetes-icon.png';
+import openShift from '../../../images/industries/healthcare/OpenShift.png';
+
+import awsDeveloperTools from '../../../images/industries/healthcare/aws-developer-tools.png';
+import azureDevops from '../../../images/industries/healthcare/azure-devops.png';
+import googleDeveloper from '../../../images/industries/healthcare/google-developers.png';
+import gitlabCI from '../../../images/industries/healthcare/gitlab-ci-cd.png';
+import teamCity from '../../../images/industries/healthcare/TeamCity_Icon.png';
+
+import saltstack from '../../../images/industries/healthcare/SaltStack.png';
+import hashiCorpPacker from '../../../images/industries/healthcare/hashicrop-packer.png';
+import terraform from '../../../images/industries/healthcare/terraform-icon.png';
+import puppet from '../../../images/industries/healthcare/puppet_logo.png';
 
 function Healthcare(){
 
@@ -963,9 +981,6 @@ function Healthcare(){
                                             <Nav.Item>
                                                 <Nav.Link eventKey="toolsixth">DevOps</Nav.Link>
                                             </Nav.Item>
-                                            <Nav.Item>
-                                                <Nav.Link eventKey="toolseventh">Wearable Integration Kit</Nav.Link>
-                                            </Nav.Item>
                                         </Nav>
                                     </div>
                                     <div className="tools-languages-tab-bottom tools-languages-tab-cols">
@@ -1216,13 +1231,135 @@ function Healthcare(){
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <div className="tools-icon-grid-block">
+                                                        <h4 className="heading4">Azure</h4>
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={azureBlobStorage} className="responsive-img" alt="Azure Blob Storage" />
+                                                                </div>
+                                                                <p className="paragraph">Azure Blob Storage</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={azureCosmosDB} className="responsive-img" alt="Azure Cosmos DB" />
+                                                                </div>
+                                                                <p className="paragraph">Azure Cosmos DB</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={azureSQL} className="responsive-img" alt="Azure SQL Database" />
+                                                                </div>
+                                                                <p className="paragraph">Azure SQL Database</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={azureSynapseAnalytics} className="responsive-img" alt="Azure Synapse Analytics" />
+                                                                </div>
+                                                                <p className="paragraph">Azure Synapse Analytics</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </Tab.Pane>
 
                                             <Tab.Pane eventKey="toolsixth">
-                                            </Tab.Pane>
-
-                                            <Tab.Pane eventKey="toolseventh">
+                                                <p className="tools-tab-text paragraph max-width-70 mx-auto">Our programming stack for DevOps is tailored for streamlined development, testing, and deployment procedures, promoting collaboration and effectiveness across the software development lifecycle.</p>
+                                                <div className="tools-languages-tab-content">
+                                                    <div className="tools-icon-grid-block">
+                                                        <h4 className="heading4">Containerization</h4>
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={mesosIcon} className="responsive-img" alt="Mesos" />
+                                                                </div>
+                                                                <p className="paragraph">Mesos</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={docker} className="responsive-img" alt="Docker" />
+                                                                </div>
+                                                                <p className="paragraph">Docker</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={kubernetes} className="responsive-img" alt="Kubernetes" />
+                                                                </div>
+                                                                <p className="paragraph">Kubernetes</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={openShift} className="responsive-img" alt="Openshift" />
+                                                                </div>
+                                                                <p className="paragraph">Openshift</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="tools-icon-grid-block">
+                                                        <h4 className="heading4">CI/CD Tools</h4>
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={awsDeveloperTools} className="responsive-img" alt="Azure Blob Storage" />
+                                                                </div>
+                                                                <p className="paragraph">AWS Developer Tools</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={azureDevops} className="responsive-img" alt="Azure Devops" />
+                                                                </div>
+                                                                <p className="paragraph">Azure Devops</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={googleDeveloper} className="responsive-img" alt="Google Developer Tools" />
+                                                                </div>
+                                                                <p className="paragraph">Google Developer Tools</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={gitlabCI} className="responsive-img" alt="GitLab CI/CD" />
+                                                                </div>
+                                                                <p className="paragraph">GitLab CI/CD</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={teamCity} className="responsive-img" alt="TeamCity" />
+                                                                </div>
+                                                                <p className="paragraph">TeamCity</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="tools-icon-grid-block">
+                                                        <h4 className="heading4">Automation</h4>
+                                                        <div className="tools-icon-panel">
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={saltstack} className="responsive-img" alt="SaltStack" />
+                                                                </div>
+                                                                <p className="paragraph">SaltStack</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={hashiCorpPacker} className="responsive-img" alt="HashiCorp Packer" />
+                                                                </div>
+                                                                <p className="paragraph">HashiCorp Packer</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={terraform} className="responsive-img" alt="Terraform" />
+                                                                </div>
+                                                                <p className="paragraph">Terraform</p>
+                                                            </div>
+                                                            <div className="tools-icon-grid">
+                                                                <div className="tools-icon-img">
+                                                                    <img src={puppet} className="responsive-img" alt="Puppet" />
+                                                                </div>
+                                                                <p className="paragraph">Puppet</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </Tab.Pane>
 
                                         </Tab.Content>
