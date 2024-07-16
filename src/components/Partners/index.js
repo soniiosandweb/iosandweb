@@ -18,6 +18,20 @@ import empire from '../../images/partners/empirehotels-logo-color.svg';
 import jobGet from '../../images/partners/jobget-lgo-color.svg';
 import asianBank from '../../images/partners/asian-bank.svg';
 
+import onmen from '../../images/partners/ONMEN.png';
+import gopuff from '../../images/partners/Gopuff.png';
+import seamless from '../../images/partners/seamless.png';
+import doorDash from '../../images/partners/DoorDash.png';
+import uber from '../../images/partners/uber.png';
+import srgn from '../../images/partners/srgn.png';
+import lowes from '../../images/partners/Lowes.png';
+import aesthetic from '../../images/partners/aesthetic.png';
+import grubhub from '../../images/partners/Grubhub.png';
+import chownow from '../../images/partners/chownow.png';
+import vertical from '../../images/partners/vertical.png';
+import Instacart from '../../images/partners/Instacart.png';
+import mygermany from '../../images/partners/mygermany.png';
+
 function Partners(){
     return(
         <>
@@ -25,55 +39,55 @@ function Partners(){
                 <Container>
                     <Row>
                         <Col>
-                            <div className="leadtxt">
+                            <div className="leadtxt text-center">
                                 <h3>Our Efforts Have Revolutionized <br/>Your Experience With These Global Leaders</h3>
                             </div>
                             <ul className="partner-logos">
                                 <li className="partner-logo">
-                                    <img src={ikea} alt="IKEA" />
+                                    <img src={onmen} alt="ONMEN" />
                                 </li>
                                 <li className="partner-logo">
-                                    <img src={google} alt="Google" />
+                                    <img src={srgn} alt="srgn" />
                                 </li>
                                 <li className="partner-logo">
-                                    <img src={bcc} alt="BCC" />
+                                    <img src={aesthetic} alt="aesthetic" />
                                 </li>
                                 <li className="partner-logo">
-                                    <img src={kfc} alt="KFC" />
+                                    <img src={vertical} alt="vertical" />
                                 </li>
                                 <li className="partner-logo">
-                                    <img src={fridays} alt="Fridays" />
+                                    <img src={mygermany} alt="mygermany" />
+                                </li>
+                                {/* <li className="partner-logo">
+                                    <img src={srgn} alt="srgn" />
                                 </li>
                                 <li className="partner-logo">
-                                    <img src={moo} alt="Moo" />
+                                    <img src={lowes} alt="lowes" />
                                 </li>
                                 <li className="partner-logo">
-                                    <img src={hrispy} alt="Hrispy" />
+                                    <img src={aesthetic} alt="aesthetic" />
                                 </li>
                                 <li className="partner-logo">
-                                    <img src={hardees} alt="Hardees" />
+                                    <img src={grubhub} alt="grubhub" />
                                 </li>
                                 <li className="partner-logo">
-                                    <img src={bajaj} alt="Bajaj" />
+                                    <img src={chownow} alt="chownow" />
                                 </li>
                                 <li className="partner-logo">
-                                    <img src={dominos} alt="Dominos" />
+                                    <img src={vertical} alt="vertical" />
                                 </li>
                                 <li className="partner-logo">
-                                    <img src={supershe} alt="Super She" />
+                                    <img src={Instacart} alt="Instacart" />
                                 </li>
                                 <li className="partner-logo">
-                                    <img src={wimpy} alt="Wimpy" />
-                                </li>
-                                <li className="partner-logo">
-                                    <img src={empire} alt="Empire" />
+                                    <img src={mygermany} alt="mygermany" />
                                 </li>
                                 <li className="partner-logo">
                                     <img src={jobGet} alt="Job Get" />
                                 </li>
                                 <li className="partner-logo">
                                     <img src={asianBank} alt="Asian Bank" />
-                                </li>
+                                </li> */}
                             </ul>
                         </Col>
                     </Row>

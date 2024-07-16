@@ -75,7 +75,7 @@ function Home() {
                     <Row>
                         <Col>
                             <div className="intro-content">
-                                <h1 className="banner-heading">Welcome to IAW Technologies <br/>Where Innovation Meets Functionality</h1>
+                                <h1 className="banner-heading">Welcome to IosAndWeb Technologies <br/>Where Innovation Meets Technology</h1>
                                 <p className="banner-text">Your partner in Custom Software Development Solutions</p>
                                 <a href="/contact-us" className="consult-expert-btn">Let's Collaborate <FontAwesomeIcon icon={faChevronRight} /></a>
                             </div>
@@ -95,7 +95,7 @@ function Home() {
                         <Col>
                             <div className="leadtxt">
                                 <h2>
-                                    We specialize in crafting software solutions tailored to YOUR unique business needs. With our expertise, innovation and commitment to excellence, we empower businesses to thrive in today's competitive digital landscape. 
+                                    We specialize in crafting software solutions tailored to your unique business needs. With our expertise, innovation and commitment to excellence, we empower businesses to thrive in today's competitive digital landscape. 
                                 </h2>
                             </div>
                             <div className="btn-section">
