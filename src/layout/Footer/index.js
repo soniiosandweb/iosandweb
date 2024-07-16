@@ -11,6 +11,7 @@ import hqUk from '../../images/hq-uk.png';
 import hqUs from '../../images/hq-us.svg';
 
 import { faInstagram, faLinkedin, faSquareFacebook, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Footer(){
 
@@ -154,6 +155,9 @@ function Footer(){
                             <div className="footer-col">
                                 <a href="/"><img src={logoWhite} alt="IAW logo" className="footer-logo" /></a>
                                 <p className="footer-about">IosAndWeb Technologies believes in achieving goals and client satisfaction. We deliver inspiring & eye-catching websites and conduct profitable marketing campaigns that attract the audience and boost the client's business. We provide Support & Maintenance even after the completion of the project.</p>
+                                <p className="paragraph">
+                                    <a href="mailto:info@iosandweb.net" className="contact-link"><FontAwesomeIcon icon={faEnvelope} /> info@iosandweb.net</a>
+                                </p>
                             </div>
                         </Col>
                         <Col md={6} lg={2}>

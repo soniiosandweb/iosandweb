@@ -23,7 +23,7 @@
     font-size: 16px;
     color: #fff;
     padding: 15px 0 10px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .location-text {
     color: #fff;
@@ -83,6 +83,12 @@
 .footer-col-list li a:hover{
     padding-left: 5px;
 }
+.footer-section .contact-link{
+    color: #fff;
+}
+.footer-section .contact-link svg {
+    padding-right: 10px;
+}
 @media (max-width: 991px) {
     .footer-col-head{
       margin: 10px 0 0;
@@ -112,7 +118,7 @@
 .copyright-text a{
     color: #fff;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
 }
 .footer-social-col{
     text-align: right;

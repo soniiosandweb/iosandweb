@@ -95,7 +95,7 @@ function Home() {
                         <Col>
                             <div className="leadtxt">
                                 <h2>
-                                    We specialize in crafting software solutions tailored to YOUR unique business needs. With our expertise, innovation and commitment to excellence, we empower businesses to thrive in today's competitive digital landscape. Whether you are here to streamline operations, enhance customer experience or drive growth, we're here to turn your vision into reality. 
+                                    We specialize in crafting software solutions tailored to YOUR unique business needs. With our expertise, innovation and commitment to excellence, we empower businesses to thrive in today's competitive digital landscape. 
                                 </h2>
                             </div>
                             <div className="btn-section">

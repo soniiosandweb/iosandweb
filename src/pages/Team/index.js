@@ -12,6 +12,9 @@ import teamImg from '../../images/IAW-Team.webp';
 import userMan from '../../images/user-man.png';
 import userWoman from '../../images/user-woman.png';
 import ourTeam from '../../images/our-team.webp';
+import bhupinder from '../../images/team/bhupinder.png';
+import soni from '../../images/team/soni.png';
+import diksha from '../../images/team/diksha.jpg';
 
 function Team(){
     return(
@@ -62,7 +65,7 @@ function Team(){
                                 
                                 <div className="team-item">
                                     <div className="team-profile-image">
-                                        <img src={userMan} alt="Profile" className="img-fluid" />
+                                        <img src={bhupinder} alt="Profile" className="img-fluid" />
                                     </div>
                                     <div className="profile-content">
                                         <h3 className="team-title">Bhupinder Singh</h3>
@@ -90,7 +93,7 @@ function Team(){
 
                                 <div className="team-item">
                                     <div className="team-profile-image">
-                                        <img src={userWoman} alt="Profile" className="img-fluid" />
+                                        <img src={diksha} alt="Profile" className="img-fluid" />
                                     </div>
                                     <div className="profile-content">
                                         <h3 className="team-title">Diksha Khanna</h3>
@@ -118,7 +121,7 @@ function Team(){
 
                                 <div className="team-item">
                                     <div className="team-profile-image">
-                                        <img src={userWoman} alt="Profile" className="img-fluid" />
+                                        <img src={soni} alt="Profile" className="img-fluid" />
                                     </div>
                                     <div className="profile-content">
                                         <h3 className="team-title">Soni Saini</h3>
@@ -135,7 +138,7 @@ function Team(){
                                         <img src={userMan} alt="Profile" className="img-fluid" />
                                     </div>
                                     <div className="profile-content">
-                                        <h3 className="team-title">Jatin Sehgal</h3>
+                                        <h3 className="team-title">Gaurav Srivastav</h3>
                                         <p className="paragraph">Junior Software Developer</p>
                                         <div className="social-icons">
                                             <a href="skype:live:.cid.7d548bb02426c79b"><FontAwesomeIcon icon={faSkype} /></a>
@@ -158,19 +161,6 @@ function Team(){
                                     </div>
                                 </div>
 
-                                <div className="team-item">
-                                    <div className="team-profile-image">
-                                        <img src={userWoman} alt="Profile" className="img-fluid" />
-                                    </div>
-                                    <div className="profile-content">
-                                        <h3 className="team-title">Palak Singla</h3>
-                                        <p className="paragraph">SEO Executive</p>
-                                        <div className="social-icons">
-                                            <a href="skype:live:.cid.468fbc6c898d9a69"><FontAwesomeIcon icon={faSkype} /></a>
-                                            <a href="mailto:palak@iosandweb.net"><FontAwesomeIcon icon={faEnvelope} /></a>
-                                        </div>
-                                    </div>
-                                </div>
 
                             </div>
                         </Col>
