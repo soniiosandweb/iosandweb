@@ -39,6 +39,10 @@
 .blog-details-content-div a{
     color: #1050bc !important;
 }
+.blog-details-content-div img{
+    width: 100%;
+    object-fit: contain;
+}
 .related-blog-item h4{
     font-size: 22px;
 }

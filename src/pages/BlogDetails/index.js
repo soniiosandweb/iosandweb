@@ -72,7 +72,7 @@ function BlogDetails(){
             .finally(() => {
                 setRelatedLoading(false);
             })
-            }
+        }
         
 
     }, [url, blogId]);
@@ -132,8 +132,7 @@ function BlogDetails(){
                     <Row>
                         <Col>
                             <div className="leadtxt text-center">
-                                <h3>Related Blog
-                                </h3>
+                                <h3>Feature Blog</h3>
                             </div>
                         </Col>
                     </Row>
