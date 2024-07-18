@@ -21,7 +21,7 @@ function Blog(){
 
     useEffect(() => {
 
-        axios.get('/api/blog-api.php')
+        axios.get('https://iosandweb.net/api/blog-api.php')
         .then(res => {
             setData(res.data);
             setFilterData(

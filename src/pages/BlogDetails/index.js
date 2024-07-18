@@ -8,6 +8,7 @@ import defaultImage from '../../images/placeholder-image.webp';
 
 function BlogDetails(){
     const url = useParams().url;
+    const [blogId, setBlogId] = useState(null);
     const [title, setTitle] = useState("");
     const [image, setImage] = useState("");
     const [date, setDate] = useState("");
@@ -17,11 +18,14 @@ function BlogDetails(){
     const [seoKeyword, setSeoKeyword] = useState("");
     const [loading, setLoading] = useState(true);
 
+    const [relatedPost, setRelatedPost] = useState([]);
+    const [relatedLoading, setRelatedLoading] = useState(true);
+
     useEffect(() => {
 
         axios({
             method: "post",
-            url: "/api/blog-details-api.php",
+            url: "https://iosandweb.net/api/blog-details-api.php",
             data: JSON.stringify({
                 post_url: url
                 }),
@@ -31,6 +35,7 @@ function BlogDetails(){
             for(var i = 0; i < res.data.length; i++) {
                 var obj = res.data[i];
                 if(obj.url === url){
+                    setBlogId(obj.id);
                     setTitle(obj.title);
                     setImage(obj.image);
                     setDate(obj.date);
@@ -47,7 +52,30 @@ function BlogDetails(){
         .finally(() => {
             setLoading(false);
         })
-    }, [url]);
+
+        // Related Post
+        if(blogId && blogId !== null){
+            axios({
+                method: "post",
+                url: "https://iosandweb.net/api/related-blog-api.php",
+                data: JSON.stringify({
+                    post_url: blogId
+                    }),
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            })
+            .then(res => {
+                setRelatedPost(res.data);
+            })
+            .catch(() => {
+                console.log('Error')
+            })
+            .finally(() => {
+                setRelatedLoading(false);
+            })
+            }
+        
+
+    }, [url, blogId]);
 
     return(
         <>
@@ -98,6 +126,51 @@ function BlogDetails(){
                     </div> 
                 </>
             }
+
+            <div className="blog-page section-padding no-top-padding">
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className="leadtxt text-center">
+                                <h3>Related Blog
+                                </h3>
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row className="related-blogs-list">
+                        
+                        {
+                            relatedLoading ?
+                            <>
+                                <div className="blog_spinner text-center">
+                                    <Spinner as="span" animation="border" size="xl" role="status" aria-hidden="true" />
+                                </div>
+                            </>
+                            : 
+                            <>
+                                {relatedPost && relatedPost.map((item, index) => 
+                            
+                                    <Col lg={6} xl={3} className="blog-col" key={item.id}>
+                                        <div className="blog-list-item related-blog-item">
+                                            <a key={index} href={"/blog/"+item.url}>
+                                                <img src={item.image ? item.image : defaultImage} className="blog-image" alt="Proven Strategies" />
+                                            </a>
+                                            <div className="blog-detail">
+                                                <h5><span className="blog-date">{item.date}</span></h5>
+                                                <a key={index} href={"/blog/"+item.url}>
+                                                    <h4>{item.title}</h4>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                )}
+                            </>
+                        }
+                        
+
+                    </Row>
+                </Container>
+            </div>
 
         </>
     )

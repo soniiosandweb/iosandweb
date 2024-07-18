@@ -2,24 +2,8 @@ import React from "react";
 import './style.css';
 import { Container, Row, Col } from "react-bootstrap";
 
-import ikea from '../../images/partners/ikea-logo-color.svg';
-import google from '../../images/partners/google-logo-color.svg';
-import bcc from '../../images/partners/bcc-logo-color.svg';
-import kfc from '../../images/partners/kfc-logo-color.svg';
-import fridays from '../../images/partners/friday-logo-color.svg';
-import moo from '../../images/partners/moo-logo-color.svg';
-import hrispy from '../../images/partners/kk-logo-color.svg';
-import hardees from '../../images/partners/hardees-logo-color.svg';
-import bajaj from '../../images/partners/bajaj-allianz-logo-color.svg';
-import dominos from '../../images/partners/domin-logo-color.svg';
-//import supershe from '../../images/partners/supershe-logo-color.svg';
-//import wimpy from '../../images/partners/wimpy-logo-color.svg';
-//import empire from '../../images/partners/empirehotels-logo-color.svg';
-import jobGet from '../../images/partners/jobget-lgo-color.svg';
-import asianBank from '../../images/partners/asian-bank.svg';
-
 import onmen from '../../images/partners/ONMEN.png';
-import gopuff from '../../images/partners/Gopuff.png';
+import gopuff from '../../images/partners/Gopuff.webp';
 import seamless from '../../images/partners/seamless.png';
 import doorDash from '../../images/partners/DoorDash.png';
 import uber from '../../images/partners/Uber-Eats-Logo.png';
