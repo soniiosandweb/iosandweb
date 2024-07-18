@@ -12,9 +12,9 @@ import hrispy from '../../images/partners/kk-logo-color.svg';
 import hardees from '../../images/partners/hardees-logo-color.svg';
 import bajaj from '../../images/partners/bajaj-allianz-logo-color.svg';
 import dominos from '../../images/partners/domin-logo-color.svg';
-import supershe from '../../images/partners/supershe-logo-color.svg';
-import wimpy from '../../images/partners/wimpy-logo-color.svg';
-import empire from '../../images/partners/empirehotels-logo-color.svg';
+//import supershe from '../../images/partners/supershe-logo-color.svg';
+//import wimpy from '../../images/partners/wimpy-logo-color.svg';
+//import empire from '../../images/partners/empirehotels-logo-color.svg';
 import jobGet from '../../images/partners/jobget-lgo-color.svg';
 import asianBank from '../../images/partners/asian-bank.svg';
 
@@ -22,7 +22,7 @@ import onmen from '../../images/partners/ONMEN.png';
 import gopuff from '../../images/partners/Gopuff.png';
 import seamless from '../../images/partners/seamless.png';
 import doorDash from '../../images/partners/DoorDash.png';
-import uber from '../../images/partners/uber.png';
+import uber from '../../images/partners/Uber-Eats-Logo.png';
 import srgn from '../../images/partners/srgn.png';
 import lowes from '../../images/partners/Lowes.png';
 import aesthetic from '../../images/partners/aesthetic.png';
@@ -31,6 +31,9 @@ import chownow from '../../images/partners/chownow.png';
 import vertical from '../../images/partners/vertical.png';
 import Instacart from '../../images/partners/Instacart.png';
 import mygermany from '../../images/partners/mygermany.png';
+import walgreeens from '../../images/partners/walgreeens-logo.png';
+
+import ten from '../../images/partners/ten-white-2.png';
 
 function Partners(){
     return(
@@ -58,14 +61,14 @@ function Partners(){
                                 <li className="partner-logo">
                                     <img src={mygermany} alt="mygermany" />
                                 </li>
-                                {/* <li className="partner-logo">
-                                    <img src={srgn} alt="srgn" />
+                                <li className="partner-logo">
+                                    <img src={ten} alt="ten" />
                                 </li>
                                 <li className="partner-logo">
                                     <img src={lowes} alt="lowes" />
                                 </li>
                                 <li className="partner-logo">
-                                    <img src={aesthetic} alt="aesthetic" />
+                                    <img src={gopuff} alt="gopuff" />
                                 </li>
                                 <li className="partner-logo">
                                     <img src={grubhub} alt="grubhub" />
@@ -74,20 +77,20 @@ function Partners(){
                                     <img src={chownow} alt="chownow" />
                                 </li>
                                 <li className="partner-logo">
-                                    <img src={vertical} alt="vertical" />
+                                    <img src={doorDash} alt="doorDash" />
                                 </li>
                                 <li className="partner-logo">
                                     <img src={Instacart} alt="Instacart" />
                                 </li>
                                 <li className="partner-logo">
-                                    <img src={mygermany} alt="mygermany" />
+                                    <img src={seamless} alt="seamless" />
                                 </li>
                                 <li className="partner-logo">
-                                    <img src={jobGet} alt="Job Get" />
+                                    <img src={walgreeens} alt="walgreeens" />
                                 </li>
                                 <li className="partner-logo">
-                                    <img src={asianBank} alt="Asian Bank" />
-                                </li> */}
+                                    <img src={uber} alt="uber" />
+                                </li>
                             </ul>
                         </Col>
                     </Row>

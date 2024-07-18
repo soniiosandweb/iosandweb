@@ -10,13 +10,14 @@ import JoinOurTeam from "../../components/JoinOurTeam";
 
 import teamImg from '../../images/IAW-Team.webp';
 import userMan from '../../images/user-man.png';
-import userWoman from '../../images/user-woman.png';
+// import userWoman from '../../images/user-woman.png';
 import ourTeam from '../../images/our-team.webp';
 import bhupinder from '../../images/team/bhupinder.png';
 import soni from '../../images/team/soni.png';
 import diksha from '../../images/team/diksha.jpg';
 import shreyanshi from '../../images/team/shreyanshi.png';
 import gaurav from '../../images/team/gaurav.png';
+import arti from '../../images/team/arti.jpeg';
 
 function Team(){
     return(
@@ -109,7 +110,7 @@ function Team(){
 
                                 <div className="team-item">
                                     <div className="team-profile-image">
-                                        <img src={userWoman} alt="Profile" className="img-fluid" />
+                                        <img src={arti} alt="Profile" className="img-fluid" />
                                     </div>
                                     <div className="profile-content">
                                         <h3 className="team-title">Aarti Bhanwar</h3>
