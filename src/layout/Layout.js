@@ -12,8 +12,6 @@ function Layout(){
                 <Outlet />
                 <Footer />
             </HelmetProvider>
-            
-            
         </>
     )
 }
