@@ -75,7 +75,7 @@ function Home() {
                     <Row>
                         <Col>
                             <div className="intro-content">
-                                <h1 className="banner-heading">Welcome to <span>IosAndWeb Technologies</span> <br/>Where Innovation Meets Technology</h1>
+                                <h1 className="banner-heading">Welcome to <span>IosAndWeb Technologies</span> <br/>Where Innovation Collaborates With Technology</h1>
                                 <p className="banner-text">Your partner in Custom Software Development Solutions</p>
                                 <a href="/contact-us" className="consult-expert-btn">Let's Collaborate <FontAwesomeIcon icon={faChevronRight} /></a>
                             </div>
