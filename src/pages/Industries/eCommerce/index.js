@@ -42,8 +42,11 @@ import vueJs from '../../../images/industries/eCommerce/vue-js.webp';
 import flutter from '../../../images/industries/eCommerce/flutter.webp';
 import swift from '../../../images/industries/eCommerce/swift.webp';
 import kotlin from '../../../images/industries/eCommerce/kotlin.webp';
+import { useLocation } from "react-router-dom";
 
 function Ecommerce(){
+
+    const location = useLocation();
 
     const changeNumber=(event) =>{
         if (event.item) {
@@ -70,6 +73,7 @@ function Ecommerce(){
         <>
             <SEO
                 title="eCommerce App Development - IosAndWeb Technologies"
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* Banner section */}

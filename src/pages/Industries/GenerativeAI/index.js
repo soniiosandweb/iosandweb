@@ -70,8 +70,11 @@ import mobileNet from '../../../images/industries/generative-ai/mobilenet-icon.p
 import googleNet from '../../../images/industries/generative-ai/googlenet-icon.png';
 import inception from '../../../images/industries/generative-ai/inception-icon.png';
 import squeezeNet from '../../../images/industries/generative-ai/squeezenet-icon.png';
+import { useLocation } from "react-router-dom";
 
 function GenerativeAI(){
+
+    const location = useLocation();
 
     const changeNumberProcess=(event) =>{
         if (event.item) {
@@ -96,6 +99,7 @@ function GenerativeAI(){
         <>
             <SEO
                 title="Generative AI Development - IosAndWeb Technologies"
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* Banner section */}

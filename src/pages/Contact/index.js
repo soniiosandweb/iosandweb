@@ -12,8 +12,11 @@ import locIndia from '../../images/contact/cont-loc-india.svg';
 import locUK from '../../images/contact/cont-loc-uk.svg';
 import locUS from '../../images/contact/cont-loc-usa.svg';
 import contactImage from '../../images/contact/contact-footer.webp';
+import { useLocation } from "react-router-dom";
 
 function Contact(){
+
+    const location = useLocation();
 
     return(
         <>
@@ -21,6 +24,7 @@ function Contact(){
                 title="Consult now: Get IosAndWeb Technologies Contact Number details"
                 description='Our management is always ready to help to boost our customer business. Call us or Consult our IosAndWeb Technologies contact number.'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
             
             <div className="contact-banner banner-padding text-white">

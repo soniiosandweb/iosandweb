@@ -21,14 +21,19 @@ import softwareDevelopment from '../../../images/services/software-development/s
 import webDevelopment from '../../../images/services/software-development/app-development.png';
 import crmDevelopment from '../../../images/services/software-development/crm-development.png';
 import magentoDevelopment from '../../../images/services/software-development/magento.png';
+import { useLocation } from "react-router-dom";
 
 function ShopifyDevelopment(){
+
+    const location = useLocation();
+
     return(
         <>
             <SEO
                 title='Shopify Development Services - Get Quote - IAW Technologies'
                 description='Our Shopify Development Services are designed to help businesses build and customize Shopify online stores. Get Quote at IAW Technologies.'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* Shopify Development Banner */}

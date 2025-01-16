@@ -20,14 +20,19 @@ import softwareDevelopment from '../../../images/services/software-development/s
 import webDevelopment from '../../../images/services/software-development/app-development.png';
 import magento from '../../../images/services/software-development/magento.png';
 import shopify from '../../../images/services/software-development/shopify.png';
+import { useLocation } from "react-router-dom";
 
 function CRMDevelopmentHealthCare(){
+
+    const location = useLocation();
+
     return(
         <>
             <SEO
                 title='We Offer CRM Development For Healthcare Industry'
                 description='Get Quote - CRM development for healthcare industry can help healthcare enterprises provide more concrete benefits to their patients.'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* CRM Development HealthCare Banner */}

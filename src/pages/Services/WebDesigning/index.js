@@ -20,14 +20,19 @@ import ppcADS from '../../../images/services/web-designing/ppc-ads.png';
 // final reflection images
 import pdfHTML from '../../../images/services/web-designing/pdf-html.png';
 import graphicDesign from '../../../images/services/web-designing/graphic-design.png';
+import { useLocation } from "react-router-dom";
 
 function WebDesigning(){
+
+    const location = useLocation();
+
     return(
         <>
             <SEO
                 title='Best Web Designing Services in UK | IosandWeb Technologies'
                 description='IosAndWeb Tech-Make your imagination in reality. Best in class web designing services. Our in-house web designer has 12+ years of experience.'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* Web Designing Banner */}

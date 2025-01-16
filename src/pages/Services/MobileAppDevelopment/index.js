@@ -13,14 +13,19 @@ import ionic from '../../../images/services/mobile-app-development/ionic.png';
 import cordova from '../../../images/services/mobile-app-development/cordova.png';
 import unity from '../../../images/services/mobile-app-development/unity.png';
 import xamarin from '../../../images/services/mobile-app-development/xamarin.png';
+import { useLocation } from "react-router-dom";
 
 function MobileAppDevelopment(){
+
+    const location = useLocation();
+
     return(
         <>
             <SEO
                 title='Mobile App Development Services | Contact Now'
                 description='We offer mobile app development services in Birmingham, London and many areas of UK. Hire experienced mobile app developer at IAW.'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* Web Development Banner */}

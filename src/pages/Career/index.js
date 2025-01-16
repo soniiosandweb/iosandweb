@@ -24,13 +24,18 @@ import life from '../../images/career/life.webp';
 import experience from '../../images/career/experience.png';
 import diversity from '../../images/career/diversity.png';
 import foundation from '../../images/career/society.png';
+import { useLocation } from "react-router-dom";
 
 function Career(){
+
+    const location = useLocation();
+    
     return(
         <>
             <SEO
                 title="Boost Your Career in Web Development and Digital Marketing Jobs"
-                name='IAW - Apply for Web Development and Digital Marketing Jobs and enhance your skills with IosAndWeb Technologies. Consult our HR department.'
+                description='IAW - Apply for Web Development and Digital Marketing Jobs and enhance your skills with IosAndWeb Technologies. Consult our HR department.'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* Banner section */}

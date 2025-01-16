@@ -18,13 +18,19 @@ import diksha from '../../images/team/diksha.jpg';
 import shreyanshi from '../../images/team/shreyanshi.png';
 import gaurav from '../../images/team/gaurav.png';
 import arti from '../../images/team/arti.jpeg';
+import { useLocation } from "react-router-dom";
 
 function Team(){
+
+    const location = useLocation();
+
     return(
         <>
             <SEO
                 title="IAW Team - Grow With Us - IosAndWeb Technologies"
-                name='Meet IAW Team - The vision of our Team defines the core spirit of IosAndWeb Technologies. It tells what our company is all about.'
+                description='Meet IAW Team - The vision of our Team defines the core spirit of IosAndWeb Technologies. It tells what our company is all about.'
+                name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* Banner section */}

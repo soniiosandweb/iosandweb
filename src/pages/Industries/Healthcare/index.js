@@ -93,8 +93,11 @@ import saltstack from '../../../images/industries/healthcare/SaltStack.png';
 import hashiCorpPacker from '../../../images/industries/healthcare/hashicrop-packer.png';
 import terraform from '../../../images/industries/healthcare/terraform-icon.png';
 import puppet from '../../../images/industries/healthcare/puppet_logo.png';
+import { useLocation } from "react-router-dom";
 
 function Healthcare(){
+
+    const location = useLocation();
 
     const changeNumberProcess=(event) =>{
         if (event.item) {
@@ -119,6 +122,7 @@ function Healthcare(){
         <>
             <SEO
                 title="Healthcare Software Development - IosAndWeb Technologies"
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* Banner section */}

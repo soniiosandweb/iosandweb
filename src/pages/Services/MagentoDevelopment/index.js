@@ -14,14 +14,19 @@ import softwareDevelopment from '../../../images/services/software-development/s
 import webDevelopment from '../../../images/services/software-development/app-development.png';
 import crmDevelopment from '../../../images/services/software-development/crm-development.png';
 import shopify from '../../../images/services/software-development/shopify.png';
+import { useLocation } from "react-router-dom";
 
 function MagentoDevelopment(){
+
+    const location = useLocation();
+
     return(
         <>
             <SEO
                 title='Get Magento development services | Contact Us'
                 description='Looking for top Magento development Services in United kingdom? Hire our Certified Magento developer at affordable cost. Get quote Today!'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* Magento Development Banner */}

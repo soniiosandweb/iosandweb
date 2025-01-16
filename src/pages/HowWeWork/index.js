@@ -15,8 +15,11 @@ import wrappingUp from '../../images/how-we-work/wrapping-up.webp';
 import DevelopmentProcess from "../../components/DevelopmentProcess";
 import GetStarted from "../../components/GetStarted";
 import TypeWritter from "../../components/TypeWritter";
+import { useLocation } from "react-router-dom";
 
 function HowWeWork(){
+
+    const location = useLocation();
 
     return (
         <>
@@ -24,6 +27,7 @@ function HowWeWork(){
             <SEO
                 title="How We Work - IosAndWeb Technologies"
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* Banner section */}

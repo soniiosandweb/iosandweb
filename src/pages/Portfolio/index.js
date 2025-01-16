@@ -10,8 +10,11 @@ import SEO from "../../components/SEO";
 import TypeWritter from "../../components/TypeWritter";
 
 import portfolioImage from '../../images/Project-Portfolio.webp';
+import { useLocation } from "react-router-dom";
 
 function Portfolio(){
+
+    const location = useLocation();
 
     const [data, setData] = useState([])
     const [page, setPage] = useState(0);
@@ -48,6 +51,7 @@ function Portfolio(){
                 title="Checkout our Web Development and Digital Marketing Portfolio"
                 description='IosAndWeb Technologies: Visit and review our work of Web Development and Digital Marketing Portfolio. We have huge case to show our work.'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             <div className="portfolio-banner banner-padding text-white">

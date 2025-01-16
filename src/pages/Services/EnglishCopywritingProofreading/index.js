@@ -31,8 +31,12 @@ import socialMediaMarketing from '../../../images/services/digital-marketing/soc
 import SEOIcon from '../../../images/services/digital-marketing/seo-icon.png';
 import pageSpeed from '../../../images/services/digital-marketing/page-speed.png';
 import b2b from '../../../images/services/digital-marketing/b2b.png';
+import { useLocation } from "react-router-dom";
 
 function EnglishCopywritingProofreading(){
+
+    const location = useLocation();
+
     return(
         <>
 
@@ -40,6 +44,7 @@ function EnglishCopywritingProofreading(){
                 title='English Copywriting Services and Proofreading services'
                 description='We offer Quality English Copywriting Services and Proofreading services. Discuss with our qualified content writer. Get consultation Today!'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* English Copywriting and Proofreading Banner */}

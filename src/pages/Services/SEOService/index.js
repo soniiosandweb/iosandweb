@@ -29,8 +29,12 @@ import socialMediaMarketing from '../../../images/services/digital-marketing/soc
 import pageSpeed from '../../../images/services/digital-marketing/page-speed.png';
 import proofreading from '../../../images/services/digital-marketing/proofreading.png';
 import b2b from '../../../images/services/digital-marketing/b2b.png';
+import { useLocation } from "react-router-dom";
 
 function SEOService(){
+
+    const location = useLocation();
+
     return(
         <>
 
@@ -38,6 +42,7 @@ function SEOService(){
                 title='SEO Services At Affordable Prices | Get Free SEO Analysis Report'
                 description='IosAndWeb Technologies is the best Digital Marketing Agency in providing SEO services by certified experts at reasonable prices. Get quote.'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* SEO Service Banner */}

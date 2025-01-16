@@ -26,8 +26,12 @@ import socialMediaMarketing from '../../../images/services/digital-marketing/soc
 import pageSpeed from '../../../images/services/digital-marketing/page-speed.png';
 import proofreading from '../../../images/services/digital-marketing/proofreading.png';
 import b2b from '../../../images/services/digital-marketing/b2b.png';
+import { useLocation } from "react-router-dom";
 
 function DigitalMarketing(){
+
+    const location = useLocation();
+
     return(
         <>
 
@@ -35,6 +39,7 @@ function DigitalMarketing(){
                 title='Grab Quality leads with Digital marketing services | Get Quote'
                 description='Grow your business globally with Digital marketing services and get quality leads with paid PPC Services, SEO Services and SMM services.'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* Digital Marketing Banner */}

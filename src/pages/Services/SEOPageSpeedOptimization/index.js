@@ -24,8 +24,12 @@ import socialMediaMarketing from '../../../images/services/digital-marketing/soc
 import SEOIcon from '../../../images/services/digital-marketing/seo-icon.png';
 import proofreading from '../../../images/services/digital-marketing/proofreading.png';
 import b2b from '../../../images/services/digital-marketing/b2b.png';
+import { useLocation } from "react-router-dom";
 
 function SEOPageSpeedOptimization(){
+
+    const location = useLocation();
+
     return(
         <>
 
@@ -33,6 +37,7 @@ function SEOPageSpeedOptimization(){
                 title='Get SEO Page Speed Optimization Services | Get Quote'
                 description='We offer SEO page speed optimization services. Our certified web developer will help you to optimize web page speed. Get SEO audit report.'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* SEO page speed optimization Banner */}

@@ -24,8 +24,11 @@ import itFirms from '../../images/about/it-firms-logo.png';
 import goodFirms from '../../images/about/goodfirms-logo.png';
 import topDevelopers from '../../images/about/top-developers-logo.png';
 import upWork from '../../images/about/upwork-logo.png';
+import { useLocation } from "react-router-dom";
 
 function About(){
+
+    const location = useLocation();
 
     // projects delivered countup
     useCountUp({
@@ -70,6 +73,7 @@ function About(){
                 title='IosAndWeb Technologies - We approach with a purpose. Visit Now'
                 description='Team of IosAndWeb Technologies - We approach with a purpose. Effective Team Communication and collaboration. Visit Now Know About Us.'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             <div className="about-banner banner-padding text-white position-relative">

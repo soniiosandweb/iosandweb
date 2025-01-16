@@ -12,7 +12,7 @@ async function generateSitemap() {
   //     .build("https://iosandweb.net")
   //     .save("./public/sitemap.xml");
   try {
-    const posts = await axios.get('https://iosandweb.net/api/blog-api.php')
+    const posts = await axios.get(`https://iosandweb.net/api/blog-api.php`)
     let idMap = [];
 
     for (var i = 0; i < posts.data.length; i++) {

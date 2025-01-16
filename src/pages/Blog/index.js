@@ -10,8 +10,11 @@ import SEO from "../../components/SEO";
 
 import blogImage from '../../images/blog-banner.webp';
 import defaultImage from '../../images/placeholder-image.webp';
+import { useLocation } from "react-router-dom";
 
 function Blog(){
+
+    const location = useLocation();
 
     const [data, setData] = useState([])
     const [page, setPage] = useState(0);
@@ -21,7 +24,7 @@ function Blog(){
 
     useEffect(() => {
 
-        axios.get('https://iosandweb.net/api/blog-api.php')
+        axios.get(`${process.env.REACT_APP_API_URL}/api/blog-api.php`)
         .then(res => {
             setData(res.data);
             setFilterData(
@@ -44,6 +47,7 @@ function Blog(){
                 title='Latest technologies blogs - Learn More'
                 description='IAW technologies provide latest technologies blogs. Subscribe IAW Tech blogs for more latest updates. Visit now Iosandweb.net.'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             <div className="blog-banner banner-padding text-white">

@@ -1,14 +1,19 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SEO from "../../components/SEO";
+import { useLocation } from "react-router-dom";
 
 function PrivacyPolicy(){
+
+    const location = useLocation();
+
     return (
         <>
             <SEO
                 title="IosAndWeb Technologies Privacy Policy. Read Our Policies Briefly"
                 description='We give authorisation keep privacy of our clients&#039; information. Check out Iosandweb privacy policy to ensure you safety and privacy.'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             <div className="privacy-policy-page section-padding">

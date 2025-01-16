@@ -24,14 +24,19 @@ import reporting from '../../../images/services/ppc-services/reporting.png';
 import pageSpeed from '../../../images/services/digital-marketing/page-speed.png';
 import proofreading from '../../../images/services/digital-marketing/proofreading.png';
 import b2b from '../../../images/services/digital-marketing/b2b.png';
+import { useLocation } from "react-router-dom";
 
 function PayPerClick(){
+
+    const location = useLocation();
+
     return(
         <>
             <SEO
                 title='PPC Services - PPC Lead Generation Campaigns | Start Today'
                 description='IosAndWeb offer PPC Campaign management by certified team. Driven effective result by PPC Services. Best digital marketing company in UK.'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* PPC services Banner */}

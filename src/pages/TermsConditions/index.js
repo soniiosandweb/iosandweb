@@ -1,14 +1,19 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import SEO from '../../components/SEO';
+import { useLocation } from 'react-router-dom';
 
 function TermsConditions(){
+
+    const location = useLocation();
+
     return (
         <>
             <SEO
                 title="Read IosAndWeb Terms and Conditions - IosAndWeb Technologies"
                 description='To complete the project on time must or read acknowledge the Iosandweb terms and conditions clearly ,if face any problems with our terms.'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             <div className="privacy-policy-page section-padding">

@@ -12,14 +12,19 @@ import { faCogs, faHandshake, faNewspaper, faRefresh } from "@fortawesome/free-s
 // final reflection images
 import webDesigning from '../../../images/services/web-designing/web-designing.png';
 import graphicDesign from '../../../images/services/web-designing/graphic-design.png';
+import { useLocation } from "react-router-dom";
 
 function PdfToHtml(){
+
+    const location = useLocation();
+
     return(
         <>
             <SEO
                 title='Get PDF to HTML Conversion Services - IosAndWeb Technologies'
                 description='We offer advanced PDF to HTML conversion services. Our team of HTML conversion will help you to convert your Pdf file into Html version.'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* PDF to HTML Banner */}

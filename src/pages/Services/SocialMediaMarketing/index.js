@@ -20,8 +20,12 @@ import SEOIcon from '../../../images/services/digital-marketing/seo-icon.png';
 import pageSpeed from '../../../images/services/digital-marketing/page-speed.png';
 import proofreading from '../../../images/services/digital-marketing/proofreading.png';
 import b2b from '../../../images/services/digital-marketing/b2b.png';
+import { useLocation } from "react-router-dom";
 
 function SocialMediaMarketing(){
+
+    const location = useLocation();
+
     return(
         <>
 
@@ -29,6 +33,7 @@ function SocialMediaMarketing(){
                 title='Best Social Media Marketing Services | Built Customer Trust'
                 description='We help you to build s good reputation of your business with Social media marketing services. Get lead generation services in London.'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* Social Media Marketing Banner */}

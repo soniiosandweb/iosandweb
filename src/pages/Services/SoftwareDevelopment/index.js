@@ -27,8 +27,11 @@ import webDevelopment from '../../../images/services/software-development/app-de
 import crmDevelopment from '../../../images/services/software-development/crm-development.png';
 import magento from '../../../images/services/software-development/magento.png';
 import shopify from '../../../images/services/software-development/shopify.png';
+import { useLocation } from "react-router-dom";
 
 function SoftwareDevelopment(){
+
+    const location = useLocation();
 
     return(
         <>
@@ -37,6 +40,7 @@ function SoftwareDevelopment(){
                 title='Custom Software Development Company - IAW Technologies'
                 description='Our custom software development services are designed to help businesses in streamline processes, boost productivity, and achieve success.'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* Software Development Banner */}

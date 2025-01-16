@@ -20,14 +20,19 @@ import softwareDevelopment from '../../../images/services/software-development/s
 import crmDevelopment from '../../../images/services/software-development/crm-development.png';
 import magento from '../../../images/services/software-development/magento.png';
 import shopify from '../../../images/services/software-development/shopify.png';
+import { useLocation } from "react-router-dom";
 
 function WebDevelopment(){
+
+    const location = useLocation();
+
     return(
         <>
             <SEO
                 title='Web Development Services Hire Experienced Web Developer Now'
                 description='Develop your own business sites to grab the business opportunities. Hire certified and experienced web developer. Get quote for your project.'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* Web Development Banner */}

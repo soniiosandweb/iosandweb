@@ -42,8 +42,11 @@ import firebase from '../../../images/industries/real-estate/firebase_icon.webp'
 import database from '../../../images/industries/real-estate/database.webp';
 import fastlane from '../../../images/industries/real-estate/fastlane-icon.webp';
 import figma from '../../../images/industries/real-estate/figma-icon.webp';
+import { useLocation } from "react-router-dom";
 
 function RealEstate(){
+
+    const location = useLocation();
 
     const changeNumber=(event) =>{
         if (event.item) {
@@ -87,6 +90,7 @@ function RealEstate(){
         <>
             <SEO
                 title="Real Estate App Development - IosAndWeb Technologies"
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* Banner section */}

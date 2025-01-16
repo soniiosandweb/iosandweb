@@ -19,8 +19,12 @@ import socialMediaMarketing from '../../../images/services/digital-marketing/soc
 import SEOIcon from '../../../images/services/digital-marketing/seo-icon.png';
 import pageSpeed from '../../../images/services/digital-marketing/page-speed.png';
 import proofreading from '../../../images/services/digital-marketing/proofreading.png';
+import { useLocation } from "react-router-dom";
 
 function B2BLeadGenerationCampaign(){
+
+    const location = useLocation();
+
     return(
         <>
 
@@ -28,6 +32,7 @@ function B2BLeadGenerationCampaign(){
                 title='B2B Lead Generation Campaign Services | IosAndWeb Tech'
                 description='Grow your customer base nationaly and globally with B2B Lead Generation Campaign Services and get quality leads with advanced methods.'
                 name='IosAndWeb Technologies'
+                canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
             {/* B2B Lead Generation Campaign Banner */}

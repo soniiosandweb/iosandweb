@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './style.css';
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import axios from 'axios';
 import { Row, Col, Container, Spinner } from "react-bootstrap";
 import SEO from "../../components/SEO";
@@ -8,6 +8,7 @@ import defaultImage from '../../images/placeholder-image.webp';
 
 function BlogDetails(){
     const url = useParams().url;
+    const location = useLocation();
     const [blogId, setBlogId] = useState(null);
     const [title, setTitle] = useState("");
     const [image, setImage] = useState("");
@@ -25,7 +26,7 @@ function BlogDetails(){
 
         axios({
             method: "post",
-            url: "https://iosandweb.net/api/blog-details-api.php",
+            url: `${process.env.REACT_APP_API_URL}/api/blog-details-api.php`,
             data: JSON.stringify({
                 post_url: url
                 }),
@@ -57,7 +58,7 @@ function BlogDetails(){
         if(blogId && blogId !== null){
             axios({
                 method: "post",
-                url: "https://iosandweb.net/api/related-blog-api.php",
+                url: `${process.env.REACT_APP_API_URL}/api/related-blog-api.php`,
                 data: JSON.stringify({
                     post_url: blogId
                     }),
@@ -102,6 +103,7 @@ function BlogDetails(){
                         description={seoDescription}
                         name='IosAndWeb Technologies'
                         keywords={seoKeyword}
+                        canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
                     />
 
                     <div className="blog-detail-page section-padding" style={{backgroundImage: `url(${image ? image : defaultImage})`}}>
