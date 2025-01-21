@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
-function SEO({title, description, name, keywords, canonicalUrl}){
+function SEO({title, description, name, keywords, canonicalUrl, localSchema, organisationalSchema}){
     return(
         <>
             <Helmet>
@@ -24,6 +24,18 @@ function SEO({title, description, name, keywords, canonicalUrl}){
                 <meta name="twitter:description" content={description} />
 
                 <link rel="canonical" href={canonicalUrl ? canonicalUrl : process.env.REACT_APP_API_URL } />
+
+                {localSchema &&
+                    <script type="application/ld+json">
+                        {JSON.stringify(localSchema)}
+                    </script>
+                }
+
+                {organisationalSchema &&
+                    <script type="application/ld+json">
+                        {JSON.stringify(organisationalSchema)}
+                    </script>
+                }
 
             </Helmet>
         </>

@@ -61,6 +61,62 @@ import robertTa from '../../images/home/Robert-Ta.png';
 
 function Home() {
 
+    const localSchema = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "IOSAndWeb Technologies",
+        "image": "https://iosandweb.net/static/media/IAW-black-logo.c17961e0b493c00d409f.png",
+        "@id": "",
+        "url": "https://iosandweb.net/",
+        "telephone": "099158 41204",
+        "priceRange": "$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "SCO No. 30, First Floor, VIP Shopping Centre",
+          "addressLocality": "Zirakpur",
+          "postalCode": "140603",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 30.638054,
+          "longitude": 76.8156075
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "10:00",
+          "closes": "19:00"
+        } 
+    };
+
+    const organisationalSchema = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "IOSAndWeb Technologies",
+        "url": "https://iosandweb.net/",
+        "logo": "https://iosandweb.net/static/media/IAW-black-logo.c17961e0b493c00d409f.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "",
+          "contactType": "customer service",
+          "availableLanguage": "en"
+        },
+        "sameAs": [
+          "https://www.facebook.com/iosandwebtechnologies/",
+          "https://www.instagram.com/iosandwebtechnologies/",
+          "https://twitter.com/Iosandwebtech",
+          "https://www.linkedin.com/company/iosandweb-technologies"
+        ]
+    }
+
     return (
         <>
             <SEO
@@ -69,6 +125,8 @@ function Home() {
                 name='IosAndWeb Technologies'
                 keywords='software development, mobile app development, web development, blockchain services, custom software solutions, digital transformation, POC & ICO development, PPC services, generative AI, business innovation, tech solutions, app design, cloud services, eCommerce development, real estate software, healthcare apps, fintech solutions, mobile app design, software integration, IT services, digital marketing, mobile app solutions'
                 canonicalUrl={process.env.REACT_APP_API_URL}
+                localSchema={localSchema}
+                organisationalSchema={organisationalSchema}
             />
 
             {/* Banner */}
