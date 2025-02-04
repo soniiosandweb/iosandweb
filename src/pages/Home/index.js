@@ -120,8 +120,8 @@ function Home() {
     return (
         <>
             <SEO
-                title='IOS & Web Technologies | Expert App, Web Development & Marketing Services'
-                description='Transform your business with IOS & Web Technologies—expert in mobile apps, web solutions, and digital marketing tailored to your needs. Get started today!'
+                title='IosAndWeb Technologies | Expert App, Web Development & Marketing Services'
+                description='Transform your business with IosAndWeb Technologies— experts in mobile apps, web solutions, and digital marketing tailored to your needs. Get started today!'
                 name='IosAndWeb Technologies'
                 keywords='software development, mobile app development, web development, blockchain services, custom software solutions, digital transformation, POC & ICO development, PPC services, generative AI, business innovation, tech solutions, app design, cloud services, eCommerce development, real estate software, healthcare apps, fintech solutions, mobile app design, software integration, IT services, digital marketing, mobile app solutions'
                 canonicalUrl={process.env.REACT_APP_API_URL}
