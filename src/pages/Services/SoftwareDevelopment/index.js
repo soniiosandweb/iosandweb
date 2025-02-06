@@ -37,8 +37,8 @@ function SoftwareDevelopment(){
         <>
 
             <SEO
-                title='Custom Software Development Company - IAW Technologies'
-                description='Our custom software development services are designed to help businesses in streamline processes, boost productivity, and achieve success.'
+                title='Custom Software Development Services | IosAndWeb Technologies'
+                description='Looking for a trusted Custom Software Development Company? IosAndWeb Technologies offers software solutions to meet your business needs. Get started today!'
                 name='IosAndWeb Technologies'
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />

@@ -22,8 +22,8 @@ function MobileAppDevelopment(){
     return(
         <>
             <SEO
-                title='Mobile App Development Services | Contact Now'
-                description='We offer mobile app development services in Birmingham, London and many areas of UK. Hire experienced mobile app developer at IAW.'
+                title='Custom Mobile App Development Services | iOS & Android Solutions'
+                description='Looking for expert Mobile App Development Services? Get custom iOS & Android apps tailored to your business needs. Scalable, secure, and user-friendly solutions. Contact us today!'
                 name='IosAndWeb Technologies'
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
