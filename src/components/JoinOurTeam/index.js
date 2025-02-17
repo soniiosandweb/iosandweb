@@ -110,7 +110,7 @@ function JoinOurTeam(){
 
                     axios({
                         method: "post",
-                        url: "/api/join-team-email-api.php",
+                        url: `${process.env.REACT_APP_API_URL}/api/join-team-email-api.php`,
                         data: JSON.stringify({
                                 yourFirstName: values.yourFirstName,
                                 yourLastName: values.yourLastName,

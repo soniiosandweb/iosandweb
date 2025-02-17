@@ -74,7 +74,7 @@ function ContactForm(){
             setLoading(true);
             axios({
                 method: "post",
-                url: "/api/contact-email-api.php",
+                url: `${process.env.REACT_APP_API_URL}/api/contact-email-api.php`,
                 data: JSON.stringify({
                         yourName: values.yourName,
                         emailAddress: values.emailAddress,

@@ -8,7 +8,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 import homeBanner from '../../images/home/home-banner.webp';
-import homeVideo from '../../images/home/home-video.mp4';
 
 // Award
 import AwardsSlider from "../../components/AwardsSlider";
@@ -58,6 +57,9 @@ import paulAzzurro from '../../images/home/Paul-Azzurro.png';
 import kevinTang from '../../images/home/kevin-tang.png';
 import martyJames from '../../images/home/Marty-James.png';
 import robertTa from '../../images/home/Robert-Ta.png';
+
+// Home video
+const homeVideo = `${process.env.REACT_APP_API_URL}/assests/home-video.mp4`;
 
 function Home() {
 
