@@ -23,7 +23,7 @@ function Portfolio(){
 
     useEffect(() => {
 
-        axios.get('portfolio.json')
+        axios.get(`${process.env.REACT_APP_API_URL}/portfolio.json`)
         .then(res => {
             setData(res.data);
             setFilterData(
@@ -48,9 +48,9 @@ function Portfolio(){
     return(
         <>
             <SEO
-                title="Checkout our Web Development and Digital Marketing Portfolio"
-                description='IosAndWeb Technologies: Visit and review our work of Web Development and Digital Marketing Portfolio. We have huge case to show our work.'
-                name='IosAndWeb Technologies'
+                title={"Checkout our Web Development and Digital Marketing Portfolio"}
+                description={"IosAndWeb Technologies: Visit and review our work of Web Development and Digital Marketing Portfolio. We have huge case to show our work."}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

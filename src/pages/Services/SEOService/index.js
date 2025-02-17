@@ -39,9 +39,9 @@ function SEOService(){
         <>
 
             <SEO
-                title='SEO Services At Affordable Prices | Get Free SEO Analysis Report'
-                description='IosAndWeb Technologies is the best Digital Marketing Agency in providing SEO services by certified experts at reasonable prices. Get quote.'
-                name='IosAndWeb Technologies'
+                title={"SEO Services At Affordable Prices | Get Free SEO Analysis Report"}
+                description={"IosAndWeb Technologies is the best Digital Marketing Agency in providing SEO services by certified experts at reasonable prices. Get quote."}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

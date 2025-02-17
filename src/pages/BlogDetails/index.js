@@ -101,7 +101,7 @@ function BlogDetails(){
                     <SEO
                         title={seoTitle}
                         description={seoDescription}
-                        name='IosAndWeb Technologies'
+                        name={"IosAndWeb Technologies"}
                         keywords={seoKeyword}
                         canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
                     />

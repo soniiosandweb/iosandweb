@@ -50,8 +50,8 @@ function RealEstate(){
 
     const changeNumber=(event) =>{
         if (event.item) {
-            var count     = event.item.count;
-            var current      = (event.item.index + 1) - event.relatedTarget._clones.length / 2;
+            var count = event.item.count;
+            var current = (event.item.index + 1) - event.relatedTarget._clones.length / 2;
 
             if (current > count) {
                 current = 1;
@@ -69,8 +69,8 @@ function RealEstate(){
 
     const changeNumberProcess=(event) =>{
         if (event.item) {
-            var count     = event.item.count;
-            var current      = (event.item.index + 1) - event.relatedTarget._clones.length / 2;
+            var count = event.item.count;
+            var current = (event.item.index + 1) - event.relatedTarget._clones.length / 2;
 
             if (current > count) {
                 current = 1;
@@ -89,7 +89,7 @@ function RealEstate(){
     return (
         <>
             <SEO
-                title="Real Estate App Development - IosAndWeb Technologies"
+                title={"Real Estate App Development - IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

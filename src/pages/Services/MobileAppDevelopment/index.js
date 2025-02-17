@@ -22,9 +22,9 @@ function MobileAppDevelopment(){
     return(
         <>
             <SEO
-                title='Custom Mobile App Development Services | iOS & Android Solutions'
-                description='Looking for expert Mobile App Development Services? Get custom iOS & Android apps tailored to your business needs. Scalable, secure, and user-friendly solutions. Contact us today!'
-                name='IosAndWeb Technologies'
+                title={"Custom Mobile App Development Services | iOS & Android Solutions"}
+                description={"Looking for expert Mobile App Development Services? Get custom iOS & Android apps tailored to your business needs. Scalable, secure, and user-friendly solutions. Contact us today!"}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

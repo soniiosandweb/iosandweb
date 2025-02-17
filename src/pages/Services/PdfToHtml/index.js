@@ -21,9 +21,9 @@ function PdfToHtml(){
     return(
         <>
             <SEO
-                title='Get PDF to HTML Conversion Services - IosAndWeb Technologies'
-                description='We offer advanced PDF to HTML conversion services. Our team of HTML conversion will help you to convert your Pdf file into Html version.'
-                name='IosAndWeb Technologies'
+                title={"Get PDF to HTML Conversion Services - IosAndWeb Technologies"}
+                description={"We offer advanced PDF to HTML conversion services. Our team of HTML conversion will help you to convert your Pdf file into Html version."}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

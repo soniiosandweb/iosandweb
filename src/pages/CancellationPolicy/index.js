@@ -10,9 +10,9 @@ function CancellationPolicy(){
     return(
         <>
             <SEO
-                title="IosAndWeb's Services Cancellation Policy - Check Now"
-                description='If any party face issue in completion of project than both party is able to cancel the contracts. Read about our cancellation policy.'
-                name='IosAndWeb Technologies'
+                title={"IosAndWeb's Services Cancellation Policy - Check Now"}
+                description={"If any party face issue in completion of project than both party is able to cancel the contracts. Read about our cancellation policy."}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

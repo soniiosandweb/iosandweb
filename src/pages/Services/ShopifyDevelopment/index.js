@@ -30,9 +30,9 @@ function ShopifyDevelopment(){
     return(
         <>
             <SEO
-                title='Shopify Development Services - Get Quote - IAW Technologies'
-                description='Our Shopify Development Services are designed to help businesses build and customize Shopify online stores. Get Quote at IAW Technologies.'
-                name='IosAndWeb Technologies'
+                title={"Shopify Development Services - Get Quote - IAW Technologies"}
+                description={"Our Shopify Development Services are designed to help businesses build and customize Shopify online stores. Get Quote at IAW Technologies."}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

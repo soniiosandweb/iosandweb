@@ -27,9 +27,9 @@ function Team(){
     return(
         <>
             <SEO
-                title="IAW Team - Grow With Us - IosAndWeb Technologies"
-                description='Meet IAW Team - The vision of our Team defines the core spirit of IosAndWeb Technologies. It tells what our company is all about.'
-                name='IosAndWeb Technologies'
+                title={"IAW Team - Grow With Us - IosAndWeb Technologies"}
+                description={"Meet IAW Team - The vision of our Team defines the core spirit of IosAndWeb Technologies. It tells what our company is all about."}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

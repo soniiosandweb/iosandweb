@@ -41,9 +41,9 @@ function EnglishCopywritingProofreading(){
         <>
 
             <SEO
-                title='English Copywriting Services and Proofreading services'
-                description='We offer Quality English Copywriting Services and Proofreading services. Discuss with our qualified content writer. Get consultation Today!'
-                name='IosAndWeb Technologies'
+                title={"English Copywriting Services and Proofreading services"}
+                description={"We offer Quality English Copywriting Services and Proofreading services. Discuss with our qualified content writer. Get consultation Today!"}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

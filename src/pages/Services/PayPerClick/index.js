@@ -33,9 +33,9 @@ function PayPerClick(){
     return(
         <>
             <SEO
-                title='PPC Services - PPC Lead Generation Campaigns | Start Today'
-                description='IosAndWeb offer PPC Campaign management by certified team. Driven effective result by PPC Services. Best digital marketing company in UK.'
-                name='IosAndWeb Technologies'
+                title={"PPC Services - PPC Lead Generation Campaigns | Start Today"}
+                description={"IosAndWeb offer PPC Campaign management by certified team. Driven effective result by PPC Services. Best digital marketing company in UK."}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

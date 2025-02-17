@@ -21,9 +21,9 @@ function Contact(){
     return(
         <>
             <SEO
-                title="Consult now: Get IosAndWeb Technologies Contact Number details"
-                description='Our management is always ready to help to boost our customer business. Call us or Consult our IosAndWeb Technologies contact number.'
-                name='IosAndWeb Technologies'
+                title={"Consult now: Get IosAndWeb Technologies Contact Number details"}
+                description={"Our management is always ready to help to boost our customer business. Call us or Consult our IosAndWeb Technologies contact number."}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
             

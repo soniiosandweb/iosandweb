@@ -39,9 +39,9 @@ function Services(){
     return(
         <>
             <SEO
-                title="Web development services- IAW Technologies"
-                description='Looking for high-quality web development services for your business? Look no further than IAW Technologies. Contact us Today.'
-                name='IosAndWeb Technologies'
+                title={"Web development services- IAW Technologies"}
+                description={"Looking for high-quality web development services for your business? Look no further than IAW Technologies. Contact us Today."}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

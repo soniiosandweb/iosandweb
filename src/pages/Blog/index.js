@@ -44,9 +44,9 @@ function Blog(){
     return(
         <>
             <SEO
-                title='Latest technologies blogs - Learn More'
-                description='IAW technologies provide latest technologies blogs. Subscribe IAW Tech blogs for more latest updates. Visit now Iosandweb.net.'
-                name='IosAndWeb Technologies'
+                title={"Latest technologies blogs - Learn More"}
+                description={"IAW technologies provide latest technologies blogs. Subscribe IAW Tech blogs for more latest updates. Visit now Iosandweb.net."}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

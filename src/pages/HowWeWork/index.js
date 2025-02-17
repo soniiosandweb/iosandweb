@@ -25,8 +25,8 @@ function HowWeWork(){
         <>
 
             <SEO
-                title="How We Work - IosAndWeb Technologies"
-                name='IosAndWeb Technologies'
+                title={"How We Work - IosAndWeb Technologies"}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

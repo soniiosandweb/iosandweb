@@ -11,8 +11,8 @@ function NoPage(){
     return(
         <>
             <SEO
-                title="404 Page Not Found - IosAndWeb Technologies"
-                name='IosAndWeb Technologies'
+                title={"404 Page Not Found - IosAndWeb Technologies"}
+                name={"IosAndWeb Technologies"}
             />
 
             <div className="nopage section-padding">

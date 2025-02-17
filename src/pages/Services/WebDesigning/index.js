@@ -29,9 +29,9 @@ function WebDesigning(){
     return(
         <>
             <SEO
-                title='Best Web Designing Services in UK | IosandWeb Technologies'
-                description='IosAndWeb Tech-Make your imagination in reality. Best in class web designing services. Our in-house web designer has 12+ years of experience.'
-                name='IosAndWeb Technologies'
+                title={"Best Web Designing Services in UK | IosandWeb Technologies"}
+                description={"IosAndWeb Tech-Make your imagination in reality. Best in class web designing services. Our in-house web designer has 12+ years of experience."}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

@@ -29,9 +29,9 @@ function B2BLeadGenerationCampaign(){
         <>
 
             <SEO
-                title='B2B Lead Generation Campaign Services | IosAndWeb Tech'
-                description='Grow your customer base nationaly and globally with B2B Lead Generation Campaign Services and get quality leads with advanced methods.'
-                name='IosAndWeb Technologies'
+                title={"B2B Lead Generation Campaign Services | IosAndWeb Tech"}
+                description={"Grow your customer base nationaly and globally with B2B Lead Generation Campaign Services and get quality leads with advanced methods."}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

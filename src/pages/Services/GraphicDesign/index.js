@@ -32,9 +32,9 @@ function GraphicDesign(){
     return(
         <>
             <SEO
-                title='Get Best Graphic Designing Services in UK | Contact Now'
-                description='IosAndWeb has a talented team of Best graphic designing services in many areas of UK. We Web designing company. Get quote for your project.'
-                name='IosAndWeb Technologies'
+                title={"Get Best Graphic Designing Services in UK | Contact Now"}
+                description={"IosAndWeb has a talented team of Best graphic designing services in many areas of UK. We Web designing company. Get quote for your project."}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

@@ -34,9 +34,9 @@ function SEOPageSpeedOptimization(){
         <>
 
             <SEO
-                title='Get SEO Page Speed Optimization Services | Get Quote'
-                description='We offer SEO page speed optimization services. Our certified web developer will help you to optimize web page speed. Get SEO audit report.'
-                name='IosAndWeb Technologies'
+                title={"Get SEO Page Speed Optimization Services | Get Quote"}
+                description={"We offer SEO page speed optimization services. Our certified web developer will help you to optimize web page speed. Get SEO audit report."}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

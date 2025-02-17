@@ -30,9 +30,9 @@ function SocialMediaMarketing(){
         <>
 
             <SEO
-                title='Best Social Media Marketing Services | Built Customer Trust'
-                description='We help you to build s good reputation of your business with Social media marketing services. Get lead generation services in London.'
-                name='IosAndWeb Technologies'
+                title={"Best Social Media Marketing Services | Built Customer Trust"}
+                description={"We help you to build s good reputation of your business with Social media marketing services. Get lead generation services in London."}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

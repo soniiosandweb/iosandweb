@@ -29,9 +29,9 @@ function CRMDevelopmentHealthCare(){
     return(
         <>
             <SEO
-                title='We Offer CRM Development For Healthcare Industry'
-                description='Get Quote - CRM development for healthcare industry can help healthcare enterprises provide more concrete benefits to their patients.'
-                name='IosAndWeb Technologies'
+                title={"We Offer CRM Development For Healthcare Industry"}
+                description={"Get Quote - CRM development for healthcare industry can help healthcare enterprises provide more concrete benefits to their patients."}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

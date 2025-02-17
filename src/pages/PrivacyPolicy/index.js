@@ -10,9 +10,9 @@ function PrivacyPolicy(){
     return (
         <>
             <SEO
-                title="IosAndWeb Technologies Privacy Policy. Read Our Policies Briefly"
-                description='We give authorisation keep privacy of our clients&#039; information. Check out Iosandweb privacy policy to ensure you safety and privacy.'
-                name='IosAndWeb Technologies'
+                title={"IosAndWeb Technologies Privacy Policy. Read Our Policies Briefly"}
+                description={"We give authorization keep privacy of our clients' information. Check out Iosandweb privacy policy to ensure you safety and privacy."}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

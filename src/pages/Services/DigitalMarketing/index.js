@@ -36,9 +36,9 @@ function DigitalMarketing(){
         <>
 
             <SEO
-                title='Grab Quality leads with Digital marketing services | Get Quote'
-                description='Grow your business globally with Digital marketing services and get quality leads with paid PPC Services, SEO Services and SMM services.'
-                name='IosAndWeb Technologies'
+                title={"Grab Quality leads with Digital marketing services | Get Quote"}
+                description={"Grow your business globally with Digital marketing services and get quality leads with paid PPC Services, SEO Services and SMM services."}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

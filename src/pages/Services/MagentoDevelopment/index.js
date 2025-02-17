@@ -23,9 +23,9 @@ function MagentoDevelopment(){
     return(
         <>
             <SEO
-                title='Get Magento development services | Contact Us'
-                description='Looking for top Magento development Services in United kingdom? Hire our Certified Magento developer at affordable cost. Get quote Today!'
-                name='IosAndWeb Technologies'
+                title={"Get Magento development services | Contact Us"}
+                description={"Looking for top Magento development Services in United kingdom? Hire our Certified Magento developer at affordable cost. Get quote Today!"}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 

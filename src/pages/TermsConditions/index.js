@@ -10,9 +10,9 @@ function TermsConditions(){
     return (
         <>
             <SEO
-                title="Read IosAndWeb Terms and Conditions - IosAndWeb Technologies"
-                description='To complete the project on time must or read acknowledge the Iosandweb terms and conditions clearly ,if face any problems with our terms.'
-                name='IosAndWeb Technologies'
+                title={"Read IosAndWeb Terms and Conditions - IosAndWeb Technologies"}
+                description={"To complete the project on time must or read acknowledge the Iosandweb terms and conditions clearly ,if face any problems with our terms."}
+                name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
 
