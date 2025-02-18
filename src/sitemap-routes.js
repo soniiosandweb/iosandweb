@@ -31,6 +31,7 @@ export default (
         <Route path='/seo-page-speed-optimization-services'/>
         <Route path='/english-copywriting-and-proofreading-services'/>
         <Route path='/b2b-lead-generation-campaign-services'/>
+        <Route path='/seo-services-in-sheffield'/>
         <Route path='/ecommerce-app-development'/>
         <Route path='/real-estate-app-development'/>
         <Route path='/generative-ai-development'/>
