@@ -33,7 +33,7 @@
     bottom: 0;
     margin: auto;
 }
-@media (max-width: 767px){
+@media (max-width: 991px){
     .row-reverse-mobile{
       flex-direction: column-reverse;
     }

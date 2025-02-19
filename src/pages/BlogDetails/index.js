@@ -26,7 +26,7 @@ function BlogDetails(){
 
         axios({
             method: "post",
-            url: `${process.env.REACT_APP_API_URL}/api/blog-details-api.php`,
+            url: `${process.env.REACT_APP_BLOG_API_URL}/blog-details-api.php`,
             data: JSON.stringify({
                 post_url: url
                 }),
@@ -58,7 +58,7 @@ function BlogDetails(){
         if(blogId && blogId !== null){
             axios({
                 method: "post",
-                url: `${process.env.REACT_APP_API_URL}/api/related-blog-api.php`,
+                url: `${process.env.REACT_APP_BLOG_API_URL}/related-blog-api.php`,
                 data: JSON.stringify({
                     post_url: blogId
                     }),

@@ -37,6 +37,7 @@ import RealEstate from './pages/Industries/RealEstate';
 import GenerativeAI from './pages/Industries/GenerativeAI';
 import Healthcare from './pages/Industries/Healthcare';
 import SEOServiceSheffield from './pages/Services/SEOService/SEOServiceSheffield';
+import SEOServiceBirmingham from './pages/Services/SEOService/SEOServiceBirmingham/SEOServiceBirmingham';
 
 function App() {
   return (
@@ -76,6 +77,7 @@ function App() {
           <Route path='/english-copywriting-and-proofreading-services' element={<EnglishCopywritingProofreading />} />
           <Route path='/b2b-lead-generation-campaign-services' element={<B2BLeadGenerationCampaign />} />
           <Route path='/seo-services-in-sheffield' element={<SEOServiceSheffield />} />
+          <Route path='/seo-services-in-birmingham' element={<SEOServiceBirmingham />} />
 
           {/* Industries */}
           <Route path='/ecommerce-app-development' element={<Ecommerce />} />

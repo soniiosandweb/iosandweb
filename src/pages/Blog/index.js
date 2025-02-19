@@ -24,7 +24,7 @@ function Blog(){
 
     useEffect(() => {
 
-        axios.get(`${process.env.REACT_APP_API_URL}/api/blog-api.php`)
+        axios.get(`${process.env.REACT_APP_BLOG_API_URL}/blog-api.php`)
         .then(res => {
             setData(res.data);
             setFilterData(

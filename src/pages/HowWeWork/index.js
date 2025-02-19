@@ -52,10 +52,10 @@ function HowWeWork(){
             <div className="how-we-work-process briefing-section section-less-padding">
                 <Container>
                     <Row className="align-items-center row-reverse-mobile">
-                        <Col md={6}>
+                        <Col lg={6}>
                             <img src={briefing} alt="Briefing" className="responsive-img" />
                         </Col>
-                        <Col md={6}>
+                        <Col lg={6}>
                             <h2 className="heading3"><strong className="text-highlight">Briefing</strong> Of Your Business Idea</h2>
                             <p className="paragraph">Examining your ideas & details, Our app development company propose the best possible solutions that will meet your brand requirements indeed.</p>
                             <ul className="how-we-work-lists">
@@ -71,7 +71,7 @@ function HowWeWork(){
             <div className="how-we-work-process researching-section section-less-padding">
                 <Container>
                     <Row className="align-items-center">
-                        <Col md={6}>
+                        <Col lg={6}>
                             <h2 className="heading3"><strong className="text-highlight">Researching</strong> a Perfect Architecture</h2>
                             <p className="paragraph">Browsing our stack of latest technologies, our brewers create a fully-customized solution, made just for your business</p>
                             <ul className="how-we-work-lists">
@@ -79,7 +79,7 @@ function HowWeWork(){
                                 <li>Development of the core functionality with advanced features</li>
                             </ul>
                         </Col>
-                        <Col md={6}>
+                        <Col lg={6}>
                             <img src={researching} alt="Researching" className="responsive-img"/>
                         </Col>
                     </Row>
@@ -90,10 +90,10 @@ function HowWeWork(){
             <div className="how-we-work-process evolving-section section-less-padding">
                 <Container>
                     <Row className="align-items-center row-reverse-mobile">
-                        <Col md={6}>
+                        <Col lg={6}>
                             <img src={evolving} alt="Evolving" className="responsive-img" />
                         </Col>
-                        <Col md={6}>
+                        <Col lg={6}>
                             <h2 className="heading3"><strong className="text-highlight">Evolving</strong> Bug-Free Business App</h2>
                             <p className="paragraph">Repeated testing of every feature to assure quality & deliver a digital solution that meets your specifications</p>
                             <ul className="how-we-work-lists">

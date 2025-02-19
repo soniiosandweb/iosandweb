@@ -100,10 +100,10 @@ function CRMDevelopmentHealthCare(){
                     </Row>
 
                     <Row className="align-items-center row-reverse-mobile mt-5">
-                        <Col md={6}>
+                        <Col lg={6}>
                             <img src={streamlineProcess} alt="Streamlined processes" className="responsive-img" />
                         </Col>
-                        <Col md={6}>
+                        <Col lg={6}>
                             <h2 className="heading3">Streamlined processes and automated routines</h2>
                             <p className="paragraph">A customer relationship management system (CRM) is a consolidated database and communication hub for healthcare providers and patients. All the information on a patient that walks into a clinic can be shown on one screen, making it easier for nurses to attend to their requirements quickly.</p>
                             <p className="paragraph">Customer relationship management systems also provide many helpful features for automating invoicing, scheduling appointments, and sending out reminders to patients management system. Another way that CRMs can reduce the frequency of missed or late appointments is by reminding patients of impending ones.</p>
@@ -112,21 +112,21 @@ function CRMDevelopmentHealthCare(){
                     </Row>
 
                     <Row className="align-items-center mt-3">
-                        <Col md={6}>
+                        <Col lg={6}>
                             <h2 className="heading3">Better care delivery</h2>
                             <p className="paragraph">Clinics can better serve patients by adapting to their unique requirements by consolidating data and a birds-eye perspective of all patient interactions. Using a customer relationship management system, the health records of nurses, doctors, and other staff members may be kept in sync, allowing for a faster and more accurate response to patients' questions and concerns.</p>
                             <p className="paragraph">Likewise, CRMs aid doctors in providing more prompt diagnoses, spotting patterns in patient care, and treating problems before they even become acute. Integrating CRMs with wearable devices for remote patient monitoring and automated reminders for checkups and routine tests helps clinics provide better care for patients with chronic health conditions.</p>
                         </Col>
-                        <Col md={6}>
+                        <Col lg={6}>
                             <img src={betterCareDelivery} alt="Better care delivery" className="responsive-img"/>
                         </Col>
                     </Row>
 
                     <Row className="align-items-center row-reverse-mobile mt-3">
-                        <Col md={6}>
+                        <Col lg={6}>
                             <img src={betterCarePatients} alt="Better care for patients" className="responsive-img" />
                         </Col>
-                        <Col md={6}>
+                        <Col lg={6}>
                             <h2 className="heading3">Better care for patients</h2>
                             <p className="paragraph">A customer relationship management system can keep your administrative processes running smoothly and your patient information organized. Each patient's profile includes their contact details, medical history, treatment, and scheduled appointments. CRM software creates patient profiles using pre-configured templates, reducing the likelihood of incomplete data or incorrect entries.</p>
                             <p className="paragraph">With a CRM, medical professionals consistently access the most up-to-date patient information because records are automatically updated in real-time. Additionally, most CRMs are designed to work in tandem with EHR platforms, which allows for the unified and consistent storage of patient information.</p>

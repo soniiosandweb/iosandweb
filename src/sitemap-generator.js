@@ -8,11 +8,8 @@ const router = require("./sitemap-routes").default;
 const Sitemap = require("react-router-sitemap").default;
 
 async function generateSitemap() {
-  //   return new Sitemap(router)
-  //     .build("https://iosandweb.net")
-  //     .save("./public/sitemap.xml");
   try {
-    const posts = await axios.get(`https://iosandweb.net/api/blog-api.php`)
+    const posts = await axios.get(`https://old.iosandweb.net/blog-api.php`)
     let idMap = [];
 
     for (var i = 0; i < posts.data.length; i++) {
@@ -25,7 +22,7 @@ async function generateSitemap() {
 
     return new Sitemap(router)
       .applyParams(paramsConfig)
-      .build("https://iosandweb.net")
+      .build("https://iosandweb.com")
       .save("./public/sitemap.xml");
   } catch (e) {
     console.log(e);

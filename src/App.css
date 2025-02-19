@@ -72,6 +72,10 @@ h1, h2, h3, h4, h5, h6{
   margin: 20px 0 30px;
   font-size: 18px;
 }
+.header-wrapper h1 {
+  font-size: 52px;
+  font-weight: 700;
+}
 .leadtxt h3, .leadtxt h2 {
   font-size: 42px;
   font-weight: 400;
@@ -197,6 +201,10 @@ h1, h2, h3, h4, h5, h6{
   max-width: 50%;
 }
 @media (max-width: 1399px) {
+  .header-wrapper h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
   .heading2{
     font-size: 28px;
   }

@@ -6,7 +6,7 @@ import NumbersCards from "../../../../components/NumbersCards";
 import ContactForm from "../../../../components/ContactForm";
 import onlineMarketingImg from '../../../../images/services/seo-service-sheffield/online-marketing.webp';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleDot } from "@fortawesome/free-solid-svg-icons";
+import { faCircle, faCircleDot } from "@fortawesome/free-solid-svg-icons";
 
 // steps images
 import fundamental from '../../../../images/services/seo-service-sheffield/fundamental.png';
@@ -31,8 +31,9 @@ function SEOServiceSheffield(){
     return(
         <>
             <SEO
-                title={"SEO services in Sheffield - Get Quote - IosAndWeb Technologies"}
-                description={"IosAndWeb Technologies is the best Digital Marketing Agency Providing SEO services in Sheffield by certified experts .Contact us for quote."}
+                title={"SEO Agency Services in Sheffield | Boost Rankings & Traffic"}
+                description={"Enhance your online presence with professional SEO services in Sheffield. Boost keywords rankings, increase traffic, and grow your business. Get started today!"}
+                keywords={"SEO Sheffield, Sheffield SEO services, local SEO Sheffield, digital marketing Sheffield, SEO agency Sheffield, search engine optimization Sheffield"}
                 name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
@@ -89,139 +90,13 @@ function SEOServiceSheffield(){
                 </Container>
             </div>
 
-            {/* How SEO Work section */}
-            <div className="section-development-process section-padding">
-                <Container>
-                    <Row>
-                        <Col>
-                            <h2 className="text-center heading2">How SEO Works?</h2>
-                            <div className="heading5 text-center">
-                                The two pillars of SEO are number and quality. If your website page seo is optimized for front and back ends, it will increase visitors and climb the search engine results. Using a data-driven methodology, building SEO combines SEO components with Seo Expert in Sheffield.
-                            </div>
-                            <div className="heading5 text-center">
-                                Let's look at how each of these influences SEO for digital marketing.
-                            </div>
-                        </Col>
-                    </Row>
-                    <div className="development-process-blocks mt-4">
-                        <Row className="no-gutters">
-                            <div className="col-lg"></div>
-
-                            <div className="col-lg-1 text-center flex-column d-none d-lg-flex dots-center">
-                                <div className="row h-50">
-                                    <div className="col">&nbsp;</div>
-                                    <div className="col">&nbsp;</div>
-                                </div>
-                                <h5 className="m-2">
-                                    <span className="badge badge-pill bg-light border"></span>
-                                </h5>
-                                <div className="row h-50">
-                                    <div className="col border-right">&nbsp;</div>
-                                    <div className="col">&nbsp;</div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg py-2">
-                                <div className="card">
-                                    <div className="card-body">
-                                        <h4 className="card-title">Keyword analysis</h4>
-                                        <p className="card-text">Words have such power, and some words may have an impact on your online ranking. Keywords must be properly selected and placed in your article in order to employ frequently sought terms while keeping a high level of content quality.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </Row>
-
-                        <Row className="no-gutters">
-                            <div className="col-lg py-2">
-                                <div className="card">
-                                    <div className="card-body">
-                                        <h4 className="card-title">Creation of backlinks</h4>
-                                        <p className="card-text">Link building are elements of your website that direct users to other trustworthy, top-notch sites. For example, including current, well-liked events straight from the source will improve your reputation.</p>
-                                        <p className="card-text">Backlink building should be done carefully to avoid having your content become buried in a sea of competing websites, which could be problematic. For instance, since copying is a serious offense, it is not recommended to pass off another person's content as your own. Iosandweb can do backlink cleaning for your website. Backlink building can surely help your SEO, but it must be done carefully and morally with the Best Seo Company in Sheffield.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-1 text-center flex-column d-none d-lg-flex dots-center">
-                                <div className="row h-50">
-                                    <div className="col">&nbsp;</div>
-                                    <div className="col">&nbsp;</div>
-                                </div>
-                                <h5 className="m-2">
-                                    <span className="badge badge-pill bg-light border"></span>
-                                </h5>
-                                <div className="row h-50">
-                                    <div className="col border-right">&nbsp;</div>
-                                    <div className="col">&nbsp;</div>
-                                </div>
-                            </div>
-                            <div className="col-lg"></div>
-                        </Row>
-
-                        <Row className="no-gutters">
-                            <div className="col-lg"></div>
-
-                            <div className="col-lg-1 text-center flex-column d-none d-lg-flex dots-center">
-                                <div className="row h-50">
-                                    <div className="col">&nbsp;</div>
-                                    <div className="col">&nbsp;</div>
-                                </div>
-                                <h5 className="m-2">
-                                    <span className="badge badge-pill bg-light border"></span>
-                                </h5>
-                                <div className="row h-50">
-                                    <div className="col border-right">&nbsp;</div>
-                                    <div className="row">&nbsp;</div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg py-2">
-                                <div className="card">
-                                    <div className="card-body">
-                                        <h4 className="card-title">Content creation</h4>
-                                        <p className="card-text">The content is where your SEO genuinely works well. Through your content, you may directly address the audience of your present and potential clients. In this area, your keywords will help you build trust, engagement, authority, and consistency. The human factor of your customer-focused company and the data-driven statistics needed to maximize your online presence may be balanced by strong content with the Best Seo Agency in Sheffield.</p>
-                                        <p className="card-text">A significant element of digital marketing is search engine marketing (SEM). Not really something terrible paid search advertising, otherwise called SEM or pay-per-click promoting efforts, utilize insightful information to help you increment your profit from venture (return for capital invested). Simply know that most purchasers can differentiate among paid and natural SERP results. In the end, we want to boost organic traffic.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </Row>
-                    </div>
-                </Container>
-            </div>
-
-            {/* Online Marketing Section */}
-            <div className="online-marketing-section background-section section-padding">
-                <Container>
-                    <Row className="align-items-center">
-                        <Col lg={6}>
-                            <h2 className="heading2">What SEO Does for Online Marketing</h2>
-                            <p className="paragraph">
-                                IosAndWeb's digital marketing experts are aware of how frightening SEO can be. Seo Optimisation is obviously important, but how do you even get started? Once you've started, how can you possibly tell if what you're doing is helping your business? 
-                            </p>
-                            <p className="paragraph">
-                                Search engines' intelligence is always being improved, so trying to trick them can only hurt you and get you in trouble. The sole motto of our team is to provide effective solutions for business development. 
-                            </p>
-                            <p className="paragraph">
-                                We are confident that our dedication to creating ethical SEO strategies will finally be rewarded. The goal of <i>Affordable Seo in Sheffield</i> is to increase the revenues as well as the multiplications of website footfalling. Let's spend some time looking at the data and facts to help you build strong relationships with search engines such as Google, Youtube, and others.
-                            </p>
-                        </Col>
-                        <Col lg={6}>
-                            <img src={onlineMarketingImg} alt="Online Marketing" className="responsive-img" />
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
-
             {/* Instructional Guide for SEO */}
             <div className="instructional-section section-padding">
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2">Your Instructional Guide For SEO</h2>
-                            <p className="paragraph">Let's quickly examine what search engine optimization comprises before we begin the first step on your path to becoming an SEO expert.</p>
-                            <p className="paragraph">Put another way, and it entails figuring out precisely what changes your website needs to make it more relevant to search queries.</p>
-                            <p className="paragraph">On-page and off-page SEO elements can be categorised for easy understanding into two groups.</p>
-                            <p className="paragraph">On the other hand, off-page SEO components are ranking variables that originate outside your domain. This primarily focuses on link building and attracting links to your content from other excellent websites.</p>
+                            <h2 className="heading2 text-center">Your Instructional Guide For SEO</h2>
+                            <p className="paragraph">Let's quickly examine what search engine optimization comprises before we begin the first step on your path to becoming an SEO expert. Put another way, and it entails figuring out precisely what changes your website needs to make it more relevant to search queries. On-page and off-page SEO elements can be categorised for easy understanding into two groups. On the other hand, off-page SEO components are ranking variables that originate outside your domain. This primarily focuses on link building and attracting links to your content from other excellent websites.</p>
                             <p className="paragraph">But exactly how do you create links? Would we ask that and then not have another excellent ebook that thoroughly explains the answer?</p>
                             <p className="paragraph">In Addition to moving further, how about we begin on the strategy for dominating Search engine optimization?</p>
                         </Col>
@@ -325,6 +200,123 @@ function SEOServiceSheffield(){
                             </div>
                         </Tab.Container>
                     </div>
+                </Container>
+            </div>
+
+            {/* How SEO Work section */}
+            <div className="section-development-process section-padding">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h2 className="text-center heading2">How SEO Works?</h2>
+                            <div className="heading5 text-center">
+                                The two pillars of SEO are number and quality. If your website page seo is optimized for front and back ends, it will increase visitors and climb the search engine results. Using a data-driven methodology, building SEO combines SEO components with Seo Expert in Sheffield.
+                            </div>
+                            <div className="heading5 text-center">
+                                Let's look at how each of these influences SEO for digital marketing.
+                            </div>
+                        </Col>
+                    </Row>
+                    <div className="development-process-blocks mt-4">
+                        <Row className="no-gutters">
+                            <div className="col-lg"></div>
+
+                            <div className="col-lg-1 text-center flex-column d-none d-lg-flex dots-center">
+                                <div className="row h-50">
+                                    <div className="col">&nbsp;</div>
+                                    <div className="col">&nbsp;</div>
+                                </div>
+                                <h5 className="m-2">
+                                    <span className="badge badge-pill bg-light border"><FontAwesomeIcon icon={faCircle} /></span>
+                                </h5>
+                                <div className="row h-50">
+                                    <div className="col border-right">&nbsp;</div>
+                                    <div className="col">&nbsp;</div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg py-2">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <h4 className="card-title">Keyword analysis</h4>
+                                        <p className="card-text">Words have such power, and some words may have an impact on your online ranking. Keywords must be properly selected and placed in your article in order to employ frequently sought terms while keeping a high level of content quality.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </Row>
+
+                        <Row className="no-gutters">
+                            <div className="col-lg py-2">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <h4 className="card-title">Creation of backlinks</h4>
+                                        <p className="card-text">Link building are elements of your website that direct users to other trustworthy, top-notch sites. For example, including current, well-liked events straight from the source will improve your reputation.</p>
+                                        <p className="card-text">Backlink building should be done carefully to avoid having your content become buried in a sea of competing websites, which could be problematic. For instance, since copying is a serious offense, it is not recommended to pass off another person's content as your own. Iosandweb can do backlink cleaning for your website. Backlink building can surely help your SEO, but it must be done carefully and morally with the Best Seo Company in Sheffield.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-1 text-center flex-column d-none d-lg-flex dots-center">
+                                <div className="row h-50">
+                                    <div className="col">&nbsp;</div>
+                                    <div className="col">&nbsp;</div>
+                                </div>
+                                <h5 className="m-2">
+                                    <span className="badge badge-pill bg-light border"><FontAwesomeIcon icon={faCircle} /></span>
+                                </h5>
+                                <div className="row h-50">
+                                    <div className="col border-right">&nbsp;</div>
+                                    <div className="col">&nbsp;</div>
+                                </div>
+                            </div>
+                            <div className="col-lg"></div>
+                        </Row>
+
+                        <Row className="no-gutters">
+                            <div className="col-lg"></div>
+
+                            <div className="col-lg-1 text-center flex-column d-none d-lg-flex dots-center">
+                                <div className="row h-50">
+                                    <div className="col">&nbsp;</div>
+                                    <div className="col">&nbsp;</div>
+                                </div>
+                                <h5 className="m-2">
+                                    <span className="badge badge-pill bg-light border"><FontAwesomeIcon icon={faCircle} /></span>
+                                </h5>
+                                <div className="row h-50">
+                                    <div className="col border-right">&nbsp;</div>
+                                    <div className="row">&nbsp;</div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg py-2">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <h4 className="card-title">Content creation</h4>
+                                        <p className="card-text">The content is where your SEO genuinely works well. Through your content, you may directly address the audience of your present and potential clients. In this area, your keywords will help you build trust, engagement, authority, and consistency. The human factor of your customer-focused company and the data-driven statistics needed to maximize your online presence may be balanced by strong content with the Best Seo Agency in Sheffield.</p>
+                                        <p className="card-text">A significant element of digital marketing is search engine marketing (SEM). Not really something terrible paid search advertising, otherwise called SEM or pay-per-click promoting efforts, utilize insightful information to help you increment your profit from venture (return for capital invested). Simply know that most purchasers can differentiate among paid and natural SERP results. In the end, we want to boost organic traffic.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </Row>
+                    </div>
+                </Container>
+            </div>
+
+            {/* Online Marketing Section */}
+            <div className="online-marketing-section background-section section-padding">
+                <Container>
+                    <Row className="align-items-center">
+                        <Col lg={6}>
+                            <h2 className="heading2">What SEO Does for Online Marketing</h2>
+                            <p className="paragraph">IosAndWeb's digital marketing experts are aware of how frightening SEO can be. Seo Optimisation is obviously important, but how do you even get started? Once you've started, how can you possibly tell if what you're doing is helping your business?</p>
+                            <p className="paragraph">Search engines' intelligence is always being improved, so trying to trick them can only hurt you and get you in trouble. The sole motto of our team is to provide effective solutions for business development.</p>
+                            <p className="paragraph">We are confident that our dedication to creating ethical SEO strategies will finally be rewarded. The goal of <i>Affordable Seo in Sheffield</i> is to increase the revenues as well as the multiplications of website footfalling. Let's spend some time looking at the data and facts to help you build strong relationships with search engines such as Google, Youtube, and others.</p>
+                        </Col>
+                        <Col lg={6}>
+                            <img src={onlineMarketingImg} alt="Online Marketing" className="responsive-img" />
+                        </Col>
+                    </Row>
                 </Container>
             </div>
 
