@@ -47,7 +47,7 @@ function CRMDevelopmentHealthCare(){
                         </Col>
                     </Row>
                 </Container>
-                <div className="banner-overlay bg-40"></div>
+                <div className="banner-overlay bg-60"></div>
             </div>
 
             {/* Services numbers */}

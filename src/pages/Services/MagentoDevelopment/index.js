@@ -7,7 +7,7 @@ import ContactForm from "../../../components/ContactForm";
 import GetStarted from "../../../components/GetStarted";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingBasket, faShoppingCart, faLocationArrow, faRandom, faCodeFork, faFastForward, faUsers, faAward, faTrophy, faCommenting, faCode } from "@fortawesome/free-solid-svg-icons";
+import { faShoppingBasket, faShoppingCart, faLocationArrow, faRandom, faCodeFork, faFastForward, faUsers, faAward, faTrophy, faCommenting, faCode, faCircle } from "@fortawesome/free-solid-svg-icons";
 
 // final reflection images
 import softwareDevelopment from '../../../images/services/software-development/software-development.png';
@@ -204,7 +204,7 @@ function MagentoDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                                 <h5 className="m-2">
-                                    <span className="badge badge-pill bg-light border">01</span>
+                                    <span className="badge badge-pill bg-light border"><FontAwesomeIcon icon={faCircle} /></span>
                                 </h5>
                                 <div className="row h-50">
                                     <div className="col border-right">&nbsp;</div>
@@ -239,7 +239,7 @@ function MagentoDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                                 <h5 className="m-2">
-                                    <span className="badge badge-pill bg-light border">02</span>
+                                    <span className="badge badge-pill bg-light border"><FontAwesomeIcon icon={faCircle} /></span>
                                 </h5>
                                 <div className="row h-50">
                                     <div className="col border-right">&nbsp;</div>
@@ -259,7 +259,7 @@ function MagentoDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                                 <h5 className="m-2">
-                                    <span className="badge badge-pill bg-light border">03</span>
+                                    <span className="badge badge-pill bg-light border"><FontAwesomeIcon icon={faCircle} /></span>
                                 </h5>
                                 <div className="row h-50">
                                     <div className="col border-right">&nbsp;</div>
@@ -294,7 +294,7 @@ function MagentoDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                                 <h5 className="m-2">
-                                    <span className="badge badge-pill bg-light border">04</span>
+                                    <span className="badge badge-pill bg-light border"><FontAwesomeIcon icon={faCircle} /></span>
                                 </h5>
                                 <div className="row h-50">
                                     <div className="col border-right">&nbsp;</div>
@@ -314,7 +314,7 @@ function MagentoDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                                 <h5 className="m-2">
-                                    <span className="badge badge-pill bg-light border">05</span>
+                                    <span className="badge badge-pill bg-light border"><FontAwesomeIcon icon={faCircle} /></span>
                                 </h5>
                                 <div className="row h-50">
                                     <div className="col border-right">&nbsp;</div>

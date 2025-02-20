@@ -33,6 +33,7 @@ export default (
         <Route path='/b2b-lead-generation-campaign-services'/>
         <Route path='/seo-services-in-sheffield'/>
         <Route path='/seo-services-in-birmingham'/>
+        <Route path="/seo-services-in-peterborough" />
         <Route path='/ecommerce-app-development'/>
         <Route path='/real-estate-app-development'/>
         <Route path='/generative-ai-development'/>

@@ -14,6 +14,8 @@ import cordova from '../../../images/services/mobile-app-development/cordova.png
 import unity from '../../../images/services/mobile-app-development/unity.png';
 import xamarin from '../../../images/services/mobile-app-development/xamarin.png';
 import { useLocation } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
 function MobileAppDevelopment(){
 
@@ -185,7 +187,7 @@ function MobileAppDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                                 <h5 className="m-2">
-                                    <span className="badge badge-pill bg-light border">01</span>
+                                    <span className="badge badge-pill bg-light border"><FontAwesomeIcon icon={faCircle} /></span>
                                 </h5>
                                 <div className="row h-50">
                                     <div className="col border-right">&nbsp;</div>
@@ -220,7 +222,7 @@ function MobileAppDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                                 <h5 className="m-2">
-                                    <span className="badge badge-pill bg-light border">02</span>
+                                    <span className="badge badge-pill bg-light border"><FontAwesomeIcon icon={faCircle} /></span>
                                 </h5>
                                 <div className="row h-50">
                                     <div className="col border-right">&nbsp;</div>
@@ -240,7 +242,7 @@ function MobileAppDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                                 <h5 className="m-2">
-                                    <span className="badge badge-pill bg-light border">03</span>
+                                    <span className="badge badge-pill bg-light border"><FontAwesomeIcon icon={faCircle} /></span>
                                 </h5>
                                 <div className="row h-50">
                                     <div className="col border-right">&nbsp;</div>
@@ -275,7 +277,7 @@ function MobileAppDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                                 <h5 className="m-2">
-                                    <span className="badge badge-pill bg-light border">04</span>
+                                    <span className="badge badge-pill bg-light border"><FontAwesomeIcon icon={faCircle} /></span>
                                 </h5>
                                 <div className="row h-50">
                                     <div className="col border-right">&nbsp;</div>
@@ -295,7 +297,7 @@ function MobileAppDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                                 <h5 className="m-2">
-                                    <span className="badge badge-pill bg-light border">05</span>
+                                    <span className="badge badge-pill bg-light border"><FontAwesomeIcon icon={faCircle} /></span>
                                 </h5>
                                 <div className="row h-50">
                                     <div className="col border-right">&nbsp;</div>
@@ -330,7 +332,7 @@ function MobileAppDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                                 <h5 className="m-2">
-                                    <span className="badge badge-pill bg-light border">06</span>
+                                    <span className="badge badge-pill bg-light border"><FontAwesomeIcon icon={faCircle} /></span>
                                 </h5>
                                 <div className="row h-50">
                                     <div className="col border-right">&nbsp;</div>

@@ -7,7 +7,7 @@ import ContactForm from "../../../components/ContactForm";
 import GetStarted from "../../../components/GetStarted";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDesktopAlt, faCode, faShoppingBag, faGlobeAsia, faMobileScreen } from "@fortawesome/free-solid-svg-icons";
+import { faDesktopAlt, faCode, faShoppingBag, faGlobeAsia, faMobileScreen, faCircle } from "@fortawesome/free-solid-svg-icons";
 
 // Services includes images
 import security from '../../../images/services/software-development/more-secure.png';
@@ -204,7 +204,7 @@ function WebDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                                 <h5 className="m-2">
-                                    <span className="badge badge-pill bg-light border">01</span>
+                                    <span className="badge badge-pill bg-light border"><FontAwesomeIcon icon={faCircle} /></span>
                                 </h5>
                                 <div className="row h-50">
                                     <div className="col border-right">&nbsp;</div>
@@ -239,7 +239,7 @@ function WebDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                                 <h5 className="m-2">
-                                    <span className="badge badge-pill bg-light border">02</span>
+                                    <span className="badge badge-pill bg-light border"><FontAwesomeIcon icon={faCircle} /></span>
                                 </h5>
                                 <div className="row h-50">
                                     <div className="col border-right">&nbsp;</div>
@@ -259,7 +259,7 @@ function WebDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                                 <h5 className="m-2">
-                                    <span className="badge badge-pill bg-light border">03</span>
+                                    <span className="badge badge-pill bg-light border"><FontAwesomeIcon icon={faCircle} /></span>
                                 </h5>
                                 <div className="row h-50">
                                     <div className="col border-right">&nbsp;</div>
@@ -294,7 +294,7 @@ function WebDevelopment(){
                                     <div className="col">&nbsp;</div>
                                 </div>
                                 <h5 className="m-2">
-                                    <span className="badge badge-pill bg-light border">04</span>
+                                    <span className="badge badge-pill bg-light border"><FontAwesomeIcon icon={faCircle} /></span>
                                 </h5>
                                 <div className="row h-50">
                                     <div className="col border-right">&nbsp;</div>
