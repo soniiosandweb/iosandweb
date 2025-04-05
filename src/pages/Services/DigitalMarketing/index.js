@@ -26,6 +26,7 @@ import socialMediaMarketing from '../../../images/services/digital-marketing/soc
 import pageSpeed from '../../../images/services/digital-marketing/page-speed.png';
 import proofreading from '../../../images/services/digital-marketing/proofreading.png';
 import b2b from '../../../images/services/digital-marketing/b2b.png';
+import bristol from '../../../images/services/digital-marketing/digital-marketing.png';
 import { useLocation } from "react-router-dom";
 
 function DigitalMarketing(){
@@ -270,6 +271,15 @@ function DigitalMarketing(){
                                         <a href="/b2b-lead-generation-campaign-services">    
                                             <img src={b2b} className="services-bottom-front-image" alt="B2B" />
                                             <h4 className="heading4">B2B Lead Generation Campaign Services</h4>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div className="services-bottom-wrap">
+                                    <div className="services-bottom-div">
+                                        <a href="/digital-marketing-services-in-bristol">    
+                                            <img src={bristol} className="services-bottom-front-image" alt="Bristol" />
+                                            <h4 className="heading4">Digital Marketing Services in Bristol</h4>
                                         </a>
                                     </div>
                                 </div>

@@ -1,6 +1,6 @@
 import './App.css';
 import Layout from './layout/Layout';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
@@ -39,6 +39,40 @@ import Healthcare from './pages/Industries/Healthcare';
 import SEOServiceSheffield from './pages/Services/SEOService/SEOServiceSheffield';
 import SEOServiceBirmingham from './pages/Services/SEOService/SEOServiceBirmingham';
 import SEOServicePeterborough from './pages/Services/SEOService/SEOServicePeterborough';
+import DigitalMarketingBristol from './pages/Services/DigitalMarketing/DigitalMarketingBristol';
+import { useEffect } from 'react';
+
+const useRedirect = (targetUrl) => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    navigate(targetUrl);  // Perform the redirect
+  }, [navigate, targetUrl]);
+};
+
+// SEO Service redirect
+const RedirectToSEOService = () => {
+  useRedirect('/seo-services'); 
+  return null;
+};
+
+// Web development redirect
+const RedirectToWebDevelopment = () => {
+  useRedirect('/web-development-services'); 
+  return null;
+};
+
+// Social media marketing redirect
+const RedirectToSocialMedia = () => {
+  useRedirect('/social-media-marketing-services'); 
+  return null;
+};
+
+// Digital marketing redirect
+const RedirectToDigitalMarketing = () => {
+  useRedirect('/digital-marketing-services'); 
+  return null;
+};
 
 function App() {
   return (
@@ -66,6 +100,7 @@ function App() {
           <Route path='/mobile-app-development-services' element={<MobileAppDevelopment />} />
           <Route path='/web-designing-services' element={<WebDesigning />} />
           <Route path='/digital-marketing-services' element={<DigitalMarketing />} />
+          <Route path='/digital-marketing-services-in-bristol' element={<DigitalMarketingBristol />} />
           <Route path='/ppc-services' element={<PayPerClick />} />
           <Route path='/magento-development-services' element={<MagentoDevelopment />} />
           <Route path='/shopify-development-services' element={<ShopifyDevelopment />} />
@@ -86,6 +121,15 @@ function App() {
           <Route path='/real-estate-app-development' element={<RealEstate />} />
           <Route path='/generative-ai-development' element={<GenerativeAI />} />
           <Route path='/healthcare-software-development' element={<Healthcare />} />
+
+          {/* Redirect location pages */}
+          <Route path="/seo-services-in-edinburgh" element={<RedirectToSEOService />} />
+          <Route path="/web-development-company-in-edinburgh" element={<RedirectToWebDevelopment />} />
+          <Route path="/social-media-marketing-services-in-birmingham" element={<RedirectToSocialMedia />} />
+          <Route path="/web-development-company-in-sheffield" element={<RedirectToWebDevelopment />} />
+          <Route path="/web-development-company-in-london" element={<RedirectToWebDevelopment />} />
+          <Route path="/digital-marketing-agency-in-birmingham" element={<RedirectToDigitalMarketing />} />
+          <Route path="/digital-marketing-services-in-hammersmith" element={<RedirectToDigitalMarketing />} />
 
         </Route>
       </Routes>

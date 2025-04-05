@@ -20,6 +20,7 @@ export default (
         <Route path='/mobile-app-development-services'/>
         <Route path='/web-designing-services'/>
         <Route path='/digital-marketing-services'/>
+        <Route path='/digital-marketing-services-in-bristol'/>
         <Route path='/ppc-services'/>
         <Route path='/magento-development-services'/>
         <Route path='/shopify-development-services'/>

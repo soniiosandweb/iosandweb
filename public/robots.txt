@@ -3,4 +3,4 @@ User-agent: *
 Disallow: /?ref=producthunt
 Disallow: /?wmcAction=wmcTrack
 
-Sitemap: https://iosandweb.com/sitemap.xml
+Sitemap: https://iosandweb.net/sitemap.xml

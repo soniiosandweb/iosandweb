@@ -29,6 +29,9 @@ import socialMediaMarketing from '../../../images/services/digital-marketing/soc
 import pageSpeed from '../../../images/services/digital-marketing/page-speed.png';
 import proofreading from '../../../images/services/digital-marketing/proofreading.png';
 import b2b from '../../../images/services/digital-marketing/b2b.png';
+import birmingham from '../../../images/services/seo/seo-service.png';
+import peterborough from '../../../images/services/seo/seo-service1.png';
+import sheffield from '../../../images/services/seo/seo-service2.png';
 import { useLocation } from "react-router-dom";
 
 function SEOService(){
@@ -435,6 +438,33 @@ function SEOService(){
                                         <a href="/b2b-lead-generation-campaign-services">    
                                             <img src={b2b} className="services-bottom-front-image" alt="B2B" />
                                             <h4 className="heading4">B2B Lead Generation Campaign Services</h4>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div className="services-bottom-wrap">
+                                    <div className="services-bottom-div">
+                                        <a href="/seo-services-in-birmingham">    
+                                            <img src={birmingham} className="services-bottom-front-image" alt="Birmingham" />
+                                            <h4 className="heading4">Seo Services in Birmingham</h4>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div className="services-bottom-wrap">
+                                    <div className="services-bottom-div">
+                                        <a href="/seo-services-in-peterborough">    
+                                            <img src={peterborough} className="services-bottom-front-image" alt="peterborough" />
+                                            <h4 className="heading4">Seo Services in Peterborough</h4>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div className="services-bottom-wrap">
+                                    <div className="services-bottom-div">
+                                        <a href="/seo-services-in-sheffield">    
+                                            <img src={sheffield} className="services-bottom-front-image" alt="Sheffield" />
+                                            <h4 className="heading4">Seo Services in Sheffield</h4>
                                         </a>
                                     </div>
                                 </div>

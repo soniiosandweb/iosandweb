@@ -22,7 +22,7 @@ async function generateSitemap() {
 
     return new Sitemap(router)
       .applyParams(paramsConfig)
-      .build("https://iosandweb.com")
+      .build("https://iosandweb.net")
       .save("./public/sitemap.xml");
   } catch (e) {
     console.log(e);
