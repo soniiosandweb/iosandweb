@@ -7,7 +7,7 @@ import ContactForm from "../../../../components/ContactForm";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faCircleDot } from "@fortawesome/free-solid-svg-icons";
-const GetStarted = "../../../../components/GetStarted";
+import GetStarted from "../../../../components/GetStarted";
 
 const onlineMarketingImg = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-sheffield/online-marketing.webp`;
 
