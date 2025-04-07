@@ -1,6 +1,6 @@
 /* Blog page */
 .blog-banner{
-    background: url('../../images/app-bg-lines.webp') no-repeat;
+    background: url('../../../public/assests/images/app-bg-lines.webp') no-repeat;
     background-size: cover;
     background-position: center;
     background-color: #0c5bc4;

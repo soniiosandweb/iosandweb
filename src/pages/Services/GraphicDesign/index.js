@@ -5,25 +5,25 @@ import SEO from "../../../components/SEO";
 import NumbersCards from "../../../components/NumbersCards";
 import ContactForm from "../../../components/ContactForm";
 import GetStarted from "../../../components/GetStarted";
-
-// reasons to choose images
-import printDesign from '../../../images/services/graphic-design/print-design.png';
-import infographics from '../../../images/services/graphic-design/infographic.png';
-import logoDesign from '../../../images/services/graphic-design/logo-design.png';
-import promotionalDesign from '../../../images/services/graphic-design/promotional-design.png';
-import posterDesign from '../../../images/services/graphic-design/poster-design.png';
-import corporateIdentity from '../../../images/services/graphic-design/corporate-identity.png';
-import motionGraphics from '../../../images/services/graphic-design/motion-graphic.png';
-import powerpointPresentation from '../../../images/services/graphic-design/powerpoint-presentation.png';
-import tradeShow from '../../../images/services/graphic-design/trade-show.png';
+import { useLocation } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDot } from "@fortawesome/free-solid-svg-icons";
 
+// reasons to choose images
+const printDesign = `${process.env.REACT_APP_API_URL}/assests/images/services/graphic-design/print-design.png`;
+const infographics = `${process.env.REACT_APP_API_URL}/assests/images/services/graphic-design/infographic.png`;
+const logoDesign = `${process.env.REACT_APP_API_URL}/assests/images/services/graphic-design/logo-design.png`;
+const promotionalDesign = `${process.env.REACT_APP_API_URL}/assests/images/services/graphic-design/promotional-design.png`;
+const posterDesign = `${process.env.REACT_APP_API_URL}/assests/images/services/graphic-design/poster-design.png`;
+const corporateIdentity = `${process.env.REACT_APP_API_URL}/assests/images/services/graphic-design/corporate-identity.png`;
+const motionGraphics = `${process.env.REACT_APP_API_URL}/assests/images/services/graphic-design/motion-graphic.png`;
+const powerpointPresentation = `${process.env.REACT_APP_API_URL}/assests/images/services/graphic-design/powerpoint-presentation.png`;
+const tradeShow = `${process.env.REACT_APP_API_URL}/assests/images/services/graphic-design/trade-show.png`;
+
 // final reflection images
-import pdfHTML from '../../../images/services/web-designing/pdf-html.png';
-import webDesigning from '../../../images/services/web-designing/web-designing.png';
-import { useLocation } from "react-router-dom";
+const pdfHTML = `${process.env.REACT_APP_API_URL}/assests/images/services/web-designing/pdf-html.png`;
+const webDesigning = `${process.env.REACT_APP_API_URL}/assests/images/services/web-designing/web-designing.png`;
 
 function GraphicDesign(){
 

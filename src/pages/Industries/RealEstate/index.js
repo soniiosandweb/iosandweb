@@ -4,45 +4,46 @@ import { Container, Row, Col, Tab, Nav, Accordion } from "react-bootstrap";
 import SEO from "../../../components/SEO";
 import OwlCarousel from "react-owl-carousel";
 
-import realEstateBanner from '../../../images/industries/real-estate/real-estate-banner-new.webp';
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDot, faChevronRight, faCheckDouble, faFilter, faMapMarkerAlt, faVrCardboard, faHome, faSearch, faBrain, faCalculator, faStar, faHouseMedical, faListCheck, faLineChart, faCode, faFileAlt, faPaintBrush, faRocket, faCog, faCircle } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router-dom";
+
+const realEstateBanner = `${process.env.REACT_APP_API_URL}/assests/images/industries/real-estate/real-estate-banner-new.webp`;
 
 // reasons to choose images
-import mobileConsultation from '../../../images/industries/real-estate/mobile-consultation.png';
-import realEstateAppDevelopment from '../../../images/industries/real-estate/real-estate-app-development.png';
-import enterpriseRealEstate from '../../../images/industries/real-estate/enterprise-real-estate.png';
-import realEstateWebApplication from '../../../images/industries/real-estate/real-estate-web-application.png';
+const mobileConsultation = `${process.env.REACT_APP_API_URL}/assests/images/industries/real-estate/mobile-consultation.png`;
+const realEstateAppDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/industries/real-estate/real-estate-app-development.png`;
+const enterpriseRealEstate = `${process.env.REACT_APP_API_URL}/assests/images/industries/real-estate/enterprise-real-estate.png`;
+const realEstateWebApplication = `${process.env.REACT_APP_API_URL}/assests/images/industries/real-estate/real-estate-web-application.png`;
 
 // capabilities section images
-import qualifiedLeads from '../../../images/industries/real-estate/qualified-leads.webp';
-import globalBuyers from '../../../images/industries/real-estate/global-buyers.webp';
-import managementLarge from '../../../images/industries/real-estate/management-large.webp';
-import advancedTechnologies from '../../../images/industries/real-estate/advanced-technologies.webp';
+const qualifiedLeads = `${process.env.REACT_APP_API_URL}/assests/images/industries/real-estate/qualified-leads.webp`;
+const globalBuyers = `${process.env.REACT_APP_API_URL}/assests/images/industries/real-estate/global-buyers.webp`;
+const managementLarge = `${process.env.REACT_APP_API_URL}/assests/images/industries/real-estate/management-large.webp`;
+const advancedTechnologies = `${process.env.REACT_APP_API_URL}/assests/images/industries/real-estate/advanced-technologies.webp`;
 
 // industries requirement images
-import realEstateBuyers from '../../../images/industries/real-estate/real-estate-buyers.webp';
+const realEstateBuyers = `${process.env.REACT_APP_API_URL}/assests/images/industries/real-estate/real-estate-buyers.webp`;
 
 // Advanced technologies images
-import aiMLIcon from '../../../images/industries/eCommerce/ai-ml.png';
-import blockchainIcon from '../../../images/industries/eCommerce/blockchain.png';
-import metaverse from '../../../images/industries/eCommerce/metaverse.png';
-import dataAnalytics from '../../../images/industries/eCommerce/data-analytics.png';
-import arVR from '../../../images/industries/real-estate/ar-vr.png';
+const aiMLIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/ai-ml.png`;
+const blockchainIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/blockchain.png`;
+const metaverse = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/metaverse.png`;
+const dataAnalytics = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/data-analytics.png`;
+const arVR = `${process.env.REACT_APP_API_URL}/assests/images/industries/real-estate/ar-vr.png`;
 
 // Tools and technologies images
-import java from '../../../images/industries/eCommerce/java.webp';
-import react from '../../../images/industries/eCommerce/react.webp';
-import flutter from '../../../images/industries/eCommerce/flutter.webp';
-import kotlin from '../../../images/industries/eCommerce/kotlin.webp';
-import realm from '../../../images/industries/real-estate/realm-icon.webp';
-import sqlLite from '../../../images/industries/real-estate/Sql-lite.webp';
-import firebase from '../../../images/industries/real-estate/firebase_icon.webp';
-import database from '../../../images/industries/real-estate/database.webp';
-import fastlane from '../../../images/industries/real-estate/fastlane-icon.webp';
-import figma from '../../../images/industries/real-estate/figma-icon.webp';
-import { useLocation } from "react-router-dom";
+const java = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/java.webp`;
+const react = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/react.webp`;
+const flutter = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/flutter.webp`;
+const kotlin = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/kotlin.webp`;
+const realm = `${process.env.REACT_APP_API_URL}/assests/images/industries/real-estate/realm-icon.webp`;
+const sqlLite = `${process.env.REACT_APP_API_URL}/assests/images/industries/real-estate/Sql-lite.webp`;
+const firebase = `${process.env.REACT_APP_API_URL}/assests/images/industries/real-estate/firebase_icon.webp`;
+const database = `${process.env.REACT_APP_API_URL}/assests/images/industries/real-estate/database.webp`;
+const fastlane = `${process.env.REACT_APP_API_URL}/assests/images/industries/real-estate/fastlane-icon.webp`;
+const figma = `${process.env.REACT_APP_API_URL}/assests/images/industries/real-estate/figma-icon.webp`;
+
 
 function RealEstate(){
 

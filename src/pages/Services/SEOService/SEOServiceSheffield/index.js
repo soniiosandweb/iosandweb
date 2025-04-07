@@ -4,25 +4,27 @@ import './style.css';
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import NumbersCards from "../../../../components/NumbersCards";
 import ContactForm from "../../../../components/ContactForm";
-import onlineMarketingImg from '../../../../images/services/seo-service-sheffield/online-marketing.webp';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faCircleDot } from "@fortawesome/free-solid-svg-icons";
+const GetStarted = "../../../../components/GetStarted";
+
+const onlineMarketingImg = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-sheffield/online-marketing.webp`;
 
 // steps images
-import fundamental from '../../../../images/services/seo-service-sheffield/fundamental.png';
-import technicalSeo from '../../../../images/services/seo-service-sheffield/technical-seo.png';
-import seoProcess from '../../../../images/services/seo-service-sheffield/seo-process.png';
-import contentOptimization from '../../../../images/services/seo-service-sheffield/content-optimization.png';
-import backlink from '../../../../images/services/seo-service-sheffield/backlink.png';
-import keepMind from '../../../../images/services/seo-service-sheffield/keep-mind.png';
-import newThings from '../../../../images/services/seo-service-sheffield/new-things.png';
-import optimising from '../../../../images/services/seo-service-sheffield/optimising.png';
-import GetStarted from "../../../../components/GetStarted";
+const fundamental = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-sheffield/fundamental.png`;
+const technicalSeo = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-sheffield/technical-seo.png`;
+const seoProcess = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-sheffield/seo-process.png`;
+const contentOptimization = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-sheffield/content-optimization.png`;
+const backlink = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-sheffield/backlink.png`;
+const keepMind = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-sheffield/keep-mind.png`;
+const newThings = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-sheffield/new-things.png`;
+const optimising = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-sheffield/optimising.png`;
 
 // Conclusion images
-import pageSpeed from '../../../../images/services/digital-marketing/page-speed.png';
-import proofreading from '../../../../images/services/digital-marketing/proofreading.png';
-import b2b from '../../../../images/services/digital-marketing/b2b.png';
+const pageSpeed = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/page-speed.png`;
+const proofreading = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/proofreading.png`;
+const b2b = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/b2b.png`;
 
 function SEOServiceSheffield(){
 

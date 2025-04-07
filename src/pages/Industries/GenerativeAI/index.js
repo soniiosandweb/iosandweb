@@ -6,71 +6,72 @@ import OwlCarousel from "react-owl-carousel";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faCircle, faCircleDot, faListCheck, faRocket, faCog, faCubes, faCheckSquare, faFileCode } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router-dom";
 
-import generativeAIBanner from '../../../images/industries/generative-ai/generative-ai-banner.webp';
+const generativeAIBanner = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/generative-ai-banner.webp`;
 
 // reasons to choose images
-import modelDevelopment from '../../../images/industries/generative-ai/model-development.png';
-import modelReplication from '../../../images/industries/generative-ai/model-replication.png';
-import modelDeployment from '../../../images/industries/generative-ai/model-deployment.png';
-import maintenance from '../../../images/industries/generative-ai/maintenance.png';
-import modelTuning from '../../../images/industries/generative-ai/model-tuning.png';
-import modelArchitecting from '../../../images/industries/generative-ai/architecting.png';
+const modelDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/model-development.png`;
+const modelReplication = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/model-replication.png`;
+const modelDeployment = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/model-deployment.png`;
+const maintenance = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/maintenance.png`;
+const modelTuning = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/model-tuning.png`;
+const modelArchitecting = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/architecting.png`;
 
 // industries images
-import healthCare from '../../../images/home/health-care.png';
-import finance from '../../../images/home/finance.png';
-import restaurant from '../../../images/home/restaurant.png';
-import ecommerce from '../../../images/home/ecommerce-indus.svg';
-import realEstate from '../../../images/home/real-estate.png';
-import banking from '../../../images/home/banking.png';
-import travel from '../../../images/home/travel.png';
-import entertainment from '../../../images/home/entertainment.png';
-import onDemand from '../../../images/home/on-demand-indus.svg';
-import socialMedia from '../../../images/home/social-networking-indus.svg';
-import edtech from '../../../images/home/education-indus.svg';
+const healthCare = `${process.env.REACT_APP_API_URL}/assests/images/home/health-care.png`;
+const finance = `${process.env.REACT_APP_API_URL}/assests/images/home/finance.png`;
+const restaurant = `${process.env.REACT_APP_API_URL}/assests/images/home/restaurant.png`;
+const ecommerce = `${process.env.REACT_APP_API_URL}/assests/images/home/ecommerce-indus.svg`;
+const realEstate = `${process.env.REACT_APP_API_URL}/assests/images/home/real-estate.png`;
+const banking = `${process.env.REACT_APP_API_URL}/assests/images/home/banking.png`;
+const travel = `${process.env.REACT_APP_API_URL}/assests/images/home/travel.png`;
+const entertainment = `${process.env.REACT_APP_API_URL}/assests/images/home/entertainment.png`;
+const onDemand = `${process.env.REACT_APP_API_URL}/assests/images/home/on-demand-indus.svg`;
+const socialMedia = `${process.env.REACT_APP_API_URL}/assests/images/home/social-networking-indus.svg`;
+const edtech = `${process.env.REACT_APP_API_URL}/assests/images/home/education-indus.svg`;
 
 // capabilities section images
-import seasonedExperts from '../../../images/industries/generative-ai/expert-teams.webp';
-import collaborate from '../../../images/industries/generative-ai/collaborate.webp';
-import innovativeSolutions from '../../../images/industries/generative-ai/innovative-solutions.webp';
-import upgradeMaintenance from '../../../images/industries/generative-ai/upgrade-maintenance.webp';
+const seasonedExperts = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/expert-teams.webp`;
+const collaborate = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/collaborate.webp`;
+const innovativeSolutions = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/innovative-solutions.webp`;
+const upgradeMaintenance = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/upgrade-maintenance.webp`;
 
 // Advanced technologies images
-import gpt from '../../../images/industries/generative-ai/gpt.png';
-import dall from '../../../images/industries/generative-ai/dall-e.png';
-import whisper from '../../../images/industries/generative-ai/whisper.png';
-import midJourney from '../../../images/industries/generative-ai/midjourney.png';
-import bard from '../../../images/industries/generative-ai/bard.png';
-import diffusion from '../../../images/industries/generative-ai/diffusion.png';
+const gpt = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/gpt.png`;
+const dall = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/dall-e.png`;
+const whisper = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/whisper.png`;
+const midJourney = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/midjourney.png`;
+const bard = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/bard.png`;
+const diffusion = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/diffusion.png`;
 
 // Tools and technologies images
-import tensorFlow from '../../../images/industries/generative-ai/tensorflow.png';
-import pyTorch from '../../../images/industries/generative-ai/PyTorch.png';
-import keras from '../../../images/industries/generative-ai/Keras.png';
-import mxnet from '../../../images/industries/generative-ai/mxnet.png';
-import theano from '../../../images/industries/generative-ai/theano.png';
-import chainer from '../../../images/industries/generative-ai/chainer.png';
-import torch from '../../../images/industries/generative-ai/torch.png';
-import chatGPT from '../../../images/industries/generative-ai/ChatGPT.png';
-import huggingFace from '../../../images/industries/generative-ai/hugging-face.png';
-import deepmindSonnet from '../../../images/industries/generative-ai/deepmind-sonnet.png';
-import fastAI from '../../../images/industries/generative-ai/fastai.png';
-import gpt4 from '../../../images/industries/generative-ai/gpt-4.png';
-import pix2pix from '../../../images/industries/generative-ai/pix-2-pix.png';
-import waveGan from '../../../images/industries/generative-ai/wavegan.png';
-import deepArt from '../../../images/industries/generative-ai/deepart.png';
-import cnnIcon from '../../../images/industries/generative-ai/cnn-icon.png';
-import rnnIcon from '../../../images/industries/generative-ai/rnn-icon.png';
-import autoencoder from '../../../images/industries/generative-ai/autoencoders.png';
-import drlnIcon from '../../../images/industries/generative-ai/drln-icon.png';
-import vaeIcon from '../../../images/industries/generative-ai/vae-icon.png';
-import alexNet from '../../../images/industries/generative-ai/alexnet-icon.png';
-import mobileNet from '../../../images/industries/generative-ai/mobilenet-icon.png';
-import googleNet from '../../../images/industries/generative-ai/googlenet-icon.png';
-import inception from '../../../images/industries/generative-ai/inception-icon.png';
-import squeezeNet from '../../../images/industries/generative-ai/squeezenet-icon.png';
-import { useLocation } from "react-router-dom";
+const tensorFlow = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/tensorflow.png`;
+const pyTorch = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/PyTorch.png`;
+const keras = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/Keras.png`;
+const mxnet = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/mxnet.png`;
+const theano = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/theano.png`;
+const chainer = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/chainer.png`;
+const torch = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/torch.png`;
+const chatGPT = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/ChatGPT.png`;
+const huggingFace = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/hugging-face.png`;
+const deepmindSonnet = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/deepmind-sonnet.png`;
+const fastAI = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/fastai.png`;
+const gpt4 = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/gpt-4.png`;
+const pix2pix = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/pix-2-pix.png`;
+const waveGan = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/wavegan.png`;
+const deepArt = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/deepart.png`;
+const cnnIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/cnn-icon.png`;
+const rnnIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/rnn-icon.png`;
+const autoencoder = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/autoencoders.png`;
+const drlnIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/drln-icon.png`;
+const vaeIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/vae-icon.png`;
+const alexNet = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/alexnet-icon.png`;
+const mobileNet = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/mobilenet-icon.png`;
+const googleNet = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/googlenet-icon.png`;
+const inception = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/inception-icon.png`;
+const squeezeNet = `${process.env.REACT_APP_API_URL}/assests/images/industries/generative-ai/squeezenet-icon.png`;
+
 
 function GenerativeAI(){
 

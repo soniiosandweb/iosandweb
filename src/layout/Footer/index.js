@@ -4,14 +4,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import AnalogClock from "analog-clock-react";
-
-import logoWhite from "../../images/IAW-logo-white.png";
-import india from '../../images/hq-india.svg';
-import hqUk from '../../images/hq-uk.png';
-import hqUs from '../../images/hq-us.svg';
-
 import { faInstagram, faLinkedin, faSquareFacebook, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
+const logoWhite = `${process.env.REACT_APP_API_URL}/assests/images/IAW-logo-white.png`;
+const india = `${process.env.REACT_APP_API_URL}/assests/images/hq-india.svg`;
+const hqUk = `${process.env.REACT_APP_API_URL}/assests/images/hq-uk.png`;
+const hqUs = `${process.env.REACT_APP_API_URL}/assests/images/hq-us.svg`;
 
 function Footer(){
 

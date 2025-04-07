@@ -3,11 +3,11 @@ import './style.css';
 import { Container, Row, Col } from "react-bootstrap";
 
 // why choose icons
-import tailoredSolutions from '../../images/services/tailored-solutions.png';
-import expertise from '../../images/services/expertise.png';
-import responsive from '../../images/services/responsive.png';
-import integration from '../../images/services/integration.png';
-import ongoingSupport from '../../images/services/ongoing-support.png';
+const tailoredSolutions = `${process.env.REACT_APP_API_URL}/assests/images/services/tailored-solutions.png`;
+const expertise = `${process.env.REACT_APP_API_URL}/assests/images/services/expertise.png`;
+const responsive = `${process.env.REACT_APP_API_URL}/assests/images/services/responsive.png`;
+const integration = `${process.env.REACT_APP_API_URL}/assests/images/services/integration.png`;
+const ongoingSupport = `${process.env.REACT_APP_API_URL}/assests/images/services/ongoing-support.png`;
 
 function WhyChoose(){
     return (

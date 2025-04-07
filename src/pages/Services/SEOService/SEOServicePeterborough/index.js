@@ -6,23 +6,24 @@ import NumbersCards from "../../../../components/NumbersCards";
 import ContactForm from "../../../../components/ContactForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faLink, faTimeline } from "@fortawesome/free-solid-svg-icons";
-import inboundTraffic from '../../../../images/services/seo-service-peterborough/inbound-traffic.webp';
-
-// SEO Services images
-import seoService from '../../../../images/services/seo-service-peterborough/seo-service.webp';
-import seoService1 from '../../../../images/services/seo-service-peterborough/seo-service-1.webp';
-import seoService2 from '../../../../images/services/seo-service-peterborough/seo-service-2.webp';
 import GetStarted from "../../../../components/GetStarted";
 
+const inboundTraffic = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-peterborough/inbound-traffic.webp`;
+
+// SEO Services images
+const seoService = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-peterborough/seo-service.webp`;
+const seoService1 = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-peterborough/seo-service-1.webp`;
+const seoService2 = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-peterborough/seo-service-2.webp`;
+
 // Guideline icons
-import businessAccount from '../../../../images/services/seo-service-peterborough/business-account.png';
-import citation from '../../../../images/services/seo-service-peterborough/citation.png';
-import localization from '../../../../images/services/seo-service-peterborough/localization.png';
+const businessAccount = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-peterborough/business-account.png`;
+const citation = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-peterborough/citation.png`;
+const localization = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-peterborough/localization.png`;
 
 // summary section images
-import pagespeed from '../../../../images/services/digital-marketing/page-speed.png';
-import proofreading from '../../../../images/services/digital-marketing/proofreading.png';
-import b2b from '../../../../images/services/digital-marketing/b2b.png';
+const pagespeed = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/page-speed.png`;
+const proofreading = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/proofreading.png`;
+const b2b = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/b2b.png`;
 
 function SEOServicePeterborough(){
 

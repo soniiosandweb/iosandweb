@@ -1,7 +1,7 @@
 
 /* get started */
 .get-started {
-    background: #000 url('../../images/awards-BG.webp') no-repeat;
+    background: #000 url('../../../public/assests/images/awards-BG.webp') no-repeat;
     background-position: bottom right;
     background-size: cover;
 }

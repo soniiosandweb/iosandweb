@@ -4,11 +4,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import OwlCarousel from "react-owl-carousel";
 
 // Award images
-import goodFirmLogo from '../../images/awards/good-firms-logo.webp';
-import appFutura from '../../images/awards/appfutura.webp';
-import itFirms from '../../images/awards/itfirm.webp';
-import topDevelopment from '../../images/awards/top-development.webp';
-import upWork from '../../images/awards/upwork.webp';
+const goodFirmLogo = `${process.env.REACT_APP_API_URL}/assests/images/awards/good-firms-logo.webp`;
+const appFutura = `${process.env.REACT_APP_API_URL}/assests/images/awards/appfutura.webp`;
+const itFirms = `${process.env.REACT_APP_API_URL}/assests/images/awards/itfirm.webp`;
+const topDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/awards/top-development.webp`;
+const upWork = `${process.env.REACT_APP_API_URL}/assests/images/awards/upwork.webp`;
 
 function AwardsSlider(){
     return(

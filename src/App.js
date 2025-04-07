@@ -74,6 +74,18 @@ const RedirectToDigitalMarketing = () => {
   return null;
 };
 
+// Mobile App Development redirect
+const RedirectToMobileApp = () => {
+  useRedirect('/mobile-app-development-services'); 
+  return null;
+};
+
+// PPC service redirect
+const RedirectToPPCService = () => {
+  useRedirect('/ppc-services'); 
+  return null;
+};
+
 function App() {
   return (
     <BrowserRouter>
@@ -124,12 +136,42 @@ function App() {
 
           {/* Redirect location pages */}
           <Route path="/seo-services-in-edinburgh" element={<RedirectToSEOService />} />
-          <Route path="/web-development-company-in-edinburgh" element={<RedirectToWebDevelopment />} />
+          <Route path="/seo-services-in-london" element={<RedirectToSEOService />} />
+          <Route path="/seo-services-in-bristol" element={<RedirectToSEOService />} />
+          <Route path="/seo-services-in-manchester" element={<RedirectToSEOService />} />
+          <Route path="/seo-services-in-briston" element={<RedirectToSEOService />} />
+          <Route path="/seo-services-in-scotland" element={<RedirectToSEOService />} />
+          
           <Route path="/social-media-marketing-services-in-birmingham" element={<RedirectToSocialMedia />} />
+          <Route path="/social-media-marketing-company-in-london" element={<RedirectToSocialMedia />} />
+          <Route path="/social-media-marketing-services-in-sheffield" element={<RedirectToSocialMedia />} />
+          <Route path="/social-media-marketing-services-in-peterborough" element={<RedirectToSocialMedia />} />
+          <Route path="/social-media-marketing-services-in-manchester" element={<RedirectToSocialMedia />} />
+          <Route path="/social-media-marketing-services-in-briston" element={<RedirectToSocialMedia />} />
+
           <Route path="/web-development-company-in-sheffield" element={<RedirectToWebDevelopment />} />
           <Route path="/web-development-company-in-london" element={<RedirectToWebDevelopment />} />
+          <Route path="/web-development-company-in-edinburgh" element={<RedirectToWebDevelopment />} />
+          <Route path="/web-development-company-in-birmingham" element={<RedirectToWebDevelopment />} />
+
           <Route path="/digital-marketing-agency-in-birmingham" element={<RedirectToDigitalMarketing />} />
           <Route path="/digital-marketing-services-in-hammersmith" element={<RedirectToDigitalMarketing />} />
+          <Route path="/digital-marketing-services-in-sheffield" element={<RedirectToDigitalMarketing />} />
+          <Route path="/digital-marketing-services-in-london" element={<RedirectToDigitalMarketing />} />
+          <Route path="/digital-marketing-services-in-scotland" element={<RedirectToDigitalMarketing />} />
+          <Route path="/digital-marketing-services-in-edinburgh" element={<RedirectToDigitalMarketing />} />
+          <Route path="/digital-marketing-agency-in-peterborough" element={<RedirectToDigitalMarketing />} />
+          <Route path="/digital-marketing-services-in-manchester" element={<RedirectToDigitalMarketing />} />
+          <Route path="/digital-marketing-services-in-briston" element={<RedirectToDigitalMarketing />} />
+
+          <Route path="/mobile-app-developer-in-london" element={<RedirectToMobileApp />} />
+
+          <Route path="/ppc-agency-in-birmingham" element={<RedirectToPPCService />} />
+          <Route path="/ppc-agency-in-london" element={<RedirectToPPCService />} />
+          <Route path="/ppc-services-in-sheffield" element={<RedirectToPPCService />} />
+          <Route path="/ppc-services-in-edinburgh" element={<RedirectToPPCService />} />
+          <Route path="/ppc-services-in-peterborough" element={<RedirectToPPCService />} />
+          <Route path="/ppc-services-in-bristol" element={<RedirectToPPCService />} />
 
         </Route>
       </Routes>

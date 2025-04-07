@@ -6,32 +6,33 @@ import NumbersCards from "../../../components/NumbersCards";
 import ContactForm from "../../../components/ContactForm";
 import GetStarted from "../../../components/GetStarted";
 
-import webCopywriting from '../../../images/services/english-copywriting-proofreading/web-copywriting.webp';
-import proofreadingImage from '../../../images/services/english-copywriting-proofreading/proofreading-image.webp';
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTasks, faFileText, faPencilSquare, faVcard, faCommentDots, faNewspaper } from "@fortawesome/free-solid-svg-icons";
 import { faRefresh, faBook, faClone, faFileCode } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router-dom";
+
+const webCopywriting = `${process.env.REACT_APP_API_URL}/assests/images/services/english-copywriting-proofreading/web-copywriting.webp`;
+const proofreadingImage = `${process.env.REACT_APP_API_URL}/assests/images/services/english-copywriting-proofreading/proofreading-image.webp`;
 
 // reasons to choose images
-import informationClient from '../../../images/services/english-copywriting-proofreading/information-client.png';
-import analysisTexts from '../../../images/services/english-copywriting-proofreading/analysis-texts.png';
-import writingTexts from '../../../images/services/english-copywriting-proofreading/writing-texts.png';
-import textEditing from '../../../images/services/english-copywriting-proofreading/text-editing.png';
-import coordinating from '../../../images/services/english-copywriting-proofreading/coordinating.png';
+const informationClient = `${process.env.REACT_APP_API_URL}/assests/images/services/english-copywriting-proofreading/information-client.png`;
+const analysisTexts = `${process.env.REACT_APP_API_URL}/assests/images/services/english-copywriting-proofreading/analysis-texts.png`;
+const writingTexts = `${process.env.REACT_APP_API_URL}/assests/images/services/english-copywriting-proofreading/writing-texts.png`;
+const textEditing = `${process.env.REACT_APP_API_URL}/assests/images/services/english-copywriting-proofreading/text-editing.png`;
+const coordinating = `${process.env.REACT_APP_API_URL}/assests/images/services/english-copywriting-proofreading/coordinating.png`;
 
-import informationClientWhite from '../../../images/services/english-copywriting-proofreading/information-client-white.png';
-import analysisTextsWhite from '../../../images/services/english-copywriting-proofreading/analysis-texts-white.png';
-import writingTextsWhite from '../../../images/services/english-copywriting-proofreading/writing-texts-white.png';
-import textEditingWhite from '../../../images/services/english-copywriting-proofreading/text-editing-white.png';
-import coordinatingWhite from '../../../images/services/english-copywriting-proofreading/coordinating-white.png';
+const informationClientWhite = `${process.env.REACT_APP_API_URL}/assests/images/services/english-copywriting-proofreading/information-client-white.png`;
+const analysisTextsWhite = `${process.env.REACT_APP_API_URL}/assests/images/services/english-copywriting-proofreading/analysis-texts-white.png`;
+const writingTextsWhite = `${process.env.REACT_APP_API_URL}/assests/images/services/english-copywriting-proofreading/writing-texts-white.png`;
+const textEditingWhite = `${process.env.REACT_APP_API_URL}/assests/images/services/english-copywriting-proofreading/text-editing-white.png`;
+const coordinatingWhite = `${process.env.REACT_APP_API_URL}/assests/images/services/english-copywriting-proofreading/coordinating-white.png`;
 
 // Final Reflection images
-import socialMediaMarketing from '../../../images/services/digital-marketing/social-media-marketing.png';
-import SEOIcon from '../../../images/services/digital-marketing/seo-icon.png';
-import pageSpeed from '../../../images/services/digital-marketing/page-speed.png';
-import b2b from '../../../images/services/digital-marketing/b2b.png';
-import { useLocation } from "react-router-dom";
+const socialMediaMarketing = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/social-media-marketing.png`;
+const SEOIcon = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/seo-icon.png`;
+const pageSpeed = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/page-speed.png`;
+const b2b = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/b2b.png`;
+
 
 function EnglishCopywritingProofreading(){
 

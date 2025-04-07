@@ -6,94 +6,96 @@ import OwlCarousel from "react-owl-carousel"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faCircleDot, faCheckDouble, faCircle, faPencilRuler, faPaintBrush, faFileAlt, faRocket, faCog } from "@fortawesome/free-solid-svg-icons";
-
-import healthcareBanner from '../../../images/industries/healthcare/healthcare-banner.webp';
-
-// reasons to choose images
-import healthcareSoftware from '../../../images/industries/healthcare/healthcare-software.png';
-import LIMS from '../../../images/industries/healthcare/LIMS.png';
-import mHealthApp from '../../../images/industries/healthcare/mhealth-app.png';
-import electronicHealth from '../../../images/industries/healthcare/electronic-records.png';
-import telemedicineApp from '../../../images/industries/healthcare/telemedicine-app.png';
-import pharmacySystem from '../../../images/industries/healthcare/pharmacy-system.png';
-import hippaCompliant from '../../../images/industries/healthcare/hippa-compliant.png';
-import medicalDevice from '../../../images/industries/healthcare/medical-device.png';
-
-// capabilities section images
-import healthcareApp from '../../../images/industries/healthcare/healthcare-app-developer.webp';
-import flexibleModels from '../../../images/industries/healthcare/flexible-models.webp';
-import agileProcesses from '../../../images/industries/healthcare/agile-processes.webp';
-import innovativeSolutions from '../../../images/industries/healthcare/innovative-solutions.webp';
-import logicallyDesigned from '../../../images/industries/healthcare/logically-designed.webp';
-import qualityCode from '../../../images/industries/healthcare/code-quality.webp';
-
-// Advanced technologies images
-import aiMLIcon from '../../../images/industries/eCommerce/ai-ml.png';
-import blockchainIcon from '../../../images/industries/eCommerce/blockchain.png';
-import dataAnalytics from '../../../images/industries/eCommerce/data-analytics.png';
-import arVR from '../../../images/industries/real-estate/ar-vr.png';
-import iotIcon from '../../../images/industries/healthcare/IoT-icon.png';
-import generativeAi from '../../../images/industries/healthcare/generative-ai.png';
-import businessIntelligence from '../../../images/industries/healthcare/business-intelligence.png';
+import { useLocation } from "react-router-dom";
 import { faCode } from "@fortawesome/free-solid-svg-icons/faCode";
 
+const healthcareBanner = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/healthcare-banner.webp`;
+
+// reasons to choose images
+const healthcareSoftware = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/healthcare-software.png`;
+const LIMS = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/LIMS.png`;
+const mHealthApp = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/mhealth-app.png`;
+const electronicHealth = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/electronic-records.png`;
+const telemedicineApp = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/telemedicine-app.png`;
+const pharmacySystem = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/pharmacy-system.png`;
+const hippaCompliant = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/hippa-compliant.png`;
+const medicalDevice = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/medical-device.png`;
+
+// capabilities section images
+const healthcareApp = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/healthcare-app-developer.webp`;
+const flexibleModels = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/flexible-models.webp`;
+const agileProcesses = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/agile-processes.webp`;
+const innovativeSolutions = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/innovative-solutions.webp`;
+const logicallyDesigned = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/logically-designed.webp`;
+const qualityCode = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/code-quality.webp`;
+
+// Advanced technologies images
+const aiMLIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/ai-ml.png`;
+const blockchainIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/blockchain.png`;
+const dataAnalytics = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/data-analytics.png`;
+const arVR = `${process.env.REACT_APP_API_URL}/assests/images/industries/real-estate/ar-vr.png`;
+const iotIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/IoT-icon.png`;
+const generativeAi = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/generative-ai.png`;
+const businessIntelligence = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/business-intelligence.png`;
+
+
 // Tools and technologies images
-import htmlIcon from '../../../images/industries/healthcare/html-logo.png';
-import cssIcon from '../../../images/industries/healthcare/CSS-Logo.png';
-import jsIcon from '../../../images/industries/healthcare/JavaScript-Logo.png';
-import react from '../../../images/industries/eCommerce/react.webp';
-import angular from '../../../images/industries/eCommerce/angular.webp';
-import vueJs from '../../../images/industries/eCommerce/vue-js.webp';
-import emberIcon from '../../../images/industries/healthcare/Ember-logo.png';
-import nextJS from '../../../images/industries/healthcare/next-js-logo.png';
+const htmlIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/html-logo.png`;
+const cssIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/CSS-Logo.png`;
+const jsIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/JavaScript-Logo.png`;
+const react = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/react.webp`;
+const angular = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/angular.webp`;
+const vueJs = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/vue-js.webp`;
+const emberIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/Ember-logo.png`;
+const nextJS = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/next-js-logo.png`;
 
-import nodejs from '../../../images/industries/eCommerce/nodejs.webp';
-import java from '../../../images/industries/eCommerce/java.webp';
-import dotNet from '../../../images/industries/eCommerce/dot-net.webp';
-import python from '../../../images/industries/eCommerce/python.webp';
-import phpIcon from '../../../images/industries/healthcare/php-logo.png';
-import goIcon from '../../../images/industries/healthcare/Go-Logo.png';
+const nodejs = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/nodejs.webp`;
+const java = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/java.webp`;
+const dotNet = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/dot-net.webp`;
+const python = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/python.webp`;
+const phpIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/php-logo.png`;
+const goIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/Go-Logo.png`;
 
-import android from '../../../images/industries/healthcare/android-logo.png';
-import flutter from '../../../images/industries/eCommerce/flutter.webp';
-import iOSIcon from '../../../images/industries/healthcare/apple-ios.png';
-import xamarin from '../../../images/industries/healthcare/xamarin-logo.png';
-import cordova from '../../../images/industries/healthcare/cordova-logo.png';
+const android = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/android-logo.png`;
+const flutter = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/flutter.webp`;
+const iOSIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/apple-ios.png`;
+const xamarin = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/xamarin-logo.png`;
+const cordova = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/cordova-logo.png`;
 
-import cPlusIcon from '../../../images/industries/healthcare/Cplus-Logo.png';
-import cSharp from '../../../images/industries/healthcare/c-sharp.png';
-import swiftIcon from '../../../images/industries/eCommerce/swift.webp';
-import objCIcon from '../../../images/industries/healthcare/objective-c.png';
+const cPlusIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/Cplus-Logo.png`;
+const cSharp = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/c-sharp.png`;
+const swiftIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/swift.webp`;
+const objCIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/objective-c.png`;
 
-import amazonDocumentDB from '../../../images/industries/healthcare/amazon-documentdb.png';
-import amazonDynamodb from '../../../images/industries/healthcare/aws-dynamodb.png';
-import amazonRDS from '../../../images/industries/healthcare/amazon-rds.webp';
-import amazonRedshift from '../../../images/industries/healthcare/Amazon-redshift.png';
+const amazonDocumentDB = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/amazon-documentdb.png`;
+const amazonDynamodb = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/aws-dynamodb.png`;
+const amazonRDS = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/amazon-rds.webp`;
+const amazonRedshift = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/Amazon-redshift.png`;
 
-import googleCloudDatastore from '../../../images/industries/healthcare/google-cloud-datastore.png';
-import googleCloudSQL from '../../../images/industries/healthcare/cloud-SQL.png';
+const googleCloudDatastore = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/google-cloud-datastore.png`;
+const googleCloudSQL = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/cloud-SQL.png`;
 
-import azureBlobStorage from '../../../images/industries/healthcare/Azure-blob-storage.png';
-import azureCosmosDB from '../../../images/industries/healthcare/Azure-cosmos-DB.png';
-import azureSQL from '../../../images/industries/healthcare/azure_sql_database.png';
-import azureSynapseAnalytics from '../../../images/industries/healthcare/AzureSynapseAnalytics.png';
+const azureBlobStorage = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/Azure-blob-storage.png`;
+const azureCosmosDB = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/Azure-cosmos-DB.png`;
+const azureSQL = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/azure_sql_database.png`;
+const azureSynapseAnalytics = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/AzureSynapseAnalytics.png`;
 
-import mesosIcon from '../../../images/industries/healthcare/mesos.png';
-import docker from '../../../images/industries/healthcare/docker.webp';
-import kubernetes from '../../../images/industries/healthcare/kubernetes-icon.png';
-import openShift from '../../../images/industries/healthcare/OpenShift.png';
+const mesosIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/mesos.png`;
+const docker = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/docker.webp`;
+const kubernetes = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/kubernetes-icon.png`;
+const openShift = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/OpenShift.png`;
 
-import awsDeveloperTools from '../../../images/industries/healthcare/aws-developer-tools.png';
-import azureDevops from '../../../images/industries/healthcare/azure-devops.png';
-import googleDeveloper from '../../../images/industries/healthcare/google-developers.png';
-import gitlabCI from '../../../images/industries/healthcare/gitlab-ci-cd.png';
-import teamCity from '../../../images/industries/healthcare/TeamCity_Icon.png';
+const awsDeveloperTools = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/aws-developer-tools.png`;
+const azureDevops = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/azure-devops.png`;
+const googleDeveloper = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/google-developers.png`;
+const gitlabCI = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/gitlab-ci-cd.png`;
+const teamCity = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/TeamCity_Icon.png`;
 
-import saltstack from '../../../images/industries/healthcare/SaltStack.png';
-import hashiCorpPacker from '../../../images/industries/healthcare/hashicrop-packer.png';
-import terraform from '../../../images/industries/healthcare/terraform-icon.png';
-import puppet from '../../../images/industries/healthcare/puppet_logo.png';
-import { useLocation } from "react-router-dom";
+const saltstack = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/SaltStack.png`;
+const hashiCorpPacker = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/hashicrop-packer.png`;
+const terraform = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/terraform-icon.png`;
+const puppet = `${process.env.REACT_APP_API_URL}/assests/images/industries/healthcare/puppet_logo.png`;
+
 
 function Healthcare(){
 

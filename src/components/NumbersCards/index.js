@@ -3,10 +3,10 @@ import './style.css';
 import {useCountUp} from "react-countup";
 
 // numbers cards images
-import websiteDelivered from '../../images/services/websites-delivered.png';
-import countriesServed from '../../images/services/countries-served.png';
-import webDevelopers from '../../images/services/developer.png';
-import experience from '../../images/services/experience.png';
+const websiteDelivered = `${process.env.REACT_APP_API_URL}/assests/images/services/websites-delivered.png`;
+const countriesServed = `${process.env.REACT_APP_API_URL}/assests/images/services/countries-served.png`;
+const webDevelopers = `${process.env.REACT_APP_API_URL}/assests/images/services/developer.png`;
+const experience = `${process.env.REACT_APP_API_URL}/assests/images/services/experience.png`;
 
 function NumbersCards(){
 

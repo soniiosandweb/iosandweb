@@ -1,6 +1,6 @@
 /* Portfolio banner */
 .portfolio-banner{
-    background: url('../../images/testimonial-bg.webp') no-repeat;
+    background: url('../../../public/assests/images/testimonial-bg.webp') no-repeat;
     background-size: cover;
     background-position: center;
 }

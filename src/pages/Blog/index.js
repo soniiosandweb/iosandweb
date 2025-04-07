@@ -8,9 +8,10 @@ import { useEffect, useState } from "react";
 import axios from 'axios';
 import SEO from "../../components/SEO";
 
-import blogImage from '../../images/blog-banner.webp';
-import defaultImage from '../../images/placeholder-image.webp';
 import { useLocation } from "react-router-dom";
+
+const blogImage = `${process.env.REACT_APP_API_URL}/assests/images/blog-banner.webp`;
+const defaultImage = `${process.env.REACT_APP_API_URL}/assests/images/placeholder-image.webp`;
 
 function Blog(){
 

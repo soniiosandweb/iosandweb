@@ -4,7 +4,7 @@ import { useLocation, useParams } from "react-router-dom";
 import axios from 'axios';
 import { Row, Col, Container, Spinner } from "react-bootstrap";
 import SEO from "../../components/SEO";
-import defaultImage from '../../images/placeholder-image.webp';
+const defaultImage = `${process.env.REACT_APP_API_URL}/assests/images/placeholder-image.webp`;
 
 function BlogDetails(){
     const url = useParams().url;

@@ -17,7 +17,7 @@
 }
 /* Industries consult section */
 .industries-consult-div {
-    background: url('../../../images//industries/healthcare/industries-consult.webp');
+    background: url('../../../../public/assests/images//industries/healthcare/industries-consult.webp');
     background-size: cover;
     background-position: center;
     padding: 3rem;

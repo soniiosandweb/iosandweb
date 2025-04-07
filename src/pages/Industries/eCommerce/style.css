@@ -1,6 +1,6 @@
 /* Industries header */
 .industries-banner{
-    background: url('../../../images/industries/eCommerce/background-overlay.png') no-repeat;
+    background: url('../../../../public/assests/images/industries/eCommerce/background-overlay.png') no-repeat;
     background-size: cover;
     background-position: center;
     background-color: #1252be;

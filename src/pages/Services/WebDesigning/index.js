@@ -9,18 +9,19 @@ import GetStarted from "../../../components/GetStarted";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeadphones, faPaintBrush, faImage, faBullhorn, faFileText } from "@fortawesome/free-solid-svg-icons";
 import { faSearchengin } from "@fortawesome/free-brands-svg-icons";
+import { useLocation } from "react-router-dom";
 
 // reasons to choose images
-import developMaintain from '../../../images/services/web-designing/develop-maintain.png';
-import copywriting from '../../../images/services/web-designing/copywriting.png';
-import optimisingSEO from '../../../images/services/web-designing/optimising-seo.png';
-import socialMediaMarketing from '../../../images/services/web-designing/social-media-marketing.png';
-import ppcADS from '../../../images/services/web-designing/ppc-ads.png';
+const developMaintain = `${process.env.REACT_APP_API_URL}/assests/images/services/web-designing/develop-maintain.png`;
+const copywriting = `${process.env.REACT_APP_API_URL}/assests/images/services/web-designing/copywriting.png`;
+const optimisingSEO = `${process.env.REACT_APP_API_URL}/assests/images/services/web-designing/optimising-seo.png`;
+const socialMediaMarketing = `${process.env.REACT_APP_API_URL}/assests/images/services/web-designing/social-media-marketing.png`;
+const ppcADS = `${process.env.REACT_APP_API_URL}/assests/images/services/web-designing/ppc-ads.png`;
 
 // final reflection images
-import pdfHTML from '../../../images/services/web-designing/pdf-html.png';
-import graphicDesign from '../../../images/services/web-designing/graphic-design.png';
-import { useLocation } from "react-router-dom";
+const pdfHTML = `${process.env.REACT_APP_API_URL}/assests/images/services/web-designing/pdf-html.png`;
+const graphicDesign = `${process.env.REACT_APP_API_URL}/assests/images/services/web-designing/graphic-design.png`;
+
 
 function WebDesigning(){
 

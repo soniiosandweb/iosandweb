@@ -1,6 +1,6 @@
 /* About page */
 .about-banner{
-    background-image: url('../..//images/about/about-banner.webp');
+    background-image: url('../../../public/assests/images/about/about-banner.webp');
     background-size: cover;
     background-position: top center;
     height: 90vh;

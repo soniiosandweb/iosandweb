@@ -9,25 +9,26 @@ import GetStarted from "../../../components/GetStarted";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDot } from "@fortawesome/free-solid-svg-icons";
 
+import { useLocation } from "react-router-dom";
+
 // Reasons section images
-import searchEngine from '../../../images/services/digital-marketing/seo.png';
-import socialMedia from '../../../images/services/digital-marketing/social-media-optimization.png';
-import reputationManagement from '../../../images/services/digital-marketing/reputation-management.png';
-import ppcManagement from '../../../images/services/digital-marketing/ppc-management.png';
-import advertisingCampaigns from '../../../images/services/digital-marketing/advertising-campaign.png';
-import contentMarketing  from '../../../images/services/digital-marketing/content-marketing.png';
-import leadGeneration from '../../../images/services/digital-marketing/lead-generation.png';
-import linkBuilding from '../../../images/services/digital-marketing/link-building.png';
-import conversionRate from '../../../images/services/digital-marketing/conversion-rate-optimizer.png';
+const searchEngine = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/seo.png`;
+const socialMedia = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/social-media-optimization.png`;
+const reputationManagement = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/reputation-management.png`;
+const ppcManagement = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/ppc-management.png`;
+const advertisingCampaigns = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/advertising-campaign.png`;
+const contentMarketing  = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/content-marketing.png`;
+const leadGeneration = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/lead-generation.png`;
+const linkBuilding = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/link-building.png`;
+const conversionRate = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/conversion-rate-optimizer.png`;
 
 // Final Reflection images
-import SEOIcon from '../../../images/services/digital-marketing/seo-icon.png';
-import socialMediaMarketing from '../../../images/services/digital-marketing/social-media-marketing.png';
-import pageSpeed from '../../../images/services/digital-marketing/page-speed.png';
-import proofreading from '../../../images/services/digital-marketing/proofreading.png';
-import b2b from '../../../images/services/digital-marketing/b2b.png';
-import bristol from '../../../images/services/digital-marketing/digital-marketing.png';
-import { useLocation } from "react-router-dom";
+const SEOIcon = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/seo-icon.png`;
+const socialMediaMarketing = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/social-media-marketing.png`;
+const pageSpeed = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/page-speed.png`;
+const proofreading = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/proofreading.png`;
+const b2b = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/b2b.png`;
+const bristol = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/digital-marketing.png`;
 
 function DigitalMarketing(){
 

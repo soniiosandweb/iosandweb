@@ -8,18 +8,18 @@ import GetStarted from "../../../components/GetStarted";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCog, faRefresh, faWrench } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router-dom";
 
 // Relationship management section images
-import contactWithUsers from '../../../images/services/b2b-lead-generation/contact-with-users.webp';
-import verifyEffectiveness from '../../../images/services/b2b-lead-generation/verify-effectiveness.webp';
-import shareInformation from '../../../images/services/b2b-lead-generation/share-information.webp';
+const contactWithUsers = `${process.env.REACT_APP_API_URL}/assests/images/services/b2b-lead-generation/contact-with-users.webp`;
+const verifyEffectiveness = `${process.env.REACT_APP_API_URL}/assests/images/services/b2b-lead-generation/verify-effectiveness.webp`;
+const shareInformation = `${process.env.REACT_APP_API_URL}/assests/images/services/b2b-lead-generation/share-information.webp`;
 
 // Final Reflection images
-import socialMediaMarketing from '../../../images/services/digital-marketing/social-media-marketing.png';
-import SEOIcon from '../../../images/services/digital-marketing/seo-icon.png';
-import pageSpeed from '../../../images/services/digital-marketing/page-speed.png';
-import proofreading from '../../../images/services/digital-marketing/proofreading.png';
-import { useLocation } from "react-router-dom";
+const socialMediaMarketing = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/social-media-marketing.png`;
+const SEOIcon = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/seo-icon.png`;
+const pageSpeed = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/page-speed.png`;
+const proofreading = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/proofreading.png`;
 
 function B2BLeadGenerationCampaign(){
 

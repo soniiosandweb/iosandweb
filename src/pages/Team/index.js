@@ -7,18 +7,19 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import SEO from "../../components/SEO";
 import GetStarted from "../../components/GetStarted";
 import JoinOurTeam from "../../components/JoinOurTeam";
-
-import teamImg from '../../images/IAW-Team.webp';
-import userMan from '../../images/user-man.png';
-// import userWoman from '../../images/user-woman.png';
-import ourTeam from '../../images/our-team.webp';
-import bhupinder from '../../images/team/bhupinder.png';
-import soni from '../../images/team/soni.png';
-import diksha from '../../images/team/diksha.jpg';
-import shreyanshi from '../../images/team/shreyanshi.png';
-import gaurav from '../../images/team/gaurav.png';
-import arti from '../../images/team/arti.jpeg';
 import { useLocation } from "react-router-dom";
+
+const teamImg = `${process.env.REACT_APP_API_URL}/assests/images/IAW-Team.webp`;
+const userMan = `${process.env.REACT_APP_API_URL}/assests/images/user-man.png`;
+// const userWoman from `${process.env.REACT_APP_API_URL}/assests/images/user-woman.png`;
+const ourTeam = `${process.env.REACT_APP_API_URL}/assests/images/our-team.webp`;
+const bhupinder = `${process.env.REACT_APP_API_URL}/assests/images/team/bhupinder.png`;
+const soni = `${process.env.REACT_APP_API_URL}/assests/images/team/soni.png`;
+const diksha = `${process.env.REACT_APP_API_URL}/assests/images/team/diksha.jpg`;
+const shreyanshi = `${process.env.REACT_APP_API_URL}/assests/images/team/shreyanshi.png`;
+const gaurav = `${process.env.REACT_APP_API_URL}/assests/images/team/gaurav.png`;
+const arti = `${process.env.REACT_APP_API_URL}/assests/images/team/arti.jpeg`;
+
 
 function Team(){
 

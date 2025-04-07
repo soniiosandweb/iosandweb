@@ -259,7 +259,7 @@
   
 /* Partnership section home */
 .partnership-panel{
-    background: #000 url('../../images/awards-BG.webp') no-repeat;
+    background: #000 url('../../../public/assests/images/awards-BG.webp') no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -300,7 +300,7 @@
   
 /* Testimonial Section */
 .testimonial-panel{
-    background: url('../../images/testimonial-bg.webp') no-repeat;
+    background: url('../../../public/assests/images/testimonial-bg.webp') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -436,7 +436,7 @@
 
 /* Home contact us section */
 .home-contact-us{
-    background: url('../../images/app-bg-lines.webp') no-repeat;
+    background: url('../../../public/assests/images/app-bg-lines.webp') no-repeat;
     background-size: cover;
     background-position: center;
     background-color: #000;

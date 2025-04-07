@@ -8,29 +8,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import GetStarted from "../../components/GetStarted";
-
-import serviceImage from '../../images/services-image.webp';
-
-// what we do images
-import webDevelop from '../../images/services/settings.png';
-import mobileDevelop from '../../images/services/development.png';
-import magentoDevelop from '../../images/services/magento_development.png';
-import blockchainDevelop from '../../images/services/blockchain-development.png';
-import smartContract from '../../images/services/smart-contract.png';
-import poc from '../../images/services/letter.png';
-
-// we design images
+import { useLocation } from "react-router-dom";
 import { faDesktop, faPaintBrush } from "@fortawesome/free-solid-svg-icons";
 import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
-import html from '../../images/services/html.png';
-import psd from '../../images/services/xd.png';
-import UX from '../../images/services/ux.png';
-import css from '../../images/services/css.png';
-import php from '../../images/services/php.png';
-import afterEffect from '../../images/services/after-effects.png';
 import DevelopmentProcess from "../../components/DevelopmentProcess";
-import { useLocation } from "react-router-dom";
 
+const serviceImage = `${process.env.REACT_APP_API_URL}/assests/images/services-image.webp`;
+
+// what we do images
+const webDevelop = `${process.env.REACT_APP_API_URL}/assests/images/services/settings.png`;
+const mobileDevelop = `${process.env.REACT_APP_API_URL}/assests/images/services/development.png`;
+const magentoDevelop = `${process.env.REACT_APP_API_URL}/assests/images/services/magento_development.png`;
+const blockchainDevelop = `${process.env.REACT_APP_API_URL}/assests/images/services/blockchain-development.png`;
+const smartContract = `${process.env.REACT_APP_API_URL}/assests/images/services/smart-contract.png`;
+const poc = `${process.env.REACT_APP_API_URL}/assests/images/services/letter.png`;
+
+// we design images
+const html = `${process.env.REACT_APP_API_URL}/assests/images/services/html.png`;
+const psd = `${process.env.REACT_APP_API_URL}/assests/images/services/xd.png`;
+const UX = `${process.env.REACT_APP_API_URL}/assests/images/services/ux.png`;
+const css = `${process.env.REACT_APP_API_URL}/assests/images/services/css.png`;
+const php = `${process.env.REACT_APP_API_URL}/assests/images/services/php.png`;
+const afterEffect = `${process.env.REACT_APP_API_URL}/assests/images/services/after-effects.png`;
 
 function Services(){
 

@@ -9,41 +9,41 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import NavItem from 'react-bootstrap/NavItem';
 import NavLink from 'react-bootstrap/NavLink';
 
-import logo from '../../images/IAW-logo-white.png';
-import logoBlack from '../../images/IAW-black-logo.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
-// service menu
-import mobileApp from '../../images/home/Mobile-app.svg';
-import softwareDevelopment from '../../images/home/Software-Development.svg';
-import digitalTransformation from '../../images/home/Digital-Transformation.svg';
-import dataScience from '../../images/home/Data-Science-Analytics.svg';
-import blockChain from '../../images/home/Blockchain-Services.svg';
-import ideationDesign from '../../images/home/ideation-design.svg';
-
-// industries menu
-import eCommerceIcon from '../../images/eCommerce.png';
-import realEstateIcon from '../../images/real-estate.png';
-import generativeAI from '../../images/artificial-intelligence.png';
-import healthcareIcon from '../../images/health-care.png';
-
-// about menu
-import aboutIcon from '../../images/about-us.png';
-import teamIcon from '../../images/our-team-icon.png';
-import careerIcon from '../../images/career-icon.png';
-import howWorkIcon from '../../images/how-we-work.png';
-
 import OwlCarousel from "react-owl-carousel";
 
+const logo = `${process.env.REACT_APP_API_URL}/assests/images/IAW-logo-white.png`;
+const logoBlack = `${process.env.REACT_APP_API_URL}/assests/images/IAW-black-logo.png`;
+
+// service menu
+const mobileApp = `${process.env.REACT_APP_API_URL}/assests/images/home/Mobile-app.svg`;
+const softwareDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/home/Software-Development.svg`;
+const digitalTransformation = `${process.env.REACT_APP_API_URL}/assests/images/home/Digital-Transformation.svg`;
+const dataScience = `${process.env.REACT_APP_API_URL}/assests/images/home/Data-Science-Analytics.svg`;
+const blockChain = `${process.env.REACT_APP_API_URL}/assests/images/home/Blockchain-Services.svg`;
+const ideationDesign = `${process.env.REACT_APP_API_URL}/assests/images/home/ideation-design.svg`;
+
+// industries menu
+const eCommerceIcon = `${process.env.REACT_APP_API_URL}/assests/images/eCommerce.png`;
+const realEstateIcon = `${process.env.REACT_APP_API_URL}/assests/images/real-estate.png`;
+const generativeAI = `${process.env.REACT_APP_API_URL}/assests/images/artificial-intelligence.png`;
+const healthcareIcon = `${process.env.REACT_APP_API_URL}/assests/images/health-care.png`;
+
+// about menu
+const aboutIcon = `${process.env.REACT_APP_API_URL}/assests/images/about-us.png`;
+const teamIcon = `${process.env.REACT_APP_API_URL}/assests/images/our-team-icon.png`;
+const careerIcon = `${process.env.REACT_APP_API_URL}/assests/images/career-icon.png`;
+const howWorkIcon = `${process.env.REACT_APP_API_URL}/assests/images/how-we-work.png`;
+
 // Award images
-import goodFirmLogo from '../../images/awards/good-firms-logo.webp';
-import appFutura from '../../images/awards/appfutura.webp';
-import itFirms from '../../images/awards/itfirm.webp';
-import topDevelopment from '../../images/awards/top-development.webp';
-import upWork from '../../images/awards/upwork.webp';
+const goodFirmLogo = `${process.env.REACT_APP_API_URL}/assests/images/awards/good-firms-logo.webp`;
+const appFutura = `${process.env.REACT_APP_API_URL}/assests/images/awards/appfutura.webp`;
+const itFirms = `${process.env.REACT_APP_API_URL}/assests/images/awards/itfirm.webp`;
+const topDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/awards/top-development.webp`;
+const upWork = `${process.env.REACT_APP_API_URL}/assests/images/awards/upwork.webp`;
 
 
 function Header() {

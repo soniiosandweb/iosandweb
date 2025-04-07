@@ -6,25 +6,25 @@ import JoinOurTeam from "../../components/JoinOurTeam";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBarChart, faChevronRight, faCode, faCogs, faDesktop, faFileAlt, faPaintBrush, faShoppingCart, faUserCog, faUsers } from "@fortawesome/free-solid-svg-icons";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
+import { useLocation } from "react-router-dom";
 
-import careerBanner from '../../images/career/career-banner-image.webp';
+const careerBanner = `${process.env.REACT_APP_API_URL}/assests/images/career/career-banner-image.webp`;
 
 // Reasons to join images
-import careerImage from '../../images/career/career-image.webp';
-import desk from '../../images/career/desk.png';
-import academy from '../../images/career/academy.png';
-import innovation from '../../images/career/innovation.png';
+const careerImage = `${process.env.REACT_APP_API_URL}/assests/images/career/career-image.webp`;
+const desk = `${process.env.REACT_APP_API_URL}/assests/images/career/desk.png`;
+const academy = `${process.env.REACT_APP_API_URL}/assests/images/career/academy.png`;
+const innovation = `${process.env.REACT_APP_API_URL}/assests/images/career/innovation.png`;
 
-import supportAdvisor from '../../images/career/support-advisor.webp';
-import advisor from '../../images/career/advisor.png';
-import experts from '../../images/career/experts.png';
-import wellness from '../../images/career/wellness.png';
+const supportAdvisor = `${process.env.REACT_APP_API_URL}/assests/images/career/support-advisor.webp`;
+const advisor = `${process.env.REACT_APP_API_URL}/assests/images/career/advisor.png`;
+const experts = `${process.env.REACT_APP_API_URL}/assests/images/career/experts.png`;
+const wellness = `${process.env.REACT_APP_API_URL}/assests/images/career/wellness.png`;
 
-import life from '../../images/career/life.webp';
-import experience from '../../images/career/experience.png';
-import diversity from '../../images/career/diversity.png';
-import foundation from '../../images/career/society.png';
-import { useLocation } from "react-router-dom";
+const life = `${process.env.REACT_APP_API_URL}/assests/images/career/life.webp`;
+const experience = `${process.env.REACT_APP_API_URL}/assests/images/career/experience.png`;
+const diversity = `${process.env.REACT_APP_API_URL}/assests/images/career/diversity.png`;
+const foundation = `${process.env.REACT_APP_API_URL}/assests/images/career/society.png`;
 
 function Career(){
 

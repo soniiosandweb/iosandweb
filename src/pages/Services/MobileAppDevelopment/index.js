@@ -5,17 +5,17 @@ import SEO from "../../../components/SEO";
 import NumbersCards from "../../../components/NumbersCards";
 import ContactForm from "../../../components/ContactForm";
 import GetStarted from "../../../components/GetStarted";
-
-// reasons to choose images
-import reactNative from '../../../images/services/mobile-app-development/react-native.png';
-import flutter from '../../../images/services/mobile-app-development/flutter.png';
-import ionic from '../../../images/services/mobile-app-development/ionic.png';
-import cordova from '../../../images/services/mobile-app-development/cordova.png';
-import unity from '../../../images/services/mobile-app-development/unity.png';
-import xamarin from '../../../images/services/mobile-app-development/xamarin.png';
 import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
+
+// reasons to choose images
+const reactNative = `${process.env.REACT_APP_API_URL}/assests/images/services/mobile-app-development/react-native.png`;
+const flutter = `${process.env.REACT_APP_API_URL}/assests/images/services/mobile-app-development/flutter.png`;
+const ionic = `${process.env.REACT_APP_API_URL}/assests/images/services/mobile-app-development/ionic.png`;
+const cordova = `${process.env.REACT_APP_API_URL}/assests/images/services/mobile-app-development/cordova.png`;
+const unity = `${process.env.REACT_APP_API_URL}/assests/images/services/mobile-app-development/unity.png`;
+const xamarin = `${process.env.REACT_APP_API_URL}/assests/images/services/mobile-app-development/xamarin.png`;
 
 function MobileAppDevelopment(){
 

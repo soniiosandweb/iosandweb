@@ -8,19 +8,19 @@ import GetStarted from "../../../../components/GetStarted";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDot } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router-dom";
 
 // Reasons section images
-import keywordSearch from '../../../../images/services/digital-marketing/digital-marketing-bristol/keyword.png';
-import internalLink from '../../../../images/services/digital-marketing/digital-marketing-bristol/internal-link.png';
-import anchorText from '../../../../images/services/digital-marketing/digital-marketing-bristol/anchor.png';
-import metaDescription from '../../../../images/services/digital-marketing/digital-marketing-bristol/meta-description.png';
-import titleConcise from '../../../../images/services/digital-marketing/digital-marketing-bristol/title.png';
+const keywordSearch = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/digital-marketing-bristol/keyword.png`;
+const internalLink = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/digital-marketing-bristol/internal-link.png`;
+const anchorText = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/digital-marketing-bristol/anchor.png`;
+const metaDescription = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/digital-marketing-bristol/meta-description.png`;
+const titleConcise = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/digital-marketing-bristol/title.png`;
 
 // Final Reflection images
-import pageSpeed from '../../../../images/services/digital-marketing/page-speed.png';
-import proofreading from '../../../../images/services/digital-marketing/proofreading.png';
-import b2b from '../../../../images/services/digital-marketing/b2b.png';
-import { useLocation } from "react-router-dom";
+const pageSpeed = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/page-speed.png`;
+const proofreading = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/proofreading.png`;
+const b2b = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/b2b.png`;
 
 function DigitalMarketingBristol(){
 

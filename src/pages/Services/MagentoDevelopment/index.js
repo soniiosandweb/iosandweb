@@ -8,13 +8,13 @@ import GetStarted from "../../../components/GetStarted";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBasket, faShoppingCart, faLocationArrow, faRandom, faCodeFork, faFastForward, faUsers, faAward, faTrophy, faCommenting, faCode, faCircle } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router-dom";
 
 // final reflection images
-import softwareDevelopment from '../../../images/services/software-development/software-development.png';
-import webDevelopment from '../../../images/services/software-development/app-development.png';
-import crmDevelopment from '../../../images/services/software-development/crm-development.png';
-import shopify from '../../../images/services/software-development/shopify.png';
-import { useLocation } from "react-router-dom";
+const softwareDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/software-development.png`;
+const webDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/app-development.png`;
+const crmDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/crm-development.png`;
+const shopify = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/shopify.png`;
 
 function MagentoDevelopment(){
 

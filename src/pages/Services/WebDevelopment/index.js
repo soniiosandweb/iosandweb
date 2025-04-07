@@ -8,19 +8,20 @@ import GetStarted from "../../../components/GetStarted";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktopAlt, faCode, faShoppingBag, faGlobeAsia, faMobileScreen, faCircle } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router-dom";
 
 // Services includes images
-import security from '../../../images/services/software-development/more-secure.png';
-import architecture from '../../../images/services/software-development/routine-tasks.png';
-import costSaving from '../../../images/services/software-development/lower-costs.png';
-import support from '../../../images/services/software-development/instant-support.png';
+const security = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/more-secure.png`;
+const architecture = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/routine-tasks.png`;
+const costSaving = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/lower-costs.png`;
+const support = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/instant-support.png`;
 
 // final reflection images
-import softwareDevelopment from '../../../images/services/software-development/software-development.png';
-import crmDevelopment from '../../../images/services/software-development/crm-development.png';
-import magento from '../../../images/services/software-development/magento.png';
-import shopify from '../../../images/services/software-development/shopify.png';
-import { useLocation } from "react-router-dom";
+const softwareDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/software-development.png`;
+const crmDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/crm-development.png`;
+const magento = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/magento.png`;
+const shopify = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/shopify.png`;
+
 
 function WebDevelopment(){
 

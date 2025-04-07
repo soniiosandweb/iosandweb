@@ -2,22 +2,22 @@ import React from "react";
 import './style.css';
 import { Container, Row, Col } from "react-bootstrap";
 
-import onmen from '../../images/partners/ONMEN.png';
-import gopuff from '../../images/partners/Gopuff.webp';
-import seamless from '../../images/partners/seamless.png';
-import doorDash from '../../images/partners/DoorDash.png';
-import uber from '../../images/partners/Uber-Eats-Logo.png';
-import srgn from '../../images/partners/srgn.png';
-import lowes from '../../images/partners/Lowes.png';
-import aesthetic from '../../images/partners/aesthetic.png';
-import grubhub from '../../images/partners/Grubhub.png';
-import chownow from '../../images/partners/chownow.png';
-import vertical from '../../images/partners/vertical.png';
-import Instacart from '../../images/partners/Instacart.png';
-import mygermany from '../../images/partners/mygermany.png';
-import walgreeens from '../../images/partners/walgreeens-logo.png';
+const onmen = `${process.env.REACT_APP_API_URL}/assests/images/partners/ONMEN.png`;
+const gopuff = `${process.env.REACT_APP_API_URL}/assests/images/partners/Gopuff.webp`;
+const seamless = `${process.env.REACT_APP_API_URL}/assests/images/partners/seamless.png`;
+const doorDash = `${process.env.REACT_APP_API_URL}/assests/images/partners/DoorDash.png`;
+const uber = `${process.env.REACT_APP_API_URL}/assests/images/partners/Uber-Eats-Logo.png`;
+const srgn = `${process.env.REACT_APP_API_URL}/assests/images/partners/srgn.png`;
+const lowes = `${process.env.REACT_APP_API_URL}/assests/images/partners/Lowes.png`;
+const aesthetic = `${process.env.REACT_APP_API_URL}/assests/images/partners/aesthetic.png`;
+const grubhub = `${process.env.REACT_APP_API_URL}/assests/images/partners/Grubhub.png`;
+const chownow = `${process.env.REACT_APP_API_URL}/assests/images/partners/chownow.png`;
+const vertical = `${process.env.REACT_APP_API_URL}/assests/images/partners/vertical.png`;
+const Instacart = `${process.env.REACT_APP_API_URL}/assests/images/partners/Instacart.png`;
+const mygermany = `${process.env.REACT_APP_API_URL}/assests/images/partners/mygermany.png`;
+const walgreeens = `${process.env.REACT_APP_API_URL}/assests/images/partners/walgreeens-logo.png`;
 
-import ten from '../../images/partners/ten-white-2.png';
+const ten = `${process.env.REACT_APP_API_URL}/assests/images/partners/ten-white-2.png`;
 
 function Partners(){
     return(

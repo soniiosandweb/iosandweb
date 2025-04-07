@@ -9,18 +9,18 @@ import GetStarted from "../../../components/GetStarted";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTasks, faHandshake, faSignal, faCircle } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram, faTwitter, faPinterest, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { useLocation } from "react-router-dom";
 
 // Services includes images
-import nothingHidden from '../../../images/services/social-media-marketing/nothing-hidden.png';
-import lowRiskContracts from '../../../images/services/social-media-marketing/low-risk-contracts.png';
-import moreMoney from '../../../images/services/social-media-marketing/more-money.png';
+const nothingHidden = `${process.env.REACT_APP_API_URL}/assests/images/services/social-media-marketing/nothing-hidden.png`;
+const lowRiskContracts = `${process.env.REACT_APP_API_URL}/assests/images/services/social-media-marketing/low-risk-contracts.png`;
+const moreMoney = `${process.env.REACT_APP_API_URL}/assests/images/services/social-media-marketing/more-money.png`;
 
 // Final Reflection images
-import SEOIcon from '../../../images/services/digital-marketing/seo-icon.png';
-import pageSpeed from '../../../images/services/digital-marketing/page-speed.png';
-import proofreading from '../../../images/services/digital-marketing/proofreading.png';
-import b2b from '../../../images/services/digital-marketing/b2b.png';
-import { useLocation } from "react-router-dom";
+const SEOIcon = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/seo-icon.png`;
+const pageSpeed = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/page-speed.png`;
+const proofreading = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/proofreading.png`;
+const b2b = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/b2b.png`;
 
 function SocialMediaMarketing(){
 

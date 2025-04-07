@@ -6,29 +6,29 @@ import NumbersCards from "../../../../components/NumbersCards";
 import ContactForm from "../../../../components/ContactForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDot } from "@fortawesome/free-solid-svg-icons";
-
-import seoRanking from '../../../../images/services/seo-service-birmingham/seo-ranking.webp';
-
-// Maintain transparency images
-import siteStructure from '../../../../images/services/seo-service-birmingham/site-structure.png';
-import strongContent from '../../../../images/services/seo-service-birmingham/strong-content.png';
-import backlinks from '../../../../images/services/seo-service-birmingham/backlink.png';
-import advertisement from '../../../../images/services/seo-service-birmingham/advertisement.png';
-import localSeo from '../../../../images/services/seo-service-birmingham/local-seo.png';
-import socialEngagement from '../../../../images/services/seo-service-birmingham/social-engagement.png';
 import GetStarted from '../../../../components/GetStarted';
 
+const seoRanking = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-birmingham/seo-ranking.webp`;
+
+// Maintain transparency images
+const siteStructure = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-birmingham/site-structure.png`;
+const strongContent = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-birmingham/strong-content.png`;
+const backlinks = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-birmingham/backlink.png`;
+const advertisement = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-birmingham/advertisement.png`;
+const localSeo = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-birmingham/local-seo.png`;
+const socialEngagement = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-birmingham/social-engagement.png`;
+
 // Ranking images
-import keywordFriendly from '../../../../images/services/seo-service-birmingham/keyword-friendly.webp';
-import keywordAnalysis from '../../../../images/services/seo-service-birmingham/keyword-analysis.webp';
-import userExperience from '../../../../images/services/seo-service-birmingham/user-experience.webp';
-import highQuality from '../../../../images/services/seo-service-birmingham/high-quality.webp';
-import architecture from '../../../../images/services/seo-service-birmingham/architecture.webp';
+const keywordFriendly = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-birmingham/keyword-friendly.webp`;
+const keywordAnalysis = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-birmingham/keyword-analysis.webp`;
+const userExperience = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-birmingham/user-experience.webp`;
+const highQuality = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-birmingham/high-quality.webp`;
+const architecture = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-service-birmingham/architecture.webp`;
 
 // Final words images
-import pageSpeed from '../../../../images/services/digital-marketing/page-speed.png';
-import proofreading from '../../../../images/services/digital-marketing/proofreading.png';
-import b2b from '../../../../images/services/digital-marketing/b2b.png';
+const pageSpeed = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/page-speed.png`;
+const proofreading = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/proofreading.png`;
+const b2b = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/b2b.png`;
 
 
 function SEOServiceBirmingham(){

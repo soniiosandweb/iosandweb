@@ -5,26 +5,26 @@ import SEO from "../../../components/SEO";
 import NumbersCards from "../../../components/NumbersCards";
 import ContactForm from "../../../components/ContactForm";
 import GetStarted from "../../../components/GetStarted";
+import { useLocation } from "react-router-dom";
 
 // Reasons section images
-import googleAdwards from '../../../images/services/ppc-services/google-adwords.png';
-import bingAds from '../../../images/services/ppc-services/bing-ads.png';
-import youtubeAds from '../../../images/services/ppc-services/youtube-ads.png';
-import facebookAds from '../../../images/services/ppc-services/facebook-ads.png';
-import linkedinAds from '../../../images/services/ppc-services/linkedin-ads.png';
-import twitterAds from '../../../images/services/ppc-services/twitter-ads.png';
+const googleAdwards = `${process.env.REACT_APP_API_URL}/assests/images/services/ppc-services/google-adwords.png`;
+const bingAds = `${process.env.REACT_APP_API_URL}/assests/images/services/ppc-services/bing-ads.png`;
+const youtubeAds = `${process.env.REACT_APP_API_URL}/assests/images/services/ppc-services/youtube-ads.png`;
+const facebookAds = `${process.env.REACT_APP_API_URL}/assests/images/services/ppc-services/facebook-ads.png`;
+const linkedinAds = `${process.env.REACT_APP_API_URL}/assests/images/services/ppc-services/linkedin-ads.png`;
+const twitterAds = `${process.env.REACT_APP_API_URL}/assests/images/services/ppc-services/twitter-ads.png`;
 
 // Services includes images
-import professionals from '../../../images/services/ppc-services/professionals.png';
-import knowledge from '../../../images/services/ppc-services/knowledge.png';
-import upgradedResults from '../../../images/services/ppc-services/upgraded-results.png';
-import reporting from '../../../images/services/ppc-services/reporting.png';
+const professionals = `${process.env.REACT_APP_API_URL}/assests/images/services/ppc-services/professionals.png`;
+const knowledge = `${process.env.REACT_APP_API_URL}/assests/images/services/ppc-services/knowledge.png`;
+const upgradedResults = `${process.env.REACT_APP_API_URL}/assests/images/services/ppc-services/upgraded-results.png`;
+const reporting = `${process.env.REACT_APP_API_URL}/assests/images/services/ppc-services/reporting.png`;
 
 // Final Reflection images
-import pageSpeed from '../../../images/services/digital-marketing/page-speed.png';
-import proofreading from '../../../images/services/digital-marketing/proofreading.png';
-import b2b from '../../../images/services/digital-marketing/b2b.png';
-import { useLocation } from "react-router-dom";
+const pageSpeed = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/page-speed.png`;
+const proofreading = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/proofreading.png`;
+const b2b = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/b2b.png`;
 
 function PayPerClick(){
 

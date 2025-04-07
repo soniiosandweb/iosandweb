@@ -4,45 +4,46 @@ import { Container, Row, Col, Nav, Tab, Accordion } from "react-bootstrap";
 import SEO from "../../../components/SEO";
 import OwlCarousel from "react-owl-carousel";
 
-import eCommerceBanner from '../../../images/industries/eCommerce/ecommerce-banner-new.webp';
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDot, faChevronRight, faPencilRuler, faListSquares, faCode, faRocket, faCircle } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router-dom";
+
+const eCommerceBanner = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/ecommerce-banner-new.webp`;
 
 // reasons to choose images
-import microservices from '../../../images/industries/eCommerce/microservices.png';
-import backendFrontend from '../../../images/industries/eCommerce/backend-frontend.png';
-import payment from '../../../images/industries/eCommerce/payment-gateway.png';
-import pwaEcommerce from '../../../images/industries/eCommerce/pwa-ecommerce.png';
-import marketplaces from '../../../images/industries/eCommerce/marketplace.png';
-import portals from '../../../images/industries/eCommerce/portals.png';
+const microservices = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/microservices.png`;
+const backendFrontend = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/backend-frontend.png`;
+const payment = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/payment-gateway.png`;
+const pwaEcommerce = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/pwa-ecommerce.png`;
+const marketplaces = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/marketplace.png`;
+const portals = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/portals.png`;
 
 // capabilities section images
-import awardTeam from '../../../images/industries/eCommerce/award-team.webp';
-import developmentPractices from '../../../images/industries/eCommerce/development-practice.webp';
-import paramount from '../../../images/industries/eCommerce/paramount.webp';
+const awardTeam = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/award-team.webp`;
+const developmentPractices = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/development-practice.webp`;
+const paramount = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/paramount.webp`;
 
 // Advanced technologies images
-import aiMLIcon from '../../../images/industries/eCommerce/ai-ml.png';
-import blockchainIcon from '../../../images/industries/eCommerce/blockchain.png';
-import metaverse from '../../../images/industries/eCommerce/metaverse.png';
-import dataAnalytics from '../../../images/industries/eCommerce/data-analytics.png';
-import cloudComputing from '../../../images/industries/eCommerce/cloud-computing.png';
+const aiMLIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/ai-ml.png`;
+const blockchainIcon = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/blockchain.png`;
+const metaverse = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/metaverse.png`;
+const dataAnalytics = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/data-analytics.png`;
+const cloudComputing = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/cloud-computing.png`;
 
 // Tools and technologies images
-import nodejs from '../../../images/industries/eCommerce/nodejs.webp';
-import typescript from '../../../images/industries/eCommerce/typescript.webp';
-import dotNet from '../../../images/industries/eCommerce/dot-net.webp';
-import java from '../../../images/industries/eCommerce/java.webp';
-import python from '../../../images/industries/eCommerce/python.webp';
-import rubyRails from '../../../images/industries/eCommerce/Ruby-on-Rails.webp';
-import react from '../../../images/industries/eCommerce/react.webp';
-import angular from '../../../images/industries/eCommerce/angular.webp';
-import vueJs from '../../../images/industries/eCommerce/vue-js.webp';
-import flutter from '../../../images/industries/eCommerce/flutter.webp';
-import swift from '../../../images/industries/eCommerce/swift.webp';
-import kotlin from '../../../images/industries/eCommerce/kotlin.webp';
-import { useLocation } from "react-router-dom";
+const nodejs = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/nodejs.webp`;
+const typescript = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/typescript.webp`;
+const dotNet = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/dot-net.webp`;
+const java = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/java.webp`;
+const python = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/python.webp`;
+const rubyRails = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/Ruby-on-Rails.webp`;
+const react = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/react.webp`;
+const angular = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/angular.webp`;
+const vueJs = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/vue-js.webp`;
+const flutter = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/flutter.webp`;
+const swift = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/swift.webp`;
+const kotlin = `${process.env.REACT_APP_API_URL}/assests/images/industries/eCommerce/kotlin.webp`;
+
 
 function Ecommerce(){
 

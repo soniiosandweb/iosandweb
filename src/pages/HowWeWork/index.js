@@ -4,18 +4,17 @@ import { Container, Row, Col } from "react-bootstrap";
 import SEO from "../../components/SEO";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
-
-import howWeWorkImage from '../../images/how-we-work/how-we-work.webp';
-
-import briefing from '../../images/how-we-work/briefing.webp';
-import researching from '../../images/how-we-work/researching.webp';
-import evolving from '../../images/how-we-work/evolving.webp';
-import wrappingUp from '../../images/how-we-work/wrapping-up.webp';
-
 import DevelopmentProcess from "../../components/DevelopmentProcess";
 import GetStarted from "../../components/GetStarted";
 import TypeWritter from "../../components/TypeWritter";
 import { useLocation } from "react-router-dom";
+
+const howWeWorkImage = `${process.env.REACT_APP_API_URL}/assests/images/how-we-work/how-we-work.webp`;
+
+const briefing = `${process.env.REACT_APP_API_URL}/assests/images/how-we-work/briefing.webp`;
+const researching = `${process.env.REACT_APP_API_URL}/assests/images/how-we-work/researching.webp`;
+const evolving = `${process.env.REACT_APP_API_URL}/assests/images/how-we-work/evolving.webp`;
+const wrappingUp = `${process.env.REACT_APP_API_URL}/assests/images/how-we-work/wrapping-up.webp`;
 
 function HowWeWork(){
 

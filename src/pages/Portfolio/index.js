@@ -8,9 +8,9 @@ import { useEffect, useState } from "react";
 import axios from 'axios';
 import SEO from "../../components/SEO";
 import TypeWritter from "../../components/TypeWritter";
-
-import portfolioImage from '../../images/Project-Portfolio.webp';
 import { useLocation } from "react-router-dom";
+
+const portfolioImage = `${process.env.REACT_APP_API_URL}/assests/images/Project-Portfolio.webp`;
 
 function Portfolio(){
 

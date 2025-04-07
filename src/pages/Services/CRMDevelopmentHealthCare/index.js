@@ -9,18 +9,18 @@ import GetStarted from "../../../components/GetStarted";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCogs, faHandshake, faNewspaper, faRefresh } from "@fortawesome/free-solid-svg-icons";
 import { faTasks, faHospitalUser, faHandshakeAngle, faUser, faHospitalWide, faUserDoctor, faBriefcaseClock } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router-dom";
 
 // Relationship management section images
-import streamlineProcess from '../../../images/services/crm-development-healthcare/streamlining-process.webp';
-import betterCareDelivery from '../../../images/services/crm-development-healthcare/better-care-delivery.webp';
-import betterCarePatients from '../../../images/services/crm-development-healthcare/better-care-patients.webp';
+const streamlineProcess = `${process.env.REACT_APP_API_URL}/assests/images/services/crm-development-healthcare/streamlining-process.webp`;
+const betterCareDelivery = `${process.env.REACT_APP_API_URL}/assests/images/services/crm-development-healthcare/better-care-delivery.webp`;
+const betterCarePatients = `${process.env.REACT_APP_API_URL}/assests/images/services/crm-development-healthcare/better-care-patients.webp`;
 
 // final reflection images
-import softwareDevelopment from '../../../images/services/software-development/software-development.png';
-import webDevelopment from '../../../images/services/software-development/app-development.png';
-import magento from '../../../images/services/software-development/magento.png';
-import shopify from '../../../images/services/software-development/shopify.png';
-import { useLocation } from "react-router-dom";
+const softwareDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/software-development.png`;
+const webDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/app-development.png`;
+const magento = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/magento.png`;
+const shopify = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/shopify.png`;
 
 function CRMDevelopmentHealthCare(){
 

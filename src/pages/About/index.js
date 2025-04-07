@@ -6,25 +6,25 @@ import {useCountUp} from "react-countup";
 
 // Join Team
 import JoinTeamGallery from '../../components/JoinTeamGallery';
+import { useLocation } from "react-router-dom";
 
 // work life images
-import learningDev from '../../images/about/learning-dev.jpg';
-import mindful from '../../images/about/Mindful-Personal-Guidance.jpg';
-import constructiveFeedback from '../../images/about/Constructive-Feedback.jpg';
-import inclusive from '../../images/about/Inclusive-Open-Culture.jpg';
-import innovation from '../../images/about/Innovation-Quality-First.jpg';
-import proactive from '../../images/about/Proactive-Implementation.jpg';
-import bestGlobal from '../../images/about/Best-Global-Opportunities.jpg';
-import workLatest from '../../images/about/Work-with-Latest-Technology.jpg';
+const learningDev = `${process.env.REACT_APP_API_URL}/assests/images/about/learning-dev.jpg`;
+const mindful = `${process.env.REACT_APP_API_URL}/assests/images/about/Mindful-Personal-Guidance.jpg`;
+const constructiveFeedback = `${process.env.REACT_APP_API_URL}/assests/images/about/Constructive-Feedback.jpg`;
+const inclusive = `${process.env.REACT_APP_API_URL}/assests/images/about/Inclusive-Open-Culture.jpg`;
+const innovation = `${process.env.REACT_APP_API_URL}/assests/images/about/Innovation-Quality-First.jpg`;
+const proactive = `${process.env.REACT_APP_API_URL}/assests/images/about/Proactive-Implementation.jpg`;
+const bestGlobal = `${process.env.REACT_APP_API_URL}/assests/images/about/Best-Global-Opportunities.jpg`;
+const workLatest = `${process.env.REACT_APP_API_URL}/assests/images/about/Work-with-Latest-Technology.jpg`;
 
 // achievements images
-import clutch from '../../images/about/clutch-logo.png';
-import appFutura from '../../images/about/app-futura-logo.png';
-import itFirms from '../../images/about/it-firms-logo.png';
-import goodFirms from '../../images/about/goodfirms-logo.png';
-import topDevelopers from '../../images/about/top-developers-logo.png';
-import upWork from '../../images/about/upwork-logo.png';
-import { useLocation } from "react-router-dom";
+const clutch = `${process.env.REACT_APP_API_URL}/assests/images/about/clutch-logo.png`;
+const appFutura = `${process.env.REACT_APP_API_URL}/assests/images/about/app-futura-logo.png`;
+const itFirms = `${process.env.REACT_APP_API_URL}/assests/images/about/it-firms-logo.png`;
+const goodFirms = `${process.env.REACT_APP_API_URL}/assests/images/about/goodfirms-logo.png`;
+const topDevelopers = `${process.env.REACT_APP_API_URL}/assests/images/about/top-developers-logo.png`;
+const upWork = `${process.env.REACT_APP_API_URL}/assests/images/about/upwork-logo.png`;
 
 function About(){
 

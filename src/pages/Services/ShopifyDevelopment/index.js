@@ -5,23 +5,22 @@ import SEO from "../../../components/SEO";
 import NumbersCards from "../../../components/NumbersCards";
 import ContactForm from "../../../components/ContactForm";
 import GetStarted from "../../../components/GetStarted";
-
-// Reasons section images
-import mobileOptimizing from '../../../images/services/shopify-development/mobile-optimizing.png';
-import paymentSecurity from '../../../images/services/shopify-development/payment-security.png';
-import monetarySystem from '../../../images/services/shopify-development/monetary-system.png';
-import clientAssistance from '../../../images/services/shopify-development/client-assistance.png';
-import productImage from '../../../images/services/shopify-development/3d-product.png';
-
+import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLineChart, faGears, faMobileAlt, faShoppingBag, faExchange, faRefresh } from "@fortawesome/free-solid-svg-icons";
 
+// Reasons section images
+const mobileOptimizing = `${process.env.REACT_APP_API_URL}/assests/images/services/shopify-development/mobile-optimizing.png`;
+const paymentSecurity = `${process.env.REACT_APP_API_URL}/assests/images/services/shopify-development/payment-security.png`;
+const monetarySystem = `${process.env.REACT_APP_API_URL}/assests/images/services/shopify-development/monetary-system.png`;
+const clientAssistance = `${process.env.REACT_APP_API_URL}/assests/images/services/shopify-development/client-assistance.png`;
+const productImage = `${process.env.REACT_APP_API_URL}/assests/images/services/shopify-development/3d-product.png`;
+
 // final reflection images
-import softwareDevelopment from '../../../images/services/software-development/software-development.png';
-import webDevelopment from '../../../images/services/software-development/app-development.png';
-import crmDevelopment from '../../../images/services/software-development/crm-development.png';
-import magentoDevelopment from '../../../images/services/software-development/magento.png';
-import { useLocation } from "react-router-dom";
+const softwareDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/software-development.png`;
+const webDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/app-development.png`;
+const crmDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/crm-development.png`;
+const magentoDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/magento.png`;
 
 function ShopifyDevelopment(){
 

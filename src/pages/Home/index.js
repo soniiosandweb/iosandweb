@@ -7,8 +7,6 @@ import { Accordion } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-import homeBanner from '../../images/home/home-banner.webp';
-
 // Award
 import AwardsSlider from "../../components/AwardsSlider";
 
@@ -18,45 +16,47 @@ import Partners from "../../components/Partners";
 // why choose section
 import WhyChoose from "../../components/WhyChoose";
 
+const homeBanner = `${process.env.REACT_APP_API_URL}/assests/images/home/home-banner.webp`;
+
 // services images
-import aiml from '../../images/home/service-ai-ml.svg';
-import mobileApp from '../../images/home/Mobile-app.svg';
-import softwareDevelopment from '../../images/home/Software-Development.svg';
-import digitalTransformation from '../../images/home/Digital-Transformation.svg';
-import dataScience from '../../images/home/Data-Science-Analytics.svg';
-import cloudServices from '../../images/home/Cloud-Services.svg';
-import blockChain from '../../images/home/Blockchain-Services.svg';
-import ideationDesign from '../../images/home/ideation-design.svg';
+const aiml = `${process.env.REACT_APP_API_URL}/assests/images/home/service-ai-ml.svg`;
+const mobileApp = `${process.env.REACT_APP_API_URL}/assests/images/home/Mobile-app.svg`;
+const softwareDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/home/Software-Development.svg`;
+const digitalTransformation = `${process.env.REACT_APP_API_URL}/assests/images/home/Digital-Transformation.svg`;
+const dataScience = `${process.env.REACT_APP_API_URL}/assests/images/home/Data-Science-Analytics.svg`;
+const cloudServices = `${process.env.REACT_APP_API_URL}/assests/images/home/Cloud-Services.svg`;
+const blockChain = `${process.env.REACT_APP_API_URL}/assests/images/home/Blockchain-Services.svg`;
+const ideationDesign = `${process.env.REACT_APP_API_URL}/assests/images/home/ideation-design.svg`;
 
 // industries images
-import healthCare from '../../images/home/health-care.png';
-import finance from '../../images/home/finance.png';
-import restaurant from '../../images/home/restaurant.png';
-import ecommerce from '../../images/home/ecommerce-indus.svg';
-import realEstate from '../../images/home/real-estate.png';
-import banking from '../../images/home/banking.png';
-import travel from '../../images/home/travel.png';
-import entertainment from '../../images/home/entertainment.png';
-import onDemand from '../../images/home/on-demand-indus.svg';
-import socialMedia from '../../images/home/social-networking-indus.svg';
-import generativeAI from '../../images/home/artificial-intelligence.png';
-import edtech from '../../images/home/education-indus.svg';
+const healthCare = `${process.env.REACT_APP_API_URL}/assests/images/home/health-care.png`;
+const finance = `${process.env.REACT_APP_API_URL}/assests/images/home/finance.png`;
+const restaurant = `${process.env.REACT_APP_API_URL}/assests/images/home/restaurant.png`;
+const ecommerce = `${process.env.REACT_APP_API_URL}/assests/images/home/ecommerce-indus.svg`;
+const realEstate = `${process.env.REACT_APP_API_URL}/assests/images/home/real-estate.png`;
+const banking = `${process.env.REACT_APP_API_URL}/assests/images/home/banking.png`;
+const travel = `${process.env.REACT_APP_API_URL}/assests/images/home/travel.png`;
+const entertainment = `${process.env.REACT_APP_API_URL}/assests/images/home/entertainment.png`;
+const onDemand = `${process.env.REACT_APP_API_URL}/assests/images/home/on-demand-indus.svg`;
+const socialMedia = `${process.env.REACT_APP_API_URL}/assests/images/home/social-networking-indus.svg`;
+const generativeAI = `${process.env.REACT_APP_API_URL}/assests/images/home/artificial-intelligence.png`;
+const edtech = `${process.env.REACT_APP_API_URL}/assests/images/home/education-indus.svg`;
 
 // Partnership images
-import awsLogo from '../../images/home/aws-partner.svg';
-import mongoDB from '../../images/home/mongodb-partner.svg';
-import googleCloud from '../../images/home/google-cloud-partner.svg';
-import cloudinary from '../../images/home/cloudinary-partner.svg';
+const awsLogo = `${process.env.REACT_APP_API_URL}/assests/images/home/aws-partner.svg`;
+const mongoDB = `${process.env.REACT_APP_API_URL}/assests/images/home/mongodb-partner.svg`;
+const googleCloud = `${process.env.REACT_APP_API_URL}/assests/images/home/google-cloud-partner.svg`;
+const cloudinary = `${process.env.REACT_APP_API_URL}/assests/images/home/cloudinary-partner.svg`;
 
 // Testimonial images
-import danKurth from '../../images/home/dan-kurth.png';
-import josh from '../../images/home/josh-testimonial.png';
-import geema from '../../images/home/geema-testimonial.png';
-import ericBakey from '../../images/home/eric-bakey.png';
-import paulAzzurro from '../../images/home/Paul-Azzurro.png';
-import kevinTang from '../../images/home/kevin-tang.png';
-import martyJames from '../../images/home/Marty-James.png';
-import robertTa from '../../images/home/Robert-Ta.png';
+const danKurth = `${process.env.REACT_APP_API_URL}/assests/images/home/dan-kurth.png`;
+const josh = `${process.env.REACT_APP_API_URL}/assests/images/home/josh-testimonial.png`;
+const geema = `${process.env.REACT_APP_API_URL}/assests/images/home/geema-testimonial.png`;
+const ericBakey = `${process.env.REACT_APP_API_URL}/assests/images/home/eric-bakey.png`;
+const paulAzzurro = `${process.env.REACT_APP_API_URL}/assests/images/home/Paul-Azzurro.png`;
+const kevinTang = `${process.env.REACT_APP_API_URL}/assests/images/home/kevin-tang.png`;
+const martyJames = `${process.env.REACT_APP_API_URL}/assests/images/home/Marty-James.png`;
+const robertTa = `${process.env.REACT_APP_API_URL}/assests/images/home/Robert-Ta.png`;
 
 // Home video
 const homeVideo = `${process.env.REACT_APP_API_URL}/assests/home-video.mp4`;

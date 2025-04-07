@@ -8,11 +8,11 @@ import GetStarted from "../../../components/GetStarted";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faCogs, faHandshake, faNewspaper, faRefresh } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router-dom";
 
 // final reflection images
-import webDesigning from '../../../images/services/web-designing/web-designing.png';
-import graphicDesign from '../../../images/services/web-designing/graphic-design.png';
-import { useLocation } from "react-router-dom";
+const webDesigning = `${process.env.REACT_APP_API_URL}/assests/images/services/web-designing/web-designing.png`;
+const graphicDesign = `${process.env.REACT_APP_API_URL}/assests/images/services/web-designing/graphic-design.png`;
 
 function PdfToHtml(){
 

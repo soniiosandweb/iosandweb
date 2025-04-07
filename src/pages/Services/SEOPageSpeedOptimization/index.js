@@ -8,23 +8,23 @@ import GetStarted from "../../../components/GetStarted";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDot } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router-dom";
 
 // Reasons section images
-import contentDelivery from '../../../images/services/seo-page-speed-optimization/content-delivery-network.png';
-import migrratingHost from '../../../images/services/seo-page-speed-optimization/migrating-new-host.png';
-import minimizeFileSize from '../../../images/services/seo-page-speed-optimization/minimize-file-size.png';
-import reducePlugins from '../../../images/services/seo-page-speed-optimization/reduce-plugins.png';
-import avoidJs from '../../../images/services/seo-page-speed-optimization/avoid-js.png';
-import compression from '../../../images/services/seo-page-speed-optimization/compression.png';
-import reduceRedirects from '../../../images/services/seo-page-speed-optimization/reduce-redirects.png';
-import browserCache from '../../../images/services/seo-page-speed-optimization/browser-cache.png';
+const contentDelivery = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-page-speed-optimization/content-delivery-network.png`;
+const migrratingHost = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-page-speed-optimization/migrating-new-host.png`;
+const minimizeFileSize = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-page-speed-optimization/minimize-file-size.png`;
+const reducePlugins = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-page-speed-optimization/reduce-plugins.png`;
+const avoidJs = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-page-speed-optimization/avoid-js.png`;
+const compression = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-page-speed-optimization/compression.png`;
+const reduceRedirects = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-page-speed-optimization/reduce-redirects.png`;
+const browserCache = `${process.env.REACT_APP_API_URL}/assests/images/services/seo-page-speed-optimization/browser-cache.png`;
 
 // Final Reflection images
-import socialMediaMarketing from '../../../images/services/digital-marketing/social-media-marketing.png';
-import SEOIcon from '../../../images/services/digital-marketing/seo-icon.png';
-import proofreading from '../../../images/services/digital-marketing/proofreading.png';
-import b2b from '../../../images/services/digital-marketing/b2b.png';
-import { useLocation } from "react-router-dom";
+const socialMediaMarketing = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/social-media-marketing.png`;
+const SEOIcon = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/seo-icon.png`;
+const proofreading = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/proofreading.png`;
+const b2b = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/b2b.png`;
 
 function SEOPageSpeedOptimization(){
 

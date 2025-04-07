@@ -9,25 +9,26 @@ import NumbersCards from "../../../components/NumbersCards";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDot } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router-dom";
 
 // reasons to choose images
-import designDevelopment from '../../../images/services/software-development/design-development.png';
-import moreSecure from '../../../images/services/software-development/more-secure.png';
-import participate from '../../../images/services/software-development/participate.png';
-import lowerCosts from '../../../images/services/software-development/lower-costs.png';
-import stepAbove from '../../../images/services/software-development/step-above.png';
-import routineTasks from '../../../images/services/software-development/routine-tasks.png';
-import humanErrors from '../../../images/services/software-development/human-error.png';
-import integration from '../../../images/services/software-development/integration.png';
-import instantSupport from '../../../images/services/software-development/instant-support.png';
-import license from '../../../images/services/software-development/license.png';
+const designDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/design-development.png`;
+const moreSecure = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/more-secure.png`;
+const participate = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/participate.png`;
+const lowerCosts = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/lower-costs.png`;
+const stepAbove = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/step-above.png`;
+const routineTasks = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/routine-tasks.png`;
+const humanErrors = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/human-error.png`;
+const integration = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/integration.png`;
+const instantSupport = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/instant-support.png`;
+const license = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/license.png`;
 
 // final reflection images
-import webDevelopment from '../../../images/services/software-development/app-development.png';
-import crmDevelopment from '../../../images/services/software-development/crm-development.png';
-import magento from '../../../images/services/software-development/magento.png';
-import shopify from '../../../images/services/software-development/shopify.png';
-import { useLocation } from "react-router-dom";
+const webDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/app-development.png`;
+const crmDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/crm-development.png`;
+const magento = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/magento.png`;
+const shopify = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/shopify.png`;
+
 
 function SoftwareDevelopment(){
 

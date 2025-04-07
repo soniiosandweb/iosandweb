@@ -9,30 +9,30 @@ import { Accordion } from "react-bootstrap";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDot } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router-dom";
 
 // Reasons section images
-import localSeo from '../../../images/services/seo/local-seo.png';
-import ecommerceSeo from '../../../images/services/seo/ecommerce-seo.png';
-import bingSeo from '../../../images/services/seo/bing-seo.png';
-import keywardResearch from '../../../images/services/seo/keywords-research.png';
-import competitiveAnalysis from '../../../images/services/seo/competitive-analysi.png';
-import auditOptimization from '../../../images/services/seo/website-audit-optimization.png';
-import analyticsResearch from '../../../images/services/seo/analytics-research.png';
-import trafficGeneration from '../../../images/services/seo/traffic-generation.png';
-import contentMarketing from '../../../images/services/seo/content-marketing.png';
-import technicalSeo from '../../../images/services/seo/technical-seo.png';
-import reporting from '../../../images/services/seo/reporting.png';
-import penaltyRecoery from '../../../images/services/seo/penalty-recovery.png';
+const localSeo = `${process.env.REACT_APP_API_URL}/assests/images/services/seo/local-seo.png`;
+const ecommerceSeo = `${process.env.REACT_APP_API_URL}/assests/images/services/seo/ecommerce-seo.png`;
+const bingSeo = `${process.env.REACT_APP_API_URL}/assests/images/services/seo/bing-seo.png`;
+const keywardResearch = `${process.env.REACT_APP_API_URL}/assests/images/services/seo/keywords-research.png`;
+const competitiveAnalysis = `${process.env.REACT_APP_API_URL}/assests/images/services/seo/competitive-analysi.png`;
+const auditOptimization = `${process.env.REACT_APP_API_URL}/assests/images/services/seo/website-audit-optimization.png`;
+const analyticsResearch = `${process.env.REACT_APP_API_URL}/assests/images/services/seo/analytics-research.png`;
+const trafficGeneration = `${process.env.REACT_APP_API_URL}/assests/images/services/seo/traffic-generation.png`;
+const contentMarketing = `${process.env.REACT_APP_API_URL}/assests/images/services/seo/content-marketing.png`;
+const technicalSeo = `${process.env.REACT_APP_API_URL}/assests/images/services/seo/technical-seo.png`;
+const reporting = `${process.env.REACT_APP_API_URL}/assests/images/services/seo/reporting.png`;
+const penaltyRecoery = `${process.env.REACT_APP_API_URL}/assests/images/services/seo/penalty-recovery.png`;
 
 // Final Reflection images
-import socialMediaMarketing from '../../../images/services/digital-marketing/social-media-marketing.png';
-import pageSpeed from '../../../images/services/digital-marketing/page-speed.png';
-import proofreading from '../../../images/services/digital-marketing/proofreading.png';
-import b2b from '../../../images/services/digital-marketing/b2b.png';
-import birmingham from '../../../images/services/seo/seo-service.png';
-import peterborough from '../../../images/services/seo/seo-service1.png';
-import sheffield from '../../../images/services/seo/seo-service2.png';
-import { useLocation } from "react-router-dom";
+const socialMediaMarketing = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/social-media-marketing.png`;
+const pageSpeed = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/page-speed.png`;
+const proofreading = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/proofreading.png`;
+const b2b = `${process.env.REACT_APP_API_URL}/assests/images/services/digital-marketing/b2b.png`;
+const birmingham = `${process.env.REACT_APP_API_URL}/assests/images/services/seo/seo-service.png`;
+const peterborough = `${process.env.REACT_APP_API_URL}/assests/images/services/seo/seo-service1.png`;
+const sheffield = `${process.env.REACT_APP_API_URL}/assests/images/services/seo/seo-service2.png`;
 
 function SEOService(){
 

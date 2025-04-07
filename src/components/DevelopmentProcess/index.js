@@ -4,17 +4,17 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import OwlCarousel from "react-owl-carousel";
 
 // development section icons
-import planning from '../../images/services/planning.png';
-import design from '../../images/services/design.png';
-import webDevelopment from '../../images/services/web-development.png';
-import qualityAnalyst from '../../images/services/quality-analyst.png';
-import maintenance from '../../images/services/maintenance.png';
+const planning = `${process.env.REACT_APP_API_URL}/assests/images/services/planning.png`;
+const design = `${process.env.REACT_APP_API_URL}/assests/images/services/design.png`;
+const webDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/services/web-development.png`;
+const qualityAnalyst = `${process.env.REACT_APP_API_URL}/assests/images/services/quality-analyst.png`;
+const maintenance = `${process.env.REACT_APP_API_URL}/assests/images/services/maintenance.png`;
 
-import planningImage from '../../images/services/planning-image.webp';
-import designImage from '../../images/services/web-design-image.webp';
-import developmentImage from '../../images/services/web-development-image.webp';
-import qualityAnalystImage from '../../images/services/quality-analyst-image.webp';
-import maintenanceImage from '../../images/services/maintenance-image.webp';
+const planningImage = `${process.env.REACT_APP_API_URL}/assests/images/services/planning-image.webp`;
+const designImage = `${process.env.REACT_APP_API_URL}/assests/images/services/web-design-image.webp`;
+const developmentImage = `${process.env.REACT_APP_API_URL}/assests/images/services/web-development-image.webp`;
+const qualityAnalystImage = `${process.env.REACT_APP_API_URL}/assests/images/services/quality-analyst-image.webp`;
+const maintenanceImage = `${process.env.REACT_APP_API_URL}/assests/images/services/maintenance-image.webp`;
 
 function DevelopmentProcess(){
     const options = {

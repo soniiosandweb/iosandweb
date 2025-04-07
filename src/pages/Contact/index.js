@@ -5,14 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import SEO from "../../components/SEO";
 import ContactForm from "../../components/ContactForm";
+import { useLocation } from "react-router-dom";
 
 
 // location images
-import locIndia from '../../images/contact/cont-loc-india.svg';
-import locUK from '../../images/contact/cont-loc-uk.svg';
-import locUS from '../../images/contact/cont-loc-usa.svg';
-import contactImage from '../../images/contact/contact-footer.webp';
-import { useLocation } from "react-router-dom";
+const locIndia = `${process.env.REACT_APP_API_URL}/assests/images/contact/cont-loc-india.svg`;
+const locUK = `${process.env.REACT_APP_API_URL}/assests/images/contact/cont-loc-uk.svg`;
+const locUS = `${process.env.REACT_APP_API_URL}/assests/images/contact/cont-loc-usa.svg`;
+const contactImage = `${process.env.REACT_APP_API_URL}/assests/images/contact/contact-footer.webp`;
 
 function Contact(){
 
