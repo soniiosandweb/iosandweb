@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import './style.css';
 import { Container, Row, Col, Spinner } from "react-bootstrap";
 import ReactPaginate from "react-paginate"; 
@@ -16,6 +16,7 @@ const defaultImage = `${process.env.REACT_APP_API_URL}/assests/images/placeholde
 function Blog(){
 
     const location = useLocation();
+    const blogRef = useRef();
 
     const [data, setData] = useState([])
     const [page, setPage] = useState(0);
@@ -23,9 +24,14 @@ function Blog(){
     const [loading, setLoading] = useState(true);
     const n = 12;
 
+    const handlePageClick = (pageNumber) => {
+        setPage(pageNumber);
+        blogRef.current.scrollIntoView();
+    }
+
     useEffect(() => {
 
-        axios.get(`${process.env.REACT_APP_BLOG_API_URL}/blog-api.php`)
+        axios.get(`${process.env.REACT_APP_API_URL}/api/blog.php`)
         .then(res => {
             setData(res.data);
             setFilterData(
@@ -69,7 +75,7 @@ function Blog(){
 
             {/* blog list section */}
             
-            <div className="blog-page section-padding">
+            <div className="blog-page section-padding" ref={blogRef}>
                 <Container>
                     <Row className="blogs-list">
                         {
@@ -86,10 +92,10 @@ function Blog(){
                                     <Col md={6} lg={4} className="blog-col" key={item.id}>
                                         <div className="blog-list-item">
                                             <a key={index} href={"blog/"+item.url}>
-                                                <img src={item.image ? item.image : defaultImage} className="blog-image" alt="Proven Strategies" />
+                                                <img src={item.image ? `${process.env.REACT_APP_BLOG_API_URL}/wp-content/uploads/${item.image}` : defaultImage} className="blog-image" alt="Proven Strategies" />
                                             </a>
                                             <div className="blog-detail">
-                                                <h5><span className="blog-date">{item.date}</span></h5>
+                                                <p><span className="blog-date">{item.date}</span></p>
                                                 <a key={index} href={"blog/"+item.url}>
                                                     <h4>{item.title}</h4>
                                                 </a>
@@ -103,7 +109,7 @@ function Blog(){
                                     containerClassName={"pagination"}
                                     pageClassName={"page-item"}
                                     activeClassName={"active"}
-                                    onPageChange={(event) => setPage(event.selected)}
+                                    onPageChange={(event) => handlePageClick(event.selected)}
                                     pageCount={Math.ceil(data.length / n)}
                                     breakLabel="..."
                                     previousLabel={

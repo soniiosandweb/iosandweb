@@ -26,7 +26,7 @@ function BlogDetails(){
 
         axios({
             method: "post",
-            url: `${process.env.REACT_APP_BLOG_API_URL}/blog-details-api.php`,
+            url: `${process.env.REACT_APP_API_URL}/api/blog-details.php`,
             data: JSON.stringify({
                 post_url: url
                 }),
@@ -58,10 +58,10 @@ function BlogDetails(){
         if(blogId && blogId !== null){
             axios({
                 method: "post",
-                url: `${process.env.REACT_APP_BLOG_API_URL}/related-blog-api.php`,
+                url: `${process.env.REACT_APP_API_URL}/api/related-blog.php`,
                 data: JSON.stringify({
                     post_url: blogId
-                    }),
+                }),
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
             })
             .then(res => {
@@ -106,7 +106,8 @@ function BlogDetails(){
                         canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
                     />
 
-                    <div className="blog-detail-page section-padding" style={{backgroundImage: `url(${image ? image : defaultImage})`}}>
+                    <div className="blog-detail-page section-padding">
+                        <img src={image ? `${process.env.REACT_APP_BLOG_API_URL}/wp-content/uploads/${image}` : defaultImage} alt={title} className="blog-details-image" />
                         <div className="blog-bg"></div>
                         <Container>
                             <Row>
@@ -151,13 +152,13 @@ function BlogDetails(){
                             <>
                                 {relatedPost && relatedPost.map((item, index) => 
                             
-                                    <Col lg={6} xl={3} className="blog-col" key={item.id}>
+                                    <Col md={6} xl={3} className="blog-col" key={item.id}>
                                         <div className="blog-list-item related-blog-item">
                                             <a key={index} href={"/blog/"+item.url}>
-                                                <img src={item.image ? item.image : defaultImage} className="blog-image" alt="Proven Strategies" />
+                                                <img src={item.image ? `${process.env.REACT_APP_BLOG_API_URL}/wp-content/uploads/${item.image}` : defaultImage} className="blog-image" alt="Proven Strategies" />
                                             </a>
                                             <div className="blog-detail">
-                                                <h5><span className="blog-date">{item.date}</span></h5>
+                                                <p><span className="blog-date">{item.date}</span></p>
                                                 <a key={index} href={"/blog/"+item.url}>
                                                     <h4>{item.title}</h4>
                                                 </a>

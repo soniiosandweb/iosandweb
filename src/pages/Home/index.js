@@ -169,7 +169,7 @@ function Home() {
                                 <div className="service-card">
                                     <a href="/custom-software-development-company" className="bg-orange">
                                         <div className="service-icon">
-                                            <img src={softwareDevelopment} className="service-img" alt="Software Development" />
+                                            <img src={softwareDevelopment} className="service-img" alt="Software" />
                                         </div>
                                         <p className="service-text">Software<br/>Development</p>
                                     </a>
@@ -185,7 +185,7 @@ function Home() {
                                 <div className="service-card">
                                     <a href="/web-development-services" className="bg-blue">
                                         <div className="service-icon">
-                                            <img src={digitalTransformation} className="service-img" alt="Web Development" />
+                                            <img src={digitalTransformation} className="service-img" alt="Web" />
                                         </div>
                                         <p className="service-text">Web<br/>Development</p>
                                     </a>
@@ -193,7 +193,7 @@ function Home() {
                                 <div className="service-card">
                                     <a href="https://www.blockchain77.com/services/" target="_blank" rel="noreferrer" className="bg-red">
                                         <div className="service-icon">
-                                            <img src={aiml} className="service-img" alt="Development of POC & ICO" />
+                                            <img src={aiml} className="service-img" alt="Development POC" />
                                         </div>
                                         <p className="service-text">Development of <br/>POC & ICO</p>
                                     </a>
@@ -202,7 +202,7 @@ function Home() {
                                 <div className="service-card">
                                     <a href="/digital-marketing-services" className="bg-green">
                                         <div className="service-icon">
-                                            <img src={dataScience} className="service-img" alt="Digital Transformation" />
+                                            <img src={dataScience} className="service-img" alt="Digital" />
                                         </div>
                                         <p className="service-text">Digital <br/>Transformation</p>
                                     </a>
@@ -210,7 +210,7 @@ function Home() {
                                 <div className="service-card">
                                     <a href="/ppc-services" className="bg-gray">
                                         <div className="service-icon">
-                                            <img src={cloudServices} className="service-img" alt="PPC Services" />
+                                            <img src={cloudServices} className="service-img" alt="PPC" />
                                         </div>
                                         <p className="service-text">Pay Per Click <br/>Services</p>
                                     </a>
@@ -218,7 +218,7 @@ function Home() {
                                 <div className="service-card">
                                     <a href="https://www.blockchain77.com/services/" target="_blank" rel="noreferrer" className="bg-pink">
                                         <div className="service-icon">
-                                            <img src={blockChain} className="service-img" alt="Blockchain Services" />
+                                            <img src={blockChain} className="service-img" alt="Blockchain" />
                                         </div>
                                         <p className="service-text">Blockchain<br/>Services</p>
                                     </a>
@@ -251,7 +251,7 @@ function Home() {
                                 <div className="grid_colm_item">
                                     <a className="grid_colm_item_link" href="/ecommerce-app-development">
                                         <figure>
-                                            <img src={ecommerce} alt="eCommerce" />
+                                            <img src={ecommerce} alt="Commerce" />
                                         </figure>
                                         <div className="grid_colm_head">eCommerce</div>
                                     </a>
@@ -259,7 +259,7 @@ function Home() {
                                 <div className="grid_colm_item">
                                     <a className="grid_colm_item_link" href="/real-estate-app-development">
                                         <figure>
-                                            <img src={realEstate} alt="Real Estate" />
+                                            <img src={realEstate} alt="Real Est" />
                                         </figure>
                                         <div className="grid_colm_head">Real Estate</div>
                                     </a>
@@ -267,7 +267,7 @@ function Home() {
                                 <div className="grid_colm_item">
                                     <a className="grid_colm_item_link" href="/generative-ai-development">
                                         <figure>
-                                            <img src={generativeAI} alt="Generative AI" />
+                                            <img src={generativeAI} alt="AI" />
                                         </figure>
                                         <div className="grid_colm_head">Generative AI</div>
                                     </a>
@@ -275,7 +275,7 @@ function Home() {
                                 <div className="grid_colm_item">
                                     <a className="grid_colm_item_link" href="/healthcare-software-development">
                                         <figure>
-                                            <img src={healthCare} alt="Healthcare" />
+                                            <img src={healthCare} alt="Health" />
                                         </figure>
                                         <div className="grid_colm_head">Healthcare</div>  
                                     </a>
@@ -283,7 +283,7 @@ function Home() {
                                 <div className="grid_colm_item">
                                     <a className="grid_colm_item_link" href="/">
                                         <figure>
-                                            <img src={finance} alt="Finance" />
+                                            <img src={finance} alt="Money" />
                                         </figure>
                                         <div className="grid_colm_head">Finance</div>
                                     </a>
@@ -291,7 +291,7 @@ function Home() {
                                 <div className="grid_colm_item">
                                     <a className="grid_colm_item_link" href="/">
                                         <figure>
-                                            <img src={restaurant} alt="Restaurant" />
+                                            <img src={restaurant} alt="Rest" />
                                         </figure>
                                         <div className="grid_colm_head">Restaurant</div>
                                     </a>
@@ -299,7 +299,7 @@ function Home() {
                                 <div className="grid_colm_item">
                                     <a className="grid_colm_item_link" href="/">
                                         <figure>
-                                            <img src={banking} alt="Banking" />
+                                            <img src={banking} alt="Bank" />
                                         </figure>
                                         <div className="grid_colm_head">Banking</div>
                                     </a>
@@ -307,7 +307,7 @@ function Home() {
                                 <div className="grid_colm_item">
                                     <a className="grid_colm_item_link" href="/">
                                         <figure>
-                                            <img src={travel} alt="Travel" />
+                                            <img src={travel} alt="Tour" />
                                         </figure>
                                         <div className="grid_colm_head">Travel</div>
                                     </a>
@@ -315,7 +315,7 @@ function Home() {
                                 <div className="grid_colm_item border-bottom-none">
                                     <a className="grid_colm_item_link" href="/">
                                         <figure>
-                                            <img src={entertainment} alt="Entertainment" />
+                                            <img src={entertainment} alt="Entertain" />
                                         </figure>
                                         <div className="grid_colm_head">Entertainment</div>
                                     </a>
@@ -323,7 +323,7 @@ function Home() {
                                 <div className="grid_colm_item border-bottom-none">
                                     <a className="grid_colm_item_link" href="/">
                                         <figure>
-                                            <img src={onDemand} alt="On-Demand" />
+                                            <img src={onDemand} alt="Demand" />
                                         </figure>
                                         <div className="grid_colm_head">On-Demand</div>
                                     </a>
@@ -331,7 +331,7 @@ function Home() {
                                 <div className="grid_colm_item border-bottom-none">
                                     <a className="grid_colm_item_link" href="/">
                                         <figure>
-                                            <img src={socialMedia} alt="Social Media" />
+                                            <img src={socialMedia} alt="Social" />
                                         </figure>
                                         <div className="grid_colm_head">Social Media</div>
                                     </a>
@@ -339,7 +339,7 @@ function Home() {
                                 <div className="grid_colm_item border-bottom-none">
                                     <a className="grid_colm_item_link" href="/">
                                         <figure>
-                                            <img src={edtech} alt="Education" />
+                                            <img src={edtech} alt="Study" />
                                         </figure>
                                         <div className="grid_colm_head">Education</div>
                                     </a>

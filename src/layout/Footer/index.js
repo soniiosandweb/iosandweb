@@ -202,11 +202,31 @@ function Footer(){
                         </Col>
                         <Col md={6} className="footer-social-col">
                             <ul className="social-links">
-                                <li><a href="https://www.facebook.com/iosandwebtechnologies/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faSquareFacebook} /></a></li>
-                                <li><a href="https://twitter.com/Iosandwebtech" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} /></a></li>
-                                <li><a href="https://www.instagram.com/iosandwebtechnologies/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                                <li><a href="https://www.linkedin.com/company/iosandweb-technologies" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                                <li><a href="https://api.whatsapp.com/send/?phone=919915841204&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faWhatsapp} /></a></li>
+                                <li>
+                                    <a href="https://www.facebook.com/iosandwebtechnologies/" target="_blank" aria-label="Facebook" rel="noreferrer">
+                                        <FontAwesomeIcon icon={faSquareFacebook} />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/Iosandwebtech" target="_blank" aria-label="Twitter" rel="noreferrer">
+                                        <FontAwesomeIcon icon={faTwitter} />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/iosandwebtechnologies/" target="_blank" aria-label="Instagram" rel="noreferrer">
+                                        <FontAwesomeIcon icon={faInstagram} />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/iosandweb-technologies" target="_blank"  aria-label="Linkedin" rel="noreferrer">
+                                        <FontAwesomeIcon icon={faLinkedin} />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://api.whatsapp.com/send/?phone=919915841204&text&type=phone_number&app_absent=0" target="_blank"  aria-label="Whatsapp" rel="noreferrer">
+                                        <FontAwesomeIcon icon={faWhatsapp} />
+                                    </a>
+                                </li>
                             </ul>
                         </Col>
                     </Row>
