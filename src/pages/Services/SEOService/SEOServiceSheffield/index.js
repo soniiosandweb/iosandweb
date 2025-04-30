@@ -46,8 +46,8 @@ function SEOServiceSheffield(){
                     <Row>
                         <Col lg={8} xl={6}>
                             <div className="heading-wrapper full-width">
-                                <h1>SEO Company in <span className="text-highlight">Sheffield</span></h1>
-                                <div className="heading5">Getting the ideal SEO company in Sheffield is crucial if you want to enhance your web visibility and boost business. At IosAndWeb Technologies, we understand that SEO can seem complex, but with the right guidance from the <b>top-rated SEO agency in Sheffield</b>, it becomes a lot more approachable.</div>
+                                <h1>SEO Services in <span className="text-highlight">Sheffield</span></h1>
+                                <div className="heading5">Getting the ideal SEO services in Sheffield is crucial if you want to enhance your web visibility and boost business. At IosAndWeb Technologies, we understand that SEO can seem complex, but with the right guidance from the <b>top-rated SEO agency in Sheffield</b>, it becomes a lot more approachable.</div>
                                 <div className="heading5">Whether you're not getting the traffic you want to your current website or looking to start a new, in-demand career, our SEO services in Sheffield are designed to help. Even if you're a beginner, SEO is relatively easy to learn once you get the hang of it, despite all the technical jargon. We may not promise you'll be on page one of Google overnight, but with the expertise of local SEO experts in Sheffield, we can guarantee you'll see results if you put in the work.</div>
                             </div>
                         </Col>
@@ -61,7 +61,7 @@ function SEOServiceSheffield(){
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2 text-center">Get SEO Services in Sheffield @IAW</h2>
+                            <h2 className="heading2 text-center">Best SEO Company in Sheffield @IAW</h2>
                             <div className="heading5 text-center">At one point or another, the abbreviation SEO was certainly referenced in a discussion about online marketing strategies. The relevance of SEO and its relation to search engines might already be familiar to you. However, what is SEO? We discuss SEO, its benefits for your business, and why you should be an SEO Specialist in Sheffield.</div>
 
                             <div className="heading5 text-center">As a top-rated SEO agency in Sheffield, we know how important SEO is to enhancing your online presence. If you are dealing with an SEO company in Sheffield or seeking SEO services in Sheffield, SEO mastery is the way to go when it comes to generating traffic and growing your business.</div>
