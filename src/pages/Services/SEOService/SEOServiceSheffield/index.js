@@ -33,8 +33,8 @@ function SEOServiceSheffield(){
     return(
         <>
             <SEO
-                title={"SEO Agency Services in Sheffield | Boost Rankings & Traffic"}
-                description={"Enhance your online presence with professional SEO services in Sheffield. Boost keywords rankings, increase traffic, and grow your business. Get started today!"}
+                title={"SEO Services in Sheffield | SEO Company | SEO Agency"}
+                description={"Get SEO Services in Sheffield. We are the Best SEO Company provides all SEO Services. For more enquiry us @ info@iosandweb.net"}
                 keywords={"SEO Sheffield, Sheffield SEO services, local SEO Sheffield, digital marketing Sheffield, SEO agency Sheffield, search engine optimization Sheffield"}
                 name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
