@@ -319,7 +319,7 @@ function SEOServiceSheffield(){
                             <p className="paragraph">We are confident that our dedication to creating ethical SEO strategies will finally be rewarded. The goal of SEO services in Sheffield is to increase revenues and multiply website traffic. Let's spend some time looking at the data and facts to help you build strong relationships with search engines such as Google, YouTube, and others, with the expertise of a <b>top-rated SEO agency in Sheffield.</b></p>
                         </Col>
                         <Col lg={6}>
-                            <img src={onlineMarketingImg} alt="Online Marketing" className="responsive-img" />
+                            <img src={onlineMarketingImg} alt="Provides Best SEO Services in Sheffield" className="responsive-img" />
                         </Col>
                     </Row>
                 </Container>
