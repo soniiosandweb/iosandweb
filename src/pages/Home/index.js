@@ -119,6 +119,113 @@ function Home() {
         ]
     }
 
+    const serviceSchema = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "IOSAndWeb Technologies",
+        "url": "https://iosandweb.net/",
+        "logo": "https://iosandweb.net/logo.png",
+        "serviceType": "Digital Marketing, SEO Services, PPC Advertising, Web Development, Mobile App Development",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Digital Services",
+            "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                "@type": "Service",
+                "name": "SEO Services",
+                "description": "On-page and off-page SEO strategies to improve search engine rankings and organic traffic.",
+                "areaServed": {
+                    "@type": "Place",
+                    "name": "India, USA, UK, Canada, Australia"
+                }
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                "@type": "Service",
+                "name": "PPC Advertising",
+                "description": "Pay-Per-Click campaign setup and management across Google Ads, Bing, and social platforms.",
+                "areaServed": {
+                    "@type": "Place",
+                    "name": "India, USA, UK, Canada, Australia"
+                }
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                "@type": "Service",
+                "name": "Web Development",
+                "description": "Custom website design and development using modern technologies including WordPress, Laravel, and React.",
+                "areaServed": {
+                    "@type": "Place",
+                    "name": "India, USA, UK, Canada, Australia"
+                }
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                "@type": "Service",
+                "name": "Mobile App Development",
+                "description": "Native and hybrid app development for iOS and Android platforms.",
+                "areaServed": {
+                    "@type": "Place",
+                    "name": "India, USA, UK, Canada, Australia"
+                }
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                "@type": "Service",
+                "name": "Digital Marketing",
+                "description": "Comprehensive digital marketing solutions including content marketing, email marketing, and social media.",
+                "areaServed": {
+                    "@type": "Place",
+                    "name": "India, USA, UK, Canada, Australia"
+                }
+                }
+            }
+            ]
+        }
+    }
+
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+            "@type": "Question",
+            "name": "What services does IOSAndWeb provide?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "IOSAndWeb offers digital marketing, web development, mobile app development, SEO, and PPC services."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "Where is IOSAndWeb located?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "IOSAndWeb is located in Zirakpur, Punjab, India."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "How can I contact IOSAndWeb?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can contact them via their website, email, or phone at +91-9054305995."
+            }
+            }
+        ]
+    }
+
+
     return (
         <>
             <SEO
@@ -129,6 +236,8 @@ function Home() {
                 canonicalUrl={process.env.REACT_APP_API_URL}
                 localSchema={localSchema}
                 organisationalSchema={organisationalSchema}
+                serviceSchema={serviceSchema}
+                faqSchema={faqSchema}
             />
 
             {/* Banner */}
