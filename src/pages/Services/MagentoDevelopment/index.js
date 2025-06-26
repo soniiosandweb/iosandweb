@@ -23,8 +23,9 @@ function MagentoDevelopment(){
     return(
         <>
             <SEO
-                title={"Get Magento development services | Contact Us"}
-                description={"Looking for top Magento development Services in United kingdom? Hire our Certified Magento developer at affordable cost. Get quote Today!"}
+                title={"Magento Development Services | Magento Development Agency"}
+                description={"Looking for a Magento developer? Hire expert US Magento developers from a top Magento development agency for Magento website & frontend development services."}
+                keywords={"Magento Development Services, Magento Development Agency, Magento Website Development, Hire Magento Developer, Frontend Magento Developer, Looking for Magento Developer, Us Magento Developer"}
                 name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />

@@ -30,8 +30,9 @@ function WebDevelopment() {
     return (
         <>
             <SEO
-                title={"Professional Web Development Services | Custom Web Solutions"}
-                description={"Looking for expert Web Development Services? IosAndWeb Technologies offers custom & responsive web solutions for your business needs. Start your project today!"}
+                title={"Professional Web Development Services | Custom Web Development Services"}
+                description={" IosandWeb offers professional web development services, full-stack and custom web solutions by expert website developers for web and app development needs."}
+                keywords={"Web development services, Full-stack Development Services, Custom web development services, Professional website developers, Web and app development services"}
                 name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />

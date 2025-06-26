@@ -39,7 +39,8 @@ function SoftwareDevelopment(){
 
             <SEO
                 title={"Custom Software Development Services | IosAndWeb Technologies"}
-                description={"Looking for a trusted Custom Software Development Company? IosAndWeb Technologies offers software solutions to meet your business needs. Get started today!"}
+                description={"Top Custom Software Development Company offering tailored software solutions. Expert in custom software development services for scalable business growth."}
+                keywords={"Custom Software Development Company, Custom software development, Custom software development services, Top custom software developer, Software development custom services"}
                 name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />

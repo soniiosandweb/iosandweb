@@ -155,7 +155,7 @@ function BlogDetails(){
                                     <Col md={6} xl={3} className="blog-col" key={item.id}>
                                         <div className="blog-list-item related-blog-item">
                                             <a key={index} href={"/blog/"+item.url}>
-                                                <img src={item.image ? `${process.env.REACT_APP_BLOG_API_URL}/wp-content/uploads/${item.image}` : defaultImage} className="blog-image" alt="Proven Strategies" />
+                                                <img src={item.image ? `${process.env.REACT_APP_BLOG_API_URL}/wp-content/uploads/${item.image}` : defaultImage} className="blog-image" alt={item.title} />
                                             </a>
                                             <div className="blog-detail">
                                                 <p><span className="blog-date">{item.date}</span></p>

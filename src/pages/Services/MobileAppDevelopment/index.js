@@ -24,8 +24,9 @@ function MobileAppDevelopment() {
     return (
         <>
             <SEO
-                title={"Custom Mobile App Development Services | iOS & Android Solutions"}
-                description={"Looking for expert Mobile App Development Services? Get custom iOS & Android apps tailored to your business needs. Scalable, secure, and user-friendly solutions. Contact us today!"}
+                title={"Mobile App Development Services | IOS mobile development company"}
+                description={"Iosandweb is one of the top web and mobile app development companies, offering expert iOS and Android app & software development services for all businesses."}
+                keywords={"Mobile App Development Services, Web and mobile app development companies, Ios mobile development company, Mobile app development firms, Android app development companies, Android software development companies"}
                 name={"IosAndWeb Technologies"}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
