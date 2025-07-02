@@ -12,7 +12,7 @@ function GetStarted({title, buttonText, link}){
                 <Container>
                     <Row className="align-items-center">
                         <Col lg={9}>
-                            <h2 className="heading2">{title}</h2>
+                            <h3 className="heading2">{title}</h3>
                         </Col>
                         <Col lg={3}>
                             <div className="get-started-btn">

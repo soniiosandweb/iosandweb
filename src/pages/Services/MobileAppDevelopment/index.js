@@ -5,6 +5,7 @@ import SEO from "../../../components/SEO";
 import NumbersCards from "../../../components/NumbersCards";
 import ContactForm from "../../../components/ContactForm";
 import GetStarted from "../../../components/GetStarted";
+import { Accordion } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
@@ -37,7 +38,8 @@ function MobileAppDevelopment() {
                     <Row>
                         <Col lg={8} xl={6}>
                             <div className="heading-wrapper full-width">
-                                <h1>Mobile <span className="text-highlight">App Development</span> Services</h1>
+
+                                <h1>Web and Mobile <span className="text-highlight">App Development</span> Company</h1>
                                 <div className="heading5">Your dreams have no limits. What do you think where your dreams can live except
                                     your imagination. The right place may be an Apple App Store and Google Play Store.
                                     At <a href="/">IosAndWeb Technologies</a>, one of the best background <b> web and mobile app development companies,</b> we service according to the requirements of our clients and their
@@ -99,7 +101,7 @@ function MobileAppDevelopment() {
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2">6 Best Cross-Platform Mobile App Development Frameworks </h2>
+                            <h2 className="heading2">6 Best Cross-Platform Mobile App Development Frameworks</h2>
                             <div className="heading5">The best cross-platform app development frameworks are covered in this part to
                                 assist you in creating reliable cross-platform apps for your small or large-scale
                                 business. These appear to be the most used cross-platform frameworks worldwide,
@@ -198,7 +200,7 @@ function MobileAppDevelopment() {
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2 text-center">Our Process Of Mobile App Development</h2>
+                            <h2 className="heading2 text-center">The Process Of a Mobile App Development Firm</h2>
                             <div className="heading5 text-center">Use the advantages of hybrid mobile app development to hasten the development and release of your app. So if you're looking for a Mobile app developer near me, you
                                 can Contact our skilled mobile app developers if you need assistance evaluating your
                                 app idea or creating a cross-platform app.
@@ -421,6 +423,66 @@ function MobileAppDevelopment() {
                 </Container>
             </div>
 
+            {/* FAQ section */}
+            <div className="faq-panel section-padding">
+                <Container>
+                    <Row>
+                        <Col md={12}>
+                            <div className="leadtxt text-center">
+                                <h3>Frequently Asked Questions</h3>
+                            </div>
+                            <Accordion>
+                                <div className="faq_col_panel">
+                                    <Accordion.Item eventKey="1">
+                                        <Accordion.Header> What types of mobile apps do you develop—native, hybrid, or cross-platform? </Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>At IosAndWeb Technologies, we develop all three types—native apps (for Android and iOS), hybrid apps, and cross-platform apps using frameworks like Flutter, React Native, and Xamarin. We recommend the best approach based on your budget, timeline, and scalability needs.
+                                            </p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="2">
+                                        <Accordion.Header> What is the benefit of cross-platform mobile app development?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Cross-platform app development allows your app to run seamlessly on both Android and iOS using a single codebase. This saves time, reduces cost, and speeds up time-to-market—while maintaining high performance and native-like experience.
+
+                                            </p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="3">
+                                        <Accordion.Header>How do you ensure the quality and performance of the mobile apps?
+                                        </Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Our QA team runs rigorous manual and automated tests to ensure functionality, performance, security, and user experience. We test apps on multiple devices and operating systems to guarantee smooth operation before the final launch.
+                                            </p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </div>
+
+                                <div className="faq_col_panel">
+                                    <Accordion.Item eventKey="4">
+                                        <Accordion.Header>Do you provide support and maintenance after the app is launched?
+
+                                        </Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Yes, we offer 24/7 support and maintenance even after your app is live. Our team handles updates, performance improvements, bug fixes, and scaling as your user base grows—ensuring your app stays relevant and efficient.
+                                            </p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="5">
+                                        <Accordion.Header>How much does mobile app development cost at IosAndWeb Technologies?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>The cost depends on several factors like app complexity, features, platform(s), and timeline. We offer custom quotes based on your specific requirements. Contact us to discuss your project and receive a detailed estimate.</p>
+
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </div>
+                            </Accordion>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
         </>
     )
 }

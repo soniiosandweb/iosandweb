@@ -1,7 +1,7 @@
 import React from "react";
 import './style.css';
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-
+import { Accordion } from "react-bootstrap";
 import SEO from "../../../components/SEO";
 import ContactForm from "../../../components/ContactForm";
 import GetStarted from "../../../components/GetStarted";
@@ -30,11 +30,11 @@ const magento = `${process.env.REACT_APP_API_URL}/assests/images/services/softwa
 const shopify = `${process.env.REACT_APP_API_URL}/assests/images/services/software-development/shopify.png`;
 
 
-function SoftwareDevelopment(){
+function SoftwareDevelopment() {
 
     const location = useLocation();
 
-    return(
+    return (
         <>
 
             <SEO
@@ -65,7 +65,7 @@ function SoftwareDevelopment(){
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2 text-center">Software Development Company</h2>
+                            <h2 className="heading2 text-center">Custom Software Development Services</h2>
                             <div className="heading5 text-center">But in the contemporary world, the goals are achieved by putting into practise customised software solutions that are built to exactly match certain business needs with Custom software development company. Because of this, every company today gives business software solutions the highest importance conceivable. The various applications of custom software solutions entirely depend on the distinct needs of each company.</div>
 
                             <NumbersCards />
@@ -84,7 +84,7 @@ function SoftwareDevelopment(){
                             </div>
                             <div className="leadsubtxt">
                                 In its simplest form, a software solution is a programme made to handle all the moment repetitive duties or for the routine jobs that are meant to be automated. Its goal is to encourage convenience and quickness.
-                                <br/>
+                                <br />
                                 A focused development method is used to generate a custom software solution, which results in a special software programme that is tailored to the particular needs of a given firm. Today, every organisation, regardless of size, requires a custom software solution to satisfy its own business requirements with Software development company.
                             </div>
                         </Col>
@@ -103,7 +103,7 @@ function SoftwareDevelopment(){
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2">Reasons to Choose Software</h2>
+                            <h2 className="heading2">Reasons to Choose Top Custom Software Developer</h2>
                             <div className="heading5">Custom software development aims to produce software solutions that are customized to a company's particular business needs. Many organisations often reject the idea of developing, implementing, and maintaining a custom software solution for themselves due to the expenses involved with software developer.</div>
                             <div className="heading5">Rest assured, though, that these are merely initial investments that can be swiftly recovered by addressing certain problems that the market's typical, off-the-shelf solutions are unable to solve. Because there are so many commercially accessible software solutions, many organisations may not require a software solution that is specifically tailored for them with software development services. But it has been shown that when a piece of software is made especially to meet a particular set of business demands, performance and efficiency rise, providing the business a competitive edge in the market.The top ten reasons for developing a unique software solution are listed below.</div>
                         </Col>
@@ -157,11 +157,11 @@ function SoftwareDevelopment(){
                                         <div className="reasons-tab-content">
                                             <img src={moreSecure} alt="More Secure" className="reasons-content-icon" />
                                             <h3 className="heading3">Custom software that is Clearly More Secure</h3>
-                                            <p className="paragraph">The additional security that your programme delivers is unequalled by any other commercial software because it cannot be used by other companies with <b>Top</b> Custom software development company. 
-                                            <br/>
-                                            Use software designed expressly for your company to limit the risks and hazards associated with outside hacking and data theft. Using a custom software solution secures and protects all of your data, and you can add extra security levels according to your tastes and needs with a tech company. 
-                                            <br/>
-                                            The level of protection provided by a custom software programme is simply unequalled by any other business application that is created for use by a variety of enterprises.</p>
+                                            <p className="paragraph">The additional security that your programme delivers is unequalled by any other commercial software because it cannot be used by other companies with <b>Top</b> Custom software development company.
+                                                <br />
+                                                Use software designed expressly for your company to limit the risks and hazards associated with outside hacking and data theft. Using a custom software solution secures and protects all of your data, and you can add extra security levels according to your tastes and needs with a tech company.
+                                                <br />
+                                                The level of protection provided by a custom software programme is simply unequalled by any other business application that is created for use by a variety of enterprises.</p>
                                         </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="third">
@@ -228,8 +228,8 @@ function SoftwareDevelopment(){
             </div>
 
             {/* get started section */}
-            <GetStarted 
-                title="Let's Start Building Web Solutions To Help Achieve Your Business Goals"
+            <GetStarted
+                title="Let's Start Building Web Solutions To Help Achieve Your Business Goals with Software Development Custom Services"
                 buttonText="Get Started"
                 link="/contact-us"
             />
@@ -263,7 +263,7 @@ function SoftwareDevelopment(){
 
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
-                                        <a href="/magento-development-services">    
+                                        <a href="/magento-development-services">
                                             <img src={magento} className="services-bottom-front-image" alt="Magento Development" />
                                             <h4 className="heading4">Magento Development Services</h4>
                                         </a>
@@ -272,7 +272,7 @@ function SoftwareDevelopment(){
 
                                 <div className="services-bottom-wrap">
                                     <div className="services-bottom-div">
-                                        <a href="/shopify-development-services">    
+                                        <a href="/shopify-development-services">
                                             <img src={shopify} className="services-bottom-front-image" alt="Shopify Development" />
                                             <h4 className="heading4">Shopify Development</h4>
                                         </a>
@@ -280,6 +280,62 @@ function SoftwareDevelopment(){
                                 </div>
 
                             </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* FAQ section */}
+            <div className="faq-panel section-padding">
+                <Container>
+                    <Row>
+                        <Col md={12}>
+                            <div className="leadtxt text-center">
+                                <h3>Frequently Asked Questions</h3>
+                            </div>
+                            <Accordion>
+                                <div className="faq_col_panel">
+                                    <Accordion.Item eventKey="1">
+                                        <Accordion.Header> What is custom software development, and why does my business need it? </Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Custom software development involves creating software solutions tailored specifically to your business needs, unlike generic off-the-shelf products. It enhances efficiency, reduces manual work, and ensures seamless integration with your existing systems—giving your company a competitive edge.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="2">
+                                        <Accordion.Header>How is custom software more beneficial than ready-made solutions?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Custom software is designed to match your exact business processes, which means better performance, higher security, and fewer compromises. Unlike pre-built tools, it adapts to your workflows, reduces human error, automates routine tasks, and lowers long-term operating costs.
+                                            </p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="3">
+                                        <Accordion.Header>How long does it take to develop custom software?
+                                        </Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>The development timeline varies depending on the complexity and scale of your project. On average, a fully functional custom software solution can take anywhere from 2 to 6 months. Our team ensures timely delivery while maintaining high-quality standards and performance.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </div>
+
+                                <div className="faq_col_panel">
+                                    <Accordion.Item eventKey="4">
+                                        <Accordion.Header>Can I be involved in the software development process?
+                                        </Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Absolutely! At IosAndWeb Technologies, we encourage client involvement throughout the development lifecycle. From initial planning to testing and launch, your feedback is essential in shaping a solution that truly fits your business goals.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="5">
+                                        <Accordion.Header>Is custom software development cost-effective in the long run?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Yes, while the initial investment might be higher than generic tools, custom software pays off in the long run. It minimizes recurring licensing fees, reduces inefficiencies, lowers support costs, and ultimately leads to improved productivity and ROI.</p>
+                                           
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </div>
+                            </Accordion>
                         </Col>
                     </Row>
                 </Container>

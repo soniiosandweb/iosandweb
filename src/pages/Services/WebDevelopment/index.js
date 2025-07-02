@@ -5,7 +5,7 @@ import SEO from "../../../components/SEO";
 import NumbersCards from "../../../components/NumbersCards";
 import ContactForm from "../../../components/ContactForm";
 import GetStarted from "../../../components/GetStarted";
-
+import { Accordion } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktopAlt, faCode, faShoppingBag, faGlobeAsia, faMobileScreen, faCircle } from "@fortawesome/free-solid-svg-icons";
 import { useLocation } from "react-router-dom";
@@ -84,7 +84,7 @@ function WebDevelopment() {
                     <Row className="align-items-center">
                         <Col lg={7}>
                             <div className="leadtxt">
-                                <h2>Web Development Services
+                                <h2>Custom Web And App Development Services
                                 </h2>
                             </div>
                             <div className="leadsubtxt">
@@ -175,7 +175,7 @@ function WebDevelopment() {
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2 text-center">Our Web Application Solutions Will Perfectly <br />Conforming Your Specifications</h2>
+                            <h2 className="heading2 text-center">Our Web Application Solutions Will Perfectly <br /> Conforming Your Specifications</h2>
                         </Col>
                     </Row>
                     <Row className="mt-5">
@@ -238,7 +238,7 @@ function WebDevelopment() {
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2 text-center">Our Process Of Web Development</h2>
+                            <h2 className="heading2 text-center">Here’s the Process That We As Professional Website Developers Follow</h2>
                             <div className="heading5 text-center">An impressive Web Development needs Design, user experience, and path. The
                                 experienced team of our company makes a plan, develops and then executes the
                                 business objectives to satisfy the customers.
@@ -368,7 +368,7 @@ function WebDevelopment() {
 
             {/* get started section */}
             <GetStarted
-                title="Let's Start Building Web Solutions To Help Achieve Your Business Goals"
+                title="Let's Start Building Web Solutions of Getting Full-stack Development Services All in One Place To Help Achieve Your Business Goal"
                 buttonText="Get Started"
                 link="/contact-us"
             />
@@ -422,6 +422,70 @@ function WebDevelopment() {
                                 </div>
 
                             </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* FAQ section */}
+            <div className="faq-panel section-padding">
+                <Container>
+                    <Row>
+                        <Col md={12}>
+                            <div className="leadtxt text-center">
+                                <h3>Frequently Asked Questions</h3>
+                            </div>
+                            <Accordion>
+                                <div className="faq_col_panel">
+                                    <Accordion.Item eventKey="1">
+                                        <Accordion.Header> What types of websites do you develop at IosAndWeb Technologies? </Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>We build a wide range of websites—from simple business sites and blogs to complex web applications, eCommerce platforms (Magento, WooCommerce, Shopify), and custom CMS solutions. Our team of expert front-end and back-end developers ensures your site meets your unique business needs and goals.
+                                            </p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="2">
+                                        <Accordion.Header>How do you ensure my website is secure?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Website security is a top priority for us. We implement SSL, firewalls, data encryption, secure coding practices, and regular updates to protect your website from threats. Our team follows industry-standard security protocols to ensure safe and reliable online experiences.
+
+                                            </p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="3">
+                                        <Accordion.Header>What platforms and frameworks do you specialize in?
+
+                                        </Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Our web development services include PHP frameworks, ASP.NET, WordPress, Magento, Shopify, Joomla, and Drupal. We choose the most suitable platform based on your project’s complexity, scalability, and customization requirements.
+                                            </p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </div>
+
+                                <div className="faq_col_panel">
+                                    <Accordion.Item eventKey="4">
+                                        <Accordion.Header>Do you provide post-launch support and maintenance?
+
+                                        </Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Yes, we offer comprehensive support and maintenance services after your website goes live. From performance monitoring and bug fixing to feature upgrades and security patches, we ensure your website remains up-to-date and efficient.
+
+                                            </p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="5">
+                                        <Accordion.Header> How much does a custom website development project cost?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>The cost varies depending on your website’s features, complexity, design elements, and technology stack. We provide tailored quotes based on your requirements and offer cost-effective solutions that ensure long-term value and scalability.
+                                            </p>
+
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </div>
+                            </Accordion>
                         </Col>
                     </Row>
                 </Container>

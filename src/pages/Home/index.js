@@ -73,30 +73,30 @@ function Home() {
         "telephone": "099158 41204",
         "priceRange": "$",
         "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "SCO No. 30, First Floor, VIP Shopping Centre",
-          "addressLocality": "Zirakpur",
-          "postalCode": "140603",
-          "addressCountry": "IN"
+            "@type": "PostalAddress",
+            "streetAddress": "SCO No. 30, First Floor, VIP Shopping Centre",
+            "addressLocality": "Zirakpur",
+            "postalCode": "140603",
+            "addressCountry": "IN"
         },
         "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 30.638054,
-          "longitude": 76.8156075
+            "@type": "GeoCoordinates",
+            "latitude": 30.638054,
+            "longitude": 76.8156075
         },
         "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          "opens": "10:00",
-          "closes": "19:00"
-        } 
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+            ],
+            "opens": "10:00",
+            "closes": "19:00"
+        }
     };
 
     const organisationalSchema = {
@@ -106,47 +106,47 @@ function Home() {
         "url": "https://iosandweb.net/",
         "logo": "https://iosandweb.net/static/media/IAW-black-logo.c17961e0b493c00d409f.png",
         "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "",
-          "contactType": "customer service",
-          "availableLanguage": "en"
+            "@type": "ContactPoint",
+            "telephone": "",
+            "contactType": "customer service",
+            "availableLanguage": "en"
         },
         "sameAs": [
-          "https://www.facebook.com/iosandwebtechnologies/",
-          "https://www.instagram.com/iosandwebtechnologies/",
-          "https://twitter.com/Iosandwebtech",
-          "https://www.linkedin.com/company/iosandweb-technologies"
+            "https://www.facebook.com/iosandwebtechnologies/",
+            "https://www.instagram.com/iosandwebtechnologies/",
+            "https://twitter.com/Iosandwebtech",
+            "https://www.linkedin.com/company/iosandweb-technologies"
         ]
     }
 
-  
+
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
             {
-            "@type": "Question",
-            "name": "What services does IOSAndWeb provide?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "IOSAndWeb offers digital marketing, web development, mobile app development, SEO, and PPC services."
-            }
+                "@type": "Question",
+                "name": "What services does IOSAndWeb provide?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "IOSAndWeb offers digital marketing, web development, mobile app development, SEO, and PPC services."
+                }
             },
             {
-            "@type": "Question",
-            "name": "Where is IOSAndWeb located?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "IOSAndWeb is located in Zirakpur, Punjab, India."
-            }
+                "@type": "Question",
+                "name": "Where is IOSAndWeb located?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "IOSAndWeb is located in Zirakpur, Punjab, India."
+                }
             },
             {
-            "@type": "Question",
-            "name": "How can I contact IOSAndWeb?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "You can contact them via their website, email, or phone at +91-9054305995."
-            }
+                "@type": "Question",
+                "name": "How can I contact IOSAndWeb?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can contact them via their website, email, or phone at +91-9054305995."
+                }
             }
         ]
     }
@@ -171,7 +171,7 @@ function Home() {
                     <Row>
                         <Col>
                             <div className="intro-content">
-                                <h1 className="banner-heading">Welcome to <span>IosAndWeb Technologies</span> <br/>Where Innovation Collaborates With Technology</h1>
+                                <h1 className="banner-heading">Welcome to <span>IosAndWeb Technologies</span> <br /> Where Innovation Collaborates With Technology </h1>
                                 <p className="banner-text">Your partner in Custom Software Development Solutions</p>
                                 <a href="/contact-us" className="consult-expert-btn">Let's Collaborate <FontAwesomeIcon icon={faChevronRight} /></a>
                             </div>
@@ -191,7 +191,7 @@ function Home() {
                         <Col>
                             <div className="leadtxt">
                                 <h2>
-                                    We specialize in crafting software solutions tailored to your unique business needs. With our expertise, innovation and commitment to excellence, we empower businesses to thrive in today's competitive digital landscape. 
+                                    We specialize in crafting software solutions tailored to your unique business needs. With our expertise, innovation and commitment to excellence, we empower businesses to thrive in today's competitive digital landscape.
                                 </h2>
                             </div>
                             <div className="btn-section">
@@ -199,13 +199,13 @@ function Home() {
                             </div>
 
                             <div className="services-cards">
-                                
+
                                 <div className="service-card">
                                     <a href="/custom-software-development-company" className="bg-orange">
                                         <div className="service-icon">
                                             <img src={softwareDevelopment} className="service-img" alt="Software" />
                                         </div>
-                                        <p className="service-text">Software<br/>Development</p>
+                                        <p className="service-text">Software<br />Development</p>
                                     </a>
                                 </div>
                                 <div className="service-card">
@@ -213,7 +213,7 @@ function Home() {
                                         <div className="service-icon">
                                             <img src={mobileApp} className="service-img" alt="Mobile App" />
                                         </div>
-                                        <p className="service-text">Mobile App<br/>Development</p>
+                                        <p className="service-text">Mobile App<br />Development</p>
                                     </a>
                                 </div>
                                 <div className="service-card">
@@ -221,7 +221,7 @@ function Home() {
                                         <div className="service-icon">
                                             <img src={digitalTransformation} className="service-img" alt="Web" />
                                         </div>
-                                        <p className="service-text">Web<br/>Development</p>
+                                        <p className="service-text">Web<br />Development</p>
                                     </a>
                                 </div>
                                 <div className="service-card">
@@ -229,16 +229,16 @@ function Home() {
                                         <div className="service-icon">
                                             <img src={aiml} className="service-img" alt="Development POC" />
                                         </div>
-                                        <p className="service-text">Development of <br/>POC & ICO</p>
+                                        <p className="service-text">Development of <br />POC & ICO</p>
                                     </a>
                                 </div>
-                                
+
                                 <div className="service-card">
                                     <a href="/digital-marketing-services" className="bg-green">
                                         <div className="service-icon">
                                             <img src={dataScience} className="service-img" alt="Digital" />
                                         </div>
-                                        <p className="service-text">Digital <br/>Transformation</p>
+                                        <p className="service-text">Digital <br />Transformation</p>
                                     </a>
                                 </div>
                                 <div className="service-card">
@@ -246,7 +246,7 @@ function Home() {
                                         <div className="service-icon">
                                             <img src={cloudServices} className="service-img" alt="PPC" />
                                         </div>
-                                        <p className="service-text">Pay Per Click <br/>Services</p>
+                                        <p className="service-text">Pay Per Click <br />Services</p>
                                     </a>
                                 </div>
                                 <div className="service-card">
@@ -254,7 +254,7 @@ function Home() {
                                         <div className="service-icon">
                                             <img src={blockChain} className="service-img" alt="Blockchain" />
                                         </div>
-                                        <p className="service-text">Blockchain<br/>Services</p>
+                                        <p className="service-text">Blockchain<br />Services</p>
                                     </a>
                                 </div>
                                 <div className="service-card">
@@ -262,7 +262,7 @@ function Home() {
                                         <div className="service-icon">
                                             <img src={ideationDesign} className="service-img" alt="Ideation and Design" />
                                         </div>
-                                        <p className="service-text">Ideation and <br/>Design Strategy</p>
+                                        <p className="service-text">Ideation and <br />Design Strategy</p>
                                     </a>
                                 </div>
                             </div>
@@ -278,7 +278,7 @@ function Home() {
                     <Row>
                         <Col>
                             <div className="leadtxt text-center">
-                                <h3>We Cater to a Wide Variety of <br/>Industry Demands
+                                <h3>We Cater to a Wide Variety of <br />Industry Demands
                                 </h3>
                             </div>
                             <div className="grid_colm_panel">
@@ -311,7 +311,7 @@ function Home() {
                                         <figure>
                                             <img src={healthCare} alt="Health" />
                                         </figure>
-                                        <div className="grid_colm_head">Healthcare</div>  
+                                        <div className="grid_colm_head">Healthcare</div>
                                     </a>
                                 </div>
                                 <div className="grid_colm_item">
@@ -618,7 +618,7 @@ function Home() {
                                 <h4>Whether you're a startup looking to disrupt the market or an established enterprise seeking to innovate, we have just the solutions you need to succeed!</h4>
 
                                 <div className="home-contact-us-btn mt-5">
-                                    <a href="/contact-us" className="btn btn-white-border">Contact Us <FontAwesomeIcon icon={faChevronRight} /></a> 
+                                    <a href="/contact-us" className="btn btn-white-border">Contact Us <FontAwesomeIcon icon={faChevronRight} /></a>
                                 </div>
                             </div>
                         </Col>
@@ -644,37 +644,38 @@ function Home() {
                                     </Accordion.Item>
 
                                     <Accordion.Item eventKey="2">
-                                        <Accordion.Header>How do I know if custom software is right for me?</Accordion.Header>
+                                        <Accordion.Header>Do you offer ongoing maintenance and support?</Accordion.Header>
                                         <Accordion.Body>
-                                            <p>If you have unique business needs that are not met by off-the-shelf software, or if you are looking to improve efficiency, gain a competitive edge, or integrate with existing systems, then custom software development might be a good fit for you.</p>
+                                            <p>Yes, as a custom software development company we offer ongoing maintenance and support plans to ensure the smooth operation of your software and address any future needs.</p>
                                         </Accordion.Body>
                                     </Accordion.Item>
 
                                     <Accordion.Item eventKey="3">
-                                        <Accordion.Header>What mobile app development services do you offer?</Accordion.Header>
+                                        <Accordion.Header>How do I know if custom software is right for me?
+                                        </Accordion.Header>
                                         <Accordion.Body>
-                                            <p>At IAW Technologies, we're a team of passionate mobile app developers specializing in bringing your ideas to life. We offer a full suite of development services, including:</p>
-                                            <ul>
-                                                <li><b>Native App Development:</b> Build best-in-class apps for iOS and Android, optimized for each platform's unique features and user experience.</li>
-                                                <li><b>Cross-Platform App Development:</b> Reach a wider audience with cost-effective solutions using frameworks like Flutter and React Native.</li>
-                                                <li><b>Web App Development:</b> Extend your digital reach with web applications that seamlessly complement your mobile strategy.</li>
-                                            </ul>
-                                            <p>Our commitment goes beyond just coding. We take a client-centric approach, partnering with you every step of the way. From validating your initial concept to post-launch support, we ensure a smooth and successful journey.</p>
+                                            <p>  If you have unique business needs that are not met by off-the-shelf software, or if you are looking to improve efficiency, gain a competitive edge, or integrate with existing systems, then custom software development might be a good fit for you. </p>
                                         </Accordion.Body>
                                     </Accordion.Item>
                                 </div>
-                               
+
                                 <div className="faq_col_panel">
                                     <Accordion.Item eventKey="4">
-                                        <Accordion.Header>Do you offer ongoing maintenance and support?</Accordion.Header>
-                                        <Accordion.Body>
-                                            <p>Yes, most custom software development companies offer ongoing maintenance and support plans to ensure the smooth operation of your software and address any future needs.</p>
-                                        </Accordion.Body>
-                                    </Accordion.Item>
-                                    <Accordion.Item eventKey="5">
                                         <Accordion.Header>How do you ensure the security and quality of the software you develop?</Accordion.Header>
                                         <Accordion.Body>
                                             <p>We prioritize security and quality from the start. We sign NDAs to protect your confidentiality, adhere to industry security standards (like GDPR), and implement rigorous testing to deliver exceptional, secure software.</p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="5">
+                                        <Accordion.Header>What services does a mobile application development company offer?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>At IAW Technologies, we're a team of passionate mobile app developers specializing in bringing your ideas to life. We offer a full suite of custom software development services, including:</p>
+                                            <ul>
+                                                <li>Native App and Software Development: Build best-in-class apps for iOS and Android, optimized for each platform's unique features and user experience.</li>
+                                                <li>Cross-Platform App Development: Reach a wider audience with cost-effective solutions using frameworks like Flutter and React Native.</li>
+                                                <li>Web App Development: Extend your digital reach with web applications that seamlessly complement your mobile strategy.</li>
+                                            </ul>
+                                            <p>Our commitment goes beyond just coding. We take a client-centric approach, partnering with you every step of the way. From validating your initial concept to post-launch support, we ensure a smooth and successful journey and we also offer blockchain development services.</p>
                                         </Accordion.Body>
                                     </Accordion.Item>
                                 </div>
