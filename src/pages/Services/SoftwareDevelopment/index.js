@@ -298,7 +298,7 @@ function SoftwareDevelopment() {
                                     <Accordion.Item eventKey="1">
                                         <Accordion.Header> What is custom software development, and why does my business need it? </Accordion.Header>
                                         <Accordion.Body>
-                                            <p>Custom software development involves creating software solutions tailored specifically to your business needs, unlike generic off-the-shelf products. It enhances efficiency, reduces manual work, and ensures seamless integration with your existing systems—giving your company a competitive edge.</p>
+                                            <p><b>Custom software development</b> involves creating software solutions tailored specifically to your business needs, unlike generic off-the-shelf products. It enhances efficiency, reduces manual work, and ensures seamless integration with your existing systems—giving your company a competitive edge.</p>
                                         </Accordion.Body>
                                     </Accordion.Item>
 

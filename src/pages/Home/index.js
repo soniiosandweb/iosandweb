@@ -639,7 +639,7 @@ function Home() {
                                     <Accordion.Item eventKey="1">
                                         <Accordion.Header>What is custom software development? </Accordion.Header>
                                         <Accordion.Body>
-                                            <p>Custom software development is the process of creating software specifically designed to meet the unique needs of your business. Unlike off-the-shelf software, custom software is built from the ground up to address your specific workflows, challenges, and goals.</p>
+                                            <p><a href="/custom-software-development-company">Custom software development</a> is the process of creating software specifically designed to meet the unique needs of your business. Unlike off-the-shelf software, custom software is built from the ground up to address your specific workflows, challenges, and goals.</p>
                                         </Accordion.Body>
                                     </Accordion.Item>
 

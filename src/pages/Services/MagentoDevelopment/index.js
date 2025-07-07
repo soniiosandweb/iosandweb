@@ -5,7 +5,7 @@ import SEO from "../../../components/SEO";
 import NumbersCards from "../../../components/NumbersCards";
 import ContactForm from "../../../components/ContactForm";
 import GetStarted from "../../../components/GetStarted";
-
+import { Accordion } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBasket, faShoppingCart, faLocationArrow, faRandom, faCodeFork, faFastForward, faUsers, faAward, faTrophy, faCommenting, faCode, faCircle } from "@fortawesome/free-solid-svg-icons";
 import { useLocation } from "react-router-dom";
@@ -36,7 +36,7 @@ function MagentoDevelopment(){
                     <Row>
                         <Col lg={8} xl={6}>
                             <div className="heading-wrapper full-width">
-                                <h1><span className="text-highlight">Magento</span> Development Services</h1>
+                                <h1><span className="text-highlight">Magento</span> Development Services Tailored to Your Business Goals</h1>
                                 <div className="heading5">The process of developing an e-commerce platform can be facilitated with the assistance of Magento Development Services, which makes it possible to bring in new customers and offer them a shopping experience that perfectly satisfies their needs. Magento is a well-known and well-liked e-commerce platform.</div>
                             </div>
                         </Col>
@@ -50,7 +50,7 @@ function MagentoDevelopment(){
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2 text-center">Magento Development Company</h2>
+                            <h2 className="heading2 text-center">Leading Magento Development Agency for Scalable eCommerce Solutions</h2>
                             <div className="heading5 text-center">We offers customized business solutions to meet their business goals.</div>
 
                             <NumbersCards />
@@ -65,7 +65,7 @@ function MagentoDevelopment(){
                     <Row className="align-items-center">
                         <Col lg={7}>
                             <div className="leadtxt">
-                                <h2>Magento Development Services</h2>
+                                <h2>Comprehensive Magento Website Development Services</h2>
                             </div>
                             <div className="leadsubtxt">
                                 <b><u>Magento web development</u></b> offers superior benefits for online businesses, such as improved functionality, increased design freedom, and a versatile shopping cart system. These advantages have contributed to Ecommerce magento development services widespread popularity. <a href="/">IosAndWeb Technologies</a>, well-known as a <b>custom Magento development</b> services Company, is home to a team of Magento specialists. 
@@ -87,7 +87,7 @@ function MagentoDevelopment(){
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2 text-center">What are the advantages of running your online business with the Magento platform?</h2>
+                            <h2 className="heading2 text-center">What Are the Advantages of Running Your Online Business with the Magento Platform?</h2>
                             <div className="heading5 text-center">There is no shadow of a doubt that the field of online commerce is seeing a tremendous amount of expansion and transformation. You must be very attentive when selecting a platform or <b><u>Web development company</u></b> that can react appropriately in a circumstance like this.</div>
                         </Col>
                     </Row>
@@ -143,7 +143,7 @@ function MagentoDevelopment(){
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2 text-center">Our Magento Development Expertise Is Incredible</h2>
+                            <h2 className="heading2 text-center">Our Magento Development Expertise — Hire Magento Developer with Confidence</h2>
                             <div className="heading5 text-center">We have our own in-house certified Magento professionals, thanks to the numerous and fruitful Magento development projects we have completed for various clients.</div>
                         </Col>
                     </Row>
@@ -192,7 +192,7 @@ function MagentoDevelopment(){
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2 text-center">Our Magento Development Services Process</h2>
+                            <h2 className="heading2 text-center">Our Magento Development Process — Work with a Trusted US Magento Developer</h2>
                         </Col>
                     </Row>
                     <div className="development-process-blocks mt-4">
@@ -340,7 +340,7 @@ function MagentoDevelopment(){
 
             {/* get started section */}
             <GetStarted 
-                title="Let's Start Building Web Solutions To Help Achieve Your Business Goals"
+                title="Let’s Start Building Web Solutions with a Certified Frontend Magento Developer"
                 buttonText="Get Started"
                 link="/contact-us"
             />
@@ -350,7 +350,7 @@ function MagentoDevelopment(){
                 <Container>
                     <Row>
                         <Col>
-                            <h2 className="heading2">IosAndWeb Technologies Magento Development Services</h2>
+                            <h2 className="heading2">IosAndWeb Technologies – The Go-To Choice for Those Looking for Magento Developer</h2>
                             <div className="heading5">A highly regarded solutions partner and one of the industry's top extension developers for Magento (Adobe Commerce Cloud). When you collaborate with us on the development of Magento, we guarantee the delight of our customers. Your e-commerce firm can be built and grown with the assistance of a Magento development company that has won awards for its work. Build a Magento website that is safe, user-friendly, and scalable with the assistance of IosAndWeb Technologies. We have been able to assist both small enterprises and huge organizations with the design and construction of Magento websites.</div>
                             <div className="heading5">The multi-store capabilities provided by Magento make it much simpler for an online store to expand. We can design and develop a great web store for you with the help of Magento's bespoke design and development capabilities. Magento is a robust and versatile framework for developing websites, and it may be used to construct websites. Your company's administrative processes will be streamlined. As a result, making it much simpler for you to run. Due to the adaptability of Magento, our team can develop individualized user experiences that are compatible with mobile devices. You have the potential to increase your online presence by making use of Magento's search engine optimization (SEO) friendly capabilities.</div>
 
@@ -392,6 +392,71 @@ function MagentoDevelopment(){
                                 </div>
 
                             </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+{/* FAQ section */}
+            <div className="faq-panel section-padding">
+                <Container>
+                    <Row>
+                        <Col md={12}>
+                            <div className="leadtxt text-center">
+                                <h3>Frequently Asked Questions</h3>
+                            </div>
+                            <Accordion>
+                                <div className="faq_col_panel">
+                                    <Accordion.Item eventKey="1">
+                                        <Accordion.Header>What makes Magento a good choice for my eCommerce business?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Magento is a powerful and flexible eCommerce platform that supports multi-store functionality, advanced customizations, and seamless integrations. It allows businesses to offer a personalized shopping experience, manage multiple stores from one dashboard, and scale operations efficiently.
+
+                                            </p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="2">
+                                        <Accordion.Header>Do you offer Magento 2.0 development services?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Yes, we specialize in Magento 2.0 development. Our certified Magento developers have extensive experience building high-performing, secure, and scalable online stores using the latest Magento versions, including Magento 2.0.
+
+
+                                            </p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="3">
+                                        <Accordion.Header>How long does it take to build a custom Magento website?
+
+                                        </Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>The development timeline varies depending on your project scope and complexity. Typically, a standard Magento eCommerce store takes 4–8 weeks from requirement analysis to deployment. More complex or customized builds may take longer.
+
+                                            </p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </div>
+
+                                <div className="faq_col_panel">
+                                    <Accordion.Item eventKey="4">
+                                        <Accordion.Header>What kind of post-launch support do you offer for Magento websites?
+
+                                        </Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>We provide 24/7 support and maintenance services even after your website goes live. Our team assists with bug fixes, security updates, performance optimization, and any technical issues to ensure your store runs smoothly.
+
+                                            </p>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="5">
+                                        <Accordion.Header>Can you migrate my existing website to Magento without losing SEO rankings or data?</Accordion.Header>
+                                        <Accordion.Body>
+                                            <p>Absolutely. Our Magento development services include seamless migration from other platforms like Shopify, WooCommerce, or custom-built sites. We ensure data integrity and preserve your SEO rankings using proper redirects and technical best practices.</p>
+
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </div>
+                            </Accordion>
                         </Col>
                     </Row>
                 </Container>

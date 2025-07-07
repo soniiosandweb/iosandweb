@@ -52,7 +52,7 @@ function WebDevelopment() {
                                     branding and standardized websites compatible with all the devices and delivering
                                     full-stack development services
                                     <br />We also offer Website security, smart application architecture, ecommerce developer
-                                    for Magento development services, long-term cost saving and great support.
+                                    for <a href="/magento-development-services">Magento development services</a>, long-term cost saving and great support.
                                 </div>
                             </div>
                         </Col>
