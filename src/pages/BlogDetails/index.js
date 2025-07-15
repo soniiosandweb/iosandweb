@@ -8,6 +8,7 @@ const defaultImage = `${process.env.REACT_APP_API_URL}/assests/images/placeholde
 
 function BlogDetails() {
     const url = useParams().url;
+    // console.log(url)
     const location = useLocation();
     const [blogId, setBlogId] = useState(null);
     const [title, setTitle] = useState("");

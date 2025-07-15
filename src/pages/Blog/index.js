@@ -91,12 +91,12 @@ function Blog(){
                             
                                     <Col md={6} lg={4} className="blog-col" key={item.id}>
                                         <div className="blog-list-item">
-                                            <a key={index} href={"blog/"+item.url}>
+                                            <a key={index} href={"/blog/"+item.url}>
                                                 <img src={item.image ? `${process.env.REACT_APP_BLOG_API_URL}/wp-content/uploads/${item.image}` : defaultImage} className="blog-image" alt="Proven Strategies" />
                                             </a>
                                             <div className="blog-detail">
                                                 <p><span className="blog-date">{item.date}</span></p>
-                                                <a key={index} href={"blog/"+item.url}>
+                                                <a key={index} href={"/blog/"+item.url}>
                                                     <h4>{item.title}</h4>
                                                 </a>
                                                 <p className="paragraph">{item.description}</p>
