@@ -9,7 +9,7 @@ const Sitemap = require("react-router-sitemap").default;
 
 async function generateSitemap() {
   try {
-    const posts = await axios.get(`https://old.iosandweb.net/blog-api.php`)
+    const posts = await axios.get(`https://iosandweb.net/api/blog.php`)
     let idMap = [];
 
     for (var i = 0; i < posts.data.length; i++) {
