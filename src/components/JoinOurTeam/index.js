@@ -99,58 +99,59 @@ function JoinOurTeam(){
 
     const handleSubmit = (event) => {
         if (event) event.preventDefault();
+
         if (validate(values)) {
 
-                const reader = new FileReader();
-                reader.readAsDataURL(file);
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
 
-                reader.onload = async (e) => {
+            reader.onload = async (e) => {
                     
-                    setLoading(true);
+                setLoading(true);
 
-                    axios({
-                        method: "post",
-                        url: `${process.env.REACT_APP_API_URL}/api/join-team-email-api.php`,
-                        data: JSON.stringify({
-                                yourFirstName: values.yourFirstName,
-                                yourLastName: values.yourLastName,
-                                emailAddress: values.emailAddress,
-                                yourLocation: values.yourLocation,
-                                applyingFor: values.applyingFor,
-                                phoneValue: phoneValue,
-                                resume: reader.result
-                            }),
-                        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                    })
-                    .then(function (response) {
-                        //handle success
-                        if (response.data.status === 0) {
-                            setLoading(false);
-                            setFormSuccess("Your request was sent successfully");
-                            resetForm();
-                            setTimeout(() => {
-                                setFormSuccess('');
-                            }, 5000);
-                        } else {
-                            setLoading(false);
-                            setFormWarning("Some error occured");
-                            resetForm();
-                            setTimeout(() => {
-                                setFormWarning('');
-                            }, 5000);
-                        }
-                    })
-                    .catch(function (response) {
-                        //handle error
-                        console.log(response);
+                axios({
+                    method: "post",
+                    url: `${process.env.REACT_APP_API_URL}/api/join-team-email-api.php`,
+                    data: JSON.stringify({
+                        yourFirstName: values.yourFirstName,
+                        yourLastName: values.yourLastName,
+                        emailAddress: values.emailAddress,
+                        yourLocation: values.yourLocation,
+                        applyingFor: values.applyingFor,
+                        phoneValue: phoneValue,
+                        resume: reader.result
+                    }),
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                })
+                .then(function (response) {
+                    //handle success
+                    if (response.data.status === 0) {
+                        setLoading(false);
+                        setFormSuccess("Your request was sent successfully");
+                        resetForm();
+                        setTimeout(() => {
+                            setFormSuccess('');
+                        }, 5000);
+                    } else {
                         setLoading(false);
                         setFormWarning("Some error occured");
                         resetForm();
                         setTimeout(() => {
                             setFormWarning('');
                         }, 5000);
-                    });
-                }
+                    }
+                })
+                .catch(function (response) {
+                    //handle error
+                    console.log(response);
+                    setLoading(false);
+                    setFormWarning("Some error occured");
+                    resetForm();
+                    setTimeout(() => {
+                        setFormWarning('');
+                    }, 5000);
+                });
+            }
         }
     };
 

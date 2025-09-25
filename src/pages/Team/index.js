@@ -11,15 +11,11 @@ import { useLocation } from "react-router-dom";
 
 const teamImg = `${process.env.REACT_APP_API_URL}/assests/images/IAW-Team.webp`;
 const userMan = `${process.env.REACT_APP_API_URL}/assests/images/user-man.png`;
-// const userWoman from `${process.env.REACT_APP_API_URL}/assests/images/user-woman.png`;
+const userWoman = `${process.env.REACT_APP_API_URL}/assests/images/user-woman.png`;
 const ourTeam = `${process.env.REACT_APP_API_URL}/assests/images/our-team.webp`;
 const bhupinder = `${process.env.REACT_APP_API_URL}/assests/images/team/bhupinder.png`;
 const soni = `${process.env.REACT_APP_API_URL}/assests/images/team/soni.png`;
-const diksha = `${process.env.REACT_APP_API_URL}/assests/images/team/diksha.jpg`;
-const shreyanshi = `${process.env.REACT_APP_API_URL}/assests/images/team/shreyanshi.png`;
-const gaurav = `${process.env.REACT_APP_API_URL}/assests/images/team/gaurav.png`;
-const arti = `${process.env.REACT_APP_API_URL}/assests/images/team/arti.jpeg`;
-
+const dilip = `${process.env.REACT_APP_API_URL}/assests/images/team/dilip.jpg`;
 
 function Team(){
 
@@ -89,42 +85,14 @@ function Team(){
 
                                 <div className="team-item">
                                     <div className="team-profile-image">
-                                        <img src={userMan} alt="Profile" className="img-fluid" />
+                                        <img src={userWoman} alt="Profile" className="img-fluid" />
                                     </div>
                                     <div className="profile-content">
-                                        <h3 className="team-title">Pankaj Sharma</h3>
-                                        <p className="paragraph">Project Manager</p>
-                                        <div className="social-icons">
-                                            <a href="skype:live:.cid.f94bbec24b40fa42"><FontAwesomeIcon icon={faSkype} /></a>
-                                            <a href="mailto:pankaj@iosandweb.net"><FontAwesomeIcon icon={faEnvelope} /></a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="team-item">
-                                    <div className="team-profile-image">
-                                        <img src={diksha} alt="Profile" className="img-fluid" />
-                                    </div>
-                                    <div className="profile-content">
-                                        <h3 className="team-title">Diksha Khanna</h3>
+                                        <h3 className="team-title">Muskan Gupta</h3>
                                         <p className="paragraph">HR Manager</p>
                                         <div className="social-icons">
-                                            <a href="skype:live:.cid.366ea093c3c5d9ec"><FontAwesomeIcon icon={faSkype} /></a>
+                                            {/* <a href="skype:live:.cid.366ea093c3c5d9ec"><FontAwesomeIcon icon={faSkype} /></a> */}
                                             <a href="mailto:career@iosandweb.net"><FontAwesomeIcon icon={faEnvelope} /></a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="team-item">
-                                    <div className="team-profile-image">
-                                        <img src={arti} alt="Profile" className="img-fluid" />
-                                    </div>
-                                    <div className="profile-content">
-                                        <h3 className="team-title">Aarti Bhanwar</h3>
-                                        <p className="paragraph">SEO Lead / Software Developer</p>
-                                        <div className="social-icons">
-                                            <a href="skype:live:.cid.38a2eff5f8174786"><FontAwesomeIcon icon={faSkype} /></a>
-                                            <a href="mailto:aarti@iosandweb.net"><FontAwesomeIcon icon={faEnvelope} /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -145,32 +113,73 @@ function Team(){
 
                                 <div className="team-item">
                                     <div className="team-profile-image">
-                                        <img src={gaurav} alt="Profile" className="img-fluid" />
+                                        <img src={dilip} alt="Profile" className="img-fluid" />
                                     </div>
                                     <div className="profile-content">
-                                        <h3 className="team-title">Gaurav Srivastav</h3>
-                                        <p className="paragraph">Junior Software Developer</p>
+                                        <h3 className="team-title">Dilip Kumar</h3>
+                                        <p className="paragraph">Mern Stack Developer</p>
                                         <div className="social-icons">
-                                            <a href="skype:live:.cid.114d3f7a9feda063"><FontAwesomeIcon icon={faSkype} /></a>
-                                            <a href="mailto:gaurav@iosandweb.net"><FontAwesomeIcon icon={faEnvelope} /></a>
+                                            {/* <a href="skype:live:.cid.114d3f7a9feda063"><FontAwesomeIcon icon={faSkype} /></a> */}
+                                            <a href="mailto:dilip@iosandweb.net"><FontAwesomeIcon icon={faEnvelope} /></a>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="team-item">
                                     <div className="team-profile-image">
-                                        <img src={shreyanshi} alt="Profile" className="img-fluid" />
+                                        <img src={userMan} alt="Profile" className="img-fluid" />
                                     </div>
                                     <div className="profile-content">
-                                        <h3 className="team-title">Shreyanshi Srivastava</h3>
-                                        <p className="paragraph">Junior Software Developer</p>
+                                        <h3 className="team-title">Ashwinder Singh</h3>
+                                        <p className="paragraph">Senior SEO Executive</p>
                                         <div className="social-icons">
-                                            <a href="skype:live:.cid.d9baf9987a5191bc"><FontAwesomeIcon icon={faSkype} /></a>
-                                            <a href="mailto:shreyanshi@iosandweb.net"><FontAwesomeIcon icon={faEnvelope} /></a>
+                                            {/* <a href="skype:live:.cid.114d3f7a9feda063"><FontAwesomeIcon icon={faSkype} /></a> */}
+                                            <a href="mailto:ashwinder@iosandweb.net"><FontAwesomeIcon icon={faEnvelope} /></a>
                                         </div>
                                     </div>
                                 </div>
 
+                                <div className="team-item">
+                                    <div className="team-profile-image">
+                                        <img src={userWoman} alt="Profile" className="img-fluid" />
+                                    </div>
+                                    <div className="profile-content">
+                                        <h3 className="team-title">Parveen Rani</h3>
+                                        <p className="paragraph">SEO Intern</p>
+                                        <div className="social-icons">
+                                            {/* <a href="skype:live:.cid.38a2eff5f8174786"><FontAwesomeIcon icon={faSkype} /></a> */}
+                                            <a href="mailto:parveen@iosandweb.net"><FontAwesomeIcon icon={faEnvelope} /></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="team-item">
+                                    <div className="team-profile-image">
+                                        <img src={userWoman} alt="Profile" className="img-fluid" />
+                                    </div>
+                                    <div className="profile-content">
+                                        <h3 className="team-title">Varsha</h3>
+                                        <p className="paragraph">Graphic Designer</p>
+                                        <div className="social-icons">
+                                            {/* <a href="skype:live:.cid.d9baf9987a5191bc"><FontAwesomeIcon icon={faSkype} /></a> */}
+                                            <a href="mailto:varsha@iosandweb.net"><FontAwesomeIcon icon={faEnvelope} /></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="team-item">
+                                    <div className="team-profile-image">
+                                        <img src={userWoman} alt="Profile" className="img-fluid" />
+                                    </div>
+                                    <div className="profile-content">
+                                        <h3 className="team-title">Anjali Attri</h3>
+                                        <p className="paragraph">Business Analyst</p>
+                                        <div className="social-icons">
+                                            {/* <a href="skype:live:.cid.f94bbec24b40fa42"><FontAwesomeIcon icon={faSkype} /></a> */}
+                                            <a href="mailto:anjali@iosandweb.net"><FontAwesomeIcon icon={faEnvelope} /></a>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
                         </Col>

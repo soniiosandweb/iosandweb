@@ -4,6 +4,7 @@ import { useLocation, useParams } from "react-router-dom";
 import axios from 'axios';
 import { Row, Col, Container, Spinner } from "react-bootstrap";
 import SEO from "../../components/SEO";
+import BlogDetailsForm from "../../components/BlogDetailsForm";
 const defaultImage = `${process.env.REACT_APP_API_URL}/assests/images/placeholder-image.webp`;
 
 function BlogDetails() {
@@ -144,6 +145,13 @@ function BlogDetails() {
                             </Row>
                         </Container>
                     </div>
+
+                    {/* Blog Details Form */}
+                    {blogId && blogId === "24110" &&
+                        <div id="BlogForm">
+                            <BlogDetailsForm />
+                        </div>
+                    }
                 </>
             }
 
