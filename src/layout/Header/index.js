@@ -45,6 +45,143 @@ const itFirms = `${process.env.REACT_APP_API_URL}/assests/images/awards/itfirm.w
 const topDevelopment = `${process.env.REACT_APP_API_URL}/assests/images/awards/top-development.webp`;
 const upWork = `${process.env.REACT_APP_API_URL}/assests/images/awards/upwork.webp`;
 
+// Portfolio images
+const portfolioIcon = `${process.env.REACT_APP_API_URL}/assests/images/portfolio.png`;
+const maprouteIcon = `${process.env.REACT_APP_API_URL}/assests/images/map-route.png`;
+const aiIcon = `${process.env.REACT_APP_API_URL}/assests/images/chat-bot.png`;
+const xrpIcon = `${process.env.REACT_APP_API_URL}/assests/images/xrp.png`;
+const stakeIcon = `${process.env.REACT_APP_API_URL}/assests/images/staking.png`;
+
+// Services Menu
+const servicesMenu = [
+  {
+    title: "Software Development",
+    url: "/custom-software-development-company",
+    image: softwareDevelopment,
+    class: "bg-red"
+  },
+  {
+    title: "Web Development",
+    url: "/web-development-services",
+    image: digitalTransformation,
+    class: "bg-purple"
+  },
+  {
+    title: "Mobile App Development",
+    url: "/mobile-app-development-services",
+    image: mobileApp,
+    class: "bg-orange"
+  },
+  {
+    title: "Blockchain Development",
+    url: "https://www.blockchain77.com/services/",
+    image: blockChain,
+    blank: true,
+    class: "bg-blue"
+  },
+  {
+    title: "Web / Graphic Design",
+    url: "/web-designing-services",
+    image: ideationDesign,
+    class: "bg-green"
+  },
+  {
+    title: "Digital Marketing",
+    url: "/digital-marketing-services",
+    image: dataScience,
+    class: "bg-pink"
+  }
+]
+
+// Industries Menu
+const industriesMenu = [
+  {
+    title: "eCommerce",
+    url: "/ecommerce-app-development",
+    image: eCommerceIcon,
+    class: "bg-pink"
+  },
+  {
+    title: "Real Estate",
+    url: "/real-estate-app-development",
+    image: realEstateIcon,
+    class: "bg-green"
+  },
+  {
+    title: "Generative AI",
+    url: "/generative-ai-development",
+    image: generativeAI,
+    class: "bg-orange"
+  },
+  {
+    title: "Healthcare",
+    url: "/healthcare-software-development",
+    image: healthcareIcon,
+    class: "bg-blue"
+  }
+]
+
+// Company Menu
+const companyMenu = [
+  {
+    title: "About Us",
+    url: "/about-us",
+    image: aboutIcon,
+    class: "bg-pink"
+  },
+  {
+    title: "IAW Team",
+    url: "/iaw-team",
+    image: teamIcon,
+    class: "bg-green"
+  },
+  {
+    title: "Portfolio",
+    url: "/portfolio",
+    image: portfolioIcon,
+    class: "bg-purple"
+  },
+  {
+    title: "Career",
+    url: "/careers",
+    image: careerIcon,
+    class: "bg-orange"
+  },
+  {
+    title: "How We Work",
+    url: "/how-we-work",
+    image: howWorkIcon,
+    class: "bg-blue"
+  }
+]
+
+// Portfolio Menu
+const portfolioMenu = [
+  {
+    title: "Map Route",
+    url: "https://iosandweb.net/maproute/",
+    image: maprouteIcon,
+    class: "bg-pink"
+  },
+  {
+    title: "AI Translator",
+    url: "https://iosandweb.net/ai/",
+    image: aiIcon,
+    class: "bg-green"
+  },
+  {
+    title: "XRP Trade",
+    url: "https://iosandweb.com/markets/",
+    image: xrpIcon,
+    class: "bg-orange"
+  },
+  {
+    title: "Staking",
+    url: "https://iosandweb.net/staking/",
+    image: stakeIcon,
+    class: "bg-blue"
+  }
+]
 
 function Header() {
 
@@ -57,6 +194,7 @@ function Header() {
   const [show, setShow] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
   const [showIndustry, setShowIndustry] = useState(false);
+  const [showPortfolio, setShowPortfolio] = useState(false);
 
   const listenScrollEvent = () => {
     if (locationValue[1] === "") {
@@ -135,60 +273,17 @@ function Header() {
                 <div className="header-submenu-wrap">
                   <div className="header-submenu-left">
                     <ul className="header-submenu-items">
-                      <li className="submenu-item">
-                        <Dropdown.Item href='/custom-software-development-company'>
-                          <div className="bg-red submenu-img">
-                            <img src={softwareDevelopment} className="service-img" alt="Software Development" /> 
-                          </div>
-                          Software Development
-                          <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
-                        </Dropdown.Item>
-                      </li>
-                      <li className="submenu-item">
-                        <Dropdown.Item href='/web-development-services'>
-                          <div className="bg-purple submenu-img">
-                            <img src={digitalTransformation} className="service-img" alt="Web Development" /> 
-                          </div>
-                          Web Development
-                          <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
-                        </Dropdown.Item>
-                      </li>
-                      <li className="submenu-item">
-                        <Dropdown.Item href='/mobile-app-development-services'>
-                          <div className="bg-orange submenu-img">
-                            <img src={mobileApp} className="service-img" alt="Mobile App" /> 
-                          </div>
-                          Mobile App Development
-                          <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
-                        </Dropdown.Item>
-                      </li>
-                      <li className="submenu-item">
-                        <Dropdown.Item href='https://www.blockchain77.com/services/' target="_blank" rel="noreferrer">
-                          <div className="bg-blue submenu-img">
-                            <img src={blockChain} className="service-img" alt="Blockchain Services" /> 
-                          </div>
-                          Blockchain Development
-                          <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
-                        </Dropdown.Item>
-                      </li>
-                      <li className="submenu-item">
-                        <Dropdown.Item href='/web-designing-services'>
-                          <div className="bg-green submenu-img">
-                            <img src={ideationDesign} className="service-img" alt="Web/Graphic Design" /> 
-                          </div>
-                          Web / Graphic Design
-                          <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
-                        </Dropdown.Item>
-                      </li>
-                      <li className="submenu-item">
-                        <Dropdown.Item href='/digital-marketing-services'>
-                          <div className="bg-pink submenu-img">
-                            <img src={dataScience} className="service-img" alt="Digital Marketing" /> 
-                          </div>
-                          Digital Marketing
-                          <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
-                        </Dropdown.Item>
-                      </li>
+                      {servicesMenu.map((link, i) => (
+                        <li className="submenu-item" key={i}>
+                          <Dropdown.Item href={link.url} target={link.blank ? "_blank" : "_self"} rel="noreferrer">
+                            <div className={`${link.class} submenu-img`}>
+                              <img src={link.image} className="service-img" alt={link.title} /> 
+                            </div>
+                            {link.title}
+                            <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
+                          </Dropdown.Item>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                   <div className="header-submenu-right">
@@ -250,7 +345,34 @@ function Header() {
               </Dropdown.Menu>
             </Dropdown>
 
-            <Nav.Link href="/portfolio" className={locationValue[1] === "portfolio" ? "active" : ""}>Portfolio</Nav.Link>
+            {/* <Nav.Link href="/portfolio" className={locationValue[1] === "portfolio" ? "active" : ""}>Portfolio</Nav.Link> */}
+
+            <Dropdown 
+              className="less-dropdown"
+              as={NavItem} 
+              show={showPortfolio}
+              onMouseEnter={() => setShowPortfolio(true)}
+              onMouseLeave={() => setShowPortfolio(false)}
+              onToggle={() => setShowPortfolio(!showPortfolio)}
+            >
+              <Dropdown.Toggle as={NavLink}>Portfolio</Dropdown.Toggle>
+              <Dropdown.Menu>
+                <ul className="header-submenu-items">
+
+                  {portfolioMenu.map((link, i) => (
+                    <li className="submenu-item" key={i}>
+                      <Dropdown.Item href={link.url} target={"_blank"} rel="noreferrer">
+                        <div className={`${link.class} submenu-img`}>
+                          <img src={link.image} className="service-img" alt={link.title} /> 
+                        </div>
+                        {link.title}
+                        <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
+                      </Dropdown.Item>
+                    </li>
+                  ))}
+                </ul>
+              </Dropdown.Menu>
+            </Dropdown>
 
             <Dropdown 
               className="less-dropdown"
@@ -264,42 +386,17 @@ function Header() {
               <Dropdown.Menu>
                 
                 <ul className="header-submenu-items">
-                  <li className="submenu-item">
-                    <Dropdown.Item href='/ecommerce-app-development'>
-                      <div className="bg-pink submenu-img">
-                        <img src={eCommerceIcon} className="service-img" alt="eCommerce" /> 
-                      </div>
-                      eCommerce
-                      <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
-                    </Dropdown.Item>
-                  </li>
-                  <li className="submenu-item">
-                    <Dropdown.Item href="/real-estate-app-development">
-                      <div className="bg-green submenu-img">
-                        <img src={realEstateIcon} className="service-img" alt="Real Estate" />
-                      </div>
-                      Real Estate
-                      <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
-                    </Dropdown.Item>
-                  </li>
-                  <li className="submenu-item">
-                    <Dropdown.Item href="/generative-ai-development">
-                      <div className="bg-orange submenu-img">
-                        <img src={generativeAI} className="service-img" alt="Generative AI" />
-                      </div>
-                      Generative AI
-                      <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
-                    </Dropdown.Item>
-                  </li>
-                  <li className="submenu-item">
-                    <Dropdown.Item href="/healthcare-software-development">
-                      <div className="bg-blue submenu-img">
-                        <img src={healthcareIcon} className="service-img" alt="Healthcare" />
-                      </div>
-                      Healthcare
-                      <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
-                    </Dropdown.Item>
-                  </li>
+                  {industriesMenu.map((link, i) => (
+                    <li className="submenu-item" key={i}>
+                      <Dropdown.Item href={link.url}>
+                        <div className={`${link.class} submenu-img`}>
+                          <img src={link.image} className="service-img" alt={link.title} /> 
+                        </div>
+                        {link.title}
+                        <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
+                      </Dropdown.Item>
+                    </li>
+                  ))}
                 </ul>
               </Dropdown.Menu>
             </Dropdown>
@@ -315,42 +412,17 @@ function Header() {
               <Dropdown.Toggle as={NavLink}>Company</Dropdown.Toggle>
               <Dropdown.Menu>
                 <ul className="header-submenu-items">
-                  <li className="submenu-item">
-                    <Dropdown.Item href='/about-us'>
-                      <div className="bg-pink submenu-img">
-                        <img src={aboutIcon} className="service-img" alt="About Us" /> 
-                      </div>
-                      About Us
-                      <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
-                    </Dropdown.Item>
-                  </li>
-                  <li className="submenu-item">
-                    <Dropdown.Item href='/iaw-team'>
-                      <div className="bg-green submenu-img">
-                        <img src={teamIcon} className="service-img" alt="IAW Team" /> 
-                      </div>
-                      IAW Team
-                      <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
-                    </Dropdown.Item>
-                  </li>
-                  <li className="submenu-item">
-                    <Dropdown.Item href='/careers'>
-                      <div className="bg-orange submenu-img">
-                        <img src={careerIcon} className="service-img" alt="Career" /> 
-                      </div>
-                      Career
-                      <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
-                    </Dropdown.Item>
-                  </li>
-                  <li className="submenu-item">
-                    <Dropdown.Item href='/how-we-work'>
-                      <div className="bg-blue submenu-img">
-                        <img src={howWorkIcon} className="service-img" alt="How we work" /> 
-                      </div>
-                      How We Work
-                      <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
-                    </Dropdown.Item>
-                  </li>
+                  {companyMenu.map((link, i) => (
+                    <li className="submenu-item" key={i}>
+                      <Dropdown.Item href={link.url}>
+                        <div className={`${link.class} submenu-img`}>
+                          <img src={link.image} className="service-img" alt={link.title} /> 
+                        </div>
+                        {link.title}
+                        <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
+                      </Dropdown.Item>
+                    </li>
+                  ))}
                 </ul>
               </Dropdown.Menu>
             </Dropdown>
