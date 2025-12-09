@@ -51,6 +51,20 @@ const maprouteIcon = `${process.env.REACT_APP_API_URL}/assests/images/map-route.
 const aiIcon = `${process.env.REACT_APP_API_URL}/assests/images/chat-bot.png`;
 const xrpIcon = `${process.env.REACT_APP_API_URL}/assests/images/xrp.png`;
 const stakeIcon = `${process.env.REACT_APP_API_URL}/assests/images/staking.png`;
+const chatbotIcon = `${process.env.REACT_APP_API_URL}/assests/images/chatbot.png`;
+const shoesIcon = `${process.env.REACT_APP_API_URL}/assests/images/shoes.png`;
+const spaIcon = `${process.env.REACT_APP_API_URL}/assests/images/spa.png`;
+const leafIcon = `${process.env.REACT_APP_API_URL}/assests/images/leaf.png`;
+const careplanIcon = `${process.env.REACT_APP_API_URL}/assests/images/careplan.png`;
+const arabicIcon = `${process.env.REACT_APP_API_URL}/assests/images/arabic.png`;
+const onmenIcon = `${process.env.REACT_APP_API_URL}/assests/images/onmen.png`;
+const tiaraIcon = `${process.env.REACT_APP_API_URL}/assests/images/lotus.png`;
+const signIcon = `${process.env.REACT_APP_API_URL}/assests/images/sign-contract.png`;
+const carIcon = `${process.env.REACT_APP_API_URL}/assests/images/car-repair.png`;
+const buildingsIcon = `${process.env.REACT_APP_API_URL}/assests/images/buildings.png`;
+const procedureIcon = `${process.env.REACT_APP_API_URL}/assests/images/procedure.png`;
+const healthIcon = `${process.env.REACT_APP_API_URL}/assests/images/heartbeat.png`;
+const groceryIcon = `${process.env.REACT_APP_API_URL}/assests/images/grocery.png`;
 
 // Services Menu
 const servicesMenu = [
@@ -164,6 +178,12 @@ const portfolioMenu = [
     class: "bg-pink"
   },
   {
+    title: "Chatbot",
+    url: "https://iosandweb.net/chatbot/",
+    image: chatbotIcon,
+    class: "bg-red"
+  },
+  {
     title: "AI Translator",
     url: "https://iosandweb.net/ai/",
     image: aiIcon,
@@ -180,7 +200,85 @@ const portfolioMenu = [
     url: "https://iosandweb.net/staking/",
     image: stakeIcon,
     class: "bg-blue"
-  }
+  },
+  {
+    title: "Silver Street London",
+    url: "http://104.156.231.22/silverstreetlondon",
+    image: shoesIcon,
+    class: "bg-purple"
+  },
+  {
+    title: "The Ten World",
+    url: "https://thetenworld.iosandweb.net/",
+    image: spaIcon,
+    class: "bg-pink"
+  },
+  {
+    title: "The Sprout",
+    url: "http://sprout.iosandweb.net/",
+    image: leafIcon,
+    class: "bg-red"
+  },
+  {
+    title: "Careplans",
+    url: "https://careplans.iosandweb.net/",
+    image: careplanIcon,
+    class: "bg-green"
+  },
+  {
+    title: "Imfreenow",
+    url: "https://imfreenow.iosandweb.net/",
+    image: arabicIcon,
+    class: "bg-orange"
+  },
+  {
+    title: "Onmen",
+    url: "https://onmen.iosandweb.net/",
+    image: onmenIcon,
+    class: "bg-blue"
+  },
+  {
+    title: "Tiara Real Estate",
+    url: "https://tiara.iosandweb.com/",
+    image: tiaraIcon,
+    class: "bg-purple"
+  },
+  {
+    title: "RDY Signs",
+    url: "https://iosandweb.net/rdysigns",
+    image: signIcon,
+    class: "bg-pink"
+  },
+  {
+    title: "Windbooster",
+    url: "https://iosandweb.net/windbooster/",
+    image: carIcon,
+    class: "bg-red"
+  },
+  {
+    title: "Danube Properties",
+    url: "https://iosandweb.net/danubeproperties/",
+    image: buildingsIcon,
+    class: "bg-green"
+  },
+  {
+    title: "Simulacrum",
+    url: "https://iosandweb.net/simulacrum/",
+    image: procedureIcon,
+    class: "bg-orange"
+  },
+  {
+    title: "Surgi Health",
+    url: "https://iosandweb.com/surgi-health/",
+    image: healthIcon,
+    class: "bg-blue"
+  },
+  {
+    title: "Fresh Organic Grocery",
+    url: "http://freshorganicgrocery.com/",
+    image: groceryIcon,
+    class: "bg-purple"
+  },
 ]
 
 function Header() {
@@ -348,7 +446,7 @@ function Header() {
             {/* <Nav.Link href="/portfolio" className={locationValue[1] === "portfolio" ? "active" : ""}>Portfolio</Nav.Link> */}
 
             <Dropdown 
-              className="less-dropdown"
+              className="portfolio-dropdown"
               as={NavItem} 
               show={showPortfolio}
               onMouseEnter={() => setShowPortfolio(true)}
@@ -357,20 +455,24 @@ function Header() {
             >
               <Dropdown.Toggle as={NavLink}>Portfolio</Dropdown.Toggle>
               <Dropdown.Menu>
-                <ul className="header-submenu-items">
+                <div className="header-submenu-wrap">
+                  <div className="header-submenu-left">
+                    <ul className="header-submenu-items">
 
-                  {portfolioMenu.map((link, i) => (
-                    <li className="submenu-item" key={i}>
-                      <Dropdown.Item href={link.url} target={"_blank"} rel="noreferrer">
-                        <div className={`${link.class} submenu-img`}>
-                          <img src={link.image} className="service-img" alt={link.title} /> 
-                        </div>
-                        {link.title}
-                        <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
-                      </Dropdown.Item>
-                    </li>
-                  ))}
-                </ul>
+                      {portfolioMenu.map((link, i) => (
+                        <li className="submenu-item" key={i}>
+                          <Dropdown.Item href={link.url} target={"_blank"} rel="noreferrer">
+                            <div className={`${link.class} submenu-img`}>
+                              <img src={link.image} className="service-img" alt={link.title} /> 
+                            </div>
+                            {link.title}
+                            <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
+                          </Dropdown.Item>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
               </Dropdown.Menu>
             </Dropdown>
 
