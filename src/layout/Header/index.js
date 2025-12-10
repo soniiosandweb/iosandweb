@@ -228,7 +228,7 @@ const portfolioMenu = [
     url: "http://freshorganicgrocery.com/",
     image: groceryIcon,
     class: "bg-purple",
-    tech: "React JS",
+    tech: "React JS & Node JS",
   },
   {
     title: "Ship From Germany",
@@ -425,7 +425,7 @@ const portfolioStagingMenu = [
     url: "https://surgi.iosandweb.com/",
     image: healthIcon,
     class: "bg-blue",
-    tech: "Perch",
+    tech: "Perch Runway",
   },
   {
     title: "Buy Token LLC",
@@ -462,6 +462,7 @@ function Header() {
   const [showAbout, setShowAbout] = useState(false);
   const [showIndustry, setShowIndustry] = useState(false);
   const [showPortfolio, setShowPortfolio] = useState(false);
+  const [showProducts, setShowProducts] = useState(false);
 
   const listenScrollEvent = () => {
     if (locationValue[1] === "") {
@@ -626,7 +627,6 @@ function Header() {
               <Dropdown.Menu>
                 <div className="header-submenu-wrap">
                   <div className="header-submenu-left">
-                    <p className="menu_heading">Live Projects</p>
                     <ul className="header-submenu-items">
 
                       {portfolioMenu.map((link, i) => (
@@ -641,8 +641,23 @@ function Header() {
                         </li>
                       ))}
                     </ul>
+                  </div>
+                </div>
+              </Dropdown.Menu>
+            </Dropdown>
 
-                    <p className="menu_heading">Staging Projects</p>
+            <Dropdown 
+              className="portfolio-dropdown"
+              as={NavItem} 
+              show={showProducts}
+              onMouseEnter={() => setShowProducts(true)}
+              onMouseLeave={() => setShowProducts(false)}
+              onToggle={() => setShowProducts(!showProducts)}
+            >
+              <Dropdown.Toggle as={NavLink}>Products</Dropdown.Toggle>
+              <Dropdown.Menu>
+                <div className="header-submenu-wrap">
+                  <div className="header-submenu-left">
                     <ul className="header-submenu-items">
 
                       {portfolioStagingMenu.map((link, i) => (
