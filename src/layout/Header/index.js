@@ -65,6 +65,9 @@ const buildingsIcon = `${process.env.REACT_APP_API_URL}/assests/images/buildings
 const procedureIcon = `${process.env.REACT_APP_API_URL}/assests/images/procedure.png`;
 const healthIcon = `${process.env.REACT_APP_API_URL}/assests/images/heartbeat.png`;
 const groceryIcon = `${process.env.REACT_APP_API_URL}/assests/images/grocery.png`;
+const hairIcon = `${process.env.REACT_APP_API_URL}/assests/images/hair.png`;
+const beautyIcon = `${process.env.REACT_APP_API_URL}/assests/images/beauty.png`;
+const massageIcon = `${process.env.REACT_APP_API_URL}/assests/images/massage.png`;
 
 // Services Menu
 const servicesMenu = [
@@ -169,115 +172,281 @@ const companyMenu = [
   }
 ]
 
-// Portfolio Menu
+// Portfolio Live Menu
 const portfolioMenu = [
   {
-    title: "Map Route",
-    url: "https://iosandweb.net/maproute/",
-    image: maprouteIcon,
-    class: "bg-pink"
+    title: "Obgyn",
+    url: "https://obgyn.com/",
+    image: healthIcon,
+    class: "bg-pink",
+    tech: "wordpress",
   },
   {
-    title: "Chatbot",
-    url: "https://iosandweb.net/chatbot/",
-    image: chatbotIcon,
-    class: "bg-red"
+    title: "Hair Restoration",
+    url: "https://www.hairrestoration.com/",
+    image: hairIcon,
+    class: "bg-red",
+    tech: "wordpress",
   },
   {
-    title: "AI Translator",
-    url: "https://iosandweb.net/ai/",
-    image: aiIcon,
-    class: "bg-green"
+    title: "Blepharoplasty",
+    url: "https://blepharoplasty.com/",
+    image: beautyIcon,
+    class: "bg-green",
+    tech: "wordpress",
   },
   {
-    title: "XRP Trade",
-    url: "https://iosandweb.com/markets/",
-    image: xrpIcon,
-    class: "bg-orange"
+    title: "Body Massage",
+    url: "https://bodymassage.com/",
+    image: massageIcon,
+    class: "bg-orange",
+    tech: "wordpress",
   },
   {
-    title: "Staking",
-    url: "https://iosandweb.net/staking/",
+    title: "Whopping Seo",
+    url: "https://whoppingseo.com/",
+    image: signIcon,
+    class: "bg-blue",
+    tech: "wordpress",
+  },
+  {
+    title: "Block Chain",
+    url: "https://blockchain77.com/",
     image: stakeIcon,
-    class: "bg-blue"
+    class: "bg-purple",
+    tech: "wordpress",
   },
   {
     title: "Silver Street London",
     url: "http://104.156.231.22/silverstreetlondon",
     image: shoesIcon,
-    class: "bg-purple"
-  },
-  {
-    title: "The Ten World",
-    url: "https://thetenworld.iosandweb.net/",
-    image: spaIcon,
-    class: "bg-pink"
-  },
-  {
-    title: "The Sprout",
-    url: "http://sprout.iosandweb.net/",
-    image: leafIcon,
-    class: "bg-red"
-  },
-  {
-    title: "Careplans",
-    url: "https://careplans.iosandweb.net/",
-    image: careplanIcon,
-    class: "bg-green"
-  },
-  {
-    title: "Imfreenow",
-    url: "https://imfreenow.iosandweb.net/",
-    image: arabicIcon,
-    class: "bg-orange"
-  },
-  {
-    title: "Onmen",
-    url: "https://onmen.iosandweb.net/",
-    image: onmenIcon,
-    class: "bg-blue"
-  },
-  {
-    title: "Tiara Real Estate",
-    url: "https://tiara.iosandweb.com/",
-    image: tiaraIcon,
-    class: "bg-purple"
-  },
-  {
-    title: "RDY Signs",
-    url: "https://iosandweb.net/rdysigns",
-    image: signIcon,
-    class: "bg-pink"
-  },
-  {
-    title: "Windbooster",
-    url: "https://iosandweb.net/windbooster/",
-    image: carIcon,
-    class: "bg-red"
-  },
-  {
-    title: "Danube Properties",
-    url: "https://iosandweb.net/danubeproperties/",
-    image: buildingsIcon,
-    class: "bg-green"
-  },
-  {
-    title: "Simulacrum",
-    url: "https://iosandweb.net/simulacrum/",
-    image: procedureIcon,
-    class: "bg-orange"
-  },
-  {
-    title: "Surgi Health",
-    url: "https://iosandweb.com/surgi-health/",
-    image: healthIcon,
-    class: "bg-blue"
+    class: "bg-purple",
+    tech: "magento",
   },
   {
     title: "Fresh Organic Grocery",
     url: "http://freshorganicgrocery.com/",
     image: groceryIcon,
-    class: "bg-purple"
+    class: "bg-purple",
+    tech: "React JS",
+  },
+  {
+    title: "Ship From Germany",
+    url: "https://shipfromgermany.com/",
+    image: procedureIcon,
+    class: "bg-pink",
+    tech: "wordpress",
+  },
+  {
+    title: "SEO Rockers",
+    url: "https://seorockers.com/",
+    image: signIcon,
+    class: "bg-red",
+    tech: "PHP",
+  },
+  {
+    title: "Ananta Aspire zirakpur",
+    url: "https://anantaaspirezirakpur.co/",
+    image: buildingsIcon,
+    class: "bg-green",
+    tech: "React JS",
+  },
+  {
+    title: "Vamana Residences",
+    url: "https://vamanaresidences.com/",
+    image: buildingsIcon,
+    class: "bg-orange",
+    tech: "React JS",
+  },
+  {
+    title: "Ananta Aspire",
+    url: "https://anantaaspire.co/",
+    image: buildingsIcon,
+    class: "bg-blue",
+    tech: "React JS",
+  },
+  {
+    title: "Appreciant Realty",
+    url: "https://appreciantrealty.com/",
+    image: buildingsIcon,
+    class: "bg-purple",
+    tech: "React JS",
+  },
+  {
+    title: "Printer Not Working",
+    url: "https://printernotworking.com/",
+    image: signIcon,
+    class: "bg-pink",
+    tech: "Wordpress",
+  },
+  // {
+  //   title: "Windbooster",
+  //   url: "https://iosandweb.net/windbooster/",
+  //   image: carIcon,
+  //   class: "bg-red"
+  // },
+  // {
+  //   title: "Danube Properties",
+  //   url: "https://iosandweb.net/danubeproperties/",
+  //   image: buildingsIcon,
+  //   class: "bg-green"
+  // },
+  // {
+  //   title: "Simulacrum",
+  //   url: "https://iosandweb.net/simulacrum/",
+  //   image: procedureIcon,
+  //   class: "bg-orange"
+  // },
+  // {
+  //   title: "Surgi Health",
+  //   url: "https://iosandweb.com/surgi-health/",
+  //   image: healthIcon,
+  //   class: "bg-blue"
+  // },
+  
+]
+
+// Portfolio Staging Menu
+const portfolioStagingMenu = [
+  {
+    title: "Map Route",
+    url: "https://iosandweb.net/maproute/",
+    image: maprouteIcon,
+    class: "bg-pink",
+    tech: "React JS",
+  },
+  {
+    title: "Chatbot",
+    url: "https://iosandweb.net/chatbot/",
+    image: chatbotIcon,
+    class: "bg-red",
+    tech: "Node JS",
+  },
+  {
+    title: "AI Translator",
+    url: "https://iosandweb.net/ai/",
+    image: aiIcon,
+    class: "bg-green",
+    tech: "React JS",
+  },
+  {
+    title: "XRP Trade",
+    url: "https://iosandweb.com/markets/",
+    image: xrpIcon,
+    class: "bg-orange",
+    tech: "React JS",
+  },
+  {
+    title: "Staking",
+    url: "https://iosandweb.net/staking/",
+    image: stakeIcon,
+    class: "bg-blue",
+    tech: "React JS",
+  },
+  {
+    title: "Physicians",
+    url: "https://physicians.iosandweb.net/",
+    image: healthcareIcon,
+    class: "bg-purple",
+    tech: "Wordpress",
+  },
+  {
+    title: "The Ten World",
+    url: "https://thetenworld.iosandweb.net/",
+    image: spaIcon,
+    class: "bg-pink",
+    tech: "Wordpress",
+  },
+  {
+    title: "The Sprout",
+    url: "http://sprout.iosandweb.net/",
+    image: leafIcon,
+    class: "bg-red",
+    tech: "Wordpress",
+  },
+  {
+    title: "Careplans",
+    url: "https://careplans.iosandweb.net/",
+    image: careplanIcon,
+    class: "bg-green",
+    tech: "Wordpress",
+  },
+  {
+    title: "Imfreenow",
+    url: "https://imfreenow.iosandweb.net/",
+    image: arabicIcon,
+    class: "bg-orange",
+    tech: "Wordpress",
+  },
+  {
+    title: "Onmen",
+    url: "https://onmen.iosandweb.net/",
+    image: onmenIcon,
+    class: "bg-blue",
+    tech: "Wordpress",
+  },
+  {
+    title: "Tiara Real Estate",
+    url: "https://tiara.iosandweb.com/",
+    image: tiaraIcon,
+    class: "bg-purple",
+    tech: "React JS",
+  },
+  {
+    title: "RDY Signs",
+    url: "https://iosandweb.net/rdysigns",
+    image: signIcon,
+    class: "bg-pink",
+    tech: "Wordpress",
+  },
+  {
+    title: "Windbooster",
+    url: "https://iosandweb.net/windbooster/",
+    image: carIcon,
+    class: "bg-red",
+    tech: "Wordpress",
+  },
+  {
+    title: "Danube Properties",
+    url: "https://iosandweb.net/danubeproperties/",
+    image: buildingsIcon,
+    class: "bg-green",
+    tech: "React JS",
+  },
+  {
+    title: "Simulacrum",
+    url: "https://iosandweb.net/simulacrum/",
+    image: procedureIcon,
+    class: "bg-orange",
+    tech: "React JS",
+  },
+  {
+    title: "Surgi Health",
+    url: "https://surgi.iosandweb.com/",
+    image: healthIcon,
+    class: "bg-blue",
+    tech: "Perch",
+  },
+  {
+    title: "Buy Token LLC",
+    url: "http://buytokenllc.iosandweb.net/",
+    image: stakeIcon,
+    class: "bg-purple",
+    tech: "Wordpress",
+  },
+  {
+    title: "SRGN",
+    url: "https://srgn-clinic.webflow.io/",
+    image: careplanIcon,
+    class: "bg-red",
+    tech: "Webflow",
+  },
+  {
+    title: "myGermany",
+    url: "http://104.238.180.124/mygermany/",
+    image: procedureIcon,
+    class: "bg-green",
+    tech: "Wordpress",
   },
 ]
 
@@ -457,6 +626,7 @@ function Header() {
               <Dropdown.Menu>
                 <div className="header-submenu-wrap">
                   <div className="header-submenu-left">
+                    <p className="menu_heading">Live Projects</p>
                     <ul className="header-submenu-items">
 
                       {portfolioMenu.map((link, i) => (
@@ -465,7 +635,23 @@ function Header() {
                             <div className={`${link.class} submenu-img`}>
                               <img src={link.image} className="service-img" alt={link.title} /> 
                             </div>
-                            {link.title}
+                            <p>{link.title} <span>({link.tech})</span></p>
+                            <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
+                          </Dropdown.Item>
+                        </li>
+                      ))}
+                    </ul>
+
+                    <p className="menu_heading">Staging Projects</p>
+                    <ul className="header-submenu-items">
+
+                      {portfolioStagingMenu.map((link, i) => (
+                        <li className="submenu-item" key={i}>
+                          <Dropdown.Item href={link.url} target={"_blank"} rel="noreferrer">
+                            <div className={`${link.class} submenu-img`}>
+                              <img src={link.image} className="service-img" alt={link.title} /> 
+                            </div>
+                            <p>{link.title} <span>({link.tech})</span></p>
                             <FontAwesomeIcon icon={faArrowRight} className="close-icon" />
                           </Dropdown.Item>
                         </li>
