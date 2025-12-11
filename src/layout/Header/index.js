@@ -10,13 +10,13 @@ import NavItem from 'react-bootstrap/NavItem';
 import NavLink from 'react-bootstrap/NavLink';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesRight, faBars } from "@fortawesome/free-solid-svg-icons";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import OwlCarousel from "react-owl-carousel";
 
 const logo = `${process.env.REACT_APP_API_URL}/assests/images/IAW-logo-white.png`;
-const logoBlack = `${process.env.REACT_APP_API_URL}/assests/images/IAW-black-logo.png`;
+// const logoBlack = `${process.env.REACT_APP_API_URL}/assests/images/IAW-black-logo.png`;
 
 // service menu
 const mobileApp = `${process.env.REACT_APP_API_URL}/assests/images/home/Mobile-app.svg`;
@@ -457,7 +457,7 @@ function Header() {
   const locationValue = pathname.split("/");
   const [image, setImage] = useState(logo);
   const [fixed, setFixed] = useState("sticky-top");
-  const [headerbg, setHeaderbg] = useState("white text-black");
+  const [headerbg, setHeaderbg] = useState("white text-white");
   const [show, setShow] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
   const [showIndustry, setShowIndustry] = useState(false);
@@ -467,15 +467,15 @@ function Header() {
   const listenScrollEvent = () => {
     if (locationValue[1] === "") {
       if (window.scrollY > 50) {
-        setImage(logoBlack);
-        setHeaderbg("white text-black border-bottom");
+        setImage(logo);
+        setHeaderbg("white text-white border-bottom");
       } else {
         setImage(logo);
         setHeaderbg("transparent text-white");
         handleResize();
       }
     } else {
-      setHeaderbg("white text-black border-bottom");
+      setHeaderbg("white text-white border-bottom");
     }
   };
 
@@ -486,17 +486,17 @@ function Header() {
       setImage(logo);
       handleResize();
     } else {
-      setFixed("sticky-top text-black");
-      setHeaderbg("white text-black border-bottom");
-      setImage(logoBlack);
+      setFixed("sticky-top text-white");
+      setHeaderbg("white text-white border-bottom");
+      setImage(logo);
     }
   }
   const handleResize = () => {
     if(locationValue[1] === ""){
       if (window.innerWidth <= 991) {
-        setFixed("sticky-top text-black");
-        setHeaderbg("white text-black border-bottom");
-        setImage(logoBlack);
+        setFixed("sticky-top text-white");
+        setHeaderbg("white text-white border-bottom");
+        setImage(logo);
       } else {
         setFixed("fixed-top text-white");
         setHeaderbg("transparent text-white");
@@ -731,7 +731,10 @@ function Header() {
             </Dropdown>
 
             <Nav.Link href="/blog" className={locationValue[1] === "blog" ? "active" : ""}>Blog</Nav.Link>
-            <Nav.Link href="/contact-us" className={locationValue[1] === "contact" ? "btn active" : "btn"}>Contact</Nav.Link>
+            <Nav.Link href="/contact-us" className={locationValue[1] === "contact" ? "btn active" : "btn"}>
+              Get In Touch
+              <FontAwesomeIcon icon={faAnglesRight} />
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
 

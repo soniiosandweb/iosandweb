@@ -89,6 +89,7 @@
 @media (max-width: 991px) {
     .home-banner {
       height: auto;
+      min-height: 450px;
     }
     .banner-text{
       max-width: 100%;

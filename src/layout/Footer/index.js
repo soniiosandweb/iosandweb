@@ -4,13 +4,48 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import AnalogClock from "analog-clock-react";
-import { faInstagram, faLinkedin, faSquareFacebook, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+
+const footerBg = `${process.env.REACT_APP_API_URL}/assests/images/footer_bg.webp`;
 
 const logoWhite = `${process.env.REACT_APP_API_URL}/assests/images/IAW-logo-white.png`;
 const india = `${process.env.REACT_APP_API_URL}/assests/images/hq-india.svg`;
 const hqUk = `${process.env.REACT_APP_API_URL}/assests/images/hq-uk.png`;
 const hqUs = `${process.env.REACT_APP_API_URL}/assests/images/hq-us.svg`;
+
+const facebook = `${process.env.REACT_APP_API_URL}/assests/images/facebook.png`;
+const twitter = `${process.env.REACT_APP_API_URL}/assests/images/twitter.png`;
+const instagram = `${process.env.REACT_APP_API_URL}/assests/images/instagram.png`;
+const linkedin = `${process.env.REACT_APP_API_URL}/assests/images/linkedin.png`;
+const whatsapp = `${process.env.REACT_APP_API_URL}/assests/images/whatsapp.png`;
+
+const socialLinks = [
+    {
+        title: "Facebook",
+        link: "https://www.facebook.com/iosandwebtechnologies/",
+        icon: facebook,
+    },
+    {
+        title: "Twitter",
+        link: "https://https://twitter.com/Iosandwebtech.com/Iosandwebtech",
+        icon: twitter,
+    },
+    {
+        title: "Instagram",
+        link: "https://www.instagram.com/iosandwebtechnologies/",
+        icon: instagram,
+    },
+    {
+        title: "Linkedin",
+        link: "https://www.linkedin.com/company/iosandweb-technologies",
+        icon: linkedin,
+    },
+    {
+        title: "Whatsapp",
+        link: "https://api.whatsapp.com/send/?phone=919915841204&text&type=phone_number&app_absent=0",
+        icon: whatsapp,
+    }
+]
 
 function Footer(){
 
@@ -110,124 +145,122 @@ function Footer(){
 
     return(
         <>
-            <div className="footer-top section-padding text-white">
-                <Container>
-                    <Row className="location-wrapper-footer">
-                        <Col md={4}>
-                            <div className="location-div">
-                                <img src={india} alt="India" className="location-image" />
-                                <div className="location-heading">HQ India</div>
-                                <p className="location-text">SCO 30, First Floor, <br/>Near Devaji Plaza, VIP Road, <br/>Zirakpur, PB (India)</p>
-                                <div className="footer-clock">
-                                    <AnalogClock {...options} />
-                                </div>
-                            </div>
-                        </Col>
-                        <Col md={4}>
-                            <div className="location-div">
-                                <img src={hqUk} alt="United Kingdom" className="location-image" />
-                                <div className="location-heading">United Kingdom</div>
-                                <p className="location-text">Sheffield City Centre, <br/>Sheffield, S1 1AA, <br/>United Kingdom</p>
-                                <div className="footer-clock">
-                                    <AnalogClock {...ukOptions} />
-                                </div>
-                            </div>
-                        </Col>
-                        <Col md={4}>
-                            <div className="location-div">
-                                <img src={hqUs} alt="United States" className="location-image" />
-                                <div className="location-heading">United States</div>
-                                <p className="location-text">Suite #304, 11200 Manchaca, <br/>Austin, Texas, <br/>United States, 78748</p>
-                                <div className="footer-clock">
-                                    <AnalogClock {...usOptions} />
-                                </div>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+            <div className="footer_main">
+                <img src={footerBg} alt="Footer_bg" className="footer_bg_images" />
 
-            <div className="footer-section section-padding text-white">
-                <Container>
-                    <Row>
-                        <Col md={6} lg={4}>
-                            <div className="footer-col">
-                                <a href="/"><img src={logoWhite} alt="IAW logo" className="footer-logo" /></a>
-                                <p className="footer-about">IosAndWeb Technologies believes in achieving goals and client satisfaction. We deliver inspiring & eye-catching websites and conduct profitable marketing campaigns that attract the audience and boost the client's business. We provide Support & Maintenance even after the completion of the project.</p>
-                                <p className="paragraph">
-                                    <a href="mailto:info@iosandweb.net" className="contact-link"><FontAwesomeIcon icon={faEnvelope} /> info@iosandweb.net</a>
-                                </p>
-                            </div>
-                        </Col>
-                        <Col md={6} lg={2}>
-                            <h5 className="footer-col-head">About</h5>
-                            <ul className="footer-col-list">
-                                <li><a href="/about-us">About us</a></li>
-                                <li><a href="/iaw-team">IAW Team</a></li>
-                                <li><a href="/careers">Career</a></li>
-                                <li><a href="/how-we-work">How we work</a></li>
-                                <li><a href="/portfolio">Portfolio</a></li>
-                            </ul>
-                        </Col>
-                        <Col md={6} lg={3}>
-                            <h5 className="footer-col-head">Services</h5>
-                            <ul className="footer-col-list">
-                                <li><a href="/custom-software-development-company">Software Development</a></li>
-                                <li><a href="/web-development-services">Web Development</a></li>
-                                <li><a href="/mobile-app-development-services">Mobile App Development</a></li>
-                                <li><a href="https://www.blockchain77.com/services/" target="_blank" rel="noreferrer">Blockchain Development</a></li>
-                                <li><a href="/web-designing-services">Web / Graphic Design</a></li>
-                                <li><a href="/digital-marketing-services">Digital Marketing</a></li>
-                            </ul>
-                        </Col>
-                        <Col md={6} lg={3}>
-                            <h5 className="footer-col-head">Resources</h5>
-                            <ul className="footer-col-list">
-                                <li><a href="/blog">Blog</a></li>
-                                <li><a href="/contact-us">Contact</a></li>
-                                <li><a href="/privacy">Privacy Policy</a></li>
-                                <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
-                                <li><a href="/cancellation-policy">Cancellation Policy</a></li>
-                            </ul>
-                        </Col>
-                    </Row>
-                </Container>
+                <div className="footer_collaborate section-padding no-bottom-padding">
+                    <Container>
+                        <Row>
+                            <Col>  
+                                <h4 className="collaborate_heading">Let's Collaborate <FontAwesomeIcon icon={faAnglesRight} /></h4>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+
+                <div className="footer-top section-padding text-white">
+                    <Container>
+                        <Row className="location-wrapper-footer">
+                            <Col md={4}>
+                                <div className="location-div">
+                                    <img src={india} alt="India" className="location-image" />
+                                    <div className="location-heading">HQ India</div>
+                                    <p className="location-text">SCO 30, First Floor, <br/>Near Devaji Plaza, VIP Road, <br/>Zirakpur, PB (India)</p>
+                                    <div className="footer-clock">
+                                        <AnalogClock {...options} />
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col md={4}>
+                                <div className="location-div">
+                                    <img src={hqUk} alt="United Kingdom" className="location-image" />
+                                    <div className="location-heading">United Kingdom</div>
+                                    <p className="location-text">Sheffield City Centre, <br/>Sheffield, S1 1AA, <br/>United Kingdom</p>
+                                    <div className="footer-clock">
+                                        <AnalogClock {...ukOptions} />
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col md={4}>
+                                <div className="location-div">
+                                    <img src={hqUs} alt="United States" className="location-image" />
+                                    <div className="location-heading">United States</div>
+                                    <p className="location-text">Suite #304, 11200 Manchaca, <br/>Austin, Texas, <br/>United States, 78748</p>
+                                    <div className="footer-clock">
+                                        <AnalogClock {...usOptions} />
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+
+                <div className="footer-section less-top-padding section-padding text-white">
+                    <Container>
+                        <Row>
+                            <Col md={6} lg={4} className="footer_columns col1">
+                                <div className="footer-col">
+                                    <a href="/"><img src={logoWhite} alt="IAW logo" className="footer-logo" /></a>
+                                    <p className="footer-about">IosAndWeb Technologies believes in achieving goals and client satisfaction. We deliver inspiring & eye-catching websites and conduct profitable marketing campaigns that attract the audience and boost the client's business. We provide Support & Maintenance even after the completion of the project.</p>
+                                    {/* <p className="paragraph">
+                                        <a href="mailto:info@iosandweb.net" className="contact-link"><FontAwesomeIcon icon={faEnvelope} /> info@iosandweb.net</a>
+                                    </p> */}
+                                    <div className="social_icons_div">
+                                        <h5 className="footer-col-head">Social Links</h5>
+                                        <ul className="social_icons_lists">
+                                            {socialLinks.map((item,i) => (
+                                                <li className="social_icons_item" key={i}>
+                                                    <a href={item.link} target="_blank" rel="noreferrer">
+                                                        <img src={item.icon} alt={item.title} />
+                                                    </a>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </Col>
+                            
+                            <Col md={6} lg={3} className="footer_columns col2">
+                                <h5 className="footer-col-head">Services</h5>
+                                <ul className="footer-col-list">
+                                    <li><a href="/custom-software-development-company">Software Development</a></li>
+                                    <li><a href="/web-development-services">Web Development</a></li>
+                                    <li><a href="/mobile-app-development-services">Mobile App Development</a></li>
+                                    <li><a href="https://www.blockchain77.com/services/" target="_blank" rel="noreferrer">Blockchain Development</a></li>
+                                    <li><a href="/web-designing-services">Web / Graphic Design</a></li>
+                                    <li><a href="/digital-marketing-services">Digital Marketing</a></li>
+                                </ul>
+                            </Col>
+                            <Col md={6} lg={2} className="footer_columns col3">
+                                <h5 className="footer-col-head">About</h5>
+                                <ul className="footer-col-list">
+                                    <li><a href="/about-us">About us</a></li>
+                                    <li><a href="/iaw-team">IAW Team</a></li>
+                                    <li><a href="/careers">Career</a></li>
+                                    <li><a href="/how-we-work">How we work</a></li>
+                                    <li><a href="/portfolio">Portfolio</a></li>
+                                </ul>
+                            </Col>
+                            <Col md={6} lg={3} className="footer_columns col4">
+                                <h5 className="footer-col-head">Resources</h5>
+                                <ul className="footer-col-list">
+                                    <li><a href="/blog">Blog</a></li>
+                                    <li><a href="/contact-us">Contact</a></li>
+                                    <li><a href="/privacy">Privacy Policy</a></li>
+                                    <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
+                                    <li><a href="/cancellation-policy">Cancellation Policy</a></li>
+                                </ul>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
             </div>
 
             <div className="footer-bottom text-white">
                 <Container>
                     <Row className="align-items-center">
-                        <Col md={6}>
-                            <p className="copyright-text">&copy; {(new Date().getFullYear())} All Rights Reserved | <a href="/">IosAndWeb Technologies</a>.</p>
-                        </Col>
-                        <Col md={6} className="footer-social-col">
-                            <ul className="social-links">
-                                <li>
-                                    <a href="https://www.facebook.com/iosandwebtechnologies/" target="_blank" aria-label="Facebook" rel="noreferrer">
-                                        <FontAwesomeIcon icon={faSquareFacebook} />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/Iosandwebtech" target="_blank" aria-label="Twitter" rel="noreferrer">
-                                        <FontAwesomeIcon icon={faTwitter} />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/iosandwebtechnologies/" target="_blank" aria-label="Instagram" rel="noreferrer">
-                                        <FontAwesomeIcon icon={faInstagram} />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/company/iosandweb-technologies" target="_blank"  aria-label="Linkedin" rel="noreferrer">
-                                        <FontAwesomeIcon icon={faLinkedin} />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://api.whatsapp.com/send/?phone=919915841204&text&type=phone_number&app_absent=0" target="_blank"  aria-label="Whatsapp" rel="noreferrer">
-                                        <FontAwesomeIcon icon={faWhatsapp} />
-                                    </a>
-                                </li>
-                            </ul>
+                        <Col md={12}>
+                            <p className="copyright-text text-center">&copy; {(new Date().getFullYear())} All Rights Reserved | <a href="/" style={{textDecoration: "underline"}}>IosAndWeb Technologies</a>.</p>
                         </Col>
                     </Row>
                 </Container>
