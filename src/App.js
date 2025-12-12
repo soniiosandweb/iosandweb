@@ -1,6 +1,7 @@
 import './App.css';
 import Layout from './layout/Layout';
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Blog from './pages/Blog';
@@ -40,8 +41,6 @@ import SEOServiceBirmingham from './pages/Services/SEOService/SEOServiceBirmingh
 import SEOServicePeterborough from './pages/Services/SEOService/SEOServicePeterborough';
 import DigitalMarketingBristol from './pages/Services/DigitalMarketing/DigitalMarketingBristol';
 import { useEffect } from 'react';
-import HomeOld from './pages/Home-Old';
-import Home from './pages/Home/Home';
 
 const useRedirect = (targetUrl) => {
   const navigate = useNavigate();
@@ -92,8 +91,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<HomeOld />} />
-          <Route path='/homenew' element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/blog" element={<Blog />} />

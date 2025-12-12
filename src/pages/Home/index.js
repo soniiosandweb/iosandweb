@@ -61,7 +61,7 @@ const robertTa = `${process.env.REACT_APP_API_URL}/assests/images/home/Robert-Ta
 // Home video
 const homeVideo = `${process.env.REACT_APP_API_URL}/assests/home-video.mp4`;
 
-function HomeOld() {
+function Home() {
 
     const localSchema = {
         "@context": "https://schema.org",
@@ -689,4 +689,4 @@ function HomeOld() {
     )
 }
 
-export default HomeOld;
+export default Home;

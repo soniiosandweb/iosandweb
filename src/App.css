@@ -10,57 +10,16 @@
   font-family: "Inter";
   src: url('./fonts/Inter-Medium.ttf');
 }
-@font-face {
-  font-family: "Poppins";
-  src: url('./fonts/Poppins-Regular.ttf');
-}
-@font-face {
-  font-family: "Poppins-Medium";
-  src: url('./fonts/Poppins-Medium.ttf');
-}
-@font-face {
-  font-family: "Poppins-SemiBold";
-  src: url('./fonts/Poppins-SemiBold.ttf');
-}
-@font-face {
-  font-family: "Poppins-Bold";
-  src: url('./fonts/Poppins-Bold.ttf');
-}
-:root {
-  --font-poppins: "Poppins";
-  --font-poppins-medium: "Poppins-Medium";
-  --font-poppins-sembold: "Poppins-SemiBold";
-  --font-poppins-bold: "Poppins-Bold";
-  --color-white: #fff;
-  --color-body: #080707;
-  --color-black: #000;
-  --color-darkblack: #040404;
-  --color-lightblack: #151111;
-  --color-blue: #004EFF;
-  --color-bluenew: #195FFF;
-  --color-lightblue: #6173FF;
-  --color-purple: #5500FF;
-  --color-lightpurple: #3A1C4AC9;
-  --color-darkpurple: #2B0E66;
-  --color-pink: #E100FF;
-  --color-blackblue: #0D0F38;
-  --color-green: #093142;
-  --color-transparent: transparent;
-  --color-gradient1: #7700FF;
-  --color-gradient2: #0044FF;
-  --color-gradientblue: #0004FF;
-  --color-gray: #515151;
-}
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
 }
 b, strong{
-  font-family: "Poppins";
+  font-family: "Inter";
 }
 code {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 .btn:focus-visible {
   color: #fff;
@@ -99,9 +58,6 @@ h1, h2, h3, h4, h5, h6{
 }
 .less-top-padding{
   padding-top: 3rem;
-}
-.less-bottom-padding{
-  padding-bottom: 3rem;
 }
 .no-bottom-padding{
   padding-bottom: 0;
@@ -208,10 +164,6 @@ h1, h2, h3, h4, h5, h6{
 }
 .bg-pink{
   background: #f7c6f7 !important;
-}
-.body-background {
-  background-color: var(--color-body);
-  color: var(--color-white);
 }
 .banner-overlay{
   background: rgb(0 0 0 / 20%);
